@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Calvin and Hobbes</title>
+		<style>
+			html, body { height: 100%; overflow: hidden; margin: 0; padding: 0; }
+		</style>
+		<script> <!-- the art -->
+			var canvas, context;
+			var objects = new function(){};
+			var ticker;
+			var celestialRotation = 0;
+			
+			function initialise() {
+				canvas = document.getElementById('canvas'),
+						context = canvas.getContext('2d');
+
+				// resize the canvas to fill browser window dynamically
+				window.addEventListener('resize', resizeCanvas, false);
+
+				function resizeCanvas() {
+						canvas.width = window.innerWidth;
+						canvas.height = window.innerHeight;
+
+						/**
+						 * Your drawings need to be inside this function otherwise they will be reset when 
+						 * you resize the browser window and the canvas goes will be cleared.
+						 */ 
+						 
+					objects["stars"] = createStars();
+					clearInterval(ticker);
+					ticker = window.setInterval("draw()", 100);
+					//draw();
+				}
+				resizeCanvas();
+			}
+
+			function draw() {
+				cW = canvas.width;
+				cH = canvas.height;
+				
+				// sky
+				grd = context.createLinearGradient(cW, 0.000, cW, cH);
+				// Add colors
+				grd.addColorStop(0.000, 'rgba(0, 0, 0, 1.000)');
+				grd.addColorStop(0.600, 'rgba(14, 0, 29, 1.000)');
+				
+				context.fillStyle = 'black';
+				context.fillRect(0,0,cW,cH);
+				
+				// stars
+				var stars = objects["stars"];
+				for(var i = 0; i < stars.length; i++)
+				{
+					drawStar(stars[i]);
+				}
+				
+				var img = document.getElementById("cah");
+				h = cH / 5;
+				w = img.width / (img.height /  h);
+				x = (cW - w) / 2;
+				y = cH-h;
+				context.drawImage(img,x,y,w,h);
+				
+				celestialRotation = celestialRotation + 0.01
+				
+			}
+			
+			function drawStar(star) {
+				var brightness = rand()*star.twinkle-(star.twinkle/2)+star.brightness; // Randomise the brightness to make the stars twinkle
+				var newPoint = rotatePoint(star.x, star.y, canvas.width/2, canvas.height, celestialRotation); // adjust x and y for celestial rotation
+				context.fillStyle = 'rgba(255, 255, 255, '+brightness+')';
+				context.fillRect(newPoint.x,newPoint.y,star.size,star.size);        
+			}
+			
+			function createStars() {
+				cW = canvas.width;
+				cH = canvas.height;
+				var pixels = cW * cH;
+				
+				var numberOfStars = (pixels/200)+(rand()*(pixels/200));
+				var stars = new Array();
+				
+				for(var i = 0; i < numberOfStars; i++)
+				{
+					stars[i] = {
+						x: rand()*cW*2-(cW/2),
+						y: rand()*cH*3-(cH),
+						size: rand()*4,
+						brightness: rand()*0.5+0.5,
+						twinkle: rand()*0.4
+					};
+				}
+				return stars;
+			}			
+			
+			function rotatePoint(xp, yp, xc, yc, angleInDegrees) {
+				angleInRadians = angleInDegrees * (Math.PI / 180);
+				cosTheta = Math.cos(angleInRadians);
+				sinTheta = Math.sin(angleInRadians);
+				var newPoint = {
+					x: (cosTheta * (xp - xc) -
+						sinTheta * (yp - yc) + xc),
+					y: (sinTheta * (xp - xc) +
+						cosTheta * (yp - yc) + yc)
+				};
+				return newPoint;
+			}
+			
+			function rand() {
+				return Math.random();
+			}
+		</script>
+	</head>
+	<body onload="initialise();">
+		<canvas id="canvas"></canvas>
+		<img id="cah" src="calvin_and_hobbes.png"/>
+	</body>
+</html>

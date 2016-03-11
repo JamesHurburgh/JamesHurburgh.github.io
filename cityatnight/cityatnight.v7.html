@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>City by Night</title>
+		<script src="zhttp://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<style>
+			body
+			{
+				margin: 0;
+				padding: 0;
+			}
+			html,body { height: 100%; overflow: hidden; }
+		</style>
+		<script> <!-- the art -->
+			var canvas, context;
+			var objects = new function(){};
+			var ticker;
+			var celestialRotation = 0;
+			
+			// System Parameters
+			var params = {
+				FPS: 25, 						// frames per second
+				animationSpeed: 1,	 			// ticks per frame
+				celestialRotationSpeed: 0.02, 	// degrees per tick
+				cloudMovementSpeed: 0.5, 		// pixels per tick
+				cloudDispersionRate: 0.1,		// pixels per tick
+				lightSwitchChance: 0.0002,		// chance out of 1 that the light will switch
+				cloudsInClusterFactor: 40,
+			}
+			
+			function initialise() {
+				canvas = document.getElementById('canvas'),
+						context = canvas.getContext('2d');
+
+				// resize the canvas to fill browser window dynamically
+				window.addEventListener('resize', resizeCanvas, false);
+
+				function resizeCanvas() {
+						canvas.width = window.innerWidth;
+						canvas.height = window.innerHeight;
+
+						/**
+						 * Your drawings need to be inside this function otherwise they will be reset when 
+						 * you resize the browser window and the canvas goes will be cleared.
+						 */ 
+						 
+					objects["stars"] = createStars();
+					objects["buildings"] = createBuildings();
+					objects["cloudCluster"] = createCloudCluster();
+					objects["cloudCluster"].x = objects["cloudCluster"].x + rand() * canvas.width;
+					clearInterval(ticker);
+					ticker = window.setInterval("draw()", 1000 / params.FPS);
+					//draw();
+				}
+				resizeCanvas();
+			}
+
+			function draw() {				
+				drawSky();
+				drawStars();
+				drawHorizon();
+				
+				drawCloudClusters();
+				drawBuildings();
+				
+				animateStars();
+				animateClouds();
+				animateLights();
+			}
+			
+			
+			/* START: Create functions */
+			function createCloudCluster() {
+				size = (canvas.width + canvas.height) / 50;
+				cloudCluster = {
+					x: canvas.width * -0.1 + rand() * canvas.width * -0.3,
+					y: rand() * canvas.height / 3 + canvas.height / 6,
+					r: rand() * size + size / 2,
+					clouds: new Array()
+				};
+				numberOfCloudsInCluster = rand() * params.cloudsInClusterFactor + params.cloudsInClusterFactor;
+				for(var i = 0; i < numberOfCloudsInCluster; i++) {			
+					cloudCluster.clouds[i] = createCloud();
+					for(var j = 0; j < 20; j++) {
+						animateCloud(cloudCluster.clouds[i]);
+					}
+				}
+				
+				return cloudCluster;
+			}
+			
+			function createCloud() {
+				colour = Math.floor(rand()*50+50);
+				cloud = {
+					x: Math.floor(rand()*100-50),
+					y: Math.floor(rand()*20-10),
+					r: Math.floor(rand()*30-15),
+					colour1: 'rgba('+colour+', '+colour+', '+colour+', 0.100)',
+					colour2: 'rgba('+colour+', '+colour+', '+colour+', 0.000)'
+				};
+				return cloud;
+			}
+						
+			function createStars() {
+				cW = canvas.width;
+				cH = canvas.height;
+				var pixels = cW * cH;
+				
+				var numberOfStars = (pixels/1000)+(rand()*(pixels/2000));
+				var stars = new Array();
+				
+				for(var i = 0; i < numberOfStars; i++)
+				{
+					stars[i] = {
+						x: rand()*cW*2-(cW/2),
+						y: rand()*cH*4-(cH*2),
+						size: rand()*3,
+						brightness: rand()*0.5+0.5,
+						twinkle: rand()*0.4
+					};
+				}
+				return stars;
+			}
+			
+			function createBuildings() {
+				cW = canvas.width;
+				cH = canvas.height;
+				
+				var numberOfBuildings = cW/100+(rand()*2-1);
+				var buildings = new Array();
+				
+				for(var i = 0; i < numberOfBuildings; i++)
+				{
+					var darkness = Math.floor(rand()*30);
+				
+					building = {
+						width: rand()*50+50,
+						height: rand()*cH/2+cH/8,
+						gapBefore: rand()*10+5,
+						gapAfter: rand()*10+5,
+						windowWidth: rand()*4+4,
+						windowHeight: rand()*2+2,
+						windowGapH: rand()*4+2,
+						windowGapV: rand()*2+4,
+						colour: 'rgb('+darkness+', '+darkness+', '+darkness+')'
+					};
+					
+					building["numberOfRows"] = Math.floor(building.height / (building.windowHeight + building.windowGapV));
+					building["numberOfColumns"] = Math.floor(building.width / (building.windowWidth + building.windowGapH));
+					// adjsut the gaps
+					building["windowGapV"] = (building.height - (building.numberOfRows * building.windowHeight)) / building.numberOfRows;
+					building["windowGapH"] = (building.width - (building.numberOfColumns * building.windowWidth)) / building.numberOfColumns;
+					building["lights"] = new Array();
+					
+					for(var rowI = 0; rowI < building.numberOfRows; rowI++) {
+						windowY = ((building.windowHeight+building.windowGapV)*rowI)+(building.windowHeight+building.windowGapV/2);
+						for(var colI = 0; colI < building.numberOfColumns; colI++) {
+							windowX = ((building.windowWidth+building.windowGapH)*colI)+((building.windowWidth+building.windowGapH)/2);
+							light = {
+								on: (rand()<0.3),
+								colour: 'rgb(255, 255, ' + Math.floor(rand()*200+55) + ')',
+								x: windowX,
+								y: windowY,
+								pattern: 'randomSwitch'
+							};
+							building["lights"][building["lights"].length] = light;
+						}
+					}					
+					
+					buildings[i] = building;
+					
+				}
+				
+				return buildings;
+			}
+			/* END: Create functions */
+			
+			/* START: Animate functions */
+			function animateStars() {
+				celestialRotation = celestialRotation + (params.animationSpeed * params.celestialRotationSpeed);		
+			}
+			
+			function animateClouds() {
+				cloudCluster = objects["cloudCluster"];
+				animateCloudCluster(cloudCluster);
+			}
+
+			function animateCloudCluster(cloudCluster) {
+				cloudCluster.x = cloudCluster.x + (params.animationSpeed * params.cloudMovementSpeed);
+				if(cloudCluster.x > canvas.width * 1.1) {
+					objects["cloudCluster"] = createCloudCluster();
+				} else{
+					for(var i = 0; i < cloudCluster.clouds.length; i++) {
+						var cloud = cloudCluster.clouds[i];
+						animateCloud(cloud);					
+					}
+				}
+			}
+			
+			function animateCloud(cloud) {
+				cloudDispersionRate = (params.animationSpeed * params.cloudDispersionRate)
+				cloud.x = cloud.x + rand() * cloudDispersionRate * 2 - cloudDispersionRate;
+				cloud.y = cloud.y + rand() * cloudDispersionRate * 2 - cloudDispersionRate;
+			}
+			
+			function animateLights() {
+				var buildings = objects["buildings"];
+				for(var bi = 0; bi < buildings.length; bi++)
+				{
+					building = buildings[bi];
+					for(var i = 0; i < building["lights"].length; i++) {
+						light = building["lights"][i];
+						if(light.pattern == 'randomSwitch') {
+							if(rand() < params.lightSwitchChance * params.animationSpeed) {
+								building["lights"][i].on = !building["lights"][i].on;
+							}
+						}
+						if(light.pattern == 'alternate') {
+							building["lights"][i].on = !building["lights"][i].on;
+						}
+					}
+				}
+				
+			}
+			/* END: Animate functions */
+			
+			/* START: Draw functions */
+			function drawBuildings() {			
+				var horizon = canvas.height*3/4;
+				var buildings = objects["buildings"];
+				var xPos = 0;
+				for(var i = 0; i < buildings.length; i++)
+				{
+					building = buildings[i];
+					drawBuilding(buildings[i], xPos, horizon);
+					// update the xPos so we know where to draw the next building
+					xPos = xPos + building.gapBefore + building.width + building.gapAfter;					
+				}
+			}
+			
+			function drawSky() {
+				cW = canvas.width;
+				cH = canvas.height;
+				
+				grd = context.createLinearGradient(cW, 0.000, cW, cH);
+				// Add colors
+				grd.addColorStop(0.000, 'rgba(0, 0, 0, 1.000)');
+				grd.addColorStop(0.600, 'rgba(28, 0, 58, 1.000)');
+				
+				context.fillStyle = grd;
+				context.fillRect(0,0,cW,cH);
+			}
+			
+			function drawStars() {
+				var stars = objects["stars"];
+				for(var i = 0; i < stars.length; i++)
+				{
+					drawStar(stars[i]);
+				}
+			}
+			
+			function drawHorizon() {
+				var horizon = canvas.height*3/4;
+				
+				context.fillStyle = "black";
+				context.fillRect(0,horizon,cW,cH);				
+			}
+			
+			function drawCloudClusters() {
+				drawCloudCluster(objects["cloudCluster"]);
+			}
+			
+			function drawCloudCluster(cloudCluster) {
+				for(var i = 0; i < cloudCluster.clouds.length; i++) {	
+					var cloud = cloudCluster.clouds[i];
+					drawCloud(cloud, cloudCluster.x, cloudCluster.y, cloudCluster.r);					
+				}
+			}
+			
+			function drawCloud(cloud, x, y, r) {
+				ccX = x + cloud.x;
+				ccY = y + cloud.y;
+				cR = r + cloud.r;
+				
+				cx0 = ccX;
+				cy0 = ccY;
+				cr0 = 0;
+				cx1 = ccX;
+				cy1 = ccY;
+				cr1 = cR;
+				bbSize = cR * 2; // Bounding Box size
+				grd = context.createRadialGradient(cx0, cy0, cr0, cx1, cy1, cr1);
+					  
+				// Add colors
+				grd.addColorStop(0.000, cloud.colour1);
+				grd.addColorStop(1.000, cloud.colour2);
+
+				// Fill with gradient
+				context.fillStyle = grd;
+				context.fillRect(ccX - cR, ccY - cR, bbSize, bbSize);
+			}
+			
+			function drawStar(star) {
+				var brightness = rand()*star.twinkle-(star.twinkle/2)+star.brightness; // Randomise the brightness to make the stars twinkle
+				var newPoint = rotatePoint(star.x, star.y, canvas.width/2, canvas.height, celestialRotation); // adjust x and y for celestial rotation
+				context.fillStyle = 'rgba(255, 255, 255, '+brightness+')';
+				context.fillRect(newPoint.x,newPoint.y,star.size,star.size);        
+			}
+			
+			function drawBuilding(building, x, y) {
+				context.fillStyle = building.colour;
+				buildingX = x+building.gapBefore;
+				context.fillRect(buildingX,y-building.height,building.width,building.height);   
+				
+				// draw lights
+				for(var i = 0; i < building["lights"].length; i++) {
+					light = building["lights"][i];
+					drawLight(buildingX+light.x, y-light.y, building.windowWidth, building.windowHeight, light.on, light.colour);
+				}
+			}
+			
+			function drawLight(x,y,w,h,isOn, colour) {
+				if(isOn) {
+					context.fillStyle = colour;
+				} else {
+					context.fillStyle = 'black';
+				}
+				context.fillRect(x-w/2, y-h/2, w, h);
+			}
+			/* END: Draw functions */
+			
+			/* START: Extra functions */
+			function rotatePoint(xp, yp, xc, yc, angleInDegrees) {
+				angleInRadians = angleInDegrees * (Math.PI / 180);
+				cosTheta = Math.cos(angleInRadians);
+				sinTheta = Math.sin(angleInRadians);
+				var newPoint = {
+					x: (cosTheta * (xp - xc) -
+						sinTheta * (yp - yc) + xc),
+					y: (sinTheta * (xp - xc) +
+						cosTheta * (yp - yc) + yc)
+				};
+				return newPoint;
+			}
+			
+			function rand() {
+				return Math.random();
+			}
+			/* END: Extra functions */
+		</script>
+	</head>
+	<body onload="initialise();">
+		<canvas id="canvas"></canvas>
+	</body>
+</html>
