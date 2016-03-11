@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="sightwords.js"></script>
+		<style>
+			h1, h2 { font-family: verdana, sans-serif; }
+			
+			#wordListContainer, #setListContainer, #buttonContainer {
+				width:150px; 
+			}
+			
+			#wordContainer {
+				width:600px;
+			}
+			
+			.list {
+				height:800px;
+				overflow: scroll;
+			}
+			
+			.container {
+				float: left;
+				border-radius: 5px;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				border: 1px solid #000000;
+				margin: 2px;
+				padding: 10px;
+			}
+			
+			#word {
+				font-family: verdana, sans-serif;
+				font-size: 70px;
+				margin: 2px;
+				padding: 50px;
+				text-align: center;				
+			}
+			
+			#wordList .word {
+				font-family: verdana, sans-serif;
+				font-size: 14px;
+				margin: 2px;
+				padding: 5px;
+			}
+			.set {
+				border-radius: 0px 20px 20px 0px;
+				-moz-border-radius: 0px 20px 20px 0px;
+				-webkit-border-radius: 0px 20px 20px 0px;
+				border: 1px solid #000000;
+				font-weight: bold;
+				font-size: 14px;
+				font-family: verdana, sans-serif;
+				line-height: 1;
+				margin: 2px;
+				padding: 5px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body onload="initialise();">
+		<h1>Sight Words</h1>
+		<div id="setListContainer" class="container list">
+			<h2>Set List</h2>
+			<div id="setList"></div>
+		</div>
+		<div id="wordListContainer" class="container list">
+			<h2>Word List</h2>
+			<div id="wordList"></div>
+		</div>
+		<div id="wordContainer" class="container">
+			<h2>Word</h2>
+			<div id="word"></div>
+		</div>
+		<div id="buttonContainer" class="container">
+			<h2>Functions</h2>
+			<button id="pickRandomWordButton">Random</button>
+		</div>
+	</body>
+</html>

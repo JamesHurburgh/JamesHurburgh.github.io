@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Sight Words</title>
+		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="http://responsivevoice.org/responsivevoice/responsivevoice.js"></script>
+		<script src="http://code.jquery.com/jquery-git2.js"></script>
+		
+		<!-- BootStrap 
+		<!-- Latest compiled and minified CSS 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<!-- Optional theme -->
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> 
+		<link rel="stylesheet" href="https://bootswatch.com/readable/bootstrap.min.css">
+		Latest compiled and minified JavaScript 
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		-->
+		
+		<script> <!-- words -->
+		var setLists = [
+		{"setListName":"Magic", //From: http://year4c.edublogs.org/files/2014/04/Sight-words-0-800-2cvvp94.pdf
+			"sets" : [
+			{"setNumber":"1", "setName":"gold", "colorHex": "FFD700",  "wordList": ["a","I","it","the","and","in","of","to","be","is","that","was"]},
+			{"setNumber":"2", "setName":"red", "colorHex": "FF0000",  "wordList": ["all","but","he","on","they","are","for","her","one","we","as","had","his","said","with","at","have","not","so","you"]},
+			{"setNumber":"3", "setName":"blue", "colorHex": "0000FF",  "wordList": ["an","do","if","my","or","by","go","me","no","up"]},
+			{"setNumber":"4", "setName":"green", "colorHex": "00FF00",  "wordList": ["big","has","off","see","can","him","old","she","did","new","our","two","get","now","out","who"]},
+			{"setNumber":"5", "setName":"orange", "colorHex": "FFA500",  "wordList": ["back","from","made","this","been","into","much","well","came","just","over","went","down","like","them","when"]},
+			{"setNumber":"6", "setName":"indigo", "colorHex": "4B0082",  "wordList": ["call","make","some","what","come","must","then","will","here","only","were","your"]},
+			{"setNumber":"7", "setName":"violet", "colorHex": "EE82EE",  "wordList": ["about","could","little","more","right","there","where","before","first","look","other","their","want","which"]},
+			{"setNumber":"8", "setName":"pink", "colorHex": "FFC0CB",  "wordList": ["after","eat","good","play","sing","am","five","help","ran","sit","boy","fly","home","read","think","day","girl","jump","saw","us"]},
+			{"setNumber":"9", "setName":"purple", "colorHex": "A020F0",  "wordList": ["again","far","kind","own","these","ask","find","left","room","too","best","give","man","say","walk","bring","how","mother","step","wish"]},
+			{"setNumber":"10", "setName":"aqua", "colorHex": "00FFFF",  "wordList": ["always","fast","keep","people","thing","away","four","let","round","tree","bird","going","many","school","water","dog","hand","night","take","work"]},
+			{"setNumber":"11", "setName":"lime", "colorHex": "00FF00",  "wordList": ["another","father","know","put","three","bad","found","live","run","under","black","got","may","should","white","don't","head","once","tell","would"]},
+			{"setNumber":"12", "setName":"lemon", "colorHex": "FFF44F",  "wordList": ["any","fell","last","red","time","because","gave","long","sat","very","blue","green","morning","soon","why","every","house","open","then","year"]},
+			{"setNumber":"13", "setName":"ruby", "colorHex": "E0115F",  "wordList": ["years","any","cold","dad","mum","new","playing","presents","tell","trees","white","along","best","couldn't","ever","hot","I'm","nice","pool","road"]},
+			{"setNumber":"14", "setName":"rose", "colorHex": "FF007F",  "wordList": ["walked","walking","children","days","family","gold","light","coming","friends","looked","run","sister","also","being","brown","dark","fast","left","outside","ten"]},
+			{"setNumber":"15", "setName":"scarlet", "colorHex": "FF2400",  "wordList": ["that's","animals","been","feet","ground","help","Australia","its","make","six","sleep","sometimes","wish","how","baby","great","inside","men","party","Saturday"]},
+			{"setNumber":"16", "setName":"crimson", "colorHex": "DC143C",  "wordList": ["say","always","asked","decided","few","land","Mr","myself","red","than","watch","arriver","better","different","happened","lived","lunch","most","near","opened"]},
+			{"setNumber":"17", "setName":"garnet", "colorHex": "970B23",  "wordList": ["should","woke","year","city","even","gave","hair","holidays","hospital","hour","lovely","minutes","open","pink","ship","slay","under","ago","dead","died"]},
+			{"setNumber":"18", "setName":"teal", "colorHex": "008080",  "wordList": ["boys","castle","everything","flowers","flying","food","grass","hundred","moon","rabbit","ready","round","running","slowly","Cairns","teacher","top","television","used","wait"]},
+			{"setNumber":"19", "setName":"mint", "colorHex": "3EB489",  "wordList": ["decide","comes","dogs","earth","eight","enough","find","finished","hear","kind","mountains","park","purple","side","splash","stayed","uncle","across","alive","against"]},
+			{"setNumber":"20", "setName":"peacock", "colorHex": "004958",  "wordList": ["behind","everybody","full","game","goes","lightning","money","oh","picked","planet","race","ride","right","set","seven","soccer","stop","stopper","Summer","Sunday"]},
+			{"setNumber":"21", "setName":"olive", "colorHex": "808000",  "wordList": ["boat","caught","country","begin","eyes","face","high","hit","lady","let","life","looking","lots","nothing","own","second","seen","upon","wasn't","won"]},
+			{"setNumber":"22", "setName":"emerald", "colorHex": "50C878",  "wordList": ["favourite","felt","getting","give","hard","ice","might","rocks","snow","strange","swim","thought","till","tried","until","want","week","weeks","air","birds"]},
+			{"setNumber":"23", "setName":"turquoise", "colorHex": "40E0D0",  "wordList": ["wanted","asleep","nearly","noises","live","cost","broke","breakfast","named","dropped","pollution","sound","tired","street","hobby","hours","king","huge","cars","catch"]},
+			{"setNumber":"24", "setName":"cobalt", "colorHex": "0047AB",  "wordList": ["colour","each","everyone","front","gone","ghost","head","having","I'd","keep","hole","knew","bush","leave","warm","leaves","brought","twenty","yes","call"]},
+			{"setNumber":"25", "setName":"sapphire", "colorHex": "0F52BA",  "wordList": ["young","bring","colours","egg","cats","eating","finally","everywhere","makes","liked","noise","past","picnic","quiet","played","really","same","yesterday","wonder","sand"]},
+			{"setNumber":"26", "setName":"topaz", "colorHex": "FFC87C",  "wordList": ["rainbow","quite","rest","sat","rock","scared","zoo","seemed","weather","sisters","sick","window","yours","bag","write","bad","child","book","dream","far"]},
+			{"setNumber":"27", "setName":"navy", "colorHex": "000080",  "wordList": ["hurt","I'll","church","born","kept","lamp","killed","riding","legs","milk","sunny","thank","wall","start","winter","soft","towards","story","there's","turned"]},
+			{"setNumber":"28", "setName":"buttercup", "colorHex": "F5BB0C",  "wordList": ["animal","twelve","bath","real","sits","space","early","shark","doing","watched","bedroom","drink","stop","case","began","foot","show","books","excited","grey"]},
+			{"setNumber":"29", "setName":"amber", "colorHex": "FFBF00",  "wordList": ["ocean","anything","may","babies","pretty","together","someone","kill","deep","use","read","likes","orange","pictures","sir","fishing","Easter","became","shop","team"]},
+			{"setNumber":"30", "setName":"canary", "colorHex": "FFEF00",  "wordList": ["wear","angels","done","sudden","bear","goal","birthday","bottom","shopping","late","balls","girls","fly","work","feel","stairs","eggs","class","fresh","reach"]},
+			{"setNumber":"31", "setName":"mustard", "colorHex": "FFDB58",  "wordList": ["holiday","writing","middle","voice","please","jump","allowed","leg","giant","try","believe","station","Santa","helped","train","taken","witch","sincerely","making","cousin"]},
+			{"setNumber":"32", "setName":"gold", "colorHex": "FFD700",  "wordList": ["wonderful","body","letter","rocket","a lot","England","must","fifteen","barbecue","jumped","quickly","beauty","werewolf","yellow","alone","creature","area","match","feel","these"]},
+			{"setNumber":"33", "setName":"lavender", "colorHex": "E6E6FA",  "wordList": ["box","hands","sitting","mouth","packed","I've","nine","idea","faster","learn","sing","hoe","kicked","landed","minute","witches","magician","feeling","gate","looks"]},
+			{"setNumber":"34", "setName":"amethyst", "colorHex": "9966CC",  "wordList": ["buy","part","miles","candle","daddy","clear","sit","evil","Australian","smoke","pushed","barn","months","remember","dance","fall","cream","puppy","music","forest"]},
+			{"setNumber":"35", "setName":"mauve", "colorHex": "E0B0FF",  "wordList": ["funny","tent","dinosaurs","fight","ate","clothes","blew","chasing","Canberra","cup","both","miss","places","lights","arm","reached","storm","heart","Melbourne","bit"]},
+			{"setNumber":"36", "setName":"lilac", "colorHex": "C8A2C8",  "wordList": ["classroom","die","talking","bring","sweet","dancing","trip","climbed","wide","farm","football","such","Christ","dressed","games","dollars","close","wood","blanket","turn"]},
+			{"setNumber":"37", "setName":"magenta", "colorHex": "FF00FF",  "wordList": ["cut","magic","death","free","instead","lion","clouds","knows","island","working","mind","lonely","town","guinea","hand","America","cry","watching","darkness","drive"]},
+			{"setNumber":"38", "setName":"fuscia", "colorHex": "FF00FF",  "wordList": ["misses","floor","pony","blowing","cruel","jet","dinner","those","finish","hold","bought","wings","howling","North","dirty","ask","sure","ones","bigger","army"]},
+			{"setNumber":"39", "setName":"cranberry", "colorHex": "9F000F",  "wordList": ["number","fed","trouble","answer","large","mud","hide","fighting","nineteen","he's","hate","person","glad","flowing","doll","does","times","brothers","pup","art"]},
+			{"setNumber":"40", "setName":"salmon", "colorHex": "FA8072",  "wordList": ["waves","bell","policeman","cook","awake","upstairs","steps","without","truck","couple","especially","fear","parents","dress","terrible","races","age","orphanage","can't","buggies"]},
+			{"setNumber":"41", "setName":"flamingo", "colorHex": "FC8EAC",  "wordList": ["gun","axe","frightened","circus","slept","feed","roof","claws","lives","farmer","mad","wet","driver","palace","machine","lucky","ships","closer","you're","eleven"]},
+			{"setNumber":"42", "setName":"watermelon", "colorHex": "FC6C85",  "wordList": ["entrance","radio","paper","cents","nature","moment","pair","enormous","married","rather","raining","paint","plant","monkeys","others","river","safe","others","nobody","picture"]}
+			]},
+		{"setListName":"Dolch", //From: http://bogglesworldesl.com/dolch/lists.htm
+			"sets" :[
+			{"setNumber":"1", "setName":"Pre-primer", "colorHex": "FF0000",  "wordList": ["a","and","away","big","blue","can","come","down","find","for","funny","go","help","here","I","in","is","it","jump","little","look","make","me","my","not","one","play","red","run","said","see","the","three","to","","two","up","we","where","yellow","you"]},
+			{"setNumber":"2", "setName":"Primer", "colorHex": "00FF00",  "wordList": ["all","am","are","at","ate","be","black","brown","but","came","did","do","eat","four","get","good","have","he","into","like","must","new","no","now","on","our","out","please","pretty","ran","ride","saw","say","she","so","soon","that","there","they","this","too","under","want","was","well","went","what","white","who","will","with","yes"]},
+			{"setNumber":"3", "setName":"Grade-One", "colorHex": "0000FF",  "wordList": ["after","again","an","any","ask","as","by","could","every","fly","from","give","going","had","has","her","him","his","how","just","know","let","live","may","of","old","once","open","over","put","round","some","stop","take","thank","them","then","think","walk","were","when"]},
+			{"setNumber":"4", "setName":"Grade-Two", "colorHex": "EE82EE",  "wordList": ["always","around","because","been","before","best","both","buy","call","cold","does","don’t","fast","first","five","found","gave","goes","green","its","made","many","off","or","pull","read","right","sing","sit","sleep","tell","their","these","those","upon","us","use","very","wash","which","why","wish","work","would","write","your"]},
+			{"setNumber":"5", "setName":"Grade-Three", "colorHex": "0047AB",  "wordList": ["about","better","bring","carry","clean","cut","done","draw","drink","eight","fall","far","full","got","grow","hold","hot","hurt","if","keep","kind","laugh","light","long","much","myself","never","only","own","pick","seven","shall*","show","six","small","start","ten","today","together","try","warm"]}
+		]},
+		{"setListName":"Fry", //From: http://www.k12reader.com/worksheet/fry-words-complete-list/view/
+			"sets" : [ 
+			{"setNumber":"1", "setName":"TheFirstHundred-List1", "colorHex": "00FF00",  "wordList": ["the","of","and","a","to","in","is","you","that","it","he","was","for","on","as","with","his","they","I","at","be","this","have","from",]},
+			{"setNumber":"2", "setName":"TheFirstHundred-List2", "colorHex": "00FF00",  "wordList": ["or","one","had","by","words","but","not","what","all","were","we","when","your","can","there","use","an","each","which","she","do","how","their","if",]},
+			{"setNumber":"3", "setName":"TheFirstHundred-List3", "colorHex": "00FF00",  "wordList": ["will","up","other","about","out","many","then","them","these","so","some","her","would","make","him","into","time","has","look","two","more","write","go","see",]},
+			{"setNumber":"4", "setName":"TheFirstHundred-List4", "colorHex": "00FF00",  "wordList": ["number","no","way","could","people","my","than","first","water","been","called","who","oil","sit","find","long","down","day","did","get","come","made","may","part",]},
+			{"setNumber":"5", "setName":"TheSecondHundred-List1", "colorHex": "0000FF",  "wordList": ["over","new","sound","take","only","little","work","know","place","years","live","me","back","give","very","after","things","our","just","name","good","sentence","man","think",]},
+			{"setNumber":"6", "setName":"TheSecondHundred-List2", "colorHex": "0000FF",  "wordList": ["say","great","where","help","through","much","before","line","right","too","means","old","any","same","boy","follow","came","want","show","also","around","form","three","small",]},
+			{"setNumber":"7", "setName":"TheSecondHundred-List3", "colorHex": "0000FF",  "wordList": ["set","put","end","does","another","well","large","must","big","even","such","because","turn","here","ask","went","men","read","need","land","different","home","us","move",]},
+			{"setNumber":"8", "setName":"TheSecondHundred-List4", "colorHex": "0000FF",  "wordList": ["try","kind","hand","picture","again","change","off","play","spell","air","away","animal","house","point","letter","mother","answer","found","study","still","learn","should","America","world",]},
+			{"setNumber":"9", "setName":"TheThirdHundred-List1", "colorHex": "F68E2A",  "wordList": ["high","every","near","add","food","between","own","below","country","plant","last","school","father","keep","never","start","city","earth","eyes","light","thought","head","under","story",]},
+			{"setNumber":"10", "setName":"TheThirdHundred-List2", "colorHex": "F68E2A",  "wordList": ["saw","left","don’t","few","while","along","might","close","something","seem","next","hard","open","example","life","always","those","both","paper","together","got","group","often","run",]},
+			{"setNumber":"11", "setName":"TheThirdHundred-List3", "colorHex": "F68E2A",  "wordList": ["important","until","children","side","feet","car","mile","night","walk","white","sea","began","grow","took","four","carry","state","once","book","hear","stop","without","second","late",]},
+			{"setNumber":"12", "setName":"TheThirdHundred-List4", "colorHex": "F68E2A",  "wordList": ["miss","idea","enough","eat","face","watch","far","Indian","real","almost","let","above","girl","sometimes","cut","young","talk","soon","list","song","being","leave","family","it’s",]},
+			{"setNumber":"13", "setName":"TheFourthHundred-List1", "colorHex": "9B709B",  "wordList": ["body","music","color","stand","sun","questions","fish","area","mark","dog","horse","birds","problem","complete","knew","since","ever","piece","told","usually","didn’t","friends","easy","heard",]},
+			{"setNumber":"14", "setName":"TheFourthHundred-List2", "colorHex": "9B709B",  "wordList": ["order","red","door","sure","become","top","ship","across","today","during","short","better","best","however","hours","black","products","happened","whole","measure","remember","early","waves","reached",]},
+			{"setNumber":"15", "setName":"TheFourthHundred-List3", "colorHex": "9B709B",  "wordList": ["listen","wind","rock","space","covered","fast","several","hold","himself","toward","five","step","morning","passed","true","hundred","against","pattern","numeral","table","north","slowly","money","map",]},
+			{"setNumber":"16", "setName":"TheFourthHundred-List4", "colorHex": "9B709B",  "wordList": ["farm","pulled","draw","voice","seen","cold","cried","plan","notice","south","sing","war","ground","fall","town","I’ll","unit","figure","certain","field","travel","wood","fire","upon",]},
+			{"setNumber":"17", "setName":"TheFifthHundred-List1", "colorHex": "FFD700",  "wordList": ["done","English","road","half","ten","fly","gave","box","finally","wait","correct","oh","quickly","person","shown","minutes","strong","verb","stars","front","feel","fact","inches","street",]},
+			{"setNumber":"18", "setName":"TheFifthHundred-List2", "colorHex": "FFD700",  "wordList": ["decided","contain","course","surface","produce","building","ocean","class","note","nothing","rest","carefully","scientists","inside","stay","green","known","island","week","less","machine","base","ago","stood",]},
+			{"setNumber":"19", "setName":"TheFifthHundred-List3", "colorHex": "FFD700",  "wordList": ["plane","system","behind","ran","round","boat","game","force","brought","understand","warm","common","bring","explain","though","language","shape","deep","thousands","yes","clear","equation","yet","government",]},
+			{"setNumber":"20", "setName":"TheFifthHundred-List4", "colorHex": "FFD700",  "wordList": ["filled","heat","full","hot","check","object","am","rule","among","noun","power","cannot","able","six","dark","ball","material","special","heavy","fine","pair","circle","include","built",]},
+			{"setNumber":"21", "setName":"TheSixthHundred-List1", "colorHex": "00FF00",  "wordList": ["can’t","matter","square","syllables","perhaps","bill","felt","suddenly","test","direction","center","farmers","ready","anything","general","energy","subject","Europe","moon","region","return","believe","dance","members",]},
+			{"setNumber":"22", "setName":"TheSixthHundred-List2", "colorHex": "00FF00",  "wordList": ["picked","simple","cells","paint","mind","love","cause","rain","exercise","eggs","train","blue","wish","drop","window","difference","distance","heart","site","sum","summer","wall","forest","probably",]},
+			{"setNumber":"23", "setName":"TheSixthHundred-List3", "colorHex": "00FF00",  "wordList": ["legs","sat","main","winter","wide","written","length","reason","kept","interest","arms","brother","race","present","store","job","edge","past","sign","record","finished","discovered","wild","happy",]},
+			{"setNumber":"24", "setName":"TheSixthHundred-List4", "colorHex": "00FF00",  "wordList": ["beside","gone","sky","grass","million","west","lay","weather","root","instruments","meet","third","months","paragraph","represent","soft","whether","clothes","flowers","shall","teacher","held","describe","drive",]},
+			{"setNumber":"25", "setName":"TheSeventhHundred-List1", "colorHex": "0000FF",  "wordList": ["cross","speak","solve","appear","metal","son","either","ice","sleep","village","factors","result","jumped","snow","care","floor","hill","pushed","baby","buy","century","outside","everything","tall",]},
+			{"setNumber":"26", "setName":"TheSeventhHundred-List2", "colorHex": "0000FF",  "wordList": ["already","instead","phrase","soil","bed","copy","free","hope","spring","case","laughed","nation","quite","type","temperature","bright","lead","everyone","method","section","lake","iron","within","dictionary",]},
+			{"setNumber":"27", "setName":"TheSeventhHundred-List3", "colorHex": "0000FF",  "wordList": ["hair","age","amount","scale","pounds","although","per","broken","moment","tiny","possible","gold","milk","quiet","lot","stone","act","build","middle","speed","count","consonant","someone","sail",]},
+			{"setNumber":"28", "setName":"TheSeventhHundred-List4", "colorHex": "0000FF",  "wordList": ["rolled","bear","wonder","smiled","angle","fraction","Africa","killed","melody","bottom","trip","hole","poor","let’s","surprise","French","died","beat","exactly","remain","dress","cat","couldn’t","fingers",]},
+			{"setNumber":"29", "setName":"TheEighthHundred-List1", "colorHex": "F68E2A",  "wordList": ["row","least","catch","climbed","wrote","shouted","continued","itself","else","plains","gas","England","burning","design","foot","law","ears","glass","you’re","grew","skin","valley","cents","key",]},
+			{"setNumber":"30", "setName":"TheEighthHundred-List2", "colorHex": "F68E2A",  "wordList": ["president","brown","trouble","cool","cloud","lost","sent","symbols","wear","bad","save","experiment","engine","alone","east","choose","single","touch","information","express","mouth","yard","equal","decimal",]},
+			{"setNumber":"31", "setName":"TheEighthHundred-List3", "colorHex": "F68E2A",  "wordList": ["yourself","control","practice","report","straight","rise","statement","stick","party","seeds","suppose","woman","coast","bank","wire","pay","clean","visit","bit","whose","received","garden","please","strange",]},
+			{"setNumber":"32", "setName":"TheEighthHundred-List4", "colorHex": "F68E2A",  "wordList": ["caught","fell","team","God","captain","direct","ring","serve","child","desert","increase","history","cost","maybe","separate","break","uncle","hunting","flow","lady","students","human","art","feeling",]},
+			{"setNumber":"33", "setName":"TheNinthHundred-List1", "colorHex": "9B709B",  "wordList": ["supply","corner","electric","insects","crops","tone","hit","sand","doctor","provide","thus","won’t","cook","bones","board","modern","compound","mine","wasn’t","fit","addition","belong","safe","soldiers",]},
+			{"setNumber":"34", "setName":"TheNinthHundred-List2", "colorHex": "9B709B",  "wordList": ["guess","silent","trade","rather","compare","crowd","poem","enjoy","elements","indicate","except","expect","flat","seven","sense","string","blow","famous","value","wings","movement","pole","exciting","branches",]},
+			{"setNumber":"35", "setName":"TheNinthHundred-List3", "colorHex": "9B709B",  "wordList": ["thick","blood","lie","spot","bell","fun","loud","consider","suggested","thin","position","entered","fruit","tied","dollars","send","sight","chief","Japanese","stream","planets","rhythm","eight","science",]},
+			{"setNumber":"36", "setName":"TheNinthHundred-List4", "colorHex": "9B709B",  "wordList": ["major","observe","tube","necessary","weight","meat","lifted","process","army","hat","property","particular","swim","terms","park","sell","shoulder","industry","wash","block","spread","cattle","wife","sharp",]},
+			{"setNumber":"37", "setName":"TheTenthHundred-List1", "colorHex": "FFD700",  "wordList": ["company","radio","we’ll","action","capital","factories","settled","yellow","isn’t","southern","truck","fair","printed","wouldn’t","chance","born","level","triangle","molecules","France","repeated","column","western","church",]},
+			{"setNumber":"38", "setName":"TheTenthHundred-List2", "colorHex": "FFD700",  "wordList": ["sister","oxygen","plural","various","agreed","opposite","wrong","chart","prepared","pretty","solution","fresh","shop","suffix","shoes","actually","nose","afraid","dead","sugar","adjective","fig","office","huge",]},
+			{"setNumber":"39", "setName":"TheTenthHundred-List3", "colorHex": "FFD700",  "wordList": ["gun","similar","death","score","forward","stretched","experience","rose","allow","fear","workers","Washington","Greek","women","led","march","northern","create","British","difficult","match","win","doesn’t","steel",]},
+			{"setNumber":"40", "setName":"TheTenthHundred-List4", "colorHex": "FFD700",  "wordList": ["total","deal","determine","evening","hoe","rope","cotton","apple","details","entire","corn","substances","smell","tools","cows","track","arrived","located","sir","seat","division","effect","underline","view",]}
+		]}
+		];
+		</script>
+
+		<script> <!-- functionality -->
+		
+var selectedSightWordSetList;		
+
+function loadSetListList(){
+	for(var i = 0; i < setLists.length; i++){
+		$("#setListsSelection").append("<option value='" + i + "'>" + setLists[i].setListName + "</option>");
+	}
+}
+
+function loadSetList(){
+	
+	var index = $("#setListsSelection").val();
+	selectedSightWordSetList = setLists[index].sets;
+	
+	clearWord();
+	$("#wordList").empty();
+	$("#setList").empty();
+	
+	for(var i = 0; i < selectedSightWordSetList.length; i++){
+		//$("#setList").append("<div class='set' style='border: 4px solid " + selectedSightWordSetList[i].colorHex + ";' collectionIndex='" + i + "' id='" + selectedSightWordSetList[i].colour + "_set'><label><input type='checkbox' value='" + selectedSightWordSetList[i].colour + "'>" + selectedSightWordSetList[i].colour + "</label></li>");
+		$("#setList").append("<div class='set' style='border: 4px solid #" + selectedSightWordSetList[i].colorHex + ";' collectionIndex='" + i + "' id='" + selectedSightWordSetList[i].setName + "_set'>" + selectedSightWordSetList[i].setName + "</div>");
+		$("#" + selectedSightWordSetList[i].setName + "_set").on("click", function(){
+			loadWordList(this.attributes["collectionindex"].value);
+		});
+	}
+}
+function loadWordList(index){
+	clearWord();
+	$("#wordList").empty();
+	var set = selectedSightWordSetList[index];
+	$("#wordContainer").css("backgroundColor","white");
+	$("#wordContainer").css("backgroundColor", "#"+set.colorHex);
+	for(var i = 0; i < set.wordList.length; i++){
+		$("#wordList").append("<div id='" + set.wordList[i]+"' class='word' word='" + set.wordList[i] + "'>" + set.wordList[i] + "</div>");
+	}
+	$(".word").click(function(){ sayThisWord(this.id) });
+}
+
+function loadVoiceList(){
+	//Populate voice selection dropdown
+	var voicelist = responsiveVoice.getVoices();
+
+	var vselect = $("#voiceselection");
+
+	$.each(voicelist, function() {
+			vselect.append($("<option />").val(this.name).text(this.name));
+	});
+}
+
+function sayWord(){
+	sayThisWord($("#word").html());
+}
+
+function sayThisWord(word){
+	responsiveVoice.speak(word,$('#voiceselection').val());
+}
+
+function displayRandom(){
+		var previous = $("#word").html();
+		var word = previous;
+		while(previous == word){
+			var index = Math.floor($(".word").length * Math.random());
+			word = $(".word")[index].attributes["word"].value;
+		}
+		displayWord(word);
+}
+
+function displayWord(word){
+	$("#word").empty();
+	$("#word").append(word);
+}
+
+function clearWord(){
+	$("#word").empty();
+	$("#word").append("-");
+}
+		
+function initialise(){
+	loadSetListList();
+	loadVoiceList();
+	
+	$("#pickRandomWordButton").click(function(){ displayRandom(); });
+	$("#sayWordButton").click(function(){ sayWord(); });
+	$("#word").click(function(){ sayWord(); });
+	
+	$("#setListsSelection").change(function() { loadSetList(); });
+	loadSetList();
+}
+
+// TODO search for words in list.
+// TODO GAME: Speak word and give a few words as options to choose from
+// TODO GAME: Speak word and get user to spell it
+// TODO Add text versions of how to 'sound out' words
+
+</script>
+
+		<style>
+			// CSS footer: http://cssreset.com/how-to-keep-footer-at-bottom-of-page-with-css/
+			html,
+			body {
+				margin:0;
+				padding:0;
+				height:100%;
+				font-family: verdana, sans-serif;
+			}
+			#wrapper {
+				min-height:100%;
+				position:relative;
+			}
+			#header {
+			}
+			#content {
+				min-height:100%;
+				padding-bottom:30px;   /* Height of the footer element */
+				display: block;
+			}
+			#footer {
+				width:100%;
+				height:30px;
+				position:absolute;
+				bottom:0;
+				left:0;
+				text-align: center;
+			}			
+			
+			h1, h2 { 
+				font-family: verdana, sans-serif; 
+			}
+			
+			#wordListContainer, #setListContainer {				
+				//width: 150px;
+				float: left;
+				overflow-y: scroll;
+				overflow-x: hidden;
+				height: 100%;
+			}
+			
+			#wordContainer {
+				min-width: 150px;
+				min-height: 100px;
+			}
+			
+			#word {
+				margin: 2px;
+				padding: 5px;
+				border-radius: 5px;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				border: 1px solid #000000;	
+				background-Color: white;
+				cursor: pointer;
+			}
+			
+			.list {
+				height: 80%
+				overflow-y: scroll;
+				overflow-x: hidden;
+			}				
+			
+			.container {
+				float: left;
+				border-radius: 5px;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				border: 1px solid #000000;
+				margin: 2px;
+				padding: 5px;
+			}
+			
+			#word {
+				font-family: verdana, sans-serif;
+				font-size: 35px;
+				margin: 2px;
+				padding: 25px;
+				text-align: center;
+				border-radius: 5px;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				border: 1px solid #000000;	
+				background-Color: white;
+				cursor: pointer;
+			}
+			
+			#wordList .word {
+				font-family: verdana, sans-serif;
+				font-size: 14px;
+				margin: 2px;
+				padding: 5px;
+			}
+			.set {
+				border-radius: 0px 20px 20px 0px;
+				-moz-border-radius: 0px 20px 20px 0px;
+				-webkit-border-radius: 0px 20px 20px 0px;
+				border: 1px solid #000000;
+				font-weight: bold;
+				font-size: 14px;
+				font-family: verdana, sans-serif;
+				line-height: 1;
+				margin: 2px;
+				padding: 5px;
+				cursor: pointer;
+			}
+			.btn {
+			  background: #3498db;
+			  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+			  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+			  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+			  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+			  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+			  -webkit-border-radius: 5;
+			  -moz-border-radius: 5;
+			  border-radius: 5px;
+			  font-family: Arial;
+			  color: #ffffff;
+			  font-size: 20px;
+			  padding: 2px 4px 2px 4px;
+			  text-decoration: none;
+			}
+
+			.btn:hover {
+			  background: #3cb0fd;
+			  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+			  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+			  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+			  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+			  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+			  text-decoration: none;
+			}			
+			
+			nav {
+				float: right;
+			}
+			
+			nav ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+						
+			nav li {
+				float: left;
+				display: block;
+				//width: 200px;
+				height: 25px;
+				padding: 5px;
+				vertical-align: center;
+				text-align: center;
+			}
+			
+			.table-body {
+				height: 100%;
+				width: 100%;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.table-header-row h1{
+				float: left;
+			}
+			
+			.table-footer-row {
+				font-family: verdana, sans-serif;
+				text-align: center;
+			}
+		</style>
+		<!-- -->
+	</head>
+	<body onload="initialise();">
+		<table class="table-body">
+			<tbody>
+				<tr class="table-header-row">
+					<td>
+						<h1>Sight Words</h1>
+						<nav>
+							<ul class="nav">
+								<!--<li role="presentation" class="active"><a href="#">Home</a></li>-->
+								<li><select class="form-control" id="setListsSelection"></select></li>
+								<li><select class="form-control" id="voiceselection"></select></li>
+							</ul>
+						</nav>
+					</td>
+				</tr>
+				<tr class="table-content-row">
+					<td>
+						<div id="setListContainer">
+							<h2>Sets</h2>
+							<div id="setList" class="list"></div>
+						</div>
+						<div id="wordListContainer">
+							<h2>Words</h2>
+							<div id="wordList" class="list"></div>
+						</div>
+						<div id="wordContainer" class="container">
+							<h2>Word</h2>
+							<div>
+								<div id="word">-</div>
+								<button class="btn" id="pickRandomWordButton">Random Word</button>
+								<button class="btn" id="sayWordButton">Say Word</button>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr class="table-footer-row">
+					<td>
+						<div>
+							<small>Feedback: <a href="mailto:onegodoneloveoneway@gmail.com">James Hurburgh</a> (onegodoneloveoneway@gmail.com)
+							<!-- Counter Code START --><a href="http://www.e-zeeinternet.com/" target="_blank"><img src="http://www.e-zeeinternet.com/count.php?page=1108277&style=small_black&nbdigits=5" alt="Free Counter" border="0" ></a><br><a href="http://www.e-zeeinternet.com/" title="Free Counter" target="_blank" style="font-family: Geneva, Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; text-decoration: none;">Free Counter</a><!-- Counter Code END -->
+							</small>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
