@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>You are being advertised to</title>
+		<style>
+			html,body { height: 100%; overflow: hidden; margin: 0; padding: 0;}
+		</style>
+		<script> <!-- the art -->
+			var canvas, context;
+			var objects = new function(){};
+			var ticker;
+			var linkText="http://stackoverflow.com";
+			var linkX=5;
+			var linkY=15;
+			var linkHeight=10;
+			var linkWidth;
+			
+			// System Parameters
+			var params = {
+				FPS: 10, 						// frames per second
+				animationSpeed: 1, 			// ticks per frame
+			}
+			
+			function initialise() {
+				canvas = document.getElementById('canvas'),
+						context = canvas.getContext('2d');
+
+				// resize the canvas to fill browser window dynamically
+				window.addEventListener('resize', resizeCanvas, false);
+
+				function resizeCanvas() {
+						canvas.width = window.innerWidth;
+						canvas.height = window.innerHeight;
+
+						/**
+						 * Your drawings need to be inside this function otherwise they will be reset when 
+						 * you resize the browser window and the canvas goes will be cleared.
+						 */ 
+					objects["message"] = new Array(
+						"You are being advertised to.",
+						"Brands that don't need your money,",
+						"Offering to give you hope of dreams",
+						"That you could realise on your own.",
+						"But on the plus side,",
+						"It's untargeted.",
+						"I have no idea what you like.",
+						"This site isn't invading your privacy,",
+						"or trying to track your habits.",
+						"Good.  Old fashion.  Advertising."
+						);
+					
+					objects["words"] = new Array(
+						"Apple",
+						"Google",
+						"Microsoft",
+						"IBM",
+						"Visa",
+						"at&t",
+						"verizon",
+						"Coca-Cola",
+						"McDonald's",
+						"Marlboro",
+						"Tencent",
+						"facebook",
+						"Alibaba Group",
+						"amazon.com",
+						"China Mobile",
+						"GE",
+						"UPS",
+						"Disney",
+						"MasterCard",
+						"Baidu",
+						"ICBC",
+						"vodafone",
+						"SAP",
+						"American Express",
+						"Walmart",
+						"T",
+						"Nike",
+						"Starbucks",
+						"TOYOTA",
+						"Budweiser",
+						"BMW",
+						"HSBC",
+						"RBC",
+						"L'OREAL",
+						"HP",
+						"Subway",
+						"China Construction Bank",
+						"ZARA",
+						"Mercedes-Benz",
+						"ORACLE",
+						"SAMSUNG",
+						"movistar",
+						"TD",
+						"CommonwealthBank",
+						"ExxonMobil",
+						
+						"BUY!",
+						"SALE!",
+						"NOW!",
+						"NEW!",
+						"Best sellers!",
+						"Be the first!",
+						"YOU!",
+						"Guaranteed",
+						"FREE!",
+						"Value",
+						"Amazing!",
+						"EASY!",
+						"SAVE!",
+						"Safe and effective",
+						"Proven",
+						"Instant",
+						"Satisfaction",
+						"Elite",
+						"Premium",
+						"No obligation",
+						"MORE!",
+						"Bargain",
+						"100%"
+						);
+				
+					clearInterval(ticker);
+					ticker = window.setInterval("draw()", 1000 / params.FPS);
+				}
+				resizeCanvas();
+			}
+			function on_click(e) {
+			if(x>=linkX && x <= (linkX + linkWidth) && y<=linkY && y>= (linkY-linkHeight)){
+				window.location = linkText;
+			  }
+			}
+
+			function draw() {
+				cW = canvas.width;
+				cH = canvas.height;
+				context.clearRect(0, 0, cW, cH); //cls
+				
+				context.textAlign = "center";
+				context.font = "10px Arial";
+				for(var i = 0; i < objects["message"].length; i++) {
+					context.fillText(objects["message"][i], cW/2, 10);
+					context.transform(1, 0, 0, 1, 0, 10);
+				}
+				context.setTransform(1, 0, 0, 1, 0, 0);
+				
+				context.font = cH / 6 + 'px Arial';
+				context.fillText(getWord(),cW/2,cH*6.5/12);
+				context.strokeColor = 'white';
+				context.strokeText(getWord(),cW/2,cH*6.5/12);
+			}
+			
+			function getWord() {
+				return objects["words"][Math.floor(rand() * objects["words"].length)];
+			}
+			
+			/* START: Extra functions */			
+			function rand() {
+				return Math.random();
+			}
+			/* END: Extra functions */
+		</script>
+	</head>
+	<body onload="initialise();">
+		<canvas id="canvas"></canvas>
+	</body>
+</html>
