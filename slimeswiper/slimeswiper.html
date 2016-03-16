@@ -1,2 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head><noframes></noframes><noscript></noscript><!-- --><script type="text/javascript" src="//static.websimages.com/static/global/js/webs/usersites/p.js"></script><script type="text/javascript" src="//static.websimages.com/static/global/js/webs/usersites/escort.js"></script><script type="text/javascript">if(typeof(urchinTracker)=='function'){_uacct="UA-230305-2";_udn="none";_uff=false;urchinTracker();}</script>
+	<meta charset="utf-8"/>
+	
+	<title>Slime Swiper</title>
+	<meta name="description" content="Swipe slime to collect and make more slime!"/>
+	<meta name="author" content="James Hurburgh"/>
+	
+	<!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+	<link rel="stylesheet" href="./slimeswiper.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Fredoka+One|Chewy' rel='stylesheet' type='text/css'/>
+		
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/log4javascript/1.4.3/log4javascript.js"></script>
 
-SlimeSwiper!
+    <!--<script src="./box2d.js" type="text/javascript"></script>-->
+	<script src="./slimeswiper.js"></script>
+		
+</head>
+
+<body onload="initialise();">
+	<div id="wrap">
+        <div id="main">
+			<div id="title">Slime Swiper Version <span id="version"/></div>
+			<div id="upgradePanel">
+			    <button id="upgradeSRS" type="button" onclick='upgradeSRS();'>Increase Self Replicating Slime: Cost <span id="SRSCost"></span></button><br/>
+			    <button id="upgradeMoveReaction" type="button" onclick='upgradeMoveReaction();'>More Reactive Slime: Cost <span id="moveReactionCost"></span></button><br/>
+				<button id="upgradeDensity" type="button" onclick='upgradeDensity();'>Lighten slime: Cost <span id="densityCost"></span></button><br/>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="big">Slime on cursor: <span id="slimeVolumeOnCursor"></span></div>
+		<div>Total slime collected: <span id="totalSlimeCollected"></span></div>
+	</div>
+	<div id="cursor" class="slime"/>
+</body>
+</html>
+
