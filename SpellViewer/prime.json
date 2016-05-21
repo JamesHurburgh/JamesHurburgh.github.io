@@ -1,0 +1,1674 @@
+[{
+		"Name" : "Analyze Enchanted Item",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "219",
+		"Arcana Requirement" : "Prime 1",
+		"Practice" : "Knowing",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can scrutinize an enchanted item -- an Artifact, enhanced item, or imbued item -- to discern its powers. See the information on Resonance for rules on scrutinizing items. With an exceptional success, the mage can tell if the enchanted item is cursed or has other exceptional circumstances (deleterious or benign) connected to its ownership or use. The effect lasts for one scene, during which extended Intelligence + Occult rolls can be made to examine the enchanted item. Ten minutes' time per roll; target number is equal to twice the enchanted item's Merit dots.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Artifact Hunt",
+				"Dice Pool" : "Intelligence + Occult + Prime 2",
+				"Rote Description" : "No weapon is truly useful until its wielder comprehends its nature. Members of the Adamantine Arrow use this magic to learn the capabilities of enchanted items with which they come into contact, and to see if there are any strings attached to use of such items. Given that a misunderstood Artifact is a dangerous Artifact, all orders make use of this rote."
+			}
+		]
+	},
+	{
+		"Name" : "Chronicle Resonance",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "20",
+		"Arcana Requirement" : "Prime 1 + Time 2",
+		"Practice" : "Unveiling",
+		"Action" : "Instant",
+		"Duration" : "Concentration",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The willworker discerns local sources of Resonance over time. These include sources that are currently present, but have grown less intense, as well as those that have disappeared completely. She can track the progress of the dispersing Resonance over time, as well as any sudden changes that took place during the time period studied (such as magical alterations to a given source of Resonance). She is not able to learn who did these things, or how (not without making use of other magics, at any rate), but can use this magic to get a feel for the local pattern of Resonance. This spell's Potency is used to determine how far back the mage can look, as well as to contest any temporal or Resonance occlusion that might have been used in the mage's immediate vicinity.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Detect Banisher",
+		"SourceBook" : "Banishers",
+		"SourcePage" : "62",
+		"Arcana Requirement" : "Prime 1",
+		"Practice" : "Knowing",
+		"Action" : "Instant",
+		"Duration" : "Concentration",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The Banisher can recognize the subtle distinctions in aura between normal mages and those of his ilk. Banishers, for whatever reason, have magical signatures that are slightly different from those of other mages. While some Banishers refuse to work together, and are just as willing to kill each other as their foes, others long for companionship and backup. This spell allows a mage to see the cracks in a Banisher's aura and feel the chill from the Abyss within. Non-Banishers mages can use this spell, as well, but they suffer a -2 penalty on the attempt. Use of this spell is also believed to make mages more susceptible to becoming Banishers, though this might just be paranoid rumor. Any use of this spell adds the target's Abyssal Resonance Merit dots, if any, to the attempt (making mages with this Merit easier to detect). Note, though, that casting this spell upon a target with Abyssal Resonance 2 makes the spell vulgar in aspect.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Banisher Rote",
+				"Rote Name" : "Friendly Faces",
+				"Dice Pool" : "Wits + Composure + Prime 1",
+				"Rote Description" : "More than one Banisher over the years has developed this rote, and in larger cults, it's not too unlikely that someone winds up learning or creating it. Strength in numbers, after all."
+			}
+		]
+	},
+	{
+		"Name" : "Discern Phantasm",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "220",
+		"Arcana Requirement" : "Prime 1",
+		"Practice" : "Unveiling",
+		"Action" : "Instant",
+		"Duration" : "Concentration",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can see through Prime-based illusions (those created with manifested Mana; see the Phantasm spell), knowing them for what they are. Having substance, however, they do not vanish from her sight. The phantasm's Potency levies dice penalties on the roll.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Identifying The Unreal",
+				"Dice Pool" : "Wits + Occult + Prime 1",
+				"Rote Description" : "No one appreciates being fooled, and Free Council willworkers use this rote to ascertain the unreality of Prime Arcanum phantasms. Silver Ladder mages make use of a similar rote, so that they might be aware of when they address the puppet and not its master."
+			}
+		]
+	},
+	{
+		"Name" : "Dispel Magic",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "220",
+		"Arcana Requirement" : "Prime 1",
+		"Practice" : "Compelling",
+		"Action" : "Instant and contested; successes are compared to the target spell's Potency",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "Mages can dismantle or dispel existing spells, a process also known as &quot;unweaving.&quot; The mage must have at least one dot in each Arcanum used in the spell to be dispelled, unless he has Prime 4 (see the Supernal Dispellation spell). (Note: This effect differs from the Counterspell spell, which requires one dot in only one of the Arcana used by the target spell.) The successes of the dispelling mage's effort must exceed the Potency of the existing spell to successfully dispel it.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Prayer To San Cipriano",
+				"Dice Pool" : "Composure + Occult + Prime 1 versus target spell's Potency",
+				"Rote Description" : "This rote was created by an Obrimos Catholic priest, who considered Atlantean ideas to be heresy, sometime in the 1800s. He ended up among the Nameless, training a few apprentices in the service of San Cipriano, the patron saint of magic and those who needed protection against witchcraft. Similar to many other cultural expressions of magic that eschew the legend of Atlantis, this prayer ended up among Free Council mages, who value it for its ability to remove magics. The Imago of the spell involves an image of the saint laying hands on the magic, and then taking it with him when he climbs back up the Watchtower to the Aether. Factor Bonuses: Medallion of San Cipriano (+1 factor); Burning a candle dedicated to San Cipriano (+1 factor); Sprinkling target of spell with holy water (+1 factor)."
+			}
+		]
+	},
+	{
+		"Name" : "Ephemeral Postcognition",
+		"SourceBook" : "Summoners",
+		"SourcePage" : "210",
+		"Arcana Requirement" : "Prime 1 + Time 2",
+		"Practice" : "Ruling",
+		"Action" : "Instant and contested; target rolls Resistance reflexively",
+		"Duration" : "Concentration",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "For some mages, it is not enough merely to know what a summoned entity is; they must also understand where it came from. This spell enables such willworkers to catch fleeting glimpses of the native realities of the ephemeral beings that they call into the Fallen World by studying the immediate history of the Resonance that such creatures carry with them. Success in the casting of this spell grants a willworker insight into the immediate past of an ephemeral entity presently manifested before her or whom she can otherwise perceive. Effectively, the mage begins to &quot;rewind&quot; the recent history of the entity, following it back, one minute per turn of concentration and studying the sensory input of its surroundings during that time. The mage may &quot;pause&quot; on any given minute and analyze it for content of interest. In the case of a being recently summoned from its home realm, this actually allows the caster to look upon that realm in the time leading up to the summoning. An entity whose existence is only recently established (such as one temporarily created with the Spirit Arcanum), however, may not have much history to study. Likewise, a being summoned from a place in which time has no meaning may reveal nothing, or it may reveal wildly inconclusive information. Following the history of an entity summoned from the Abyss back through the moment of summoning to its place of origin instantly terminates the spell and the mage's player must successfully roll Resolve + Composure, with a dice-pool penalty equal to the Gulmoth's Rank, with failure resulting in a mild derangement (or, if the mage already suffers from a mild derangement, a severe one). At the Storyteller's discretion, a similar effect may befall a willworker using this spell to see back beyond the moment at which an alien entity first arrived in the Fallen World from outside of the Tapestry. Using this spell in an attempt to look past the moment of summoning for a denizen of the Supernal Realms grants a painful and confusing -- and utterly unhelpful -- glimpse of the higher world before abruptly ending the spell. Attempting to look into the Realms Supernal in this way is an act of hubris for any mage with a Wisdom higher than 3, requiring a degeneration roll on two dice.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Whence It Came",
+				"Dice Pool" : "Wits + Occult + Time 2",
+				"Rote Description" : "Information moves not just forward, but also backward, in time for those with the skill necessary to obtain it. Some mystagogues summon strange spirits form the other worlds, simply to analyze their places of origin by way of this magic, thus advancing the state of Awakened knowledge."
+			}
+		]
+	},
+	{
+		"Name" : "Gauge Essence",
+		"SourceBook" : "Summoners",
+		"SourcePage" : "210",
+		"Arcana Requirement" : "Prime 1 + (Death 1, Life 1, and / or Spirit 1)",
+		"Practice" : "Knowing",
+		"Action" : "Instant and contested; target rolls Resistance or Resolve reflexively",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "Ghosts and spirits of all sorts use Essence, an ephemeral substance often imprinted with certain emotional qualities, signifying its origin. Just like scientists can discern the difference between a diamond mined in southern Africa, for instance, and one acquired from elsewhere in the world, an astute willworker can analyze the individual qualities of a particular source of Essence. With a successful casting of this spell, the mage determines the Resonance of a source of Essence, contained within a creature of the appropriate type. With Death 1, the willworker can analyze the Essence inside a ghost, while Life 1 grants insight into points of Essence contained within a living creature (for whatever reason), and Spirit 1, any Essence within a spirit of the Shadow Realm. This spell also gives the caster a rough sense of how much Essence a creature contains. For example, a ghost down to its last two points of Essence reads as nearly depleted, while a powerful denizen of Shadow holding 20 or more points of Essence registers as having a potent stockpile of Essence. This spell also gives a mage a sense for the descriptive qualities of the Essence he sees; knowledge that may, in turn, grant further insight. A perfectly peaceful-looking suburban residence producing Essence flavored by atrocity hides something terrible in its past or its present. Likewise, a seemingly helpful spirit whose Essence resonates with trickery might not be as accommodating as it seems. Any creature that wishes to resist having its Essence scanned resists using its Resistance or Resolve (whichever is applicable). This counts only toward sources of Essence presently contained within the being. External sources may be concealed through other powers, however; in such a case, the entity's successes are compared against those of the caster.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "Know Thy Enemy",
+				"Dice Pool" : "Wits + Empathy + Prime 1",
+				"Rote Description" : "This spell is of old account among summoners, many of whom regard it as simple good business. Certain th&eacute;archs claim the spell actually predates the Fall, and it certainly would make sense were such the case. Some of the oldest texts from the Atlantean Diaspora speak of similar magics, causing certain summoners within the Ladder to point with pride to the venerable pedigree of their craft."
+			}
+		]
+	},
+	{
+		"Name" : "Inscribe Grimoire",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "220",
+		"Arcana Requirement" : "Prime 1",
+		"Practice" : "Compelling",
+		"Action" : "Extended",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can record the secrets of his rotes into a magical book readable by other Awakened minds. Inscribing a grimoire is a bold act, for the mage puts part of his magic into the book by removing it from himself. In doing so, the mage forgets how to cast a rote. He can later re-learn it by studying his own grimoire (or learning from another mage who knows the rote) and with the expenditure of the proper Experience Points, but until he does he cannot cast that rote on his own again (although he can use the grimoire to cast it). Recording would seem at first to be a selfless or foolish thing to do, but orders are hungry for grimoires with which to teach young mages, and pay for them in favors. Also, certain Mind spells or creatures can take knowledge from a mage's mind, leaving a void in its place. In case rotes are lost in this way, it's good to have them &quot;backed up&quot; in a book. The spell's target number equals one success per Arcanum dot used in the rote to be recorded. For example, a Life 3, Mind 2 rote requires five successes. The grimoire's Duration is lasting; it cannot be dispelled and does not expire unless the grimoire itself is destroyed. Grimoires allow mages to learn their contents without requiring a teacher, although the experience point cost is the same. Additionally, the mage can cast a grimoire's rotes even if he does not personally know the rotes, as long as he references the book during casting. Doing so requires one turn of reference, during which the mage can do nothing but read the book and move up to his Speed. In the following turn, he can cast the rote. If he is interrupted before casting, he must reference the book all over again. If he already knows the rote, referencing the grimoire gives a +1 bonus to casting it. Grimoires cannot be copied without going through the same spellcasting process used to create them. Only the original is enchanted; mundane copies produce only a mess of meaningless words. Despite the name, grimoires don't have to be books. They can be computer programs or databases, or anything used to store knowledge. Sleepers cannot use grimoires. They cannot make sense of their contents, at least not on the esoteric level required. Only Awakened minds can grasp the lore contained within.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "Inscribing The Ineffable Words",
+				"Dice Pool" : "Intelligence + Expression + Prime 1",
+				"Rote Description" : "Great leaders often record their wisdom for later generations, and willworkers of the Silver Ladder are no exception. By creating grimoires, teachers can pass on knowledge to their students, and some Ladder mages use the very grimoires they have penned to facilitate their own subsequent castings. Mages of all orders make use of this magic, thereby preserving their arts for the future."
+			}
+		]
+	},
+	{
+		"Name" : "Supernal Vision",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "221",
+		"Arcana Requirement" : "Prime 1",
+		"Practice" : "Unveiling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage gains the Mage Sight ability. This is the most potent of the resonance-detecting senses and the Storyteller should be lavish with its details, explaining intricacies of any given source of resonance that would likely be invisible to one using another Arcanum. Some details, however, are best analyzed with other Arcana (in the way that Matter is best suited to &quot;thick&quot; or &quot;ponderous&quot; resonances), or better still in conjunction with Prime. Many mages describe this sense as sight, though some claim to &quot;smell&quot; or &quot;taste&quot; lingering sorcery on a person or place. Others simply speak of a sixth sense or other esoteric perception that defies ordinary categorization. See the information on Resonance for rules on scrutinizing magic with this spell. A +1 dice bonus is gained on perception and scrutiny rolls to sense Awakened magic of any kind, as well as for detecting Mana, tass, enchanted items, and Hallows. If the source of mystic power is concealed, the mage's successes must exceed the Potency of the magic used to conceal the source. In addition, the mage concentrates (an instant action during which he can move only his Speed and loses his Defense) to read a person's aura to determine her nature (see the Aura Signifiers chart under the Aura Perception spell), but not her mental or emotional condition (which requires the Mind 1 Aura Perception spell; adding Mind 1 to the casting of Supernal Vision allows the perception of both mental state and nature).</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Eye Of The Magus",
+				"Dice Pool" : "Wits + Occult + Prime 1",
+				"Rote Description" : "Uncovering the hidden knowledge of the Awakened involves far more than the five mundane senses. Willworkers of the Mysterium use this magic to attune themselves to virtually any sort of paranormal phenomenon, detecting the presence of mystic artifacts and unseen spells. The mages of the Silver Ladder use this rote to discern the intricacies of nearby magical phenomena. After all, a diplomat from another Consilium carrying a small item heavily enchanted with potent Death magics may, in fact, be an assassin."
+			}
+		]
+	},
+	{
+		"Name" : "Activate Enchanted Item",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "221",
+		"Arcana Requirement" : "Prime 2",
+		"Practice" : "Compelling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The willworker gains the ability to activate a contingent Artifact or imbued item, artificially satisfying the trigger of such an item (usually after having carefully analyzed it with the Analyze Enchanted Item spell. The mage can activate the item's trigger at will anytime within this spell's Duration.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Claiming The Ancient Heritage",
+				"Dice Pool" : "Intelligence + Investigation + Prime 2",
+				"Rote Description" : "It happens on occasion that old words of power are lost and ancient lineages die out. Mysterium mages developed this rote as a means to make use of Artifacts for which no normal trigger can be deciphered or is possible."
+			}
+		]
+	},
+	{
+		"Name" : "Cleanse Aura",
+		"SourceBook" : "Intruders: Encounters With The Abyss",
+		"SourcePage" : "189",
+		"Arcana Requirement" : "Prime 2; optional + Life 2",
+		"Practice" : "Weaving",
+		"Action" : "Extended",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "It is not unusual for a person's aura or personal resonance to become colored or contaminated by some outside source. This might merely be the effect of a spell, or it might be a deeper, more lasting stain. For instance, living in a rundown building with the resonance of murder might eventually leave marks on one's aura, even if one never acted in accord with this resonance; living near it is enough to be affected by its pollution. This spell cleanses alien resonance from one's own aura. The spell will not alter personal resonance, but will remove any vestige of outside resonance that has somehow mixed with the mage's own. This is often used to cover one's tracks, to prevent magely detectives from determining where one has been simply by the trace &quot;dirt&quot; left on one's aura. The Storyteller rates the strength of the auric marks, generally from 1 to 5, although radical supernatural taint might be rated even higher. This strength must be matched by spellcasting successes for the cleansing to be effective. While one success on the casting of this spell removes any sign of the mark from cursory perception, more intense scrutiny and examination (by others using Mage Sight) will still reveal lingering taint. A Prime 3 version of this spell can be cast upon others. By adding Life 2 to the spell, the mage can use this against auric taints that have some root in organic processes, such as the corruption caused by the practice of Sinister Organ <I>qigong</I>.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Scour Auric Verdigris",
+				"Dice Pool" : "Manipulation + Occult + Prime 2",
+				"Rote Description" : "The Guardians well know the value of a clean aura, one that does not display any hint of where they might have been or what activities they might have been up to. Although this spell cannot hide their own personal mind or nature from others, Scour Auric Verdigris can cleanse any marks left by the spirits or places the Guardians occasionally have to deal with."
+			}
+		]
+	},
+	{
+		"Name" : "Communion With The Messenger",
+		"SourceBook" : "Magical Traditions",
+		"SourcePage" : "88",
+		"Arcana Requirement" : "Prime 2 + Spirit 2",
+		"Practice" : "Ruling",
+		"Action" : "Instant and contested; target rolls Resistance reflexively",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The Templar calls out to seek the audience of an &quot;angel&quot; in its literal definition from New Testament Greek as a messenger. The foci for this spell are all three of the hallmark Templar symbols: The Baphomet, the Holy Cross, and a cipher. First, the Templar creates the sign of the Holy Cross on the ground where he wishes to commune with the angel -- the cross in the circle serves as a sort of beacon to the angel in question. Next, the Templar speaks the name of the angel after it has been encoded as a cipher. The more important the &quot;messenger,&quot; the more elaborate the cipher must be. Finally, the Templar makes the hand-sign of the Baphomet when the angel arrives, proving to the angel that he is worthy of witnessing the light of God. The Templar casting this spell makes a single call to a single, specific &quot;messenger&quot; angel (whose name he may have procured from any number of sources, liturgical or lay, but it must be the angel's true name). The angel who heeds the call (if the spell is successful) is from the loftier regions of the Shadow Realm but has a singular connection to the Aether, or &quot;Heaven&quot; as the Templar understands it. Obviously, the &quot;angel&quot; is not from the Aether proper, but is savvy to what has occurred there in an up-to-date sense. In the communion with the angel, the Templar may ask the angel any questions that he wishes, and the angel responds with whatever information is salient. Of course, mere men surely cannot grasp the full import of what occurs in the Realms Supernal, and the angel's answers may seem obtuse, incomprehensible, or chaotic. As well, the angel might simply deem the answer to a given question as one the Templar's mind cannot possibly understand, and may deliberately occlude or withhold information (though it will never lie outright). &quot;What does God look like?&quot; is not a viable question for this spell to answer, nor is &quot;What is the meaning of life?&quot; In response to this first question, the angel might loose a torrent of incomprehensible Enochian syllables, answering the question honestly, but in the language only the angels can understand. The second question might yield an almost rhetorical response, such as, &quot;To live in righteous imitation of Christ.&quot; The angels will not be fooled by vain men's attempts to divine the secrets of heaven. Information that may be legitimately gleaned is information that the angel believes men have the context to understand. For example, &quot;Is God angry that we seek the Ten Commandments&quot; is a question that would receive a concise answer, while &quot;How does God feel about our quest for the Ten Commandments&quot; would elicit either an answer incomprehensible to the Templar or a simple rebuff that &quot;It is beyond your capacity to know.&quot; The answers asked of the angels need not always concern the loftier realms. &quot;Is the Temple Mount the true site of the Temple of Solomon?&quot; is a fine question to ask (the answer to which depends upon the individual chronicle). So is &quot;Where have the Templars stored their treasures?&quot; Indeed, so is, &quot;Where are my car keys?&quot; but such a flippant question may well serve to stoke the ire of the angel, and the anger of angels isn't something any mortal is likely to emerge from unchanged. To this end, it's worth noting that summoning the angel in no way offers any protection from it, should its divine graces be mocked, challenged, or denigrated. The Templars believe that the evolution of this spell occurred during New Testament times. They note that Abraham, Isaac, Moses, and other key Biblical figures had to use nothing of the sort to commune with God, while later figures such as Simon Magus had to use the same sorts of formulae that the order itself must. Of course, Simon Magus met his end after challenging God's supremacy, but the Templars are certainly capable of learning from the mistakes of others. Some Templars have taken it upon themselves to learn the celestial speech of the angels, potentially in hopes of tricking the angels to answer their questions with a language they assume the mortals not to comprehend. Again, the angels aren't so simple as this. If an angel suspects a man might have learned the divine tongue, it might simply respond that the answer to a particularly dire question isn't for men to know. And again, attempts at fooling the angels rarely work out well for the would-be trickster. (Of course, that begs the question as to whether a man might even learn the Enochian language, where he'd learn it, and to what end. The occultists John Dee and Edward Kelley claimed to know the speech of Angels, but neither of them is associated with the Templar tradition.)</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Templar Treasure Tradition Rote",
+				"Rote Name" : "Communion With The Messenger",
+				"Dice Pool" : "Presence + Persuasion + Spirit 2 vs. Resistance",
+				"Rote Description" : "This rote is just as the spell with the same name."
+			}
+		]
+	},
+	{
+		"Name" : "Counterspell Prime",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "222",
+		"Arcana Requirement" : "Prime 2",
+		"Practice" : "Shielding",
+		"Action" : "Instant; successes subtract from the target spell's Potency",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage can counter spells from any Arcanum, and he can counter covert spells without first identifying their components. As the rules for Counterspell, but the mage can now counter spells from any Arcanum (he does not need one dot in at least one of the spell's Arcana) and he can counter covert spells even if he has not had time to identify their components.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Rend The Weave",
+				"Dice Pool" : "Composure + Occult + Prime 2",
+				"Rote Description" : "This rote enables a Guardian to stop magic before it can take effect, preserving the secrecy of the Awakened world with preemptive action. Silver Ladder willworkers have their own variant on this rote (Resolve + Occult + Prime) that wills offending sorceries out of existence."
+			}
+		]
+	},
+	{
+		"Name" : "Ephemeral Image",
+		"SourceBook" : "The Silver Ladder",
+		"SourcePage" : "200",
+		"Arcana Requirement" : "Prime 2",
+		"Practice" : "Weaving",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "The mage can create purely two-dimensional inanimate phantasms. These creations possess no substance at all; they are simply flat images that must be overlaid upon some existing surface. However, using this spell the mage can change the color or pattern of a suit, the picture and written information on an ID card, the appearance of a photograph, or even the apparent value of a piece of currency. The mage could also attempt to disguise a blank piece of paper as a valuable oil painting, but anyone touching it would feel smooth modern paper and not rough and aging paint. This spell can change the appearance of the surface of any item of Size 5 or less. The mage must make an Intelligence + Crafts or Intelligence + Expression roll (depending upon the nature of the image being created) to create the desired appearance. Excess successes on the casting roll each add 1 die to this roll. This spell cannot affect the texture, size or shape of an object, only the colors, patterns, pictures or text on its surface.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "Ethereal Disguise",
+				"Dice Pool" : "Intelligence + Expression + Prime 2",
+				"Rote Description" : "Whether they wish to ensure they are wearing the height of fashion or are attempting to impersonate someone by using an ID with the person's name and their picture, this spell can be an invaluable tool for mages engaged in any form of intrigue."
+			}
+		]
+	},
+	{
+		"Name" : "[Locate Node",
+		"SourceBook" : "Magical Traditions",
+		"SourcePage" : "124",
+		"Arcana Requirement" : "Prime 2",
+		"Practice" : "Unveiling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The African spirit Eshu often appears to travelers at places where two roads cross. Similarly, Hermes (for the Greeks) or Mercury (for the Romans) was associated with crossroads, as was the Christian St. Simon. Magic or Mana gathers here in larger clusters than at normal crossings, for crossroads are not just where two roads meet. They are where two ley lines or lines of power intersect one another, called a &quot;node&quot; by mages. Using a wand made specifically for this purpose, the mage can locate the nearest ley line node. Successes apply to the spell's duration factors. While the spell is active, the mage can make instant-action Wits + Occult perception rolls to scrutinize the immediate area's Resonance (within sensory range) for the tale-tell signs of a node, where two or more ley lines meet.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Appalachian Hoodoo Tradition Rote",
+				"Rote Name" : "Find Crossroads",
+				"Dice Pool" : "Wits + Occult + Prime 2",
+				"Rote Description" : "This rote must employ a wand created specifically for this purpose, though it can be used over and over so long as it remains dedicated to finding crossroads. The wand must be made from a tree made by the natural joining of two saplings of different types. It must lie beneath a full moon for three consecutive nights in three consecutive months. When looking for the crossroads, the mage just speak the name of whichever crossroads deity or saint she holds dearest, followed by &quot;show me the way of power&quot; three times before starting out."
+			}
+		]
+	},
+	{
+		"Name" : "Magic Shield",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "222",
+		"Arcana Requirement" : "Prime 2",
+		"Practice" : "Shielding",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "Special",
+		"Effect" : "This spell creates a shield against outside magic. Such a matrix of power is visible to those with Mage Sight, appearing as ghostly white flames limning the form of the caster. The mage gains one point of armor per dot he possesses in the Prime Arcanum. By spending one Mana, the Duration can be made to last for one day. This armor works only against spells  that target the mage. It does not shield against magic that is not directly cast at the mage. A bolt of electricity thrown at him is shielded, while damage suffered by falling through a floor rotted through by magic is not. This shield functions against spells such as mind control or soul theft that do not directly inflict damage. A magical shield requires one Mana each time it contends with an incoming spell. If the mage does not (or cannot) spend the Mana, the shield provides no armor against the attacking spell, although the shield remains until its Duration expires, so it can be activated later. Among other things, this spell allows a mage to use his magical shield selectively, blocking hostile spells but allowing friendly ones through. Mages often invest their shields with multiple charges, spending Mana during casting so that each charge already stores its own energy.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "Aegis Magicus",
+				"Dice Pool" : "Resolve + Occult + Prime 2",
+				"Rote Description" : "Ladder willworkers often have to contend with hostile magics of one sort or another, so the order developed this rote to defend against such unwanted influences. All Awakened who are capable of doing so can enjoy the protection of this rote; only fools go without its protection when expecting trouble."
+			}
+		]
+	},
+	{
+		"Name" : "Manipulate Contingent Trigger",
+		"SourceBook" : "Seers Of The Throne",
+		"SourcePage" : "194",
+		"Arcana Requirement" : "Prime 2 + Fate 2",
+		"Practice" : "Ruling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "A mage might make use of an Imbued Item for a variety of reasons: a way to carry magic that he doesn't normally possess or to cheat the limits of how many spells his pattern can tolerate, or perhaps even to give certain limited magical abilities to a Sleeper or Sleepwalker. By way of this spell, however, the contingent triggers with which many such objects are programmed can be temporarily altered, potentially making the invocation of an item's power difficult -- if not impossible -- for its possessor. This spell, if successfully cast, alters the contingent trigger of an Imbued Item that has one to a trigger of the caster's choice. This trigger may be extraordinarily difficult to accomplish (&quot;When sprinkled with lunar soil,&quot;) or very easy (&quot;When grasped in hand,&quot;, but the item's powers cannot be rendered either completely inaccessible or continual. If the item is currently in the possession of an individual unwilling to have its trigger altered, then the spell becomes contested, with the possessor rolling Resolve + Gnosis in opposition to the caster.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Seers Of The Throne Rote",
+				"Rote Name" : "Exchange The Secret Key",
+				"Dice Pool" : "Wits + Occult + Prime 2",
+				"Rote Description" : "While it is true that every advantage counts in a conflict, so too does every enemy advantage that a willworker can counter. Thus, Seers of the Throne who pursue the secrets of the Prime and Fate Arcana learn to rob their foes of access to the spells concealed within certain objects of power."
+			}
+		]
+	},
+	{
+		"Name" : "Paths Of Power",
+		"SourceBook" : "Grimoire Of Grimoires",
+		"SourcePage" : "139",
+		"Arcana Requirement" : "Prime 2",
+		"Practice" : "Knowing",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "This rote allows the mage to see ley lines and to sense the direction of the nearest. With a single success on the casting roll the character sees ley lines as streams of bright greenish-blue power flowing through the earth. If no ley line is within the immediate line of sight of the mage, he can sense the direction of the nearest as a reflexive action.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Tablets Of U'mat Rote",
+				"Rote Name" : "Paths Of Power",
+				"Dice Pool" : "Wits + Occult + Prime 2",
+				"Rote Description" : "This rote is just as the spell described above."
+			}
+		]
+	},
+	{
+		"Name" : "Primal Flow",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "222",
+		"Arcana Requirement" : "Prime 2",
+		"Practice" : "Unveiling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "As the Prime 1 Supernal Vision spell, except that the mage casts this effect upon another mage, or even a supernatural being such as a ghost or werewolf. If this spell is cast upon a Sleeper, it invokes Disbelief immediately, even if its Duration is less than one scene. If the target is unwilling, he may resist with a reflexive contested Resolve + Gnosis roll.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Mass Hallucination",
+				"Dice Pool" : "Manipulation + Occult + Prime 2",
+				"Rote Description" : "There are times when it is beneficial to extend one's mystic perceptions to another. Perhaps a single person can be shown too much and then marginalized as a potentially dangerous crackpot when he tries to convince others of what he has seen. At other times, allowing multiple Sleepers to perceive the same phenomenon can, with a measure of diligent effort, ultimately serve to convince them that nothing supernatural took place, that everything is normal."
+			}
+		]
+	},
+	{
+		"Name" : "Sigilization",
+		"SourceBook" : "Sanctum And Sigil",
+		"SourcePage" : "37",
+		"Arcana Requirement" : "Prime 2",
+		"Practice" : "Ruling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "This spell imposes upon an image or object (not a living creature) the caster's own aura, or that of a group of people, such as a cabal of mages. Mages use this spell most often to create a sigil, an image or object that bears their personal mark. Successes are applied to the sigil's Duration. This magical aura does not extinguish the object's own resonance, but the aura does make it harder to scrutinize the object: Anyone studying the object with Mage Sight must first collect a number of successes equal to this spell's Potency before the natural resonance can be discerned past the mage's imposed aura. If this spell is cast as a group ritual, the auras of all the mages involved are imposed upon the target object. In this manner, cabals can mark items with their own group sigil. With Prime 3, the mage can sigilize his aura upon living creatures, covering up their natural auras with his own. Some mages have been known to do this to &quot;brand&quot; their servants or even their apprentices. When cast in combination with the Prime 2 Transform Aura effect, this spell can sigilize items with an aura other than the mage's own. It is not easy counterfeiting other mage's auras, however. The mage first has to examine the aura to be copied, using Mage Sight and the rules for scrutinizing resonance. If he's trying to copy a cabal's sigil, he must do this for every aura involved in the sigil. Once he's done this and made the fake sigil, his copy can be scrutinized to see if it's a forgery. Examiners make an extended action Intelligence + Occult roll (10 minutes per roll) with a target number equal to the concealing spell's Potency.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Squaring The Circle",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "223",
+		"Arcana Requirement" : "Prime 2",
+		"Practice" : "Ruling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage creates a mystical space where two mages can engage in the Duel Arcane, a wizard's war.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Squaring The Circle",
+				"Dice Pool" : "Resolve + Occult + Prime 2",
+				"Rote Description" : "It sometimes happens that the surest path to protecting the Mysteries involves allowing two willworkers to settle their dispute in a duel. Guardians of the Veil use this rote to give such irreconcilable mages the opportunity to settle their accounts in the ancient way. Silver Ladder mages also use this very rote for keeping peace within a Consilium or cabal."
+			}
+		]
+	},
+	{
+		"Name" : "Transform Aura",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "223",
+		"Arcana Requirement" : "Prime 2",
+		"Practice" : "Veiling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can alter his aura's nature. While many mages can manipulate the quality of their personal resonance or cloak it entirely, none do so with the finesse of a willworker skilled in Prime. He can alter the nature of his aura, appearing to be a Sleeper (or even an inhuman creature), or he can hide it or even disperse it completely for a time. Though an aura returns to its original state once the spell expires, it can be warded away for quite some time. Only by overcoming the Potency of this spell (with a spell such as Supernal Vision) can a mage detect the true aura. See the Aura chart under the Aura Perception spell for a list of some aura natures. If this spell is cast conjunctionally with Mind 2, the mage can alter the appearance of his aura's mental and emotional state, as per the Mind 2 Alter Aura spell. This spell cannot be detected except by a &quot;Supernal Vision&quot; Mage Sight spell with a higher Potency. Even once this spell is detected, the true nature of the mage cannot be perceived until the Transform Aura spell expires or is dispelled.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Taoist Tradition Rote",
+				"Rote Name" : "Thunder Meditation",
+				"Dice Pool" : "Resolve + Medicine + Prime 2",
+				"Rote Description" : "The mage uses a meditative oblation to collect Mana during a thunderstorm. The rote enables her to imbue the Mana with elemental resonances and store it in her viscera, so that motes (points) with different resonances do not mix. This gives the Taoist reservoirs of Mana with whatever resonance she needs for a particular working. Each success changes the resonance of one mote and binds it to a particular organ."
+			}
+		]
+	},
+	{
+		"Name" : "Unseen Spy",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "223",
+		"Arcana Requirement" : "Prime 2",
+		"Practice" : "Veiling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can hide himself from other willworkers' magical senses when he attempts to scrutinize or dispel their magic. Normally, mages cannot sense if their spells are being tampered with, but the Sense the Threads ability allows a mage to monitor the status of his spells. With Unseen Spy, a mage can attempt to hide from such a mage's magical senses. Whenever a spy scrutinizes a vigilant caster's spells or tries to dispel them, a reflexive Intelligence + Subterfuge roll is made for the spy, contested by the subject's reflexive Wits + Occult roll. If the Unseen Spy exceeds the caster's successes, his spying goes undetected.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Innocuous Presence",
+				"Dice Pool" : "Composure + Subterfuge + Prime 2",
+				"Rote Description" : "Free Council mages have always liked to study the spells of the Atlantean orders, but those societies usually don't like upstarts meddling in their business. Hence, councilors resort to this spell to hide their surreptitious observations or even manipulations. Other orders also find use for this spell, such as the Guardians of the Veil in their ongoing efforts to police the practice of magic."
+			}
+		]
+	},
+	{
+		"Name" : "Armor Of The Soul",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "223",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Veiling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can weave a barrier around a soul, protecting it from being stolen by a spirit or severed by an adept of Death. The target gains one point of armor per dot the caster possesses in the Prime Arcanum against magic or powers that affect the soul. By spending one Mana, the Duration can be made to last for a day. This spell can be combined with a Magic Shield spell, and the armor points from both are added together against magic that affects the soul.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Shield The Fragile Link",
+				"Dice Pool" : "Composure + Occult + Prime 3",
+				"Rote Description" : "Some of the most vicious and terrible among the Awakened are known to interpose themselves between Guardians of the Veil and their appointed objectives, and many of these intruders have no compunction about tearing out a soul or two. Guardians use this rote to defend themselves against such awful magic. Adamantine Arrow willworkers have their own version of this rote (Resolve + Occult + Prime) that they use to protect their own souls, even as they defend their allies from harm."
+			}
+		]
+	},
+	{
+		"Name" : "Celestial Fire",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "224",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Fraying",
+		"Action" : "Instant and aimed",
+		"Duration" : "Lasting",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "The mage manifests celestial fire. The mage flings a ball of glowing, fiery energy at a target. This projectile is large enough that targets gain their Defense against it. One point of bashing damage is inflicted per success. (Note that &quot;celestial fire&quot; is not the same thing as mundane fire; vampires are not especially susceptible to it and it does not induce R&ouml;tschreck.) This spell affects beings or objects in the Twilight state (although the mage needs Supernal Vision or some other magical sense that allows him to see Twilight beings to be able to target such creatures, or else he fires blind). With Prime 4, damage is lethal and the mage can choose to directly attack a target's Pattern instead of casting it as an aimed spell (the target resists, subtracting Stamina from the caster's roll). With Prime 5, one Mana can be spent to make the damage aggravated.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Bolt Of Heaven",
+				"Dice Pool" : "Dexterity + Occult + Prime 3",
+				"Rote Description" : "A brutal and straightforward assault, this rote is used by Arrow mages to strike down their enemies, corporeal or otherwise, to destroy arms and armor, or to breach defenses. Perhaps one of the most efficient weapons in the Awakened arsenal, this rote sees use by members of all orders."
+			}
+		]
+	},
+	{
+		"Name" : "Channel Mana",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "224",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Weaving",
+		"Action" : "Instant",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can channel Mana from a Hallow without need of an hour-long oblation, or he can take it from tass or an enchanted item. Each success allows the mage to channel one Mana point from a source to his own Mana pool, up to a maximum of his Prime dots. The mage must touch the source (with Prime 4, he can channel within sensory range, and with Prime 5 he can use Space 2 for sympathetic range). Tass can be drawn upon for its Mana with this spell, meaning that it can potentially serve as a form of currency. The mage must touch the tass to channel from it (with Prime 4, he can channel from it at sensory range). For each point of Mana siphoned out of tass, subtract one point from the tass' Mana and its Structure. If it is siphoned to zero Mana or Structure, the tass collapses back into the Tapestry. An enchanted item that holds its own Mana stores (such as certain imbued items and Artifacts) can also be touched, and one Mana is channeled per success, up to a maximum of the caster's Prime dots.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Taoist Tradition Rote",
+				"Rote Name" : "Thunder Meditation",
+				"Dice Pool" : "Resolve + Medicine + Prime 3",
+				"Rote Description" : "The mage uses a meditative oblation to collect Mana during a thunderstorm. The rote enables her to imbue the Mana with elemental resonances and store it in her viscera, so that motes (points) with different resonances do not mix. This gives the Taoist reservoirs of Mana with whatever resonance she needs for a particular working. Each success changes the resonance of one mote and binds it to a particular organ."
+			}
+		]
+	},
+	{
+		"Name" : "Controlled Dispellation",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "224",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Fraying",
+		"Action" : "Instant and contested; successes are compared to the target spell's Potency",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can unravel an existing spell against only those targets he chooses, letting the spell continue to affect others. This spell is like Dispel Magic, in all its Arcana requirements (unless the caster has Prime 4, in which case he can perform it with Supernal Dispellation. Controlled Dispellation allows a mage to protect himself or other select individuals from spells while still allowing those spells to take effect. He effectively makes his Pattern (and other targets of his choice) invisible to the spell.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Slipping The Bonds",
+				"Dice Pool" : "Resolve + Occult + Prime 3",
+				"Rote Description" : "Mysterium mages might find ancient spells guarding old temples. Rather than dispel them and risk the activation of some arcane trap, they can exempt themselves and others from the effects."
+			}
+		]
+	},
+	{
+		"Name" : "Create Tass",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "224",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Weaving",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana (minimum)",
+		"Effect" : "The mage creates tass, solidified Mana. Tass can look like anything: A rock, a hammer, a table, or even a car or a dog. (If it manifests as a seemingly living creature, the tass sits, inanimate, in whatever position it was created until such time as an outside force acts upon it. In other words, the mage could create a tass dog if he really wanted to, and curl it up by his fireplace, but as a lifeless, inanimate thing, it won't go anywhere or do anything of its own accord.) Successes are allocated between the tass' Size and Durability. At least one Mana must be channeled into the tass. This Mana can be siphoned out of the tass using the Channel Mana spell. While the object is real, it does not behave like an object made from the proper materials. In other words, a tass hammer is not as good as a metal one. If this spell is cast as an extended action, an extended Dexterity + Crafts roll can also be made for a mage to create tass that behaves much like its representative object would. The target number of success is based on the Size and complexity of the object to be crafted (one success for a simple hammer, three successes for a table, five successes for a cushioned recliner chair.). Tass objects inflict only bashing damage, unless carefully crafted with sharp edges (add one success to the extended Crafts roll's target number per lethal damage modifier). Tass dissolves into the Tapestry at the end of the spell's Duration.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Celestial Sediment",
+				"Dice Pool" : "Resolve + Craft or Occult + Prime 3",
+				"Rote Description" : "Just as matter and energy are different ends on the same spectrum, so too are raw Mana and manifested tass."
+			}
+		]
+	},
+	{
+		"Name" : "Disguise Resonance",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "225",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Veiling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can change the appearance of an area's resonance, making it appear to possess different qualities or even hide its magical signature, meaning that she could make a powerful Hallow look like a magical dead zone. Even spirits, who rely on certain qualities of resonance for feeding, can be fooled by this spell. Each success also masks one level of a Hallow's power. For example, two successes make a 3-dot Hallow look like a 1-dot Hallow. Or she could make it appear to be a greater place than it is, making a 3-dot Hallow appear to be a 5-dot Hallow with two successes. This spell cannot be detected except by a Mage Sight spell with a higher Potency. Even once this spell is detected, the true resonance of the area cannot be perceived until the Disguise Resonance spell expires or is dispelled.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Mask Of The Spirits",
+				"Dice Pool" : "Composure + Subterfuge + Prime 3",
+				"Rote Description" : "An ounce of misdirection can be far more effective at times than a dozen trained guardsmen. When a Mysterium mage skilled in the Prime Arcanum wishes to protect a site, she can use this rote to alter its seeming resonance."
+			}
+		]
+	},
+	{
+		"Name" : "Disguise Spell",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "68",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Veiling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "As with the Prime 3 Disguise Resonance spell, the mage changes the appearance of resonance, but instead of affecting an area, he casts Disguise Spell upon a spell, to make it appear to occult investigators to be a different type of spell than it really is. He cannot change the actual effects of the spell this way, only its resonance and appearance to Mage Sight. A basic success completely disguises the identity, Gnosis rating and mastery of the caster. The caster can create fictional Traits to stand in for these, or he can try to replicate those of another mage. The caster must be familiar with the resonance signature of the mage to be mimicked and might need to make an instant Intelligence + Occult roll to get it right (the Storyteller should roll, keeping the result secret). The mage can disguise one additional quality of the spell's resonance per success: Arcanum composition (making the spell seem to be the product of a different Arcanum and of a higher or lower rank of his choice), Potency (making the spell seem more or less Potent than it is), Targets (making the spell seem to affect more or less people or area than it does) or Duration (making the spell seem to last longer or shorter than it will). This spell cannot be detected except by a Mage Sight spell with a higher Potency. Even once Disguise Spell is detected, the true resonance of the spell cannot be perceived until it expires.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "J'Accuse",
+				"Dice Pool" : "Intelligence + Investigation + Prime 3",
+				"Rote Description" : "The Guardians use this spell to plant &quot;evidence&quot; of another willworker's misdeeds, making their own spells seem to have been cast by him -- especially when they affect inappropriate targets or places, such as those declared off-limits by the Consilium. The Guardians are the first to call for immediate reprisal against the lawbreaking spellcaster."
+			}
+		]
+	},
+	{
+		"Name" : "Dissolve Tass",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "225",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Fraying",
+		"Action" : "Instant",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can dissolve tass back into the Tapestry. Each success dissolves one point of the tass' Mana and Structure.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Unstitch",
+				"Dice Pool" : "Resolve + Occult + Prime 3",
+				"Rote Description" : "Just as a skilled tailor can unravel a garment by pulling out relatively few threads, a Guardian can pick apart the weave of a source of tass and unmake it, releasing its energy back into the Tapestry. Adamantine Arrow mages also use this rote to dissolve the tass of enemy willworkers, robbing them of a precious resource."
+			}
+		]
+	},
+	{
+		"Name" : "Energetic Tass",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "69",
+		"Arcana Requirement" : "Prime 3 + Forces 3",
+		"Practice" : "Weaving",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert (if cast in an unbelievable way, such as a green flame that burns harmlessly on the mage's fingertips, the spell invokes Disbelief in Sleeper witnesses)",
+		"Cost" : "1 Mana (minimum)",
+		"Effect" : "By means of this spell, a mage can craft tass that does not take the shape of a solid material object but, rather, the form of some kind of simple energy (light, heat, electricity or sound). Such tass might be a fire that burns without the need for fuel, or a pattern of shifting lights, crawling arcs of electricity or an otherworldly sound with no discernible source. Successes are allocated between Size and Potency. The Potency of the spell determines how complex the phenomenon created can be. Mana must be channeled into the tass, and can be withdrawn by a mage skilled in the Prime Arcanum, as normal (see the Create Tass spell). This energetic tass can inflict only bashing damage, and then only if in the form of electricity or fire. With Forces 4, and by adding an extra success to the spell's Potency, however, the tass can be made to inflict lethal damage when in such forms. Note that fire created by this spell does not automatically burn flammable items. Such fire must be made to inflict lethal damage, and the mage must will it to burn like a normal fire. The tass will then burn as normal for as long as the mage actively concentrates on making it do so.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Ephemeral Enchantment",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "225",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Weaving",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "The mage enchants an object, allowing it to strike (if it is a weapon) or protect (if it is armor) against Twilight or Shadow Realm entities. If the weapon is a gun, all the bullets within its magazine, cylinder and/or chamber are enchanted. To enchant extra magazines or ammunition, additional Target factors must be added to the casting. With Prime 5, the object can be given the power to inflict aggravated damage (one Mana must be spent for the caster or user with each aggravated strike).</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Ghost Stick",
+				"Dice Pool" : "Resolve + Occult + Prime 3",
+				"Rote Description" : "Not all threats faced by a Mysterium mage walk in flesh, and so this rote enables such a willworker to defend herself against hostile incorporeal entities."
+			}
+		]
+	},
+	{
+		"Name" : "[ 3 ] &nbsp; False Signature",
+		"SourceBook" : "Adamantine Arrow",
+		"SourcePage" : "184",
+		"Arcana Requirement" : "Prime 3 (+ conjunctional Arcanum)",
+		"Practice" : "Weaving",
+		"Action" : "Instant",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage combines Prime 2 into her spell to alter the mystical appearance of the spell. The ability to change the signature of a spell, making it appear to originate from a different Arcanum, can give the caster a psychological edge during magical combat. A Forces rote cast with the arcane signature of Time can make an opponent second guess the mage's abilities and can act as a foil to countermagic. Mages using Mage Sight are allowed a reflexive Wits + Occult roll to notice the true nature of a spell's Arcanum. Targets suffer a -1 penalty to this roll per point of Potency of the altered spell.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Feint",
+				"Dice Pool" : "Wits + Subterfuge + Prime 3",
+				"Rote Description" : "Many mages have been wrong-footed by an Arrow through use of this spell. Some mages, anticipating a direct attack, see what they expect to see and are surprised when a Forces spell has a more subtle effect. Use of this rote can also conceal order-specific mystical secrets. It's hard to copy a rote when a mage can't be sure about the Arcanum involved."
+			}
+		]
+	},
+	{
+		"Name" : "Fortify Phantasmal Item",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "27",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Perfecting",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "Through the casting of this spell, a mage can augment a piece of non-weapon phantasmal equipment. Successes accrued during the casting of this spell add to the equipment bonus granted by non-weapon objects made out of tass. (For weapons crafted through the use of the Prime Arcanum, see the Phantasmal Weapon spell.) Though covert in Aspect, the spell suffers Disbelief if the granted bonus is greater than the base equipment bonus conveyed by the item in question.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Phantasmal Fortification",
+				"Dice Pool" : "Intelligence + Crafts + Prime 3",
+				"Rote Description" : "By means of this rote, a mystagogue can enhance the efficiency of his phantasmal tools, so as to craft better equipment than that available to even the wealthiest and most well connected of Sleepers."
+			}
+		]
+	},
+	{
+		"Name" : "Girding The Champion's Faith",
+		"SourceBook" : "Magical Traditions",
+		"SourcePage" : "88",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Shielding",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "The Templar invokes a brilliant armor forged from the light of God to turn back the blows of his most ardent enemies. The Templar gains two points of armor for the duration of the rote. Additionally, the Templar, illuminated by the light of God, can withstand even the most heinous perils that his foes would inflict on him: While under the aegis of this spell, the Templar downgrades any aggravated damage he suffers to lethal damage. (This does not affect the upgrade of lethal damage to aggravated if the Templar has already suffered his full Health points in lethal damage, however. The foci for this spell are the Baphomet and a cipher. First, the Templar encodes his own name in a cipher of his choosing, thus protecting his identity with the cipher just as he seeks to protect his body with the spell. The Templar also traces the sign of the Baphomet in the air before him as he casts the spell. The journals of the Templars indicate that this spell was most commonly used in preparation for a physical conflict with otherworldly enemies, when the knights would face hostile &quot;angels&quot; or entities from beyond most realms of perception. Tales of knights in shining armor, whether among actual military accounts, or even folkloric legends such as Beowulf or the Volsung Saga might have involved kennings related to this spell's function, even though those sources clearly predate the Templar order. While it works fine as a standard armor spell, most mages would likely eschew it as such, since it's not as effective as the armor rotes of many other Arcana (offering less in the way of protection for skilled mages of those Arcana) and it's plainly vulgar. On the other hand, the protection it offers from aggravated supernatural damage is certainly a boon.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Templar Treasure Tradition Rote",
+				"Rote Name" : "Girding The Champion's Faith",
+				"Dice Pool" : "Wits + Occult + Prime 3",
+				"Rote Description" : "This rote works exactly the same as the spell with the same name."
+			}
+		]
+	},
+	{
+		"Name" : "Hallow Bond",
+		"SourceBook" : "Sanctum And Sigil",
+		"SourcePage" : "94",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Weaving",
+		"Action" : "Extended (1 success per Hallow dot)",
+		"Duration" : "Lasting (see below)",
+		"Aspect" : "Lasting (see below)",
+		"Cost" : "1 Mana",
+		"Effect" : "The casting of this extended action spell can only begin at the time of day in which the Hallow normally produces its daily allotment of Mana. The mage must be present, within the vicinity of the Hallow's center (five-yard radius per dot). He needs one success per dot rating of the Hallow. The mage's aura cannot conflict with the Hallow's quality of resonance. For example, if his aura is generally angry, he cannot marry a peacefully-aspected Hallow. A dramatic failure at any point during the casting means that the land has rejected the mage. He cannot continue the spell and may not try again for at least a month, during which time he suffers a -2 dice penalty on all spellcasting attempts to channel Mana from that Hallow. Animistic mages believe that the Hallow has a consciousness and it has denied the supplicant; more scientific-minded mages believe that the mage is allergic to something in the Hallow's mystical composition. If the spell succeeds, its effects are lasting - so long as the mage properly maintains a relationship with the Hallow. He must perform at least one oblation per month per dot rating of the Hallow (i.e., a 3-dot Hallow needs three oblations per month), based not on his Path's preferences but on those of the Hallow, determined by its resonance. A resonance of pain or fear might require oblations featuring torture, maiming, or death. Tranquility resonance might need meditative oblations or the tending of a garden within the Hallow's vicinity. Anxiety might be best served through rushed ceremonies and rituals, taut with emotional conflict. The mage - called the spouse - knows which oblations will appease the Hallow. If the mage misses one of these oblations, the spell's effects are dampened temporarily, until he can perform the rite. If more than three months pass without an oblation on the mage's part, the spell expires. That mage cannot attempt to marry the same Hallow again for at least the next three months thereafter. So long as the spell lasts, the mage can choose who can harvest Mana from the Hallow. Mages without permission cannot forcibly harvest the Hallow, except masters with a Prime 5 version of the Channel Mana spell, and, even then, they suffer a dice penalty equal to the spouse's Resolve. With Prime 4, this spell can be cast upon a willing target, bonding her to the Hallow instead of the mage. Only one mage can be bonded to the same Hallow at the same time. For another to bond to it, the current spouse must either cancel his spell or die - or else his Hallow Bond spell can be dispelled.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Marrying The Land",
+				"Dice Pool" : "Composure + Occult + Prime 3",
+				"Rote Description" : "Of all the orders, the Mysterium most commonly maintains this ancient practice from a time when people lived more closely with the land."
+			}
+		]
+	},
+	{
+		"Name" : "Imbue Animal",
+		"SourceBook" : "Banishers",
+		"SourcePage" : "62",
+		"Arcana Requirement" : "Prime 3 + Life 3",
+		"Practice" : "Weaving",
+		"Action" : "Extended",
+		"Duration" : "Special",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana per spell",
+		"Effect" : "The Banisher can imbue a living creature with one or more spells, creating an animal that functions as an imbued item. This spell functions as Imbue Item, save that this spell works on a living creature. The mage cannot affect human beings with this spell, though it's possible that an archmage might have this ability. Unlike Imbue Item, this spell is always vulgar, but all other particulars of that spell apply here. In addition, any use of this spell causes a check to avoid degeneration at Wisdom 5 or greater.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Banisher Rote",
+				"Rote Name" : "Genesis 1:26",
+				"Dice Pool" : "Manipulation + Animal Ken + Prime 3",
+				"Rote Description" : "&quot;And God said, Let us make man in our image, after our likeness: And let them have dominion over the fish of the sea, and over the fowl of the air, and over the cattle, and over all the earth, and over every creeping thing that creepeth upon the earth.&quot; The Banisher who created this rote quoted this passage whenever imbuing an animal with a spell. Though he is long dead, he inscribed the rote on numerous grimoires, marked with sigils intended to prevent anyone but Banishers from reading them."
+			}
+		]
+	},
+	{
+		"Name" : "Imbue Mana",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "226",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Weaving",
+		"Action" : "Instant",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can imbue a living creature with Mana. The mage gives a living creature one of his Mana points per success. The caster must touch the target during casting (with Prime 4, he can affect the subject at sensory range). If combined with Channel Mana or Siphon Mana, the mage can take Mana from one source (other than himself) to give to another. Channeling Mana into a living being usually does nothing to it (save perhaps for a feeling of being energetic or edgy) unless the subject is Awakened, in which case she adds the Mana to her total. If the number of points of Mana invested in a Sleeper's Pattern exceeds her Size, the subject suffers one Health wound of bashing damage per point of Mana by which her Size is exceeded, as the celestial fire literally tears her Pattern apart like an over-inflated balloon rupturing. In this case, the target can resist the spell by subtracting her Stamina from the caster's roll.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Succor",
+				"Dice Pool" : "Presence + Persuasion + Prime 3",
+				"Rote Description" : "Just like tossing a new clip of ammunition to a buddy who's run out, Adamantine Arrow mages use this rote to make sure that everyone has sufficient resources to remain in a fight."
+			}
+		]
+	},
+	{
+		"Name" : "Instill Exclusiveness",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "142",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Weaving",
+		"Action" : "Extended",
+		"Duration" : "Prolonged (this spell uses the advanced prolongation factors)",
+		"Aspect" : "Covert",
+		"Cost" : "3 Mana",
+		"Effect" : "The mage weaves an enchantment into an item preventing anyone but its present owner from drawing on its imbued powers. Unauthorized users may still be targeted by the item's other defensive enchantments, if any. The mage may, at the time of casting, exempt any of the item's magical properties from the purview of this spell. An item's enhancements are often exempted; exclusiveness would otherwise make the item less durable when handled by enemies intent on destroying it. A spell that has not yet been cast on the item at the time Instill Exclusiveness is woven into it is automatically exempted from its effect.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Rights Of Property",
+				"Dice Pool" : "Intelligence + Occult + Mind 3",
+				"Rote Description" : "Guardians rankle at the thought of grubby outsider hands making profitable use of their precious Enchanted Items."
+			}
+		]
+	},
+	{
+		"Name" : "Item Failsafe",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "141",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Weaving",
+		"Action" : "Extended",
+		"Duration" : "Prolonged (this spell uses the advanced prolongation factors)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The magician enchants an Imbued Item so that its spells are inaccessible to unauthorized users. One success is added to the target number per imbued spell that is to be protected from unauthorized users.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "The Loyal Object",
+				"Dice Pool" : "Intelligence + Crafts + Prime 3",
+				"Rote Description" : "Though less punitive than other protective enchantments, Guardians prefer the simplicity inherent in simply forbidding interlopers to make use of their Imbued Items."
+			}
+		]
+	},
+	{
+		"Name" : "Last Testament",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "143",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Weaving",
+		"Action" : "Extended",
+		"Duration" : "Prolonged (this spell uses the advanced prolongation factors)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage enchants an item so that its owner may designate a rightful heir in the event of his death or long-term disappearance. Only that individual may then attune to the device. A rightful owner of this item may designate a number of heirs equal to the spell's Potency. The owner names them in order, so that if the first heir fails to take possession of the item after a specified period, the next in line is then cleared to step up and attune to the item. If all specified heirs are dead when the owner dies, the item becomes generally available. As with any item bearing an authorization-based spell, any mage may now attune to it. Owners can alter their list of heirs at any time. Owners also may specify an interval of neglect, after which their heirs may claim the item as theirs. If an entire interval passes during which the owner has not used or handled the item, the first-named heir becomes the item's designated owner. Mages inheriting an item in this way will likely wish to specify their own new heirs, rather than allowing the item to pass to the previous owner's second-named beneficiary.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "Orderly Succession",
+				"Dice Pool" : "Intelligence + Crafts + Prime 3",
+				"Rote Description" : "Certain items belong to Silver Ladder hierarchy itself, as a perquisite of particular offices. The Orderly Succession rote guarantees that these items are passed to the new holders of these positions, and are not subsumed into officers' estates."
+			}
+		]
+	},
+	{
+		"Name" : "Ley Lines",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "226",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Weaving",
+		"Action" : "Extended",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "This spell harnesses the subtle power of the Earth's ley lines, enabling a willworker to generate perpetual free energy for any number of purposes. Ley energies course unseen and unnoticed by most over the contours of the planet. It is said that the ancients realigned and manipulated such sources of perpetual power. This spell bestows upon the mage a source of perpetual energy, a node from which ley energy wells up. The mage determines the form of the node, whether it is the source of a pure spring, the center of a tranquil valley, or a mountain peak, for example. The effect is lasting -- the energy of the earth replenishes itself, unless something later disrupts the ley lines. Such disruption can be done by altering the architecture or geography of the node, perhaps by simply damming its spring or flooding its valley. The target number depends on how much power the node generates per day. One success makes enough energy per day to power a small room, such as a home office (for its usual day-to-day energy needs in mild temperatures). Three successes can power a small home. Five can power a large home or mansion. Seven successes can power an office building. The power is generated from a single node, so these buildings must have a central hook-up that is placed within the node. For example, a circuit box can be placed in the node, powering anything that leads to it, such as an electrical socket in an upstairs bedroom. This spell does have a couple of drawbacks. First, the mage can create a ley-energy node only at a point at which energies actually converge. Such spots occur at the Storyteller's discretion, but it is said that ancient cultures knew these places. Following old Roman roads or exploring the ruins of ancient villages might lead a mage to such a nexus. Most of the best and most accessible of these junctures have already been claimed. Second, this magic can be dispelled just as any other, causing all that is being powered by the subtle energies to cease functioning until the spell is cast anew (or an alternate power source is arranged).</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Atlantean Generator",
+				"Dice Pool" : "Intelligence + Occult or Science + Prime 3",
+				"Rote Description" : "While the Free Council as a whole seeks to advance the practice of magic, the old ways are still sometimes best. Using ancient techniques based on geography, sacred mathematics, and other such disciplines, the willworker employs this rote to provide an essentially limitless source of free energy. Mysterium mages use similar magics to power sanctums and esoteric devices."
+			}
+		]
+	},
+	{
+		"Name" : "Ley Shift",
+		"SourceBook" : "Sanctum And Sigil",
+		"SourcePage" : "97",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Weaving",
+		"Action" : "Extended (one success per five yards)",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana (to anchor)",
+		"Effect" : "The mage can shift the geographical position of a ley line in a direction or shape of her choosing. While this spell moves the line's direction of flow, the spell cannot sever or destroy the ley line, or reverse its direction of flow (see the Prime 4 Ley Flow spell) the air from the appropriate direction. (She needs some form of Mage Sight to see it.) If the mage wants to move it laterally, she reaches straight out so that pulling into her body moves the line in the desired direction. If she wants to pull the line closer to the surface, she reaches down toward her feet. Similarly, pulling the line down requires reaching up to the sky. Sleepers would perceive this as extremely odd behavior, but nothing that causes Disbelief. Once she has a grip on the line, she next pulls on the line as if dragging a large steel cable. Onlookers see the mage straining against an invisible resistance. She can drag the line five yards for each success. The spell's target number is thus determined by the total distance the mage wants to move the line. As soon as the mage reaches the desired distance, she must finally anchor the line into its new position by investing one Mana to peg the line down. Imagine a tent spike that keeps a rope in place, and you have an idea what the mystical peg does to the conduit. Once the spell expires, the ley line snaps back into its natural shape.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Urban Renewal",
+				"Dice Pool" : "Strength + Occult + Prime 3",
+				"Rote Description" : "The Free Council uses this spell in their urban renewal projects, redirecting lines to flow through the buildings, parks, or roads they think can best benefit from the line's resonance. Alternatively, they redirect the line to remove its influence on a place, such as when its resonance is ill-aspected."
+			}
+		]
+	},
+	{
+		"Name" : "Magic Wall",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "227",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Shielding",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "Special",
+		"Effect" : "The mage can now cast a Magic Shield on another person. See the Magic Shield spell for the effects. If the target does not have his own Mana, the caster must incorporate Mana during casting to allow it a number of charges. The subject can choose when a charge is activated.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Invisible Boon",
+				"Dice Pool" : "Manipulation + Occult + Prime 3",
+				"Rote Description" : "Guardians sometimes cast this rote on Sleepers to keep them safe from spells that might otherwise alert mundane folk to the working of magic."
+			}
+		]
+	},
+	{
+		"Name" : "Mana Leech",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "139",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Weaving",
+		"Action" : "Extended",
+		"Duration" : "Prolonged (this spell uses the advanced prolongation factors)",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage curses an item so that it drains its Awakened owner of Mana. Whenever a mage wearing or carrying the item casts a spell with a Mana cost, that cost increases by one. This item requires 20 successes to create.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Inescapable Taxation",
+				"Dice Pool" : "Intelligence + Crafts + Prime 3",
+				"Rote Description" : "Guardians of the Veil punish overly flamboyant magicians with gifts that make their magic harder to work."
+			}
+		]
+	},
+	{
+		"Name" : "Marked Power",
+		"SourceBook" : "Banishers",
+		"SourcePage" : "62",
+		"Arcana Requirement" : "Prime 3 + Space 2",
+		"Practice" : "Weaving",
+		"Action" : "Instant",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "The art of intelligence-gathering includes a variety of ways to mark your target to allow for easier surveillance. This particular method of marking a mage targets their greatest strength and weakness, Mana. This spell targets tass that forms naturally around a Hallow. With a single success on the casting roll, the mage implants a magical signature into the tass. This signature lies dormant and cannot be detected by any means until the tass is broken down to be used. Once this occurs, the signature activates and functions as an intimate sympathetic connection to the mage who used the tass to refill her Mana pool. The sympathetic connection persists as long as even one dot of Mana gained from the marked tass remains in the mage's pool. A perceptive mage using Supernal Vision may notice something odd about someone who has absorbed marked Mana. Suspicious mages may roll Resolve + Composure - the Potency of the &quot;Marked Power&quot; casting. With a success, the mage realizes that the Mana of person he is observing has been tampered with in some way, but additional study will be required to reveal exactly how.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Banisher Rote",
+				"Rote Name" : "Tag",
+				"Dice Pool" : "Resolve + Occult + Prime 3",
+				"Rote Description" : "A cabal in Philadelphia brought a strange story to the notice of the local Consilium, shortly before the disappearance of the entire cabal. The mages had noticed an unusual quality about the Mana stored in their Patterns. Further investigation by the Consilium eventually uncovered evidence that the cabal had been attacked by a cell of Banishers calling themselves Children of Liberty. When one of the Children of Liberty was apprehended, magically reinforced questioning revealed the Banishers had used this spell (in conjunction with more mundane forms of intelligence-gathering) to spy on the cabal and track the members' movements. Appalled by this information, the Hierarch of Philadelphia ordered a full-scale seek-and-destroy attack on the remaining Children of Liberty. To date, however, no further Banishers have been found in the city."
+			}
+		]
+	},
+	{
+		"Name" : "Mystic Shackle",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "138",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Weaving",
+		"Action" : "Extended",
+		"Duration" : "Prolonged (this spell uses the advanced prolongation factors)",
+		"Aspect" : "Covert",
+		"Cost" : "Variable; see below",
+		"Effect" : "The mage curses an item so that it penalizes the use of one or more Arcana.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "The Weighty Anchor",
+				"Dice Pool" : "Intelligence + Crafts + Prime 3",
+				"Rote Description" : "Followers of the Silver Ladder who commit offenses against their leaders are sometimes, as a punishment short of expulsion or death, fitted temporarily with Weighty Anchors. Few who undergo this indignity are foolish enough to repeat their transgressions."
+			}
+		]
+	},
+	{
+		"Name" : "Path In The Skin",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "69",
+		"Arcana Requirement" : "Prime 3 + (Life 2 Or 3)",
+		"Practice" : "Weaving",
+		"Action" : "Extended",
+		"Duration" : "Prolonged",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "Mages use this spell to imbue their bodies with the properties of a magical tool. The caster requires Life 2 to use the spell on herself and Life 3 to use it on another person. Mages with Prime 4 normally cast this as a permanent spell (using the advanced prolongation factors), but this is not strictly necessary. Unlike most permanent spells, the recipient may cancel the spell at will, as long as the tool to be imbued is one of her own. When the spell is cast upon an unwilling recipient, the target contests with a roll of Resolve + Gnosis. Note that this spell may be used to inscribe a sorcerer's magical tool on someone else's body. Thus, a mage may use her apprentice, companion or animal familiar as a &quot;pentacle&quot; or &quot;sword.&quot; The recipient must then be no more than a yard away or at touch range (these are not the same thing, as some mages may use Space to touch their tool-bearer at a distance) from the spellcaster for him to be able to use his tool. The mage intending to use the embodied tool must dedicate it before the spell is cast.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Tribal Art",
+				"Dice Pool" : "Dexterity + Crafts + Prime 3",
+				"Rote Description" : "Free Council mages value magic centered in Fallen culture. They use this rote to proclaim this by choosing traditional tribal body art to hone their magical wills. Some Libertines use body art from the &quot;new tribes&quot; of alternative subcultures and even plastic surgery. All orders have equivalents that emphasize imbuing a body with distinctly Atlantean symbols, though what is purely Atlantean is, of course, a matter of debate."
+			}
+		]
+	},
+	{
+		"Name" : "Payment In Power",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "129",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Weaving",
+		"Action" : "Instant",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "20 Mana; see below",
+		"Effect" : "This spell alters the usual cost of relinquishing a finishing spell. Instead of sacrificing a Willpower dot, the willworker pays Mana, spent over a period of days. Mana spent for this purpose is in addition to any other Mana costs required to make the Enhanced Item. The high Mana cost of this spell is exacted over a period of days. The mage spends 1 Mana at the time of casting. Twenty-four hours later, the willworker loses another point of Mana. The process repeats itself for 20 days, until 20 points of Mana have been spent. Mana losses occur whether the mage likes it or not. If at the end of any interval the willworker has no Mana left, all spells woven into the item (including those cast by collaborators) are dispelled. Worse, Mana continues to drain from the mage at a rate of one per day until 20 points have been harvested, even to the point of scourging the mage against his will to get them.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Conservation Of The Will",
+				"Dice Pool" : "Intelligence + Occult + Prime 3",
+				"Rote Description" : "Free Council doctrine teaches that it's better to spend power, which is rare but recoverable, than to carve off a bleeding chunk of your selfhood just to create an item."
+			}
+		]
+	},
+	{
+		"Name" : "Phantasm",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "227",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Weaving",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "This spell creates an inanimate phantasm, a construct woven of Mana threads. Such a creation possesses a degree of substance and appears to be a normal object of its type to Sleeping eyes, but is in reality a solidified illusion. The mage can create books, knives, chairs, stones, or any other lifeless, inanimate objects she can think of. These objects do not and cannot possess qualities such as conductivity, magnetism, or the like. Phantasmal wood does not float in water and it does not fuel a fire (though it can still be destroyed by such, it does not sustain the flame on its own). The spell creates an object of Size 5 or less. The phantasm has one point of Durability. It is fragile and breaks easily. The mage cannot create functional tools, weapons or armor at this level. To create a convincing illusion, a reflexive Intelligence + appropriate Skill roll is required, and excess successes on the casting add one die each to this roll. To simulate an animal, use Animal Ken. For an object, use Crafts. For a person, use Medicine or perhaps Empathy. At the Storyteller's discretion, magically &quot;dead&quot; areas may not contain enough ambient Mana to fabricate such an object without the expenditure of a point of Mana, but this should be the case only rarely.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "Loom Of The Gods",
+				"Dice Pool" : "Intelligence + Craft + Prime 3",
+				"Rote Description" : "When a Ladder mage wishes to impress others with a collection of rare antiques or artwork behind glass, she can craft them from the Prima Materia itself."
+			}
+		]
+	},
+	{
+		"Name" : "Price Of Hubris",
+		"SourceBook" : "Banishers",
+		"SourcePage" : "63",
+		"Arcana Requirement" : "Prime 3 + (any one of the attacking spell's Arcana at level 1)",
+		"Practice" : "Shielding",
+		"Action" : "Instant and contested; successes are compared to the target spell's Potency",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "For many mages, the casting of a vulgar spell is an act of arrogance. Even with full knowledge that the Fallen World rejects such overt displays of power, the mage who routinely employs such spells is akin to a brawler who relies only on his strength. In either case, the person's arrogance becomes the root of his defeat. This spell follows the same rules as Counterspell except that if the Potency of the Price of Hubris casting is equal to, or greater than, the potency of the targeted spell, the hostile spell is redirected to its source. Any redirected spell becomes an Aimed spell, requiring a single success on a Wits + Occult + Prime roll to hit the target (normal modifiers apply). The effects of a redirected spell are equal to successes rolled on the original casting of that spell. The mage must be the direct target of a hostile spell to redirect that spell. Spells that include the mage in an area of effect, or that have an indirect effect on the mage cannot be redirected.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Banisher Rote",
+				"Rote Name" : "Simple Simon's Glee",
+				"Dice Pool" : "Composure + Occult + Prime 3",
+				"Rote Description" : "A Banisher by the name of Simon Barnes concocted this rote to turn the powers of the &quot;demons&quot; he fought back on them. Known as &quot;Simple&quot; Simon to the media, who thought him a serial killer, Simon was eventually shot and killed by city police. Shortly after his death, Simon's body disappeared from the morgue and his notes, a sheaf of loose-leaf mad scribblings, vanished from the police evidence room."
+			}
+		]
+	},
+	{
+		"Name" : "Reset Platonic Exemplar",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "132",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Fraying",
+		"Action" : "Extended",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage removes all spells woven into a Platonic exemplar, freeing up room for replacement magics in Enhanced Items. Reset Platonic Exemplar usually removes all spells from an item. On a dramatic success, the mage can choose which spells stay and which ones go. The mage must touch the item during casting. Note that the normal rules preventing the permanent dispellation of Enchanted Items do not apply to Platonic exemplars, which by defi nition are vessels used to contain an ever-changing roster of spells.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Retune The Ineffable Essence",
+				"Dice Pool" : "Intelligence + Occult + Prime 3",
+				"Rote Description" : "Though Platonic exemplars arouse cupidity in even the most ascetic of mages, none covet these items with a hotter fever than the members of the Mysterium. Many learn this rote in the mere anticipation of one day acquiring such a treasure."
+			}
+		]
+	},
+	{
+		"Name" : "Subvert Ownership",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "145",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Fraying",
+		"Action" : "Instant and contested; successes are compared to target spell's Potency",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage may specify a new rightful owner, set of authorized users or designated heir (per the Last Testament spell) for an Enchanted Item. A single casting of Subvert Ownership targets any and all spells woven into an item that depend on such designations.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Changing Hands",
+				"Dice Pool" : "Wits + Subterfuge + Prime 3",
+				"Rote Description" : "The Mysterium's shadier members are loath to allow mere technicalities of ownership stand in the way of a prestigious acquisition."
+			}
+		]
+	},
+	{
+		"Name" : "Target Interloper",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "140",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Weaving",
+		"Action" : "Extended",
+		"Duration" : "Prolonged (this spell uses the advanced prolongation factors)",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "The willworker adds a defensive mechanism to an item, allowing another spell, which must also be cast into the item, to target any unauthorized person touching the device. Typically, the spell must be capable of targeting an individual, without a complex set of options. However, if a ghost has been bound to the item, that entity can make any necessary decisions when the defense mechanism activates. When enchanting the item, add three successes to the target number for each of the target spell's dots to allow the spell to target and trigger against interlopers. So, to allow the item to trigger the four-dot spell Trigger the Lizard Brain, 12 successes would be required. Upon successful casting of this spell, the mage then rolls her usual dice pool for an improvised casting of the subject spell. The defensive spell gains one Potency per success. If the subject spell requires Mana, the item must be infused with it, per the usual Imbue Item process, and the item must have Mana to spend when triggered by an interloper. Without sufficient Mana, the effect is not activated.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "The Artful Tripwire",
+				"Dice Pool" : "Intelligence + Occult + Prime 3",
+				"Rote Description" : "Silver Ladder mages appreciate the opportunities this spell provides to showcase both one's mystical ingenuity, and one's commitment to property rights."
+			}
+		]
+	},
+	{
+		"Name" : "Transform Other Aura",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "227",
+		"Arcana Requirement" : "Prime 3",
+		"Practice" : "Veiling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can alter another's aura, changing the appearance of his true nature just as he does for himself with Prime 2.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Running With The Pack",
+				"Dice Pool" : "Intelligence + Occult + Prime 3",
+				"Rote Description" : "A Free Council mage who intends to masquerade as a Sleeper -- or even a vampire or werewolf -- might want others of his &quot;kind&quot; nearby to back him up in case of trouble. With this rote, he can make his entire cabal look to be something its members are not, at least to the eyes of those who can read auras."
+			}
+		]
+	},
+	{
+		"Name" : "Tribute Of Iron",
+		"SourceBook" : "Magical Traditions",
+		"SourcePage" : "76",
+		"Arcana Requirement" : "Prime 3 + Death 1",
+		"Practice" : "Weaving",
+		"Action" : "Instant",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "Anyone who dies by metal, whether shot, crushed by a car, or stabbed with a knife, belongs to Ogg&uacute;n. Horrible accidents and casualties of war are often considered the god of metal taking his tribute in blood from the world of men. One story, though, has it that a santero enslaved in Cuba rose up with a spade and slew several of his keepers in a burst of rage. He saw his masters' relatives coming to kill him, and begged Ogg&uacute;n for help. The story says that Ogg&uacute;n answered him, telling him to taste the blood of his victims. The slave did so, and he found his strength replenished. He killed many of the slavers before they finally brought him low, and as the bullets pierced his heart, he uttered his thanks to Ogg&uacute;n and promised his blood and soul to the orisha. Modern santeros are loath to use this spell often, because it requires another human being to die by metal (though it does not require the caster to kill the victim himself). The santero must taste the blood of the dead or dying. If the spell is successful, the mage can gain ash&eacute; (Mana) as if he had performed a blood sacrifice. Casting this spell by itself doesn't cause degeneration, though killing someone to facilitate it certainly does. The casting mage must carry or wear a piece of metal, but no Ogg&uacute;n would ever be without such a focus anyway. Many mages using this spell dip a blade in the victim's blood and lick it off while casting, but this isn't necessary.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Santer&iacute; Tradition Rote",
+				"Rote Name" : "Tribute Of Iron",
+				"Dice Pool" : "Strength + Occult + Prime 3",
+				"Rote Description" : "This rote is just as the spell with the same name."
+			}
+		]
+	},
+	{
+		"Name" : "Activate Spirit",
+		"SourceBook" : "Grimoire Of Grimoires",
+		"SourcePage" : "109",
+		"Arcana Requirement" : "Prime 4 + Spirit 4",
+		"Practice" : "Patterning",
+		"Action" : "Instant and contested; target rolls resistance reflexively",
+		"Duration" : "Transistory",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "There is a story of Jascei, a holy man who gained wisdom by studying the motions of the stars from atop the highest mountain on the island of Atlantis. This sage often had cause to call upon the small gods of the world in the pursuit of his sacred task. On occasion, he would borrow their miraculous abilities directly rather than trusting in such beings to interpret the will of a man of Atlantis. While his ability to direct the powers of the otherworldly could not save him from the Fall, it is said that he called upon many spirits at the end, even as his temple fell down around him, to scatter his decades of compiled lore to the far corners of the Earth that they should be discovered again in time. By channeling a point of Mana into a spirit, a mage may use one of its Numina or its Influences (rolling the spirit's normal dice pool for doing so, though to an end of the willworker's choosing). This does not constitute the spirit's action for the turn and the dice pool for this spell is penalized by the spirit's rank, just as though the mage were attempting to forcibly bind it. Using a Numen or Influence in this way does not generate Paradox for the mage, even if the casting of this spell does. Note that spirits almost invariably resent having this sort of magic cast upon them; it is, in a very real way, a violation of the spirit's personal sovereignty, as the mage reaches into the entity's fundamental nature and, metaphysically speaking, starts pushing buttons to achieve the desired result.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "Mantle Of The Gods",
+				"Dice Pool" : "Presence + Expression + Spirit 4",
+				"Rote Description" : "By channeling her Will through a spirit, a mage might direct another of the powers concealed behind the reality known to Sleepers. Often more narrow in focus than the Ten Arcana, these powers sometimes sacrifice flexibility for raw power or utility in a single sort of endeavor."
+			}
+		]
+	},
+	{
+		"Name" : "Annihilate Spells",
+		"SourceBook" : "Banishers",
+		"SourcePage" : "63",
+		"Arcana Requirement" : "Prime 4 + Time 3",
+		"Practice" : "Unraveling",
+		"Action" : "Instant",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage counters or activates all hung and prolonged spells that a target has active. A capable Banisher can spread this effect across an area. Mages are fragile beings, but given enough time, any mage can take several gunshots or wounds before collapsing, and every second that a mage isn't dead is another opportunity for him to turn the tables on his Banisher assailant. This spell allows the Banisher to strip away a mage's pre-existing advantages: Armor spells, hung spells, even Mage Sight. The Banisher uses Time to turn the &quot;clock&quot; ahead on an existing spell, and Prime to unravel it, much as Supernal Dispellation. Unlike that spell, however, the mage doesn't need to beat the spell's Potency, as he is attacking the spell as it will exist in the future (that is, as it starts to fade and lose its Potency). The Banisher must touch the mage to use this spell, but at Prime 5, he can cast it at sensory range. The mage can also work in target factors at this level, affecting several targets at once.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Banisher Rote",
+				"Rote Name" : "Oblivion",
+				"Dice Pool" : "Resolve + Occult + Prime 4",
+				"Rote Description" : "The infamous Banisher known only as &quot;Brown&quot; perfected this rote, and used it to great effect against the mages of the Pacific Northwest. His cult, consisting only of Sleepers and Sleepwalkers, would wait until he removed the shields and other protective spells from their targets, and then the cult members would open fire."
+			}
+		]
+	},
+	{
+		"Name" : "Awaken Hallow",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "228",
+		"Arcana Requirement" : "Prime 4",
+		"Practice" : "Patterning",
+		"Action" : "Extended",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "The target number is equal to the original level of the Hallow before it became dormant.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Aligning The Stars",
+				"Dice Pool" : "Composure + Survival + Prime 4",
+				"Rote Description" : "On occasion, secrets lay dormant within the quieted flow of a Hallow. Mysterium mages that return such a flow to life have been witness to wondrous secrets. Of course, some would argue that having an active Hallow at one's disposal is reward enough. Mages of all orders with access to it make use of this rote, as there are few who would pass up the chance to tap into the power of a Hallow."
+			}
+		]
+	},
+	{
+		"Name" : "[ 4 ] &nbsp; Bestow Ghostly Sight",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "29",
+		"Arcana Requirement" : "Prime 4 + Death 2",
+		"Practice" : "Patterning",
+		"Action" : "Instant and contested; target rolls Resolve reflexively",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "By altering the Pattern of a Sleeper's perceptual capabilities, this spell enables the Sleeper to gaze into Twilight and perceive the shades of the dead. Although covert in Aspect, this spell will invoke Disbelief if the Sleeper is in any way resistant to, or becomes especially terrified by, what he perceives (and most will be either one or the other, given the horror inherent in beholding the unquiet dead).</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Eyes Of The Grave",
+				"Dice Pool" : "Intelligence + Empathy + Death 2",
+				"Rote Description" : "By means of this rote, mages of the Mysterium can enable Sleeper associates to perceive the goings-on of the disincarnate dead. Alternately, a Sleeper who has somehow earned the wrath of the willworker might be compelled to gaze into the ghostly realm, whether the Sleeper likes it or not."
+			}
+		]
+	},
+	{
+		"Name" : "Bodyguard's Blessing",
+		"SourceBook" : "Adamantine Arrow",
+		"SourcePage" : "184",
+		"Arcana Requirement" : "Prime 4",
+		"Practice" : "Ruling",
+		"Action" : "Instant and resisted; target rolls Resolve + Gnosis reflexively",
+		"Duration" : "Transitory (one turn)",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "The mark of a dedicated bodyguard has always been the willingness to take a bullet (or arrow or sword in earlier times) for the people placed under the bodyguard's protection. This spell allows the mage to redirect a magical attack from its intended target to the mage. On the turn after this spell is cast, the next spell cast by the target is redirected to strike the caster of this spell. The mage may redirect any one spell with a Potency no higher than the number of successes gained on the casting roll.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Lightning Rod",
+				"Dice Pool" : "Wits + Occult + Prime 4",
+				"Rote Description" : "The tactical implications of this spell were not lost on the Arrows. Although they sometimes act in the capacity of bodyguards, the Arrows saw an opportunity to steal Shielding and healing spells from enemy mages. Timing, as well as a working knowledge of their opponent, is essential when applying the rote in this fashion. The Arrow must be able to predict how much damage their opponent is willing to take before resorting to a hasty healing or Shielding spell with a low enough Potency to be redirected."
+			}
+		]
+	},
+	{
+		"Name" : "Curse Of The Fallen World",
+		"SourceBook" : "Banishers",
+		"SourcePage" : "64",
+		"Arcana Requirement" : "Prime 4",
+		"Practice" : "Fraying",
+		"Action" : "Instant and contested; target rolls Resolve + Gnosis reflexively",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "This spell forces an enemy mage to reveal his Awakened state with every spell he casts and increases the likelihood of a backlash against that mage. Mages are able to cast covert spells by working within the established rules for what is considered possible in the Fallen World. This spell forces magic used by the mage to manifest itself visibly and audibly. An Alter Integrity spell used to weaken a lock might cause the lock to shriek with the sound of bending metal and glow red (for example). With a successful casting, every spell cast by the targeted mage is considered vulgar for the remainder of the scene. Additionally, every casting uncloaks the cursed mage's nimbus in an enhanced state, making the nimbus stronger in effect than is usual. The summation of all this excess magical energy results in the addition of +1 die to each Paradox check made by the cursed mage during the scene.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Banisher Rote",
+				"Rote Name" : "Force Paradox",
+				"Dice Pool" : "Resolve + Occult + Prime 4",
+				"Rote Description" : "Order mages who have studied literature of more organized and educated Banishers have found citations of Paradox as support for their theories that magic is unnatural. They insist that if mages were meant to wield mystical powers, counterforces such as Paradox wouldn't exist. Banishers claim this rote was first developed in Atlantis by the Timori, but such claims are dubious at best, and near impossible to prove."
+			}
+		]
+	},
+	{
+		"Name" : "Delusions Of Grandeur",
+		"SourceBook" : "Banishers",
+		"SourcePage" : "64",
+		"Arcana Requirement" : "Prime 4",
+		"Practice" : "Unraveling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The heady rush of power involved with casting a spell is like a drug to mages. The more power available to a mage, the greater the temptation to use that power. This spell tempts a mage with power, then punishes him for using it. This spell targets the Mana of an opponent, allowing it to flow more easily from the target for a limited time. For the Duration of the spell, the target mage may spend one Mana more per turn than would normally be allowed by his Gnosis rating. Excited by the feeling of the Mana surging within them, mages usually give in to the temptation of spending more Mana than is necessary, but this newfound power comes at a price. While the mage is under the effect of this spell, any Mana expenditure is doubled in cost.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Banisher Rote",
+				"Rote Name" : "Mana Leak",
+				"Dice Pool" : "Wits + Occult + Prime 4 - Resistance",
+				"Rote Description" : "Abuse of power by mages is a common element in the poorly produced Banisher pamphlets used to indoctrinate their followers. No power is as absolute as magic, they say, and so it follows that all mages must be corrupted by their power eventually. The Banishers point to the success of this particular rote against order mages as proof of this claim."
+			}
+		]
+	},
+	{
+		"Name" : "Disenchant Item",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "144",
+		"Arcana Requirement" : "Prime 4",
+		"Practice" : "Unraveling",
+		"Action" : "Instant and contested; successes are compared to target spell's Potency, or, if the spell targets the item's Mana capacity, its total capacity",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "Although an item's finishing spells cannot be dispelled, Disenchant Item allows the mage to permanently excise one other spell from an Enchanted Item. Disenchant Item may target an imbued spell, curse, enhancement or defense. The spell can also be used to remove the item's ability to hold Mana, if any. All Mana in the device when this effect is used disperses uselessly. The mage must have at least one dot in each Arcanum used in the targeted spell.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Righteous Pyre",
+				"Dice Pool" : "Intelligence + Occult + Prime 4",
+				"Rote Description" : "Entire cadres of Guardians devote themselves to cleaning up the trail of Enchanted Items left behind by careless willworkers. They protect unworthy eyes from esoteric secrets by disassembling the evidence, one object at a time."
+			}
+		]
+	},
+	{
+		"Name" : "Eyes Of The Awakened",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "228",
+		"Arcana Requirement" : "Prime 4",
+		"Practice" : "Patterning",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage allows a Sleeper to possess Mage Sight. For the Duration of the spell, the Sleeper sees things see that she did not believe possible before. During this period, her witnessing the Mysteries does not invoke Disbelief, but she still adversely influences a Paradox as a normal Sleeper witness.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "Fitful Sleep",
+				"Dice Pool" : "Manipulation + Empathy + Prime 4",
+				"Rote Description" : "One of the greatest powers is that of controlling knowledge. Ladder mages use this rote to bestow some small glimpse of the truth upon those who would otherwise remain forever blind. Sometimes they do so to win the loyalty of Sleepers, and sometimes their fear, but given the risks inherent to such an act, they rarely do so without good reason."
+			}
+		]
+	},
+	{
+		"Name" : "Ley Flow",
+		"SourceBook" : "Sanctum And Sigil",
+		"SourcePage" : "98",
+		"Arcana Requirement" : "Prime 4",
+		"Practice" : "Patterning",
+		"Action" : "Extended",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage can alter the flow of energy through a ley line, adjusting the flow anywhere from a torrent to a mere trickle, or, instead, he can change the current's direction of flow, sending the current back upstream to its source node. Before casting, the mage must decide whether to adjust the strength of the line's flow or alter its direction. He could, however, cast this spell twice, once to lower the strength and again to alter its flow or vice-versa.</P>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Mobile Node",
+		"SourceBook" : "Left-Hand Path",
+		"SourcePage" : "90",
+		"Arcana Requirement" : "Prime 4",
+		"Practice" : "Patterning",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can create short-lived, moving branches of true ley lines that follow an object he designates. The object becomes a mobile node of ley energy, allowing it to power electrical devices and make use of the other possible benefits of ley lines.</P>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Marionette",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "228",
+		"Arcana Requirement" : "Prime 4",
+		"Practice" : "Patterning",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "By way of this magic, the willworker creates a potentially animate phantasm of an animal or other obviously non-human creature. It can move, but only as she directs it through active concentration. The phantasm moves as it would normally be able to, so a phantasm of a monkey can walk or run on all fours, walk awkwardly upright and swing by its hands or its tail, while a remote control car moves on its wheels. A ferret phantasm could, for example, filch a set of keys, while a wolf could be used to attack someone. As with the Phastasm spell, except that each success grants two dots of Physical Attributes to the phantasm, allocated however the caster wishes, up to a limit of the mage's Prime dots in any one trait. A combined casting with Phantasmal Weapon gives the Marionette more solidity and allows successes to be allocated to an equipment modifier (including weapon damage) or armor. (With Prime 5, the mage doesn't need to combine castings to gain this effect for his Marionette.) When calculating the phantasm's Defense, use its Dexterity or the mage's Wits, whichever is lower. If the phantasm runs out of Health or Structure, it disintegrates back into the Tapestry. The mage must concentrate to direct the phantasm's movements, and he cannot direct it out of the range of his mundane senses, unless he is scrying it with the Space Arcanum (a mage's own phantasms are always treated as Intimately connected for such purposes). While concentrating on moving the phantasm, the mage can still use her Defense, but cannot initiate her own attacks or cast any other magic; her attention is too absorbed. Note that the same sorts of &quot;magic dead areas&quot; that necessitate spending a point of Mana to create a static phantasm with the Phantasm spell require the same for this spell.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "Unreal Servitor",
+				"Dice Pool" : "Intelligence + Subterfuge + Prime 4",
+				"Rote Description" : "When Ladder mages need capable and obedient servants quickly, many turn to this rote. Such a phantasm can serve as a laborer, a bodyguard, an attack dog -- virtually anything the willworker can conceive of and mentally direct. Free Council mages interested in the nature of material existence sometimes experiment with a similar rote."
+			}
+		]
+	},
+	{
+		"Name" : "Phantasmal Weapon",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "228",
+		"Arcana Requirement" : "Prime 4",
+		"Practice" : "Patterning",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage creates a sturdy phantasm, and can even create functional weapons and armor. As with Prime 3 Phantasm, except the object has a Durability equal to the caster's Prime dots. Successes can be allocated to create an equipment dice modifier or armor points for the object, or even to increase the Size above five points (on a one-for-one basis).</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Forge Of The Gods",
+				"Dice Pool" : "Intelligence + Craft + Prime 4",
+				"Rote Description" : "Adamantine Arrow willworkers use this rote to fabricate arms and armor from thin air."
+			}
+		]
+	},
+	{
+		"Name" : "Pierce Magical Shield",
+		"SourceBook" : "Banishers",
+		"SourcePage" : "64",
+		"Arcana Requirement" : "Prime 4",
+		"Practice" : "Unraveling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can bypass the protection granted by magical Shielding spells. Each level of Potency allows the mage to ignore one point of magical armor when he attacks targets that possess it. This benefit is exclusive to the caster and affects any targets he attacks during the spell's Duration. This spell affects only Awakened Shielding spells. It does not affect mundane armor or armor granted by other supernatural powers. A mage with Prime 5 can grant this spell's benefit to another.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Banisher Rote",
+				"Rote Name" : "Eye And Hand Of David",
+				"Dice Pool" : "Composure + Athletics + Prime 4",
+				"Rote Description" : "Simplicius was a theologian, not a warrior, but in one desperate moment he had to defend himself from a seemingly unstoppable gang of mages. They shrugged off his son's bullets before they killed the boy. They chased Simplicius to an old quarry. That's when he prayed that God would forgive him for dabbling in the occult. He gave his magic up to God, and in seeming response, a stone dropped right into his open hand, jostled from above by a witch crawling down to ambush him. With perfect faith he looked up, threw the stone and knocked the formerly bulletproof enemy unconscious. Simplicius managed to frighten off the rest with a few handfuls of rocks, got away, and shared his revelation with other Banishers."
+			}
+		]
+	},
+	{
+		"Name" : "Poison Mana",
+		"SourceBook" : "Banishers",
+		"SourcePage" : "65",
+		"Arcana Requirement" : "Prime 4",
+		"Practice" : "Fraying / Patterning",
+		"Action" : "Extended",
+		"Duration" : "Lasting",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage can introduce dangerous occult vibrations to part or all of a supply of Mana as long as it isn't being stored within a living being. Once used, the poisoned Mana injures whoever's channeling it. The spell taints a number of points of Mana equal to the spell's Potency. The spell can be cast on a Hallow, where it affects the first Mana drawn until its Potency in points has been withdrawn. Once a mage internalizes the Mana, the poisoned Mana stays inert until it's transferred to another receptacle, expended on a spell or used on another action. When that happens, the Mana performs its normal functions, but each point spent also inflicts a point of lethal damage. A Prime 5 version of this spell can be used to poison Mana to such an extent that it inflicts aggravated damage.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Banisher Rote",
+				"Rote Name" : "The Wages Of Sin",
+				"Dice Pool" : "Presence + Expression + Prime 4",
+				"Rote Description" : "Famous &quot;cult awareness researcher&quot; Isaiah Pickens conducts regular sermons at places he says are hotbeds of cult activity. He does the same thing for fellow Banishers when they bring him objects that stink of excess Mana. The theme of every sermon is that Satan has no real power and his promises and payments are always empty. He says, &quot;That rush you feel, exploring witchcraft and playing with the dark side can never profit you -- Satan has nothing to give! Even when he looks like he's giving you the power he has to take something away to keep the balance of his gifts -- a balance of zero. Those are the wages of sin, my friends.&quot; And, for mages who draw from Hallows and items he's preached around, that turns out to be true."
+			}
+		]
+	},
+	{
+		"Name" : "Primal Transfer",
+		"SourceBook" : "Legacies: The Ancient",
+		"SourcePage" : "78",
+		"Arcana Requirement" : "Prime 4",
+		"Practice" : "Patterning",
+		"Action" : "Instant and contested; target rolls Composure + Gnosis reflexively",
+		"Duration" : "Lasting",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "One problem with crafting magic items for other mages is the loss of psychic force -- of one's very soul -- involved in letting go of a spell so other people can use the item. An Adept of Prime, however, can demand that a client give of herself to assist in the item's enchantment: The client, not the mage himself, sacrifices a dot of Willpower to make the spell independent. Sacrificing a dot of Willpower is so deep and traumatic an experience that this spell (and associated rote) only succeeds if the target knowingly assists the mage. Even then, the character's player must win a contested roll of the Forge Master's Gnosis + Prime against the target's Composure + Gnosis, for the soul resists giving up part of itself.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote Rote",
+				"Rote Name" : "Blood Quenching",
+				"Dice Pool" : "Resolve + Empathy + Prime 4",
+				"Rote Description" : "Forge Masters sometimes demand that a client literally pay in blood. As part of this rote, the Powersmith bids his client to pierce her own flesh and let her blood drip onto the hot metal during the tempering process. With the blood and the taps of his hammer (actually the mudras of the rote), the Forge Master draws power from the client's soul and forces it into the enchanted metal."
+			}
+		]
+	},
+	{
+		"Name" : "Scour Other's Pattern",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "70",
+		"Arcana Requirement" : "Prime 4 + Life 3",
+		"Practice" : "Unraveling",
+		"Action" : "Instant; subtract target's Stamina",
+		"Duration" : "Lasting",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage can scour another person's Pattern just as she can scour her own, changing flesh and blood into Mana. This causes Resistant Damage to the target. The mage must touch her target (with Prime 5, this spell can be cast at sensory range). The target experiences searing pain as flesh boils away into magical energy. Each success inflicts one point of lethal Resistant Damage and gives the caster one point of Mana. If Scour Other's Pattern is cast upon a mage, however, the target can reap one benefit from this attack. The mage can attempt to take the Mana freed by the attack into her pool. The target makes a reflexive Stamina + Gnosis roll. If this roll succeeds, the target mage adds one point of Mana to her pool per two successes, up to her usual maximum. The caster is thus denied these points. This spell cannot be successfully cast more than once on the same target per scene. Use of the spell requires a degeneration roll for mages of Wisdom 4 or more (roll three dice).</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "Lash Of The Aether",
+				"Dice Pool" : "Presence + Intimidation + Prime 4 - Stamina",
+				"Rote Description" : "Sometimes a Sleeper needs to learn that mages aren't to be trifled with, and sometimes a mage needs to learn his place. The mages of the Silver Ladder don't relish using this spell -- it's painful and the wounds take days to heal. But that is sometimes exactly what a hubristic spellcaster needs to realize that magic cannot solve all his problems."
+			}
+		]
+	},
+	{
+		"Name" : "Siphon Essence",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "229",
+		"Arcana Requirement" : "Prime 4",
+		"Practice" : "Unraveling",
+		"Action" : "Instant; subtract target's Resistance",
+		"Duration" : "Lasting",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "The mage can pull the Essence out of a spirit, ghost, or locus and convert it to personal Mana. He may either add it to his Mana store or disperse it into the Tapestry, as he wishes. Most experienced willworkers are quick to point out the folly almost always inherent to pillaging a locus. Even if there are no werewolves present (a rare enough occurrence), spirits regard loci in the same way that mages look at Hallows, and resent those who cheat them of their rightful sustenance. While not all spirits have the means to exact immediate retribution, most have long memories and at least a few allies willing and able to make life hell for pirating mages. Each success siphons one Essence from the targeted spirit, ghost, or locus.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Ehrlik's Due",
+				"Dice Pool" : "Resolve + Occult + Prime 4 - Resistance",
+				"Rote Description" : "Most Adamantine Arrow mages who make use of this rote see it as a simple case of requisitioning needed resources. Sometimes this spell is used offensively, stripping power from enemy spirits before it can be used against a mage and her allies. Guardians of the Veil apply the same rote to drain Essence from spirits, robbing them of their ability to cause mischief or harm, and potentially endanger the anonymity of the occult world and its denizens."
+			}
+		]
+	},
+	{
+		"Name" : "Siphon Integrity",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "229",
+		"Arcana Requirement" : "Prime 4",
+		"Practice" : "Unraveling",
+		"Action" : "Instant",
+		"Duration" : "Lasting",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "The mage can pull the Mana out of a mundane lifeless object. He may either add this Mana to his own or disperse it into the Tapestry, as he wishes. Most such Patterns have but little Mana invested in them and siphoning it all away (or simply dispersing it) damages the item. Each success gives the mage one Mana and inflicts one point of Structure damage to the object, making it brittle. (This damage circumvents the object's Durability.) Only one point of Mana may be gleaned per three points of Size (rounding down); mundane objects smaller than Size 3 simply do not have enough material substance and presence to hold a full point of Mana. The caster can replenish his own Mana reserves with this spell only once every 24 hours. The frayed Mana from successive castings cannot be integrated into the mage's Pattern during that time, although he could use the Channel Mana spell to divert it elsewhere. Enchanted items cannot be siphoned with this spell.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Arrow Rote",
+				"Rote Name" : "Hidden Stores",
+				"Dice Pool" : "Resolve + Occult + Prime 4",
+				"Rote Description" : "For a Mysterium mage skilled in the Prime Arcanum, stores of Mana are hidden in plain sight throughout the Tapestry. Providing a much-needed boost on short notice, this rote draws on the willworker's immediate environment to replenish his power. Members of the Adamantine Arrow use similar magics (Strength + Occult + Prime) to simultaneously strip their opponents of needed items or protections while recouping their own stores of Mana."
+			}
+		]
+	},
+	{
+		"Name" : "Supernal Augmentation",
+		"SourceBook" : "Adamantine Arrow",
+		"SourcePage" : "185",
+		"Arcana Requirement" : "Prime 4 + (Life 3 or Matter 3)",
+		"Practice" : "Unraveling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana per strike",
+		"Effect" : "Martial artists have demonstrated through the ages the incredible potential of ordinary weapons: Hands, feet, swords, axes, and bows, for example. Sometimes, however, an Arrow requires recourse to force greater than that which her armaments will normally allow. Sometimes, she needs to destroy creatures of flesh and bone (or other, less natural organisms) with rapidity and finality, and elegance be damned. After casting this spell on either her own body (with Life) or her weapon (with Matter), the Arrow may reflexively spend a point of Mana when making an attack to cause that single attack to inflict aggravated damage if successful, rather than bashing or lethal. Note that the willworker must spend this point of Mana before making the attack, and if the strike misses, the point of Mana is wasted. This spell in no way otherwise alters the attack made -- equipment bonuses remain the same, as do a weapon's other qualities, if any. This spell may only be used to augment a ranged attack if the actual instrument of harm is in direct contact with some part of the willworker's body immediately before being released (a throwing knife or arrow, for instance, but not a bullet).</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Sword Of Ruin",
+				"Dice Pool" : "Strength + Intimidation + Prime 4",
+				"Rote Description" : "Grim necessities give rise to terrible weapons. The Arrow recognizes this unfortunate reality, and this rote is seen by many as more of a burden to bear than a resource to be cherished."
+			}
+		]
+	},
+	{
+		"Name" : "Supernal Dispellation",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "229",
+		"Arcana Requirement" : "Prime 4",
+		"Practice" : "Unraveling",
+		"Action" : "Instant and contested; successes are compared to the target spell's Potency",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can dispel magic. He can attack the Pattern of a spell, destroying it by pulling apart the threads that comprise it. At this level, the mage does not need to have any dots in the Arcana used in the magic to be dispelled. His Prime lore is enough to unweave any spell. This effect works like Dispel Magic, but the mage does not need to posses all the Arcana involved.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Undo The Art",
+				"Dice Pool" : "Resolve + Occult + Prime 4 vs. target spell's Potency",
+				"Rote Description" : "Free Council mages use this rote to dissipate the magics of enemies, rivals, and sometimes people who need a lesson in humility. Guardians of the Veil use this magic in the execution of their duties, destroying all blatant manifestations of wizardry before they can be witnessed by the uninitiated."
+			}
+		]
+	},
+	{
+		"Name" : "Suppress Hallow",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "229",
+		"Arcana Requirement" : "Prime 4",
+		"Practice" : "Unraveling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage suppresses an active Hallow. One dot of the Hallow's rating is diminished per success.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Shutting The Gate",
+				"Dice Pool" : "Presence + Survival + Prime 4",
+				"Rote Description" : "Given the strange activity that often manifests around an active Hallow, Guardians are occasionally called upon to temporarily suppress such sources of power."
+			}
+		]
+	},
+	{
+		"Name" : "Tainted Source",
+		"SourceBook" : "Banishers",
+		"SourcePage" : "65",
+		"Arcana Requirement" : "Prime 4",
+		"Practice" : "Unraveling",
+		"Action" : "Extended",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana per roll",
+		"Effect" : "Poisoning a well used by your enemies has been a valid (if repugnant) strategy employed by humans in their struggles against each other from time out of mind. This spell poisons the Awakened version of the town well, the Hallow. The total number of successes gained during the casting represents the amount of Mana that will be tainted when it is drawn from the Hallow. Tainted Mana is sluggish in the body of a mage, and responds more slowly when called upon. While a mage retains any tainted Mana in his pool, he can spend only one Mana per turn, regardless of his Gnosis rating. Additionally, tainted Mana cannot be used for Pattern Restoration. Mages viewing a Hallow with Mage Sight may notice the Hallow has been tainted with a single success on a Composure + Occult roll. The simplest way to cleanse a Hallow of its taint is to simply draw out the tainted Mana, but mages theorize there must be other ways of accomplishing the cleansing. Use of this rote is an act of hubris requiring a degeneration check for mages of Wisdom 4 or higher (roll three dice).</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Concealing The Dragon's Paths",
+		"SourceBook" : "Grimoire Of Grimoires",
+		"SourcePage" : "103",
+		"Arcana Requirement" : "Prime 5",
+		"Practice" : "Unmaking",
+		"Action" : "Extended",
+		"Duration" : "Lasting (permanent)",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "This spell enables the mage to hide ley lines from the view of another who might otherwise be able to see them. This may be used as a way of protecting valuable sources of power from rivals or to preserve a path of power for the caster's use. The mage must first know where the particular ley line or node of ley lines is. The spell itself puts up a powerful masking barrier that only a caster with greater power or who possesses the ability to see through strong illusions can penetrate. The ley lines, or dragon lines as they are sometimes called, are said to lead back to Atlantis, if one knows the proper sequence of paths to take. The spell can, therefore, be used to protect what's left of proud Atlantis from prying eyes and nosy Sleepers. It can also be used to cover one's path once a mage has traversed the lines to their destination.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Vigilant Safeguard",
+				"Dice Pool" : "Intelligence + Survival + Prime 5",
+				"Rote Description" : "The Mysterium uses this rote to make precious and rare locations or objects &quot;disappear&quot; from the sight of Sleepers or even other mages. The number of successes on the dice roll indicates how well concealed the object or place is."
+			}
+		]
+	},
+	{
+		"Name" : "Create Complex Phantasm",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "230",
+		"Arcana Requirement" : "Prime 5",
+		"Practice" : "Making",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "The mage creates a complex phantasm. These beings can mimic living people and complex objects (computers), and stand up to some degree of mundane scrutiny. Such a phantasm is subject to the same rules as a simple moving phantasm (see the Marionette spell). A mechanical or electronic device, however, doesn't conduct electricity (and doesn't work if plugged into a socket; only the mage's concentration makes it seem to work normally). A phantasmal person appears to possess the same Mental and Social Attributes as the caster (or fewer, if he wishes it) and can speak if compelled to by the mage, but has no individual initiative and collapses into a lifeless heap if the willworker doesn't actively pay attention to it.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Tin Soldier",
+				"Dice Pool" : "Intelligence + Crafts (for objects) or Medicine (for people) + Prime 5",
+				"Rote Description" : "When there isn't time enough to call in backup (or someone is needed to walk into an untenably dangerous situation), some Adamantine Arrow mages make use of this powerful rote. The phantasm acts as directed, heedless of reason or its own personal wellbeing, making it an ideal decoy or suicide soldier. Mysterium mages on the trail of old Artifacts or forgotten lore and who are uncertain of what lies ahead sometimes create such simulacra by means of the same rote."
+			}
+		]
+	},
+	{
+		"Name" : "Create Hallow",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "230",
+		"Arcana Requirement" : "Prime 5",
+		"Practice" : "Making",
+		"Action" : "Extended",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage can create a temporary Hallow. The target number equals the dots of the Hallow. The Hallow immediately yields up its rating in Mana, which can be harvested through normal means (by performing an oblation or casting Channel Mana). The effect lasts for one hour, but if it is made to last longer, the Hallow does not yield up more Mana until the same hour as its creation on each day for as long as the spell lasts. The spell uses the following Duration factors, but cannot be made to last indefinitely. While Hallows can conceivably be created anywhere, certain places are more conducive than others. High places, such as at the top of a mountain, tall hill, tree, or skyscraper are the best. If a mage attempts to cast this spell anywhere else, he suffers dice penalties. Casting at sea level is -1 die, while casting slightly below sea level, such as in a hollow, is -2 dice. Casting in a deep hole or pit is -3 dice.</P>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Forge Tulpal",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "231",
+		"Arcana Requirement" : "Prime 5 + Mind 5",
+		"Practice" : "Making",
+		"Action" : "Extended",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "A tulpa, an idea-form so forcefully visualized that it assumes material substance, is known to Tibetan mysticism. The tulpa is dreamed into being by a creative mind in a state of intense and deliberate imagination. Such creations often grow beyond the direct control of their creators, becoming free-willed beings halfway to possessing reality of their own. Sometimes a tulpa becomes wicked or even physically monstrous, but this is the product of flawed discipline on the part of the creator, rather than any fault of the dream-being itself. A tulpa may look like a human being, an animal, a monster, or just about any kind of physiologically plausible being of which the willworker can conceive. Successes are allocated to construct the tulpa's Mental, Physical, and Social Attributes (to a maximum of the mage's Prime dots in any single Attribute; at least one dot must be placed in every Attribute), and extra damage and armor (on a one-for-one basis). The tulpa possesses a Willpower score (the sum of Resolve and Composure as normal) and self-awareness, no matter how rudimentary. Its Size is 5 or less (the caster can decide to make it less than average human Size). The tulpa may be free-willed or bound to the will of the caster, as desired. An especially strong-willed tulpa may defy its binding creator and escape. A physically monstrous or otherwise bizarre tulpa invokes Disbelief when witnessed by Sleepers. Note that at this level of mastery, this spell cannot be given an indefinite Duration (i.e., the tulpa cannot have a &quot;natural&quot; life span of human years). The being dissolves when the spell expires. Unless the tulpa created is specifically designed to accept the inevitability of its own demise without emotional trauma, a Wisdom degeneration roll might be required for the caster (unless he has Wisdom 2 or lower). The mage could, however, recast this spell before the previous one expires, giving the tulpa a new Duration. Note that this is an exception to the normal rules for spell control. The tulpa is allowed to persist over a series of castings as long as the previous one does not expire before a successive spell is cast.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Dream Warrior",
+				"Dice Pool" : "Wits + Occult + Prime 5",
+				"Rote Description" : "This Free Council magic forms a sentient being of pure Mana, invested with at least minimal social skills and reason. Those mages who cannot afford to give indefinite existence to such a creation do not use this rote lightly, as it is often cruel to craft an essentially living being with so brief an existence. Silver Ladder mages sometimes use their own rote (Presence + Occult + Prime) to create perfect servants, entrusting their personal care to no being they themselves have not fabricated."
+			}
+		]
+	},
+	{
+		"Name" : "Halt The Flow",
+		"SourceBook" : "Banishers",
+		"SourcePage" : "66",
+		"Arcana Requirement" : "Prime 5",
+		"Practice" : "Unmaking",
+		"Action" : "Extended",
+		"Duration" : "Lasting",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana per dot rating of the target Hallow",
+		"Effect" : "This spell slowly dissipates the energy of a Hallow, reducing it to a mundane location. Each dot of a Hallow is considered a separate extended roll and requires 10 successes to destroy. The Mana cost of the spell may be paid throughout the casting, rather than all at once. To fully destroy a Hallow, the mage must continue his work uninterrupted until the rating of the Hallow is reduced to zero. Once a Hallow is reduced to zero dots, it is considered destroyed. The backlash of suppressed magical energy forms a &quot;Dead Zone&quot; with the original rating of the Hallow acting as the number of successes gained to determine radius and volume. Until a Hallow is reduced to zero dots, treat the Hallow as being subjected to a Suppress Hallow spell. The casting of this spell creates a powerful clash in magic as the mage strives to pit himself against the natural magic of the Hallow. The visible results of this struggle can manifest themselves as violent storms, rains of frogs, glowing bands of light in the sky (similar to the aurora borealis), or anything else the Storyteller can devise. Mages attempting to destroy powerful Hallows are advised to seek help and cast this spell as a group ritual to increase their chances of success.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Banisher Rote",
+				"Rote Name" : "Destroy Hallow",
+				"Dice Pool" : "Composure + Occult + Prime 5",
+				"Rote Description" : "Banishers adept at this level of Prime are a rare commodity amongst what passes for a Banisher community. Still, those practitioners capable of wielding this power have been known to keep in contact with each other and form ad hoc cabals for the sole purpose of destroying a particularly powerful Hallow."
+			}
+		]
+	},
+	{
+		"Name" : "Scorched Earth",
+		"SourceBook" : "Banishers",
+		"SourcePage" : "66",
+		"Arcana Requirement" : "Prime 5",
+		"Practice" : "Unmaking",
+		"Action" : "Extended",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana per category (see below)",
+		"Effect" : "Drawing an enemy to a battlefield of your choosing is a basic tenet of combat, understood instinctively even by lower life forms. Use of this spell prepares a battlefield on which magic is not welcome. Casting this spell first requires the mage be inside the radius of a &quot;Dead Zone&quot;. The &quot;Scorched Earth&quot; spell then increases the Potency of the magic Dead Zone by further leeching any remaining hints of magical energy from the physical surroundings of the area and strengthening the boundaries of the zone. In addition to the usual effects of a Dead Zone, every five successes gained on the extended casting roll increases the Potency of the Dead Zone by one category on the chart below. The caster needn't raise the zone to category 5 if she doesn't wish to, but may stop whenever she likes. Effects generated by increasing category are cumulative. Familiars, spirits and most other supernatural entities will not willingly enter an area of Scorched Earth, and even non-sapient entities will avoid the area instinctively. Casting this spell is an act of hubris requiring a degeneration roll for mages of Wisdom 4 or higher (roll three dice).</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "[ 5 ] &nbsp; Supernal Sense",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "71",
+		"Arcana Requirement" : "Prime 5 + Space 3",
+		"Practice" : "Knowing",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (scene)",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage expands his sense of the Supernal until he can sense the presence and rough location of all active spells within a certain radius. The mage successfully senses all active Supernal magic within one mile of his current location. Each additional success on the roll adds one mile to the spell's range. Currently active spells register, as do any spells activated during this spell's Duration. As the mage knows constantly where these effects are located, he can try to find them. Locating a specific active spell requires an instant Wits + Occult roll. When a spell the caster has detected ends, he loses his sense of where it was. If he still wishes to navigate toward it, he must do so by memory. This awareness provides only the basic information that a spell is active. In order to learn more about it, the mage must examine it, either in person or through scrying. Additionally, covert magic is significantly more difficult to pinpoint; though the mage can sense it, trying to locate a covert spell well enough to find it applies a -3 dice penalty on the Wits + Occult roll. The mage notices spell effects performed behind wards only if the Potency of his spell exceeds that of the ward. Consider wards to be behind their own shields for the purposes of avoiding detection. Since the spell's range is its primary factor, a mage must choose to increase its Potency specifically if he wants it to bypass any wards. Imbued Items and Artifacts do not reveal themselves to the mage unless they are currently in use. Legacy Attainments do not register whatsoever.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Supernal Radar",
+				"Dice Pool" : "Wits + Empathy + Prime 5",
+				"Rote Description" : "The Guardians of the Veil take it upon themselves to police the Awakened -- a usually unwilling and unappreciative populace. This rote serves the Guardians well. Using it to sense any active magic, a Guardian can locate and investigate any potential breaches of the Veil, or she can track fleeing mages who don't realize that their personal shielding spells might give them away."
+			}
+		]
+	},
+	{
+		"Name" : "Universal Bane",
+		"SourceBook" : "Banishers",
+		"SourcePage" : "67",
+		"Arcana Requirement" : "Prime 5",
+		"Practice" : "Patterning",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "This spell temporarily enchants a weapon or a single magazine of ammunition (the clip can be no larger than Size 1) so that it inflicts aggravated damage. The spell &quot;supercharges&quot; the weapon or ammunition's Pattern, giving the weapon or ammunition the intense reality of a Supernal form. Fallen objects can't endure this for long, however. The weapon or ammunition burns, melts, or disintegrates once the spell's Duration expires.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Banisher Rote",
+				"Rote Name" : "Vajra Dagger",
+				"Dice Pool" : "Intelligence + Occult + Prime 5",
+				"Rote Description" : "Dorjee talked about demons all the time because they plagued his dreams. After a near-death experience, he was trapped in a bardo or psychic &quot;gap,&quot; constantly confronting the Wrathful Deities that monks told him about when he was young. For years now, those same monks came to him, sharing their alms in exchange for his insights about spiritual realms. Every night, Dorjee screamed in his dreams, but every dream taught him something new. So when the demon came disguised as a newly arrived monk Dorjee knew what to do. He stole a vajra -- a knife that represented the &quot;thunderbolt&quot; of enlightenment -- and stabbed the monster, calling on the absolute reality of the dharmakaya to dismiss its incarnation."
+			}
+		]
+	}
+
+]

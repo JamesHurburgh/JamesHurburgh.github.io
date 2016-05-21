@@ -1,0 +1,1047 @@
+[{
+		"Name" : "Angle Vision",
+		"SourceBook" : "Guardians Of The Veil",
+		"SourcePage" : "197",
+		"Arcana Requirement" : "Space 1",
+		"Practice" : "Unveiling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can see around objects, corners, or other obstructions that are blocking his view. His vision shifts as if he'd changed his vantage point to look around the blockage. With Space 1, the spell can be used to direct the mage's sight around a single corner or obstacle, as long as the new vantage point is one that's within reach of some part of his body. He could hold a newspaper in front of his face, for example, and see over the top of it as if he'd craned his neck. With Space 2, the mage can send his vision off like a mobile camera, around multiple, distant obstacles or through a series of twists and turns, like the bends of a ventilation shaft. The spell doesn't magnify or illuminate whatever's at the far end of his vision, it just provides him with an unobstructed view. This use of the spell requires the caster to concentrate for the duration of the casting.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "The Crooked Eye",
+				"Dice Pool" : "Wits + Investigation + Space 1",
+				"Rote Description" : "While this rote helps a Guardian to see what might otherwise be hidden, it's also useful for disguising her intent. When the rote is active, no one can be certain exactly what the mage is looking at or where she's directing her attention. She may seem to have her head stuck in a paperback novel when she actually has a clear view of what's happening on the other side of the book."
+			}
+		]
+	},
+	{
+		"Name" : "Correspondence",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "232",
+		"Arcana Requirement" : "Space 1",
+		"Practice" : "Knowing",
+		"Action" : "Instant",
+		"Duration" : "Concentration",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can analyze the connections between things, people, and places, determining their degree of sympathetic connection. This spell provides useful information to the caster who intends to affect a subject through someone or something to whom or to which the target is emotionally bound. It might be a very dear friend, a treasured childhood possession, or that nook beneath the old oak where the subject fell in love for the first time. This sense is sometimes modified by the strength of the bond (the Storyteller might award a bonus for a strong bond, or levy a penalty for a weak one). If the sympathetic bond has been concealed (see the Conceal Sympathy spell) this spell's successes must exceed the disguise spell's Potency.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Revelation Of The Unseen Thread",
+				"Dice Pool" : "Wits + Occult + Space 1",
+				"Rote Description" : "Protecting the Mysteries sometimes involves a great deal of detective work. This rote enables a Guardian to track leads through the esoteric connections that bind them. Perhaps a troublesome Sleeper grows too close to the secrets of the occult, because he seeks a cure for his daughter's terminal ailment, or an Artifact exerts a sympathetic pull on him. This sense allows a mage to discern such influences and gives him the opportunity to adjust his tactics accordingly."
+			}
+		]
+	},
+	{
+		"Name" : "Finder",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "233",
+		"Arcana Requirement" : "Space 1",
+		"Practice" : "Knowing",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can flawlessly track an item in his immediate surroundings. The mage chooses a specific object as the target of this spell, such as a weapon, idol, or even a ballpoint pen. By means of this spell, no matter where a targeted object goes within the mage's vicinity, she knows its movements. While this effect applies only within a mage's sensory range, with Space 2 she can cast this as a sympathetic spell and track the item anywhere.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Eyes On The Prize",
+				"Dice Pool" : "Intelligence + Investigation + Space 1",
+				"Rote Description" : "Mysterium mages often use this rote to track a relic to be traded (or one that has already been traded but which the mage intends to get back), a weapon, or any other inanimate item."
+			}
+		]
+	},
+	{
+		"Name" : "Omnivision",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "233",
+		"Arcana Requirement" : "Space 1",
+		"Practice" : "Unveiling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can perceive 360 degrees around himself. He essentially has &quot;eyes&quot; on the back and sides of his head. The spell extends the mage's vision around him. As long as he can see (i.e., the area isn't dark), he can perceive in 360 degrees with a reflexive Wits + Composure roll. It is almost impossible to surprise the mage by sneaking up from behind (a person would need to be well camouflaged, and the mage might need to be heavily distracted by something in another direction).</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Spatial Topography",
+				"Dice Pool" : "Wits + Composure + Space 1",
+				"Rote Description" : "Some Free Council willworkers like to think of this rote as an updated version of Zen archery or similar styles of combat, wherein the master is instinctively aware of his surroundings. Adamantine Arrow mages use this very rote for martial purposes."
+			}
+		]
+	},
+	{
+		"Name" : "Spacial Awareness",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "233",
+		"Arcana Requirement" : "Space 1",
+		"Practice" : "Unveiling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage gains the Mage Sigh. He can detect spatial distortions and manipulations. He is capable of discerning disturbances in the local fabric of space (typically caused by use of more advanced applications of this very Arcanum). He can detect when someone has altered the spatial axes of an area (for example, making a place larger on the inside than outside), used a location as the origin point or terminus for teleportation, or created (or overcome) a Space Ward. This sense transcends the normal five senses, but most mages tend to understand it in terms of sight. This sense is modified by the degree of the distortion/manipulation (the Storyteller might award a bonus for an extreme distortion or levy a penalty for a subtle one). See the information on Resonance for rules on scrutinizing magic with this spell.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "Trailing The Long Stride",
+				"Dice Pool" : "Intelligence + Occult + Space 1",
+				"Rote Description" : "Silver Ladder willworkers named this rote for its practical application in detecting the passage of those who had fled by means of the Space Arcanum. It is also frequently used to discern the presence of ongoing spatial warps, such as gateways or locations that have been altered indefinitely to be smaller, larger, or more convoluted than they should be. Mysterium mages use a similar rote (Wits + Occult + Space) to sense similar disturbances, as they know the objects they seek are sometimes hidden beyond such magic."
+			}
+		]
+	},
+	{
+		"Name" : "Spacial Map",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "233",
+		"Arcana Requirement" : "Space 1",
+		"Practice" : "Unveiling",
+		"Action" : "Instant",
+		"Duration" : "Transistory (one turn)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "Statistics show that each individual involved in the average gunfight stands only a relatively small chance of being fatally wounded. Fear distorts spatial perception, just as it distorts the perception of time, influencing shooters' aim. A mage who casts this spell is not guaranteed to be any less afraid during a gunfight, but she does have a much more accurate sense of where everyone and everything is. The spell creates a mental spatial map that constantly updates the mage on the changing topography of her surroundings, from the guy with the shotgun sneaking up among the parked cars, to the stray leaf blowing by in that sudden breeze.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Ballistic Targeting",
+				"Dice Pool" : "Intelligence + Occult + Space 1",
+				"Rote Description" : "Arrow mages who learn this rote can be crack shots during a blizzard in the middle of the night (or at least not have whatever prowess they naturally possess suffer for adverse conditions). Any willworker in need of a good spatial sense in a tense situation can benefit from this rote."
+			}
+		]
+	},
+	{
+		"Name" : "Apportation",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "234",
+		"Arcana Requirement" : "Space 2",
+		"Practice" : "Ruling",
+		"Action" : "Instant and contested; target rolls Composure reflexively",
+		"Duration" : "Concentration",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "With the aid of another Arcanum, the mage can move something to a remotely viewed location or remove something from it. (The Scrying spell allows a mage to remotely view a location.) She can, with the appropriate dots of Forces, Matter, or Life (Matter 2 for a brick, for example, or Life 2 for a guinea pig), draw an item through a scrying window to her current location if the object, creature, or energy source is small enough. If she wishes, she can also send such subjects from her location through the window to the other location. Naturally, this use of scrying (which either causes a disembodied hand to reach out of thin air and grab or deposit something, or makes that something appear or disappear without any plausible explanation) is quite vulgar. For each success (or additional Target factor prefigured into the casting), the mage can move one Size point. The maximum Size limit he can move is equal to his Space dots, regardless of successes. The type of thing that can be moved depends on the conjunctional Arcanum used: Matter for objects, Life for living creatures, and Forces for energy. This spell affects only base or median creatures (a Portal spell is required  to teleport higher life forms), and they can contest this spell's grasp.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Theosophy Tradition Rote",
+				"Rote Name" : "Precipitation",
+				"Dice Pool" : "Dexterity + Occult + Space 2 (Extended)",
+				"Rote Description" : "Madame Blavatsky used to receive letters from the Mahatmas. Sometimes the Masters would have letters for her friends, too, which used to appear in thin air and drop into the laps of HPB's bewildered pupils. She was good at making other things appear, too: Small china saucers, little trinket and the like. It's not incredibly hard to cause little things to drop out of thin air. All it needs is a bit of time spent visualizing the object in the third eye. A clever mage can even hold a conversation while visualizing the object's form, although he can't do much else, allowing the effect to appear much more sudden than it really is."
+			}
+		]
+	},
+	{
+		"Name" : "Astral Beacon",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "71",
+		"Arcana Requirement" : "Space 2 + Mind 2",
+		"Practice" : "Ruling",
+		"Action" : "Extended",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "Mages use this spell to mark locations in Astral Space so that they can easily be found by allies. The caster marks the location with a specific emotional &quot;signature.&quot; Once the caster transmits this signature to another individual using Voice From Afar (or another Mind spell that transmits emotions), that individual can travel to the desired astral location once she visits its particular Astral plane (Oneiros, Temenos, or Dreamtime). The target number depends on the &quot;depth&quot; of the Astral plane in which the beacon is set. Following the beacon, the Astral traveler can instantly reach the marked location after reaching the correct plane, unless an Astral entity (or other mage) specifically bars direct access. Such is the case with certain Astral entities, who do not want mages to breach their homes without following the proper protocols. If the Astral location disappears (as is often the case in dreams), the spell ends.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Bestow Spatial Awareness",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "234",
+		"Arcana Requirement" : "Space 2",
+		"Practice" : "Unveiling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "As the Space 1 Spatial Awareness spell, except that the mage casts it upon another mage or a supernatural being such as a ghost or werewolf. If this spell is cast upon a Sleeper, it invokes Disbelief immediately, even if its Duration is less than one scene. If the target is unwilling, he may resist with a reflexive contested Resolve + Gnosis roll. The effect lasts for one hour.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Derangement Of The Senses",
+				"Dice Pool" : "Manipulation + Investigation + Space 2",
+				"Rote Description" : "Mysterium mages sometimes need to show others exactly what it is they themselves see. This rote enables a mage to pass on her own sense of resonance to one who would otherwise be unable to benefit from such perception."
+			}
+		]
+	},
+	{
+		"Name" : "Conceal Sympathy",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "234",
+		"Arcana Requirement" : "Space 2",
+		"Practice" : "Veiling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can conceal any sympathetic connections he has to people, places, or things, making it appear that he might know a lover only casually or not know her at all. Each success allows the mage to decrease the apparent sympathetic connection he has to a single person, place, or thing. He might have an Intimate connection to a cabal-mate, but with three successes, he can make that connection appear (to the eyes of anyone who can see it, such as with the &quot;Correspondence&quot; spell) to be merely an Encountered connection. The true connection is unaffected; it only appears to be more distant.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Dispersing The Threads",
+				"Dice Pool" : "Composure + Subterfuge + Space 2",
+				"Rote Description" : "A Guardian who fears that enemies will try to strike at her through friends and loved ones can baffle them by making it appear that connections are more aloof than they truly are."
+			}
+		]
+	},
+	{
+		"Name" : "Follow Through",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "234",
+		"Arcana Requirement" : "Space 2",
+		"Practice" : "Ruling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "The mage can step through a nearby spatial doorway (such as one created with the Portal spell) to its point of destination. He can follow such a doorway only to its original terminus. In other words, the mage using this spell has no choice but to go exactly where the previous spatial door went. This limitation can obviously prove to be quite problematic if the passage leads to, say, a room full of heavily armed men or an active volcano. The mage suffers penalties based on distance as if he were scrying. Successes apply to the Duration factor, which must equal or exceed the time elapsed since the door was opened. For example, the spell requires a Duration factor of four successes to open a portal that has been closed for 24 hours (with Space 3, four successes covers doors that were opened up to one month ago).</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Spatial Burglary",
+				"Dice Pool" : "Dexterity + Investigation + Space 2",
+				"Rote Description" : "All things in the physical world may serve as a symbol of some action or activity in the magical realms. Even something as mundane as picking a lock to a door might serve in this function -- a knowledgeable lockpick who discovers where a spatial rift has recently been opened might be able to pry that portal back open, given sufficient time and skill, as well as magical prowess. In the Imago, the mage pulls power down the Pandemonaic Watchtower and directs it through his lock picking instruments, which rip open the doorway with a demonic shriek. Factor Bonuses: Using a set of lock picks (+1 factor)."
+			}
+		]
+	},
+	{
+		"Name" : "Intrusion Warning",
+		"SourceBook" : "Guardians Of The Veil",
+		"SourcePage" : "198",
+		"Arcana Requirement" : "Space 2",
+		"Practice" : "Knowing",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "Sometimes a mage doesn't want to prevent something from entering or leaving a place, she just wants to know when it does. Casting this spell creates a sensitivity that will warn her in such an event. This spell alerts the mage who cast it whenever something passes into or out of the spell's area of effect. Once the spell settles over an area, anything that passes through its invisible, intangible barrier during the spell's duration alerts the mage who cast it, no matter where he is. This warning manifests as a slight tingling over the body, a pressure behind the eyes, a momentary case of synesthesia, or several other minute impulses. Mages can, at the time of casting, narrow the spell's definition by declaring some things exempt from notice. The exempt thing may be general (&quot;insects and rodents&quot; or &quot;creatures of Size 2 or less&quot;) or specific (&quot;one-armed humanoids&quot; or &quot;my friend Robert&quot;), but the spell cannot differentiate based upon anything other than normal sensory input. Choosing to exempt &quot;my friend Robert&quot; from the spell draws from the mage's mental imagery to exempt anyone who appears to be Robert; the spell will not note that two people who looked like Robert passed through the barrier at the same time or delve into a person's mind to determine that the person is not actually Robert. Intrusion Warning does not endow the mage with any knowledge of what did pass the boundary (though he'll know it wasn't something he exempted), just that the spell has been breached. If the mage wishes to know anything more about the intruder, he must use additional magic, such as Space 2 Scrying, or mundane means.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Moving Target",
+		"SourceBook" : "Guardians Of The Veil",
+		"SourcePage" : "198",
+		"Arcana Requirement" : "Space 2 + Time 2; optional + Prime 2",
+		"Practice" : "Knowing",
+		"Action" : "Instant and contested; targets rolls Composure + Gnosis reflexively.",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana (for the sympathetic casting)",
+		"Effect" : "In addition to being able to locate a person or object to whom the caster has a sympathetic connection, this spell also allows the caster to trace the movements of the target of this spell. This spell allows the caster to track the past movements of the target (with Time 3, he can also predict where the target may go next). If the caster includes Prime in the spell, the spell also indicates when and where the person or object used or was associated with magic (but not what kind). When performing this spell as an extended action, the caster usually sets out a map and draws on it. When this spell is performed as an instant spell, the caster can either look at or visualize a map and the target's movements will appear on it. In all cases, the target's current location lies at the end of this path. This spell does not allow the caster to see what the target is doing. For that, the caster needs to cast Space 2 Scrying, to open a scrying window. This spell merely allows him to track the target's location and movements, and, if Prime is used, to know just where he uses or encounters magic.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Mapping The Fugitive",
+				"Dice Pool" : "Perception + Investigation + Time 2 versus Composure + Gnosis",
+				"Rote Description" : "In the careful and paranoid ranks of the Guardians of the Veil, this rote is used quite often. In addition to tracking the movements and location of important and powerful Artifacts, this rote is also used to spy upon the movements of mages that the caster worries might be using too much vulgar magic or otherwise disrupting the Sleepers or revealing magic to the Fallen World. This rote is also regularly used to keep track of the movements of suspected members of the Seers of the Throne. In addition to tracking enemies and disruptive mages, members of the Guardians of the Veil also regularly use this rote to keep track of one another. Most Guardians have no greater fear than one of their number either betraying them to the Seers or the Banishers, so they regularly watch anyone who begins to act suspiciously. All but the most naive Guardians are perfectly aware of this sort of spying, which further reduces the odds of a member helping the order's enemies."
+			}
+		]
+	},
+	{
+		"Name" : "Scrying",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "235",
+		"Arcana Requirement" : "Space 2",
+		"Practice" : "Ruling",
+		"Action" : "Instant",
+		"Duration" : "Transistory (one turn)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can view a location remotely. She can employ all of her senses through these &quot;perceptual windows,&quot; allowing her to see, hear, smell, and even touch things on the far side. This spell can be used for a variety of purposes, from checking up on a loved one to spying on a hated enemy. Mages through time have doubtlessly used it for virtually every possible reason. The spellcasting roll is modified by the mage's sympathetic connection to the location. The Duration at this level is transitory (once the mage ceases concentration), but with Space 3 the mage can cast the spell with a prolonged Duration (and Space 4 allows him to use advanced prolonged Duration factors). If he touches someone through the scrying window, a reflexive Wits + Composure roll is made for that person to notice. If it succeeds, he knows that something just touched him, but unless he has magical senses, he doesn't know who or what it was. This sensation is enough to invoke Sleeper Disbelief. The caster cannot actually affect anything with his touch unless he combines this spell with another Space spell such as Apportation. Cast conjunctionally with Spirit 2, the caster can scry across the Gauntlet.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Remote Viewing",
+				"Dice Pool" : "Intelligence + Investigation + Space 2",
+				"Rote Description" : "Guardians of the Veil often use magics such as this to spy on quarries before determining appropriate courses of action. Likewise, Mysterium mages use the same rote to peer ahead and ascertain whether a destination is safe."
+			}
+		]
+	},
+	{
+		"Name" : "Sympathetic Tap",
+		"SourceBook" : "Seers Of The Throne",
+		"SourcePage" : "195",
+		"Arcana Requirement" : "Space 2",
+		"Practice" : "Knowing",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "Every interaction of a person creates a slight ripple in Space, the threads of sympathetic connections vibrating and strengthening when association reinforces them. This spell allows the mage to watch the connection of a target for those moments it becomes active. The spell watches a sympathetic connection (usually targeted after the use of Interconnections or similar spells) for &quot;activity&quot;, defined as the target being in the presence of, thinking about or otherwise acting on the relationship defined by the connection. The strength of the sympathetic connection being targeted determines the number of successes required. On successful casting, the mage becomes aware when any activity occurs but does not know exactly what is occurring -- for that; they must cast Scrying. This spell is detectable by anyone using Spatial Awareness on the target.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "[ 2 ] &nbsp; Track Projectile",
+		"SourceBook" : "Adamantine Arrow",
+		"SourcePage" : "185",
+		"Arcana Requirement" : "Space 2 or (Space 2 + Time 2)",
+		"Practice" : "Unveiling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage gains the ability to determine the exact trajectory of any small, moving object that passes near him. All he needs is one point on the object's path, and he can extrapolate where the object came from, where it went, and every point in between.  Once the spell is active, any object that's thrown, fired, dropped, or otherwise propelled within the mage's sensory range is subject to the spell. Usually this means small objects, but it could even be used to trace the path of, say, a boulder lobbed at the unlucky mage from a catapult. To determine an object's path, he must have knowledge of where it was at some point during its course. A brief glimpse of the object as it whizzed past is sufficient; alternately, if he can see the object where it landed, he can extrapolate its path back to its origin even if he never saw the object in motion. By adding Time 2 to the casting, the mage can discern the trail of projectiles that moved through an area before he cast the spell. He'll still need some point along its path to work with; usually this means starting at the object's final resting place and working backwards. The spell can recreate the trail of objects that bounced or ricocheted during their travel, but can't track an entity that moves under its own power.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "From Bowstring To Target",
+				"Dice Pool" : "Wits + Investigation + Space 2",
+				"Rote Description" : "This versatile rote can aid a warrior's mission in dozens of ways. The rote can tell him if his shot hit the target, or how far off his aim was. The rote can reveal where a sniper is concealed, or make it easier to retrieve a dropped piece of equipment. Some Arrow mages use the conjunctional form of the spell to examine and understand the angles and firing patterns of a complicated gun battle."
+			}
+		]
+	},
+	{
+		"Name" : "[ 2 ] &nbsp; Untouchable",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "235",
+		"Arcana Requirement" : "Space 2",
+		"Practice" : "Shielding",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana (optional)",
+		"Effect" : "The best policy for avoiding harm in a fight is to not be where attacks are directed. This spell enables a mage to perform slight intuitive &quot;tweaks&quot; on the local fabric of space to slip away from hostile attention. Generally speaking, this exceptional avoidance looks coincidental, something plausible for the individual in question. Thus, a seemingly clumsy mage blunders his way out of harm's way, while a lithe, graceful martial artist flows like water, managing to avoid her enemy's path at the last possible moment. The mage gains one point of armor per dot he possesses in the Space Arcanum. By spending one Mana, the Duration can be made to last for one day. Most mages cast such a shielding spell at the beginning of the day, as part of their morning rituals. Successes are used to combat attempts to dispel the shield. Note that this magical armor applies against attempts to grapple the caster (both his Defense and Untouchable armor are subtracted from the grappler's dice pool when he attempts to achieve a hold on the mage), but it does not protect against attempts by an opponent to overpower and/or inflict damage once he has managed to grapple the mage.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "Twisting Threads",
+				"Dice Pool" : "Wits + Occult + Space 2",
+				"Rote Description" : "By bending the weave of Space, a Ladder willworker can evade harm at the hands of enemies, as well as avoid injuries stemming from simple happenstance. Naturally, mages of all orders make use of similar rotes."
+			}
+		]
+	},
+	{
+		"Name" : "[ 2 ] &nbsp; Ward",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "236",
+		"Arcana Requirement" : "Space 2",
+		"Practice" : "Ruling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "This spell creates a barrier to bar the passage of other Space spells, closing a given locale out from remote sensing, teleportation, spatial tampering and the like. Effectively, this spell &quot;locks&quot; the current Space template of an area into place, making it difficult to overcome that inertia without considerable effort. The Ward effectively renders a person, place, or thing immune to Space tempering, monitoring and the like until such time as the spatial barrier is overcome. (In the case of particularly old and/or paranoid willworkers, it could literally take months or years of casting to whittle their Space shields away, during which time the subject is free to fortify his Wards or seek out the one who would so crassly intrude upon his privacy.) A simple success protects an area of five square yards and gives the Ward a Potency of 1. Additional successes add to the Ward's Potency. The mage can add Target factors to increase the area. Space-based spells (sympathetic magic, scrying, teleportation, and the like) that try to pierce the Ward must exceed the protection's Potency with their own Potency. Each time one of these spells breaches the Ward, it erodes the Ward's Potency by one point, reducing its efficacy. Reinforcing a ward is an exception to the normal spell-control rules. Successive Ward spells add their excess Potency to the Ward (that is, any Potency in excess of the Ward's existing Potency), repairing any damage inflicted, and perhaps even improving upon defenses. (The defending mage does not need to create a Ward all over again unless it has been destroyed by incoming spells). The Space 3 Ban spell allows a mage to add Bans to his Wards, keeping certain phenomena from insects to motor vehicles from entering his Ward.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Unseen Guard",
+				"Dice Pool" : "Resolve + Occult + Space 2",
+				"Rote Description" : "Protecting a sanctum against spies is a duty gladly undertaken by most members of the Adamantine Arrow. For those who have mastered this rote, such work is perhaps a bit easier. Willworkers of the Silver Ladder use the same magic to defend their private quarters."
+			}
+		]
+	},
+	{
+		"Name" : "Avoidance Tactics",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "236",
+		"Arcana Requirement" : "Space 3",
+		"Practice" : "Shielding",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana (optional)",
+		"Effect" : "The mage can now cast the Untouchable spell on others. The target gains one point of armor per dot the caster possesses in the Space Arcanum. By spending one Mana, the Duration can be made to last for one day.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Sideslip",
+				"Dice Pool" : "Wits + Occult + Space 3",
+				"Rote Description" : "The Free Council uses this rote to defend its cabal members and allies from the sorts of harm they all too commonly encounter."
+			}
+		]
+	},
+	{
+		"Name" : "Ban",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "237",
+		"Arcana Requirement" : "Space 3",
+		"Practice" : "Weaving",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can create a Ban to restrict something from passing through a Ward. This spell is an exception to the normal spell-control rules, allowing the mage to add a Ban to a pre-existing Ward. (Or he could combine this spell with Ward during casting.) When combined with the appropriate dot of the Arcanum governing a given phenomenon (say, Forces 2 for fire or Forces 5 for nuclear radiation), the Ban can prevent that phenomenon from entering an area at all, by any means. Thus, a mage with the right Arcanum knowledge could prevent insects (Life), metal objects (Matter), spirits (Spirit) or even people (Life) -- or all four if he desired -- from intruding upon a given location. The subject of a Ban can be as general or specific as a mage wishes, ranging from &quot;all energy&quot; (meaning that the energy currently within the location remains there and no new energy can enter), to &quot;thrown rocks&quot; (meaning that rocks can be carried in, but those thrown at the space are repelled), to &quot;Jerry's albino boa constrictor, Lucifer&quot; (which keeps that one snake, and only that snake, out). &quot;All energy&quot; might impose a -3 penalty (and require Forces), while &quot;Jerry's albino boa constrictor, Lucifer&quot; might invoke no penalty.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Taoist Tradition Rote",
+				"Rote Name" : "Ho-t'u Dance",
+				"Dice Pool" : "Resolve + Occult + Space 3",
+				"Rote Description" : "Unlike the basic rote, however, the Taoist mage imbues the ward with Mana given the resonance of thunder. If the mage allocates all her successes to Potency rather than area or duration, she can evoke a ward powerful enough that even the terrible Chia spirits hesitate to test themselves against it, and consider themselves no longer obliged to attack a victim thus protected."
+			}
+		]
+	},
+	{
+		"Name" : "Destroy The Threads",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "237",
+		"Arcana Requirement" : "Space 3",
+		"Practice" : "Fraying",
+		"Action" : "Instant; subtract target's Composure",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage destroys a sympathetic connection. Each success destroys one degree of sympathetic connection that a target holds for a single person, place, or thing, as per the sympathetic spells chart. For example, this spell can be cast upon a mage to erode the Intimate sympathetic connection he has to his best friend. It does not affect his mental or social feelings or interactions with his friend, but does make it harder for him to connect with that friend using sympathetic magic. A living creature unconsciously resists this spell's attempts to alter its connections with its Composure. These threads can be re-established normally over time in the usual fashion (i.e., through physical contact or even repeated mental and/or emotional association).</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Shattering The Invisible Bonds",
+				"Dice Pool" : "Strength + Investigation + Space 3",
+				"Rote Description" : "As willworkers of the Arrow know, any kind of vulnerability can and eventually is exploited by an enemy. This rote drastically reduces the likelihood of an attack via sympathetic magic. Mages of the Mysterium, who are occasionally pursued by hostile willworkers (or even stranger beings) in the course of their work value similar magic (Resolve + Investigation + Space)."
+			}
+		]
+	},
+	{
+		"Name" : "Double Shape",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "143",
+		"Arcana Requirement" : "Space 3",
+		"Practice" : "Weaving",
+		"Action" : "Extended",
+		"Duration" : "Prolonged (this spell uses the advanced prolongation factors)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage merges two objects into one, so that at any given time, one object exists in the Material Realm, while the other co-exists with the object in a pocket dimension. As an instant action, the item's owner can switch the two items, so that, for example, one's enchanted handgun disappears, to be replaced by its other half, an enhanced chainsaw. Aside from the convenience of carrying the two-in-one item, this spell allows both objects to benefit equally from any further curses, defenses or enhancements subsequently woven into the combined device. Additional castings of the spell allow for additional items to be added to the mix. Only one item exists in the Material Realm; all additional forms also go to the pocket dimension when not in use. Switching an object between forms evokes Disbelief in Sleeper witnesses.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "The Right Tool",
+				"Dice Pool" : "Intelligence + Crafts + Space 3",
+				"Rote Description" : "Whether you're exploring an ancient crypt or creeping uninvited into a secret library, carrying capacity can be a critical issue. Mysterium explorers like to keep a wide range of important tools at their disposal while still leaving room in their bags for any alluring Artifacts they may feel the need to liberate."
+			}
+		]
+	},
+	{
+		"Name" : "Duplicate Sympathy",
+		"SourceBook" : "Seers Of The Throne",
+		"SourcePage" : "194",
+		"Arcana Requirement" : "Space 3",
+		"Practice" : "Weaving",
+		"Action" : "Instant, unwilling targets contest with Composure + Gnosis reflexively",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage may assume the sympathetic connections of another, or grant another the use of her own. The sympathetic connection being duplicated must be known to the caster, either by common knowledge (&quot;that between you and your mother&quot;) or by use of the Interconnections spell, but the identity of what the connection is need not be. The strength of the connection being duplicated determines the target number of successes. Upon successful completion of the spell, the recipient gains a &quot;Described&quot; connection to the same thing as the connection being duplicated, which lasts for the Duration of the spell. Most casters then cast &quot;New Threads&quot; to increase the level of the new connection on a Lasting basis.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Expanded Volume",
+		"SourceBook" : "Guardians Of The Veil",
+		"SourcePage" : "199",
+		"Arcana Requirement" : "Space 3",
+		"Practice" : "Weaving",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "The mage adds to the internal volume of any existing container or enclosed space of Size 3 or less, without expanding the space's external dimensions. Thus a jar, shoe box, or jacket pocket could hold two, three, or more times than what could normally fit into a container of that size. The interior behaves exactly as if the container had become deeper, which means someone reaching in might not be able to touch the bottom and fragile objects might break if allowed to drop into the container. Objects must be inserted and retrieved by hand, and must be small enough to fit through the container's opening. The item is capable of holding the full weight of whatever fits inside without breaking, but will become appropriately heavy as it's filled. Each success adds an amount equal to the containers' original volume to the total, so one success doubles its volume, two successes triples it, etc. When the spell expires, any contents of the container in excess of the original volume are expelled to the outside of the container, starting with what was at the &quot;bottom.&quot; Anyone standing near the container may be subject to Knockdown.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Deep Pockets",
+				"Dice Pool" : "Dexterity + Subterfuge + Space 3",
+				"Rote Description" : "A Guardian tends to use this rote under two conditions. First, when he needs to carry extra equipment without calling attention to himself, and second, when he needs to smuggle something away without causing suspicion. Experienced users of the spell are careful to match the added volume of the container to their purposes, so they can retrieve the contents quickly without having to grope for what they need."
+			}
+		]
+	},
+	{
+		"Name" : "Eyes Of The Building",
+		"SourceBook" : "Legacies: The Ancient",
+		"SourcePage" : "61",
+		"Arcana Requirement" : "Space 3",
+		"Practice" : "Instant",
+		"Action" : "Extended",
+		"Duration" : "Concentration",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "Some mages know buildings inside out. Some mages, with a little concentration, find that they can see and hear everything that goes on inside the buildings they have made or in those buildings to which they have a special link. The mage can cast this spell while standing inside any building with which she has at least an Intimate sympathetic connection, such as her home, her sanctum, or a building she designed or built herself. If she succeeds, the mage is aware of anything that happens in the building. She can see any movement and recognize faces, but cannot see close enough to ascertain fine details (for example, written text on a letter or in a book). The mage can eavesdrop on conversations, but can only listen to one conversation at a time, unless she uses the Mind 3 Multi-Tasking spell in a combined casting with this spell.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "The Eye In The Pyramid",
+				"Dice Pool" : "Wits + Crafts + Space 3",
+				"Rote Description" : "Mages have been using this rote since the days of ancient Egypt, and the rote still survives today. Even if the buildings have changed, the sacred geometry of the buildings they work on still operates on principles established thousands of years ago."
+			}
+		]
+	},
+	{
+		"Name" : "Hostile Space",
+		"SourceBook" : "Summoners",
+		"SourcePage" : "211",
+		"Arcana Requirement" : "Space 3 + Mind 2",
+		"Practice" : "Weaving",
+		"Action" : "Instant and contested; subject rolls Resistance or Resolve reflexively",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "Summoned beings often have their genesis in alien landscapes and they are not necessarily comfortable in this world. This spell actually increases the discomfort that many such entities feel within the confines of the material realm. Upon successfully casting this spell, the mage creates an area of metaphysical &quot;static&quot; expressly uncomfortable for one particular type of otherworldly being: Abyssal spirits, alien entities from outside of the Tapestry, or denizens of a particular Supernal Realm, for example. Beings native to any layer of the Fallen World -- no matter how far-flung -- cannot be affected by this spell, as its efficacy depends largely upon exacerbating a being's natural aversion to the particular qualities of this stratum of Creation. While within this zone, any being that does not successfully resist the distraction of this &quot;static&quot; must spend a point of Essence (or Willpower, for entities without Essence) to take an action in a given turn, above and beyond the costs inherent to any of its supernatural abilities. The entity may not spend Willpower to modify any dice roll made on the (or a) Resistance Attribute.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Enmity Of The Land",
+				"Dice Pool" : "Wits + Occult + Space 3",
+				"Rote Description" : "This rote has come in and out of favor with summoners for centuries, and perhaps even millennia. Certain Mysterium Athenaeums, however, have quietly maintained texts containing its formulae, dating back to the Middle Ages or before. Unfortunately for the Dragon's Wing, the rote -- long out of vogue and maintained as a secret of the Mysterium -- went back into circulation after the ransack of the Athenaeum in Berlin, Germany, in 1945, by parties unknown."
+			}
+		]
+	},
+	{
+		"Name" : "Instill Elusiveness",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "140",
+		"Arcana Requirement" : "Space 3",
+		"Practice" : "Weaving",
+		"Action" : "Extended",
+		"Duration" : "Prolonged (this spell uses the advanced prolongation factors)",
+		"Aspect" : "Covert",
+		"Cost" : "Variable; see below",
+		"Effect" : "The mage enchants an item so that it changes its position in space when it is touched by an unauthorized user. The item teleports to a new location within its range of movement. If there's a hidden or inaccessible location within that radius, the item goes there. Otherwise it moves as far away as it can without re-materializing within a solid object. The item may move in a random direction, or make a series of consistent hops in the same direction. Although the item is not blessed with intelligence, the object does appear to calculate its moves to engineer maximum exasperation in the interloper. The item's range of movement depends on the Mana spent on the original enchantment. The target number is increased by five successes per point of Mana spent. The teleportation effect evokes Disbelief in Sleeper witnesses.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Instill Homing Instinct",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "144",
+		"Arcana Requirement" : "Space 3",
+		"Practice" : "Weaving",
+		"Action" : "Extended",
+		"Duration" : "Prolonged (this spell uses the advanced prolongation factors)",
+		"Aspect" : "Covert",
+		"Cost" : "5 Mana",
+		"Effect" : "This spell enchants an item so that it returns reliably to its owner's possession, even when the item's present location is unknown to her. The item moves of its own volition through a gateway in space, as if by an Apportation spell. The Apportation effect triggers when the item has been out of the owner's possession for a period of time determined by the spell's Potency. Disbelief is triggered in Sleepers who witness the Apportation effect.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Interpose",
+		"SourceBook" : "Adamantine Arrow",
+		"SourcePage" : "186",
+		"Arcana Requirement" : "Space 3",
+		"Practice" : "Shielding",
+		"Action" : "Reflexive",
+		"Duration" : "Transitory",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "During the course of defending those weaker than themselves, warriors are occasionally required to put their own bodies in harm's way, so as to spare others pain and suffering that they are ill-equipped to endure. This sacrifice is among the noblest undertaken by the career combatant, for it demonstrates the sense of love and duty that she feels toward her people. Upon successfully casting this spell (which need not be cast on the mage's Initiative, but which does use up her action for the turn), the mage may interpose herself between any person within a number of yards equal to her Speed and an incoming attack aimed at that person. The attack is resolved against the caster, and successes on the attack roll are applied to the caster, rather than the intended target. Immediately after the attack is resolved, the caster is automatically returned to her original position, now suffering from whatever injuries she might have sustained.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Taking A Bullet",
+				"Dice Pool" : "Dexterity + Athletics + Space 3",
+				"Rote Description" : "In the mid-18th century, a Seer of the Throne infiltrator attempted to assassinate the Hierarch of the Consilium of K&ouml;nigsberg with a poisoned stiletto in open court. Konrad Torvald, the Consilium's Adamant Sage, intercepted the blow, apparently by way of a spell improvised as the weapon's envenomed tip closed on the Hierarch's heart. Although Torvald died, he did so in the execution of his duties and was buried with a hero's honors. Afterward, other Arrows studied and dissected the magics their fallen brother had employed and this rote has gradually come into use as a part of the Adamantine Arrow's repertoire of body guarding techniques."
+			}
+		]
+	},
+	{
+		"Name" : "Maintained Sympathy",
+		"SourceBook" : "Astral Realms",
+		"SourcePage" : "28",
+		"Arcana Requirement" : "Space 3",
+		"Practice" : "Weaving",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "Travelers appear in the astral without any more than clothes on their back. This is usually enough -- a mage's best weapons in Astral Space are his spells and his wits -- but sometimes it helps to have an edge. This spell manifests representations of real-world sympathies in the astral for the mage to use. Each success allows the mage to designate one item (such as a lock of hair or an old book) that manifests with him in Astral Space. For the spell's Duration, he can use the items for their sympathetic connections. This spell also allows the mage to manifest dedicated magical tools in the astral -- useful when traveling to realms where Paradoxes threaten. Even when a mage needs no sympathetic connections to the real world, having tokens of other astral companions makes it easier to contact them using standard sympathetic magic.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Kit Bag",
+				"Dice Pool" : "Wits + Survival + Space 3",
+				"Rote Description" : "Soldiers know the value of being prepared. The Adamant Way reinforces that wisdom. This rote lets Adamantine Arrows bring everything they they'll need into Astral Space."
+			}
+		]
+	},
+	{
+		"Name" : "Multispatial Perception",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "237",
+		"Arcana Requirement" : "Space 3",
+		"Practice" : "Fraying",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can scry multiple locations simultaneously. One location can be scryed per success. The mage catches only a glance at each location. If he concentrates on details at one location, he notices less of what's going on at others (-2 dice penalty on any perception rolls to notice things of note). The mage uses his weakest sympathetic connection (the one with the highest spellcasting penalty) when casting this spell. If one place is Intimately known (-2) but another has only been Described (-10), the spell suffers the higher -10 penalty. If the mage wishes to focus intently on more than one location at once, he must use the Mind 1 One Mind, Two Thoughts spell or the Mind 3 Multi-Tasking spell to multitask on that level.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Spatial Collage",
+				"Dice Pool" : "Intelligence + Investigation + Space 3",
+				"Rote Description" : "This rote enables a Council willworker to glimpse multiple locations simultaneously. While he might have some difficulty processing what he sees without the Mind Arcanum, he is definitely able to notice any obviously strange occurrences, and anything blatantly out of place in familiar locations."
+			}
+		]
+	},
+	{
+		"Name" : "New Threads",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "237",
+		"Arcana Requirement" : "Space 3",
+		"Practice" : "Weaving",
+		"Action" : "Instant; subtract target's Composure",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage creates a sympathetic connection by fortifying that elusive bond between things that creates the principle of sympathy (using a favored childhood treasure, for example, to work either deleterious or beneficial magic upon another). Each success creates one degree of sympathetic connection between the target and a single person, place, or thing, as per the sympathetic spells chart. For example, a mage who barely knows a woman he just met (an Encountered connection) can be given a greater degree of sympathetic connection to her (with three successes, this can be come an Intimate connection). This does not change the normal mental and social relationship between the two, only their mystical connection that can be exploited through Space magic. A living creature unconsciously resists this spell with its Composure.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Spinning The False Strand",
+				"Dice Pool" : "Manipulation + Occult + Space 3 - Composure",
+				"Rote Description" : "Sometimes the only way to get close to someone is to create the means oneself. Free Council mages use this rote to forge an artificial sympathetic connection with another person, usually for the purposes of targeting that individual remotely with other magics. Guardians use a rote much like it (Composure + Occult + Space) to affect others at great distance, without ever needing to reveal themselves."
+			}
+		]
+	},
+	{
+		"Name" : "Portal",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "238",
+		"Arcana Requirement" : "Space 3",
+		"Practice" : "Weaving",
+		"Action" : "Extended (target number = degree of sympathetic connection)",
+		"Duration" : "Transitory (one turn)",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "This spell creates a spatial warp through which the caster (and anyone else who uses it) can move from one point in Creation to another without traversing the intervening space. The mage steps forward and &quot;vanishes&quot; from one place to arrive at another, &quot;appearing&quot; instantaneously. For those who hold to such tales, it is believed that many Awakened survived the fall of Atlantis through use of this spell, opening portals in space to flee to distant sanctums to lick their wounds. Naturally, the wise mage takes some time to scry the layout of the place to which he teleports (even if it is familiar to him), just to be certain that no unwelcome surprises await. The target number is determined by the caster's sympathetic connection to the destination. One person of Size 5 or less can pass through the portal per turn (larger people can spend two turns squeezing through). Each success added to the target number allows the mage to widen the portal so that one additional person can pass through per turn. A Portal's entrance and exit can be placed anywhere that allows a person of Size 5 or less enough freedom of movement to enter or exit it in a single turn. Most Portals are used like doors, with the entrance and exit perpendicular to the ground, but the caster can be creative. The entrance and exit, however, must mirror each other on the same plane. For example, the entrance could be placed below a falling person, but the exit cannot be set to eject the falling person sideways. It must face down (as its opposite faces up). Note that, without applying the Portal Key spell, the caster cannot limit who can use the Portal. Nearby enemies can attempt to step through it, too. A person can be thrown through a portal forcibly. A hold must first be achieved in a grapple action, after which the grappler can shove the person through the Portal as an overpower maneuver. With Space 4, this spell can be cast with a prolonged Duration. With Space 5, it can be cast as an instant action (and with advanced prolonged Duration factors). Cast conjunctionally with Spirit 4, the portal can lead to locations on the other side of the Gauntlet. See the Road Master spell.</P>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Ranged Blow",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "238",
+		"Arcana Requirement" : "Space 3",
+		"Practice" : "Weaving",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana (per attack)",
+		"Effect" : "The mage can punch, kick, or stab a target from afar. For the scene following casting, the mage can make ranged Brawl or Weaponry attacks against targets within sensory range. One Mana must be spent for the caster per attack. These attacks have all the benefits (the target does not get his Defense) and drawbacks (range penalties as per an aimed spell) of a ranged attack.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Long Hand Technique",
+				"Dice Pool" : "Dexterity + Investigation + Space 3",
+				"Rote Description" : "This technique allows the magus to channel his qi into the same patterns used to strike an opponent. The only difference is, the opponent need not be standing next to the martial artist to be struck by that qi. In the Imago, the mage sees himself send forth his Supernal mastery as an image of himself standing before the foe. Factor Bonuses: Performing tai chi movements while casting the spell (+1 factor if performed right before or during casting)."
+			}
+		]
+	},
+	{
+		"Name" : "Repel",
+		"SourceBook" : "Adamantine Arrow",
+		"SourcePage" : "186",
+		"Arcana Requirement" : "Space 3 + (conjunctional Arcanum)",
+		"Practice" : "Weaving",
+		"Action" : "Instant",
+		"Duration" : "Concentration",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "Similar to the Ban spell except the mage creates a small area that moves with the caster in which the specified phenomenon may not enter. The mage combines this spell with an Arcanum of appropriate level to control the phenomenon she wishes to ban (for example, Matter 2 for vapors and liquids, or Forces 3 for electricity). As long as the mage concentrates on the spell, the target of the Repel rote may not enter a one-yard radius &quot;bubble&quot; around the caster. This rote was designed to provide temporary relief from a simple phenomenon (such as falling rock, fire, or hail). Choosing a more complex phenomenon (cars, bears, your creepy Uncle Jimmy) can impose up to a -3 penalty to the casting roll depending on specificity of the target phenomenon. Uncle Jimmy is pretty specific and would result in a -1 penalty, while choosing cars is a broader category resulting in a -3 penalty. Repel will protect you from only one type of phenomenon at a time.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Mantlet",
+				"Dice Pool" : "Resolve + Occult + Space 3",
+				"Rote Description" : "Members of the Adamantine Arrow frequently use this spell as a means of safely advancing while under fire from mundane ranged weaponry. Bullets, arrows, and rocks are easily deflected by this spell as the warrior advances on foot. Captured enemies have been reported as saying they found it disheartening to fire a full clip from an automatic weapon at a target with no effect."
+			}
+		]
+	},
+	{
+		"Name" : "[ 4 ] &nbsp; Arcade",
+		"SourceBook" : "Reign Of The Exarchs",
+		"SourcePage" : "22",
+		"Arcana Requirement" : "Space 4",
+		"Practice" : "Weaving",
+		"Action" : "Extended (target number is based on the degree of sympathetic connection with the most difficult location chosen)",
+		"Duration" : "Transitory (one turn)",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage can cast up to three portals, each to a different destination. As with Portal, the more familiar the casting mage is with each location to which he creates a doorway, the easier it is to successfully cast the spell. The target number is determined by the caster's sympathetic connection to the most difficult destination to connect to. This spell is an all-or-nothing proposition, with the total number of successes determined by the least-known destination. For example, if the caster is acquainted with two of the destinations but has only encountered the third, he must accrue 12 successes to cast the spell. If he rolls eight successes, and is then halted, the spell doesn't take effect. Each portal of the Arcade spell can accommodate one person of Size 5 or less per turn (larger people can spend two turns squeezing through). Each success added to the target number allows the mage to widen all portals so that one additional person can pass through per turn. All Arcade doorway entrances and exits can be placed anywhere that allows a person of Size 5 or less enough freedom of movement to enter or exit in a single turn. Note that, without applying the Portal Key spell the caster cannot limit who can use the Arcade doorways. Nearby enemies can attempt to step through, too. Additionally, people can be forcibly thrown into any of the doorways as long as a hold is fi rst achieved in a grapple action, after which the grappler can shove the person through a doorway as an overpower maneuver.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Astral Reaches",
+		"SourceBook" : "Astral Realms",
+		"SourcePage" : "28",
+		"Arcana Requirement" : "Space 4",
+		"Practice" : "Patterning",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "An adept of Space masters the ability to reach between astral realms and strata. The mage can use spells that short-circuit distance, such as Apportation and Portal, to travel between any portions of Astral Space. Invoking this spell enables the mage to use this power for any relevant spells he casts during the Duration. At Space 5, the mage can also pierce from Astral Space to real space and the reverse, allowing a mage to skip the astral journey. He must still spend a point of Mana to cross the Astral Threshold.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Puncturing The Worldskin",
+				"Dice Pool" : "Intelligence + Occult + Space 4",
+				"Rote Description" : "Enlightening as it may be, the journey into Astral Space is time-consuming and distracting. Mystagogues use this rote to foreshorten the astral journey (traveling to the Oneiros and then teleporting to a deeper stratum) or bypass the journey entirely at Space 5."
+			}
+		]
+	},
+	{
+		"Name" : "Co-Location",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "239",
+		"Arcana Requirement" : "Space 4",
+		"Practice" : "Patterning",
+		"Action" : "Instant",
+		"Duration" : "Transitory (one turn)",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage performs personal co-location, being in two or more places at once. He creates multiple images of himself, one of which is really him. Without the use of the Mind Arcanum for multi-tasking, these duplicates are just that, reflections like those in a mirror, all performing the same tasks, saying the same things simultaneously. These duplicates are normally insubstantial, but the mage is capable of choosing which location she is actually at from moment to moment. The mage performs personal co-location, being in two or more places at once. He creates multiple images of himself, one of which is really him. Without the use of the Mind Arcanum for multi-tasking, these duplicates are just that, reflections like those in a mirror, all performing the same tasks, saying the same things simultaneously. These duplicates are normally insubstantial, but the mage is capable of choosing which location she is actually at from moment to moment. The mage can exist simultaneously in one location plus one per success and can reflexively choose (during his action in the Initiative roster) which of these locations he actually physically inhabits (through a form of reflexive teleportation) from turn to turn. Only his real self can be affected by attacks; duplicates have no substance. The mage uses his weakest sympathetic connection (the one with the highest spellcasting penalty) when casting either version of this spell. (In other words, if he wants copies of himself in Prague, Reykjavik, and Tokyo, but has only briefly been to Prague, he applies that location's sympathetic penalty to the overall difficulty of the spell.) By using the Mind 3 Multi-Tasking spell when creating these duplicates, the mage can make one or more of his immaterial duplicates say or do something different than he himself does (as per normal multi-tasking rules). Without use of other sympathetic spells, the mage can only interact with the location he is physically in, though he can perceive (as per Multispatial Perception) what goes on in each reflection's immediate surroundings. With Space 5, this spell can be cast with prolonged Duration.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Cleanup Crew",
+				"Dice Pool" : "Intelligence + Investigation + Space 4",
+				"Rote Description" : "With this rote, a Guardian can be in many places at once, able to move effortlessly between locations and act as a one-man team to quickly and efficiently contain breaches of the veil. Adamantine Arrow mages use the same rote to move virtually unstoppably across a battlefield or through an enemy holding."
+			}
+		]
+	},
+	{
+		"Name" : "Ephemeral Co-Location",
+		"SourceBook" : "Summoners",
+		"SourcePage" : "211",
+		"Arcana Requirement" : "Space 4 + Spirit 3",
+		"Practice" : "Patterning",
+		"Action" : "Instant",
+		"Duration" : "Transitory (one turn)",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "Warlocks of advanced skill in their Path's Arcana can be in many places at once. Those who learn this spell, however, can also be in different realms, simultaneously. Success enables a willworker to create an identical duplicate of herself on the opposite side of the Gauntlet from her present location. Both copies of the mage must perform exactly the same actions at all times (as per the Co-Location spell), though adding Mind 3 to the casting removes this restriction. With a reflexive action, the mage may switch places with her duplicate from turn to turn. As with Co-Location, only the willworker's real self may be targeted by attacks, as the duplicates possess no substance. With Space 5, this spell may be cast with prolonged Duration.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Warrior Of Many Worlds",
+				"Dice Pool" : "Wits + Investigation + Space 4",
+				"Rote Description" : "In late June of 1967, a Mastigos Arrow by the name of Anaïs happened upon the scene of a Shadow Realm summoning gone horribly awry. The three Guardians of the Veil responsible for the act were already unconscious by the time the Warlock arrived and she knew that time was of the essence. The spirit's trail moved back and forth through the Gauntlet and Ana&iouml;s, also a Disciple of the Spirit Arcanum, formulated this spell on the spot as a means of keeping track of it, no matter how it attempted to flee its pursuer. Later, when the entity was contained, the mess cleaned up, and the three Guardians properly chastised for their ill-conceived plan, Ana&iouml;s codified the spell into a rote at the request of the Hierarch, who offered it as a good-faith gesture to a number of Consilii elsewhere in the world."
+			}
+		]
+	},
+	{
+		"Name" : "Look Within The Gauntlet",
+		"SourceBook" : "Summoners",
+		"SourcePage" : "62",
+		"Arcana Requirement" : "Space 4 + Spirit 3",
+		"Practice" : "Patterning",
+		"Action" : "Instant",
+		"Duration" : "Transitory (one turn)",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "By picking apart the weave of the Gauntlet between the material and the ephemeral, a willworker can look inside that barrier, to behold its astounding emptiness and, just maybe, to study some of its otherworldly life. Successful casting of this spell enables a mage to look within the metaphysical fabric of the local Gauntlet.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Worlds Between Worlds",
+				"Dice Pool" : "Intelligence + Occult or Science + Space 4",
+				"Rote Description" : "With their at times eccentric approach to magic, Libertines were the first willworkers to discern the existence of something like a realm, tucked away within the Gauntlet between the Shadow Realm and the material world. The scant few Free Council mages who made this discovery shared their findings with students of such bizarre lore among the other Pentacle Orders, though the rote remains little more than a curiosity."
+			}
+		]
+	},
+	{
+		"Name" : "Outer Channel",
+		"SourceBook" : "Summoners",
+		"SourcePage" : "144",
+		"Arcana Requirement" : "Space 4 + Spirit 4",
+		"Practice" : "Weaving",
+		"Action" : "Extended (target number equal to the Gauntlet Strength + the mage's own Wisdom score)",
+		"Duration" : "Lasting",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "Similar to Spirit Road, the mage opens a channel between this world and the outer realms, piercing the Gauntlet and the mage's own Wisdom to do so. It is not a sane act, not by any means, opening a road that would allow a quincunx entity (or any other mad being) through This does not work like summoning a spirit normally does in that the spirit is literally summoned directly to the mage's immediate vicinity, and the mere summoning of the entity does not come replete with control over the entity. The duration is lasting because the spirit doesn't leave at the end of the scene, nor is it in any way bound to the vicinity in which it was summoned. These entities are not &quot;normal&quot; spirits (if they are spirits at all), and refuse to abide by what a mage expects -- once more, hubris can blind a willworker who believes she has cemented all knowledge around any kind of ephemeral or bizarre being.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Other Door, The",
+				"Dice Pool" : "Presence + Persuasion + Spirit 4 vs. Resistance (or the entity's Resolve + Composure if it's not strictly a &quot;spirit&quot;)",
+				"Rote Description" : "The Mysterium knows it is sometimes necessary to plumb the deepest, strangest depths of the cosmos to increase awareness, understanding and knowledge. This rote does just that, calling forth a truly bizarre being into audience. Its willworkers do not use this rote lightly, recognizing that once such a creature is summoned, it is not always so keen to leave. The effects of bringing an eldritch or insane entity into this plane of existence always comes with powerful consequences -- sometimes, a being's very presence will corrupt this world, for they cannot be so easily contained in the material plane."
+			}
+		]
+	},
+	{
+		"Name" : "Pocket Realm",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "239",
+		"Arcana Requirement" : "Space 4",
+		"Practice" : "Patterning",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage creates a pocket universe to which he can escape (with his familiar, provided he chooses to brings it, along with any possessions he might wish to carry). This &quot;space&quot; has no particular size beyond that imparted upon it by the mage himself. One success provides Size 20 or less, +10 per additional Target factor. Without use of other Arcana (such as Forces for light), it is a &quot;place&quot; (a term best used only loosely in this regard) devoid of features, dimensions, energy or boundaries. While it defies the classification of color (having no true light beyond that which the mage brings with himself), most describe it as being gray and lifeless. It is neither small nor large (though, without the presence of any phenomena other than the mage herself, such distinctions are virtually useless), but simply is. Those who dwell upon the school of esoterica call this location a Correspondence Point, wherein the enigma of the non-existence of space is truly revealed. Unless Matter 4 is included in the casting (or used once the mage is within the Pocket Realm), the mage eventually exhausts the air supply (the Matter spell transforms molecules to recycle oxygen). He can breathe there for one hour, minus 10 minutes per point of Size over 5. Life 5 can be used to create a mystical life-sustaining effect. A mage can open portals or teleport into or out of his Pocket Realm. The mage has a Known sympathetic connection to his own Pocket Realm, unless he has spent at least 24 hours inside it (requiring an extended Duration), after which his connection becomes Intimate. If the Pocket Realm spell expires with the mage still in it, he appears in space exactly where he was before going to the realm. He and anyone (or anything) within the same space in which he appears must contend with Knockdown. If he used the Safe Keeping spell to place items in his Pocket Realm, they are ejected when the spell maintaining the realm expires. They appear in the same space they occupied when they were placed into the realm. (If the mage placed things in his realm while traveling far and wide, he now has to travel back to those places to retrieve the items -- assuming nobody moves them before he gets to them.)</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Non-Space",
+				"Dice Pool" : "Dexterity + Investigation + Space 4",
+				"Rote Description" : "Some Free Council mages use the pocket of nil-space provided by this rote as a place to hide out, and perhaps even as something of a &quot;home away from home,&quot; a safe haven during dangerous times. Mysterium mages use a variant rote (Composure + Investigation + Space) to access a quiet place to rest, meditate, and ponder away from distractions."
+			}
+		]
+	},
+	{
+		"Name" : "Portal Key",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "240",
+		"Arcana Requirement" : "Space 4",
+		"Practice" : "Patterning",
+		"Action" : "Instant",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can attune a portal he creates to some kind of activation trigger (such as a particular word or phrase, a given gesture, or even something inherent, such as the presence of a redhead or a member of the mage's own family), so that the portal opens and is usable by anyone who performs the trigger, but it otherwise remains closed. The mage can also use the Portal Key to declare who can (and cannot) pass through the portal. Unlike the normal rules for spell control, the mage can cast this on a pre-existing portal of his own or he can combine it with the creation of a portal.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "Attuning The Gateway",
+				"Dice Pool" : "Resolve + Occult + Space 4",
+				"Rote Description" : "Silver Ladder mages use this rote both as a means to program their spatial gateways and to craft instantaneous portals when a situation suddenly turns unfavorable."
+			}
+		]
+	},
+	{
+		"Name" : "Safe-Keeping",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "240",
+		"Arcana Requirement" : "Space 4",
+		"Practice" : "Patterning",
+		"Action" : "Instant",
+		"Duration" : "Lasting",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "The mage can place an item into his Pocket Realm for safekeeping and retrieve it with another casting of this spell. The item's Size cannot exceed the pocket universe's own Size. The Pocket Realm must be pre-existing or cast in combination with this spell. The effect of this spell is lasting, but if the Pocket Realm spell expires, the item appears in space exactly where it was before being placed into the Pocket Realm. It and anyone (or anything) within the same space in which the reappearing item arrives must contend with Knockdown.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Storage Space",
+				"Dice Pool" : "Dexterity + Investigation + Space 4",
+				"Rote Description" : "Over time, some Free Council mages find that their Correspondence Point spaces end up as something of a dumping ground for useful items or those too precious to leave anywhere in the universe. This rote enables the willworker to place inanimate objects (quite a large quantity of them, actually, should such prove necessary) in one of the safest possible locales. Some Adamantine Arrow mages use such a non-place as a secret weapons cache."
+			}
+		]
+	},
+	{
+		"Name" : "Shatter Space",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "72",
+		"Arcana Requirement" : "Space 4 + Fate 2",
+		"Practice" : "Patterning",
+		"Action" : "Instant",
+		"Duration" : "Transistory",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "This bizarre spell divides an area into &quot;cells&quot; that cease to be geographically contiguous with one another; their spatial interaction is determined randomly. The most common use of the spell is to hinder targets caught in the cells from easily traveling to other cells within the spell's area. With one success, the spell effects a five-cubic yard area, and can affect a greater area with each additional success; see the Area-Affecting chart. This area is sectioned off into cells by the caster; he can create one division per dot of his Intelligence. Fortunately, this effect cannot cut objects or living things into pieces when it sections them off into cells. It may, however, wreak indirect havoc with people and objects outside of the spell's area, as they no longer have any spatial relationship with objects inside the spell's area. This might cause buildings to lean (but not collapse), vehicles to make strange detours and other chaotic events (most of which are left to player cleverness and Storyteller discretion). A target can leave his or her cell by stepping into another, randomly selected cell, even if it is not geographically contiguous. The caster can designate cells in three dimensions, so that a target may step from ground level to a cell in the air. He will then fall, but he might not suffer injury: As he falls from his cell into another, his destination is again randomly determined; if the new cell is on the ground level, he'll only suffer a short fall of a few feet at best. The targets' movements are not hindered, so he might move through several cells of space in a single turn. In addition, a cell's orientation is randomly shifted, so that a person running forward might suddenly find himself in a cell in which he is running in the opposite or a sideways direction. He can control his orientation and movement within a cell, but has no control over the orientation of his randomly chosen destination cell. In all cases, the Storyteller determines where each cell leads, either randomly (roll dice or use some other method based on the number of cells) or to fit the course of the story.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Shadow Maze",
+				"Dice Pool" : "Intelligence + Subterfuge + Space 4",
+				"Rote Description" : "In extremis, Guardians use Shadow Maze to cover an escape, because the rote can hinder pursuit most effectively. The rote is cast upon an area occupied by the pursuers, and they are then subject to the area's shifting space and orientations. Mages of all orders have developed similar rotes, though in many cases, they have only been used as a meditation aid or to demonstrate some obscure facet of Space magic."
+			}
+		]
+	},
+	{
+		"Name" : "Suspension",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "240",
+		"Arcana Requirement" : "Space 4",
+		"Practice" : "Patterning",
+		"Action" : "Instant and contested; target rolls Composure + Gnosis reflexively",
+		"Duration" : "Transistory (one turn)",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "By means of this spell, the mage essentially entangles a given being or object with invisible spatial strands, rendering him incapable of leaving. The subject is boxed in and cannot leave under his (or its, in the case of moving objects) own power, detained until such time as the spell expires or the mage chooses to grant release (or someone else with an advanced understanding of spatial magics undoes the imprisonment). From the subject's point of view, no amount of movement in any direction results in progress toward escaping the zone of confinement. Outside observers see the subject moving but not getting anywhere. Although the subject cannot travel anywhere, he still gains his Defense against attacks to which it normally applies. This pocket of &quot;looped&quot; spatial strands can be placed directly upon a subject (in which case the subject can contest it with a reflexive Composure + Gnosis roll), or it can be set up so as to snare any who physically enter the space. With a single success, the Suspension snare covers a defined volume of five cubic yards; additional Target factors can increase this volume. The snare does not hold more cubic mass than it is designed to encompass. Made too small, it cannot hold the desired volume. Too large, and it may capture unintended individuals and objects. As the strands close about a living target, he can attempt to slip free in the first turn of contact with a successful Dexterity + Athletics roll as a contested and reflexive action. If his successes exceed the spell's Potency, he slips free of the strands. (If he is a mage, he can attempt to use countermagic instead.) Once suspended, the subject can attempt to wriggle free of the strands with an extended Dexterity + Athletics roll, with rolls once per turn and a target number equal to the Suspension spell's Potency plus its caster's Space dots. Note that a mage with Space 4 can use the Teleportation spell to instantly extricate himself from the strands. In conjunction with Death 2 or Spirit 2, Suspension affects (or can be made to ensnare) Twilight ghosts or spirits, respectively. If such beings have powers that allow them to step across the Gauntlet, they can circumvent Suspension (as can a mage using the Spirit 4 Road Master spell). In conjunction with Spirit 3, Suspension can be extended to snare beings on the other side of the Gauntlet, in the Shadow Realm, making escape via Numina or spells that cross the Gauntlet impossible. With Space 4, this spell can be cast with a prolonged Duration.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Spider And Fly",
+				"Dice Pool" : "Wits + Investigation + Space 4",
+				"Rote Description" : "Like a spider enmeshing its quarry in a web, an Arrow mage uses this rote to bind an enemy in place, rendering her easy prey. Guardians of the Veil also use this magic to ensnare escaping witnesses before they can do anything foolish."
+			}
+		]
+	},
+	{
+		"Name" : "Teleportation",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "241",
+		"Arcana Requirement" : "Space 4",
+		"Practice" : "Patterning",
+		"Action" : "Instant",
+		"Duration" : "Lasting",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage can traverse space without moving, all without the need to open a Portal. Through use of this spell, which is invaluable to spies, couriers, fighters, and just about anyone else who has reason to get to (or away from) somewhere in a hurry, mages get where they need to be, no matter how distant from where they are. As with creating a Portal, the wise mage first scrys his destination. Sometimes there is no time for such caution, however, and the willworker must simply hope that wherever he's going is better than where he is. The mage must have a sympathetic connection to his destination. The weaker the sympathetic connection, the more penalties his spellcasting roll suffers.A location that he is currently scrying is a Known sympathetic connection (-4). He can teleport himself, his familiar (if he has one), and anything he wears or carries (provided it's not too large; he needs one extra success per Size rating above 3). Cast conjunctionally with Spirit 4, this spell can teleport the user across the Gauntlet.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Wormhole",
+				"Dice Pool" : "Intelligence + Occult + Space 4",
+				"Rote Description" : "Sometimes used as an escape route and sometimes as a means to reach otherwise inaccessible locales, this rote is occasionally employed simply as a mode of transportation. Silver Ladder mages who do not wish to resort to mundane conveyances sometimes make use of this magic (Presence + Occult + Space)."
+			}
+		]
+	},
+	{
+		"Name" : "Dimensional Axis",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "241",
+		"Arcana Requirement" : "Space 5",
+		"Practice" : "Making",
+		"Action" : "Extended (target number = one success per location)",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "The mage performs complex co-location on an area, causing multiple locations to exist in the same space. She can, for example, &quot;stack&quot; multiple locations in space, making them coexist for however long she wishes (even permanently, should she decide to expend the time and resources to do so). While thus layered, places and things do not normally interact with each, other -- meaning that a lamp, a couch and a bowl of cereal, each drawn from one of three different places, can all occupy the same space without interacting. An onlooker might think that he sees an optical illusion where perspective tricks his mind. The lamp, couch, and bowl of cereal all appear to be the same distance from him, but surely he's mistaken -- or so he might assume if he does not have Mage Sight or otherwise suspect that magic is at work. The mage can decide to make things in space interact (usually disastrously); see the Worlds Collide spell. The target number is one success per overlapping location. Navigating through these stacked locations can be confusing, especially when trying to pick up one object that rests in the same space as three others. A reflexive Intelligence + Investigation roll must be made for a person to interact with the intended space. Needless to say, such an Escheresque locale invokes Sleeper Disbelief. The caster can extend the Duration factors for this spell using the advanced prolonged factors.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Many-Roomed Mansion",
+				"Dice Pool" : "Intelligence + Investigation + Space 5",
+				"Rote Description" : "A Council willworker with knowledge of this rote can have an entire mansion's worth of rooms in a studio apartment -- provided, of course, he's willing to have all of the rooms existing in the same space. At the very least, this magic serves as quite the spacesaver, allowing the mage to &quot;stack&quot; tremendous quantities of materials &quot;inside&quot; one another and to interact with each individual item as desired through use of the Space Arcanum."
+			}
+		]
+	},
+	{
+		"Name" : "Hide Space",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "242",
+		"Arcana Requirement" : "Space 5",
+		"Practice" : "Making",
+		"Action" : "Extended",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "In many stories, the abodes of wizards are hidden from the eyes of ordinary people and can be accessed only through special paths unknown to most. This spell enables a mage to create just such a sanctum, spinning complex barriers of space to guard against unwanted intrusion. In effect, the chosen area exists only partway inside the conventional concept of a place, hidden within a convoluted knot of twisted paths through which a would-be visitor must travel in very specific ways. Thus, while logic might dictate that walking straight for a mile from the north bank of the river gets one to a destination, in practice, 10 miles of twists and turns, which seem to lead through much more terrain than could be possible, intervene. Taking any wrong turns waylays the journey, meaning that the traveler must find his way out (by no means a guarantee) and start over. Therefore, unless an individual is extremely lucky, he must know the way to reach his intended destination. Attempting to find the hidden site can be undertaken as an extended Intelligence + Investigation or Survival (whichever Skill is higher) action, with a target number equal to one higher than the spell's Potency and 30 minutes' time spent per roll. Any failure forces the seeker to start over. A dramatic failure gets him lost within the tangle of space surrounding the location, meaning that he must now navigate his way back to square one (a difficult task at best; he must collect the same number of successes that got him there). A person with the Direction Sense Merit is allowed one roll for every 10 minutes spent searching instead of every 30 minutes. The caster can extend the Duration factors of this spell using the advanced prolonged factors.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "The House In The Woods",
+				"Dice Pool" : "Intelligence + Investigation + Space 5",
+				"Rote Description" : "Mages of the Mysterium often become collectors of strange, wonderful, and dangerous treasures. This rote allows such a willworker to protect his possessions and his abode from intruders, confounding perceptions and driving would-be thieves away. Guardians also make use of this rote, protecting unusual places and paranormal phenomena from prying eyes."
+			}
+		]
+	},
+	{
+		"Name" : "Labyrinth",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "242",
+		"Arcana Requirement" : "Space 5",
+		"Practice" : "Making",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "The mage can mutate dimensional axes. A hallway can be made to go on for miles (despite the fact that it is in a building that is only a hundred feet across). A simple spatial warp, making one direction appear to be another, might levy no penalties, while a complex one, making all roads lead to one junction, might be -3 or more, depending on how much space is affected. The mage is capable of sculpting bizarre vicissitudes of place and distance through this level of Space, folding space in ways that defy the senses. For example, the horror-movie staple of causing every possible path of egress from a given locale to instead lead back to isolated wilderness is possible. So is making a road that a person can visually confirm leads to the store down the street, but traveling that way actually leads in the opposite direction. Needless to say, this use of the Arcanum is extraordinarily vulgar and potentially insanity-inducing if practiced in sufficiently blatant ways upon another person (almost assuredly requiring reflexive Resolve + Composure rolls for the subject to remain calm and rational).</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Sundered Path",
+				"Dice Pool" : "Intelligence + Occult + Space 5",
+				"Rote Description" : "Guaranteed to eventually dissuade all save the most dogged of interlopers, this rote helps a Guardian of the Veil defeat Sleeper (and others') curiosity with frustration, fear or despair, as the caster sees fit. Roads that go on a little too long leave inquiring souls feeling tired and most eventually lose interest. Paths that double back on themselves in some nightmarish Möbius loop can erode the courage and even sanity of one unprepared for such inexplicable experiences."
+			}
+		]
+	},
+	{
+		"Name" : "Manifold Presence",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "242",
+		"Arcana Requirement" : "Space 5 + (Life 4 or 5); Optional Matter 5 and/or (Mind 1 or 3)",
+		"Practice" : "Making",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "Varies",
+		"Effect" : "Just as the sun is one thing and yet exists everywhere in half of the world at once, a mage with an advanced knowledge of Space and Life (and, quite possibly, some understanding of Matter and/or Mind) can simultaneously be in several places physically. The mage could, if he wished, chop a winter's worth of firewood in an hour or so, guard every entrance to a building, or even become a one-man mob. This spell is an advanced version of Co-Location. With the Life 4 version of this spell, the mage's duplicates (one per success) are substantial, but are all extensions of the same physical presence. When one is wounded, for example, all feel pain and suffer Health wounds of damage. (The casting mage himself does not suffer wounds unless he is attacked directly.) Without adding the appropriate level of Mind (1 or 3 for multitasking), these copies do exactly what the mage does and all share in a single Defense (meaning that any attack against any copy causes the Defense of all to erode by the same amount over the course of a turn). It costs one Mana to add multitasking to the spell, regardless of the number of duplicates. With the Life 5 version of the spell, the mage can create distinct clones of himself at different locations, one clone per success and one Mana per clone. Each clone has its own Health and Defense. If a mage wants his duplicates' equipment (items intended to interact with other beings such knives or guns) to be substantial, regardless of which version of the spell is used, Matter 5 must be added to the casting and one Mana per object must be spent (which gives physical substance to each copy of the item possessed by all duplicates). As with the simpler Co-Location spell, the mage's weakest sympathetic connection (the one with the highest spellcasting penalty) is used when casting this spell.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Walking With The Sun",
+				"Dice Pool" : "Intelligence + Occult + Space 5",
+				"Rote Description" : "An Arrow willworker with this rote at her disposal becomes a veritable army unto herself. Likewise, a Mysterium mage using this rote is a one-man research team."
+			}
+		]
+	},
+	{
+		"Name" : "Oubliette",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "243",
+		"Arcana Requirement" : "Space 5 + Forces 3 + Mind 4 + Time 4",
+		"Practice" : "Making and Unmaking",
+		"Action" : "Instant and contested; target rolls Composure + Gnosis reflexively",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "On occasion, the most effective way to deal with a foe is to break her mind. Some mages favor psychic intrusions, others use threats, while still others favor old-fashioned torture. A willworker armed with this magic need not resort to such indelicate methods. The spell banishes a person into a pocket of looped space in which the victim sees herself reflected, as though in some especially deranged funhouse. Images created through both the Forces and Time Arcana allow her to see herself in various states of disarray: Maddened, starving, dying of self-inflicted wounds, and the like. No matter where she flees, she hears her own voice, screaming at her, and hears what she believes to be her own desperate thoughts, echoing back to her from across gulfs of space and time. Implanted suggestions and false memories make moments feel like days. Needless to say, use of this magic can easily lead a mage astray from the path of Wisdom. During the Duration of this spell, an extended roll (with the same dice pool used to cast the spell) is made for the caster once every 10 minutes, contested reflexively by the victim's Composure + Gnosis. If the caster's successes exceed the target's successes, each excess success causes the target to lose one Willpower point as visions drive her mad. If the victim is reduced to zero Willpower points, she suffers a severe derangement and returns to normal space/time a gibbering wreck, likely capable of little more than curling up in a fetal ball or screaming herself hoarse. After she returns from this imprisonment, she truthfully answers any questions put to her by the spell's caster. If the subject successfully contests a roll made for the mage at any point, she returns to mental reality. She is almost certainly shaken and scared, but is perfectly capable of acting normally.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Hell Of Many Mirrors",
+				"Dice Pool" : "Intelligence + Occult + Space 5",
+				"Rote Description" : "Sometimes employed in combat, and sometimes simply as a punishment, this rote sees some use on the part of Mysterium mages who are more concerned with ends than means. A few Free Council willworkers have their own version of the rote (Wits + Occult + Space), which they use to wrest forth magical secrets from those who refuse to share."
+			}
+		]
+	},
+	{
+		"Name" : "Phased Strike",
+		"SourceBook" : "Adamantine Arrow",
+		"SourcePage" : "187",
+		"Arcana Requirement" : "Space 5 + (Matter 3, 4, or 5)",
+		"Practice" : "Unmaking",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana per strike",
+		"Effect" : "Armor of one sort or another is likely almost as old as the human desire to harm one another with weaponry. Indeed, some forms of armor are so effective that they force innovations in the science of armed aggression. Arrows have long contended with various sorts of physical protection, and worked at means of circumventing them. While this spell requires a considerable degree of Awakened prowess, Phased Strike ranks among the more elegant solutions to the age-old problem. Upon casting this spell, the Arrow is capable of simply disregarding an enemy's physical armor (that is, armor not granted by a spell of the Practice of Shielding or other directly supernatural form of protection, upon which this spell has no effect), irrespective of its type, provided he himself is wielding a weapon made of inert matter -- the weapon simply passes through the armor as though it wasn't there. This is not an armor-piercing effect. If both the weapon and the armor in question are made of mundane, non-precious materials, Matter 3 is used in the casting of the spell. If the weapon and/or armor in question are made of mundane precious materials, Matter 4 is instead used. And, if the weapon and/or armor in question are made of extraordinary materials, Matter 5 is used. Note that, for the purposes of this spell, a suit of armor that is also an Enhanced or Imbued Item defaults to whatever sort of material of which it is actually composed, while an Artifact -- being of Supernal origin -- counts as extraordinary material.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Subtle Blade",
+				"Dice Pool" : "Strength + Weaponry + Space 5",
+				"Rote Description" : "The story is told among the mages of the Adamantine Arrow that the old master, Kamimori, asked of his two youthful apprentices how it is that the indomitable will overcomes the impenetrable guard. Fifty years later, they returned to him with their responses. No records now exist regarding the reply of Kusanagi, a Perfected Adept and the elder of the two. As for Tsukiyomi, the onikaze swordsman, this rote was his answer."
+			}
+		]
+	},
+	{
+		"Name" : "Shrink / Expand",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "243",
+		"Arcana Requirement" : "Space 5 + ((Life 2, 3 or 4) or Matter 2)",
+		"Practice" : "Making",
+		"Action" : "Instant and contested; target rolls Stamina + Gnosis reflexively",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage can warp spatial axes to cause an object to become smaller or larger. The mage can decrease or increase a target's Size by one point per success, to a minimum of Size 1 (when shrinking) or additional Size points equal to his Gnosis (when expanding). An SUV can be reduced to the dimensions of a toy car (though it is still a fully functional toy car, which weighs thousands of pounds). Mages who would perform such alterations are advised to remember the way in which these changes can interact with the environment. In the example of the SUV, it's recommended that one not allow the vehicle onto a muddy road (where it will sink like a stone in water due to its immense weight condensed to a tiny surface area). A target made larger through use of this spell is not made heavier; he still might be able to walk across rotting boards or thin ice that might otherwise give way to someone with a larger mass but smaller size. Affecting a base life form requires Life 2, a median life form Life 3, and a human being Life 4. Affecting an object requires Matter 2. A being's species factor is partially based on Size and partially on metabolism -- some creatures are slower than others, even though their large stride would seemingly make them faster (as with giraffes and elephants). Since this spell doesn't alter metabolism, the Size change affects Speed only partially. For every increase of two Size points, add one point of Speed. For every decrease of two Size points, subtract one point of Speed. An average human (Size 5) who becomes Size 7 gets a +1 Speed bonus, while he suffers a -1 Speed if he becomes Size 3.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "Loom Of Space 5",
+				"Dice Pool" : "Intelligence + Medicine (for living creatures) or Crafts or Science (for objects) + Space",
+				"Rote Description" : "This rote grants a Silver Ladder willworker the ability to increase or decrease the spatial axes of any person, place or thing he can affect. Thus, a small steel plate could be expanded to serve as a shield, a rare relic made small enough to evade all save the most thorough mundane examinations, or the mage himself rendered sufficiently tall to reach a height twice or more than normal. Given the utility of this magic, it sees use by mages of every order."
+			}
+		]
+	},
+	{
+		"Name" : "Worlds Collide",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "244",
+		"Arcana Requirement" : "Space 5",
+		"Practice" : "Unmaking",
+		"Action" : "Instant and contested; target rolls Stamina + Gnosis reflexively",
+		"Duration" : "Lasting",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage can co-locate people or objects with one another and cause them to physically interact. When two or more objects (including people) are superimposed upon one another and allowed to interact, they are usually destroyed in a very messy fashion, as molecular lattices collide and drive each other apart. For living creatures, the result is usually crippling at the very least. One subject per Target factor can be affected. If even a single target succeeds in the contested resistance roll, none of the targets are co-located. The spell inflicts one point of aggravated damage per success. Once the targets contact one another, they are immediately repulsed and suffer Knockdown. They do not remain fused.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Shattered Images",
+				"Dice Pool" : "Resolve + Investigation + Space 5 vs. Stamina + Gnosis",
+				"Rote Description" : "By crudely superimposing the spatial axes of multiple foes atop one another, a Ladder willworker is capable of striking them down, no matter where they stand or how they move. Those affected by such magic are often horribly maimed if not killed outright. Most mages caution against the spell's indiscriminate use, lest Wisdom be forsaken."
+			}
+		]
+	}
+
+]

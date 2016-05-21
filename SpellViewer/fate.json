@@ -1,0 +1,1236 @@
+[{
+		"Name" : "Aim For The Dead",
+		"SourceBook" : "Banishers",
+		"SourcePage" : "56",
+		"Arcana Requirement" : "Fate 1, Space 1, Death 1",
+		"Practice" : "Knowing",
+		"Action" : "Instant",
+		"Duration" : "Special",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage excels at striking specific targets on an undead creature's body. This spell is a variant of the spell Sharpshooter's Eye. The mage uses Death 1 to lock on to a vampire, reanimated corpse, or other undead creature. Each success removes one die of penalties to strike a specific target on its body. If the mage is using a ranged weapon, the spell also reduces all ranged combat penalties except for cover, armor, and magical protection. The benefit applies to the mage's next attack. Knowledgeable mages use the spell in conjunction with a wooden stake to target a vampire's heart. Other walking corpses might be stopped in their tracks with a bullet to the brainpan or a blow that mars the mystic Brand that brought the corpse to life. If the mage knows the second rank in each of the spell's component Arcana, he can bestow this ability upon another person.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Banisher Rote",
+				"Rote Name" : "Stake Strikes True",
+				"Dice Pool" : "Composure + Weaponry + Fate 1",
+				"Rote Description" : "A former Adamantine Arrow called Lacon took this rote from the Adamantine Arrow and spread it far and wide among American Banishers. The rote is based on the Arrow's close-range spear-fighting techniques, combined with a rigorous study of anatomy and the strange energies that animate the cursed dead. This rote is more limited than the basic version of the spell, as the weapon-based Imago does not lend the rote's benefits to ranged attacks."
+			}
+		]
+	},
+	{
+		"Name" : "Friendly Face",
+		"SourceBook" : "Summoners",
+		"SourcePage" : "208",
+		"Arcana Requirement" : "Fate 1",
+		"Practice" : "Knowing",
+		"Action" : "Instant",
+		"Duration" : "Transitory (one turn)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "Practitioners of Fate can discern a great deal of knowledge, if they know where to look or whom to ask. Using this spell, Initiates of Fate can determine to what realm they should look when seeking to summon assistance for the matter at hand. The mage rolls Wits + Investigation + Fate. Success grants the mage knowledge of which realm (Shadow, the Astral Realm, the Abyss, etc.) will provide an entity most useful in addressing the willworker's current dilemma. The mage must still be able to otherwise summon, control, and communicate with the creature; this spell only shows her where to look.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Locate The Unwilling",
+				"Dice Pool" : "Manipulation + Investigation + Fate 1",
+				"Rote Description" : "At the height of the Spanish Inquisition, a group of Scelesti used the chaos and distrust to their advantage, directing mortal hunters towards the Consilium of Logro&ntilde;o. Over the course of months, the Consilium lost half a dozen members to the inquisitors. As the local mages did their best to escape the pawns of the Accursed, a Guardian of the Veil known by the Shadow Name of Acallar sought allies to not only protect the mages of Logro&ntilde;o, but also to seek out those responsible for the attacks. In a matter of nights, the seemingly tireless Acallar devised this spell, using it to seek out agents within Twilight, Shadow, and the Underworld. Having located those able -- if not necessarily willing -- to assist him, the Guardian quickly set about summoning the various otherworldly beings to his cause. With new and unexpected resources at his beck and call, Acallar made short work of both the inquisitors and the Scelesti, and this spell eventually found its way into the repertoires of many mages throughout his order."
+			}
+		]
+	},
+	{
+		"Name" : "Interconnections",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "148",
+		"Arcana Requirement" : "Fate 1",
+		"Practice" : "Knowing",
+		"Action" : "Extended (one turn per roll)",
+		"Duration" : "Concentration",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "This spell reveals themes and interconnections between people, places, and things. In other words, the caster can read the degree of sympathetic connection between subjects. The mage can also sense manipulations of destiny and their causes. This ability extends to any supernatural effect that will or might result in a person's destiny unfolding in a manner different from that in which it is &quot;meant&quot; to. Success allows the mage to examine anyone in sensory range to determine the interconnections they might have with each other (or even with things and institutions, such as corporate brands or fashions). On each turn following the casting of this spell (so long as the mage continues to concentrate), an extended Wits + Empathy + Fate roll can be made for the mage to scrutinize people. Each success yields some information, with more successes yielding more powerful or secret connections. The mage cannot tell exactly what the connections mean, just their intensity. If the target has any form of supernatural occlusion (such as the Occultation Merit) that would hinder the mage's perception, the caster's dice pool is modified by the dots or Potency of that protection.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Quantum Flux",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "148",
+		"Arcana Requirement" : "Fate 1",
+		"Practice" : "Compelling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage reads probability and compensates for deleterious factors. At this level of expertise, she can only mitigate or negate those small factors that add up against her (the crooked house dealer suddenly realizes that he didn't stack the deck quite as well as he had originally imagined, for example), rather than actively setting events in her favor. Most mages who read possibilities in this way have a preference for either determinism or chaos, but there are quite a few who do not care to put their own spin on the matter and take such things at face value. At any time within the spell's Duration, the mage can spend time &quot;aiming&quot; any action, reducing dice-pool penalties turn by turn (as an instant action per turn) on a one-for-one basis, to a maximum of three dice worth of penalties. This effect can negate only penalties, however, and may not result in any kind of bonus to dice pools.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Eye Of The Storm",
+				"Dice Pool" : "Wits + Occult + Fate 1",
+				"Rote Description" : "In the course of defending allied Awakened against their enemies, willworkers of the Adamantine Arrow must occasionally deal with strange circumstances and maddening distractions such as high winds, driving rain, or the pain of a grievous injury. This rote enables such a warrior-mage to focus fully on the task at hand. Mages of the Mysterium also use this magic (Resolve + Occult + Fate) to concentrate when their explorations into the secrets of the occult lead them into hazardous situations in which lack of focus can prove deadly."
+			}
+		]
+	},
+	{
+		"Name" : "Reading The Outmost Eddies",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "149",
+		"Arcana Requirement" : "Fate 1",
+		"Practice" : "Compelling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "Some twists of fate and fortune are too small and insignificant to warrant much in the way of prophetic powers. Destiny rarely hinges upon a coin toss, though a hundred bucks could ride on one. Some believe that this spell creates a small manipulation of chance, while others maintain that it just gives a mage an idea of what's coming next. In either case, the results are the same. The caster knows the outcome of some small random (or mostly random) action in her immediately vicinity. Thus, she may know from which roll of scratch-tickets to get her Lottery ticket in order to win something (not necessarily the grand prize, but definitely $20). The spell cannot bring about a life-altering change. Nor can it be used to change the probability of an event already set in motion. (A mage couldn't use the spell on a scratch-ticket she'd already bought, but must use it before buying one ticket out of many.) Nor may the spell create any chance that an impossibility will come to pass. Those who attempt to use the spell repeatedly to build up to a life-altering change (buying ten thousand $20 winning tickets over the course of one week) often find themselves punished by fortune, subject to all manner of ill luck. A simple success results in small turns of immediate or nearly immediate good fortune pertinent to the willworker's current circumstances (such as which vending machine will drop that dangling candy bar the last guy paid for and gave up on after it got stuck on the rotating coil). An exceptional success yields the high end of small good fortune. (Say, turning down the left-hand alley rather than the right one and finding the runaway cat for which the owner has posted fliers advertising a $100 reward). Successive attempts to use this spell for the same goal are considered vulgar.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Taoist Tradition Rote",
+				"Rote Name" : "Luck Blessing",
+				"Dice Pool" : "Presence + Occult + Fate 1",
+				"Rote Description" : "The mage scribes a talisman that includes the name of the person she intends to bless, stamps it, seals it, and burns it. Count the number of successes rolled; that determines the duration factors of the blessing. Whenever the recipient is in a challenging situation (one that calls for a dice roll), the character receives one free success. This happens as many times as the successes rolled, or the duration expires, whichever comes first."
+			}
+		]
+	},
+	{
+		"Name" : "Sacrifice Fortune",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "131",
+		"Arcana Requirement" : "Fate 1",
+		"Practice" : "Compelling",
+		"Action" : "Instant",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage may forgo what would otherwise be an impressive success, pooling magical energy that may later be used to relinquish control over an Enhanced Item finishing spell. This spell is cast immediately after the mage scores an exceptional success. The Storyteller may rule that exceptional successes at attempts of little relevance to the ongoing narrative do not qualify; only events of significant import or risk generate sufficient resonance to activate this effect. Also disqualified are actions in which an exceptional success provides no particular additional benefit, above that of an ordinary success. The exceptional success is downgraded to a standard simple success, and the mage adds one to a pool of points known as the Sacrifice Fortune pool. The mage may at any subsequent time relinquish control over a finishing spell, by paying seven points from his Sacrifice Fortune pool.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Point Shaving",
+				"Dice Pool" : "Wits + Occult + Fate 1",
+				"Rote Description" : "The fl ashier risk-takers of the Free Council enjoy the show-boating nature of this rote, which allows them to simultaneously squander and profit from their grander successes."
+			}
+		]
+	},
+	{
+		"Name" : "Sharpshooter's Eye",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "149",
+		"Arcana Requirement" : "Fate 1 + Space 1 and (Life or Matter 1)",
+		"Practice" : "Knowing",
+		"Action" : "Instant",
+		"Duration" : "Special",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "In driving rain, at night, aiming at the smallest of moving targets, the willworker armed with this spell might just make a shot if her skill is sufficient for the task. This magic eliminates all of the minor random factors that conspire against ranged attacks, while giving the mage a flawless lock on an object or living creature within her normal line of sight. It cannot be used to shoot around corners, but it can be used to shoot a hummingbird out of the air or to put a hole directly through the middle of a playing card flicked up into the air. The mage uses Life 1 to get a lock on a living creature or Matter 1 for an object. Each success reduces one die of ranged combat penalties normally due to the target's distance (range penalties), position (such as being prone), size (for very small targets) or environmental factors such as darkness, snow, or anything else that doesn't directly work upon the mage herself or serve to physically shield the target (the spell does not eliminate cover penalties). It can even apply to penalties for aiming at specific targets, such as an enemy's hand or the object he holds. The spell is applied to the next roll the caster makes against the target onto which he has locked. If the target leaves his direct sight before he makes his shot, he loses the lock and must cast this spell again to achieve the same effect. This spell cannot be cast in combination  with the Space 1 Spatial Map spell; only one spell (the one with the highest Potency) takes precedence.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "The Wings Off A Fly",
+				"Dice Pool" : "Composure + Firearms + Fate 1",
+				"Rote Description" : "More than once, the secrecy of the Mysteries has hinged on a Guardian being able to eliminate some small scampering thing before it can escape to bedevil Sleepers, or perhaps to destroy some tiny relic dangling from around an enemy's wrist. This rote enables a willworker under such circumstances to shoot from the hip with precision that would be envied by the world's finest snipers."
+			}
+		]
+	},
+	{
+		"Name" : "Study Final Name",
+		"SourceBook" : "Legacies: The Sublime",
+		"SourcePage" : "101",
+		"Arcana Requirement" : "Fate 1 + Death 1",
+		"Practice" : "Unveiling",
+		"Action" : "Instant",
+		"Duration" : "Transitory (one turn) or prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can read a recorded Final Name and understand its nature. She drinks in the knowledge that this Final Name contains, the summation of all that its owner was. The mage must have access to the physical, stored form of a Final Name as created by the Fate 2 Scribe Final Name spell. By studying the Final Name, the mage gains insight into the owner of that Name. She automatically learns the owner's Virtue and Vice, and can gain a limited understanding of the subject's sympathetic ties of Fate. The more successes the character achieves, the more remote are the ties discovered. The caster identifies one connection per success rolled. A character can search for particular sorts of connections (relatives, lovers, objects and so on) or just fish at random. This spell's Duration is transitory if cast on the recorded Momentary Name of a still-living being, but prolonged if cast on a deceased person. If the mage has Fate 2, the Duration is prolonged when cast on the living and uses the Advanced Prolongation chart when used to study the Final Name of the dead.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "The Sybil's Sight",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "149",
+		"Arcana Requirement" : "Fate 1",
+		"Practice" : "Unveiling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage gains the Mage Sight. He detects the particular qualities a given mystic force has in its interactions with fate. Many describe the result as a &quot;thickness&quot; or &quot;gravity,&quot; a tangling of threads. The mage can detect momentous events. While this spell is in effect, a reflexive Wits + Investigation roll is made to sense when something of metaphysical weight or truth has been spoken or taken place. The Storyteller decides when and if such an event occurs. The mage cannot have others &quot;fish&quot; for prophecies by having them keep saying things until something registers as resonating with destiny. Such abuses of the gifts of Fate have been known to backfire upon mages with grim consequences. Instead, this ability gives a willworker an idea of when somebody just happens to utter words that are somehow true or important in a metaphysical sense. In other words, while &quot;the sky is clear today&quot; could very well be a correct assessment, it is not usually a significant enough truism to register to this application of Fate. Instead, a child's assertion that a beautiful woman &quot;looks like an angel&quot; may well resound in the mage's ears if there is something truly exceptional or even supernatural about her, or if she is particularly holy or touched by the divine in some meaningful way. Naturally, this sense is quite vague, leaving the mage to puzzle out exactly what is meant by the prophetic or otherwise weighty statement.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Flight Of Birds",
+				"Dice Pool" : "Wits + Occult + Fate 1",
+				"Rote Description" : "Perceiving the presence of the Mysteries can sometimes involve nothing more than the ability to discern a particular gravity to a seemingly random statement. Mages of the Mysterium use this rote in their endless hunt for hidden lore."
+			}
+		]
+	},
+	{
+		"Name" : "Synchronicity",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "60",
+		"Arcana Requirement" : "Fate 1",
+		"Practice" : "Knowing",
+		"Action" : "Instant",
+		"Duration" : "Transitory (one turn)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage gains cryptic guidance from meaningful exercises of apparently random chance. Best used when the willworker has reached some sort of impasse or has no idea what to do next, Synchronicity requires the user to open herself up to some sort of random input, allowing the forces of apparent coincidence to point a way forward. The user might turn on a television and flip quickly through the channels, let an encyclopedia fall open to a random page or toss a dart at a map. Other willworkers will stake out a spot on a busy sidewalk or get in a car and follow an arbitrarily chosen vehicle. More homebound types might allow a random MP3 to play on their portable music devices or use a randomizing program to call up a serendipitous web page. Whether a television program, snippet of song lyric, address or street encounter is used, the result of the random input suggests a course of action or an answer to a thorny question. When Synchronicity is used, the player chooses the random input, and the Storyteller provides an oblique hint or opportunity to act that will either move the mage out of a static situation or alleviate a state of confusion, if interpreted with sufficient creativity. For example, let's say that the mage has been assigned to protect a young Sleeper, but, after a series of humiliating disasters, has lost all track of him. The mage casts Synchronicity and turns on the television. The current channel is running a documentary about chess. Knowing that this is somehow significant, she heads down to the local chess club, where she finds the kid sitting in on a game. Answers become clearer at a Potency of 3 or higher. For example, the chess documentary might include footage of the very chess club where the kid is playing. On an exceptional success, an answer suggests an obvious course of action. Here the willworker might see a live interview between the kid and a local news personality.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Lost And Found",
+				"Dice Pool" : "Wits + Streetwise + Fate 1",
+				"Rote Description" : "When heading into an unknown situation, the willworker seeks out the nearest facility with a Lost and Found department, and lays claim to the oddest and most unusual item left behind there. This item will then prove instrumental in overcoming a crucial obstacle in the trial ahead."
+			}
+		]
+	},
+	{
+		"Name" : "Winds Of Chance",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "150",
+		"Arcana Requirement" : "Fate 1",
+		"Practice" : "Compelling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can evade or attract good or ill fortune. Generally speaking, this effect is more a roleplaying consideration than anything else. If the willworker wants to find someone interesting to share a beer with on a Saturday night, such a person happens to ask, &quot;In this seat taken?&quot; in a crowded bar. Likewise, she could make someone's morning commute a waking nightmare, causing him to get splashed by a passing car, harassed by an utter nutcase on the bus, and defecated on by a low-flying pigeon as he walks in the door 45 minutes late.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Nudging Probability",
+				"Dice Pool" : "Wits + Subterfuge + Fate 1",
+				"Rote Description" : "Quantum probabilities affect people's lives in all sorts of ways at all times. Mages of the Free Council manipulate these probabilities through this rote, creating runs of what most would consider good or bad luck. Nothing life altering, but certainly sufficient to make someone smile or to ruin his day."
+			}
+		]
+	},
+	{
+		"Name" : "Exceptional Luck",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "151",
+		"Arcana Requirement" : "Fate 2",
+		"Practice" : "Ruling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage's endeavors are blessed with exceptional luck that defies the odds. The mage gains the 9-again quality (re-roll results of 9 and 10) on one future dice roll per success. The player can choose which of his rolls are affected by this exceptional luck (declared before dice are rolled), and they can include any action or task. This effect lasts for one scene (unless additional Duration factors are added during casting), after which time any unused luck rolls are lost. Note that this spell does not affect a chance die, should a player's dice pool be reduced to one. Only a result of 10 is a success.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Blessing Of The Gods",
+				"Dice Pool" : "Manipulation + Occult + Fate 2",
+				"Rote Description" : "Prowess of arms can take a mage only so far. On occasion, a bit of luck is also required. This rote imparts such good fortune upon an Arrow willworker in the heat of battle. Naturally, such a helpful rote finds use by mages of all orders."
+			}
+		]
+	},
+	{
+		"Name" : "The Evil Eye",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "151",
+		"Arcana Requirement" : "Fate 2",
+		"Practice" : "Ruling",
+		"Action" : "Resisted; subtract target's Composure",
+		"Duration" : "Special",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "This spell is a basic curse intended to bring about immediate ill-fortune upon another. In ancient times, such a working was almost always undertaken by way of physically staring at the one to be cursed, directing a baleful glare at him and thereby hexing his actions. Now, it may be directed through less obvious means, but many mages still prefer the old-fashioned aspect. Success causes a number of dice to be removed from the subject's dice pool for the next action he takes (i.e., the next action for which dice need to be rolled). One die is subtracted per Fate dot the caster possesses. Each extra success on the spellcasting affects one additional roll. For example, if the caster rolls three successes, he affects the next three rolls made for the target. Some mages prefer to cast the Evil Eye as a prepared spell with a conditional trigger. This approach allows them to delay the onset of the curse until the target performs a specified action (perhaps repeating the same insult that inspired the caster to impose this spell) or certain conditions are in place. The mage needs Time 2 or higher as a conjunctional Arcanum. See Prepared Spell and Conditional Trigger, above, for complete rules. Note: The Fate 5 Break the Chains spell can dispel the Evil Eye.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "Smear Campaign",
+				"Dice Pool" : "Manipulation + Persuasion + Fate 2 - Composure",
+				"Rote Description" : "A word whispered in the right ear can destroy the credibility and reputation of a political foe -- how is this any different from a curse meant to do the same? The mages of the Silver Ladder know that there is no difference, and thus find a Supernal resonance in the old-fashioned political smear campaign. The Imago of this spell involves the speaking of imprecational words about the target; of course, the spell is usually more powerful if this is done in the very presence of the target (or by sympathetic magic). Most often, though, the Silver Ladder mages speak against their enemies just before they see them. The penalties inflicted by this Evil Eye effect usually manifest in situations dealing with politics, interpersonal relationships or at moments when the target is in the public's eye. Factor Bonuses: Having spoken ill of a political foe in the last 24 hours to someone who was neutral or allied to that foe (+1 factor); Having undertaken a full-fledged, relatively public smear campaign against that foe of at least a week's duration (+2 factors)."
+			}
+		]
+	},
+	{
+		"Name" : "Fate's Justice",
+		"SourceBook" : "The Free Council",
+		"SourcePage" : "106",
+		"Arcana Requirement" : "Fate 2 + Mind 2 + Time 2",
+		"Practice" : "Ruling",
+		"Action" : "Resisted; subtract target's Composure",
+		"Duration" : "Special",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "&quot;As a man sows, so shall he reap,&quot; the saying goes, and willworkers weave the threads of Fate to ensure such things come to pass. This spell preemptively invokes Fate to curse the subject of the spell immediately before the subject takes a particular action, usually a hostile action against someone (such as the caster). The power of the spell then intervenes to frustrate the attempt and bring ill-fortune on the would-be perpetrator. Success works similar to The Evil Eye: Subtracting dice equal to the caster's Fate dots from the subject's dice pool for the next action taken. Each additional success affects an additional dice roll. The effect begins immediately before the action (and therefore die roll) that triggers it.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Equal And Opposite",
+				"Dice Pool" : "Wits + Science + Fate 2",
+				"Rote Description" : "This techn&eacute; treats the forces of Fate as any other set of opposing forces: Push in one direction, and the opposing force pushes back in the other. The rote's &quot;instant karma&quot; effect appeals to the Libertine's sense of justice and equality."
+			}
+		]
+	},
+	{
+		"Name" : "Fortunate Timing",
+		"SourceBook" : "The Free Council",
+		"SourcePage" : "106",
+		"Arcana Requirement" : "Fate 2 + Time 1",
+		"Practice" : "Ruling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "This spell shifts the threads of Fate into a &quot;proper&quot; configuration that allows the mage to experience a fortunate set of circumstances involving timing: The mage is in just the right place to meet someone, pick up a ride, prevent (or assist) some event, and so forth. This spell involves a certain willingness to surrender to the moment, allowing Fate to take the caster where it will, although the spell ensures the circumstances won't be inherently dangerous or detrimental. Repeated casting of this spell can tangle the threads of Fate to a degree, and may prevent the mage from ending up in the right circumstances (traffic messes up the timing of an important meeting, weather causes delays or prevents an event from happening, and so forth). As with The Perfect Moment, this spell is more story-related than mechanical: A successful casting just ensures circumstances will be right for the mage to be where he or she is &quot;supposed&quot; to be, in the view of the Storyteller. This spell is license for the Storyteller to arrange the plot of the adventure to move along in the most expedient manner, even if the circumstances are somewhat improbable. After all, it's magic!</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Right Place, Right Time",
+				"Dice Pool" : "Wits + Persuasion + Fate 2",
+				"Rote Description" : "Sometimes it's all a matter of being in the right place at the right time, as Libertines know all too well. This rote enlisted the forces of Fate of the Free Council's side during its formative period and helped ensure the order's survival (and that of many of its members)."
+			}
+		]
+	},
+	{
+		"Name" : "Fortune's Protection",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "152",
+		"Arcana Requirement" : "Fate 2",
+		"Practice" : "Shielding",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana (optional)",
+		"Effect" : "The caster weaves a web of probability about herself, ensuring that attacks are unlikely to affect her. She &quot;just happens&quot; to stumble at the right moment, causing a bullet to miss her, or she unthinkingly turns just the right way so that a knife slides off her jacket rather than piercing it. The mage gains one point of armor per dot she possesses in the Fate Arcanum. By spending one Mana, the Duration can be made to last for one day. Most mages cast such a shielding spell at the beginning of the day, as part of a morning ritual. Successes are used to combat attempts to dispel the shield. Note that this magical armor applies against attempts to grapple the caster (both his Defense and Fortune's Protection armor are subtracted from the grappler's dice pool when he attempts to achieve a hold on the mage), but it does not protect against attempts by an opponent to overpower and/or inflict damage once he has managed to grapple the mage.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Untouchable",
+				"Dice Pool" : "Composure + Athletics + Fate 2",
+				"Rote Description" : "Not all threats to the hidden society of the Awakened stem from supernatural sources. A well-aimed tire iron (perhaps swung by a frightened Sleeper who has seen too much) can prove just as deadly to a Guardian as any ancient curse, so protective countermeasures are sometimes in order. Mages of the Adamantine Arrow also favor a variant of this rote (Resolve + Athletics + Fate) for self-defense while about their order's assigned tasks."
+			}
+		]
+	},
+	{
+		"Name" : "Granting The Sybil's Sight",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "152",
+		"Arcana Requirement" : "Fate 2",
+		"Practice" : "Unveiling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "As the Fate 1 &quot;Sybil's Sight&quot; spell, except that the mage casts this upon another mage, or even a supernatural being such as a ghost or werewolf. If this spell is cast upon a Sleeper, it invokes Disbelief immediately, even if its Duration is less than one scene. If the target is unwilling, he may contest with a reflexive Resolve + Gnosis roll.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Flock Of Augurs",
+				"Dice Pool" : "Manipulation + Occult + Fate 2",
+				"Rote Description" : "It is not always sufficient to perceive Fate's nuances for oneself. On occasion, others must be made aware of destiny's pattern. Willworkers of the Mysterium developed this rote to impart such understanding upon those who would otherwise go blind to such intricacies."
+			}
+		]
+	},
+	{
+		"Name" : "Heroic Effort",
+		"SourceBook" : "Adamantine Arrow",
+		"SourcePage" : "175",
+		"Arcana Requirement" : "Fate 2",
+		"Practice" : "Ruling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "Sometimes, a person just has to give a desperate situation her all. Usually, it's not enough to make a difference, but sometimes -- just sometimes -- she manages to pull off the one-in-a-million stunt that saves the day. Of course, those with the power to manipulate the odds are often a little less hesitant about jumping into such &quot;hopeless situations.&quot; After successfully casting this spell, the mage treats the next chance roll she is called upon to make during the spell's Duration as having a die pool of one. This means that the willworker can succeed on a roll of eight through 10 (and benefit from such advantages as 8- or 9-again) and cannot dramatically fail the roll in question. Upon so modifying such a chance roll, the spell automatically expires, and the mage may not choose whether or not to apply the spell's effects to a given chance roll.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Better Lucky Than Good",
+				"Dice Pool" : "Wits + Occult + Fate 2",
+				"Rote Description" : "John O'Dale, an Acanthus Arrow of some small fame among the Consilii scattered across the English countryside, was, among other things, an inveterate gambler. He loved to take all manner of ridiculous wagers to perform insanely improbable deeds -- preferably for considerable sums of money. While many of those who bet against him knew that he used magic to transform abject impossibilities into fighting chances, he was always entertaining enough about it and such a good sport on the frequent occasions upon which he still managed to fall short that no one complained much about it."
+			}
+		]
+	},
+	{
+		"Name" : "Loyal Possession",
+		"SourceBook" : "The Free Council",
+		"SourcePage" : "107",
+		"Arcana Requirement" : "Fate 2 + Mind 2",
+		"Practice" : "Ruling",
+		"Action" : "Instant",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "Mages often become quite attached to certain possessions and want to ensure they don't become permanently lost. This spell helps to do just that. When cast on an item, this spell &quot;attunes&quot; it to the mage. If the two are separated without the mage's consent, forces conspire to return to item to its rightful owner. The &quot;Loyal Possession&quot; spell takes effect through a series of subtle turns of fate and slight of mind. The exact sequence of events is left to the Storyteller's imagination (with input from the caster's player, as desired). Sleepers can act as unwitting agents of a Loyal Possession without being consciously aware they are doing so, and seemingly &quot;random&quot; events can conspire to help get things done. Exactly how long it takes the object to get back to its owner depends greatly on circumstances: A small item could cross an urban area in mere hours, while a larger item could take days. There are also a few limits on the effect. First, the spell doesn't work if the item's owner willingly gives it away (even under duress). So if you hand a Loyal Possession to someone, it's effectively &quot;theirs,&quot; and the spell isn't triggered, but is actually transferred to the new &quot;owner.&quot; This can be used to grant others Loyal Possessions, however. Second, if the item ends up in the possession of an Awakened character, he can hold on to it so long as he keeps the item on his person. So if an Awakened enemy takes a Loyal Possession from you, for example, and keeps it in his pocket, it stays with him. However, as soon as the item is out of the Awakened character's possession, it may try to find its way &quot;home.&quot; So, if your foe happens to put the Loyal Possession down on a desk or side table, for example, the Loyal Possession might get picked up by a Sleeper servant or bystander, knocked out a window or into the garbage, and so forth, slipping the net to start its journey back. Finally, a Loyal Possession brought inside a ward loses its &quot;fix&quot; on its owner and cannot continue to return until the item is brought outside the ward, and the item can't influence events to help bring it outside. It becomes &quot;stuck&quot; in the warded area. Short of undoing the spell, this is the surest way to hold on to a Loyal Possession that doesn't belong to you. This spell is commonly imbued in certain valuable items, and a number of artifacts display similar capabilities (although artifacts are often more capricious about &quot;ownership,&quot; sometimes just conspiring to seek a new and suitable &quot;owner&quot; when circumstances require it).</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "What's Mine Is Mine",
+				"Dice Pool" : "Intelligence + Persuasion + Fate 2",
+				"Rote Description" : "Some call the Libertines materialists for their fascination with technology, and it's true they do like their &quot;toys.&quot; This rote is a helpful means of safeguarding the most valuable of those toys, especially ones that can do the mage harm, should they fall into the wrong hands."
+			}
+		]
+	},
+	{
+		"Name" : "The Perfect Moment",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "152",
+		"Arcana Requirement" : "Fate 2",
+		"Practice" : "Ruling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "This spell enables the caster to act in a social situation with perfect grace and timing, saying just the right thing at just the right moment. The mage does not really think out what he will do; he goes with the flow, letting Fate and his instincts guide him. He must not have foreknowledge of what he will encounter (a good hunch is one thing, but extensive scrying or a detailed description from someone on the scene via cell phone is not acceptable; such intimate understanding of the circumstances ruins the necessary randomness). For example, if the mage casts this spell in a bar upon meeting someone whom he considers ideal, he might easily wind up getting her phone number, thanks to his Fate-guided panache. Casting this spell over and over again in regard to the same subject (such as the girl at the bar) muddles the threads of destiny and may even hopelessly entangle them (the girl turns out to actually be a creepy stalker type or suffers from some less-than-ideal complication). In the most extreme cases, repeated castings may sever threads entirely (ending the relationship and perhaps even a life if the mage has been exceptionally presumptuous). More a roleplaying issue than anything else, this spell moves out of the realm of dice rolls and into that of manipulating the story. The mage effectively chooses some small thing that he wishes to see come to pass and makes it so through his magic. A Storyteller may levy dice penalties for highly improbable results (such as a pierced, tattooed and leather-garbed punk making a great impression at a black-tie affair). Generally speaking, favorable results of this spell do not last longer than the spell's Duration (unless the mage has subsequently taken non-magical steps to that effect). Unfavorable side effects can haunt a mage for quite some time. These are usually reversals of the exact same fortune the spell provided. Using this spell repeatedly against the woman in the bar might lead to an unfortunate encounter with her jealous ex-Mafia boyfriend, for example</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Everything's Zen",
+				"Dice Pool" : "Wits + Occult + Fate 2",
+				"Rote Description" : "It's not always the ideal way to do so, but a socially inept bookworm of the Mysterium is occasionally put into a position in his search for knowledge that renders this rote the only way to attain that which he seeks."
+			}
+		]
+	},
+	{
+		"Name" : "Platonic",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "152",
+		"Arcana Requirement" : "Fate 2",
+		"Practice" : "Perfecting",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "This spell imbues a mechanical item with a perfect precision. Fate, after all, is the perfect kind of order, that which is ordained by the stars and the progression of the ages. A machine, no matter how simple or complex, enchanted by means of this spell functions flawlessly for as long as it is meant to function while under the effects of this spell. For a pocket watch, this mean until it winds down, while an intact, plugged-in clock normally only shuts off if unplugged or subjected to a power outage. A blender always creates a smooth, even blend, while a clock runs with absolutely perfect accuracy. In essence, such devices do exactly what they were intended to, effectively becoming physical representations of the Platonic Ideals of such machines. Even a shoddy looking device or one in poor repair (as long as it is mostly functional) can be enhanced by means of this spell to perform at 100% physical efficiency. The device is not any more resilient to damage than normal, so a stout blow to a perfected rock tumbler still damages or breaks it, but the spell does render the machine beyond the ken of normal environmental hazard (what constitutes a &quot;normal&quot; hazard depends entirely upon the device in question). A thermometer intended to measure the temperature of cooling lava has considerably different parameters for &quot;normal use&quot; than a refrigerator or a lawnmower. In game terms, dramatic failures associated with the &quot;perfected&quot; device are ignored. In addition, the device always works as it was designed. This does not mean a &quot;perfected&quot; car can be driven any easier in difficult conditions -- that's up to the driver's skill and the car's design (a sports car provides a better equipment bonus for maneuvering than a compact car). It does mean, however, that the engine won't overheat and the tires won't blow out (unless attacked). &quot;Normal&quot; use of the item in question is literally flawless. Most people don't know enough to know a &quot;perfect&quot; microwave oven from an ordinary one, so the risk of Disbelief is minimal. &quot;Perfected&quot; guns never jam, &quot;perfected&quot; light bulbs never burn out before the maximum possible amount of time, and &quot;perfected&quot; computers never experience those occasional little inexplicable quirks that plague most machines.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Atomic Clock",
+				"Dice Pool" : "Intelligence + Occult or Science + Fate 2",
+				"Rote Description" : "In the pursuit of alternate aspects of magic, the mages of the Free Council have established this rote, a series of procedures intended to enhance any mechanical or electronic device to the point of perfection. In doing so, the order aims to illustrate that new ways need not be anathema to the Awakened."
+			}
+		]
+	},
+	{
+		"Name" : "Querulous Minds",
+		"SourceBook" : "Guardians Of The Veil",
+		"SourcePage" : "187",
+		"Arcana Requirement" : "Fate 2 + Prime 1",
+		"Practice" : "Unveiling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "By reading the fates around him, a mage can detect those Sleepers who have had an experience with the supernatural. Experiencing the supernatural changes a person, but the change is subtle and hard to detect. If the mage desires, he can scan the auras of those around him for any hint of a supernatural encounter. When the caster looks upon a person who has actually had a run-in with some aspect of the unnatural, her aura appears more conspicuous than others. Some mages see silver threads throughout the aura, others smell a specific odor or just have a sixth sense about the person. If the number of successes on this roll is equal to or less than the Potency of a relevant effect intended to hide a target, the mage using this spell sees only a normal aura, untouched by the occult.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Find The Leak",
+				"Dice Pool" : "Wits + Investigation + Fate 2",
+				"Rote Description" : "Guardians use this spell to seek out those dedicated people (or unlucky individuals) who have been touched by the supernatural. Simply seeing them is just the start. A Guardian must perform additional investigation to determine the target's name and other information. Inquiries with the local Cultors usually follow, making sure the fellow hasn't already been taken into the Labyrinth. Subjects found through the use of this spell (when they aren't already involved in the Labyrinth) often get visits from strangers in black, corporate men from mysterious companies and others who wish to interview them about their experiences. Some Guardians of the Veil simply activate this spell and spend time wandering the streets, the equivalent of a police car patrolling for suspicious activity."
+			}
+		]
+	},
+	{
+		"Name" : "Scribe Final Name",
+		"SourceBook" : "Legacies: The Sublime",
+		"SourcePage" : "101",
+		"Arcana Requirement" : "Fate 2 + Death 1",
+		"Practice" : "Ruling",
+		"Action" : "Instant and contested, target rolls Resolve reflexively",
+		"Duration" : "Prolonged (one scene) or lasting",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage captures a Final Name in a solid, physical form, allowing it to be both preserved and studied. This spell allows the mage to understand a subject's Final Name, record it in Mana and scribe it in some sort of physical medium -- paper, stone, or even a computer file. Once stored, the Final Name no longer decays and may be studied freely with the Study Final Name spell. This spell's Duration is prolonged if cast on a living being or lasting if cast on the dead. If the caster has Fate 3, the Advanced Prolongation chart may be used to determine the Duration when cast on a living target (remember, though, that spells cast on living beings cannot have an indefinite Duration). If, however, the owner of a recorded Momentary Name dies before the spell's duration expires, the spell's duration becomes lasting: The Momentary Name becomes the Final Name.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Epitaph",
+				"Dice Pool" : "Resolve + Occult + Fate 2",
+				"Rote Description" : "Stone Scribes take their charge very seriously, and never scribe a Final Name on anything less sturdy than stone tablets."
+			}
+		]
+	},
+	{
+		"Name" : "Shifting The Odds",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "153",
+		"Arcana Requirement" : "Fate 2",
+		"Practice" : "Ruling",
+		"Action" : "Instant",
+		"Duration" : "Special",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage creates a shift of destiny, effectively generating turns of good or bad luck. These small manipulations of fortune almost always take the form of totally plausible situations, such as a parched mage finding that last quarter she needs on the sidewalk so she can buy a drink, or a sudden, stiff crosswind that turns a crack sniper's fatal shot into a serious wound. Big shifts, such as finding $1000 at the convenience store's front door or a piano falling on the sniper are simply too implausible to easily happen at this level of mastery. The mage simply requests some small jolt in the desired direction and allows destiny to make the decision as to how it comes about, meaning the mage should be on her toes, ready for anything in the event that her requested outcome happens in an extremely unexpected manner. A wish for &quot;a new car,&quot; for example, yields one up, but the mage gets it under circumstances that cause longterm possession to be undesirable (the car is stolen or haunted) or under which long-term possession is unhelpful (the car is faulty and quickly ends up collecting dust in a garage). These manipulations of destiny are small, but they may be undertaken for a wide variety of ends. Indeed, these tweaks can grow into something bigger and more meaningful if carefully tended. Mr. Right Now could, in fact, actually be Mr. Right provided the mage actually puts in the time and effort to bring such a relationship to fruition. Alternately, the $200 a mage hits on a scratch ticket might yield up many times its own value if invested wisely. This level of the Fate Arcanum helps destiny along rather than creating it, but it does give the mage the opportunity to seize her own fortune or to help make one for another. Successive attempts to use this spell for the same goal are considered vulgar.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "The Butterfly Effect",
+				"Dice Pool" : "Wits + Occult or Science + Fate 2",
+				"Rote Description" : "There are those who believe that the flapping of a butterfly's wings on one side of the world can create a hurricane on the other side. While that notion has never truly been proven, mages of the Free Council nevertheless understand the beautiful complexity of the chain of causality that creates any event, no matter how great or minor, and capitalize upon that understanding by means of this rote. Guardians of the Veil are also known to favor this magic, hounding the inquisitive away from the Mysteries with a sudden turn of bad (or sometimes good) luck."
+			}
+		]
+	},
+	{
+		"Name" : "Sniffing The Winds Of Fate",
+		"SourceBook" : "Guardians Of The Veil",
+		"SourcePage" : "187",
+		"Arcana Requirement" : "Fate 2 + Death 2",
+		"Practice" : "Unveiling",
+		"Action" : "Instant",
+		"Duration" : "Concentration",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "Akin to both Fate 1 Sybil's Sight and Death 1 Grim Sight, but more powerful than either, Sniffing the Winds of Fate gives the caster a sense of the subject's ultimate destiny -- grand or humble, good or ill -- and how near the subject is to that fate. The &quot;bigger picture,&quot; or ultimate outcome of the subject's life, whether for good or ill, is revealed by a golden aura or a gray shroud around her, the intensity of which reveals the magnitude of the net effect she is destined to have on the world. A true saint is seen wreathed in a near-blinding radiance, while a cannibalistic serial killer who targets children would be shrouded by a deep leaden gloom. A mage can use this spell to read inanimate objects as well as living creatures to determine how pervasive the effects of entropy are on its structure and its ultimate fate, allowing the mage to determine whether a building is likely to stand for several more decades, fall into a lengthy state of disrepair before falling down (or being renovated). This spell reveals what might be considered the subject's default fate -- what will happen if destiny is allowed to run its course. With extraordinary action, the destiny revealed by this spell may be altered, at which point the spell may be used again at a later time to discern the subject's new destiny. This spell does sense, among other things, if the subject possesses the Destiny Merit, and a general sense of how strong the Merit is in that individual. The basic Fate + Death version of the spell reveals how strong or weak the subject's effect on destiny will be -- if he's a mover-and-shaker, or an average guy who will have little effect on the course of human (or cosmic) events. An exceptional success on the casting allows the mage to ascertain more specific information, including the ultimate cause, and possibly even the immediate circumstances, of the subject's death. The mage might briefly see his subject as she will appear after death: With a bullet wound to the head, or gray and withered from the wasting of cancer or with the grimace and clutching at the chest of one laid low by a heart attack. In the case of subjects whose destinies have been magically occluded, this spell's Potency must exceed that of the occluding magic.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Destiny's Revelation",
+				"Dice Pool" : "Composure + Investigation + Death 2",
+				"Rote Description" : "Guardians use this rote regularly to discern the merit of mortals they watch over. This rote lets them know whether a particular mortal would do well as a mage, or whether it's preferable to channel her away from the Awakening altogether. Guardians may allow a mage with a faintly shadowed destiny to survive, but any member of the Awakened limned with heavy shadow is likely to be targeted for death. By the same token, a mage targeted for destruction by the Guardians might get a reprieve if this rote reveals him to have a bright destiny."
+			}
+		]
+	},
+	{
+		"Name" : "Swearing An Oath",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "153",
+		"Arcana Requirement" : "Fate 2",
+		"Practice" : "Ruling",
+		"Action" : "Instant",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage learns the basics of binding oaths, acquiring the ability to swear such an oath (effectively declaring her intentions officially to Creation). The metaphysical weight of her vow is small and has little momentum, but such an oath can turn the tide in a mage's darkest moments, being the deciding factor that transforms disaster into victory. The oath gives the mage no bonuses to dice rolls or anything grandiose like that, but instead gives his player the opportunity to reflexively roll Resolve + Composure for the character to act in circumstances that would normally forbid action. For example, the mage is being controlled mentally and compelled to stand by and watch as the person she swore to protect suffers. A reflexive Resolve + Composure roll can be made for her to ignore the mental compulsion and to act to protect her charge. Also, at the Storyteller's discretion, when the mage undertakes some action that directly upholds the oath, she may regain a spent Willpower point, just as though she indulged her Vice. Note that a mage cannot cancel her own oath spell unless she knows Fate 4. She must dispel it if she no longer wants its effect. If the mage knowingly and willingly breaks the oath (in other words, is not compelled to do so), she suffers from the effects of the Evil Eye spell, an effect which cannot be undone by a mage with less than Fate 4. (This means that all the mage's dice pools are penalized by her own Fate dots until the oath spell is dispelled.) The mage cannot swear more than one oath at a time. (He can have more than one geas cast upon him, however; see below.)</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Testifying To The Gods",
+				"Dice Pool" : "Presence + Persuasion + Fate 2",
+				"Rote Description" : "There are few things in this world more fearsome than a warrior sworn sincerely to a cause. Willworkers of the Adamantine Arrow consecrate their oaths before Fate itself and so dedicate themselves entirely to their missions. Mages of the Silver Ladder, wishing to make a good impression upon those over whom they would hold sway, sometimes take similar vows, as a show of good faith."
+			}
+		]
+	},
+	{
+		"Name" : "Zone Of Extremity",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "60",
+		"Arcana Requirement" : "Fate 2",
+		"Practice" : "Ruling",
+		"Action" : "Instant",
+		"Duration" : "Transistory (one turn)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage alters probability, so that all mundane actions with uncertain outcomes resolve themselves as either triumphs or disasters. The spell affects actions undertaken by any and all characters within its area of effect, centered on a targeted spot. Within the Zone of Extremity, all failures become dramatic failures. All standard successes are treated as exceptional successes. This effect applies only to mundane actions, not spellcasting. With Fate 3 and a cost of one Mana during casting, the default Duration becomes prolonged (one scene).</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Alter Oath",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "154",
+		"Arcana Requirement" : "Fate 3",
+		"Practice" : "Weaving",
+		"Action" : "Instant; subtract target's Resolve",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can alter the terms and conditions of a Fate-based oath. Note that a mage trying to get another to alter the tenets of an oath can easily constitute intent to violate said vow (and therefore subject the mage to the deleterious effects of breaking an oath). The targeted oath's Potency acts as dice penalties to the casting roll. (If this spell is cast as an extended action instead of an instant action, the target oath's Potency provides the target number needed.) Once an oath is so altered, it remains altered for the remainder of its Duration. A mage cannot alter an oath she has made for herself (as under Fate 2) until she has Fate 4.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "Nullify The Contract",
+				"Dice Pool" : "Manipulation + Politics + Fate 3",
+				"Rote Description" : "There are times when it simply isn't expedient to be bound by the letter of the law. When the law is a Fate-enforced oath, mages of the Silver Ladder can either endure the consequences of their promises or make use of this rote. Of course, willworkers of the Free Council also enjoy the freedom offered by this magic (Wits + Politics + Fate), and are known to alter the &quot;small details&quot; of binding vows their cabal-mates make."
+			}
+		]
+	},
+	{
+		"Name" : "Alternate Scenario",
+		"SourceBook" : "Grimoire Of Grimoires",
+		"SourcePage" : "57",
+		"Arcana Requirement" : "Fate 3, Time 3; Song: No Trap",
+		"Practice" : "Weaving",
+		"Action" : "Instant",
+		"Duration" : "Vulgar",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage splits across multiple time streams, coalescing into one person at the most favorable version of events. If the mage successfully casts the spell, he acts within a number of alternate-reality versions of the next turn equal to the spell's Potency factor, but no more than the lowest of his Time or Fate dots. He acts at the same time during each turn in the same situation, but may perform a different action (with the player rolling the appropriate dice pools to determine its can even try the same basic action in two different timelines, counting on one to provide a better result. He cannot, however, perform the same basic action in three or more realities. The mage experiences the outcome of the turn in each reality, but no other participant in the scene may change their actions except in reaction to the mage. Other participants' dice rolls are constant for the same actions across all realities. The mage experiences each reality simultaneously; the player must declare all his actions before resolving them. He cannot use information from one reality to influence his actions in another. Once the mage experiences all alternate turns, he chooses one. The outcome of that turn becomes the true outcome and all participants feel the effects of what happened in that version of events -- no other.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "No Trap",
+				"Dice Pool" : "Wits + Occult + Fate 3",
+				"Rote Description" : "Blixa Dark considers this spell to be &quot;an occult symphony of the self.&quot; He visualizes each reality as a string on a sublime instrument, combining to create one glorious sound."
+			}
+		]
+	},
+	{
+		"Name" : "Bad Penny",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "136",
+		"Arcana Requirement" : "Fate 3",
+		"Practice" : "Weaving",
+		"Action" : "Extended",
+		"Duration" : "Prolonged (this spell uses the advanced prolongation factors)",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "This spell further enchants a cursed item of any kind. When any owner other than the original worker of this spell attempts to dispose of it, a chain of coincidences conspires to return it. A smashed ceramic statue might be laboriously glued together by a building superintendent and returned with an expectation of gratitude. A DVD thrown out of a car window is found by the owner's best friend and given to him as a gift. When no possible further coincidence could possibly explain the item's return, it makes one final reappearance, shiny and new, after which point its owner is able to destroy or dispose of it. However, if that last disposal then opens up another possible coincidental return, the cycle continues. </P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "Eternal Recurrence",
+				"Dice Pool" : "Manipulation + Subterfuge + Fate 3",
+				"Rote Description" : "Silver Ladder mages are partial to this trick, symbolizing as it does their unswerving determination to ensure that those who are screwed by the hierarchy stay screwed."
+			}
+		]
+	},
+	{
+		"Name" : "Bestow Exceptional Luck",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "155",
+		"Arcana Requirement" : "Fate 3",
+		"Practice" : "Weaving",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "As with the Fate 2 Exceptional Luck spell, except that the mage can give others the 9-again quality for one or more rolls.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free CounciL Rote",
+				"Rote Name" : "Rabbit's Foot",
+				"Dice Pool" : "Manipulation + Persuasion + Fate 3",
+				"Rote Description" : "Sometimes, the best gift one can give another is a chance. Council mages use this rote to grant just that to allies, bestowing a bit of luck that can prove to be a lifesaver. No order overlooks the utility of this rote, though; all recognize the value of looking out for their friends."
+			}
+		]
+	},
+	{
+		"Name" : "Blessing",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "61",
+		"Arcana Requirement" : "Fate 3",
+		"Practice" : "Weaving",
+		"Action" : "Extended",
+		"Duration" : "Prolonged (one hour)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage shields a target from harm for a short time. The target doesn't avoid harm through obvious magical intervention but through lucky coincidence. For instance, the target might suddenly decide to drive home by a different route, thus avoiding a traffic accident that might otherwise have claimed his life. If the spell succeeds, the target is protected from the specified danger for the duration of the spell (one hour or one scene, unless additional Duration factors are included in the spell). This spell does not function on other mages, as they take on entirely too much responsibility for their own destinies for such manipulation. Anyone with an active Blessing spell stands out to Fate 1 The Sybil's Sight. Once the specified danger has been avoided, the spell ends, regardless of how much Duration remains. All such protections take the form of coincidence and happenstance that remove the target from harm's way, rather than making harm actually miss the target. If the target seeks out danger of the appropriate type, the spell still protects him once, but offers no further benefit. For instance, a Blessed target enters a burning building. The floor gives way under the weight of a couch before the character steps on it (thus avoiding injury or death for the target). If the person continues on into the house, though, the spell no longer aids him. If the target is nursing a death wish or is hell-bent on getting into trouble, then he can (unconsciously) contest the magic with a Composure roll.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Cursed Object",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "136",
+		"Arcana Requirement" : "Fate 3",
+		"Practice" : "Weaving",
+		"Action" : "Extended",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana per degree (see below)",
+		"Effect" : "The mage imbues an item with bad luck, which rubs off on its primary owner or user. The Potency of this spell cannot exceed the caster's total Fate dots. To weave the curse into the item, she must spend one Mana and add five successes to the target number of the spell. Whenever the user touches or makes use of the cursed item, the possibility of ill luck arises. (For this reason, it is essential that the mage installing the curse get rid of the item as soon as possible afterwards; until it changes hands, she counts as its owner.) The Storyteller rolls a single die; on a result of one, the curse activates, and the victim suffers a penalty to his next die roll equal to the Potency of the curse. In some cases, the Storyteller may have to determine precisely which activities qualify as use of an item. In the case of an art object, for example, a roll may be required whenever the owner takes a moment to admire it.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "The Monkey's Cell Phone",
+				"Dice Pool" : "Intelligence + Occult + Fate 3",
+				"Rote Description" : "Despite this rote's grimly jocular name, this curse can be cast on any communication device."
+			}
+		]
+	},
+	{
+		"Name" : "Eleggu&aacute;'s Notice",
+		"SourceBook" : "Magical Traditions",
+		"SourcePage" : "75",
+		"Arcana Requirement" : "Fate 3",
+		"Practice" : "Fraying",
+		"Action" : "Extended and contested; target rolls Resolve + Composure reflexively",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "A santero who is menaced or even annoyed by a rival can try and attract the notice of Eleggu&aacute;, the trickster god, onto the enemy. Eleggu&aacute;, once his notice is drawn, watches over the mage, making sure if his rival menaces him directly, the rival suffers for it. If the spell is successful, the rival suffers the following effects: (A) If the rival has the Destiny Merit, he cannot make use of its benefits during the scene in which he menaces the mage. The Storyteller can, however, apply the effects of his Bane (and probably should). (B) A number of the rival's rolls equal to the mage's Fate rating are reduced to chance dice during the scene. Dramatic failures involve some spectacularly bad run of luck. While normally this spell has a duration of Prolonged (one scene), most santeros use the Conditional Trigger effect, provided they know Time 2. To cast this spell, the mage must have fashioned a representation of Eleggu&aacute; under the guidance of another santero (usually, this is done during the initiation rites anyway). The mage writes the rival's name on a piece of paper and places it underneath Eleggu&aacute;'s head, and then spends hours in meditation, dance and vocal entreaty to the orisha.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Santer&iacute; Tradition Rote",
+				"Rote Name" : "Eleggu&aacute;'s Notice",
+				"Dice Pool" : "Manipulation + Persuasion + Fate 3",
+				"Rote Description" : "This rote is just as the spell with the same name."
+			}
+		]
+	},
+	{
+		"Name" : "Fabricate Fortune",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "155",
+		"Arcana Requirement" : "Fate 3",
+		"Practice" : "Veiling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "This spell creates a false destiny upon a person or thing. The mage can make a given thing seem destined to come to pass, even if none of the momentum of destiny is behind it, deceiving others with the power to perceive fortune. A dagger seems destined to slay a king or a child looks to cursory Fate sensing to be the Antichrist. Those who are attuned to prophecy must overcome the Potency of this spell in order to see through the lie. If this spell is cast upon an unwilling mage, a reflexive, contested Composure + Gnosis roll may be made to resist.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "False Messiah",
+				"Dice Pool" : "Intelligence + Subterfuge + Fate 3",
+				"Rote Description" : "A false trail that seems paranormal to inexperienced Awakened (or even to Sleepers somehow sensitive to fortune and prophecy), but that ultimately leads nowhere, can do more to conceal the truth of the occult than any smear campaign or threatening encounter."
+			}
+		]
+	},
+	{
+		"Name" : "Grant Fortune's Protection",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "155",
+		"Arcana Requirement" : "Fate 3",
+		"Practice" : "Shielding",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "Mana (optional to extend Duration to 24 hours)",
+		"Effect" : "As with the Fate 2 Fortune Protection spell, above, but the mage can now cast this upon others.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Bolster The Company",
+				"Dice Pool" : "Presence + Persuasion + Fate 3",
+				"Rote Description" : "While it is well and good to be fortified against one's enemies, few can stand alone when those enemies press from all sides. Thus, the Adamantine Arrow developed this rote for the purposes of protecting allies, keeping them safe from foes both subtle and obvious."
+			}
+		]
+	},
+	{
+		"Name" : "Instill Malediction",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "130",
+		"Arcana Requirement" : "Fate 3",
+		"Practice" : "Fraying",
+		"Action" : "Instant",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage relinquishes a finishing spell without sacrificing a Willpower point. Instead, the willworker accomplishes the relinquishment by making the Enchanted Item a focus for unspecified future ill-fortune. This spell may not be used to relinquish control over curse spells. A special dice pool, the Misfortune pool, is attached to the item. Each time its user scores a failure in any task employing an Enchanted Item's powers or equipment bonus, one die is added to that pool. (When the item is used for an action that would not normally require a roll, the user must instead roll the original willworker's Death + Gnosis at the time of item creation.) Before using an item with a Misfortune greater than zero, the item's user first reflexively rolls its Misfortune. On a failure, the item remains sound, and can be used as normal during the current turn. On a success, the item can still be used during the current turn, but at a dice penalty equal to the number of Misfortune successes. On an exceptional success, a random curse permanently instills itself in the item. The Storyteller chooses an appropriate curse given the narrative circumstances, or rolls one die and consults the following chart, adding one to the result for each curse already instilled in the item.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "[ 3 ] &nbsp; Lucky Coin",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "155",
+		"Arcana Requirement" : "Fate 3",
+		"Practice" : "Perfecting",
+		"Action" : "Instant",
+		"Duration" : "Transistory (one turn)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage learns how to interact with a lifeless object, bringing fortune to bear upon it. By touching the destiny of an object, the mage fortifies its ability to perform the tasks for which it was designed. On the turn after casting, the targeted object receives an equipment dice bonus equal to the spell's successes, up to a maximum of the caster's Fate dots. (This is in addition to the item's normal equipment modifier.) In addition, a suit of armor's protection can be increased by one point per success (to a maximum of the caster's Fate dots). As a roleplaying consideration, lucky objects tend to benefit those who own them (a lucky jacket is snagged by some tree roots as a mage slides on some loose rocks down a steep hill). Sometimes a lucky object does not even need to be used by its owner to bring fortune to bear upon him. On the turn after casting, the targeted object receives an equipment dice bonus equal to the spell's successes, up to a maximum of the caster's Fate dots. (This is in addition to the item's normal equipment modifier.) In addition, a suit of armor's protection can be increased by one point per success (to a maximum of the caster's Fate dots). As a roleplaying consideration, lucky objects tend to benefit those who own them (a lucky jacket is snagged by some tree roots as a mage slides on some loose rocks down a steep hill). Sometimes a lucky object does not even need to be used by its owner to bring fortune to bear upon him.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Four-Leaf Clover",
+				"Dice Pool" : "Wits + Occult or Science + Fate 3",
+				"Rote Description" : "Some mages of the Mysterium are inclined to see this rote as a product of paranormal forces brought to bear on an object, while others believe that perfectly reasonable scientific processes create the seemingly supernatural effect. Regardless, the result is the same. Adamantine Arrow willworkers are known to use a similar rote (Presence + Occult + Fate), blessing their own armaments with good fortune."
+			}
+		]
+	},
+	{
+		"Name" : "Monkey's Paw",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "155",
+		"Arcana Requirement" : "Fate 3",
+		"Practice" : "Fraying",
+		"Action" : "Instant",
+		"Duration" : "Transistory (one turn)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage learns how to bring bad fortune onto lifeless objects, similar to how he can cause luck with the Lucky Coin spell, bringing fortune to bear upon them. For example, a car just won't work right (when it works at all), or an enraged wife murders her spouse with an unlucky paperweight. On the turn after casting, the targeted object is subject to an equipment dice penalty equal to the spell's successes, up to a maximum of the caster's Fate dots. In addition, a suit of armor's protection can be decreased by one point per success (even down to zero points). As a roleplaying consideration, unlucky objects tend to cause their owners harm (an unlucky carving knife cuts a chef's hand, putting him out of action for weeks). Sometimes (as in the case of the cursed paperweight, above) an unlucky object need not even be used by its owner to bring ill fortune upon him.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Sword Of Damocles",
+				"Dice Pool" : "Wits + Occult or Science + Fate 3",
+				"Rote Description" : "Adamantine Arrow willworkers use this rote to curse their enemies' armaments with ill luck. "
+			}
+		]
+	},
+	{
+		"Name" : "Occlude Destiny",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "156",
+		"Arcana Requirement" : "Fate 3",
+		"Practice" : "Veiling and Shielding",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage prevents outside powers from perceiving or tampering with a given destiny, creating an &quot;inviolable fate.&quot; He can conceal a true &quot;child of prophecy&quot; or another so favored (or ill-favored) by fate against perception by those with an eye for such things. This effect can protect the mage's Destiny Merit against being detected or altered by another willworker, for example, or shield an oath against having its conditions altered by outside magic. The spell's Potency contends against all other mages' attempts to perceive or alter the target's destiny. If this spell is cast upon an unwilling mage, a reflexive, contested Composure + Gnosis roll is made to resist.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Hidden Treasure",
+				"Dice Pool" : "Intelligence + Subterfuge + Fate 3",
+				"Rote Description" : "Guardians must sometimes create destinies in order to protect the Mysteries, and those destinies must be protected. Likewise, they are on occasion forced to conceal the fortune of people, places, or things so that Sleepers will remain blissfully ignorant. Silver Ladder willworkers have also used this magic (Composure + Subterfuge + Fate) to occlude their own (often powerful) destinies, so as to go unnoticed when stealth and secrecy are required."
+			}
+		]
+	},
+	{
+		"Name" : "Sense Strength And Weakness",
+		"SourceBook" : "Grimoire Of Grimoires",
+		"SourcePage" : "72",
+		"Arcana Requirement" : "Fate 3",
+		"Practice" : "Unraveling",
+		"Action" : "Instant",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "This spell gives the mage an intuitive understanding of the most and least competent members of a group within a specific context. To provide meaningful results, the spell must affect at least 2 targets. The mage may visualize her search for information in any number of ways, but for game purposes it boils down to this question: &quot;Who is the most and least competent at (a specific activity)?&quot; To arrive at an answer, the mage reads the threads of destiny, following them to specific scenarios. The Storyteller responds by providing an answer based on the current, relevant dice pools of the targets. He doesn't reveal the target's game traits, only that a target would be the best or worst based upon those traits. For instance, if the mage is facing off against three marksmen, this spell usually reveals the shooters with the highest and lowest dice pools, but would not reveal that the worst shooter had a Dexterity + Firearms pool of 6. If the best and worst in the group are equally competent, the spell reveals this as well. Special circumstances affect the result. These include equipment bonuses, wound penalties, and magic; the caster isn't privy to this information. The spell reveals only relative competence based upon what might happen in the immediate future, so a gunman suffering temporary blindness would be considered worse than one who is usually an inferior shooter even if the blind marksman is due to recover his vision. For each additional level of Potency the mage can expand her understanding of the hierarchy of competence to add the next best or next worst targets, up to the limits of the spell's Potency or the number of targets, whichever is less/fewer. This spell can be combined with another to specifically target the best or worst member of a group. For example, it could be combined with Call Lightning to direct the spell at the target most likely to survive electrocution, or the one least likely to successfully counter the spell. This listing describes the instant version of the spell, but in ages past, mages cast extended ritual versions to find the weak and strong points in entire Consilii and battle formations.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Tenshin Heiho",
+				"Dice Pool" : "Intelligence + Investigation + Fate 3",
+				"Rote Description" : "Adamantine Arrows who've studied the Gogyo deeply use this rote to help plan an attack against a group of enemies. The mage studies subtle omens and the enemy's habits to expose weakness and avoid meeting strength head on. He is said to have the quality for which the rote is named: &quot;Divinely inspired strategy.&quot;"
+			}
+		]
+	},
+	{
+		"Name" : "Shared Fate",
+		"SourceBook" : "The Free Council",
+		"SourcePage" : "107",
+		"Arcana Requirement" : "Fate 3",
+		"Practice" : "Weaving",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "Fate is used as an instrument of both justice and punishment. This spell braids the fates of two subjects together, such that the fate of one becomes the fate of the other. Whatever befalls one subject affects the other and vice versa. In times past, this spell was used as a means of parley between willworkers, to ensure both parties honored a truce. This spell still sees some use in that regard, but is more a means of threatening an enemy and ensuring their cooperation. The spell links two subjects (more with an additional Targets factor). Unwilling subjects get a reflexive Composure + Gnosis roll to resist. If the spell succeeds, the subjects are bound to a single fate for its duration. Effects affecting the Health or Willpower (but not Wisdom) of one subject affect the other by an equal amount. So, if one of the subjects suffers three levels of Health damage, the other subject does as well. Any Fate magic worked on one subject -- for good or ill -- also affects the other(s).</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "Instant Karma",
+				"Dice Pool" : "Presence + Persuasion + Fate 3",
+				"Rote Description" : "&quot;My fate will be yours,&quot; was a commonly heard oath from the Nameless, and they usually made good on it with this techn&eacute;. While democratic ideals should be enough for a convocation of Libertines, sometimes they're not; in which case, this rote can help to ensure a degree of restraint and even-handedness."
+			}
+		]
+	},
+	{
+		"Name" : "Superlative Luck",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "156",
+		"Arcana Requirement" : "Fate 3",
+		"Practice" : "Weaving",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage's endeavors are blessed with amazing luck that defies the odds and credibility. The mage gains the 8-again quality (reroll results of 8, 9 and 10) on one future dice roll per success achieved in the spellcasting roll. The player can choose which of his rolls are affected by this superlative luck, and they can involve any action or task. This effect lasts for one scene (unless additional Duration factors are added during casting), after which time any unused luck rolls are lost. Note that this spell does not affect a chance die, should a mage's dice pool be reduced to one. Only a result of 10 is a success.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "Walking The Supernal Path",
+				"Dice Pool" : "Resolve + Occult + Fate 3",
+				"Rote Description" : "Like any other thing, Fate can be bent to the needs of a superior will. A Ladder willworker uses this rote to defy any twist of fortune that leads him away from the destiny he knows to be rightfully his, enhancing his prowess in virtually all endeavors well beyond human norms. Mages of all orders eventually find one use or another for this powerful rote."
+			}
+		]
+	},
+	{
+		"Name" : "Tangle The Threads",
+		"SourceBook" : "Adamantine Arrow",
+		"SourcePage" : "176",
+		"Arcana Requirement" : "Fate 3 + Mind 2 + Prime 2",
+		"Practice" : "Weaving",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "Likely, the single most common application of the ability to magically tamper with the skein of destiny is to be found upon the battlefield. Ricocheting bullets &quot;coincidentally&quot; strike their intended targets, while enemies slip on patches of ice, and someone &quot;just happened&quot; to have left something leaning against the alley wall that can be used as a weapon. When these powers are used to one's benefit, they are great boons. When used by the enemy, however, these powers constitute an unacceptable liability. This spell was created to level the playing field somewhat in just that respect. Each success assigned to this spell's Potency increases by one the number of successes required to manipulate the caster's destiny with the Fate Arcanum -- the tides of fortune that surround her are simply too convoluted to easily navigate, full of conflicting emotions and compulsions, and occluded by random patches of magical concealment. Note, however, that other Fate magics in the area work normally, including those that might indirectly target the caster, such as being caught within the area of a &quot;Swarm of Locusts&quot; spell. This spell effectively defends the caster against certain Fate-based effects that are &quot;under the radar&quot; of the Unfettered Fate 4 effect, such as Monkey's Paw and Alter Oaths.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Blinding The Three Sisters",
+				"Dice Pool" : "Wits + Occult + Fate 3",
+				"Rote Description" : "An Arrow can truly depend upon only one sort of luck: The luck she creates. Every soldier knows that reducing the potential number of uncontrolled variables upon the field is a good way to increase the odds for victory. Of course, this rote also makes it more difficult for allies to tweak destiny in her favor, but all of that is probably best handled before the engagement, anyway, "
+			}
+		]
+	},
+	{
+		"Name" : "Technology Curse",
+		"SourceBook" : "Seers Of The Throne",
+		"SourcePage" : "190",
+		"Arcana Requirement" : "Fate 3, Forces 2",
+		"Practice" : "Fraying",
+		"Action" : "Instant, resisted by Composure + Gnosis",
+		"Duration" : "Transitory (one turn)",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "Sleepers in the Western world increasingly rely on electronics to run their lives, and increasingly mundane items are controlled by microprocessors from cars to refrigerators. With this spell, a mage can render a victim unable to use these devices, banishing them from the modern world. Starting with the turn after casting, the targeted individual is surrounded by a magical field that disrupts electronic items. Any such item he attempts to use for the duration of the spell is subject to a penalty to its equipment dice equal to the successes on the spell, up to the caster's Fate dots. If the equipment dice are reduced to zero, the item does not function -- computers shut off, electronic brakes in cars fail to respond, and lights do not work.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Seers Of The Throne Rote",
+				"Rote Name" : "Anti-Electronic Field",
+				"Dice Pool" : "Wits + Science + Fate 3",
+				"Rote Description" : "The Seers of the lesser Pantechnicon Ministry believe modern technology to be an excellent cage and controlling mechanism for humanity. Central to their doctrine is the precept that humanity walks into that cage themselves. Sometimes, an object lesson is needed as to why technology is a good thing. Using the Anti-Electronic Field, the Seers demonstrate just what a life without modern conveniences is like."
+			}
+		]
+	},
+	{
+		"Name" : "Uncover Final Name",
+		"SourceBook" : "Legacies: The Sublime",
+		"SourcePage" : "102",
+		"Arcana Requirement" : "Fate 3 + Death 2",
+		"Practice" : "Perfecting",
+		"Action" : "Instant",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "If a person dies without a Namer present to record his Final Name, that name is lost. But &quot;lost&quot; is not the same as &quot;destroyed.&quot; With the right knowledge of sympathetic connections, what was lost may be found again. By casting this spell, a mage can reconstruct the Final Name of someone already dead. In order to properly reconstruct the Name, the mage must acquire Known or better sympathetic connections to at least 10 objects or individuals who had sympathetic connections to the deceased. Possessing the objects in question or the Final Names of the individuals is also adequate. For every connection less than ten, the mage suffers a -1 penalty to her casting pool. If she has no connections at all, she cannot cast the spell. Successes rolled on the spellcasting pool determine the maximum &quot;age&quot; (that is, time since death) of the Final Name the mage can restore, using the Prolonged Duration chart. If the mage attempts to recreate the Final Name of someone who has been dead longer than the indicated Duration, the spell fails. If the mage has Death 3, she may use the Advanced Prolongation chart to determine the maximum age of the Final Name. &quot;Indefinite&quot; Duration means that the mage can restore the Final Name of any deceased individual, as long as the mage has the appropriate sympathetic resonances.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Rebuild The Shattered Tombstone",
+				"Dice Pool" : "Resolve + Occult + Fate 3",
+				"Rote Description" : "The Stone Scribes consider the loss of any true name a tragedy, and take steps to recover those lost to time."
+			}
+		]
+	},
+	{
+		"Name" : "Assuming The Name",
+		"SourceBook" : "Legacies: The Sublime",
+		"SourcePage" : "102",
+		"Arcana Requirement" : "Fate 4 + Death 3",
+		"Practice" : "Patterning",
+		"Action" : "Extended (target number = Potency of Scribe Final Name spell)",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage can actually alter his own Final Name for a short time, replacing the name with one stored by the Scribe Final Name spell. This can be the perfect camouflage or the perfect information-gathering tool. If the mage has Fate 5, he may cast this spell on another person as well (unwilling targets resist reflexively with Resolve). Any supernatural effect intended to pierce the veil of this spell must achieve successes equal to the spell's Potency. An exceptional success on a spell or power that reads auras reveals that your aura is completely static, which may signal something amiss, but does not necessarily pierce the deception. If the Duration of the Scribe Final Name spell that carries the assumed Final Name expires, this spell's effects end immediately. Assuming another person's Final Name confers the following benefits: (A) Your Virtue and Vice appear to be those of the owner of the Final Name (these traits do not actually change, but they appear different to supernatural observation). (B) Your aura appears fixed as the owner's aura at the instant the original Scribe Final Name spell was cast. (C) Your resonance appears to be that of the Final Name. (D) You automatically gain any sympathetic connections the Final Name carries with it, at no penalty. (The penalty for not knowing a subject's name applies, however -- including a penalty if you don't know the mundane name attached to the Final Name you assumed.)</P><BR><BR>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Coincidental Travel",
+		"SourceBook" : "The Silver Ladder",
+		"SourcePage" : "196",
+		"Arcana Requirement" : "Fate 4",
+		"Practice" : "Weaving",
+		"Action" : "Instant",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The willworker reshapes the threads of fate to inevitably move her toward her chosen destination. She simply selects her destination, uses this spell and then all manner of coincidences help and even impel her along her way. When using this spell, the mage does not need to purchase a ticket in advance, and the total money spent need be no more than can easily be purchased with 1 dot of the Resources Merit. The primary thing the mage needs to do is to be willing to go along with the chain of events carrying her to her destination. If a mage in Chicago casts this spell to help her get to Los Angeles, a host of coincidences help her along her way. When she goes to purchase a ticket for an airplane or train, she is offered an exceptionally low fare as a special, a free ticket is handed to her by someone who is canceling his travel plans at the last minute, or some similar coincidence occurs. Traffic seems to move out of her way, stoplights turn green just as her cab approaches them, lines to checking in and security are exceptionally short, and her cross-country flight is not only not delayed, it benefits from strong tailwinds. A single success on this spell is sufficient to allow the mage to make an easy and low-cost journey to any destination in 10% below the absolute minimum time normally required. Each additional success reduces the time by another 10%. Even on an extraordinary success, this spell cannot reduce the total time by more than 50% of the normal minimum time, but it can allow a mage to step out her door and end up in a city all the way across the US at minimal cost in a matter of hours. Despite not requiring the Space Arcanum, this spell is still somewhat bound by the laws of sympathetic connection. The closer the connection a mage has to her destination, the easier this spell is to use. A mage using this spell to return home suffers no penalty. However, using this spell to travel to a distant city or nation the mage has seen only in photographs or on television gives the mage a -4 or -5 penalty, depending upon how many relevant photographs or TV shows the mage has seen. In addition, this spell bends fate, but cannot break it. Locations difficult to get to bring penalties. If the mage wishes to see the inside of some secure building like the Pentagon or Fort Knox, this spell might get her inside on a public tour, but it's not going to get her through high security checkpoints that do not allow unauthorized personnel inside. This spell will not allow the character to bypass or otherwise get around active opposition (like guards instructed to keep out all but a few specially authorized personnel). The spell allows the character only to cheaply, swiftly and easily go to places to which she could normally go.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "Traveler's Luck",
+				"Dice Pool" : "Wits + Persuasion + Fate 4",
+				"Rote Description" : "Often a big part of being able to control a situation is the ability to be at the right place at the right time. Members of the Silver Ladder use this spell as a way to easily move themselves to their destinations faster than their opposition."
+			}
+		]
+	},
+	{
+		"Name" : "Destroy Bindings",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "156",
+		"Arcana Requirement" : "Fate 4",
+		"Practice" : "Unraveling",
+		"Action" : "Instant and contested; successes are compared to the bond's Potency",
+		"Duration" : "Lasting (or prolonged vs. familiars)",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "This spell enables a mage to free a soul that has been forcibly bound outside of its proper place (such as one stolen and reattached using the Death Arcanum, or one kept in a soul jar). The caster can sever the connection between a mage and her familiar, release a spirit that has been placed into a fetish, and even free a ghost from an anchor. The caster's successes must exceed the Potency of the bond being severed. In the case of a ghost, successes must exceed its Resistance dots. For a fetish, use the Potency of the spell that created the item (see the Spirit 4 Create Fetish spell). In the case of a familiar, successes must exceed its owner's Gnosis dots. Both the release of a trapped soul and the release of a bound spirit or ghost are lasting, though the mage-familiar bond returns to normal at the end of the scene (the caster can increase this Duration as per a prolonged spell). In the case of freed souls, the soul does not automatically return from whence it came. It must be restored to its rightful owner using the Spirit 3 Restore Lost Soul spell</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Cutting The Chaff",
+				"Dice Pool" : "Resolve + Occult + Fate 4 vs. bond's Potency",
+				"Rote Description" : "With relentless conviction, the willworker of the Adamantine Arrow shatters all fetters binding a spirit against its will. In this manner, powerful fetishes can be destroyed and bound servants are given the ability to turn upon their would-be masters. Even those ephemeral beings that choose to remain at an enemy's side can be dismissed. Guardians of the Veil use a variant on this rote (Intelligence + Occult + Fate) to break the bonds between troublesome spiritual entities and the material world, so the beings can either leave of their own volition or be banished, no longer threatening the secrecy of the Mysteries."
+			}
+		]
+	},
+	{
+		"Name" : "Forbidden Fate",
+		"SourceBook" : "The Silver Ladder",
+		"SourcePage" : "196",
+		"Arcana Requirement" : "Fate 4",
+		"Practice" : "Ruling",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "The willworker alters someone's destiny so the person has great difficulty accomplishing a single specific goal. Attempts by the target to accomplish this goal are fraught with ill fortune and literally everything that can go wrong does. Microphones screech or go dead at particularly inopportune times, the target stumbles while running, and fragile objects the target uses are far more inclined to fall and break. The character must declare a specific goal the target cannot reach. This goal must be a deliberate choice on the target's part and not something necessary for survival, such as breathing or eating. This spell can ban &quot;getting to work on time Monday morning,&quot; but not &quot;ever getting to work on time&quot; or even &quot;getting to work on time each Monday.&quot; Examples of valid goals include attacking or defeating a particular enemy, attempting to steal or otherwise acquire a particular object, applying for a specific job, giving a particular speech or presentation, running for an elected office, creating a work of art, and any similar actions. For the duration of this spell, any actions the target takes to directly accomplish the forbidden goal suffer a dice penalty equal to the number of dots in the Fate Arcanum the caster possesses.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "The Hobbling Of Enemies",
+				"Dice Pool" : "Manipulation + Subterfuge + Fate 4",
+				"Rote Description" : "One of the best ways to win an election or convince others to accept your ideas is to make certain anyone opposing you looks sufficiently bad that you and your ideas look better in comparison. This rote ensures those who oppose members of the Silver Ladder often fail quite badly in their efforts, because this spell can easily make an expert seem a rank amateur."
+			}
+		]
+	},
+	{
+		"Name" : "Fortune's Fool",
+		"SourceBook" : "Adamantine Arrow",
+		"SourcePage" : "177",
+		"Arcana Requirement" : "Fate 4",
+		"Practice" : "Patterning",
+		"Action" : "Instant and contested; target rolls Resolve + Gnosis reflexively",
+		"Duration" : "Transitory (one turn)",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "It is said that fortune favors the bold. Unfortunately for the bold, accidents still happen. With this spell, the mage learns to store misfortune and inflict it upon others, turning accident into opportunity. During a chapter, whenever the mage fails a roll, the mage may reflexively store that failure for later use. The mage may store a total number of failures equal to her Resolve, but only &quot;natural&quot; failures may be stored. Players may not choose to fail a roll in order to store it. The mage releases a failure by selecting a target and casting the spell. With a single success on the casting roll, the next action taken by that target fails automatically. Once a stored failure is spent, that failure is subtracted from the total. At the end of the chapter, any unused failures are lost.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Sorrows Shared",
+				"Dice Pool" : "Wits + Occult + Fate 4",
+				"Rote Description" : "A good warrior finds a way to turn misfortune to his favor. The Adamantine Arrow developed this rote to transform missed opportunities into weapons to loose on their foes. Proper use of this rote requires some foresight. It does no good to inflict failure on an enemy just to see that failure manifest itself in a minor way."
+			}
+		]
+	},
+	{
+		"Name" : "Gift Of Fortune",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "157",
+		"Arcana Requirement" : "Fate 4 + Space 2",
+		"Practice" : "Ruling",
+		"Action" : "Extended",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana (sympathetic casting cost)",
+		"Effect" : "Objects do not have volition of their own, but they are given momentum by the wills of the sentient creatures that act upon them. They are imbued with purpose by human belief in their designated purposes. Human choices become the destinies of such items. Thus, a mage with a stronger will than a Sleeper could, for example, decide that a rare heirloom will come into her possession. Through the quirks of fate, it eventually finds it way into her keeping. It may not do so in any way she might envision (and her ownership of it need not necessarily be legitimate or even legal), but she does not have to exert any special effort to acquire it. Indeed, she need not even know where the object is when she casts the spell. The item reaches her when it does, if it does (this spell could be dispelled before the item arrives; see below), and she has no control over the circumstances of how or when it arrives. Destiny makes no guarantees, for example, that a ritual knife a mage hopes to get won't end up protruding from a wound in her abdomen by the hand of some crazed wino. A mage can send a given object any which way she desires, specifying that a woman's gold necklace ends up owned by the son she gave away at birth, or that a treasure chest eventually spends its days at the bottom of the sea. Using this spell with naked and indiscriminate greed often results in dire consequences for the caster (such as the aforementioned knife in the gut). Wise workers of Fate magic advocate using this spell for personal gain only when need is great, otherwise doing legwork personally and without the aid of magic. Some items have so much belief and will behind them, conscious or otherwise, that it is essentially impossible to move them from their current circumstances. While the Hope Diamond might be able to be moved (at a -3 penalty for its celebrity), the Leaning Tower of Pisa isn't going anywhere, despite the fact that the technology certainly exists to disassemble, transport, and reassemble it. The threads of fortune can only be stretched so far. The Storyteller assigns a required target number (the metaphysical weight of the object's current destiny) that must be overcome in order to move the item in the desired direction. Thus, an object from a mage's own childhood about which no one else really cares might require only one success, while the mummy of Tutankhamen could require that 10 or more successes be accrued, if it can be moved at all. The targeted item can take some time to make it to its destination. Excess successes added to the target number can speed up the journey by one degree per success. This spell can target items within the Shadow Realm, although without a Spirit 3 component the item cannot cross the Gauntlet. It arrives just on the other side of the Gauntlet, probably brought by means of a hapless spirit. Using this kind of magic for selfish or greedy ends, especially when a mage does so repeatedly, almost always leads to bad twists of fortune, often involving one or more of the objects the mage tries to acquire. As with any spell targeting an unseen subject, the mage needs a Space Arcanum sympathetic connection to reach out and grasp the object's strands of fate to draw them to him. The strength of this connection determines if there are penalties on the spellcasting roll.</P><BR><BR>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Probable Cause",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "157",
+		"Arcana Requirement" : "Fate 4",
+		"Practice" : "Perfecting",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage gains the rote quality (re-roll failed dice once) on one future dice roll per success achieved on the casting roll. The player can choose which of his rolls are affected by this altered probability, and they can include any action or task, although he must decide before the dice are rolled. This effect lasts for one scene (unless additional Duration factors are added during casting), after which time any unused Probable Cause re-rolls are lost. Note that this spell does allow the player to re-roll a failure on a chance die. This spell cannot be &quot;stacked&quot; with Exceptional Luck or Superlative Luck; only the most potent spell takes effect.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Assured Acquisition",
+				"Dice Pool" : "Composure + Occult + Fate 4",
+				"Rote Description" : "This is a rote for those times when a Guardian simply must not fail in protecting the hidden world from the eyes of the uninitiated. Named for circumstances in which a given person or object must be acquired and spirited away, this rote sees use in all manner of situations and by members of all orders."
+			}
+		]
+	},
+	{
+		"Name" : "Sanctify Oaths",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "157",
+		"Arcana Requirement" : "Fate 4",
+		"Practice" : "Patterning",
+		"Action" : "Instant",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage can witness the swearing of oaths on the part of others as he did for himself with Fate 2 Swearing an Oath, bringing the weight of destiny to bear upon them. Note that the participant(s) need not be aware that the mage has the means to place metaphysical momentum behind such vows. An individual considered to own or bear responsibility for the life of another (such as a child's parent) can swear oaths in that person's name. If the target is unaware that the words he's about to utter will bind him into a mystical oath, he gets to unconsciously contest the spell with a reflexive Resolve + Gnosis roll. Note that this spell is tallied against the total amount of spells the mage can maintain (and it counts toward the spell tolerance of those who are affected by the oath). The caster can, however, choose to relinquish the spell so that it no longer counts against the total of his maximum spells allowed.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "Let Their Words Condemn Them",
+				"Dice Pool" : "Presence + Expression + Fate 4",
+				"Rote Description" : "Those who would offer solemn oaths to a mage of the Silver Ladder should be wary of this rote, lest their words be rendered truly binding. Willworkers of the Mysterium also make use of this powerful magic in the course of their work, whether to hold another to a promise of aid or to a vow to deliver a certain artifact by a given date."
+			}
+		]
+	},
+	{
+		"Name" : "Sever Oaths",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "158",
+		"Arcana Requirement" : "Fate 4",
+		"Practice" : "Patterning",
+		"Action" : "Instant and contested; successes are compared to the oath's Potency",
+		"Duration" : "Lasting",
+		"Aspect" : "Covert",
+		"Cost" : "None",
+		"Effect" : "The mage severs an oath completely. He may also use this spell to freely manipulate an oath he has sworn (with Fate 2). Successes must exceed the Potency of the oath to be severed, unless the caster targets one of his own oaths, in which case one success is enough.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Silver Ladder Rote",
+				"Rote Name" : "Magistrate's Rule",
+				"Dice Pool" : "Manipulation + Occult + Fate 4 vs. oath's Potency",
+				"Rote Description" : "One who would rule must not hesitate to break a promise that stands in the way of good governance. In the case of an oath sanctified through the Fate Arcanum, this rote is the only way to break from it safely, and Ladder mages make use of it when they must. Free Council willworkers bound to unpleasant oaths likewise feel little or no shame in use of such a rote. If the one to whom such a vow was made were worthy, there would be no need for mystic fetters ensuring complicity."
+			}
+		]
+	},
+	{
+		"Name" : "Transfer Destiny",
+		"SourceBook" : "Seers Of The Throne",
+		"SourcePage" : "190",
+		"Arcana Requirement" : "Fate 4",
+		"Practice" : "Patterning",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage transfers a Destiny from its original subject to another. The mage casting the spell may be the recipient, the donor or a bystander. If either party is unwilling and aware of the spell, it may be contested by Resolve + Gnosis. Each success on the spell transfers one dot of the Destiny Merit from the donor to the recipient. At the end of the scene, the Merit transfers back to the donor, but if the recipient has used any destiny dice within that chapter, the donor may not use them until they refresh as per the Destiny Merit rules. The Destiny's bane also transfers for the duration of the spell -- the donor also keeps the bane unless all her Destiny Merit dots have been lost to the spell. The caster must touch both targets for the spell to take effect. With Fate 5 the spell can be cast at range.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Seers Of The Throne Rote",
+				"Rote Name" : "Theft Of Tomorrow",
+				"Dice Pool" : "Manipulation + Occult + Fate 4",
+				"Rote Description" : "The Seers of the Throne believe that history is made by powerful actors, individuals destined for great things, but they also believe that this mandate to influence the world can be stolen by the dedicated. As the Exarchs took the mantle of the Gods, this spell allows a clever Seer to take the mantle of mortal heroes."
+			}
+		]
+	},
+	{
+		"Name" : "Break The Chains",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "159",
+		"Arcana Requirement" : "Fate 5",
+		"Practice" : "Patterning",
+		"Action" : "Instant and contested; successes are compared to the geas' Potency",
+		"Duration" : "Lasting",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "The mage can dispel or rearrange the conditions of another mage's geas. Successes must exceed the geas's Potency.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Free Council Rote",
+				"Rote Name" : "The Hidden Clause",
+				"Dice Pool" : "Wits + Occult + Fate 5 vs. geas Potency",
+				"Rote Description" : "This rote enables a Council willworker to shift the specifics of a geas, or to destroy the compulsion utterly. After all, Council members reason, what good can come of respecting the wishes of one who obviously has so little regard for the desires of others as to forcibly bind another to her will? Sorcerers of the Silver Ladder are also drawn to this magic (Resolve + Occult + Fate) in their determination never to be fettered against their will."
+			}
+		]
+	},
+	{
+		"Name" : "Forge Destiny",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "159",
+		"Arcana Requirement" : "Fate 5",
+		"Practice" : "Making",
+		"Action" : "Instant and contested; target rolls Resolve + Gnosis reflexively",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "The mage determines the destiny of a living being. A living saint can be set almost irrevocably upon a murderous path, while an animal that might otherwise go to a cruel and abusive home can be given the good fortune of ending up with a kind and loving family. These sorts of manipulations, having to overcome a certain degree of the subject's self-determination, can be quite difficult for even the most experienced of willworkers, so most undertake it only rarely. Each success on the spellcasting roll can be used to add one die to the target's dice pool for any action that might foster the fruition of the fate declared by the caster. Conversely, one dice penalty per success can be levied against rolls that might help prevent a subject's new destiny. The Storyteller determines when modifiers penalize an action, but they're often employed whenever the target tries to deny the fate that the spellcaster has imposed. The effect lasts for one scene. If sufficient Duration is not assigned to the spell, the being may not have long enough to see the action through. For example, rendering a person destined to buy a given used car in her hometown makes that fate likely (but not necessarily) to come to pass rather quickly, while giving a dog a destiny to kill a prominent recluse 2000 miles away may result in a fate that takes years to come to fruition. If a mage attempts to influence another artificially created destiny, she must overcome the Potency of the spell used by the mage who originally imposed the artificial fortune.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "Anointing The Chosen One",
+				"Dice Pool" : "Manipulation + Persuasion + Fate 5 vs. Resolve + Gnosis",
+				"Rote Description" : "Setting Fate's mark upon an individual can protect the hidden society of the Awakened. Guardians are known to use this magic to great effect, creating false trails leading away from genuine mystic phenomena. Mages of the Mysterium sometimes use this magic (Intelligence + Persuasion + Fate) to draw another into the occult world."
+			}
+		]
+	},
+	{
+		"Name" : "Forge Doom",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "159",
+		"Arcana Requirement" : "Fate 5",
+		"Practice" : "Unmaking",
+		"Action" : "Instant and contested; target rolls Resolve + Gnosis reflexively",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "A living being, place, thing, condition, flaw, or behavior can be declared someone's doom. For example, a sword could be forged as a person's doom, as could the sanctum of his direst enemy or even his estranged son. Likewise, the leg he injured in a long-ago car crash could be made his doom, as could his philandering, or being beneath the full moon's light. While in direct confrontation with a doom or while acting within or being targeted by the parameters of a doom (being struck in the wounded leg or getting in trouble with a woman's large boyfriend while hitting on her in a club), any damage dice suffered by the subject are increased by the spell's successes. The damage type does not change (sources of bashing damage still cause bashing damage, they just cause more than they normally would). Meeting a doom does not guarantee that the mage will suffer damage; it only worsens any damage that might happen to be inflicted. For example, a mage who enters a sanctum that is his doom has no more chance than usual of coming to harm, but should he accidentally fall down the stairs (or be pushed), his odds of suffering a lot of damage increase. In the case of a place made into a doom, the default area affected is of a one-yard radius or five-cubic yards of volume.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Achilles' Heel",
+				"Dice Pool" : "Resolve + Intimidation + Fate 5 vs. Resolve + Gnosis",
+				"Rote Description" : "Even a mediocre swordsman wielding a weapon forged as a given foe's doom is a force to be reckoned with. So goes the reasoning of Adamantine Arrow willworkers who make use of this rote. Even a skilled warrior can benefit by use of an item (or place, person or circumstance) named as the downfall of an enemy. Guardians of the Veil sometimes use this magic as a last resort, ending a threat to the secrecy of the Mysteries."
+			}
+		]
+	},
+	{
+		"Name" : "Forge Godsend",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "159",
+		"Arcana Requirement" : "Fate 5",
+		"Practice" : "Making",
+		"Action" : "Instant and contested; target rolls Resolve + Gnosis reflexively",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "A living being, place, thing, condition, behavior, or a physical strength (swift reflexes, unyielding fortitude, or a good right hook) can be declared a godsend. The successes achieved in the spellcasting roll designate the level of protection. When possessed of, acting under the parameters of, or within the presence of a godsend, the spell's successes are subtracted from any damage he suffers (starting with aggravated damage first, then lethal, then bashing). In the case of a place made into a godsend, the default area affected is of one-yard radius or five cubic yards of volume.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Mysterium Rote",
+				"Rote Name" : "Secret Strength, The",
+				"Dice Pool" : "Composure + Survival + Fate 5 vs. Resolve + Gnosis",
+				"Rote Description" : "Some believe that members of the Mysterium are eclectic scholars unsuited for the rigors of combat. In some cases, that sentiment may ring true. By means of this rote, however, even the most retiring researcher can hold her own in dangerous situations, defended by Fate itself. Of course, willworkers of the Adamantine Arrow are also quick to make use of this potent aegis in the course of their perilous work."
+			}
+		]
+	},
+	{
+		"Name" : "Geas",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "160",
+		"Arcana Requirement" : "Fate 5",
+		"Practice" : "Making",
+		"Action" : "Instant and contested; target rolls Resolve + Gnosis reflexively",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "This spell creates a geas, enabling a willworker to forcibly compel another to heed her will as though having sworn an oath to that effect. If the subject cannot resist this magic, then he must do as he is bidden or suffer the enmity of destiny. The mage is under no obligation to be reasonable when levying a Geas upon another, although the objective must still be possible. &quot;Count every grain of sand on this beach,&quot; while extraordinarily improbable for most people, is at least possible, but &quot;Using only your own physical abilities, swim to the bottom of the ocean and back,&quot; is not. Note that, unlike the powers of the Mind Arcanum, this spell does not compel a target to perform a task. It instead sets up terrible repercussions if he doesn't perform it. Those who violate the terms of a Geas (failing to actively work toward fulfilling the Geas counts as violating it) during the spell's Duration suffer the effects of the Great Curse spell, below, until such time as the Geas would normally expire. Geas has the potential for greater longevity than most prolonged five-dot spells. When increasing Duration factors during casting, the mage uses the advanced prolongation factors chart, even if he does not have six dots in Fate.</P>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Great Curse",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "160",
+		"Arcana Requirement" : "Fate 5",
+		"Practice" : "Unmaking",
+		"Action" : "Instant; subtract target's Composure",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "The spell is like the Evil Eye spell, except that it affects all rolls made while the magic is in effect. This spell cannot be combined with the Evil Eye; only the most potent spell takes effect.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Adamantine Arrow Rote",
+				"Rote Name" : "Wrack And Ruin",
+				"Dice Pool" : "Manipulation + Intimidation + Fate 5 - Composure",
+				"Rote Description" : "A tiger is a fierce and powerful beast, but how much less so would it be without fangs or claws, or when robbed of its great strength and agility? Mages of the Adamantine Arrow use this rote to cripple their foes, robbing the tiger of its claws. Mages of all orders make use of this rote, however, whether to achieve victory in battle, to outmaneuver a rival suitor, or to just win a debate."
+			}
+		]
+	},
+	{
+		"Name" : "Infectious Curse",
+		"SourceBook" : "Tome Of The Mysteries",
+		"SourcePage" : "33",
+		"Arcana Requirement" : "Fate 5 + Space 2",
+		"Practice" : "Unmaking",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "By way of this spell, a willworker spreads the effects of the Great Curse through contagion, effectively, an infectious plague of ill fortune that not only affects its initial target but also all those with whom he comes in contact. This spell cannot be cast with indefinite Duration (unlike the basic Great Curse effect), so as to prevent an outbreak of evil luck that eventually grows to encompass the world. While the spell's initial target is not allowed active resistance to the curse, subsequent potential targets contest the spell's effect with a roll of Composure + Gnosis.</P><BR>",
+		"Rotes" : [{
+				"Rote Order" : "Guardians Of The Veil Rote",
+				"Rote Name" : "A Plague On Your House",
+				"Dice Pool" : "Resolve + Intimidation + Fate 5",
+				"Rote Description" : "Some persistent Sleepers just don't respond well to threats against their own health, but, when you add in a threat to the well-being of their family and friends, many change their tunes. Guardians use this magic to curse those outsiders that delve too deeply into the Mysteries, making them a source of pain and misfortune for their loved ones and, indeed, everyone they associate with."
+			}
+		]
+	},
+	{
+		"Name" : "Swarm Of Locusts",
+		"SourceBook" : "Mage: The Awakening",
+		"SourcePage" : "161",
+		"Arcana Requirement" : "Fate 5",
+		"Practice" : "Patterning",
+		"Action" : "Instant",
+		"Duration" : "Prolonged (one scene)",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "The mage can create chaotic conditions: Rains of frogs, every animal within a city block going berserk simultaneously, and other similarly &quot;Fortean&quot; occurrences. He totally surrenders control of the effects of the spell when he casts it; he puts the matter in Fate's hands. While Sleepers who witness this chaos might be befuddled, confused, and scared, they are temporarily open to the possibilities of magic and are not instrumental in causing Paradoxes for any spell they witness in the affected area. Those Sleepers who witness the effects of the Swarm of Locusts do not act as witnesses when determining the chances of a Paradox for any successive spell cast in the area (although the Swarm of Locusts spell must still contend with a possible Paradox, the chances of which are made worse by Sleeper witnesses). The space covered by Swarm of Locusts depends on the successes rolled. The chaos seething in the area is beyond the caster's control and might adversely affect him or his allies. Depending on the description of the effect, the Storyteller might levy a -1 to -2 dice penalty on any rolls made that are not directly involved in dealing with the chaos. This spell cannot be cast a second time within the same area (or in adjacent areas) for the next 24 hours.</P>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	},
+	{
+		"Name" : "True Love",
+		"SourceBook" : "Grimoire Of Grimoires",
+		"SourcePage" : "132",
+		"Arcana Requirement" : "Fate 5",
+		"Practice" : "Making",
+		"Action" : "Extended",
+		"Duration" : "Special (see below)",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana, plus 1 Willpower from each party affected",
+		"Effect" : "This spell doesn't see common use, especially in modern times, but it is nonetheless one of the most frequently cited and quoted sections of Orpheus' Last Riddle. The spell is buried in a long, moving poem written to Eurydice by Orpheus. Part of the poem remarks upon her beauty and her grace, but much of it is a collection of moments -- descriptions of how sunlight played on her hair on a particular day, or the sound of her laugh or of something she whispered to him while they made love. The spell itself does not create love, but gives it a supernatural depth. Lovers who undertake this spell must be very, very careful -- if love sours, this spell becomes a curse. The mage must join the lovers' hands as she completes the spell, and the lovers must make a declaration of their ardor for each other. This can be an elaborate vow or a simple &quot;I love you,&quot; but when the spell is complete, the love takes on a geas-like quality. This spell is always cast with a conditional Duration. The condition is this: If one lover betrays the other, the spell's effects immediately end and each party becomes unable to regain Willpower by any method while the other lives. This is, of course, a fairly easy situation to remedy. The lovers enjoy the following effects:</P>",
+		"Rotes" : [{
+				"Rote Order" : "",
+				"Rote Name" : "",
+				"Dice Pool" : "",
+				"Rote Description" : ""
+			}
+		]
+	}
+]

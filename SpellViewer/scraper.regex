@@ -1,0 +1,5 @@
+Match:
+<H3>.*<\/A>(.*) &nbsp; <I>\( (.*) -- Page (\d*) \)<\/I><\/H3>\n.*<P><B>Arcana:<\/B> *(.*)<\/P>\n.*<P><B>Practice:<\/B> *(.*)<\/P>\n.*<P><B>Action:<\/B> *(.*)<\/P>\n.*<P><B>Duration:<\/B> *(.*)<\/P>\n.*<P><B>Aspect:<\/B> *(.*)<\/P>\n.*<P><B>Cost:<\/B> *(.*)<\/P>\n.*<P><B>Effect:<\/B> *(.*)(?:\r\n|[\r\n])(?:.*\n*.*<DIV CLASS="specialties"><B>(.*): (.*)<\/B>.*\n.*Dice Pool: (.*?)<BR>.*.\n *(.*?)(?:<BR>)*\n)*
+
+Replace:
+{\n"Name":"$1",\n"SourceBook":"$2",\n"SourcePage":"$3",\n"Arcana Requirement":"$4",\n"Practice":"$5",\n"Action":"$6",\n"Duration":"$7",\n"Aspect":"$8",\n"Cost":"$9",\n"Effect":"$10",\n"Rotes":[\n{"Rote Order":"$11",\n"Rote Name":"$12",\n"Dice Pool":"$13",\n"Rote Description":"$14"\n}\n]\n},\n\n

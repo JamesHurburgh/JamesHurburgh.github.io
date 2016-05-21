@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>MtAw Spellviewer</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	
+	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
+	<!-- Datatable -->
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
+	  
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
+
+
+	
+	<!-- Dynatable 
+	
+	<link rel="stylesheet" href="https://github.com/alfajango/jquery-dynatable/blob/master/jquery.dynatable.css" />
+	<script src="https://github.com/alfajango/jquery-dynatable/blob/master/jquery.dynatable.js"></script>
+	-->
+	<script>
+	$(document).ready(function () {
+	
+		$.ajaxSetup({beforeSend: function(xhr){
+		  if (xhr.overrideMimeType)
+		  {
+			xhr.overrideMimeType("application/json");
+		  }
+		}
+		});
+		
+		loadArcana = function (arcana) {
+			$.ajax({
+				url: arcana + '.json', 
+				  beforeSend: function(xhr){
+					if (xhr.overrideMimeType)
+					{
+					  xhr.overrideMimeType("application/json");
+					}
+				  },
+				dataType: 'json',
+				async: true,
+				data: null,
+				error: function (xhr, status) {
+					alert(status);
+				},
+				success: function(data, textStatus, request) {
+					insertSpellData(data);
+				}
+			});
+		}
+		
+		insertSpellData = function (json) {
+			for (var i = 0; i < json.length; i++) {
+				table.row.add([ 
+					json[i].Name, 
+					json[i].SourceBook + " p" + json[i].SourcePage,
+					json[i]['Arcana Requirement'],
+					json[i].Practice,
+					json[i].Action,
+					json[i].Duration,
+					json[i].Aspect,
+					json[i].Cost,
+					json[i].Effect.substr(0, 100) + "..."
+					]).draw();;
+			}
+		}
+		insertSpells = function (json) {
+			var tr;
+			for (var i = 0; i < json.length; i++) {
+				tr = $('<tr/>');
+				tr.append("<td>" + json[i].Name + "</td>");
+				tr.append("<td>" + json[i].SourceBook + " p" + json[i].SourcePage + "</td>");
+				//tr.append("<td>" + json[i].Arcana Requirement + "</td>");
+				tr.append("<td>" + json[i].Practice + "</td>");
+				tr.append("<td>" + json[i].Action + "</td>");
+				tr.append("<td>" + json[i].Duration + "</td>");
+				tr.append("<td>" + json[i].Aspect + "</td>");
+				tr.append("<td>" + json[i].Cost + "</td>");
+				//tr.append("<td>" + json[i].Effect + "</td>");
+				$('#spellList').append(tr);
+			}
+		};
+		
+		$(document).ready(function(){			
+			table = $('#spellList').DataTable();
+			
+			loadArcana('death');
+			loadArcana('fate');
+			loadArcana('forces');
+			loadArcana('life');
+			loadArcana('matter');
+			loadArcana('mind');
+			loadArcana('prime');
+			loadArcana('space');
+			loadArcana('spirit');
+			loadArcana('time');		
+		});
+		
+	});
+	</script>
+</head>
+<body>
+    <div class="container">
+	    <!--<div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="./index.html">Projects</a></li>
+            <li role="presentation"><a href="./about.html">About</a></li>
+            <li role="presentation"><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Projects</h3>
+      </div>-->
+	  
+	  <div class="jumbotron">
+        <h1>MtAw Spellviewer</h1>
+        <p class="lead">The spells below are for Mage the Awakening.</p>
+      </div>
+	  
+	    <div class="row marketing">
+			<div class="col-lg-12">
+				<table id="spellList">	
+					<thead>
+						<tr>			
+							<th>Name</th>
+							<th>Source</th>
+							<th>Arcana Requirement</th>
+							<th>Practice</th>
+							<th>Action</th>
+							<th>Duration</th>
+							<th>Aspect</th>
+							<th>Cost</th>
+							<th>Effect</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>			
+			</div>
+		</div>
+
+      <footer class="footer">
+        <p>&copy; 2016 James Hurburgh.</p>
+      </footer>
+
+    </div> <!-- /container -->
+</body>
+</html>
