@@ -69,6 +69,7 @@
 		loadSpellSources = function (data) {	
 			
 			var sel = $('#sourceSelect');
+				sel.append($("<option>").attr('value','').text(''));
 			$(data).each(function() {
 				sel.append($("<option>").attr('value',this.Name).text(this.Name));
 			});
@@ -92,6 +93,22 @@
 				success: function(data, textStatus, request) {
 					insertSpellData(data);
 				}
+			});
+		}
+		
+		loadPractices = function(data) {
+			var sel = $('#practiceSelect');
+				sel.append($("<option>").attr('value','').text(''));
+			$(data).each(function() {
+				sel.append($("<option>").attr('value',this.Name).text(this.Name));
+			});
+		}
+		
+		loadArcanum = function(data) {
+			var sel = $('#arcanaSelect');
+				sel.append($("<option>").attr('value','').text(''));
+			$(data).each(function() {
+				sel.append($("<option>").attr('value',this.Name).text(this.Name));
 			});
 		}
 		
@@ -123,6 +140,8 @@
 			
 			loadJson('spells.json', loadSpells);
 			loadJson('sourceBooks.json', loadSpellSources);
+			loadJson('practices.json', loadPractices);
+			loadJson('arcanum.json', loadArcanum);
 			
 		});
 		
@@ -130,6 +149,22 @@
 			var searchTerm = $('#sourceSelect').val();
 			table
 				.columns( 1 )
+				.search( searchTerm )
+				.draw();
+		});
+		
+		$('#practiceSelect').change(function() {
+			var searchTerm = $('#practiceSelect').val();
+			table
+				.columns( 3 )
+				.search( searchTerm )
+				.draw();
+		});
+		
+		$('#arcanaSelect').change(function() {
+			var searchTerm = $('#arcanaSelect').val();
+			table
+				.columns( 2 )
 				.search( searchTerm )
 				.draw();
 		});
@@ -156,7 +191,22 @@
 	  
 	    <div class="row marketing">
 			<div class="col-lg-12">
-				<select id="sourceSelect"></select>
+				<h4>Filter</h4>
+				<div>
+					<span class="label label-default">Source</span></br>
+					<select id="sourceSelect"></select>
+				</div>
+				<div>
+					<span class="label label-default">Arcana</span></br>
+					<select id="arcanaSelect"></select>
+				</div>
+				<div>
+					<span class="label label-default">Practice</span></br>
+					<select id="practiceSelect"></select>
+				</div>
+			</div>
+			<div class="col-lg-12">				
+				<h4>Spells</h4>
 				<table id="spellList">	
 					<thead>
 						<tr>			
