@@ -1,5 +1,4 @@
 $(document).ready(function () {
-	
 		$.ajaxSetup({beforeSend: function(xhr){
 		  if (xhr.overrideMimeType)
 		  {
@@ -61,7 +60,7 @@ $(document).ready(function () {
 		
 		loadPractices = function(data) {
 			var sel = $('#practiceSelect');
-				sel.append($("<option>").attr('value','').text(''));
+			sel.append($("<option>").attr('value','').text(''));
 			$(data).each(function() {
 				sel.append($("<option>").attr('value',this.Name).text(this.Name));
 			});
@@ -69,10 +68,20 @@ $(document).ready(function () {
 		
 		loadArcanum = function(data) {
 			var sel = $('#arcanaSelect');
-				sel.append($("<option>").attr('value','').text(''));
+			sel.append($("<option>").attr('value','').text(''));
 			$(data).each(function() {
 				sel.append($("<option>").attr('value',this.Name).text(this.Name));
 			});
+		}
+		
+		loadArcanumLevels = function() {
+			var sel = $('#arcanaLevelSelect');
+			sel.append($("<option>").attr('value','').text(''));
+			sel.append($("<option>").attr('value', 1).text(1));
+			sel.append($("<option>").attr('value', 2).text(2));
+			sel.append($("<option>").attr('value', 3).text(3));
+			sel.append($("<option>").attr('value', 4).text(4));
+			sel.append($("<option>").attr('value', 5).text(5));
 		}
 		
 		insertSpellData = function (json) {
@@ -105,8 +114,17 @@ $(document).ready(function () {
 			loadJson('data/sourceBooks.json', loadSpellSources);
 			loadJson('data/practices.json', loadPractices);
 			loadJson('data/arcanum.json', loadArcanum);
+			loadArcanumLevels();
 			
 		});
+		
+		arcanaSearch = function (){
+			var searchTerm = '"' + ($('#arcanaSelect').val() + ' ' + $('#arcanaLevelSelect').val()).trim() + '"';
+			table
+				.columns( 2 )
+				.search( searchTerm )
+				.draw();
+		}
 		
 		$('#sourceSelect').change(function() {
 			var searchTerm = $('#sourceSelect').val();
@@ -125,10 +143,11 @@ $(document).ready(function () {
 		});
 		
 		$('#arcanaSelect').change(function() {
-			var searchTerm = $('#arcanaSelect').val();
-			table
-				.columns( 2 )
-				.search( searchTerm )
-				.draw();
+			arcanaSearch();
 		});
+		
+		$('#arcanaLevelSelect').change(function() {
+			arcanaSearch();
+		});
+		
 	});
