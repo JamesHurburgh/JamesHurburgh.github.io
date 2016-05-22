@@ -18,11 +18,15 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	
 	<!-- Datatable -->
-	
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
-	  
 	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
 
+	<!-- Datatable - Buttons -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.2.0/css/buttons.dataTables.min.css">
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.2.0/js/dataTables.buttons.min.js"></script>
+	
+	<!-- Datatable - Buttons - Column visibility control -->
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.2.0/js/buttons.colVis.min.js"></script>
 
 	
 	<!-- Dynatable 
@@ -41,9 +45,38 @@
 		}
 		});
 		
-		loadArcana = function (arcana) {
+		loadJson = function ( url, callback ){
 			$.ajax({
-				url: arcana + '.json', 
+				url: url, 
+				  beforeSend: function(xhr){
+					if (xhr.overrideMimeType)
+					{
+					  xhr.overrideMimeType("application/json");
+					}
+				  },
+				dataType: 'json',
+				async: true,
+				data: null,
+				error: function (xhr, status) {
+					alert(status);
+				},
+				success: function(data, textStatus, request) {
+					callback(data);
+				}
+			});
+		}
+			
+		loadSpellSources = function (data) {	
+			
+			var sel = $('#sourceSelect');
+			$(data).each(function() {
+				sel.append($("<option>").attr('value',this.Name).text(this.Name));
+			});
+		}
+		
+		loadSpells = function () {
+			$.ajax({
+				url: 'spells.json', 
 				  beforeSend: function(xhr){
 					if (xhr.overrideMimeType)
 					{
@@ -64,10 +97,17 @@
 		
 		insertSpellData = function (json) {
 			for (var i = 0; i < json.length; i++) {
+				var nameLink = "<a href='spell.html\?spell="+json[i].Name+"'>"+json[i].Name+"</a>";
+				var nameLink = json[i].Name; // Until I get the spell page working use this.
+				
+				var sourceBookLink = "<a href='http://www.drivethrurpg.com/browse.php?keywords=" + json[i].SourceBook+"'>"+json[i].SourceBook + " p" + json[i].SourcePage+"</a>";
+				
+				var arcanaFormatted = json[i]['Arcana Requirement'];
+				
 				table.row.add([ 
-					json[i].Name, 
-					json[i].SourceBook + " p" + json[i].SourcePage,
-					json[i]['Arcana Requirement'],
+					nameLink, 
+					sourceBookLink,
+					arcanaFormatted,
 					json[i].Practice,
 					json[i].Action,
 					json[i].Duration,
@@ -77,38 +117,22 @@
 					]).draw();;
 			}
 		}
-		insertSpells = function (json) {
-			var tr;
-			for (var i = 0; i < json.length; i++) {
-				tr = $('<tr/>');
-				tr.append("<td>" + json[i].Name + "</td>");
-				tr.append("<td>" + json[i].SourceBook + " p" + json[i].SourcePage + "</td>");
-				//tr.append("<td>" + json[i].Arcana Requirement + "</td>");
-				tr.append("<td>" + json[i].Practice + "</td>");
-				tr.append("<td>" + json[i].Action + "</td>");
-				tr.append("<td>" + json[i].Duration + "</td>");
-				tr.append("<td>" + json[i].Aspect + "</td>");
-				tr.append("<td>" + json[i].Cost + "</td>");
-				//tr.append("<td>" + json[i].Effect + "</td>");
-				$('#spellList').append(tr);
-			}
-		};
 		
 		$(document).ready(function(){			
 			table = $('#spellList').DataTable();
 			
-			loadArcana('death');
-			loadArcana('fate');
-			loadArcana('forces');
-			loadArcana('life');
-			loadArcana('matter');
-			loadArcana('mind');
-			loadArcana('prime');
-			loadArcana('space');
-			loadArcana('spirit');
-			loadArcana('time');		
+			loadJson('spells.json', loadSpells);
+			loadJson('sourceBooks.json', loadSpellSources);
+			
 		});
 		
+		$('#sourceSelect').change(function() {
+			var searchTerm = $('#sourceSelect').val();
+			table
+				.columns( 1 )
+				.search( searchTerm )
+				.draw();
+		});
 	});
 	</script>
 </head>
@@ -132,6 +156,7 @@
 	  
 	    <div class="row marketing">
 			<div class="col-lg-12">
+				<select id="sourceSelect"></select>
 				<table id="spellList">	
 					<thead>
 						<tr>			

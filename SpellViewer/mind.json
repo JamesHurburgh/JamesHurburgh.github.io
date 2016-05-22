@@ -227,7 +227,7 @@
 		]
 	},
 	{
-		"Name" : "[ 2 ] &nbsp; Eagle-Eye View",
+		"Name" : "Eagle-Eye View",
 		"SourceBook" : "Adamantine Arrow",
 		"SourcePage" : "182",
 		"Arcana Requirement" : "Mind 2 + Space 2",
@@ -1006,7 +1006,7 @@
 		]
 	},
 	{
-		"Name" : "[ 3 ] &nbsp; Induce Hoarding Instinct",
+		"Name" : "Induce Hoarding Instinct",
 		"SourceBook" : "Tome Of The Mysteries",
 		"SourcePage" : "138",
 		"Arcana Requirement" : "Mind 3",
@@ -1253,7 +1253,7 @@
 		]
 	},
 	{
-		"Name" : "[ 3 ] &nbsp; Prophetic Dream",
+		"Name" : "Prophetic Dream",
 		"SourceBook" : "Tome Of The Mysteries",
 		"SourcePage" : "28",
 		"Arcana Requirement" : "Mind 3 + Time 3",
@@ -1747,7 +1747,7 @@
 		]
 	},
 	{
-		"Name" : "[ 4 ] &nbsp; Gleaning The Crowd",
+		"Name" : "Gleaning The Crowd",
 		"SourceBook" : "Magical Traditions",
 		"SourcePage" : "139",
 		"Arcana Requirement" : "Mind 4",
@@ -1785,7 +1785,7 @@
 		]
 	},
 	{
-		"Name" : "[ 4 ] &nbsp; Lashes Of Fire",
+		"Name" : "Lashes Of Fire",
 		"SourceBook" : "Magical Traditions",
 		"SourcePage" : "42",
 		"Arcana Requirement" : "Mind 4 + Forces 4 + Fate 2",
@@ -2032,7 +2032,7 @@
 		]
 	},
 	{
-		"Name" : "[ 4 ] &nbsp; Silver Threads",
+		"Name" : "Silver Threads",
 		"SourceBook" : "Astral Realms",
 		"SourcePage" : "27",
 		"Arcana Requirement" : "Mind 4 + Space 4",
@@ -2051,7 +2051,7 @@
 		]
 	},
 	{
-		"Name" : "[ 4 ] &nbsp; Skeptic",
+		"Name" : "Skeptic",
 		"SourceBook" : "Adamantine Arrow",
 		"SourcePage" : "184",
 		"Arcana Requirement" : "Mind 4",
@@ -2165,7 +2165,7 @@
 		]
 	},
 	{
-		"Name" : "[ 4 ] &nbsp; Virtual Voyage",
+		"Name" : "Virtual Voyage",
 		"SourceBook" : "The Free Council",
 		"SourcePage" : "112",
 		"Arcana Requirement" : "Mind 4 + Forces 2",
@@ -2203,7 +2203,7 @@
 		]
 	},
 	{
-		"Name" : "[ 5 ] &nbsp; The Book Of Self",
+		"Name" : "The Book Of Self",
 		"SourceBook" : "Guardians Of The Veil",
 		"SourcePage" : "197",
 		"Arcana Requirement" : "Mind 5 + Matter 5",
