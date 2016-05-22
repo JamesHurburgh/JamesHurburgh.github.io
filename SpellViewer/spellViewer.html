@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>MtAw Spellviewer</title>
+    <title>MtAw Spell Book</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -21,155 +21,18 @@
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
 	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
 
-	<!-- Datatable - Buttons -->
+	<!-- Datatable - Buttons 
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.2.0/css/buttons.dataTables.min.css">
 	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.2.0/js/dataTables.buttons.min.js"></script>
-	
-	<!-- Datatable - Buttons - Column visibility control -->
-	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.2.0/js/buttons.colVis.min.js"></script>
-
-	
-	<!-- Dynatable 
-	
-	<link rel="stylesheet" href="https://github.com/alfajango/jquery-dynatable/blob/master/jquery.dynatable.css" />
-	<script src="https://github.com/alfajango/jquery-dynatable/blob/master/jquery.dynatable.js"></script>
 	-->
-	<script>
-	$(document).ready(function () {
 	
-		$.ajaxSetup({beforeSend: function(xhr){
-		  if (xhr.overrideMimeType)
-		  {
-			xhr.overrideMimeType("application/json");
-		  }
-		}
-		});
-		
-		loadJson = function ( url, callback ){
-			$.ajax({
-				url: url, 
-				  beforeSend: function(xhr){
-					if (xhr.overrideMimeType)
-					{
-					  xhr.overrideMimeType("application/json");
-					}
-				  },
-				dataType: 'json',
-				async: true,
-				data: null,
-				error: function (xhr, status) {
-					alert(status);
-				},
-				success: function(data, textStatus, request) {
-					callback(data);
-				}
-			});
-		}
-			
-		loadSpellSources = function (data) {	
-			
-			var sel = $('#sourceSelect');
-				sel.append($("<option>").attr('value','').text(''));
-			$(data).each(function() {
-				sel.append($("<option>").attr('value',this.Name).text(this.Name));
-			});
-		}
-		
-		loadSpells = function () {
-			$.ajax({
-				url: 'spells.json', 
-				  beforeSend: function(xhr){
-					if (xhr.overrideMimeType)
-					{
-					  xhr.overrideMimeType("application/json");
-					}
-				  },
-				dataType: 'json',
-				async: true,
-				data: null,
-				error: function (xhr, status) {
-					alert(status);
-				},
-				success: function(data, textStatus, request) {
-					insertSpellData(data);
-				}
-			});
-		}
-		
-		loadPractices = function(data) {
-			var sel = $('#practiceSelect');
-				sel.append($("<option>").attr('value','').text(''));
-			$(data).each(function() {
-				sel.append($("<option>").attr('value',this.Name).text(this.Name));
-			});
-		}
-		
-		loadArcanum = function(data) {
-			var sel = $('#arcanaSelect');
-				sel.append($("<option>").attr('value','').text(''));
-			$(data).each(function() {
-				sel.append($("<option>").attr('value',this.Name).text(this.Name));
-			});
-		}
-		
-		insertSpellData = function (json) {
-			for (var i = 0; i < json.length; i++) {
-				var nameLink = "<a href='spell.html\?spell="+json[i].Name+"'>"+json[i].Name+"</a>";
-				var nameLink = json[i].Name; // Until I get the spell page working use this.
-				
-				var sourceBookLink = "<a href='http://www.drivethrurpg.com/browse.php?keywords=" + json[i].SourceBook+"'>"+json[i].SourceBook + " p" + json[i].SourcePage+"</a>";
-				
-				var arcanaFormatted = json[i]['Arcana Requirement'];
-				
-				table.row.add([ 
-					nameLink, 
-					sourceBookLink,
-					arcanaFormatted,
-					json[i].Practice,
-					json[i].Action,
-					json[i].Duration,
-					json[i].Aspect,
-					json[i].Cost,
-					json[i].Effect.substr(0, 100) + "..."
-					]).draw();;
-			}
-		}
-		
-		$(document).ready(function(){			
-			table = $('#spellList').DataTable();
-			
-			loadJson('spells.json', loadSpells);
-			loadJson('sourceBooks.json', loadSpellSources);
-			loadJson('practices.json', loadPractices);
-			loadJson('arcanum.json', loadArcanum);
-			
-		});
-		
-		$('#sourceSelect').change(function() {
-			var searchTerm = $('#sourceSelect').val();
-			table
-				.columns( 1 )
-				.search( searchTerm )
-				.draw();
-		});
-		
-		$('#practiceSelect').change(function() {
-			var searchTerm = $('#practiceSelect').val();
-			table
-				.columns( 3 )
-				.search( searchTerm )
-				.draw();
-		});
-		
-		$('#arcanaSelect').change(function() {
-			var searchTerm = $('#arcanaSelect').val();
-			table
-				.columns( 2 )
-				.search( searchTerm )
-				.draw();
-		});
-	});
-	</script>
+	<!-- Datatable - Buttons - Column visibility control 
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.2.0/js/buttons.colVis.min.js"></script>
+	-->
+
+	<!-- SpellViewer js -->
+	<script type="text/javascript" charset="utf8" src="spellViewer.js"></script>
+	
 </head>
 <body>
     <div class="container">
@@ -185,7 +48,7 @@
       </div>-->
 	  
 	  <div class="jumbotron">
-        <h1>MtAw Spellviewer</h1>
+        <h1>MtAw Spell Book</h1>
         <p class="lead">The spells below are for Mage the Awakening.</p>
       </div>
 	  
