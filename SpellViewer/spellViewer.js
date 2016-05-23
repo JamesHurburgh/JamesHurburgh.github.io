@@ -96,7 +96,7 @@ $(document).ready(function () {
 				var bookName = json[i].SourceBook;
 				var sourceBookLink = "<a href='http://www.drivethrurpg.com/browse.php?keywords=" + bookName + "'>" + bookName + " p" + json[i].SourcePage + "</a>";
 
-				var arcanaFormatted = json[i]['Arcana Requirement'];
+				var arcanaFormatted = json[i].ArcanaRequirement;
 
 				table.row.add([
 						nameLink,

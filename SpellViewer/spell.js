@@ -32,14 +32,26 @@ $(document).ready(function () {
 	
 	function displaySpell(spell){
 		$('#SpellName').text(spell.Name);
+		$('#PrimaryArcana').text(spell.PrimaryArcana);
 		$('#Source').text(spell.SourceBook + ' p' + spell.SourcePage);
-		$('#ArcanaRequirements').text(spell['Arcana Requirement']);
+		$('#ArcanaRequirements').text(spell.ArcanaRequirement);
 		$('#Practice').text(spell.Practice);
 		$('#Action').text(spell.Action);
 		$('#Duration').text(spell.Duration);
 		$('#Aspect').text(spell.Aspect);
 		$('#Cost').text(spell.Cost);
 		$('#Effect').text(spell.Effect);
+		
+		// TODO account for multiple rotes
+		var rote = spell.Rotes[0];
+		if(rote){
+			$('#RoteName').text(rote.RoteName);
+			$('#RoteOrder').text(rote.RoteOrder);
+			$('#RoteDicePool').text(rote.RoteDicePool_Attribute + " + " + rote.RoteDicePool);
+			$('#RoteDescription').text(rote.RoteDescription);
+				
+		}
+		
 	}
 	
 	function loadSpell(data){
