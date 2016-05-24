@@ -91,7 +91,8 @@ $(document).ready(function () {
 
 		insertSpellData = function (json) {
 			for (var i = 0; i < json.length; i++) {
-				var nameLink = "<a target='_blank' href='spell.html\?spell=" + json[i].Name + "'>" + json[i].Name + "</a>";
+				var params = jQuery.param( { spell: escape(json[i].Name) } );
+				var nameLink = "<a target='_blank' href='spell.html\?" + params + "'>" + json[i].Name + "</a>";
 				// var nameLink = json[i].Name; // Until I get the spell page working use this.
 				var bookName = json[i].SourceBook;
 				var sourceBookLink = "<a href='http://www.drivethrurpg.com/browse.php?keywords=" + bookName + "'>" + bookName + " p" + json[i].SourcePage + "</a>";

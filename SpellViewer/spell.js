@@ -45,19 +45,26 @@ $(document).ready(function () {
 		// TODO account for multiple rotes
 		var rote = spell.Rotes[0];
 		if(rote){
+			var resisted = "";
+			var contested = "";
+			if(rote.RoteDicePool_Resisted){
+				resisted = " - " + rote.RoteDicePool_Resisted;
+			}
+			if(rote.RoteDicePool_Contested){
+				contested = " vs. " + rote.RoteDicePool_Contested;
+			}
+			var dicePool = rote.RoteDicePool_Attribute + " + " + rote.RoteDicePool_Skill + " + " + spell.PrimaryArcana + resisted + contested;
 			$('#RoteName').text(rote.RoteName);
 			$('#RoteOrder').text(rote.RoteOrder);
-			$('#RoteDicePool').text(rote.RoteDicePool_Attribute + " + " + rote.RoteDicePool);
-			$('#RoteDescription').text(rote.RoteDescription);
-				
-		}
-		
+			$('#RoteDicePool').text(dicePool);
+			$('#RoteDescription').text(rote.RoteDescription);				
+		}		
 	}
 	
 	function loadSpell(data){
 		var spellName = getParameterByName('spell');
 		$(data).each(function () {
-			if(this.Name == spellName){
+			if(escape(this.Name) == spellName){
 				displaySpell(this);
 			}
 		});
