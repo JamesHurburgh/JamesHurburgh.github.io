@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+	var sourceBooks;
+	
 	function getParameterByName(name, url) {
 		if (!url) url = window.location.href;
 		name = name.replace(/[\[\]]/g, "\\$&");
@@ -30,10 +32,28 @@ $(document).ready(function () {
 		});
 	}
 	
+	function loadSourceBooks(data) {
+
+		sourceBooks = data;
+	}
+	
 	function displaySpell(spell){
+		
+		document.title = spell.Name;
 		$('#SpellName').text(spell.Name);
 		$('#PrimaryArcana').text(spell.PrimaryArcana);
 		$('#Source').text(spell.SourceBook + ' p' + spell.SourcePage);
+		
+		sourceBooks.forEach(function( sourceBook, index ) {
+			if(sourceBook.Name == spell.SourceBook){
+				$('#SourceImage').attr( 'src', sourceBook.Image );
+				
+				$('#amazonLink').attr( 'href', sourceBook.Links.Amazon );
+				$('#driveThruRpgLink').attr( 'href', sourceBook.Links.DriveThruRpg );
+				$('#wikiaLink').attr( 'href', sourceBook.Links.Wikia );
+			}
+		});
+		
 		$('#ArcanaRequirements').text(spell.ArcanaRequirement);
 		$('#Practice').text(spell.Practice);
 		$('#Action').text(spell.Action);
@@ -70,6 +90,7 @@ $(document).ready(function () {
 		});
 	}
 	
+	loadJson('data/sourceBooks.json', loadSourceBooks);
 	loadJson('data/spells.json', loadSpell);
 	
 });

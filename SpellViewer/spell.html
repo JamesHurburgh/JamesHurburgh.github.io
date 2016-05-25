@@ -7,12 +7,13 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>MtAw Spell Book</title>
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
 
 	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://bootswatch.com/readable/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
 	
-	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 	
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -35,32 +36,67 @@
             <li role="presentation"><a href="./contact.html">Contact</a></li>-->
           </ul>
         </nav>
-        <h3 class="text-muted">MtAw Spell Viewer</h3>
+        <h3 class="text-muted">MtAw Spell Book</h3>
       </div>
 	  
-	  <div class="jumbotron">
-        <h1 id="SpellName">Loading Spell Name...</h1>
+	  <div class="well">
+        <h2 id="SpellName">Loading Spell Name...</h2>
         <p class="lead" id="PrimaryArcana">Loading Primary Arcana...</p>
       </div>
 	  
 	    <div class="row marketing">
-			<div class="col-lg-12" style="clear:both;">				
-				<h3>Details</h3>
-					<span class="label label-default">Requirements</span><div id="ArcanaRequirements"></div>
-					<span class="label label-default">Practice</span><div id="Practice"></div>
-					<span class="label label-default">Action</span><div id="Action"></div>
-					<span class="label label-default">Duration</span><div id="Duration"></div>
-					<span class="label label-default">Aspect</span><div id="Aspect"></div>
-					<span class="label label-default">Cost</span><div id="Cost"></div>		
-				<h3>Effect</h3>
-					<div id="Effect" class="well"></div>		
-				<h3>Rote/s</h3>
-					<h4 id="RoteName"></h4>
-					<span class="label label-default">Order</span><div id="RoteOrder"></div>
-					<span class="label label-default">Dice Pool</span><div id="RoteDicePool"></div>
-					<div id="RoteDescription" class="well"></div>
-				<div id="Source"></div>	
+			<div class="col-lg-3">
+				<div class="panel panel-default">
+				  <div class="panel-heading"><h3>Details</h3></div>
+				  <div class="panel-body">
+					<p class="label label-info">Requirements</p><p id="ArcanaRequirements"></p>
+					<p class="label label-info">Practice</p><p id="Practice"></p>
+					<p class="label label-info">Action</p><p id="Action"></p>
+					<p class="label label-info">Duration</p><p id="Duration"></p>
+					<p class="label label-info">Aspect</p><p id="Aspect"></p>
+					<p class="label label-info">Cost</p><p id="Cost"></p>
+				  </div>
+				</div>
 			</div>
+			
+			<div class="col-lg-9">		
+				<div class="panel panel-default">
+				  <div class="panel-heading"><h3>Effect</h3></div>
+				  <div class="panel-body" id="Effect">
+				  </div>
+				</div>					
+			</div>
+			
+			<div class="col-lg-12">	
+				<div class="panel panel-default">
+				  <div class="panel-heading"><h3>Rotes</h3></div>
+				  <div class="panel-body">
+					<div class="col-lg-3">	
+						<h4 id="RoteName"></h4>
+						<span class="label label-info">Order</span><div id="RoteOrder"></div>
+						<span class="label label-info">Dice Pool</span><div id="RoteDicePool"></div>
+					</div>
+					<div class="col-lg-6">	
+						<div id="RoteDescription"></div>
+					</div>
+					
+					<div class="col-lg-3">
+						<div class="panel panel-default">
+						  <div class="panel-body">
+							<img id="SourceImage" src="" width="150px"/><br/>
+							<a href="" target="_blank" id="amazonLink"><img src="http://www.google.com/s2/favicons?domain_url=www.amazon.com.au"/></a>
+							<a href="" target="_blank" id="driveThruRpgLink"><img src="http://www.google.com/s2/favicons?domain_url=www.drivethrurpg.com"/></a>
+							<a href="" target="_blank" id="wikiaLink"><img src="http://www.google.com/s2/favicons?domain_url=www.wikia.com"/></a>
+						  </div>
+						  <div class="panel-footer" id="Source">
+						  </div>
+						</div>
+					</div>	
+					
+				  </div>
+				</div>
+			</div>
+				
 		</div>
 
       <footer class="footer">
