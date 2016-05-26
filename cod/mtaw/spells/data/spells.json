@@ -3010,7 +3010,7 @@
 		"ArcanaRequirement" : "Fate 5",
 		"Practice" : "Making",
 		"Action" : "Extended",
-		"Duration" : "Special (see below)",
+		"Duration" : "Special",
 		"Aspect" : "Covert",
 		"Cost" : "1 Mana, plus 1 Willpower from each party affected",
 		"Effect" : "This spell doesn't see common use, especially in modern times, but it is nonetheless one of the most frequently cited and quoted sections of Orpheus' Last Riddle. The spell is buried in a long, moving poem written to Eurydice by Orpheus. Part of the poem remarks upon her beauty and her grace, but much of it is a collection of moments -- descriptions of how sunlight played on her hair on a particular day, or the sound of her laugh or of something she whispered to him while they made love. The spell itself does not create love, but gives it a supernatural depth. Lovers who undertake this spell must be very, very careful -- if love sours, this spell becomes a curse. The mage must join the lovers' hands as she completes the spell, and the lovers must make a declaration of their ardor for each other. This can be an elaborate vow or a simple \"I love you,\" but when the spell is complete, the love takes on a geas-like quality. This spell is always cast with a conditional Duration. The condition is this: If one lover betrays the other, the spell's effects immediately end and each party becomes unable to regain Willpower by any method while the other lives. This is, of course, a fairly easy situation to remedy. The lovers enjoy the following effects:",
@@ -3872,7 +3872,7 @@
 		"Action" : "Extended",
 		"Duration" : "Prolonged (this spell uses the advanced prolongation factors)",
 		"Aspect" : "Covert",
-		"Cost" : "Variable; see below",
+		"Cost" : "Special",
 		"Effect" : "The mage creates a cursed item that will cause electrical components to short out, malfunction and otherwise stop working in the owner's presence. Computers, automobiles, elevators, heaters, hair dryers and cell phones comprise just part of the list of rebellious devices. Malfunctions range in seriousness from merely inconvenient to life-threatening. The mage must add five to the target number per point of Mana spent. Whenever the item's owner is in proximity to a functioning electronic device, and there is some chance that its malfunction might harm him, or seriously hamper his pursuit of his current goals, the Storyteller rolls a die pool equal to the Mana spent on this spell during item creation. On a success, the device malfunctions. On an exceptional success, the device's malfunction threatens the owner's life. (Bystanders may suffer collateral damage.) A one-die bonus accrues if the item owner is acting against the interests of the order the creating mage belonged to at the time of the item's enchantment.",
 		"Rotes" : [{
 				"RoteOrder" : "Free Council Rote",
@@ -4138,7 +4138,7 @@
 		"Action" : "Instant",
 		"Duration" : "Prolonged (1 scene, but see below)",
 		"Aspect" : "Vulgar",
-		"Cost" : "Vulgar",
+		"Cost" : "Special",
 		"Effect" : "This spell creates a matrix of kinetic and magical energy around the caster that's sensitive to invading magic. This whirling shard of bound force orbits him, avoiding nearby objects and leaving nothing other than a slight breeze to indicate its existence. When anyone casts a damaging spell on the caster the matrix lashes out, intercepting the intrusion and following it back to strike the source. Once cast, this spell acts like the spell Magic Shield, providing 1 point of armor per dot of the caster's Prime Arcanum. In addition, the spell strikes the source of the magical attack with a bolt of kinetic energy, inflicting 1 point of bashing damage per success. However, the same energy that shields the mage is used in the attack, like a sort of \"point defense\" against the spell that blows through to hit the enemy caster as well. Reduce the number of successes calculated for the attack by the armor rating provided by the spell. For example, if the caster scores 8 successes and has Prime 3, the counterattack is only treated as if it had 5 successes. The caster may voluntarily reduce the armor protection granted by the spell to increase its counteroffensive ability. The counterattack does not use one of the caster's actions. If the spell came from an artifact or imbued item, the kinetic energy strikes that instead. By spending 1 Mana, the caster can make the spell last 1 day. However, once the spell delivers its counterattack it is expended, whether the caster spent Mana or not. It must be cast again.",
 		"Rotes" : [{
 				"RoteOrder" : "Free Council Rote",
@@ -5420,7 +5420,7 @@
 		"Action" : "Extended",
 		"Duration" : "Prolonged (this spell uses the advanced prolongation factors)",
 		"Aspect" : "Covert",
-		"Cost" : "Variable; see below",
+		"Cost" : "Special",
 		"Effect" : "The mage creates a cursed object, most often one carried or worn on the person, that attracts to its owner the attention of carnivorous animals. The item emits the distress pheromones of a wounded animal, triggering attack instincts of nearby predators. Depending on the location, these might include raptors, carrion-eating birds, coyotes, hyenas, hogs, wolves, bears or big cats. In urban settings, the greatest danger will come from domesticated dogs, whose feral instincts kick into overdrive when aroused by the presence of a cursed item. The density of dog populations in cities makes these items even more dangerous there than in wilderness areas, where predator populations are spread out in relation to their food sources. Still, a cursed item makes a handy addition to an enemy's sleeping bag as he prepares for a camping trip to a grizzly-infested mountain pass. A time interval passes between each serious animal attack, as determined by the amount of Mana spent during item creation. The item creator must also add five to the spell's target number per point of Mana spent. Item owners may suffer additional inconsequential animal attacks between intervals, most often from small creatures such as swallows or gerbils, who are incapable of infl icting measurable damage. Dogs may strain at their leashes but fail to escape from their masters to attack. Note that under some circumstances, for example, while the owner is behind the wheel of a speeding car, even a swarm of small animals could pose a serious risk to life and limb.",
 		"Rotes" : [{
 				"RoteOrder" : "Adamantine Arrow Rote",
@@ -5814,7 +5814,7 @@
 		"Action" : "Instant",
 		"Duration" : "Prolonged (one scene)",
 		"Aspect" : "Vulgar",
-		"Cost" : "Special (see below)",
+		"Cost" : "Special",
 		"Effect" : "Heroic legends are rife with tales of warriors who kept fighting long after sustaining injuries that should have killed any human being. Emulating these great figures of myth, some Arrows will themselves to mend in seconds injuries that might otherwise take months to heal. After casting this spell, the Arrow may, for the remainder of the scene, reflexively spend points of Mana on a one-for-one basis to heal levels of bashing or lethal damage, though bashing damage must be healed in preference to lethal if the mage is currently suffering from both, as the body attempts to cope with less elaborate hurts before tackling deeper wounds. The willworker is limited by the amount of Mana he might normally spend in a turn -- including those points of Mana spent for other reasons, such as in the casting of spells -- according to his Gnosis. This spell is subject to Disbelief and Unraveling if used to heal lethal damage in front of Sleepers, and has no effect at all on aggravated damage.",
 		"Rotes" : [{
 				"RoteOrder" : "Adamantine Arrow Rote",
@@ -11407,7 +11407,7 @@
 		"Action" : "Extended",
 		"Duration" : "Prolonged (this spell uses the advanced prolongation factors)",
 		"Aspect" : "Covert",
-		"Cost" : "Variable; see below",
+		"Cost" : "Special",
 		"Effect" : "The mage curses an item so that it penalizes the use of one or more Arcana.",
 		"Rotes" : [{
 				"RoteOrder" : "Silver Ladder Rote",
@@ -12792,7 +12792,7 @@
 		"Action" : "Extended",
 		"Duration" : "Prolonged (this spell uses the advanced prolongation factors)",
 		"Aspect" : "Covert",
-		"Cost" : "Variable; see below",
+		"Cost" : "Special",
 		"Effect" : "The mage enchants an item so that it changes its position in space when it is touched by an unauthorized user. The item teleports to a new location within its range of movement. If there's a hidden or inaccessible location within that radius, the item goes there. Otherwise it moves as far away as it can without re-materializing within a solid object. The item may move in a random direction, or make a series of consistent hops in the same direction. Although the item is not blessed with intelligence, the object does appear to calculate its moves to engineer maximum exasperation in the interloper. The item's range of movement depends on the Mana spent on the original enchantment. The target number is increased by five successes per point of Mana spent. The teleportation effect evokes Disbelief in Sleeper witnesses.",
 		"Rotes" : [{
 				"RoteOrder" : "",
@@ -13287,7 +13287,7 @@
 		"Action" : "Instant",
 		"Duration" : "Prolonged (one scene)",
 		"Aspect" : "Vulgar",
-		"Cost" : "Varies",
+		"Cost" : "Special",
 		"Effect" : "Just as the sun is one thing and yet exists everywhere in half of the world at once, a mage with an advanced knowledge of Space and Life (and, quite possibly, some understanding of Matter and/or Mind) can simultaneously be in several places physically. The mage could, if he wished, chop a winter's worth of firewood in an hour or so, guard every entrance to a building, or even become a one-man mob. This spell is an advanced version of Co-Location. With the Life 4 version of this spell, the mage's duplicates (one per success) are substantial, but are all extensions of the same physical presence. When one is wounded, for example, all feel pain and suffer Health wounds of damage. (The casting mage himself does not suffer wounds unless he is attacked directly.) Without adding the appropriate level of Mind (1 or 3 for multitasking), these copies do exactly what the mage does and all share in a single Defense (meaning that any attack against any copy causes the Defense of all to erode by the same amount over the course of a turn). It costs one Mana to add multitasking to the spell, regardless of the number of duplicates. With the Life 5 version of the spell, the mage can create distinct clones of himself at different locations, one clone per success and one Mana per clone. Each clone has its own Health and Defense. If a mage wants his duplicates' equipment (items intended to interact with other beings such knives or guns) to be substantial, regardless of which version of the spell is used, Matter 5 must be added to the casting and one Mana per object must be spent (which gives physical substance to each copy of the item possessed by all duplicates). As with the simpler Co-Location spell, the mage's weakest sympathetic connection (the one with the highest spellcasting penalty) is used when casting this spell.",
 		"Rotes" : [{
 				"RoteOrder" : "Adamantine Arrow Rote",
@@ -14433,7 +14433,7 @@
 		"Action" : "Extended",
 		"Duration" : "Prolonged (one scene)",
 		"Aspect" : "Vulgar",
-		"Cost" : "Special, see below",
+		"Cost" : "Special",
 		"Effect" : "The mage meditates at a powerful Hallow, reaching across the Abyss to the Supernal Realm of her Awakening, and calls forth one of the dragons. To do so, the character must speak in the tongue of the dragons (which is one reason that Llana does not allow non-members of the Disciples of the World Dragon to witness this spell in progress). The mage is free to request a specific dragon, but any dragon can use the path thus created. The dragon rides the pathway through the Abyss and into the Fallen World, emerging from the Hallow to speak with the mage. The target number of successes is determined as follows. The base is 10 successes. Add one success for every point of the Hallow's rating below five (so a one-dot Hallow adds four successes to the required total). Add one success if the resonance of the Hallow is directly opposed to the Realm that the mage is trying to reach (Storyteller's discretion). Add one success if the character is trying to call on a specific dragon. Add one success if the dragon in question is unlikely to be found in the Realm that the mage is trying to reach (again, Storyteller's discretion). This spell costs 10 Mana to cast. The mage can draw the Mana from the Hallow, from his own pool, or he can add any Mana he does not wish to pay as successes to the target number. If the spell succeeds, the Hallow splits open and a dragon appears. Thus far, no dragon thus summoned has ever attacked the summoner, though Llana maintains that it could happen if the spell were cast improperly. The dragon can give the character information about whatever topic she might desire, especially news and descriptions of the Supernal Realms, new rotes, or weaknesses and powers of Abyssal creatures. The dragon always tells the cast to \"find the World Dragon,\" however.",
 		"Rotes" : [{
 				"RoteOrder" : "Disciples Of The World Dragon Rote",
@@ -15204,7 +15204,7 @@
 		"Action" : "Extended",
 		"Duration" : "Prolonged (one scene)",
 		"Aspect" : "Covert",
-		"Cost" : "Special (see below)",
+		"Cost" : "Special",
 		"Effect" : "This spell allows the mage to \"freeze\" an object in time, preserving it in its current state. Despite the name, though, the spell isn't necessarily permanent. Students of the Last Riddle feel that this spell was a precursor to whatever magic currently enchants the grimoire, since that magic is considerably more potent than this spell. This spell functions on any single object up to Size 10. While this spell does function on machines, it renders them inoperable for the duration of the spell. The target number of successes is equal to twice the Size of the object, and the mage must expend Mana equal to the object's Structure. When the ritual is complete, the object remains in its current state for 1 scene. It cannot be altered, damaged, defaced, or repaired, though it can be moved. A gun imbued with this spell could not be fired, since no part of the object can be removed (and so the bullet could not leave the chamber). A car using this spell would not function, as doing so requires gasoline to be consumed, though a bicycle would function normally. A painting could not be marred or damaged even if tossed into a bonfire. Any attempted change to an object won't \"take\" -- fire ignores the painting, the magazine on the pistol won't eject. At Time 5, this spell can be cast with advanced Prolongation factors, allowing an Indefinite duration.",
 		"Rotes" : [{
 				"RoteOrder" : "Orpheus' Last Riddle Rote",

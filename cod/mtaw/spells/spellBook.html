@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>MtAw Spell Book</title>
+	
+	<!-- Bootstrap theme -->
+	<link rel="stylesheet" href="ref/bootstrap.min.css">
+	
+	<!-- jQuery -->
+	<script   src="ref/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="ref/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
+	<!-- Datatable -->
+	<link rel="stylesheet" type="text/css" href="ref/jquery.dataTables.css"> 
+	<script type="text/javascript" charset="utf8" src="ref/jquery.dataTables.js"></script>
+
+	<!-- Datatable - Buttons 
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.2.0/css/buttons.dataTables.min.css">
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.2.0/js/dataTables.buttons.min.js"></script>
+	-->
+	
+	<!-- Datatable - Buttons - Column visibility control 
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.2.0/js/buttons.colVis.min.js"></script>
+	-->
+
+	<!-- Spinner.js -->
+	<script type="text/javascript" charset="utf8" src="http://spin.js.org/spin.min.js"></script>
+
+	<!-- SpellBook.js -->
+	<script type="text/javascript" charset="utf8" src="spellBook.js"></script>
+	<link rel="stylesheet" type="text/css" href="spellBook.css"></script>
+	
+</head>
+<body>
+	<div id="overlay" style="display: none;"></div>
+    <div class="container" id="container">
+	    <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="./spellViewer.html">Spell Book</a></li>
+            <!--<li role="presentation"><a href="./about.html">About</a></li>
+            <li role="presentation"><a href="./contact.html">Contact</a></li>-->
+          </ul>
+        </nav>
+        <h3 class="text-muted">MtAw Spell Book</h3>
+      </div>
+	    <div class="row marketing">
+			<div class="col-lg-12">
+				<div class="panel panel-default">
+					  <div class="panel-heading"><h3>Search \ Filter</h3></div>
+					  <div class="panel-body">
+						<div class="col-lg-2">
+							<label for="sourceSelect" class="control-label">Source</label>
+							<select class="form-control input-sm" id="sourceSelect"></select>
+						</div>
+						<div class="col-lg-2">
+							<label for="arcanaSelect" class="control-label">Arcana</label>
+							<select class="form-control input-sm" id="arcanaSelect"></select>
+						</div>
+						<!--<div style="float:left;">
+							<span class="label label-default">Compare</span></br>
+							<select id="arcanaLevelComparator"></select>
+						</div>-->
+						<div class="col-lg-2">
+							<label for="arcanaLevelSelect" class="control-label">Level</label>
+							<select class="form-control input-sm" id="arcanaLevelSelect"></select>
+						</div>
+						<div class="col-lg-2">
+							<label for="practiceSelect" class="control-label">Practice</label>
+							<select class="form-control input-sm" id="practiceSelect"></select>
+						</div>
+						<div class="col-lg-2">
+							<label for="actionSelect" class="control-label">Action</label>
+							<select class="form-control input-sm" id="actionSelect"></select>
+						</div>	
+						<div class="col-lg-2">
+							<label for="durationSelect" class="control-label">Duration</label>
+							<select class="form-control input-sm" id="durationSelect"></select>
+						</div>	
+						<div class="col-lg-2">
+							<label for="aspectSelect" class="control-label">Aspect</label>
+							<select class="form-control input-sm" id="aspectSelect"></select>
+						</div>	
+						<div class="col-lg-2">
+							<label for="costSelect" class="control-label">Cost</label>
+							<select class="form-control input-sm" id="costSelect"></select>
+						</div>
+						<div class="col-lg-2">
+							<label for="clearFiltersButton" class="control-label">Options</label>
+							<a href="#" class="btn btn-link" id="clearFiltersButton">Clear filters</a>
+						</div>	
+					</div>	
+					  <div class="panel-footer">	
+			
+					<table id="spellList" class="table table-bordered">	
+						<thead>
+							<tr>			
+								<th>Name</th>
+								<th>Source</th>
+								<th>Arcana Requirement</th>
+								<th>Practice</th>
+								<th>Action</th>
+								<th>Duration</th>
+								<th>Aspect</th>
+								<th>Cost</th>
+								<th>Effect</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+					</div>	
+				</div>	
+			</div>
+		</div>
+
+      <footer class="footer">
+        <p>&copy; 2016 James Hurburgh.</p>
+      </footer>
+    </div>
+</body>
+</html>

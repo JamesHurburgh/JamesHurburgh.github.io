@@ -7,7 +7,7 @@ $(document).ready(function () {
 		}
 	});
 
-	loadJson = function (url, callback) {
+	function loadJson(url, callback) {
 		$.ajax({
 			url : url,
 			beforeSend : function (xhr) {
@@ -27,18 +27,9 @@ $(document).ready(function () {
 		});
 	}
 
-	function loadSpellSources(data) {
-
-		var sel = $('#sourceSelect');
-		sel.append($("<option>").attr('value', '').text(''));
-		$(data).each(function () {
-			sel.append($("<option>").attr('value', this.Name).text(this.Name));
-		});
-	}
-
-	function loadSpells() {
+	function readJson(url) {
 		$.ajax({
-			url : 'spells.json',
+			url : url,
 			beforeSend : function (xhr) {
 				if (xhr.overrideMimeType) {
 					xhr.overrideMimeType("application/json");
@@ -51,8 +42,32 @@ $(document).ready(function () {
 				alert(status);
 			},
 			success : function (data, textStatus, request) {
-				insertSpellData(data);
+				return data;
 			}
+		});
+	}
+	function ajax(url) {
+	  return new Promise(function(resolve, reject) {
+		var xhr = new XMLHttpRequest();
+		xhr.onload = function() {
+		  resolve(this.responseText);
+		};
+		xhr.dataType = 'json';
+		xhr.async = true;
+		xhr.data = null;
+		xhr.overrideMimeType("application/json");
+		xhr.onerror = reject;
+		xhr.open('GET', url);
+		xhr.send();
+	  });
+	}
+
+	function loadSpellSources(data) {
+
+		var sel = $('#sourceSelect');
+		sel.append($("<option>").attr('value', '').text(''));
+		$(data).each(function () {
+			sel.append($("<option>").attr('value', this.Name).text(this.Name));
 		});
 	}
 
@@ -109,6 +124,16 @@ $(document).ready(function () {
 		sel.append($("<option>").attr('value', 'Vulgar').text('Vulgar'));
 	}
 
+	function loadCosts() {
+		var sel = $('#costSelect');
+		sel.append($("<option>").attr('value', '').text(''));
+		sel.append($("<option>").attr('value', 'None').text('None'));
+		sel.append($("<option>").attr('value', 'Mana').text('Mana'));
+		sel.append($("<option>").attr('value', 'Willpower').text('Willpower'));
+		sel.append($("<option>").attr('value', 'Special').text('Special'));
+		sel.append($("<option>").attr('value', 'Willpower').text('Willpower'));
+	}
+
 	function loadArcanumLevelComparators() {
 		var sel = $('#arcanaLevelComparator');
 		sel.append($("<option>").attr('value', '=').text('='));
@@ -137,6 +162,7 @@ $(document).ready(function () {
 					json[i].Effect.substr(0, 50) + "..."
 				]).draw(); ;
 		}
+		spellsLoading = false;
 	}
 
 	function arcanaSearch() {
@@ -153,7 +179,8 @@ $(document).ready(function () {
 		.search(searchTerm)
 		.draw();
 	}
-
+	
+	// Handlers
 	$('#sourceSelect').change(function () {
 		var searchTerm = $('#sourceSelect').val();
 		table
@@ -206,16 +233,88 @@ $(document).ready(function () {
 		.draw();
 	});
 
+	$('#costSelect').change(function () {
+		var searchTerm = $('#costSelect').val();
+		table
+		.columns(7)
+		.search(searchTerm)
+		.draw();
+	});
+	
+	$('#clearFiltersButton').click(function () {
+		$("#sourceSelect").val($("#sourceSelect option:first").val()).change();
+		$("#arcanaSelect").val($("#arcanaSelect option:first").val()).change();
+		$("#arcanaLevelSelect").val($("#arcanaLevelSelect option:first").val()).change();
+		$("#practiceSelect").val($("#practiceSelect option:first").val()).change();
+		$("#actionSelect").val($("#actionSelect option:first").val()).change();
+		$("#durationSelect").val($("#durationSelect option:first").val()).change();
+		$("#aspectSelect").val($("#aspectSelect option:first").val()).change();
+		$("#costSelect").val($("#costSelect option:first").val()).change();
+		table
+		 .search( '' )
+		 .columns().search( '' )
+		 .draw();
+	});
+	
+	// initialisation
+	
+	var spellsLoading = true;
+	var loadingSpinner;
+	
+	function startLoadingSpinner(){
+		$('#overlay').show();
+		var opts = {
+			  lines: 17 // The number of lines to draw
+			, length: 28 // The length of each line
+			, width: 21 // The line thickness
+			, radius: 77 // The radius of the inner circle
+			, scale: 1 // Scales overall size of the spinner
+			, corners: 1 // Corner roundness (0..1)
+			, color: '#000' // #rgb or #rrggbb or array of colors
+			, opacity: 0 // Opacity of the lines
+			, rotate: 0 // The rotation offset
+			, direction: 1 // 1: clockwise, -1: counterclockwise
+			, speed: 0.5 // Rounds per second
+			, trail: 83 // Afterglow percentage
+			, fps: 20 // Frames per second when using setTimeout() as a fallback for CSS
+			, zIndex: 2e9 // The z-index (defaults to 2000000000)
+			, className: 'spinner' // The CSS class to assign to the spinner
+			, top: '50%' // Top position relative to parent
+			, left: '50%' // Left position relative to parent
+			, shadow: false // Whether to render a shadow
+			, hwaccel: false // Whether to use hardware acceleration
+			, position: 'absolute' // Element positioning
+			};
+			loadingSpinner = new Spinner(opts).spin(document.getElementById('container'));
+	}
+	
+	function stopLoadingSpinner(){
+			$('#overlay').hide();
+			loadingSpinner.stop();
+	}
+		
+	startLoadingSpinner();
+
 	table = $('#spellList').DataTable();
 
-	loadJson('data/spells.json', insertSpellData);
-	loadJson('data/sourceBooks.json', loadSpellSources);
-	loadJson('data/arcanum.json', loadArcanum);
+	$.getJSON( "data/spells.json")
+	.done(function(data)	{ insertSpellData(data); })
+	.done(function() 		{ stopLoadingSpinner(); })
+	
+	$.getJSON( "data/sourceBooks.json")
+	.done(function(data)	{ loadSpellSources(data); })
+	
+	$.getJSON( "data/arcanum.json")
+	.done(function(data)	{ loadArcanum(data); })
+	
+	$.getJSON( "data/practices.json")
+	.done(function(data)	{ loadPractices(data); })
+		
 	loadArcanumLevels();
 	loadArcanumLevelComparators();
-	loadJson('data/practices.json', loadPractices);
 	loadActions();
 	loadDurations();
 	loadAspects();
+	loadCosts();
 
-	});
+});
