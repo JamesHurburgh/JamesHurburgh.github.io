@@ -61,6 +61,7 @@ $(document).ready(function () {
 		$('#Aspect').text(spell.Aspect);
 		$('#Cost').text(spell.Cost);
 		$('#Effect').text(spell.Effect);
+		$('#Notes').text(spell.Notes);
 		
 		// TODO account for multiple rotes
 		var rote = spell.Rotes[0];

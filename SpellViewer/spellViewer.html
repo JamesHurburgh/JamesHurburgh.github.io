@@ -6,20 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>MtAw Spell Book</title>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://bootswatch.com/readable/bootstrap.min.css">
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
 	
+	<!-- Bootstrap theme -->
+	<link rel="stylesheet" href="https://bootswatch.com/readable/bootstrap.min.css">
+	
+	<!-- jQuery -->
 	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 	
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	
 	<!-- Datatable -->
-	<!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.css"> -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.css"> 
 	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
 
 	<!-- Datatable - Buttons 
@@ -52,27 +50,38 @@
 				<div class="panel panel-default">
 					  <div class="panel-heading"><h3>Search \ Filter</h3></div>
 					  <div class="panel-body">
-						<div style="float:left;">
-							<span class="label label-default">Source</span></br>
-							<select id="sourceSelect"></select>
+						<div class="col-lg-2">
+							<label for="sourceSelect" class="control-label">Source</label>
+							<select class="form-control input-sm" id="sourceSelect"></select>
 						</div>
-						<div style="float:left;">
-							<span class="label label-default">Arcana</span></br>
-							<select id="arcanaSelect"></select>
+						<div class="col-lg-2">
+							<label for="arcanaSelect" class="control-label">Arcana</label>
+							<select class="form-control input-sm" id="arcanaSelect"></select>
 						</div>
 						<!--<div style="float:left;">
 							<span class="label label-default">Compare</span></br>
 							<select id="arcanaLevelComparator"></select>
 						</div>-->
-						<div style="float:left;">
-							<span class="label label-default">Level</span></br>
-							<select id="arcanaLevelSelect">
-							</select>
+						<div class="col-lg-2">
+							<label for="select" class="control-label">Level</label>
+							<select class="form-control input-sm" id="arcanaLevelSelect"></select>
 						</div>
-						<div style="float:left;">
-							<span class="label label-default">Practice</span></br>
-							<select id="practiceSelect"></select>
+						<div class="col-lg-2">
+							<label for="select" class="control-label">Practice</label>
+							<select class="form-control input-sm" id="practiceSelect"></select>
 						</div>
+						<div class="col-lg-2">
+							<label for="select" class="control-label">Action</label>
+							<select class="form-control input-sm" id="actionSelect"></select>
+						</div>	
+						<div class="col-lg-2">
+							<label for="select" class="control-label">Duration</label>
+							<select class="form-control input-sm" id="durationSelect"></select>
+						</div>	
+						<div class="col-lg-2">
+							<label for="select" class="control-label">Aspect</label>
+							<select class="form-control input-sm" id="aspectSelect"></select>
+						</div>	
 					</div>	
 					  <div class="panel-footer">	
 			
@@ -101,7 +110,6 @@
       <footer class="footer">
         <p>&copy; 2016 James Hurburgh.</p>
       </footer>
-
-    </div> <!-- /container -->
+    </div>
 </body>
 </html>
