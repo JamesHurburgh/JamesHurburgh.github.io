@@ -1,6 +1,8 @@
 $(document).ready(function () {
 
 	var sourceBooks;
+	var UNFILLED_CIRCLE = "⚪";
+	var FILLED_CIRCLE = "⚫";
 	
 	function getParameterByName(name, url) {
 		if (!url) url = window.location.href;
@@ -54,7 +56,23 @@ $(document).ready(function () {
 			}
 		});
 		
-		$('#ArcanaRequirements').text(spell.ArcanaRequirement);
+		var arcanaRequirement = spell.ArcanaRequirement;
+		if(spell.Requirements){
+			arcanaRequirement = ''; // Remove this once all spells have correctly formatted requirements
+			spell.Requirements.forEach(function( requirement, index ) {
+				newRequirement = "<li>" + requirement.Name;
+				if(requirement.Dots) {
+					newRequirement = newRequirement + ' ' + Array(parseInt(requirement.Dots)+1).join(FILLED_CIRCLE);
+				}
+				if(requirement.Optional == "True"){
+					$("#OptionalRequirements").append(newRequirement + "</li>");
+				}else{					
+					$("#Requirements").append(newRequirement + "</li>");
+				}
+			});
+		}
+		
+		$('#ArcanaRequirements').text(arcanaRequirement);
 		$('#Practice').text(spell.Practice);
 		$('#Action').text(spell.Action);
 		$('#Duration').text(spell.Duration);
@@ -85,7 +103,7 @@ $(document).ready(function () {
 	function loadSpell(data){
 		var spellName = getParameterByName('spell');
 		$(data).each(function () {
-			if(escape(this.Name) == spellName){
+			if(escape(this.Name) == spellName || this.Name == spellName){
 				displaySpell(this);
 			}
 		});

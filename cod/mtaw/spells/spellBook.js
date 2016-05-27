@@ -298,7 +298,9 @@ $(document).ready(function () {
 	table = $('#spellList').DataTable();
 
 	$.getJSON( "data/spells.json")
-	.done(function(data)	{ insertSpellData(data); })
+	.done(function(data)	{ 
+		insertSpellData(data); 
+		})
 	.done(function() 		{ stopLoadingSpinner(); })
 	
 	$.getJSON( "data/sourceBooks.json")
