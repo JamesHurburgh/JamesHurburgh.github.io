@@ -363,9 +363,7 @@ $(document).ready(function () {
 		loadCosts();	
 	}
 	
-	// Kick everything off
-	$('#feedbackDialog').magnificPopup({type:'iframe'});
-	
+	// Kick everything off	
 	$.when(startLoadingSpinner)	
 	.then(loadData)
 	.then(stopLoadingSpinner)
