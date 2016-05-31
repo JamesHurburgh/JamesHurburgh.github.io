@@ -20,8 +20,17 @@
 	<link rel="stylesheet" type="text/css" href="ref/jquery.dataTables.css"> 
 	<script type="text/javascript" charset="utf8" src="ref/jquery.dataTables.js"></script>
 
+	<!-- Store.js -->
+	<script type="text/javascript" charset="utf8" src="ref/store.min.js"></script> 
+	
+	<!-- Theme.js -->
+	<script type="text/javascript" charset="utf8" src="scripts/theme.js"></script>
+
 	<!-- Spell js -->
-	<script type="text/javascript" charset="utf8" src="spell.js"></script>
+	<script type="text/javascript" charset="utf8" src="scripts/spell.js"></script>
+	
+	<!-- require.js 
+    <script data-main="scripts/spell" src="scripts/require.js"></script>-->
 	
 </head>
 <body>
@@ -95,9 +104,15 @@
 			</div>
 				
 		</div>
-
       <footer class="footer">
-        <p>&copy; 2016 James Hurburgh.</p>
+		<div class="col-sm-1">
+			<label for="themeSelect" class="control-label">Theme</label>
+		</div>
+		<div class="col-sm-2">
+			<select class="form-control input-sm" id="themeSelect"></select>
+		</div>
+        <div class="col-sm-7">&copy; 2016 James Hurburgh.</div>
+        <div class="col-sm-2"><a target="_blank" href="https://docs.google.com/forms/d/1bWQEaNAPKBhkERpV5IkrWLrNAO0Hjp1vYMQuf8hA8kE/viewform">Feedback</a></div>
       </footer>
 
     </div> <!-- /container -->

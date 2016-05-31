@@ -8,7 +8,7 @@
     <title>MtAw Spell Book</title>
 	
 	<!-- Bootstrap theme -->
-	<link rel="stylesheet" href="ref/bootstrap.min.css">
+	<link rel="stylesheet" href="ref/bootstrap.readable.min.css">
 	
 	<!-- jQuery -->
 	<script   src="ref/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
@@ -29,12 +29,25 @@
 	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.2.0/js/buttons.colVis.min.js"></script>
 	-->
 
+	<!-- MagnificPopup.js -->
+	<script type="text/javascript" charset="utf8" src="ref/magnificpopup.js"></script> 
+
+	<!-- Store.js -->
+	<script type="text/javascript" charset="utf8" src="ref/store.min.js"></script> 
+
+	<!-- Theme.js -->
+	<script type="text/javascript" charset="utf8" src="scripts/theme.js"></script>
+	
 	<!-- Spinner.js -->
 	<script type="text/javascript" charset="utf8" src="http://spin.js.org/spin.min.js"></script>
 
 	<!-- SpellBook.js -->
-	<script type="text/javascript" charset="utf8" src="spellBook.js"></script>
+	<script type="text/javascript" charset="utf8" src="scripts/spellBook.js"></script>
 	<link rel="stylesheet" type="text/css" href="spellBook.css"></script>
+	
+	
+	<!-- require.js 
+    <script data-main="scripts/spellBook" src="scripts/require.js"></script>-->
 	
 </head>
 <body>
@@ -121,7 +134,14 @@
 		</div>
 
       <footer class="footer">
-        <p>&copy; 2016 James Hurburgh.</p>
+		<div class="col-sm-1">
+			<label for="themeSelect" class="control-label">Theme</label>
+		</div>
+		<div class="col-sm-2">
+			<select class="form-control input-sm" id="themeSelect"></select>
+		</div>
+        <div class="col-sm-7">&copy; 2016 James Hurburgh.</div>
+        <div class="col-sm-2"><a target="_blank" href="https://docs.google.com/forms/d/1bWQEaNAPKBhkERpV5IkrWLrNAO0Hjp1vYMQuf8hA8kE/viewform">Feedback</a></div>
       </footer>
     </div>
 </body>
