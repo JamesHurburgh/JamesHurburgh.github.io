@@ -99,30 +99,6 @@ $(document).ready(function () {
 		sel.append($("<option>").attr('value', '<=').text('<='));
 	}
 
-	function insertSpellData(json) {
-		for (var i = 0; i < json.length; i++) {
-			var params = jQuery.param({
-					spell : escape(json[i].Name)
-				});
-			var nameLink = "<a target='_blank' href='spell.html\?" + params + "'>" + json[i].Name + "</a>";
-			var bookName = json[i].SourceBook + ' p' + json[i].SourcePage;
-
-			var arcanaFormatted = json[i].ArcanaRequirement;
-
-			table.row.add([
-					nameLink,
-					bookName,
-					arcanaFormatted,
-					json[i].Practice,
-					json[i].Action,
-					json[i].Duration,
-					json[i].Aspect,
-					json[i].Cost,
-					json[i].Effect.substr(0, 50) + "..."
-				]).draw(); ;
-		}
-	}
-
 	function arcanaSearch() {
 		var searchTerm = '"' + ($('#arcanaSelect').val() + ' ' + $('#arcanaLevelSelect').val()).trim() + '"';
 		// var arcanaLevel = $('#arcanaLevelSelect').val();
@@ -319,8 +295,40 @@ $(document).ready(function () {
 
 	var latestReferenceData;
 
-	table = $('#spellList').DataTable();
+	//table = $('#spellList').DataTable();
+
 	
+	function loadTable(data){
+		table = $('#spellList').DataTable( {
+			data: data,
+			columns: [
+				{ data: 'Name',
+					render: function ( data, type, row ) {
+						return "<a target='_blank' href='spell.html\?spell=" + escape(row.Name) + "'>" + row.Name + "</a>";
+					} 
+				},
+				{ 
+					data: 'Source',
+					render: function ( data, type, row ) {
+						return row.SourceBook + ' p' + row.SourcePage;
+					} 
+				},
+				{ data: 'ArcanaRequirement' },
+				{ data: 'Practice' },
+				{ data: 'Action' },
+				{ data: 'Duration' },
+				{ data: 'Aspect' },
+				{ data: 'Cost' },
+				{ 
+					data: 'Effect' ,
+					render: function ( data, type, row ) {
+						return row.Effect.substr(0, 50) + "...";
+					} 
+				}
+			]
+		});
+	}
+			
 	function retrieveReferenceData(shortName, path){
 		var storedData = store.get(shortName);
 		if(!storedData){
@@ -337,7 +345,8 @@ $(document).ready(function () {
 		
 		$.when()	
 		.then(	function() 		{ return retrieveReferenceData('spells', 'data/spells.json'); })
-		.then(	function(data) 	{ insertSpellData(data); })	
+		//.then(	function(data) 	{ insertSpellData(data); })	
+		.then(	function(data) 	{ loadTable(data); })	
 		.done();
 		
 		$.when()	

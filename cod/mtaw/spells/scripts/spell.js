@@ -69,7 +69,6 @@ $(document).ready(function () {
 		
 		var arcanaRequirement = spell.ArcanaRequirement;
 		if(spell.Requirements){
-			arcanaRequirement = ''; // Remove this once all spells have correctly formatted requirements
 			spell.Requirements.forEach(function( requirement, index ) {
 				newRequirement = "<li>" + requirement.Name;
 				if(requirement.Dots) {
