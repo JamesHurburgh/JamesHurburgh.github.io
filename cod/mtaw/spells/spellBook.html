@@ -17,7 +17,7 @@
 	<script src="ref/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	
 	<!-- Datatable -->
-	<link rel="stylesheet" type="text/css" href="ref/jquery.dataTables.css"> 
+	<link rel="stylesheet" type="text/css" href="ref/jquery.dataTables.css">  
 	<script type="text/javascript" charset="utf8" src="ref/jquery.dataTables.js"></script>
 
 	<!-- Datatable - Buttons 
@@ -34,13 +34,20 @@
 
 	<!-- Theme.js -->
 	<script type="text/javascript" charset="utf8" src="scripts/theme.js"></script>
+
+	<!-- dataTables -->
+	<script type="text/javascript" charset="utf8" src="ref/dataTables.responsive.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="ref/responsive.dataTables.min.css"></link>
 	
 	<!-- Spinner.js -->
 	<script type="text/javascript" charset="utf8" src="http://spin.js.org/spin.min.js"></script>
 
+	<!-- Common js -->
+	<script type="text/javascript" charset="utf8" src="scripts/common.js"></script>
+
 	<!-- SpellBook.js -->
 	<script type="text/javascript" charset="utf8" src="scripts/spellBook.js"></script>
-	<link rel="stylesheet" type="text/css" href="spellBook.css"></script>
+	<link rel="stylesheet" type="text/css" href="spellBook.css"></link>
 	
 	
 	<!-- require.js 
@@ -109,18 +116,20 @@
 					  <div class="panel-footer">	
 					
 			
-					<table id="spellList" class="table table-bordered">	
+					<table id="spellList" class="dt-responsive table table-bordered stripe">	
 						<thead>
 							<tr>			
-								<th>Name</th>
-								<th>Source</th>
-								<th>Arcana Requirement</th>
-								<th>Practice</th>
-								<th>Action</th>
-								<th>Duration</th>
-								<th>Aspect</th>
-								<th>Cost</th>
-								<th>Effect</th>
+								<th data-priority="1">Name</th>
+								<th data-priority="10">Source</th>
+								<th data-priority="2">Requirements</th>
+								<th data-priority="5">Practice</th>
+								<th data-priority="3">Action</th>
+								<th data-priority="3">Duration</th>
+								<th data-priority="3">Aspect</th>
+								<th data-priority="3">Cost</th>
+								<th class="none">Effect</th>
+								<th data-priority="7">Rote</th>
+								<th data-priority="3">Rote Dice Pool</th>
 							</tr>
 						</thead>
 						<tbody>

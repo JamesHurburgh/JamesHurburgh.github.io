@@ -12,8 +12,6 @@ $(document).ready(function () {
 	theme($('#themeSelect'), "Readable");
 	
 	var sourceBooks;
-	var UNFILLED_CIRCLE = "⚪";
-	var FILLED_CIRCLE = "⚫";
 	
 	function getParameterByName(name, url) {
 		if (!url) url = window.location.href;
@@ -66,23 +64,7 @@ $(document).ready(function () {
 				$('#wikiaLink').attr( 'href', sourceBook.Links.Wikia );
 			}
 		});
-		
-		var arcanaRequirement = spell.ArcanaRequirement;
-		if(spell.Requirements){
-			spell.Requirements.forEach(function( requirement, index ) {
-				newRequirement = "<li>" + requirement.Name;
-				if(requirement.Dots) {
-					newRequirement = newRequirement + ' ' + Array(parseInt(requirement.Dots)+1).join(FILLED_CIRCLE);
-				}
-				if(requirement.Optional == "True"){
-					$("#OptionalRequirements").append(newRequirement + "</li>");
-				}else{					
-					$("#Requirements").append(newRequirement + "</li>");
-				}
-			});
-		}
-		
-		$('#ArcanaRequirements').text(arcanaRequirement);
+		$("#Requirements").append(renderRequirements(spell.Requirements));
 		$('#Practice').text(spell.Practice);
 		$('#Action').text(spell.Action);
 		$('#Duration').text(spell.Duration);

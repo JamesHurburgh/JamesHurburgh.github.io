@@ -10,7 +10,7 @@ $(document).ready(function () {
 	initStorage();
 	
 	theme($('#themeSelect'), "Readable");
-
+	
 	// Setup Ajax calls
 	// OBSOLETE
 	$.ajaxSetup({
@@ -292,17 +292,14 @@ $(document).ready(function () {
 		}
 		store.set('storedReferenceData', storedReferenceData);
 	}
-
-	var latestReferenceData;
-
-	//table = $('#spellList').DataTable();
-
 	
 	function loadTable(data){
 		table = $('#spellList').DataTable( {
+			responsive: true,
 			data: data,
 			columns: [
-				{ data: 'Name',
+				{ 
+					data: 'Name',
 					render: function ( data, type, row ) {
 						return "<a target='_blank' href='spell.html\?spell=" + escape(row.Name) + "'>" + row.Name + "</a>";
 					} 
@@ -313,7 +310,13 @@ $(document).ready(function () {
 						return row.SourceBook + ' p' + row.SourcePage;
 					} 
 				},
-				{ data: 'ArcanaRequirement' },
+				{ 
+					data: 'Requirements',
+					render: function ( data, type, row ) {
+						return row.ArcanaRequirement;
+						// return renderRequirements(data); // Put this back in once Arcana requirements search works properly
+					} 
+				},
 				{ data: 'Practice' },
 				{ data: 'Action' },
 				{ data: 'Duration' },
@@ -322,7 +325,31 @@ $(document).ready(function () {
 				{ 
 					data: 'Effect' ,
 					render: function ( data, type, row ) {
-						return row.Effect.substr(0, 50) + "...";
+						return row.Effect;
+					} 
+				},
+				{ 
+					data: 'Rote' ,
+					render: function ( data, type, row ) {
+						if(!row.Rotes[0]) return "";
+						return row.Rotes[0].RoteName;
+					} 
+				},
+				{ 
+					data: 'Rote Dice Pool' ,
+					render: function ( data, type, spell ) {
+						if(!spell.Rotes[0]) return "";
+						var resisted = "";
+						var contested = "";
+						rote = spell.Rotes[0];
+						if(rote.RoteDicePool_Resisted){
+							resisted = " - " + rote.RoteDicePool_Resisted;
+						}
+						if(rote.RoteDicePool_Contested){
+							contested = " vs. " + rote.RoteDicePool_Contested;
+						}
+						var dicePool = rote.RoteDicePool_Attribute + " + " + rote.RoteDicePool_Skill + " + " + spell.PrimaryArcana + resisted + contested;
+						return dicePool;
 					} 
 				}
 			]
@@ -375,7 +402,8 @@ $(document).ready(function () {
 	// Kick everything off	
 	$.when(startLoadingSpinner)	
 	.then(loadData)
+	.then(function(){$('[data-toggle="popover"]').popover();})
 	.then(stopLoadingSpinner)
 	.done();
-
+	
 });
