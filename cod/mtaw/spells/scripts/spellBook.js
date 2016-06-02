@@ -118,6 +118,63 @@ $(document).ready(function () {
 		.search(searchTerm)
 		.draw();
 	}
+	
+	function addParam(paramName, paramValue){
+		if(paramValue && paramValue != ''){
+			return '&' + paramName + '=' + encodeURIComponent(paramValue).replace(' ','%20');
+		}
+		return "";
+	}
+	
+	function applyParam(params, paramName, inputObject){
+		if(params[paramName] && params[paramName] != ''){
+			inputObject.val(decodeURIComponent(params[paramName][0]));
+			inputObject.change();
+		}
+	}
+	
+	function updateUrl(){
+		currentUrl = window.location.href.split('?')[0];
+		params = "";
+		params = params + addParam("source", $('#sourceSelect').val());
+		params = params + addParam("practice", $('#practiceSelect').val());
+		params = params + addParam("action", $('#actionSelect').val());
+		params = params + addParam("duration", $('#durationSelect').val());
+		params = params + addParam("aspect", $('#aspectSelect').val());
+		params = params + addParam("cost", $('#costSelect').val());
+		params = params + addParam("fateDots", $('#fateDots').val());
+		params = params + addParam("forcesDots", $('#forcesDots').val());
+		params = params + addParam("deathDots", $('#deathDots').val());
+		params = params + addParam("lifeDots", $('#lifeDots').val());
+		params = params + addParam("matterDots", $('#matterDots').val());
+		params = params + addParam("mindDots", $('#mindDots').val());
+		params = params + addParam("primeDots", $('#primeDots').val());
+		params = params + addParam("spaceDots", $('#spaceDots').val());
+		params = params + addParam("spiritDots", $('#spiritDots').val());
+		params = params + addParam("timeDots", $('#timeDots').val());
+		
+		window.history.pushState("object or string", "Search", currentUrl + '?' + params);
+	}
+	
+	function loadQueryParameters(){
+		var params = getQuery();
+		applyParam(params, "source", $('#sourceSelect'));
+		applyParam(params, "practice", $('#practiceSelect'));
+		applyParam(params, "action", $('#actionSelect'));
+		applyParam(params, "duration", $('#durationSelect'));
+		applyParam(params, "aspect", $('#aspectSelect'));
+		applyParam(params, "cost", $('#costSelect'));
+		applyParam(params, "fateDots", $('#fateDots'));
+		applyParam(params, "forcesDots", $('#forcesDots'));
+		applyParam(params, "deathDots", $('#deathDots'));
+		applyParam(params, "lifeDots", $('#lifeDots'));
+		applyParam(params, "matterDots", $('#matterDots'));
+		applyParam(params, "mindDots", $('#mindDots'));
+		applyParam(params, "primeDots", $('#primeDots'));
+		applyParam(params, "spaceDots", $('#spaceDots'));
+		applyParam(params, "spiritDots", $('#spiritDots'));
+		applyParam(params, "timeDots", $('#timeDots'));
+	}
 
 	// Handlers
 	$('#sourceSelect').change(function () {
@@ -126,8 +183,11 @@ $(document).ready(function () {
 		.columns(1)
 		.search(searchTerm)
 		.draw();
+		updateUrl();
 	});
-
+	
+	/*
+	
 	$('#arcanaSelect').change(function () {
 		arcanaSearch();
 	});
@@ -140,12 +200,15 @@ $(document).ready(function () {
 		arcanaSearch();
 	});
 
+	*/
+	
 	$('#practiceSelect').change(function () {
 		var searchTerm = $('#practiceSelect').val();
 		table
 		.columns(3)
 		.search(searchTerm)
 		.draw();
+		updateUrl();
 	});
 
 	$('#actionSelect').change(function () {
@@ -154,6 +217,7 @@ $(document).ready(function () {
 		.columns(4)
 		.search(searchTerm)
 		.draw();
+		updateUrl();
 	});
 
 	$('#durationSelect').change(function () {
@@ -162,6 +226,7 @@ $(document).ready(function () {
 		.columns(5)
 		.search(searchTerm)
 		.draw();
+		updateUrl();
 	});
 
 	$('#aspectSelect').change(function () {
@@ -170,6 +235,7 @@ $(document).ready(function () {
 		.columns(6)
 		.search(searchTerm)
 		.draw();
+		updateUrl();
 	});
 
 	$('#costSelect').change(function () {
@@ -178,31 +244,72 @@ $(document).ready(function () {
 		.columns(7)
 		.search(searchTerm)
 		.draw();
+		updateUrl();
 	});
-	/*
-	$('#refreshDataButton').click(function () {
-		if(store.enabled){
-			store.clear();
-			loadData();
-			table.responsive.recalc();
-			table.draw();
+	
+	// Arcanum Filtering
+	$('.arcana-search').change(function () {
+		
+		var searchTerm = 
+			   'Fate-' + $('#fateDots').val()
+			+ ' Forces-' + $('#forcesDots').val()
+			+ ' Death-' + $('#deathDots').val()
+			+ ' Life-' + $('#lifeDots').val()
+			+ ' Matter-' + $('#matterDots').val()
+			+ ' Mind-' + $('#mindDots').val()
+			+ ' Prime-' + $('#primeDots').val()
+			+ ' Space-' + $('#spaceDots').val()
+			+ ' Spirit-' + $('#spiritDots').val()
+			+ ' Time-' + $('#timeDots').val();
+			
+		if(   $('#fateDots').val()
+			+ $('#forcesDots').val()
+			+ $('#deathDots').val()
+			+ $('#lifeDots').val()
+			+ $('#matterDots').val()
+			+ $('#mindDots').val()
+			+ $('#primeDots').val()
+			+ $('#spaceDots').val()
+			+ $('#spiritDots').val()
+			+ $('#timeDots').val() == 0)
+		{
+			// This is the default value, all set to zero.  No spells will be shown if the search term isn't blanked out.
+			searchTerm = 0;
 		}
+		table
+		.columns(11)
+		.search(searchTerm)
+		.draw();
+		updateUrl();
+		
 	});
-	*/
 	
 	$('#clearFiltersButton').click(function () {
 		$("#sourceSelect").val($("#sourceSelect option:first").val()).change();
-		$("#arcanaSelect").val($("#arcanaSelect option:first").val()).change();
-		$("#arcanaLevelSelect").val($("#arcanaLevelSelect option:first").val()).change();
+		//$("#arcanaSelect").val($("#arcanaSelect option:first").val()).change();
+		//$("#arcanaLevelSelect").val($("#arcanaLevelSelect option:first").val()).change();
 		$("#practiceSelect").val($("#practiceSelect option:first").val()).change();
 		$("#actionSelect").val($("#actionSelect option:first").val()).change();
 		$("#durationSelect").val($("#durationSelect option:first").val()).change();
 		$("#aspectSelect").val($("#aspectSelect option:first").val()).change();
 		$("#costSelect").val($("#costSelect option:first").val()).change();
+		
+		$('#fateDots').val() = 0;
+		$('#forcesDots').val() = 0;
+		$('#deathDots').val() = 0;
+		$('#lifeDots').val() = 0;
+		$('#matterDots').val() = 0;
+		$('#mindDots').val() = 0;
+		$('#primeDots').val() = 0;
+		$('#spaceDots').val() = 0;
+		$('#spiritDots').val() = 0;
+		$('#timeDots').val() = 0;
+		
 		table
 		.search('')
 		.columns().search('')
 		.draw();
+		updateUrl();
 	});
 
 	// initialisation
@@ -426,7 +533,11 @@ $(document).ready(function () {
 		loadActions();
 		loadDurations();
 		loadAspects();
-		loadCosts();	
+		loadCosts();
+		
+		loadQueryParameters();
+		
+		// updateUrl();
 	}
 	
 	function loadPage(){
