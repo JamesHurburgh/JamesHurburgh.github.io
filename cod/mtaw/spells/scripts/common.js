@@ -26,3 +26,16 @@ function renderRequirements(requirements){
 	}
 	return requirementList;
 }
+
+function arcanaCastableBySearchTerms(requirements){
+	if(!requirements) return "";
+	
+	var searchTerm = "";
+	requirements.forEach(function( requirement, index ) {
+		for(var dots = requirement.Dots; dots <= 5; dots++){
+			optional = requirement.Optional == 'True' ? 'Optional-' : '';
+			searchTerm = optional + searchTerm + requirement.Name + '-' + dots + ' ';
+		}			
+	});
+	return searchTerm.trim();
+}

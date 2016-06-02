@@ -108,9 +108,10 @@
 							<label for="costSelect" class="control-label">Cost</label>
 							<select class="form-control input-sm" id="costSelect"></select>
 						</div>
-						<div class="col-lg-2">
+						<div class="col-lg-4">
 							<label for="clearFiltersButton" class="control-label">Options</label>
 							<a href="#" class="btn btn-link" id="clearFiltersButton">Clear filters</a>
+							<!--<a href="#" class="btn btn-link" id="refreshDataButton">Refresh data</a>-->
 						</div>	
 					</div>	
 					  <div class="panel-footer">	
@@ -120,7 +121,7 @@
 						<thead>
 							<tr>			
 								<th data-priority="1">Name</th>
-								<th data-priority="10">Source</th>
+								<th data-priority="10" class="select-filter">Source</th>
 								<th data-priority="2">Requirements</th>
 								<th data-priority="5">Practice</th>
 								<th data-priority="3">Action</th>
@@ -130,6 +131,7 @@
 								<th class="none">Effect</th>
 								<th data-priority="7">Rote</th>
 								<th data-priority="3">Rote Dice Pool</th>
+								<th class="never">CastableBy</th>
 							</tr>
 						</thead>
 						<tbody>

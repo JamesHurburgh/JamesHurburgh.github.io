@@ -23,7 +23,6 @@ $(document).ready(function () {
 
 	// Load drop down lists
 	function loadSpellSources(data) {
-
 		var sel = $('#sourceSelect');
 		sel.append($("<option>").attr('value', '').text(''));
 		$(data).each(function () {
@@ -49,6 +48,7 @@ $(document).ready(function () {
 
 	function loadArcanumLevels() {
 		var sel = $('#arcanaLevelSelect');
+		sel.empty();
 		sel.append($("<option>").attr('value', '').text(''));
 		sel.append($("<option>").attr('value', 1).text(1));
 		sel.append($("<option>").attr('value', 2).text(2));
@@ -59,6 +59,7 @@ $(document).ready(function () {
 
 	function loadActions() {
 		var sel = $('#actionSelect');
+		sel.empty();
 		sel.append($("<option>").attr('value', '').text(''));
 		sel.append($("<option>").attr('value', 'Instant').text('Instant'));
 		sel.append($("<option>").attr('value', 'Extended').text('Extended'));
@@ -68,6 +69,7 @@ $(document).ready(function () {
 
 	function loadDurations() {
 		var sel = $('#durationSelect');
+		sel.empty();
 		sel.append($("<option>").attr('value', '').text(''));
 		sel.append($("<option>").attr('value', 'Concentration').text('Concentration'));
 		sel.append($("<option>").attr('value', 'Instant').text('Instant'));
@@ -79,6 +81,7 @@ $(document).ready(function () {
 
 	function loadAspects() {
 		var sel = $('#aspectSelect');
+		sel.empty();
 		sel.append($("<option>").attr('value', '').text(''));
 		sel.append($("<option>").attr('value', 'Covert').text('Covert'));
 		sel.append($("<option>").attr('value', 'Vulgar').text('Vulgar'));
@@ -86,6 +89,7 @@ $(document).ready(function () {
 
 	function loadCosts() {
 		var sel = $('#costSelect');
+		sel.empty();
 		sel.append($("<option>").attr('value', '').text(''));
 		sel.append($("<option>").attr('value', 'None').text('None'));
 		sel.append($("<option>").attr('value', 'Mana').text('Mana'));
@@ -95,6 +99,7 @@ $(document).ready(function () {
 
 	function loadArcanumLevelComparators() {
 		var sel = $('#arcanaLevelComparator');
+		sel.empty();
 		sel.append($("<option>").attr('value', '=').text('='));
 		sel.append($("<option>").attr('value', '<=').text('<='));
 	}
@@ -174,7 +179,17 @@ $(document).ready(function () {
 		.search(searchTerm)
 		.draw();
 	});
-
+	/*
+	$('#refreshDataButton').click(function () {
+		if(store.enabled){
+			store.clear();
+			loadData();
+			table.responsive.recalc();
+			table.draw();
+		}
+	});
+	*/
+	
 	$('#clearFiltersButton').click(function () {
 		$("#sourceSelect").val($("#sourceSelect option:first").val()).change();
 		$("#arcanaSelect").val($("#arcanaSelect option:first").val()).change();
@@ -194,6 +209,7 @@ $(document).ready(function () {
 
 	var spellsLoading = true;
 	var loadingSpinner;
+	var table;
 
 	function startLoadingSpinner() {
 		$('#overlay').show();
@@ -294,66 +310,80 @@ $(document).ready(function () {
 	}
 	
 	function loadTable(data){
-		table = $('#spellList').DataTable( {
-			responsive: true,
-			data: data,
-			columns: [
-				{ 
-					data: 'Name',
-					render: function ( data, type, row ) {
-						return "<a target='_blank' href='spell.html\?spell=" + escape(row.Name) + "'>" + row.Name + "</a>";
-					} 
+		if(!table){
+			table = $('#spellList').DataTable( {
+				responsive: true,
+				//data: data,    
+				"ajax": {
+					"url": "data/spells.json",
+					"dataSrc": ""
 				},
-				{ 
-					data: 'Source',
-					render: function ( data, type, row ) {
-						return row.SourceBook + ' p' + row.SourcePage;
-					} 
-				},
-				{ 
-					data: 'Requirements',
-					render: function ( data, type, row ) {
-						return row.ArcanaRequirement;
-						// return renderRequirements(data); // Put this back in once Arcana requirements search works properly
-					} 
-				},
-				{ data: 'Practice' },
-				{ data: 'Action' },
-				{ data: 'Duration' },
-				{ data: 'Aspect' },
-				{ data: 'Cost' },
-				{ 
-					data: 'Effect' ,
-					render: function ( data, type, row ) {
-						return row.Effect;
-					} 
-				},
-				{ 
-					data: 'Rote' ,
-					render: function ( data, type, row ) {
-						if(!row.Rotes[0]) return "";
-						return row.Rotes[0].RoteName;
-					} 
-				},
-				{ 
-					data: 'Rote Dice Pool' ,
-					render: function ( data, type, spell ) {
-						if(!spell.Rotes[0]) return "";
-						var resisted = "";
-						var contested = "";
-						rote = spell.Rotes[0];
-						if(rote.RoteDicePool_Resisted){
-							resisted = " - " + rote.RoteDicePool_Resisted;
+				columns: [
+					{ 
+						data: 'Name',
+						render: function ( data, type, spell ) {
+							return "<a target='_blank' href='spell.html\?spell=" + escape(spell.Name) + "'>" + spell.Name + "</a>";
+						} 
+					},
+					{ 
+						data: 'Source',
+						render: function ( data, type, spell ) {
+							return spell.SourceBook + ' p' + spell.SourcePage;
+						} 
+					},
+					{ 
+						data: 'Requirements',
+						render: function ( data, type, spell ) {
+							return spell.ArcanaRequirement;
+							// return renderRequirements(data); // Put this back in once Arcana requirements search works properly
+						} 
+					},
+					{ data: 'Practice' },
+					{ data: 'Action' },
+					{ data: 'Duration' },
+					{ data: 'Aspect' },
+					{ data: 'Cost' },
+					{ 
+						data: 'Effect' ,
+						render: function ( data, type, spell ) {
+							return spell.Effect;
+						} 
+					},
+					{ 
+						data: 'Rote' ,
+						render: function ( data, type, spell ) {
+							if(!spell.Rotes || !spell.Rotes[0]) return "";
+							return spell.Rotes[0].RoteName;
+						} 
+					},
+					{ 
+						data: 'Rote Dice Pool' ,
+						render: function ( data, type, spell ) {
+							if(!spell.Rotes || !spell.Rotes[0]) return "";
+							var resisted = "";
+							var contested = "";
+							rote = spell.Rotes[0];
+							if(rote.RoteDicePool_Resisted){
+								resisted = " - " + rote.RoteDicePool_Resisted;
+							}
+							if(rote.RoteDicePool_Contested){
+								contested = " vs. " + rote.RoteDicePool_Contested;
+							}
+							var dicePool = rote.RoteDicePool_Attribute + " + " + rote.RoteDicePool_Skill + " + " + spell.PrimaryArcana + resisted + contested;
+							return dicePool;
+						} 
+					},
+					{
+						data: 'CastableBy' ,
+						render: function ( data, type, spell ) {
+							return arcanaCastableBySearchTerms(spell.Requirements);
 						}
-						if(rote.RoteDicePool_Contested){
-							contested = " vs. " + rote.RoteDicePool_Contested;
-						}
-						var dicePool = rote.RoteDicePool_Attribute + " + " + rote.RoteDicePool_Skill + " + " + spell.PrimaryArcana + resisted + contested;
-						return dicePool;
-					} 
-				}
-			]
-		});
+					}
+				]
+			});
+		}else{
+			table.data = data;
+		}
 	}
 			
 	function retrieveReferenceData(shortName, path){
@@ -399,11 +429,14 @@ $(document).ready(function () {
 		loadCosts();	
 	}
 	
+	function loadPage(){
+		$.when(startLoadingSpinner)	
+		.then(loadData)
+		.then(stopLoadingSpinner)
+		.done();
+	}
+	
 	// Kick everything off	
-	$.when(startLoadingSpinner)	
-	.then(loadData)
-	.then(function(){$('[data-toggle="popover"]').popover();})
-	.then(stopLoadingSpinner)
-	.done();
+	loadPage();
 	
 });
