@@ -441,8 +441,8 @@ $(document).ready(function () {
 					{ 
 						data: 'Requirements',
 						render: function ( data, type, spell ) {
-							return spell.ArcanaRequirement;
-							// return renderRequirements(data); // Put this back in once Arcana requirements search works properly
+							//return spell.ArcanaRequirement;
+							return renderRequirements(data); // Put this back in once Arcana requirements search works properly
 						} 
 					},
 					{ data: 'Practice' },
