@@ -70,8 +70,14 @@ $(document).ready(function () {
 		$('#Duration').text(spell.Duration);
 		$('#Aspect').text(spell.Aspect);
 		$('#Cost').text(spell.Cost);
-		$('#Effect').text(spell.Effect);
 		$('#Notes').text(spell.Notes);
+		
+		// Turn spell names into links
+		spellEffect = spell.Effect;
+		$(spells).each(function (index, spell) {
+			spellEffect = spellEffect.replace(this.Name, "<a href='spell.html\?spell=" + escape(spell.Name) + "'>" + spell.Name + "</a>");
+		});
+		$('#Effect').append(spellEffect);
 		
 		// TODO account for multiple rotes
 		var rote = spell.Rotes[0];
@@ -92,12 +98,18 @@ $(document).ready(function () {
 		}		
 	}
 	
+	var spells;
 	function loadSpell(data){
+		spells = data;
 		var spellName = getParameterByName('spell');
 		$(data).each(function () {
 			if(escape(this.Name) == spellName || this.Name == spellName){
 				displaySpell(this);
 			}
+		});
+		
+		$(".spellLink").each( function() {
+			//alert();
 		});
 	}
 	

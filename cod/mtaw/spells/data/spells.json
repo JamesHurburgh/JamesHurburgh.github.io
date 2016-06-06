@@ -372,6 +372,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -833,6 +835,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -1374,6 +1378,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -1539,6 +1545,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -1563,6 +1571,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -1834,6 +1844,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -2130,6 +2142,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -2238,6 +2252,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -2380,6 +2396,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -2890,6 +2908,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -3021,6 +3041,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -3148,6 +3170,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -3419,6 +3443,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -3549,6 +3575,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -3781,6 +3809,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -3859,6 +3889,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -3882,6 +3914,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -4034,6 +4068,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -4429,6 +4465,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -4477,6 +4515,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -4744,6 +4784,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -5110,6 +5152,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -5184,6 +5228,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -5285,6 +5331,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -5450,6 +5498,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -5561,6 +5611,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -5827,6 +5879,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -6009,9 +6063,11 @@
 		"Cost" : "None",
 		"Effect" : "The mage redirects the force of gravity, causing people and things to fall in another direction, such as sideways or upward. A simple success affects gravity in a one-yard radius. Excess successes spread the energy over a larger area. Characters who fall into objects take damage normally. A person in the radius who is sent \"falling\" upward travels at the same rate as someone falling downward, but once he exits the radius affected, he is subject to normal gravity again. Although his momentum might still send him upward for a turn or two, the natural downward pull of gravity brings him back down -- unless he falls into the radius of the altered gravity, which sends him upward again. He might oscillate between the area of altered gravity and normal gravity until the spell expires.",
 		"Rotes" : [{
-				"RoteOrder" : "",
-				"RoteName" : "",
-				"RoteDescription" : ""
+				"RoteOrder" : "Mysterium",
+				"RoteName" : "Upending Expectations",
+				"RoteDicePool_Attribute" : "Intelligence",
+				"RoteDicePool_Skill" : "Occult or Science",
+				"RoteDescription" : "With this rote, a Mysterium mage can reach places normally inaccessible to her, or suddenly cause an entire roomful of assailants to “fall”upward and hit the ceiling. Adamantine Arrow mages use their own version of this magic (Composure + Occult + Forces) to seize the advantage in combat."
 			}
 		]
 	}, {
@@ -6034,6 +6090,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -6057,6 +6115,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -6080,6 +6140,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -6103,6 +6165,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -6128,7 +6192,6 @@
 				"RoteName" : "Witch's Broom",
 				"RoteDicePool_Attribute" : "Dexterity",
 				"RoteDicePool_Skill" : "Athletics",
-
 				"RoteDescription" : "This rote allows members of the Mysterium to avoid both the hassles and occasional perils of earthbound transportation. Granted, flight bears its own unique problems and risks, but no few mages are willing to accept them. Adamantine Arrow sorcerers use the same rote in conferring the powers of flight upon themselves."
 			}
 		]
@@ -6152,6 +6215,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -6198,9 +6263,11 @@
 		"Cost" : "None",
 		"Effect" : "This spell decreases the pull of gravity as if the Earth were a smaller body. A simple success decreases gravity within a five-cubic yard volume. Successes are allocated between the Potency of the gravity and the volume affected. Each point of Potency adds one to the Speed of anyone or anything within the area of effect. This sudden ease of motion might come as a surprise to a person affected. If more than five points are added to Speed, a reflexive Dexterity + Athletics roll is made for the subject to control her sudden vault. Also, every Potency point of the spell doubles a person's jumping distance per success. For example, under a spell with Potency 1, a character jumps two feet with a vertical leap and four feet with a standing broad jump. Flying creatures (including those using Forces spells to fly or to be lifted telekinetically) add one point to their flight Speeds when going straight upward.",
 		"Rotes" : [{
-				"RoteOrder" : "",
-				"RoteName" : "",
-				"RoteDescription" : ""
+				"RoteOrder" : "Mysterium",
+				"RoteName" : "Moonwalking",
+				"RoteDicePool_Attribute" : "Intelligence",
+				"RoteDicePool_Skill" : "Occult or Science",
+				"RoteDescription" : "Great for a quick escape for an entire cabal, this Mysterium rote occasionally comes in handy in various other strange circumstances. Adamantine Arrow mages use this rote as well, enabling a number of willworkers to close quickly on foes, moving easily over even difficult terrain."
 			}
 		]
 	}, {
@@ -6223,6 +6290,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -6246,6 +6315,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -6395,6 +6466,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -6418,6 +6491,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -6441,6 +6516,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -6757,6 +6834,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -6886,6 +6965,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -6992,6 +7073,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -7370,6 +7453,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -7763,6 +7848,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -7916,6 +8003,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -8146,6 +8235,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -8252,6 +8343,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -8383,6 +8476,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -8649,6 +8744,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -8724,6 +8821,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -8935,6 +9034,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -9118,6 +9219,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -9358,6 +9461,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -9438,6 +9543,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -9595,6 +9702,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -9724,6 +9833,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -9747,6 +9858,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -9773,6 +9886,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -9799,6 +9914,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -9930,6 +10047,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -10880,6 +10999,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -11234,6 +11355,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -11284,6 +11407,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -11717,6 +11842,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -11793,6 +11920,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -11947,6 +12076,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -12022,6 +12153,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -12153,6 +12286,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -12294,6 +12429,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -12436,6 +12573,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -13038,6 +13177,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -13062,6 +13203,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -13144,6 +13287,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -13405,6 +13550,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 				"RoteDescription" : ""
 			}
 		]
@@ -13892,6 +14039,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -14204,6 +14353,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -15173,6 +15324,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -15197,6 +15350,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -15517,6 +15672,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -15592,6 +15749,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -15671,6 +15830,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -15919,8 +16080,7 @@
 		"Requirements" : [{
 				"Name" : "Space",
 				"Dots" : "2"
-			},
-			{
+			}, {
 				"Name" : "Mind",
 				"Dots" : "2"
 			}
@@ -15934,6 +16094,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -16036,6 +16198,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -16049,12 +16213,10 @@
 		"Requirements" : [{
 				"Name" : "Space",
 				"Dots" : "2"
-			},
-			{
+			}, {
 				"Name" : "Time",
 				"Dots" : "2"
-			},
-			{
+			}, {
 				"Name" : "Prime",
 				"Dots" : "2",
 				"Optional" : "True"
@@ -16121,6 +16283,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -16134,8 +16298,7 @@
 		"Requirements" : [{
 				"Name" : "Space",
 				"Dots" : "2"
-			},
-			{
+			}, {
 				"Name" : "Time",
 				"Dots" : "2",
 				"Optional" : "True"
@@ -16332,6 +16495,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -16397,8 +16562,7 @@
 		"Requirements" : [{
 				"Name" : "Space",
 				"Dots" : "3"
-			},
-			{
+			}, {
 				"Name" : "Mind",
 				"Dots" : "2"
 			}
@@ -16438,6 +16602,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -16462,6 +16628,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -16590,6 +16758,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -16629,48 +16799,39 @@
 		"Requirements" : [{
 				"Name" : "Space",
 				"Dots" : "3"
-			},
-			{
+			}, {
 				"Name" : "Death",
 				"Dots" : "1",
 				"Optional" : "True"
-			},
-			{
+			}, {
 				"Name" : "Fate",
 				"Dots" : "1",
 				"Optional" : "True"
-			},
-			{
+			}, {
 				"Name" : "Forces",
 				"Dots" : "1",
 				"Optional" : "True"
-			},
-			{
+			}, {
 				"Name" : "Life",
 				"Dots" : "1",
 				"Optional" : "True"
-			},
-			{
+			}, {
 				"Name" : "Matter",
 				"Dots" : "1",
 				"Optional" : "True"
-			},
-			{
+			}, {
 				"Name" : "Mind",
 				"Dots" : "1",
 				"Optional" : "True"
-			},
-			{
+			}, {
 				"Name" : "Space",
 				"Dots" : "1",
 				"Optional" : "True"
-			},
-			{
+			}, {
 				"Name" : "Spirit",
 				"Dots" : "1",
 				"Optional" : "True"
-			},
-			{
+			}, {
 				"Name" : "Time",
 				"Dots" : "1",
 				"Optional" : "True"
@@ -16711,6 +16872,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -16776,8 +16939,7 @@
 		"Requirements" : [{
 				"Name" : "Space",
 				"Dots" : "4"
-			},
-			{
+			}, {
 				"Name" : "Spirit",
 				"Dots" : "3"
 			}
@@ -16806,8 +16968,7 @@
 		"Requirements" : [{
 				"Name" : "Space",
 				"Dots" : "4"
-			},
-			{
+			}, {
 				"Name" : "Spirit",
 				"Dots" : "3"
 			}
@@ -16835,8 +16996,7 @@
 		"Requirements" : [{
 				"Name" : "Space",
 				"Dots" : "4"
-			},
-			{
+			}, {
 				"Name" : "Spirit",
 				"Dots" : "3"
 			}
@@ -16943,8 +17103,7 @@
 		"Requirements" : [{
 				"Name" : "Space",
 				"Dots" : "4"
-			},
-			{
+			}, {
 				"Name" : "Fate",
 				"Dots" : "2"
 			}
@@ -17103,27 +17262,22 @@
 		"Requirements" : [{
 				"Name" : "Space",
 				"Dots" : "5"
-			},
-			{
+			}, {
 				"Name" : "Life",
 				"Dots" : "4"
-			},
-			{
+			}, {
 				"Name" : "Life",
 				"Dots" : "5",
 				"Optional" : "True"
-			},
-			{
+			}, {
 				"Name" : "Matter",
 				"Dots" : "5",
 				"Optional" : "True"
-			},
-			{
+			}, {
 				"Name" : "Mind",
 				"Dots" : "1",
 				"Optional" : "True"
-			},
-			{
+			}, {
 				"Name" : "Mind",
 				"Dots" : "3",
 				"Optional" : "True"
@@ -17153,16 +17307,13 @@
 		"Requirements" : [{
 				"Name" : "Space",
 				"Dots" : "5"
-			},
-			{
+			}, {
 				"Name" : "Forces",
 				"Dots" : "3"
-			},
-			{
+			}, {
 				"Name" : "Mind",
 				"Dots" : "4"
-			},
-			{
+			}, {
 				"Name" : "Time",
 				"Dots" : "4"
 			}
@@ -17191,17 +17342,14 @@
 		"Requirements" : [{
 				"Name" : "Space",
 				"Dots" : "5"
-			},
-			{
+			}, {
 				"Name" : "Matter",
 				"Dots" : "3"
-			},
-			{
+			}, {
 				"Name" : "Matter",
 				"Dots" : "4",
 				"Optional" : "True"
-			},
-			{
+			}, {
 				"Name" : "Matter",
 				"Dots" : "5",
 				"Optional" : "True"
@@ -17231,23 +17379,19 @@
 		"Requirements" : [{
 				"Name" : "Space",
 				"Dots" : "5"
-			},
-			{
+			}, {
 				"Name" : "Life",
 				"Dots" : "2",
 				"Optional" : "True"
-			},
-			{
+			}, {
 				"Name" : "Life",
 				"Dots" : "3",
 				"Optional" : "True"
-			},
-			{
+			}, {
 				"Name" : "Life",
 				"Dots" : "4",
 				"Optional" : "True"
-			},
-			{
+			}, {
 				"Name" : "Matter",
 				"Dots" : "2",
 				"Optional" : "True"
@@ -17457,8 +17601,7 @@
 		"Requirements" : [{
 				"Name" : "Spirit",
 				"Dots" : "2"
-			},
-			{
+			}, {
 				"Name" : "Death",
 				"Dots" : "2"
 			}
@@ -17849,12 +17992,10 @@
 		"Requirements" : [{
 				"Name" : "Spirit",
 				"Dots" : "3"
-			},
-			{
+			}, {
 				"Name" : "Life",
 				"Dots" : "2"
-			},
-			{
+			}, {
 				"Name" : "Life",
 				"Dots" : "3",
 				"Optional" : "True"
@@ -17884,8 +18025,7 @@
 		"Requirements" : [{
 				"Name" : "Spirit",
 				"Dots" : "3"
-			},
-			{
+			}, {
 				"Name" : "Time",
 				"Dots" : "3"
 			}
@@ -18018,12 +18158,10 @@
 		"Requirements" : [{
 				"Name" : "Spirit",
 				"Dots" : "3"
-			},
-			{
+			}, {
 				"Name" : "Life",
 				"Dots" : "2"
-			},
-			{
+			}, {
 				"Name" : "Song: Bleeding Leviathan"
 			}
 		],
@@ -18036,6 +18174,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -18049,8 +18189,7 @@
 		"Requirements" : [{
 				"Name" : "Spirit",
 				"Dots" : "3"
-			},
-			{
+			}, {
 				"Name" : "Prime",
 				"Dots" : "3"
 			}
@@ -18105,12 +18244,10 @@
 		"Requirements" : [{
 				"Name" : "Spirit",
 				"Dots" : "3"
-			},
-			{
+			}, {
 				"Name" : "Matter",
 				"Dots" : "3"
-			},
-			{
+			}, {
 				"Name" : "Space",
 				"Dots" : "3",
 				"Optional" : "True"
@@ -18270,13 +18407,11 @@
 		"Requirements" : [{
 				"Name" : "Spirit",
 				"Dots" : "3"
-			},
-			{
+			}, {
 				"Name" : "Space",
 				"Dots" : "2",
 				"Optional" : "True"
-			},
-			{
+			}, {
 				"Name" : "Fate",
 				"Dots" : "2",
 				"Optional" : "True"
@@ -18357,8 +18492,7 @@
 		"Requirements" : [{
 				"Name" : "Spirit",
 				"Dots" : "4"
-			},
-			{
+			}, {
 				"Name" : "Prime",
 				"Dots" : "4"
 			}
@@ -18387,8 +18521,7 @@
 		"Requirements" : [{
 				"Name" : "Spirit",
 				"Dots" : "4"
-			},
-			{
+			}, {
 				"Name" : "Mind",
 				"Dots" : "4"
 			}
@@ -18417,8 +18550,7 @@
 		"Requirements" : [{
 				"Name" : "Spirit",
 				"Dots" : "4"
-			},
-			{
+			}, {
 				"Name" : "Mind",
 				"Dots" : "4"
 			}
@@ -18432,6 +18564,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -18471,8 +18605,7 @@
 		"Requirements" : [{
 				"Name" : "Spirit",
 				"Dots" : "4"
-			},
-			{
+			}, {
 				"Name" : "Fate",
 				"Dots" : "2"
 			}
@@ -18657,8 +18790,7 @@
 		"Requirements" : [{
 				"Name" : "Spirit",
 				"Dots" : "5"
-			},
-			{
+			}, {
 				"Name" : "Prime",
 				"Dots" : "5"
 			}
@@ -18765,8 +18897,7 @@
 		"Requirements" : [{
 				"Name" : "Spirit",
 				"Dots" : "5"
-			},
-			{
+			}, {
 				"Name" : "Death",
 				"Dots" : "3"
 			}
@@ -19039,6 +19170,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -19052,13 +19185,11 @@
 		"Requirements" : [{
 				"Name" : "Time",
 				"Dots" : "1"
-			},
-			{
+			}, {
 				"Name" : "Matter",
 				"Dots" : "1",
 				"Optional" : "True"
-			},
-			{
+			}, {
 				"Name" : "Life",
 				"Dots" : "1",
 				"Optional" : "True"
@@ -19331,6 +19462,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -19422,16 +19555,13 @@
 		"Requirements" : [{
 				"Name" : "Time",
 				"Dots" : "3"
-			},
-			{
+			}, {
 				"Name" : "Forces",
 				"Dots" : "2"
-			},
-			{
+			}, {
 				"Name" : "Life",
 				"Dots" : "2"
-			},
-			{
+			}, {
 				"Name" : "Matter",
 				"Dots" : "2"
 			}
@@ -19538,8 +19668,7 @@
 		"Requirements" : [{
 				"Name" : "Time",
 				"Dots" : "3"
-			},
-			{
+			}, {
 				"Name" : "Mind",
 				"Dots" : "2"
 			}
@@ -19646,8 +19775,7 @@
 		"Requirements" : [{
 				"Name" : "Time",
 				"Dots" : "4"
-			},
-			{
+			}, {
 				"Name" : "Matter",
 				"Dots" : "1"
 			}
@@ -19765,6 +19893,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -19815,6 +19945,8 @@
 		"Rotes" : [{
 				"RoteOrder" : "",
 				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
 
 				"RoteDescription" : ""
 			}
@@ -19828,12 +19960,10 @@
 		"Requirements" : [{
 				"Name" : "Time",
 				"Dots" : "5"
-			},
-			{
+			}, {
 				"Name" : "Fate",
 				"Dots" : "2"
-			},
-			{
+			}, {
 				"Name" : "Prime",
 				"Dots" : "2"
 			}
@@ -19940,17 +20070,14 @@
 		"Requirements" : [{
 				"Name" : "Time",
 				"Dots" : "3"
-			},
-			{
+			}, {
 				"Name" : "Mind",
 				"Dots" : "2"
-			},
-			{
+			}, {
 				"Name" : "Death",
 				"Dots" : "1",
 				"Optional" : "True"
-			},
-			{
+			}, {
 				"Name" : "Matter",
 				"Dots" : "1",
 				"Optional" : "True"
@@ -19980,8 +20107,7 @@
 		"Requirements" : [{
 				"Name" : "Mind",
 				"Dots" : "4"
-			},
-			{
+			}, {
 				"Name" : "Death",
 				"Dots" : "2"
 			}
@@ -20010,12 +20136,10 @@
 		"Requirements" : [{
 				"Name" : "Death",
 				"Dots" : "5"
-			},
-			{
+			}, {
 				"Name" : "Mind",
 				"Dots" : "4"
-			},
-			{
+			}, {
 				"Name" : "Time",
 				"Dots" : "2"
 			}
@@ -20044,12 +20168,10 @@
 		"Requirements" : [{
 				"Name" : "Fate",
 				"Dots" : "2"
-			},
-			{
+			}, {
 				"Name" : "Forces",
 				"Dots" : "2"
-			},
-			{
+			}, {
 				"Name" : "Space",
 				"Dots" : "2"
 			}
@@ -20078,12 +20200,10 @@
 		"Requirements" : [{
 				"Name" : "Fate",
 				"Dots" : "2"
-			},
-			{
+			}, {
 				"Name" : "Mind",
 				"Dots" : "2"
-			},
-			{
+			}, {
 				"Name" : "Matter",
 				"Dots" : "1",
 				"Optional" : "True"
@@ -20244,12 +20364,13 @@
 		"Duration" : "Prolonged (one scene)",
 		"Aspect" : "Vulgar",
 		"Cost" : "1 Mana (optional)",
-		"Effect" : "Mages who regularly work with ancient artifacts or experiment with explosives, advanced technologies or unusual types of magic often risk injury or death if the device or spell suddenly reacts in some violent and  unpredictable  manner.  This  spell  provides  an automatic  protection  for  the  mage,  her  laboratory and her companions.  The mage casts this spell in an area around himself. If the mage or anyone or anything within this area is attacked either physically or with magic, the spell activates. Once activated, the spell protects everything within a small radius (see Mage: The Awakening, p. 118) around the mage from harm by slowing down fast-moving objects, damping fires and harmlessly grounding dangerous amounts of electricity. If the mage notices any such danger, she can reflexively spend one point of Mana. Then, for the next turn, nothing in the area can move faster than a brisk walk (Speed 10), and levels of temperature and electricity remain safe for everyone inside this area. However, this spell is only useful on small- to moderate-sized threats. Even if a 20-foot-high, 10-foot-thick stone wall fell on someone fairly slowly, it would still (slowly) crush them. Also, once this turn ends, this protection instantly fades, unless the mage spends another point of Mana. The mage can continue spending Mana until she either runs out or the people inside the area cease being in immediate danger.",		"Rotes" : [{
+		"Effect" : "Mages who regularly work with ancient artifacts or experiment with explosives, advanced technologies or unusual types of magic often risk injury or death if the device or spell suddenly reacts in some violent and  unpredictable  manner.  This  spell  provides  an automatic  protection  for  the  mage,  her  laboratory and her companions.  The mage casts this spell in an area around himself. If the mage or anyone or anything within this area is attacked either physically or with magic, the spell activates. Once activated, the spell protects everything within a small radius (see Mage: The Awakening, p. 118) around the mage from harm by slowing down fast-moving objects, damping fires and harmlessly grounding dangerous amounts of electricity. If the mage notices any such danger, she can reflexively spend one point of Mana. Then, for the next turn, nothing in the area can move faster than a brisk walk (Speed 10), and levels of temperature and electricity remain safe for everyone inside this area. However, this spell is only useful on small- to moderate-sized threats. Even if a 20-foot-high, 10-foot-thick stone wall fell on someone fairly slowly, it would still (slowly) crush them. Also, once this turn ends, this protection instantly fades, unless the mage spends another point of Mana. The mage can continue spending Mana until she either runs out or the people inside the area cease being in immediate danger.",
+		"Rotes" : [{
 				"RoteOrder" : "Mysterium",
 				"RoteName" : "Shield the Magical Laboratory",
 				"RoteDicePool_Attribute" : "Wits",
 				"RoteDicePool_Skill" : "Craft",
-				"RoteDescription" : "Ancient magics are often even less predictable than modern explosives, and so this spell has saved the lives of more than one Mysterium experimenter who has had a rote or artifact react in a dangerous manner."			
+				"RoteDescription" : "Ancient magics are often even less predictable than modern explosives, and so this spell has saved the lives of more than one Mysterium experimenter who has had a rote or artifact react in a dangerous manner."
 			}
 		]
 	}, {
@@ -20268,13 +20389,13 @@
 		"Duration" : "Prolonged (one scene)",
 		"Aspect" : "Covert",
 		"Cost" : "None",
-		"Effect" : "Muscle memory can aid the human body in accomplishing truly tremendous feats, allowing reaction with more speed and surety than the human mind can register. With this spell, a mage can perfect his muscle memory, drawing on even the most basic of training to hone his reflexes and responses to stunning and breathtaking perfection. The mage chooses a single Physical Skill when this spell is cast. For each success on the spellcasting roll, that use of the skill is considered a rote action Ability, allowing his player to re-roll any dice that result in failures on non-magical uses of the skill. At Life 3, the mage may grant this ability to others by touch.",		
+		"Effect" : "Muscle memory can aid the human body in accomplishing truly tremendous feats, allowing reaction with more speed and surety than the human mind can register. With this spell, a mage can perfect his muscle memory, drawing on even the most basic of training to hone his reflexes and responses to stunning and breathtaking perfection. The mage chooses a single Physical Skill when this spell is cast. For each success on the spellcasting roll, that use of the skill is considered a rote action Ability, allowing his player to re-roll any dice that result in failures on non-magical uses of the skill. At Life 3, the mage may grant this ability to others by touch.",
 		"Rotes" : [{
 				"RoteOrder" : "Mysterium",
 				"RoteName" : "Perfected Flow",
 				"RoteDicePool_Attribute" : "Dexterity",
 				"RoteDicePool_Skill" : "Medicine",
-				"RoteDescription" : "Certain members of the Mysterium find that the best tool for a given job is the human body -- when faced liberating museums of Atlantean artifacts mistaken for simple archaeological finds, for instance. In such instances, the application of pressure to certain points in the body stimulates the flow of adrenaline through the body sufficient to prepare the body for upcoming action."			
+				"RoteDescription" : "Certain members of the Mysterium find that the best tool for a given job is the human body -- when faced liberating museums of Atlantean artifacts mistaken for simple archaeological finds, for instance. In such instances, the application of pressure to certain points in the body stimulates the flow of adrenaline through the body sufficient to prepare the body for upcoming action."
 			}
 		]
 	}, {
@@ -20293,13 +20414,13 @@
 		"Duration" : "Prolonged (one scene)",
 		"Aspect" : "Covert",
 		"Cost" : "1 Mana",
-		"Effect" : "All mages know of the Collective Human Unconscious, the collection of human knowledge regarded as one of the many layers of the Astral Plane. Some of the Awakened, however, discuss a similar realm that is to the nuances of the human body what the Collective Unconscious is to the mind. A mage who uses this spell can tap into that place, where the body-memory of all the greatest physical feats of humanity is kept, allowing even the most strenuous of physical feats to become simple. For each success on the spellcasting roll, the mage gains one use of the rote action ability on any Physical Skill. This may not be used to augment magical uses of the Skill (such as rote activation). At Life 5, the mage may grant this ability to others by touch.",		
+		"Effect" : "All mages know of the Collective Human Unconscious, the collection of human knowledge regarded as one of the many layers of the Astral Plane. Some of the Awakened, however, discuss a similar realm that is to the nuances of the human body what the Collective Unconscious is to the mind. A mage who uses this spell can tap into that place, where the body-memory of all the greatest physical feats of humanity is kept, allowing even the most strenuous of physical feats to become simple. For each success on the spellcasting roll, the mage gains one use of the rote action ability on any Physical Skill. This may not be used to augment magical uses of the Skill (such as rote activation). At Life 5, the mage may grant this ability to others by touch.",
 		"Rotes" : [{
 				"RoteOrder" : "Mysterium",
 				"RoteName" : "The Olympian Collective",
 				"RoteDicePool_Attribute" : "Strength",
 				"RoteDicePool_Skill" : "Athletics",
-				"RoteDescription" : "To a viewer, it might seem that the mage who invokes this rote is simply stretching, or posing in some mimicry of athletes the world over. In actuality, the Mysterium mage draws upon his knowledge of the thousand-thousand athletes of history, assuming their poses, claiming their victories for himself in body posture and will."			
+				"RoteDescription" : "To a viewer, it might seem that the mage who invokes this rote is simply stretching, or posing in some mimicry of athletes the world over. In actuality, the Mysterium mage draws upon his knowledge of the thousand-thousand athletes of history, assuming their poses, claiming their victories for himself in body posture and will."
 			}
 		]
 	}, {
@@ -20311,8 +20432,7 @@
 		"Requirements" : [{
 				"Name" : "Matter",
 				"Dots" : "1"
-			},
-			{
+			}, {
 				"Name" : "Prime",
 				"Dots" : "1"
 			}
@@ -20322,13 +20442,13 @@
 		"Duration" : "Lasting",
 		"Aspect" : "Covert",
 		"Cost" : "None",
-		"Effect" : "The mage can copy an existing grimoire without knowing the rotes it contains or even how to properly read the text. The mage must have unimpeded physical access to the original grimoire for the duration of the spell. The basic threshold is one success per Arcanum dot, but the Storyteller may add additional difficulty if the grimoire is especially difficult to copy due to complex diagrams, confusing organization or even blurry text. In the case of some grimoires (such as the Corpus Mysteriorum), this makes it impossible to properly judge the difficulty and number of spells within. The caster can't alter the language, organization or basic appearance of the copy from the original except for a few minor deviations in materials and penmanship. Once the caster is finished, the new grimoire contains all of the rotes of the original. The copy even retains any magical curses or safeguards contained in the original as long as those were part of a combined spell that created the original (or in the case of a copy of a copy, ultimately descends from an original work of this type). The copy functions just as a standard grimoire, though it should be noted that this spell is often used to reproduce books that are difficult to understand. This spell can't copy a daimonomicon unless it incorporates the master-ranked Arcanum used to create that work in the first place.",		
+		"Effect" : "The mage can copy an existing grimoire without knowing the rotes it contains or even how to properly read the text. The mage must have unimpeded physical access to the original grimoire for the duration of the spell. The basic threshold is one success per Arcanum dot, but the Storyteller may add additional difficulty if the grimoire is especially difficult to copy due to complex diagrams, confusing organization or even blurry text. In the case of some grimoires (such as the Corpus Mysteriorum), this makes it impossible to properly judge the difficulty and number of spells within. The caster can't alter the language, organization or basic appearance of the copy from the original except for a few minor deviations in materials and penmanship. Once the caster is finished, the new grimoire contains all of the rotes of the original. The copy even retains any magical curses or safeguards contained in the original as long as those were part of a combined spell that created the original (or in the case of a copy of a copy, ultimately descends from an original work of this type). The copy functions just as a standard grimoire, though it should be noted that this spell is often used to reproduce books that are difficult to understand. This spell can't copy a daimonomicon unless it incorporates the master-ranked Arcanum used to create that work in the first place.",
 		"Rotes" : [{
 				"RoteOrder" : "Mysterium",
 				"RoteName" : "Illuminated Hand",
 				"RoteDicePool_Attribute" : "Intelligence",
 				"RoteDicePool_Skill" : "Crafts",
-				"RoteDescription" : "Mystagogues copy grimoires such as the Corpus Mysteriorum to pass on its knowledge and demonstrate their devotion to knowledge. This rote is partly responsible for the order's great storehouse of magical knowledge, but this rote can also be used to copy cursed books, spreading a corrupt tome throughout the Awakened community. Some cursed grimoires include an enchantment that compels readers to learn and use this rote to copy the monstrous knowledge within them."			
+				"RoteDescription" : "Mystagogues copy grimoires such as the Corpus Mysteriorum to pass on its knowledge and demonstrate their devotion to knowledge. This rote is partly responsible for the order's great storehouse of magical knowledge, but this rote can also be used to copy cursed books, spreading a corrupt tome throughout the Awakened community. Some cursed grimoires include an enchantment that compels readers to learn and use this rote to copy the monstrous knowledge within them."
 			}
 		]
 	}, {
@@ -20347,13 +20467,13 @@
 		"Duration" : "Prolonged (one scene)",
 		"Aspect" : "Vulgar",
 		"Cost" : "None",
-		"Effect" : "Although the ability to change one substance into another is useful, sometimes merely the perception of change (without tinkering with the true components) is desired. With this spell, the mage can make an object appear to be made of something else, without actually changing the object itself. While the Matter spells that actually transform substance work on different types of substances at different levels, Deceptive Appearance can target any non-living, non-magical substance, regardless of rarity or physical state. This spell can change the appearance of any solid, liquid or gas object to that of any other simple substance of the same state. A complex object can be made to take on the overall appearance of any simple substance, but separate spells must be used to give the appearance of separate substances. Thus, with a single use of this spell, a pistol with a metal barrel and wooden handle might be given the appearance of being crafted entirely of gold. However, to give the pistol the appearance of having a gold barrel and ivory handle, two successful separate spells must be cast. Deceptive Appearance does not change the shape of the object. A glass beer stein may be given the appearance of being made of stone or steel, but it cannot be made to look like a martini glass. Successes are allocated to casting factor (Size). At this level, the mage must touch the substance in order to change its appearance. At Matter 4, Deceptive Appearance can be cast at sensory range and can use advanced prolongation Duration factors. Note: The change granted by Deceptive Appearance is visual only. The spell will not change the actual density, weight, taste, smell or temperature of the substance. Wine that is made to appear to be water will still taste like wine and have its intoxicating effects, while lead that is spelled to look like wood will still sink if placed in water. The addition of Mind 2 to this spell allows a mage to grant a change the perception of taste, smell, weight or temperature. The spell does not, however change the actual weight, temperature or density of the object.",		
+		"Effect" : "Although the ability to change one substance into another is useful, sometimes merely the perception of change (without tinkering with the true components) is desired. With this spell, the mage can make an object appear to be made of something else, without actually changing the object itself. While the Matter spells that actually transform substance work on different types of substances at different levels, Deceptive Appearance can target any non-living, non-magical substance, regardless of rarity or physical state. This spell can change the appearance of any solid, liquid or gas object to that of any other simple substance of the same state. A complex object can be made to take on the overall appearance of any simple substance, but separate spells must be used to give the appearance of separate substances. Thus, with a single use of this spell, a pistol with a metal barrel and wooden handle might be given the appearance of being crafted entirely of gold. However, to give the pistol the appearance of having a gold barrel and ivory handle, two successful separate spells must be cast. Deceptive Appearance does not change the shape of the object. A glass beer stein may be given the appearance of being made of stone or steel, but it cannot be made to look like a martini glass. Successes are allocated to casting factor (Size). At this level, the mage must touch the substance in order to change its appearance. At Matter 4, Deceptive Appearance can be cast at sensory range and can use advanced prolongation Duration factors. Note: The change granted by Deceptive Appearance is visual only. The spell will not change the actual density, weight, taste, smell or temperature of the substance. Wine that is made to appear to be water will still taste like wine and have its intoxicating effects, while lead that is spelled to look like wood will still sink if placed in water. The addition of Mind 2 to this spell allows a mage to grant a change the perception of taste, smell, weight or temperature. The spell does not, however change the actual weight, temperature or density of the object.",
 		"Rotes" : [{
 				"RoteOrder" : "Mysterium",
 				"RoteName" : "Golden Gleam",
 				"RoteDicePool_Attribute" : "Wits",
 				"RoteDicePool_Skill" : "Subterfuge",
-				"RoteDescription" : "When removing magical objects from the hands of the unworthy, sometimes guile works better than force, and an individual's own greed may well convince him that trading the simple box for that large lump of gold is a good trade, especially if he does not realize the box's magical potential. Mystagogues frequently use this rote to temporarily give a worthless item the appearance of value in order to trade the item for magical items, Artifacts or tomes containing mysteries that have fallen into undeserving hands. Although some might say the practice is immoral, the Mysterium feels it is sometimes a preferable alternative to violent or potentially deadly conflict over the acquisition of such items."			
+				"RoteDescription" : "When removing magical objects from the hands of the unworthy, sometimes guile works better than force, and an individual's own greed may well convince him that trading the simple box for that large lump of gold is a good trade, especially if he does not realize the box's magical potential. Mystagogues frequently use this rote to temporarily give a worthless item the appearance of value in order to trade the item for magical items, Artifacts or tomes containing mysteries that have fallen into undeserving hands. Although some might say the practice is immoral, the Mysterium feels it is sometimes a preferable alternative to violent or potentially deadly conflict over the acquisition of such items."
 			}
 		]
 	}, {
@@ -20365,8 +20485,7 @@
 		"Requirements" : [{
 				"Name" : "Matter",
 				"Dots" : "3"
-			},
-			{
+			}, {
 				"Name" : "Space",
 				"Dots" : "3"
 			}
@@ -20376,13 +20495,13 @@
 		"Duration" : "Lasting",
 		"Aspect" : "Vulgar",
 		"Cost" : "None",
-		"Effect" : "The mage calls and reassembles the widely separated parts of an item. The spell \"Repair Object\" repairs only objects when most of the pieces are present; this spell allows the mage to recreate a shattered vase merely by holding a single fragment of the vase and calling the remainder of the vase to it. The number of successes rolled determines the size of the object that the spell can restore. The size of the fragment and the number and distance of the pieces do not matter. As long as the mage is holding a piece of the object large enough to see and feel clearly (at least the size of a lentil or dried pea), she can call the remainder of the pieces of the object and reassemble them so that the object looks as good as when it were newly made. Each success (or additional target factor prefigured into the casting) allows the mage to restore an object of that size; thus, three successes allow a mage to restore an object of up to Size 3. If some pieces no longer exist, then the spell creates new matter to repair the missing portions in a manner similar to the \"Repair Object\" spell. However, at least half of the object must still exist in some form similar to its original state. If more than half of the object was utterly destroyed or transformed, such as metal being melted down or reforged, or wood being burned to fine gray ashes, this spell automatically fails, and the mage knows that the object is lost forever.",		
+		"Effect" : "The mage calls and reassembles the widely separated parts of an item. The spell \"Repair Object\" repairs only objects when most of the pieces are present; this spell allows the mage to recreate a shattered vase merely by holding a single fragment of the vase and calling the remainder of the vase to it. The number of successes rolled determines the size of the object that the spell can restore. The size of the fragment and the number and distance of the pieces do not matter. As long as the mage is holding a piece of the object large enough to see and feel clearly (at least the size of a lentil or dried pea), she can call the remainder of the pieces of the object and reassemble them so that the object looks as good as when it were newly made. Each success (or additional target factor prefigured into the casting) allows the mage to restore an object of that size; thus, three successes allow a mage to restore an object of up to Size 3. If some pieces no longer exist, then the spell creates new matter to repair the missing portions in a manner similar to the \"Repair Object\" spell. However, at least half of the object must still exist in some form similar to its original state. If more than half of the object was utterly destroyed or transformed, such as metal being melted down or reforged, or wood being burned to fine gray ashes, this spell automatically fails, and the mage knows that the object is lost forever.",
 		"Rotes" : [{
 				"RoteOrder" : "Mysterium",
 				"RoteName" : "Journey From Part To Whole",
 				"RoteDicePool_Attribute" : "Dexterity",
 				"RoteDicePool_Skill" : "Craft",
-				"RoteDescription" : "For Mysterium archaeologists, this spell means that finding a small fragment of an ancient artifact is the same as finding the entire artifact. Given the antiquity of many of the items these intrepid scholars seek, this spell has proven invaluable in their efforts."			
+				"RoteDescription" : "For Mysterium archaeologists, this spell means that finding a small fragment of an ancient artifact is the same as finding the entire artifact. Given the antiquity of many of the items these intrepid scholars seek, this spell has proven invaluable in their efforts."
 			}
 		]
 	}, {
@@ -20401,17 +20520,16 @@
 		"Duration" : "Prolonged (one scene) or Lasting",
 		"Aspect" : "Vulgar",
 		"Cost" : "1 Mana",
-		"Effect" : "The mage creates a precise duplicate of a mundane object. When casting this spell, the mage must have a supply of raw material out of which the duplicate may be created. If these raw materials are of approximately the right sort (such as plastic, and bits of various sorts of wire for duplicating a computer) and of at least the same Size, then a single success creates a nearly exact duplicate, and further successes create increasingly perfect duplicates. With two successes, all of the print and images inside a duplicated book are identical to the original, and with three or more successes, the book also possesses exactly the same wear patterns. If the mage wishes to duplicate both a computer and the data on it, or to duplicate any other form of electronic storage, then she must cast this as a conjunctional spell with Forces 2. Also, the maximum Size of the object being duplicated equals the mage's dots in Matter. One unusual property of the spell is that if the raw materials are sufficiently close to the object being duplicated, then the Duration of the spell becomes lasting. Examples of these sorts of raw materials are duplicating a book by using a blank book of a similar size and shape and a quantity of ink as raw materials or duplicating a computer by using as raw materials another similar computer (which might be a considerably older model). To create a lasting duplicate, the raw material must be quite similar in both composition and form to the object being duplicated. This spell can also be used to duplicate Artifacts, enhanced, and imbued items if cast as a conjunctional spell with Prime 3; however, duplicates of Artifacts or imbued items made with this spell all have a maximum Duration of 24 hours and can never be made lasting, regardless of the raw materials or power level involved. This spell is the only known method for duplicating Artifacts, but none of these duplicated Artifacts can ever exist for more than 24 hours.",		
+		"Effect" : "The mage creates a precise duplicate of a mundane object. When casting this spell, the mage must have a supply of raw material out of which the duplicate may be created. If these raw materials are of approximately the right sort (such as plastic, and bits of various sorts of wire for duplicating a computer) and of at least the same Size, then a single success creates a nearly exact duplicate, and further successes create increasingly perfect duplicates. With two successes, all of the print and images inside a duplicated book are identical to the original, and with three or more successes, the book also possesses exactly the same wear patterns. If the mage wishes to duplicate both a computer and the data on it, or to duplicate any other form of electronic storage, then she must cast this as a conjunctional spell with Forces 2. Also, the maximum Size of the object being duplicated equals the mage's dots in Matter. One unusual property of the spell is that if the raw materials are sufficiently close to the object being duplicated, then the Duration of the spell becomes lasting. Examples of these sorts of raw materials are duplicating a book by using a blank book of a similar size and shape and a quantity of ink as raw materials or duplicating a computer by using as raw materials another similar computer (which might be a considerably older model). To create a lasting duplicate, the raw material must be quite similar in both composition and form to the object being duplicated. This spell can also be used to duplicate Artifacts, enhanced, and imbued items if cast as a conjunctional spell with Prime 3; however, duplicates of Artifacts or imbued items made with this spell all have a maximum Duration of 24 hours and can never be made lasting, regardless of the raw materials or power level involved. This spell is the only known method for duplicating Artifacts, but none of these duplicated Artifacts can ever exist for more than 24 hours.",
 		"Rotes" : [{
 				"RoteOrder" : "Mysterium",
 				"RoteName" : "Unwitting Loan",
 				"RoteDicePool_Attribute" : "Intelligence",
 				"RoteDicePool_Skill" : "Crafts",
-				"RoteDescription" : "Occasionally, someone would notice the theft of a valuable artifact too quickly for the thief to escape and other times, even an ally may have an artifact worthy of careful study that she does not wish to part with. In these and other cases, the Mysterium employs this rote to allow the order to obtain a valuable item without depriving its owner of it."			
+				"RoteDescription" : "Occasionally, someone would notice the theft of a valuable artifact too quickly for the thief to escape and other times, even an ally may have an artifact worthy of careful study that she does not wish to part with. In these and other cases, the Mysterium employs this rote to allow the order to obtain a valuable item without depriving its owner of it."
 			}
 		]
-	}, 
-	{
+	}, {
 		"Name" : "Reconfigure Object",
 		"SourceBook" : "Mage: The Awakening",
 		"SourcePage" : "201",
@@ -20427,17 +20545,16 @@
 		"Duration" : "Instant",
 		"Aspect" : "Vulgar",
 		"Cost" : "None",
-		"Effect" : "The mage can turn an object into a different type of object. He could, for example, turn an aluminum baseball bat into an aluminum sword. Its form is altered, but its material substance remains unchanged. A simple or complex object can be transformed into a different simple or complex object. Its Durability, Structure, and Size are not changed, however. If the caster combines this effect with Transmute Earth, he can change a subject's material composition with the same casting.",		
+		"Effect" : "The mage can turn an object into a different type of object. He could, for example, turn an aluminum baseball bat into an aluminum sword. Its form is altered, but its material substance remains unchanged. A simple or complex object can be transformed into a different simple or complex object. Its Durability, Structure, and Size are not changed, however. If the caster combines this effect with Transmute Earth, he can change a subject's material composition with the same casting.",
 		"Rotes" : [{
 				"RoteOrder" : "Mysterium",
 				"RoteName" : "Artisan's Hand",
 				"RoteDicePool_Attribute" : "Dexterity",
 				"RoteDicePool_Skill" : "Crafts",
-				"RoteDescription" : "Silver Ladder mages can exert their will even over the shape of lifeless matter through use of this rote, reshaping such objects into more useful forms. Mages of all orders with sufficient training in the Matter Arcanum make use of this rote."			
+				"RoteDescription" : "Silver Ladder mages can exert their will even over the shape of lifeless matter through use of this rote, reshaping such objects into more useful forms. Mages of all orders with sufficient training in the Matter Arcanum make use of this rote."
 			}
 		]
-	}, 
-	{
+	}, {
 		"Name" : "Transubstantiation Of Content",
 		"SourceBook" : "The Mysterium",
 		"SourcePage" : "199",
@@ -20446,8 +20563,7 @@
 		"Requirements" : [{
 				"Name" : "Matter",
 				"Dots" : "4"
-			},
-			{
+			}, {
 				"Name" : "Mind",
 				"Dots" : "3"
 			}
@@ -20457,17 +20573,16 @@
 		"Duration" : "Lasting",
 		"Aspect" : "Vulgar",
 		"Cost" : "None",
-		"Effect" : "Despite the popular image of wizards poring over ponderous hoards of obscure and dusty tomes, many modern mages prefer the compact elegance of sophisticated electronic media. With this spell, a mage can freely mix and convert data across any storage medium, provided the original object stores deliberate data in some fashion. With a successful casting of this spell, a mage can alter the medium of any data without altering the underlying meaning of the content. At the subtler end, this spell can recode electronic files so they must be read with a different operating system or translate a book written in one language to become written in another. More dramatic uses of the spell can condense a stack of tomes into a single flash drive or vice versa, though the total size of all objects before and after transformation cannot exceed 5, and the mage cannot create any data medium that he is not personally familiar with.",		
+		"Effect" : "Despite the popular image of wizards poring over ponderous hoards of obscure and dusty tomes, many modern mages prefer the compact elegance of sophisticated electronic media. With this spell, a mage can freely mix and convert data across any storage medium, provided the original object stores deliberate data in some fashion. With a successful casting of this spell, a mage can alter the medium of any data without altering the underlying meaning of the content. At the subtler end, this spell can recode electronic files so they must be read with a different operating system or translate a book written in one language to become written in another. More dramatic uses of the spell can condense a stack of tomes into a single flash drive or vice versa, though the total size of all objects before and after transformation cannot exceed 5, and the mage cannot create any data medium that he is not personally familiar with.",
 		"Rotes" : [{
 				"RoteOrder" : "Mysterium",
 				"RoteName" : "Mutable Media",
 				"RoteDicePool_Attribute" : "Intelligence",
 				"RoteDicePool_Skill" : "Crafts",
-				"RoteDescription" : "For every young Mysterium scholar looking to upgrade inherited texts to more technologically-driven and user-friendly forms, an older or more traditional member labors to distill useful knowledge from meaningless technobabble and superfluous gadgetry. In short, this rote facilitates cooperation between colleagues who might not otherwise have a frame of reference to understand each other's efforts."			
+				"RoteDescription" : "For every young Mysterium scholar looking to upgrade inherited texts to more technologically-driven and user-friendly forms, an older or more traditional member labors to distill useful knowledge from meaningless technobabble and superfluous gadgetry. In short, this rote facilitates cooperation between colleagues who might not otherwise have a frame of reference to understand each other's efforts."
 			}
 		]
-	}, 
-	{
+	}, {
 		"Name" : "Greater Transmogrification",
 		"SourceBook" : "Mage: The Awakening",
 		"SourcePage" : "204",
@@ -20483,18 +20598,17 @@
 		"Duration" : "Prolonged (one scene)",
 		"Aspect" : "Vulgar",
 		"Cost" : "None",
-		"Effect" : "The mage can now transform liquids and solids into gases, and vice-versa in any combination. As the Matter 4 Lesser Transmogrification spell, except that now the mage can freely interchange liquid, solid, and gaseous states, including precious or rare substances (as described with the Transmute Gold spell).",		
+		"Effect" : "The mage can now transform liquids and solids into gases, and vice-versa in any combination. As the Matter 4 Lesser Transmogrification spell, except that now the mage can freely interchange liquid, solid, and gaseous states, including precious or rare substances (as described with the Transmute Gold spell).",
 		"Rotes" : [{
 				"RoteOrder" : "Free Council",
 				"RoteName" : "Playing God",
 				"RoteDicePool_Attribute" : "Intelligence",
 				"RoteDicePool_Skill" : "Science",
-				"RoteDescription" : "The Free Council mages use this rote to do nearly anything imaginable with matter. Guardians of the Veil use the same rote in their work, erasing evidence of the paranormal through material transformation."			
+				"RoteDescription" : "The Free Council mages use this rote to do nearly anything imaginable with matter. Guardians of the Veil use the same rote in their work, erasing evidence of the paranormal through material transformation."
 			}
 		],
 		"Notes" : "This spell has no listed Duration. Since it is a greater form of the Matter 4 Lesser Transmogrification spell the Duration has been copied from there."
-	}, 
-	{
+	}, {
 		"Name" : "Aura Perception",
 		"SourceBook" : "Mage: The Awakening",
 		"SourcePage" : "205",
@@ -20510,24 +20624,22 @@
 		"Duration" : "Concentration",
 		"Aspect" : "Covert",
 		"Cost" : "None",
-		"Effect" : "The mage can discern the mental and emotional states of a thinking being by reading his aura. Some mages perceive auras as a series of colors, while others describe them in terms of musical notes, odors, tastes or other purely non-physical senses. See the chart below for specifics. Note that this spell does not allow a mage to read a target's nature. That requires the \"Supernal Vision\" spell.",		
+		"Effect" : "The mage can discern the mental and emotional states of a thinking being by reading his aura. Some mages perceive auras as a series of colors, while others describe them in terms of musical notes, odors, tastes or other purely non-physical senses. See the chart below for specifics. Note that this spell does not allow a mage to read a target's nature. That requires the \"Supernal Vision\" spell.",
 		"Rotes" : [{
 				"RoteOrder" : "Adamantine Arrow",
 				"RoteName" : "Know The Wolf By His Stance",
 				"RoteDicePool_Attribute" : "Wits",
 				"RoteDicePool_Skill" : "Empathy",
-				"RoteDescription" : "In nature, most creatures give their emotional state away through a combination of body posture, facial expression and other physiological cues (such as musk or excessive saliva). Humans have learned to suppress many of these cues for the sake of \"polite\" social interaction, but a mage of the Adamantine Arrow can look past these civilized contrivances and read an individual's true intent. Willworkers of the Silver Ladder are also known to employ this rote; the power to control a person through understanding of her emotions is not to be underestimated."			
-			},
-			{
+				"RoteDescription" : "In nature, most creatures give their emotional state away through a combination of body posture, facial expression and other physiological cues (such as musk or excessive saliva). Humans have learned to suppress many of these cues for the sake of \"polite\" social interaction, but a mage of the Adamantine Arrow can look past these civilized contrivances and read an individual's true intent. Willworkers of the Silver Ladder are also known to employ this rote; the power to control a person through understanding of her emotions is not to be underestimated."
+			}, {
 				"RoteOrder" : "Theosophy Tradition",
 				"RoteName" : "Etheric Lens",
 				"RoteDicePool_Attribute" : "Wits",
 				"RoteDicePool_Skill" : "Empathy",
-				"RoteDescription" : "The mage sees without seeing, closing his eyes for a moment and concentrating on the individual in front of him. In his mind's eye he sees the aura of the subject, like the colors that appear on the back of the eyelid after staring too long at the sun."			
+				"RoteDescription" : "The mage sees without seeing, closing his eyes for a moment and concentrating on the individual in front of him. In his mind's eye he sees the aura of the subject, like the colors that appear on the back of the eyelid after staring too long at the sun."
 			}
 		]
-	}, 
-	{
+	}, {
 		"Name" : "Perfect Mnemonic",
 		"SourceBook" : "The Mysterium",
 		"SourcePage" : "199",
@@ -20543,17 +20655,16 @@
 		"Duration" : "Lasting",
 		"Aspect" : "Covert",
 		"Cost" : "None",
-		"Effect" : "Imbuing her words with arcane gravitas, a mage can brand an idea directly into a subject's memory. Should such a subject fall prey to dementia or brain damage, forgetting even his own name, he will never forget the ideas burned into the deepest recesses of his psyche. In order to cast this rote, the mage must vocalize the intended knowledge to the subject, even if that subject is the mage himself. The presence of bystanders has no effect on the magic, though the speech must be targeted specifically at an individual rather than being a general address. If the spell succeeds, the subject never forgets that information without the interference of other magic or powers. Mind 2 is required for the mage to target himself; scribing other minds requires Mind 3. With an additional dot of Mind beyond these requirements, knowledge may be imparted telepathically rather than aloud. Resolve is not subtracted from the caster's pool if the target is aware and willing. Although not widely known outside of the forbidden ranks of the Unforgotten Scions, this spell can also be cast more aggressively on a Sleeper target, in which case the spell costs one Mana point. If the spell succeeds, the target not only remembers the branded information forever but also develops a perverse fascination to share the knowledge with others per the Fixation derangement; this derangement potentially flares up whenever the subject of the information comes up in conversation or the target is actively reminded of it, promoting the usual Resolve + Composure roll to resist. Any new fixation implanted this way replaces all existing ones, so a victim only needs to worry about the most recent obsession. Furthermore, he may permanently overcome such madness by spending one dot of Willpower or raising his Morality; otherwise, such madness is permanent. Damaging a Sleeper's mind this way is an act of hubris, requiring a mage with a Wisdom higher than four dots to make a degeneration roll. More importantly, doing this is an excellent way to attract the attention of the Unforgotten and its enemies.",		
+		"Effect" : "Imbuing her words with arcane gravitas, a mage can brand an idea directly into a subject's memory. Should such a subject fall prey to dementia or brain damage, forgetting even his own name, he will never forget the ideas burned into the deepest recesses of his psyche. In order to cast this rote, the mage must vocalize the intended knowledge to the subject, even if that subject is the mage himself. The presence of bystanders has no effect on the magic, though the speech must be targeted specifically at an individual rather than being a general address. If the spell succeeds, the subject never forgets that information without the interference of other magic or powers. Mind 2 is required for the mage to target himself; scribing other minds requires Mind 3. With an additional dot of Mind beyond these requirements, knowledge may be imparted telepathically rather than aloud. Resolve is not subtracted from the caster's pool if the target is aware and willing. Although not widely known outside of the forbidden ranks of the Unforgotten Scions, this spell can also be cast more aggressively on a Sleeper target, in which case the spell costs one Mana point. If the spell succeeds, the target not only remembers the branded information forever but also develops a perverse fascination to share the knowledge with others per the Fixation derangement; this derangement potentially flares up whenever the subject of the information comes up in conversation or the target is actively reminded of it, promoting the usual Resolve + Composure roll to resist. Any new fixation implanted this way replaces all existing ones, so a victim only needs to worry about the most recent obsession. Furthermore, he may permanently overcome such madness by spending one dot of Willpower or raising his Morality; otherwise, such madness is permanent. Damaging a Sleeper's mind this way is an act of hubris, requiring a mage with a Wisdom higher than four dots to make a degeneration roll. More importantly, doing this is an excellent way to attract the attention of the Unforgotten and its enemies.",
 		"Rotes" : [{
 				"RoteOrder" : "Adamantine Arrow",
 				"RoteName" : "Soul Scribing",
 				"RoteDicePool_Attribute" : "Manipulation",
 				"RoteDicePool_Skill" : "Expression",
-				"RoteDescription" : "Although the Mysterium spends more time solving mysteries than protecting them, members also recognize that every secret forgotten is one that they must waste time rediscovering. Therefore, members make extensive use of this rote, to help themselves remember and to educate junior members in the order's regulations. The aggressive casting method is not widely known, but thankfully, mages cannot accidentally stumble on it unless they actually intend such harm."		
+				"RoteDescription" : "Although the Mysterium spends more time solving mysteries than protecting them, members also recognize that every secret forgotten is one that they must waste time rediscovering. Therefore, members make extensive use of this rote, to help themselves remember and to educate junior members in the order's regulations. The aggressive casting method is not widely known, but thankfully, mages cannot accidentally stumble on it unless they actually intend such harm."
 			}
 		]
-	}, 
-	{
+	}, {
 		"Name" : "Willful Process",
 		"SourceBook" : "The Mysterium",
 		"SourcePage" : "200",
@@ -20569,17 +20680,16 @@
 		"Duration" : "Prolonged",
 		"Aspect" : "Covert",
 		"Cost" : "None",
-		"Effect" : "Sometimes it is not enough to simply be smarter. With this spell, a mage can perfect his ability to remember and take advantage of what he's learned. Likewise, a clever mage may apply this bit of sorcery to his interactions with others, allowing his previous experiences in dealing with others to drive his instinctual responses. The mage chooses a single Mental or Social Skill when this spell is cast. For each success on the spellcasting roll, that use of the skill is considered a rote action allowing his player to re-roll any dice that result in failures. This may only be used on non-magical Skill rolls. At Mind 3, the mage may grant this ability to others by touch.",		
+		"Effect" : "Sometimes it is not enough to simply be smarter. With this spell, a mage can perfect his ability to remember and take advantage of what he's learned. Likewise, a clever mage may apply this bit of sorcery to his interactions with others, allowing his previous experiences in dealing with others to drive his instinctual responses. The mage chooses a single Mental or Social Skill when this spell is cast. For each success on the spellcasting roll, that use of the skill is considered a rote action allowing his player to re-roll any dice that result in failures. This may only be used on non-magical Skill rolls. At Mind 3, the mage may grant this ability to others by touch.",
 		"Rotes" : [{
 				"RoteOrder" : "Mysterium",
 				"RoteName" : "Powerful Recollection",
 				"RoteDicePool_Attribute" : "Wits",
 				"RoteDicePool_Skill" : "Academics",
-				"RoteDescription" : "Through a series of meditations and mental exercises, Mysterium scholars about to undertake extensive studies or research often use this rote to hone their personal skills. When time is of the essence, the mind must be sharp."		
+				"RoteDescription" : "Through a series of meditations and mental exercises, Mysterium scholars about to undertake extensive studies or research often use this rote to hone their personal skills. When time is of the essence, the mind must be sharp."
 			}
 		]
-	}, 
-	{
+	}, {
 		"Name" : "Eternal Now",
 		"SourceBook" : "The Mysterium",
 		"SourcePage" : "200",
@@ -20595,17 +20705,16 @@
 		"Duration" : "Prolonged",
 		"Aspect" : "Covert",
 		"Cost" : "None",
-		"Effect" : "The mage temporarily removes the ability of the target to process new memories. For the Duration of the spell, the target can remember any memories of experiences that occurred before the spell was cast, but cannot form any new memories. As a result, a turn after the target looks away from something or someone, he forgets about its presence, unless he expected an object to be in a particular place before the spell was cast. Also, while the target can have a perfectly normal conversation, once the conversation ends and the target either starts doing something else or the person he was talking to walks out of sight, the target completely forgets the conversation. For the Duration to this spell, someone could greet the target, hold a conversation with him and walk into another room and the target would completely forget having seen this person. A target could also laugh at a previously unheard joke repeatedly, since each time he heard the joke would effectively be hearing it for the first time. Once the Duration of this spell expires, the target's ability to form memories returns, but any memories lost during the spell's Duration are gone for good. For the Duration of this spell, the target reacts perfectly normally and will not notice any problem with his memory unless someone points this problem out. Even if someone tells the target that he is having memory problems, he will forget this information a few minutes later. Because memory takes a short while to process, the spell also prevents the target from remembering anything that occurred during the turn that before the spell was cast.",		
+		"Effect" : "The mage temporarily removes the ability of the target to process new memories. For the Duration of the spell, the target can remember any memories of experiences that occurred before the spell was cast, but cannot form any new memories. As a result, a turn after the target looks away from something or someone, he forgets about its presence, unless he expected an object to be in a particular place before the spell was cast. Also, while the target can have a perfectly normal conversation, once the conversation ends and the target either starts doing something else or the person he was talking to walks out of sight, the target completely forgets the conversation. For the Duration to this spell, someone could greet the target, hold a conversation with him and walk into another room and the target would completely forget having seen this person. A target could also laugh at a previously unheard joke repeatedly, since each time he heard the joke would effectively be hearing it for the first time. Once the Duration of this spell expires, the target's ability to form memories returns, but any memories lost during the spell's Duration are gone for good. For the Duration of this spell, the target reacts perfectly normally and will not notice any problem with his memory unless someone points this problem out. Even if someone tells the target that he is having memory problems, he will forget this information a few minutes later. Because memory takes a short while to process, the spell also prevents the target from remembering anything that occurred during the turn that before the spell was cast.",
 		"Rotes" : [{
 				"RoteOrder" : "Mysterium",
 				"RoteName" : "Forgetting The Intruder's Presence",
 				"RoteDicePool_Attribute" : "Wits",
 				"RoteDicePool_Skill" : "Subterfuge",
-				"RoteDescription" : "When looking through rare books or stealing ancient artifacts, Mysterium investigators who are discovered prefer to use this spell to keep the target from remembering their identity and even their presence."		
+				"RoteDescription" : "When looking through rare books or stealing ancient artifacts, Mysterium investigators who are discovered prefer to use this spell to keep the target from remembering their identity and even their presence."
 			}
 		]
-	}, 
-	{
+	}, {
 		"Name" : "Induce Sleep",
 		"SourceBook" : "The Mysterium",
 		"SourcePage" : "201",
@@ -20614,8 +20723,7 @@
 		"Requirements" : [{
 				"Name" : "Mind",
 				"Dots" : "3"
-			},
-			{
+			}, {
 				"Name" : "Life",
 				"Dots" : "2"
 			}
@@ -20625,17 +20733,16 @@
 		"Duration" : "Prolonged",
 		"Aspect" : "Covert",
 		"Cost" : "None",
-		"Effect" : "The mage can both prevent sleeping targets from waking and encourage tired targets to fall asleep. This spell has no affect on anyone who is wide awake, frightened, or otherwise not fatigued or sleepy. However, if the mage uses this spell on a sleeping target, unless the target suffers damage or significant pain, she will not awaken for the Duration of this spell. Even loud noises will not awaken her. As long as targets are not injured, they will not awaken if they are shaken, tied up or carried relatively carefully. If this spell is used upon a target who is awake but also exhausted, sleepy, drunk or otherwise in a state in which it is easy to fall asleep, the target gradually falls asleep over the course of around 15 minutes unless some person, loud noise, or similar event prevents the target from doing so. Additional successes reduce the time required for the target to fall asleep. Once the target is asleep, this spell also keeps her asleep; otherwise, the sleep induced by this spell is perfectly normal sleep, and once the Duration expires, the target can be awakened normally.",		
+		"Effect" : "The mage can both prevent sleeping targets from waking and encourage tired targets to fall asleep. This spell has no affect on anyone who is wide awake, frightened, or otherwise not fatigued or sleepy. However, if the mage uses this spell on a sleeping target, unless the target suffers damage or significant pain, she will not awaken for the Duration of this spell. Even loud noises will not awaken her. As long as targets are not injured, they will not awaken if they are shaken, tied up or carried relatively carefully. If this spell is used upon a target who is awake but also exhausted, sleepy, drunk or otherwise in a state in which it is easy to fall asleep, the target gradually falls asleep over the course of around 15 minutes unless some person, loud noise, or similar event prevents the target from doing so. Additional successes reduce the time required for the target to fall asleep. Once the target is asleep, this spell also keeps her asleep; otherwise, the sleep induced by this spell is perfectly normal sleep, and once the Duration expires, the target can be awakened normally.",
 		"Rotes" : [{
 				"RoteOrder" : "Mysterium",
 				"RoteName" : "Hypnos's Subtle Grasp",
 				"RoteDicePool_Attribute" : "Manipulation",
 				"RoteDicePool_Skill" : "Persuasion",
-				"RoteDescription" : "The simplest way to deal with anyone who might object to the presence of an intruder is to either cause the person to fall asleep or keep an already sleeping person asleep. No one is surprised if a guard falls asleep at her post or if a wealthy person sleeps through his house being robbed."		
+				"RoteDescription" : "The simplest way to deal with anyone who might object to the presence of an intruder is to either cause the person to fall asleep or keep an already sleeping person asleep. No one is surprised if a guard falls asleep at her post or if a wealthy person sleeps through his house being robbed."
 			}
 		]
-	}, 
-	{
+	}, {
 		"Name" : "Psychic Violation",
 		"SourceBook" : "Legacies: The Sublime",
 		"SourcePage" : "143",
@@ -20651,18 +20758,17 @@
 		"Duration" : "Special",
 		"Aspect" : "Vulgar",
 		"Cost" : "None",
-		"Effect" : "This spell floods the mind of another thinking creature with images torn from the most horrific thoughts and memories of a Fang of Mara, those spawned by looking upon the naked consciousness of one of the greatest and most powerful beings native to the Abyss. The result is typically mind-numbing terror, as the consciousness recoils from concepts and vistas it was truly not meant to encompass. If the caster accrues more successes than the subject, the target loses a point of Willpower. She also loses her action for that turn, as her mind reels from terror. This spell may also be cast as through extended spellcasting. Unless the Fang has some way to keep the subject in sight for perhaps hours, the extended version of the spell requires a sympathetic tie to the victim. (The character therefore needs Space 2 and the Mind component rises to 5, since the spell directly affects the target.) At each increment of the spell, the character's player rolls Mind + Gnosis against the target's reflexive roll of Composure + Gnosis. If the Fang can accumulate more successes than the target's Willpower before the end of the spellcasting, the subject loses all points of Willpower and collapses in a heap (losing her action for the turn) images of unearthly terror overwhelm her mind. For the rest of the scene, the subject may defend herself (at her full normal Defense, and she may take dodge actions) and can, after her one turn of inactivity, take any action that does not involve directly confronting the caster. When the subject first recovers Willpower (by whatever means) after that scene, she must make a Resolve + Composure roll. Failure results in a temporary mild derangement or, if she already has at least one derangement, a severe one. The use of this spell by a character with a Wisdom of 4 or greater requires a degeneration roll.",		
+		"Effect" : "This spell floods the mind of another thinking creature with images torn from the most horrific thoughts and memories of a Fang of Mara, those spawned by looking upon the naked consciousness of one of the greatest and most powerful beings native to the Abyss. The result is typically mind-numbing terror, as the consciousness recoils from concepts and vistas it was truly not meant to encompass. If the caster accrues more successes than the subject, the target loses a point of Willpower. She also loses her action for that turn, as her mind reels from terror. This spell may also be cast as through extended spellcasting. Unless the Fang has some way to keep the subject in sight for perhaps hours, the extended version of the spell requires a sympathetic tie to the victim. (The character therefore needs Space 2 and the Mind component rises to 5, since the spell directly affects the target.) At each increment of the spell, the character's player rolls Mind + Gnosis against the target's reflexive roll of Composure + Gnosis. If the Fang can accumulate more successes than the target's Willpower before the end of the spellcasting, the subject loses all points of Willpower and collapses in a heap (losing her action for the turn) images of unearthly terror overwhelm her mind. For the rest of the scene, the subject may defend herself (at her full normal Defense, and she may take dodge actions) and can, after her one turn of inactivity, take any action that does not involve directly confronting the caster. When the subject first recovers Willpower (by whatever means) after that scene, she must make a Resolve + Composure roll. Failure results in a temporary mild derangement or, if she already has at least one derangement, a severe one. The use of this spell by a character with a Wisdom of 4 or greater requires a degeneration roll.",
 		"Rotes" : [{
 				"RoteOrder" : "Fangs Of Mara",
 				"RoteName" : "Gazing Into The Abyss",
 				"RoteDicePool_Attribute" : "Presence",
 				"RoteDicePool_Skill" : "Intimidation",
-				"RoteDescription" : "The Fangs of Mara use this spell to cow their enemies into submission and to render them more pliant for other uses of the Mind Arcanum. In combat, Nightmares generally prefer the faster variant of the spell, while the slower one is reserved for \"interrogations\" and the like."		
+				"RoteDescription" : "The Fangs of Mara use this spell to cow their enemies into submission and to render them more pliant for other uses of the Mind Arcanum. In combat, Nightmares generally prefer the faster variant of the spell, while the slower one is reserved for \"interrogations\" and the like."
 			}
 		],
 		"Notes" : "If the rote is cast as an extended spell the dice pool becomes Manipulation + Empathy + Mind."
-	}, 
-	{
+	}, {
 		"Name" : "Triumphant Will",
 		"SourceBook" : "The Mysterium",
 		"SourcePage" : "201",
@@ -20678,18 +20784,17 @@
 		"Duration" : "Prolonged (one scene)",
 		"Aspect" : "Covert",
 		"Cost" : "1 Mana",
-		"Effect" : "The mage skilled in this spell is capable of merging a lifetime's worth of learning into a single reaction. Alternately, such a magus might place years of social interaction at the forefront of his mind, drawing conclusions about the behaviors and the best way to influence those around him in a hundred different ways. For each success on the spellcasting roll, the mage gains one use of the rote action ability on any skill in either the Mental Skill or Social Skill lists -- the category of Skills must be chosen when the spell is cast. This may only be used on non-magical Skill rolls. At Mind 5, the mage may grant this ability to others by touch. At Mind 5, the mage may also cast a version of this spell that allows him to use both Mental and Social Skills with a single casting of the spell.",		
+		"Effect" : "The mage skilled in this spell is capable of merging a lifetime's worth of learning into a single reaction. Alternately, such a magus might place years of social interaction at the forefront of his mind, drawing conclusions about the behaviors and the best way to influence those around him in a hundred different ways. For each success on the spellcasting roll, the mage gains one use of the rote action ability on any skill in either the Mental Skill or Social Skill lists -- the category of Skills must be chosen when the spell is cast. This may only be used on non-magical Skill rolls. At Mind 5, the mage may grant this ability to others by touch. At Mind 5, the mage may also cast a version of this spell that allows him to use both Mental and Social Skills with a single casting of the spell.",
 		"Rotes" : [{
 				"RoteOrder" : "Mysterium",
 				"RoteName" : "Powerful Recollection",
 				"RoteDicePool_Attribute" : "Intelligence",
 				"RoteDicePool_Skill" : "Occult",
-				"RoteDescription" : "Invoking the powerful names of various gods of learning and knowledge, the Mysterium scholar literally takes all knowledge to be his province. Some Mysterium have a variation of this rote, using Presence + Occult + Mind, which invokes various gods of beauty and charisma to allow the magus to dazzle those around him."		
+				"RoteDescription" : "Invoking the powerful names of various gods of learning and knowledge, the Mysterium scholar literally takes all knowledge to be his province. Some Mysterium have a variation of this rote, using Presence + Occult + Mind, which invokes various gods of beauty and charisma to allow the magus to dazzle those around him."
 			}
 		],
 		"Notes" : "If the rote is cast as an extended spell the dice pool becomes Manipulation + Empathy + Mind."
-	}, 
-	{
+	}, {
 		"Name" : "Nightmare Journey",
 		"SourceBook" : "Legacies: The Sublime",
 		"SourcePage" : "144",
@@ -20705,17 +20810,16 @@
 		"Duration" : "Prolonged (one scene)",
 		"Aspect" : "Covert",
 		"Cost" : "1 Mana",
-		"Effect" : "Fangs of Mara use this spell to separate students' consciousnesses from their bodies and send the consciousnesses into the thoughts of the acamoth. As with the Mind 5 Shadow Projection, Nightmare Journey creates fetters that bond the mage's consciousness back to his body. Instead of silver thread, however, iron chains enmesh his psychic body and wind through the bleak unreality of Abyssal consciousness, marking the path back to life and sanity. In game terms, these chains are identical to the silver cord created by Shadow Projection. The spell's effect usually lasts for one hour, but the mage's experiences within the horrid musings of the entity he encounters could haunt him much longer, or perhaps even forever. The mage gains no Investments from communing with the acamoth, but also does not suffer Willpower loss or degeneration: The Abyssal entity doesn't know the mage is there to tempt or torment -- unless the Fang's player rolls a dramatic failure during the spellcasting. In that case, the acamoth is quite aware of the psychic intruder and can make its customary offer.",		
+		"Effect" : "Fangs of Mara use this spell to separate students' consciousnesses from their bodies and send the consciousnesses into the thoughts of the acamoth. As with the Mind 5 Shadow Projection, Nightmare Journey creates fetters that bond the mage's consciousness back to his body. Instead of silver thread, however, iron chains enmesh his psychic body and wind through the bleak unreality of Abyssal consciousness, marking the path back to life and sanity. In game terms, these chains are identical to the silver cord created by Shadow Projection. The spell's effect usually lasts for one hour, but the mage's experiences within the horrid musings of the entity he encounters could haunt him much longer, or perhaps even forever. The mage gains no Investments from communing with the acamoth, but also does not suffer Willpower loss or degeneration: The Abyssal entity doesn't know the mage is there to tempt or torment -- unless the Fang's player rolls a dramatic failure during the spellcasting. In that case, the acamoth is quite aware of the psychic intruder and can make its customary offer.",
 		"Rotes" : [{
 				"RoteOrder" : "Fangs Of Mara",
 				"RoteName" : "Bleak Sojourn",
 				"RoteDicePool_Attribute" : "Resolve",
 				"RoteDicePool_Skill" : "Occult",
-				"RoteDescription" : "By means of this rote, Fangs of Mara make the Astral journey into the thoughts and dreams of the acamoth and other Abyssal entities, there to harness the maddening nightmares of things never meant for human minds to experience."		
+				"RoteDescription" : "By means of this rote, Fangs of Mara make the Astral journey into the thoughts and dreams of the acamoth and other Abyssal entities, there to harness the maddening nightmares of things never meant for human minds to experience."
 			}
 		]
-	}, 
-	{
+	}, {
 		"Name" : "Stone Servitor",
 		"SourceBook" : "Tome Of The Mysteries",
 		"SourcePage" : "32",
@@ -20724,8 +20828,7 @@
 		"Requirements" : [{
 				"Name" : "Mind",
 				"Dots" : "5"
-			},
-			{
+			}, {
 				"Name" : "Matter",
 				"Dots" : "4"
 			}
@@ -20735,17 +20838,16 @@
 		"Duration" : "Prolonged (one scene)",
 		"Aspect" : "Vulgar",
 		"Cost" : "1 Mana",
-		"Effect" : "This spell creates a self-aware servant of animate stone from out of nearby substances, even the air itself. The servant's base Strength, Durability and Size are equal to the lesser of the mage's Matter or Gnosis. The servant possesses no Stamina rating, and has one dot in Dexterity, as well as all of the Mental and Social Attributes. Successes of Potency may be assigned to any of the factors above (excluding Stamina; for effects that test against such, substitute the servant's Durability) on a one-for-one basis. The construct cannot possess Skills or Merits. The servant weighs about 50 pounds at Size 1 and each dot of Size thereafter doubles the previous weight (100 pounds at size 2, 200 pounds at Size 3 and so on). Since the servant's consciousness dissipates at the end of the Duration of the spell, creating the servant without an inherent acceptance of the inevitability of its own end can easily constitute a sin against Wisdom. (This spell, however, may be re-cast before its Duration ends, enabling the Duration to be extended; this is an exception to normal spellcasting rules.) As stone, the construct can be modified by the Matter Arcanum in all the same ways as ordinary rock.",		
+		"Effect" : "This spell creates a self-aware servant of animate stone from out of nearby substances, even the air itself. The servant's base Strength, Durability and Size are equal to the lesser of the mage's Matter or Gnosis. The servant possesses no Stamina rating, and has one dot in Dexterity, as well as all of the Mental and Social Attributes. Successes of Potency may be assigned to any of the factors above (excluding Stamina; for effects that test against such, substitute the servant's Durability) on a one-for-one basis. The construct cannot possess Skills or Merits. The servant weighs about 50 pounds at Size 1 and each dot of Size thereafter doubles the previous weight (100 pounds at size 2, 200 pounds at Size 3 and so on). Since the servant's consciousness dissipates at the end of the Duration of the spell, creating the servant without an inherent acceptance of the inevitability of its own end can easily constitute a sin against Wisdom. (This spell, however, may be re-cast before its Duration ends, enabling the Duration to be extended; this is an exception to normal spellcasting rules.) As stone, the construct can be modified by the Matter Arcanum in all the same ways as ordinary rock.",
 		"Rotes" : [{
 				"RoteOrder" : "Silver Ladder",
 				"RoteName" : "Juggernaut",
 				"RoteDicePool_Attribute" : "Intelligence",
 				"RoteDicePool_Skill" : "Crafts",
-				"RoteDescription" : "Sometimes, you just can't entrust your safety to another human being, no matter how well-meaning or loyal. Sometimes, you need a creature incapable of treachery or even the smallest forms of disobedience. For mages of the Silver Ladder, this is a rote for those sorts of times."		
+				"RoteDescription" : "Sometimes, you just can't entrust your safety to another human being, no matter how well-meaning or loyal. Sometimes, you need a creature incapable of treachery or even the smallest forms of disobedience. For mages of the Silver Ladder, this is a rote for those sorts of times."
 			}
 		]
-	}, 
-	{
+	}, {
 		"Name" : "Twilight Temple",
 		"SourceBook" : "Mage: The Awakening",
 		"SourcePage" : "219",
@@ -20761,17 +20863,16 @@
 		"Duration" : "Special",
 		"Aspect" : "Vulgar",
 		"Cost" : "None",
-		"Effect" : "This spell enables a willworker to sculpt the ephemeral stuff of Twilight to create an immaterial abode for himself that can be accessed and used by his psychic form. While within his temple, the mage's psychic form is protected. Anyone who wishes to attack him must first breach the abode, which only he can enter at will. It has a Durability equal to the mage's Mind Arcanum and a Structure equal to his Gnosis. The temple cannot be moved once it is erected. Spirit 2 wards against spirits so that they cannot approach the temple, while Death 2 wards against ghosts. Using the Shadow Projection spell, the mage can enter the Shadow Realm with a psychic projection and cast this spell there, creating a Shadow Temple. The Duration depends on casting successes (this spell uses the advanced prolonged Duration factors).",		
+		"Effect" : "This spell enables a willworker to sculpt the ephemeral stuff of Twilight to create an immaterial abode for himself that can be accessed and used by his psychic form. While within his temple, the mage's psychic form is protected. Anyone who wishes to attack him must first breach the abode, which only he can enter at will. It has a Durability equal to the mage's Mind Arcanum and a Structure equal to his Gnosis. The temple cannot be moved once it is erected. Spirit 2 wards against spirits so that they cannot approach the temple, while Death 2 wards against ghosts. Using the Shadow Projection spell, the mage can enter the Shadow Realm with a psychic projection and cast this spell there, creating a Shadow Temple. The Duration depends on casting successes (this spell uses the advanced prolonged Duration factors).",
 		"Rotes" : [{
 				"RoteOrder" : "Free Council",
 				"RoteName" : "Castles Of The Mind",
 				"RoteDicePool_Attribute" : "Composure",
 				"RoteDicePool_Skill" : "Occult",
-				"RoteDescription" : "Mages of the Free Council use this rote to create a temporary shelter within Twilight from where they can watch and observe a ghost's haunt or spirit locus while protected from easy assault."		
+				"RoteDescription" : "Mages of the Free Council use this rote to create a temporary shelter within Twilight from where they can watch and observe a ghost's haunt or spirit locus while protected from easy assault."
 			}
 		]
-	}, 
-	{
+	}, {
 		"Name" : "Astral Tass Conversion",
 		"SourceBook" : "Astral Realms",
 		"SourcePage" : "28",
@@ -20787,17 +20888,16 @@
 		"Duration" : "Prolonged (one scene)",
 		"Aspect" : "Covert",
 		"Cost" : "None",
-		"Effect" : "When traveling into Astral Space, every mage carries with her the Mana she can normally call upon in the real world. What she lacks is a store of tass from which she can replenish that supply -- and this spell makes that possible. The mage casts this spell before she begins meditating to enter Astral Space. Tass containing one point of Mana per success becomes available to her during her astral journey. Equivalent or greater tass must be on the mage's person in the real world; Prime 4 allows the character to cast this spell at sensory range, and Prime 5 allows this spell to be cast sympathetically. Consuming the tass in astral consumes a similar amount of tass in the material world. Without additional Duration factors, the tass is available only for the character's first scene in Astral Space.",		
+		"Effect" : "When traveling into Astral Space, every mage carries with her the Mana she can normally call upon in the real world. What she lacks is a store of tass from which she can replenish that supply -- and this spell makes that possible. The mage casts this spell before she begins meditating to enter Astral Space. Tass containing one point of Mana per success becomes available to her during her astral journey. Equivalent or greater tass must be on the mage's person in the real world; Prime 4 allows the character to cast this spell at sensory range, and Prime 5 allows this spell to be cast sympathetically. Consuming the tass in astral consumes a similar amount of tass in the material world. Without additional Duration factors, the tass is available only for the character's first scene in Astral Space.",
 		"Rotes" : [{
 				"RoteOrder" : "Silver Ladder",
 				"RoteName" : "Shining Reserves",
 				"RoteDicePool_Attribute" : "Intelligence",
 				"RoteDicePool_Skill" : "Occult",
-				"RoteDescription" : "Never go anywhere without some extra resources to help you pull through the fight. Silver Ladder mages use this rote to ensure that they have plenty of Mana to see them through their astral trips."		
+				"RoteDescription" : "Never go anywhere without some extra resources to help you pull through the fight. Silver Ladder mages use this rote to ensure that they have plenty of Mana to see them through their astral trips."
 			}
 		]
-	}, 
-	{
+	}, {
 		"Name" : "Imbue Item",
 		"SourceBook" : "Mage: The Awakening",
 		"SourcePage" : "225",
@@ -20813,17 +20913,16 @@
 		"Duration" : "Special",
 		"Aspect" : "Special",
 		"Cost" : "1 Mana per spell",
-		"Effect" : "The mage can imbue an item with magical powers. Imbued items are granted one or more magical powers. In effect, whoever wields the imbued item gains the benefits of its spells, even though he did not necessarily cast them. The target number is equal to the successes required for all the spells imbued into the item. The mage must be able to cast each spell he wants to imbue, and each spell's target number is determined as if he were casting that spell as an extended action. The target numbers of all spells to be imbued are combined to find the successes needed for the Imbue Item casting. Each spell remains imbued for as long as its Duration. Most imbued items are made with spells of indefinite Duration, and the caster usually relinquishes such an item from his control so it no longer applies to his maximum spell limit. Doing so costs one Willpower dot. One Mana point must be spent per spell imbued, in addition to any Mana normally required for the casting of each spell. The caster decides whether each spell imbued into the item is persistent (always active) or contingent (triggered by a word, gesture, or condition). Even contingent spells imbued into an item must be made indefinite, or they disappear from the item when their Duration expires. The caster can give the item the capacity to hold Mana points. Doing so requires three successes and the item has a capacity of 10 points plus one per spell imbued. Mana must be spent for the caster to actually fill the capacity of points, or else someone with the Channel Mana spell can do so later. The aspect of casting (covert or vulgar) depends on the spells imbued into the item. If the item is imbued with vulgar spells, it risks a Paradox whenever these powers are used. The Paradox dice pool is based on the Gnosis of the imbued item's creator at the time of the item's creation (if his Gnosis later rises, the item's Paradox dice pool does not also rise).",		
+		"Effect" : "The mage can imbue an item with magical powers. Imbued items are granted one or more magical powers. In effect, whoever wields the imbued item gains the benefits of its spells, even though he did not necessarily cast them. The target number is equal to the successes required for all the spells imbued into the item. The mage must be able to cast each spell he wants to imbue, and each spell's target number is determined as if he were casting that spell as an extended action. The target numbers of all spells to be imbued are combined to find the successes needed for the Imbue Item casting. Each spell remains imbued for as long as its Duration. Most imbued items are made with spells of indefinite Duration, and the caster usually relinquishes such an item from his control so it no longer applies to his maximum spell limit. Doing so costs one Willpower dot. One Mana point must be spent per spell imbued, in addition to any Mana normally required for the casting of each spell. The caster decides whether each spell imbued into the item is persistent (always active) or contingent (triggered by a word, gesture, or condition). Even contingent spells imbued into an item must be made indefinite, or they disappear from the item when their Duration expires. The caster can give the item the capacity to hold Mana points. Doing so requires three successes and the item has a capacity of 10 points plus one per spell imbued. Mana must be spent for the caster to actually fill the capacity of points, or else someone with the Channel Mana spell can do so later. The aspect of casting (covert or vulgar) depends on the spells imbued into the item. If the item is imbued with vulgar spells, it risks a Paradox whenever these powers are used. The Paradox dice pool is based on the Gnosis of the imbued item's creator at the time of the item's creation (if his Gnosis later rises, the item's Paradox dice pool does not also rise).",
 		"Rotes" : [{
 				"RoteOrder" : "Mysterium",
 				"RoteName" : "Forge Of Power",
 				"RoteDicePool_Attribute" : "Composure",
 				"RoteDicePool_Skill" : "Crafts",
-				"RoteDescription" : "Just as Mysterium mages seek out relics long lost, they create new objects of power, applying ancient arts to modern artifice. Silver Ladder willworkers use the rote as well in the crafting of their own enchanted items."		
+				"RoteDescription" : "Just as Mysterium mages seek out relics long lost, they create new objects of power, applying ancient arts to modern artifice. Silver Ladder willworkers use the rote as well in the crafting of their own enchanted items."
 			}
 		]
-	}, 
-	{
+	}, {
 		"Name" : "Temporal Phantasm",
 		"SourceBook" : "The Mysterium",
 		"SourcePage" : "202",
@@ -20832,8 +20931,7 @@
 		"Requirements" : [{
 				"Name" : "Prime",
 				"Dots" : "3"
-			},
-			{
+			}, {
 				"Name" : "Time",
 				"Dots" : "2"
 			}
@@ -20843,17 +20941,16 @@
 		"Duration" : "Prolonged (one scene)",
 		"Aspect" : "Vulgar",
 		"Cost" : "1 Mana",
-		"Effect" : "The mage summons a temporal echo from the past, imbuing the echo with solidity and fixed causality through infusion of Mana. The result is a nearly perfect copy of an inanimate object from the past, though a sadly impermanent one lacking any complicated features or supernatural powers of the original. This spell duplicates the Prime 3 Phantasm spell with the following exceptions: First, the created object must copy an object the mage has perceived in a vision of the past, as the Time 2 Postcognition spell. Because of this limitation, the item is automatically convincing, since it physically duplicates the original object's external properties in every detail, down to the last nick, scratch, marking and resonance imprint. This makes books and other forms of writing particularly attractive targets for the spell, allowing a mage to peruse the contents of manuscripts otherwise lost to time. Once the spell's Duration elapses, the object dissolves back into the flow of continuity. With Prime 4, mages can summon more durable and mechanically functional constructs per the Phantasmal Weapon spell, though such objects cannot have any properties superior to the original object. Therefore, these items are more limited than conventional phantasms, though there is a certain hubristic panache to stabbing someone with Brutus's knife still hot with Caesar's blood instead of wielding a plain dagger.",		
+		"Effect" : "The mage summons a temporal echo from the past, imbuing the echo with solidity and fixed causality through infusion of Mana. The result is a nearly perfect copy of an inanimate object from the past, though a sadly impermanent one lacking any complicated features or supernatural powers of the original. This spell duplicates the Prime 3 Phantasm spell with the following exceptions: First, the created object must copy an object the mage has perceived in a vision of the past, as the Time 2 Postcognition spell. Because of this limitation, the item is automatically convincing, since it physically duplicates the original object's external properties in every detail, down to the last nick, scratch, marking and resonance imprint. This makes books and other forms of writing particularly attractive targets for the spell, allowing a mage to peruse the contents of manuscripts otherwise lost to time. Once the spell's Duration elapses, the object dissolves back into the flow of continuity. With Prime 4, mages can summon more durable and mechanically functional constructs per the Phantasmal Weapon spell, though such objects cannot have any properties superior to the original object. Therefore, these items are more limited than conventional phantasms, though there is a certain hubristic panache to stabbing someone with Brutus's knife still hot with Caesar's blood instead of wielding a plain dagger.",
 		"Rotes" : [{
 				"RoteOrder" : "Mysterium",
 				"RoteName" : "What Was Lost",
 				"RoteDicePool_Attribute" : "Intelligence",
 				"RoteDicePool_Skill" : "Occult",
-				"RoteDescription" : "For an order dedicated to the pursuit of knowledge and the unveiling of mysteries, the usefulness of this rote requires no further explanation."		
+				"RoteDescription" : "For an order dedicated to the pursuit of knowledge and the unveiling of mysteries, the usefulness of this rote requires no further explanation."
 			}
 		]
-	}, 
-	{
+	}, {
 		"Name" : "Suppress Enchantment",
 		"SourceBook" : "The Mysterium",
 		"SourcePage" : "203",
@@ -20869,17 +20966,16 @@
 		"Duration" : "Prolonged (one scene)",
 		"Aspect" : "Covert",
 		"Cost" : "None",
-		"Effect" : "The mage temporarily suppresses the power of an Artifact or imbued item. This spell dispels any magical effects produced by the item and makes the item unusable for the Duration. Each use of this spell affects only one of the powers possessed by a single Artifact or imbued item. If the mage knows the powers of the item, she can specifically cast the spell to affect one specific power; otherwise, the spell automatically affects the most powerful functional enchantment on the item. A single success temporarily removes one die from the dice pools of a contingent effect. If the number of successes equals or exceeds the number of dots of the highest Arcanum used in this power, then this spell temporarily renders this power unusable. For example, rolling three successes causes an item imbued with a single Life 3 effect to be temporarily non-magical. Persistent items are unaffected by any number of successes less than the number sufficient to completely suppress it. This spell can suppress the powers of an Artifact, but in all cases, powers on an Artifact require one additional success to suppress with this spell; suppressing a Life 3 spell on an Artifact would require the mage to roll four successes. Repeated castings of this spell are not cumulative, but the caster can repeatedly attempt to suppress a single effect by making an especially good roll. Also, mages can cast this spell repeatedly on an item imbued with multiple powers in order to suppress each of these powers in turn. Because magic, just as life, is a phenomenon that is constantly in flux, it is impossible to cast this spell with an indefinite Duration; the longest possible Duration for this spell is one month (if cast using the advanced prolongation table).",		
+		"Effect" : "The mage temporarily suppresses the power of an Artifact or imbued item. This spell dispels any magical effects produced by the item and makes the item unusable for the Duration. Each use of this spell affects only one of the powers possessed by a single Artifact or imbued item. If the mage knows the powers of the item, she can specifically cast the spell to affect one specific power; otherwise, the spell automatically affects the most powerful functional enchantment on the item. A single success temporarily removes one die from the dice pools of a contingent effect. If the number of successes equals or exceeds the number of dots of the highest Arcanum used in this power, then this spell temporarily renders this power unusable. For example, rolling three successes causes an item imbued with a single Life 3 effect to be temporarily non-magical. Persistent items are unaffected by any number of successes less than the number sufficient to completely suppress it. This spell can suppress the powers of an Artifact, but in all cases, powers on an Artifact require one additional success to suppress with this spell; suppressing a Life 3 spell on an Artifact would require the mage to roll four successes. Repeated castings of this spell are not cumulative, but the caster can repeatedly attempt to suppress a single effect by making an especially good roll. Also, mages can cast this spell repeatedly on an item imbued with multiple powers in order to suppress each of these powers in turn. Because magic, just as life, is a phenomenon that is constantly in flux, it is impossible to cast this spell with an indefinite Duration; the longest possible Duration for this spell is one month (if cast using the advanced prolongation table).",
 		"Rotes" : [{
 				"RoteOrder" : "Mysterium",
 				"RoteName" : "Restraining The Power",
 				"RoteDicePool_Attribute" : "Wits",
 				"RoteDicePool_Skill" : "Occult",
-				"RoteDescription" : "Some enchanted items are sufficiently dangerous that they are difficult to examine safely. Whether attempting to avoid the affects of a dangerous, millennia-old Artifact protecting an ancient tomb or trying to study an eccentric and deadly imbued item created by a half-mad mage, members of the Mysterium often find themselves in need of a way to temporarily suppress dangerous magics that have been placed on an item."		
+				"RoteDescription" : "Some enchanted items are sufficiently dangerous that they are difficult to examine safely. Whether attempting to avoid the affects of a dangerous, millennia-old Artifact protecting an ancient tomb or trying to study an eccentric and deadly imbued item created by a half-mad mage, members of the Mysterium often find themselves in need of a way to temporarily suppress dangerous magics that have been placed on an item."
 			}
 		]
-	}, 
-	{
+	}, {
 		"Name" : "Dead Zone",
 		"SourceBook" : "Mage: The Awakening",
 		"SourcePage" : "230",
@@ -20895,17 +20991,16 @@
 		"Duration" : "Prolonged (one scene)",
 		"Aspect" : "Vulgar",
 		"Cost" : "None",
-		"Effect" : "The mage expels the ambient Mana from an area, creating a \"magic dead zone.\" A weak Gauntlet levies a -1 penalty on the spellcasting roll. Successes determine the Dead Zone's radius or volume (the mage chooses which during casting). While a mage can spend his own Mana within a dead zone, he cannot use the Channel Mana spell to draw them from another source. Small animals, children, and the elderly may sicken and even die in places devoid of a natural flow of Mana energies.",		
+		"Effect" : "The mage expels the ambient Mana from an area, creating a \"magic dead zone.\" A weak Gauntlet levies a -1 penalty on the spellcasting roll. Successes determine the Dead Zone's radius or volume (the mage chooses which during casting). While a mage can spend his own Mana within a dead zone, he cannot use the Channel Mana spell to draw them from another source. Small animals, children, and the elderly may sicken and even die in places devoid of a natural flow of Mana energies.",
 		"Rotes" : [{
 				"RoteOrder" : "Guardians Of The Veil",
 				"RoteName" : "Banishing",
 				"RoteDicePool_Attribute" : "Composure",
 				"RoteDicePool_Skill" : "Occult",
-				"RoteDescription" : "By disrupting the local flow of Mana, a Guardian can sometimes stop conspicuous paranormal activity in an area."		
+				"RoteDescription" : "By disrupting the local flow of Mana, a Guardian can sometimes stop conspicuous paranormal activity in an area."
 			}
 		]
-	}, 
-	{
+	}, {
 		"Name" : "Desiccate",
 		"SourceBook" : "Banishers",
 		"SourcePage" : "65",
@@ -20921,18 +21016,17 @@
 		"Duration" : "Lasting",
 		"Aspect" : "Vulgar",
 		"Cost" : "None",
-		"Effect" : "The mage can drain the subject of one of her Physical Attributes, her Mana (if Awakened) or her Health and augment his own pool. The caster cannot increase his pool beyond the maximum he can have (for example, an individual with a Strength 3 can only increase his Strength to 5 and cannot exceed the amount of Mana he can hold according to his Gnosis rating). Similar to the spell Siphon Mana (Prime 5), successive castings against the same target within the same scene suffer a cumulative -2 dice penalty. If an Attribute or Health is reduced to 0, the caster has the option of returning a portion of the siphoned energy to bring the Attribute or Health rating up to 1. Otherwise, the victim dies. An Awakened target can attempt to resist through a contested roll: Willpower versus the caster's successes. A Sleeper has no defense unless otherwise protected by a mage. Protective spells apply.",		
+		"Effect" : "The mage can drain the subject of one of her Physical Attributes, her Mana (if Awakened) or her Health and augment his own pool. The caster cannot increase his pool beyond the maximum he can have (for example, an individual with a Strength 3 can only increase his Strength to 5 and cannot exceed the amount of Mana he can hold according to his Gnosis rating). Similar to the spell Siphon Mana (Prime 5), successive castings against the same target within the same scene suffer a cumulative -2 dice penalty. If an Attribute or Health is reduced to 0, the caster has the option of returning a portion of the siphoned energy to bring the Attribute or Health rating up to 1. Otherwise, the victim dies. An Awakened target can attempt to resist through a contested roll: Willpower versus the caster's successes. A Sleeper has no defense unless otherwise protected by a mage. Protective spells apply.",
 		"Rotes" : [{
 				"RoteOrder" : "Banisher",
 				"RoteName" : "Weaken The Alien",
 				"RoteDicePool_Attribute" : "Wits",
 				"RoteDicePool_Skill" : "Occult",
-				"RoteDescription" : "The Translator version of this spell, used by Morris, is intended to keep any aliens or suspected aliens (or even alien sympathizers) from operating at their full capacity and posing a threat to the Banishers during questioning and up to the time of \"translation.\""		
+				"RoteDescription" : "The Translator version of this spell, used by Morris, is intended to keep any aliens or suspected aliens (or even alien sympathizers) from operating at their full capacity and posing a threat to the Banishers during questioning and up to the time of \"translation.\""
 			}
 		],
 		"Notes" : "There is no listed duration, however the effects should be lasting."
-	}, 
-	{
+	}, {
 		"Name" : "Siphon Mana",
 		"SourceBook" : "Mage: The Awakening",
 		"SourcePage" : "231",
@@ -20948,19 +21042,18 @@
 		"Duration" : "Lasting",
 		"Aspect" : "Vulgar",
 		"Cost" : "None",
-		"Effect" : "The mage can siphon Mana at sensory range from an unwilling mage and add it to his own pool. One Mana point is channeled per success. The caster cannot add more to his pool than the maximum amount allowed (based on his Gnosis). Each successive casting against the same target within the same scene suffers a cumulative -2 dice penalty. Sleepers or other creatures cannot be siphoned (they do not have spendable Mana). (Although they can be killed without the need of a spell to yield their Health's worth in Mana.)",		
+		"Effect" : "The mage can siphon Mana at sensory range from an unwilling mage and add it to his own pool. One Mana point is channeled per success. The caster cannot add more to his pool than the maximum amount allowed (based on his Gnosis). Each successive casting against the same target within the same scene suffers a cumulative -2 dice penalty. Sleepers or other creatures cannot be siphoned (they do not have spendable Mana). (Although they can be killed without the need of a spell to yield their Health's worth in Mana.)",
 		"Rotes" : [{
 				"RoteOrder" : "Silver Ladder",
 				"RoteName" : "Press Gang",
 				"RoteDicePool_Attribute" : "Resolve",
 				"RoteDicePool_Skill" : "Intimidation",
 				"RoteDicePool_Resisted" : "Stamina",
-				"RoteDescription" : "Just as kings of old demanded tithes from their vassals, some mages of the Silver Ladder exact tribute from willing allies, unwilling rivals and outright enemies. Guardians of the Veil use a variant rote (Composure + Intimidation + Prime) to mitigate the threat posed by a hostile willworker."		
+				"RoteDescription" : "Just as kings of old demanded tithes from their vassals, some mages of the Silver Ladder exact tribute from willing allies, unwilling rivals and outright enemies. Guardians of the Veil use a variant rote (Composure + Intimidation + Prime) to mitigate the threat posed by a hostile willworker."
 			}
 		],
 		"Notes" : "There is no listed duration, however the effects should be lasting."
-	}, 
-	{
+	}, {
 		"Name" : "Locate Source",
 		"SourceBook" : "The Mysterium",
 		"SourcePage" : "204",
@@ -20976,17 +21069,16 @@
 		"Duration" : "Concentration",
 		"Aspect" : "Covert",
 		"Cost" : "None",
-		"Effect" : "The mage can determine the precise location where an object was made or an individual was born or died. Using this spell to determine an object's location requires Matter 1, determining where an item was enchanted requires Prime 1, determining where someone died requires Death 1 and learning where they were born requires Life 1. If Time 1 is also included, the caster will also learn precisely when this event occurred. The caster uses this spell and one or more maps to determine the location of the birth, death, creation or enchanting of the target. Each success allows the character to more precisely pinpoint the exact location. A single success is sufficient to pinpoint the location on a large-scale map, such as a detailed map of a continent or a large and extremely detailed world map, and provides the city, town or relatively precise section of country where this event occurred. Two successes allow the character to pin-point the location on a local map, determine the particularly neighborhood of a city or section of a town where the event occurred and provide an exact location on a street map. Three or more successes locate the event down to the exact square foot. This spell can also be used to determine where an item was destroyed or where a person or object was buried, if the mage has a connection to the object or body.",		
+		"Effect" : "The mage can determine the precise location where an object was made or an individual was born or died. Using this spell to determine an object's location requires Matter 1, determining where an item was enchanted requires Prime 1, determining where someone died requires Death 1 and learning where they were born requires Life 1. If Time 1 is also included, the caster will also learn precisely when this event occurred. The caster uses this spell and one or more maps to determine the location of the birth, death, creation or enchanting of the target. Each success allows the character to more precisely pinpoint the exact location. A single success is sufficient to pinpoint the location on a large-scale map, such as a detailed map of a continent or a large and extremely detailed world map, and provides the city, town or relatively precise section of country where this event occurred. Two successes allow the character to pin-point the location on a local map, determine the particularly neighborhood of a city or section of a town where the event occurred and provide an exact location on a street map. Three or more successes locate the event down to the exact square foot. This spell can also be used to determine where an item was destroyed or where a person or object was buried, if the mage has a connection to the object or body.",
 		"Rotes" : [{
 				"RoteOrder" : "Mysterium",
 				"RoteName" : "Determine Provenance",
 				"RoteDicePool_Attribute" : "Wits",
 				"RoteDicePool_Skill" : "Occult",
-				"RoteDescription" : "Sometimes a single item from a large cache of important relics is found by accident, far from its source. This spell allows the mage to locate this cache, as well as allowing scholars to determine where and possibly when a particular object was made."		
+				"RoteDescription" : "Sometimes a single item from a large cache of important relics is found by accident, far from its source. This spell allows the mage to locate this cache, as well as allowing scholars to determine where and possibly when a particular object was made."
 			}
 		]
-	},
-	{
+	}, {
 		"Name" : "Analyze Spirit",
 		"SourceBook" : "The Mysterium",
 		"SourcePage" : "204",
@@ -21002,17 +21094,16 @@
 		"Duration" : "Prolonged (one scene)",
 		"Aspect" : "Covert",
 		"Cost" : "None",
-		"Effect" : "The mage can look at a spirit and learn its strengths, weaknesses and some of the powers it possesses. This spell allows the mage to both see and analyze a spirit in Twilight. If the mage also casts the Spirit 2 spell Peer Across the Gauntlet, she can also use the Analyze Spirit spell to analyze nearby spirits in the Shadow Realm. A single success on this spell allows the mage to determine a spirit's Rank and most significant Influence, and also provides a rough estimate of the spirit's current Essence as well as the spirit's general appearance. Additional successes provide further information, including an increasingly precise knowledge of the spirit's Attributes, additional Influences, the level of its various Influences and (with three or more successes) knowledge of its more significant or powerful Numina. This spell provides no knowledge about the activities or history of a particular spirit, merely its capabilities. If the caster adds Mind 1 to the casting, she can also use this spell to gain information about individuals who are mentally projecting, and if she adds Death 1, she can gain similar information about ghosts.",		
+		"Effect" : "The mage can look at a spirit and learn its strengths, weaknesses and some of the powers it possesses. This spell allows the mage to both see and analyze a spirit in Twilight. If the mage also casts the Spirit 2 spell Peer Across the Gauntlet, she can also use the Analyze Spirit spell to analyze nearby spirits in the Shadow Realm. A single success on this spell allows the mage to determine a spirit's Rank and most significant Influence, and also provides a rough estimate of the spirit's current Essence as well as the spirit's general appearance. Additional successes provide further information, including an increasingly precise knowledge of the spirit's Attributes, additional Influences, the level of its various Influences and (with three or more successes) knowledge of its more significant or powerful Numina. This spell provides no knowledge about the activities or history of a particular spirit, merely its capabilities. If the caster adds Mind 1 to the casting, she can also use this spell to gain information about individuals who are mentally projecting, and if she adds Death 1, she can gain similar information about ghosts.",
 		"Rotes" : [{
 				"RoteOrder" : "Mysterium",
 				"RoteName" : "Ephemeral Classification",
 				"RoteDicePool_Attribute" : "Intelligence",
 				"RoteDicePool_Skill" : "Occult",
-				"RoteDescription" : "The Mysterium's central maxim of \"Knowledge Is Power\" is never more true than when dealing with the strange and potentially deadly residents of the Shadow Realm. Mysterium mages who regularly use this spell often keep detailed records and sketches of the various spirits they have encountered and add these notes to the Mysterium's extensive catalogs of spirit types and varieties."		
+				"RoteDescription" : "The Mysterium's central maxim of \"Knowledge Is Power\" is never more true than when dealing with the strange and potentially deadly residents of the Shadow Realm. Mysterium mages who regularly use this spell often keep detailed records and sketches of the various spirits they have encountered and add these notes to the Mysterium's extensive catalogs of spirit types and varieties."
 			}
 		]
-	},
-	{
+	}, {
 		"Name" : "Precise Dating",
 		"SourceBook" : "The Mysterium",
 		"SourcePage" : "204",
@@ -21028,17 +21119,16 @@
 		"Duration" : "Instant",
 		"Aspect" : "Covert",
 		"Cost" : "None",
-		"Effect" : "The mage can determine exactly when an object or living being attained its current form. This spell reveals when an object was made, when a raw gemstone was cut or a hunk of ore was mined, when a person or animal was born or when a body or fragment of bone died. Including Life 1 or Matter 1 reveals the date of the other major changes the person or object underwent -- allowing a mage who finds a human skull to determine when the skull's owner was born and when he died, or holding a knife, and knowing when it was made and when the ore it was made from was mined. Also, if combined with Forces 1, this spell can be used to determine the last time a piece of electrically powered or electronic equipment was used or when a computer file was created or edited. For objects more than a decade old, a single success on this roll allows the mage to know the date within a month. For more recent objects, one success determines the date within a day. Each additional success narrows the time down further, in the progression listed below. If the object reached its final state very recently, then use the time listed below that as the starting point for the chart. For example, if someone died within the past hour, then one success allows the time of death to be dated to the correct minute, and two successes allow the time of death to be dated to the correct second.",		
+		"Effect" : "The mage can determine exactly when an object or living being attained its current form. This spell reveals when an object was made, when a raw gemstone was cut or a hunk of ore was mined, when a person or animal was born or when a body or fragment of bone died. Including Life 1 or Matter 1 reveals the date of the other major changes the person or object underwent -- allowing a mage who finds a human skull to determine when the skull's owner was born and when he died, or holding a knife, and knowing when it was made and when the ore it was made from was mined. Also, if combined with Forces 1, this spell can be used to determine the last time a piece of electrically powered or electronic equipment was used or when a computer file was created or edited. For objects more than a decade old, a single success on this roll allows the mage to know the date within a month. For more recent objects, one success determines the date within a day. Each additional success narrows the time down further, in the progression listed below. If the object reached its final state very recently, then use the time listed below that as the starting point for the chart. For example, if someone died within the past hour, then one success allows the time of death to be dated to the correct minute, and two successes allow the time of death to be dated to the correct second.",
 		"Rotes" : [{
 				"RoteOrder" : "Mysterium",
 				"RoteName" : "Temporal Forensics",
 				"RoteDicePool_Attribute" : "Wits",
 				"RoteDicePool_Skill" : "Science",
-				"RoteDescription" : "For the Mysterium's archeologists, learning if a shard of ancient pottery dates to the long-lost days of Atlantis, or is merely a 1,300-years-old relic of the Dark Ages is an invaluable method of separating fakes from real artifacts. This spell is also a swift and useful method of determining if a potentially interesting site is worth pursuing or if it is more recent, and therefore less interesting, than it looks."		
+				"RoteDescription" : "For the Mysterium's archeologists, learning if a shard of ancient pottery dates to the long-lost days of Atlantis, or is merely a 1,300-years-old relic of the Dark Ages is an invaluable method of separating fakes from real artifacts. This spell is also a swift and useful method of determining if a potentially interesting site is worth pursuing or if it is more recent, and therefore less interesting, than it looks."
 			}
 		]
-	},
-	{
+	}, {
 		"Name" : "Temporal Stutter",
 		"SourceBook" : "Mage: The Awakening",
 		"SourcePage" : "265",
@@ -21054,17 +21144,16 @@
 		"Duration" : "Special",
 		"Aspect" : "Vulgar",
 		"Cost" : "1 Mana",
-		"Effect" : "The mage causes people or things to stutter forward in time. This spell affects only a living creature (and what he wears and carries), stuttering him forward for one turn per success. (If cast over an area, only people or objects that are wholly within the defined area are affected.) Onlookers simply see those affected disappear for up to several seconds, while those affected lurch forward in time (to find whatever changes having occurred outside of the spell's area of effect during those seconds). Thus, reinforcements three turns away might, in the subjective time of those affected by the spell, arrive in one. If, in the intervening turns, a person or object moves into the space occupied by one or more of the time-stuttering targets, a clash ensues when the time travelers arrive back in their places. Compare the Size of each person or thing who now shares the same space. Those with the smallest Size suffer a knockdown effect. If Sizes are equal, both must contend with a knockdown.",		
+		"Effect" : "The mage causes people or things to stutter forward in time. This spell affects only a living creature (and what he wears and carries), stuttering him forward for one turn per success. (If cast over an area, only people or objects that are wholly within the defined area are affected.) Onlookers simply see those affected disappear for up to several seconds, while those affected lurch forward in time (to find whatever changes having occurred outside of the spell's area of effect during those seconds). Thus, reinforcements three turns away might, in the subjective time of those affected by the spell, arrive in one. If, in the intervening turns, a person or object moves into the space occupied by one or more of the time-stuttering targets, a clash ensues when the time travelers arrive back in their places. Compare the Size of each person or thing who now shares the same space. Those with the smallest Size suffer a knockdown effect. If Sizes are equal, both must contend with a knockdown.",
 		"Rotes" : [{
 				"RoteOrder" : "Mysterium",
 				"RoteName" : "Cresting The Wave",
 				"RoteDicePool_Attribute" : "Wits",
 				"RoteDicePool_Skill" : "Occult",
-				"RoteDescription" : "Sometimes the flow of history doesn't move quite fast enough for a willworker's purposes. The mages of the Mysterium have circumvented that restriction by means of this rote. While it moves subjects forward in time only by several seconds, those seconds have occasionally meant the difference between a fantastic discovery and a grisly demise. Mages of the Adamantine Arrow have been known to use this very same rote in combat (perhaps vanishing into the immediate future just before an explosion and then reappearing seconds afterward)."		
+				"RoteDescription" : "Sometimes the flow of history doesn't move quite fast enough for a willworker's purposes. The mages of the Mysterium have circumvented that restriction by means of this rote. While it moves subjects forward in time only by several seconds, those seconds have occasionally meant the difference between a fantastic discovery and a grisly demise. Mages of the Adamantine Arrow have been known to use this very same rote in combat (perhaps vanishing into the immediate future just before an explosion and then reappearing seconds afterward)."
 			}
 		]
-	},
-	{
+	}, {
 		"Name" : "Faerie Glade",
 		"SourceBook" : "Mage: The Awakening",
 		"SourcePage" : "265",
@@ -21080,13 +21169,13 @@
 		"Duration" : "Special",
 		"Aspect" : "Vulgar",
 		"Cost" : "1 Mana",
-		"Effect" : "It is said that, in elder days, the Fair Folk lived in places that were not quite in synch with time as mortal creatures knew it. Thus, the tales of men who bedded down in mushroom rings, only to wake a century later or the next morning, as bent and hobbling ancients. This spell mimics such faerie enchantments, allowing a mage to push a place outside of the normal flow of time so that those within experience a lot of subjective time in a very short period of \"mainstream\" time, or vice-versa. This spell acts like the Temporal Pocket spell, except that the mage can now cast it upon an area. One success affects a five-foot square area and anything within it, and additional Target factors can be devoted to increasing this area. The flow of time can also be reversed so that time within the Pocket moves more slowly than time without. For example, with one success the time within the pocket moves at half the rate as time without: One turn within for every two turns without. With three successes, four turns pass within for every one turn that passes without. A person who enters the area must succeed in a reflexive and contested Composure + Gnosis roll or be caught within the time flux.",		
+		"Effect" : "It is said that, in elder days, the Fair Folk lived in places that were not quite in synch with time as mortal creatures knew it. Thus, the tales of men who bedded down in mushroom rings, only to wake a century later or the next morning, as bent and hobbling ancients. This spell mimics such faerie enchantments, allowing a mage to push a place outside of the normal flow of time so that those within experience a lot of subjective time in a very short period of \"mainstream\" time, or vice-versa. This spell acts like the Temporal Pocket spell, except that the mage can now cast it upon an area. One success affects a five-foot square area and anything within it, and additional Target factors can be devoted to increasing this area. The flow of time can also be reversed so that time within the Pocket moves more slowly than time without. For example, with one success the time within the pocket moves at half the rate as time without: One turn within for every two turns without. With three successes, four turns pass within for every one turn that passes without. A person who enters the area must succeed in a reflexive and contested Composure + Gnosis roll or be caught within the time flux.",
 		"Rotes" : [{
 				"RoteOrder" : "Mysterium",
 				"RoteName" : "Temporal Bastion",
 				"RoteDicePool_Attribute" : "Wits",
 				"RoteDicePool_Skill" : "Occult",
-				"RoteDescription" : "Mages of the Mysterium often use this rote to provide themselves with nearly limitless quantities of time to devote to their esoteric research. Some members of the Silver Ladder, when pondering a particularly difficult course of action, may use the same magic (Composure + Occult + Time) to afford themselves weeks or even months in which to consider a decision that must be made by tomorrow morning."		
+				"RoteDescription" : "Mages of the Mysterium often use this rote to provide themselves with nearly limitless quantities of time to devote to their esoteric research. Some members of the Silver Ladder, when pondering a particularly difficult course of action, may use the same magic (Composure + Occult + Time) to afford themselves weeks or even months in which to consider a decision that must be made by tomorrow morning."
 			}
 		]
 	}
