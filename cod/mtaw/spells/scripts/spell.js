@@ -11,40 +11,8 @@ $(document).ready(function () {
 	
 	theme($('#themeSelect'), "Readable");
 	
-	var sourceBooks;
-	
-	function getParameterByName(name, url) {
-		if (!url) url = window.location.href;
-		name = name.replace(/[\[\]]/g, "\\$&");
-		var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-			results = regex.exec(url);
-		if (!results) return null;
-		if (!results[2]) return '';
-		return decodeURIComponent(results[2].replace(/\+/g, " "));
-	}
-	
-	function loadJson(url, callback) {
-		$.ajax({
-			url : url,
-			beforeSend : function (xhr) {
-				if (xhr.overrideMimeType) {
-					xhr.overrideMimeType("application/json");
-				}
-			},
-			dataType : 'json',
-			async : true,
-			data : null,
-			error : function (xhr, status) {
-				alert(status);
-			},
-			success : function (data, textStatus, request) {
-				callback(data);
-			}
-		});
-	}
 	
 	function loadSourceBooks(data) {
-
 		sourceBooks = data;
 	}
 	
@@ -72,12 +40,26 @@ $(document).ready(function () {
 		$('#Cost').text(spell.Cost);
 		$('#Notes').text(spell.Notes);
 		
-		// Turn spell names into links
 		spellEffect = spell.Effect;
+		// Turn spell names into links
 		$(spells).each(function (index, spell) {
-			spellEffect = spellEffect.replace(this.Name, "<a href='spell.html\?spell=" + escape(spell.Name) + "'>" + spell.Name + "</a>");
+			spellEffect = spellEffect.replace(new RegExp('\b'+spell.Name+'\b'), "<a href='spell.html\?spell=" + escape(spell.Name) + "'>" + spell.Name + "</a>");
 		});
+		// Emphasise Arcana names
+		$(arcanum).each(function (index, arcana) {
+			spellEffect = spellEffect.replace(new RegExp(arcana.Name, "g"), "<strong>" + arcana.Name + "</strong>");
+		});
+		
+		// Popover text for glossary
+		$(glossary).each(function (index, term) {
+			regex = new RegExp('(\\b' + term.Term + '\\b)(?![^<]*>|[^<>]*</)');
+			replacement = "<a href='#' data-toggle='popover' title='" + term.Definition + "'>" + term.Term + "</a>";
+			spellEffect = spellEffect.replace(regex, replacement);
+			// <a href="#" data-toggle="popover" title="Popover Header" data-content="" + term.Definition + "">" + term.Term + "</a>
+		});
+		
 		$('#Effect').append(spellEffect);
+		
 		
 		// TODO account for multiple rotes
 		var rote = spell.Rotes[0];
@@ -98,7 +80,6 @@ $(document).ready(function () {
 		}		
 	}
 	
-	var spells;
 	function loadSpell(data){
 		spells = data;
 		var spellName = getParameterByName('spell');
@@ -107,13 +88,20 @@ $(document).ready(function () {
 				displaySpell(this);
 			}
 		});
-		
-		$(".spellLink").each( function() {
-			//alert();
-		});
 	}
 	
-	loadJson('data/sourceBooks.json', loadSourceBooks);
-	loadJson('data/spells.json', loadSpell);
+	var sourceBooks;
+	var spells;
+	var arcanum;
+	var glossary;
+	
+	$.when()	
+	.then(	function() 	{ getData("arcanum", function(data){arcanum = data}); })
+	.then(	function() 	{ getData("sourceBooks", function(data){sourceBooks = data}); })
+	.then(	function() 	{ getData("glossary", function(data){glossary = data}); })	
+	.then(	function() 	{ getData("spells", loadSpell); })	
+	.then(	function() 	{ $("[data-toggle='popover']").popover(); })	
+	.then(	function() 	{ $("[data-toggle='tooltip']").tooltip(); })	
+	.done();
 	
 });
