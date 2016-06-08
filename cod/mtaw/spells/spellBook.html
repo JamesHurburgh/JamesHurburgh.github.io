@@ -1,192 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>MtAw Spell Book</title>
-	
-	<!-- Bootstrap theme -->
-	<link rel="stylesheet" href="ref/bootstrap.readable.min.css">
-	
-	<!-- jQuery -->
-	<script   src="ref/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
-	
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="ref/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	
-	<!-- Datatable -->
-	<link rel="stylesheet" type="text/css" href="ref/jquery.dataTables.css">  
-	<script type="text/javascript" charset="utf8" src="ref/jquery.dataTables.js"></script>
+	<head>
+		<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+					<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+					<title>MtAw Spell Book</title>
 
-	<!-- Datatable - Buttons 
+					<!-- Bootstrap theme -->
+					<link rel="stylesheet" href="ref/bootstrap.readable.min.css">
+
+						<!-- jQuery -->
+						<script   src="ref/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+
+						<!-- Latest compiled and minified JavaScript -->
+						<script src="ref/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+						<!-- Datatable -->
+						<link rel="stylesheet" type="text/css" href="ref/jquery.dataTables.css">  
+							<script type="text/javascript" charset="utf8" src="ref/jquery.dataTables.js"></script>
+
+							<!-- Datatable - Buttons 
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.2.0/css/buttons.dataTables.min.css">
 	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.2.0/js/dataTables.buttons.min.js"></script>
 	-->
-	
-	<!-- Datatable - Buttons - Column visibility control 
+
+							<!-- Datatable - Buttons - Column visibility control 
 	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.2.0/js/buttons.colVis.min.js"></script>
 	-->
 
-	<!-- Store.js -->
-	<script type="text/javascript" charset="utf8" src="ref/store.min.js"></script> 
+							<!-- Store.js -->
+							<script type="text/javascript" charset="utf8" src="ref/store.min.js"></script> 
 
-	<!-- Theme.js -->
-	<script type="text/javascript" charset="utf8" src="scripts/theme.js"></script>
+							<!-- Theme.js -->
+							<script type="text/javascript" charset="utf8" src="scripts/theme.js"></script>
 
-	<!-- dataTables -->
-	<script type="text/javascript" charset="utf8" src="ref/dataTables.responsive.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="ref/responsive.dataTables.min.css"></link>
-	
-	<!-- Spinner.js -->
-	<script type="text/javascript" charset="utf8" src="http://spin.js.org/spin.min.js"></script>
+							<!-- dataTables -->
+							<script type="text/javascript" charset="utf8" src="ref/dataTables.responsive.min.js"></script>
+							<link rel="stylesheet" type="text/css" href="ref/responsive.dataTables.min.css"></link>
 
-	<!-- Common js -->
-	<script type="text/javascript" charset="utf8" src="scripts/common.js"></script>
+							<!-- Spinner.js -->
+							<script type="text/javascript" charset="utf8" src="http://spin.js.org/spin.min.js"></script>
 
-	<!-- SpellBook.js -->
-	<script type="text/javascript" charset="utf8" src="scripts/spellBook.js"></script>
-	<link rel="stylesheet" type="text/css" href="spellBook.css"></link>
-	
-	
-	<!-- require.js 
+							<!-- Common js -->
+							<script type="text/javascript" charset="utf8" src="scripts/common.js"></script>
+
+							<!-- SpellBook.js -->
+							<script type="text/javascript" charset="utf8" src="scripts/spellBook.js"></script>
+							<link rel="stylesheet" type="text/css" href="spellBook.css"></link>
+
+
+							<!-- require.js 
     <script data-main="scripts/spellBook" src="scripts/require.js"></script>-->
-	
-</head>
-<body>
-	<div id="overlay" style="display: none;"></div>
-    <div class="container" id="container">
-	    <div class="header clearfix">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="./spellViewer.html">Spell Book</a></li>
-            <!--<li role="presentation"><a href="./about.html">About</a></li>
-            <li role="presentation"><a href="./contact.html">Contact</a></li>-->
-          </ul>
-        </nav>
-        <h3 class="text-muted">MtAw Spell Book</h3>
-      </div>
-	    <div class="row marketing">
-			<div class="col-lg-12">
-				<div class="panel panel-default">
-					  <div class="panel-heading"><h3>Search \ Filter</h3></div>
-					  <div class="panel-body">
-						<div class="col-lg-2">
-							<label for="sourceSelect" class="control-label">Source</label>
-							<select class="form-control input-sm" id="sourceSelect"></select>
-						</div>
-						<!--<div class="col-lg-2">
-							<label for="arcanaSelect" class="control-label">Arcana</label>
-							<select class="form-control input-sm" id="arcanaSelect"></select>
-						</div>
-						<div style="float:left;">
-							<span class="label label-default">Compare</span></br>
-							<select id="arcanaLevelComparator"></select>
-						</div>
-						<div class="col-lg-2">
-							<label for="arcanaLevelSelect" class="control-label">Level</label>
-							<select class="form-control input-sm" id="arcanaLevelSelect"></select>
-						</div>-->
-						<div class="col-lg-2">
-							<label for="practiceSelect" class="control-label">Practice</label>
-							<select class="form-control input-sm" id="practiceSelect"></select>
-						</div>
-						<div class="col-lg-2">
-							<label for="actionSelect" class="control-label">Action</label>
-							<select class="form-control input-sm" id="actionSelect"></select>
-						</div>	
-						<div class="col-lg-2">
-							<label for="durationSelect" class="control-label">Duration</label>
-							<select class="form-control input-sm" id="durationSelect"></select>
-						</div>	
-						<div class="col-lg-2">
-							<label for="aspectSelect" class="control-label">Aspect</label>
-							<select class="form-control input-sm" id="aspectSelect"></select>
-						</div>	
-						<div class="col-lg-2">
-							<label for="costSelect" class="control-label">Cost</label>
-							<select class="form-control input-sm" id="costSelect"></select>
-						</div>	
-						<div class="col-lg-12">
-							<label for="arcanaSearch" class="control-label">Arcana Filtering</label>
-							<div id="arcanaSearch">
-								<div class="col-sm-2">
-									<label for="fateDots" class="control-label">Fate</label><input class="arcana-search form-control input-sm" type="number" id="fateDots" name="fateDots"  min="0" max="5" value="0"/>
-								</div>
-								<div class="col-sm-2">
-									<label for="forcesDots" class="control-label">Forces</label><input class="arcana-search form-control input-sm" type="number" id="forcesDots" name="forcesDots"  min="0" max="5" value="0"/>
-								</div>
-								<div class="col-sm-2">
-									<label for="deathDots" class="control-label">Death</label><input class="arcana-search form-control input-sm" type="number" id="deathDots" name="deathDots"  min="0" max="5" value="0"/>
-								</div>
-								<div class="col-sm-2">
-									<label for="lifeDots" class="control-label">Life</label><input class="arcana-search form-control input-sm" type="number" id="lifeDots" name="lifeDots"  min="0" max="5" value="0"/>
-								</div>
-								<div class="col-sm-2">
-									<label for="matterDots" class="control-label">Matter</label><input class="arcana-search form-control input-sm" type="number" id="matterDots" name="matterDots"  min="0" max="5" value="0"/>
-								</div>
-								<div class="col-sm-2">
-									<label for="mindDots" class="control-label">Mind</label><input class="arcana-search form-control input-sm" type="number" id="mindDots" name="mindDots"  min="0" max="5" value="0"/>
-								</div>
-								<div class="col-sm-2">
-									<label for="primeDots" class="control-label">Prime</label><input class="arcana-search form-control input-sm" type="number" id="primeDots" name="primeDots"  min="0" max="5" value="0"/>
-								</div>
-								<div class="col-sm-2">
-									<label for="spaceDots" class="control-label">Space</label><input class="arcana-search form-control input-sm" type="number" id="spaceDots" name="spaceDots"  min="0" max="5" value="0"/>
-								</div>
-								<div class="col-sm-2">
-									<label for="spiritDots" class="control-label">Spirit</label><input class="arcana-search form-control input-sm" type="number" id="spiritDots" name="spiritDots"  min="0" max="5" value="0"/>
-								</div>
-								<div class="col-sm-2">
-									<label for="timeDots" class="control-label">Time</label><input class="arcana-search form-control input-sm" type="number" id="timeDots" name="timeDots"  min="0" max="5" value="0"/>
-								</div>
-								<div class="col-sm-2">
-									<label for="clearFiltersButton" class="control-label">Options</label>
-									<a href="#" class="btn btn-link" id="clearFiltersButton">Clear filters</a>
-									<!--<a href="#" class="btn btn-link" id="refreshDataButton">Refresh data</a>-->
-								</div>
-							</div>
-						</div>	
-					</div>	
-					  <div class="panel-footer">	
-					
-			
-					<table id="spellList" class="dt-responsive table table-bordered stripe">	
-						<thead>
-							<tr>			
-								<th data-priority="1">Name</th>
-								<th data-priority="10" class="select-filter">Source</th>
-								<th data-priority="2">Requirements</th>
-								<th data-priority="5">Practice</th>
-								<th data-priority="3">Action</th>
-								<th data-priority="3">Duration</th>
-								<th data-priority="3">Aspect</th>
-								<th data-priority="3">Cost</th>
-								<th class="none">Effect</th>
-								<th data-priority="7">Rote</th>
-								<th data-priority="3">Rote Dice Pool</th>
-								<th class="never">CastableBy</th>
-							</tr>
-						</thead>
-						<tbody>
-						</tbody>
-					</table>
-					</div>	
-				</div>	
-			</div>
-		</div>
 
-      <footer class="footer">
-		<div class="col-sm-1">
-			<label for="themeSelect" class="control-label">Theme</label>
-		</div>
-		<div class="col-sm-2">
-			<select class="form-control input-sm" id="themeSelect"></select>
-		</div>
-        <div class="col-sm-7">&copy; 2016 James Hurburgh.</div>
-        <div class="col-sm-2"><a target="_blank" href="https://docs.google.com/forms/d/1bWQEaNAPKBhkERpV5IkrWLrNAO0Hjp1vYMQuf8hA8kE/viewform">Feedback</a></div>
-      </footer>
-    </div>
-</body>
-</html>
+						</head>
+						<body>
+							<div id="overlay" style="display: none;"></div>
+							<div class="container" id="container">
+								<div class="header clearfix">
+									<nav>
+										<ul class="nav nav-pills pull-right">
+											<li role="presentation" class="active"><a href="./spellBook.html">Spell Book</a></li>
+											<li role="presentation" class="active"><a href="./glossary.html">Glossary</a></li>
+										</ul>
+									</nav>
+									<h3 class="text-muted">MtAw Spell Book</h3>
+								</div>
+								<div class="row marketing">
+									<div class="col-lg-12">
+										<div class="panel panel-default">
+											<div class="panel-heading"><h3>Search \ Filter</h3></div>
+											<div class="panel-body">
+												<div class="col-lg-2">
+													<label for="sourceSelect" class="control-label">Source</label>
+													<select class="form-control input-sm" id="sourceSelect"></select>
+												</div>
+												<div class="col-lg-2">
+													<label for="practiceSelect" class="control-label">Practice</label>
+													<select class="form-control input-sm" id="practiceSelect"></select>
+												</div>
+												<div class="col-lg-2">
+													<label for="actionSelect" class="control-label">Action</label>
+													<select class="form-control input-sm" id="actionSelect"></select>
+												</div>	
+												<div class="col-lg-2">
+													<label for="durationSelect" class="control-label">Duration</label>
+													<select class="form-control input-sm" id="durationSelect"></select>
+												</div>	
+												<div class="col-lg-2">
+													<label for="aspectSelect" class="control-label">Aspect</label>
+													<select class="form-control input-sm" id="aspectSelect"></select>
+												</div>	
+												<div class="col-lg-2">
+													<label for="costSelect" class="control-label">Cost</label>
+													<select class="form-control input-sm" id="costSelect"></select>
+												</div>	
+												<div class="col-lg-12">
+													<label for="arcanaSearch" class="control-label">Arcana Filtering</label>
+													<div id="arcanaSearch">
+														<div class="col-sm-2">
+															<label for="fateDots" class="control-label">Fate</label><input class="arcana-search form-control input-sm" type="number" id="fateDots" name="fateDots"  min="0" max="5" value="0"/>
+														</div>
+														<div class="col-sm-2">
+															<label for="forcesDots" class="control-label">Forces</label><input class="arcana-search form-control input-sm" type="number" id="forcesDots" name="forcesDots"  min="0" max="5" value="0"/>
+														</div>
+														<div class="col-sm-2">
+															<label for="deathDots" class="control-label">Death</label><input class="arcana-search form-control input-sm" type="number" id="deathDots" name="deathDots"  min="0" max="5" value="0"/>
+														</div>
+														<div class="col-sm-2">
+															<label for="lifeDots" class="control-label">Life</label><input class="arcana-search form-control input-sm" type="number" id="lifeDots" name="lifeDots"  min="0" max="5" value="0"/>
+														</div>
+														<div class="col-sm-2">
+															<label for="matterDots" class="control-label">Matter</label><input class="arcana-search form-control input-sm" type="number" id="matterDots" name="matterDots"  min="0" max="5" value="0"/>
+														</div>
+														<div class="col-sm-2">
+															<label for="mindDots" class="control-label">Mind</label><input class="arcana-search form-control input-sm" type="number" id="mindDots" name="mindDots"  min="0" max="5" value="0"/>
+														</div>
+														<div class="col-sm-2">
+															<label for="primeDots" class="control-label">Prime</label><input class="arcana-search form-control input-sm" type="number" id="primeDots" name="primeDots"  min="0" max="5" value="0"/>
+														</div>
+														<div class="col-sm-2">
+															<label for="spaceDots" class="control-label">Space</label><input class="arcana-search form-control input-sm" type="number" id="spaceDots" name="spaceDots"  min="0" max="5" value="0"/>
+														</div>
+														<div class="col-sm-2">
+															<label for="spiritDots" class="control-label">Spirit</label><input class="arcana-search form-control input-sm" type="number" id="spiritDots" name="spiritDots"  min="0" max="5" value="0"/>
+														</div>
+														<div class="col-sm-2">
+															<label for="timeDots" class="control-label">Time</label><input class="arcana-search form-control input-sm" type="number" id="timeDots" name="timeDots"  min="0" max="5" value="0"/>
+														</div>
+														<div class="col-sm-2">
+															<label for="clearFiltersButton" class="control-label">Options</label>
+															<a href="#" class="btn btn-link" id="clearFiltersButton">Clear filters</a>
+															<!--<a href="#" class="btn btn-link" id="refreshDataButton">Refresh data</a>-->
+														</div>
+													</div>
+												</div>	
+											</div>	
+											<div class="panel-footer">	
+
+
+												<table id="spellList" class="dt-responsive table table-bordered stripe">	
+													<thead>
+														<tr>			
+															<th data-priority="1">Name</th>
+															<th data-priority="10" class="select-filter">Source</th>
+															<th data-priority="2">Requirements</th>
+															<th data-priority="5">Practice</th>
+															<th data-priority="3">Action</th>
+															<th data-priority="3">Duration</th>
+															<th data-priority="3">Aspect</th>
+															<th data-priority="3">Cost</th>
+															<th class="none">Effect</th>
+															<th data-priority="7">Rote</th>
+															<th data-priority="3">Rote Dice Pool</th>
+															<th class="never">CastableBy</th>
+														</tr>
+													</thead>
+													<tbody>
+													</tbody>
+												</table>
+											</div>	
+										</div>	
+									</div>
+								</div>
+
+								<footer class="footer">
+									<div class="col-sm-1">
+										<label for="themeSelect" class="control-label">Theme</label>
+									</div>
+									<div class="col-sm-2">
+										<select class="form-control input-sm" id="themeSelect"></select>
+									</div>
+									<div class="col-sm-7">&copy; 2016 James Hurburgh.</div>
+									<div class="col-sm-2"><a target="_blank" href="https://docs.google.com/forms/d/1bWQEaNAPKBhkERpV5IkrWLrNAO0Hjp1vYMQuf8hA8kE/viewform">Feedback</a></div>
+								</footer>
+							</div>
+						</body>
+					</html>

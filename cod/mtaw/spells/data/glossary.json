@@ -355,5 +355,524 @@
 	}, {
 		"Term" : "Abyss",
 		"Definition" : "The rift between the Supernal World and the Fallen World, said by some to grow wider with each Paradox."
+	}, {
+		"Term" : "Wending",
+		"Definition" : "The Golden Road of a deceased or Ascended archmage, which can still be accessed through any Irises that remain."
+	}, {
+		"Term" : "Tyrannate",
+		"Definition" : "A Chantry used by a Seer archmaster (usually a Minister), which has been passed down from one archmage to another for centuries and may have originally been built by the Exarch the Seer worships. Due to their nature, Tyrannates are larger than normal Chantries, but are not entirely within the occupant’s control."
+	}, {
+		"Term" : "Traveler",
+		"Definition" : "A mage who is still bound by a Path; a nonarchmaster."
+	}, {
+		"Term" : "Threshold Seeking, the",
+		"Definition" : "The process in which a mage attempts to become an archmaster, starting as an obsessive need to understand a mystery relating to their Arcanum of choice, progressing to a Mystery Play and culminating in the aspirant vanishing to face tests in both the Abyss and the Supernal Realms."
+	}, {
+		"Term" : "Tetrarchs",
+		"Definition" : "1) The entente of archmasters claiming membership in the Seers of the Throne and serving the Exarchs in the Ascension War. 2) The political position within the Seers of the Throne hierarchy held by Seer archmasters who are not Ministers."
+	}, {
+		"Term" : "Talisman",
+		"Definition" : "An Artifact that is also a sub-soul of the creating archmage, enabling it to cast spells without a u"
+	}, {
+		"Term" : "Supernal Work, the",
+		"Definition" : "A theoretical spell that causes the Ascension of the caster."
+	}, {
+		"Term" : "sub-soul",
+		"Definition" : "An independent soul created from that of an archmaster, usually with a Gnosis Trait and Arcana included. Sub-souls remain mystically part of the archmage but survive after death and are capable of casting spells of their own. Also see “Ochema” and “Talisman”."
+	}, {
+		"Term" : "Siddha",
+		"Definition" : "An entente of archmasters focusing on the pure study of the Arcana."
+	}, {
+		"Term" : "Seeker",
+		"Definition" : "A term used by archmasters to refer to one another, distinct from “Traveler.”"
+	}, {
+		"Term" : "Seed",
+		"Definition" : "The area of the Fallen World used as a basis for a Chantry. At the heart of every Chantry is a duplicate of the Seed, containing a gateway to the corresponding location."
+	}, {
+		"Term" : "Sarira",
+		"Definition" : "The physical remains left behind after an Ascension, containing jewels or crystals formed of solidi resonance."
+	}, {
+		"Term" : "Royal Avatar",
+		"Definition" : "A representative of a spirit entity of godlike power; a rank 5 “face” for a rank 6 or more being."
+	}, {
+		"Term" : "Quintessence",
+		"Definition" : "A symbolic representation of a spell drawing on the Imperial Practices that an archmaster intends to cast. A Quintessence is much more than a mere sacrament, it is a Mystery; the act of seeking Quintessence out is what enables the Archmage to cast the spell."
+	}, {
+		"Term" : "Qliphoth",
+		"Definition" : "A once-human “shell” fi lled with the lies of the Abyss, created from a failed aspirant or an established archmage who succumbs to the most severe forms of Paradox."
+	}, {
+		"Term" : "Pneuma",
+		"Definition" : "The spiritual energy making up the Golden Road."
+	}, {
+		"Term" : "Phenomenal World, the",
+		"Definition" : "A term used by some archmasters to refer to the non-Supernal world as a whole, denoting a respect for the material realm and related cosmology that “Fallen” lacks. Based on the idea that while the Supernal is the realm of pure truths, those truths must be expressed as phenomena in the world Travelers are familiar with."
+	}, {
+		"Term" : "Pax Arcanum",
+		"Definition" : "The rules of behavior for archmasters, which new Seekers are informed of shortly after overcoming the Threshold. Breaking or being seen to be intending to break the Pax leads to intervention from other archmages."
+	}, {
+		"Term" : "Omens",
+		"Definition" : "The specifi c goals of an archmaster in the Golden Road Ascension, the changes she is attempting to make to reality in order to achieve her Noumenon."
+	}, {
+		"Term" : "Old One",
+		"Definition" : "A godlike native of the Supernal, often indistinguishable from the region of the Supernal Realms in which it is encountered."
+	}, {
+		"Term" : "Ochema",
+		"Definition" : "Lit. “Vehicle,” a self-aware sub-soul of an archmaster created as an autonomous servant with abiliti those of its creator. Plural “Ochemata.” Also see “avatar.”"
+	}, {
+		"Term" : "Noumenon",
+		"Definition" : "An Imago formed by an archmage of her own Ascension; the vision of the Fallen World she is working towards in her Omens."
+	}, {
+		"Term" : "move",
+		"Definition" : "A measurement of time in the Supernal."
+	}, {
+		"Term" : "Mitrata",
+		"Definition" : "The Ascension sought by Bodhisattvas through Wisdom."
+	}, {
+		"Term" : "Minister",
+		"Definition" : "The chief slave in the Fallen World of a particular Exarch, head of one of the internal Ministries that divide the Seers of the Throne. The most powerful Ministers are archmasters that are partially merged with their Supernal patron."
+	}, {
+		"Term" : "Mandira",
+		"Definition" : "A site in the Fallen World that resonates with a particular Old God."
+	}, {
+		"Term" : "Lustrum",
+		"Definition" : "The subjective experience of the Supernal Realms, formed by interpreting the raw power of the Supernal through Gnosis into something a human mind can withstand. 19 introduction"
+	}, {
+		"Term" : "Kenoma",
+		"Definition" : "The Ascension sought by Aswadim through freeing themselves of the universe, usually by attempting to destroy it."
+	}, {
+		"Term" : "Iris",
+		"Definition" : "A gateway between worlds. Many types of Irises exist, but archmages are most familiar with those they create to connect the Golden Road to another realm."
+	}, {
+		"Term" : "Invisible Masters",
+		"Definition" : "A Pentacle order term for archmages, based on their legendary reclusiveness from the point of view of Travelers."
+	}, {
+		"Term" : "Imperium Rite",
+		"Definition" : "A magical ritual conducted within the Supernal Realms as part of the Golden Road Ascension."
+	}, {
+		"Term" : "Imperial Practice",
+		"Definition" : "The Practices of the Arcana that an archmaster can learn to use in spells by channeling the Supernal through the Road rather than the Path; the Practices of Dynamics, Entities, Excision, Dominions and Transfiguration."
+	}, {
+		"Term" : "greater Abyssal entity",
+		"Definition" : "A stillborn or castoff world within the Abyss, made of hundreds of smaller Abyssal beings."
+	}, {
+		"Term" : "Golden Road",
+		"Definition" : "1) Also referred to as just “Road,” an archmaster’s personal connection to the Supernal, built from the archmage’s Astral Path and the symbols of every Quintessence she has ever used. 2) The Ascension sought by the majority of archmasters, in which they forge a vision for the Fallen World and make it reality by altering the Supernal in Imperium Rites."
+	}, {
+		"Term" : "Final Key",
+		"Definition" : "The item, solution, Quintessence or realization that allows the Ascension of the mage experiencing it."
+	}, {
+		"Term" : "Exemplars",
+		"Definition" : "An entente of ex-Pentacle archmages remaining loyal to their orders, taking an interest in lesser Pe mages and performing feats of Imperial magic on their behalf when the Pax Arcanum will allow."
+	}, {
+		"Term" : "Exarchate",
+		"Definition" : "A region in the Supernal containing the throne of an Exarch."
+	}, {
+		"Term" : "epitome",
+		"Definition" : "A mage or archmage who has learned the fourth Attainment of a Legacy."
+	}, {
+		"Term" : "entente",
+		"Definition" : "A loose alliance among archmasters of similar philosophy."
+	}, {
+		"Term" : "Emanation",
+		"Definition" : "One of several stable realms on the far side of the Abyss, linked to the Supernal Realms but not fully Supernal."
+	}, {
+		"Term" : "Dhatu",
+		"Definition" : "A region in the Supernal ruled by an Old God."
+	}, {
+		"Term" : "common Practice",
+		"Definition" : "A term for the first ten Practices of the Arcana, distinct from the Imperial Practices."
+	}, {
+		"Term" : "Cintamani",
+		"Definition" : "The site in the Supernal that serves as the symbol of an archmage’s power, created during the Threshold Seeking."
+	}, {
+		"Term" : "Chantry",
+		"Definition" : "A physical pocket-world created within an archmaster’s soul by copying a region of the Fallen World as a Seed, serving as combination fortress, hermitage and laboratory free from the threat of Paradox."
+	}, {
+		"Term" : "Bodhisattvas",
+		"Definition" : "An entente of archmages focusing on Wisdom and guiding humanity to Awakening, attempting to follow the example (as they see it) of the mysterious Oracles."
+	}, {
+		"Term" : "Banishment",
+		"Definition" : "Supernal counter-magic; an attempt to interfere with another archmage’s Imperium Rite."
+	}, {
+		"Term" : "avatar",
+		"Definition" : "An alternative name for an Ochema, used by archmasters who do not see their sub-souls as servants but equal representatives of the whole."
+	}, {
+		"Term" : "Aswadim",
+		"Definition" : "An entente of archmasters who believe that the Abyss offers the only true freedom from a universe of forms and laws."
+	}, {
+		"Term" : "Astral Path",
+		"Definition" : "The imagined journey meditating mages use to enter the Astral Realms, used by archmages as the basis of the Golden Road."
+	}, {
+		"Term" : "Astra",
+		"Definition" : "A Supernal Artifact forming part of the regalia of an Old God."
+	}, {
+		"Term" : "aspirant",
+		"Definition" : "A mage attempting to become an archmaster who is within the process of a Threshold Seeking."
+	}, {
+		"Term" : "Ascension War, the",
+		"Definition" : "The confl ict between archmasters, godlike entities and Ascended beings in which the ententes attempt to promote their rival meanings for the Phenomenal World."
+	}, {
+		"Term" : "Aponoia",
+		"Definition" : "The alterations to Fallen reality caused by staying too long in the Supernal Realms or causing dama the truth-symbols there."
+	}, {
+		"Term" : "Alienated",
+		"Definition" : "An entente of archmasters focusing on the natives of the Supernal, aiding the Old Gods against the Exarchs."
+	}, {
+		"Term" : "akathartoi",
+		"Definition" : "The “Unclean,” creatures formed from human evil that hunger for Mana. Inhabitants of Abaddon."
+	}, {
+		"Term" : "Agama",
+		"Definition" : "A grimoire containing spells powered by one of the Old Gods."
+	}, {
+		"Term" : "Aeon",
+		"Definition" : "An Astral spirit representing one of the ten Arcana or Paradox, inhabitants of the very far edge of the Dreamtime."
+	}, {
+		"Term" : "Abaddon",
+		"Definition" : "The “Lower Depths” of the orders’ cosmology, realm of the akathartoi."
+	}, {
+		"Term" : "Wings of the Dragon",
+		"Definition" : "Atlantean order from which the Mysterium evolved, as commonly accepted by modern mages. The order gathered, valued, protected and advanced knowledge of the Ars Mysteriorum in all venues. Unknown outside the Mysterium, its inner circle held initiation ceremonies to advance worthy members into ever more secret knowledge and toward enlightenment. The current order upholds both traditions."
+	}, {
+		"Term" : "theonom",
+		"Definition" : "Elder mystagogue leading an initiate through one of the Five Mysteries."
+	}, {
+		"Term" : "thaumatology",
+		"Definition" : "Sub-discipline of soriology, focusing on the practical application of magic rather than the theory of it."
+	}, {
+		"Term" : "teratology",
+		"Definition" : "Sub-discipline of esotology, focusing on the various supernatural creatures of the Fallen World."
+	}, {
+		"Term" : "supernology",
+		"Definition" : "Sub-discipline of soriology, focusing on the Supernal Realms, the Tapestry and the why over the how."
+	}, {
+		"Term" : "soriology",
+		"Definition" : "Mysterium name for the study of magic, divided into magosophy, supernologyand thaumatology."
+	}, {
+		"Term" : "sidereology",
+		"Definition" : "Sub-discipline of esotology, focusing on the Astral Realms."
+	}, {
+		"Term" : "Seekers",
+		"Definition" : "Faction of the order, primarily concerned with theory and magical research."
+	}, {
+		"Term" : "Savant",
+		"Definition" : "Mystagogue who focuses on preserving knowledge at all costs, to the extent of voluminous memorization."
+	}, {
+		"Term" : "Reclaimers",
+		"Definition" : "Faction of the order, promoting “reclaiming” ancient lore from those unworthy of it."
+	}, {
+		"Term" : "Pancryptia",
+		"Definition" : "Mysterium term for magic’s nature to obscure itself in the meaningless noise around it. Part of the order’s task is to fight this phenomenon by sorting magic from the dross."
+	}, {
+		"Term" : "occultism",
+		"Definition" : "Sub-discipline of esotology, focusing on supernatural miscellany."
+	}, {
+		"Term" : "neokoros",
+		"Definition" : "Initiate of the order."
+	}, {
+		"Term" : "mystagogue",
+		"Definition" : "Generic term for a mage of the Mysterium."
+	}, {
+		"Term" : "magosophy",
+		"Definition" : "Sub-discipline of soriology, focusing on the Awakened soul and morality from the Awakened perspective."
+	}, {
+		"Term" : "Hierophant",
+		"Definition" : "Member of the order with great status, who is generally above worldly concerns."
+	}, {
+		"Term" : "guanxi",
+		"Definition" : "Mysterium term for the social give-and-take between its members."
+	}, {
+		"Term" : "four protocols, the",
+		"Definition" : "Four general ethical guidelines for dealing with life as a mage."
+	}, {
+		"Term" : "Five Mysteries, the",
+		"Definition" : "The five rungs of the ladder that is the Atlantean Mystery, each of which demands a separate initiation and conveys greater understanding of the entire Mystery."
+	}, {
+		"Term" : "factotum",
+		"Definition" : "Sleepwalker initiated into the lesser Atlantean Mystery and aware of the Mysterium as an order."
+	}, {
+		"Term" : "exoterics",
+		"Definition" : "Mysterium name for the broad range of mortal academic disciplines."
+	}, {
+		"Term" : "esotology",
+		"Definition" : "Mysterium name for the study of the supernatural outside of the Supernal, divided into occultism, sidereologyand teratology."
+	}, {
+		"Term" : "Egregori",
+		"Definition" : "Faction of the order, containing those members most dedicated to the order’s mysteries and its spiritual aspects."
+	}, {
+		"Term" : "egregore",
+		"Definition" : "The theoretical spiritual “group mind” that comes to exist in any organization that embodies the goals and traditions of that organization or fellowship."
+	}, {
+		"Term" : "dadouchos",
+		"Definition" : "Member of the order with moderate status, who likely sees to the order’s organization and administration."
+	}, {
+		"Term" : "Curator",
+		"Definition" : "Mystagogue who watches over one of the order’s Athenaea, deciding who can access what within; usually influential within the caucus, if not the Consilium."
+	}, {
+		"Term" : "Corpus Mysteriorum, the",
+		"Definition" : "Ancient grimoire known to the order, copied a hundred times over and of unknown authorship. This grimoire describes one of the Mysterium’s core theses, that magic is itself a living entity, and also contains at least 14 recorded rotes."
+	}, {
+		"Term" : "Censor",
+		"Definition" : "Mystagogue who ensures that dangerous information is seen by none unless absolutely necessary."
+	}, {
+		"Term" : "Atlantean  Mystery,  the",
+		"Definition" : "The secret knowledge the Mysterium uses as a path to enlightenment; it is divided into the Five Mysteries."
+	}, {
+		"Term" : "Athenaeum",
+		"Definition" : "One of the order’s many repositories of lore and ancient Artifacts (Supernal or otherwise), watched over by a Curator."
+	}, {
+		"Term" : "Archivists",
+		"Definition" : "Faction of the order, which promotes preservation of lore over all else."
+	}, {
+		"Term" : "Archaeomancers",
+		"Definition" : "Faction of the order, whose members devote themselves to archaeology Supernal."
+	}, {
+		"Term" : "Alae Draconis",
+		"Definition" : "See Wings of the Dragon."
+	}, {
+		"Term" : "Acquisitionist",
+		"Definition" : "Mystagogue tasked with the dangerous work of recovering knowledge and Artifacts from the wrong hands and investigating strange phenomena."
+	}, {
+		"Term" : "théarch",
+		"Definition" : "A common term for a mage of the Silver Ladder. The connotation of the word implies leadership and wisdom intertwined- one who leads because she is wise, and who must be wise because she is called on to lead."
+	}, {
+		"Term" : "Stag",
+		"Definition" : "A symbol for passive human spirituality, of beliefs and practices that emphasize human unworthiness and reliance upon others."
+	}, {
+		"Term" : "Sage",
+		"Definition" : "The description of the best of human spirituality: the desire and will to cre the world without the passivity of the Stag or the amorality of the Lion."
+	}, {
+		"Term" : "Lion",
+		"Definition" : "A term describing the human impulse for selfishness and ambition at the expense of morality; those humans who prey on their fellows."
+	}, {
+		"Term" : "Hieraconis",
+		"Definition" : "The foretold Awakened Nation to come, one of the primary goals of the Silver Ladder. It is the civilization that will arrive when the Fallen and Supernal are joined once more, when humanity takes its rightful inheritance."
+	}, {
+		"Term" : "gnostocracy",
+		"Definition" : "The order’s idealized system of political rule; a political system in which enlightenment and Awakening govern."
+	}, {
+		"Term" : "Cryptopoly",
+		"Definition" : "The strategy of maintaining secret conspiracies to assist the struggle of mages and Sleepers against the Lie."
+	}, {
+		"Term" : "Convocation",
+		"Definition" : "A formal gathering of the order, expanding beyond the boundaries of a single Consilium."
+	}, {
+		"Term" : "Avatar",
+		"Definition" : "The godhead believed by the Silver Ladder to sleep in every mortal; the ultimate attainment of human mastery over the universe."
+	}, {
+		"Term" : "walker",
+		"Definition" : "An astral construct in Temenos based on the common perception of a famous person."
+	}, {
+		"Term" : "Ecstatic Wind",
+		"Definition" : "The property of the Anima Mundi that potentially erodes a mage’s astral form or identity."
+	}, {
+		"Term" : "dream vestibule",
+		"Definition" : "The entry point into Oneiros."
+	}, {
+		"Term" : "daimon",
+		"Definition" : "A mage’s personal astral guide, manifesting as a reflection of herself and/or her self-image."
+	}, {
+		"Term" : "Amnion",
+		"Definition" : "A protective aura created to protect a mage from the Ecstatic Wind."
+	}, {
+		"Term" : "Visus Draconis",
+		"Definition" : "“Eye of the Dragon.”"
+	}, {
+		"Term" : "Visionaries",
+		"Definition" : "A historical Guardian of the Veil faction that, Guardians believe, supported the Silver Ladder in an early attempt to physically recreate the island of Atlantis. Members of this faction evolved into the Prophets."
+	}, {
+		"Term" : "Veils, the (plural)",
+		"Definition" : "The levels of initiation within the order, beginning with the Gray Veil, progressing to the Crimson Veil and ending with the Black Veil."
+	}, {
+		"Term" : "Veil, the (singular)",
+		"Definition" : "The secrecy that surrounds the Mysteries and that must be protected and maintained by the Guardians."
+	}, {
+		"Term" : "True",
+		"Definition" : "A term for mages of other orders who are considered trustworthy."
+	}, {
+		"Term" : "red brothers",
+		"Definition" : "Mages who have passed the Gray Veil (see Veils) but not yet achieved full admission into the order."
+	}, {
+		"Term" : "Quiet, the",
+		"Definition" : "The only name by which the founding cabal of the Eye of the Dragon is remembered, applied after the Fall to the group of cabals who ran the order. This term is still used in some places today, in reference to the most authoritative cabal in the local caucus."
+	}, {
+		"Term" : "Prophets",
+		"Definition" : "A Guardian of the Veil faction that watches the strands of Fate for important connections between people and events. Members interact more easily with other orders than most Guardians and share more often and more willingly. Prophets tend to have political heft."
+	}, {
+		"Term" : "Ordeal Keepers",
+		"Definition" : "A Guardian of the Veil faction that believes that mages should be constantly challenged to maintain the right to their enlightenment. Members are martially trained and believe in reincarnation toward a more enlightened end."
+	}, {
+		"Term" : "New Constructionists",
+		"Definition" : "A historical Guardian of the Veil faction that, Guardians believe, strongly influenced the direction and progression of the Roman Republic."
+	}, {
+		"Term" : "Messianics",
+		"Definition" : "A Guardian of the Veil faction that defends the integrity of magic until the arrival of the foreordained Hieromagus, who will cast the Exarchs from the higher realms. Members accept, even more so than most Guardians, that their own actions may damn them for hubris and are willing to accept that fate in order to accomplish their goal."
+	}, {
+		"Term" : "Mazed, the",
+		"Definition" : "An in-order term for Sleepers trapped within the Labyrinth. “To maze” means to introduce Sleepers to the Labyrinth. Also “mazer(s).”"
+	}, {
+		"Term" : "Masque, the",
+		"Definition" : "49 archetypal identities sometimes adopted by Guardians as learning tools or even disguises."
+	}, {
+		"Term" : "Law of the Mask",
+		"Definition" : "Guardian of the Veil praxis that holds the Guardians to an oral tradition, passing down history and lessons through parables."
+	}, {
+		"Term" : "Inheritors",
+		"Definition" : "A Guardian of the Veil faction that seeks and hoards knowledge in the belief that it should be kept from the unworthy. Members tend their own wisdom, but they also attempt to tease it out of others by withholding information until it is “earned.” The Inheritors oppose all attempts to prematurely Awaken Sleepers."
+	}, {
+		"Term" : "Hieromagus",
+		"Definition" : "A mage Guardians believe will one day appear, lead the Pentacle in defeating the Exarchs and re-establish Atlantis."
+	}, {
+		"Term" : "Faceless",
+		"Definition" : "A Guardian of the Veil faction that challenges the order’s identity by having none. Members practice the Masques in order to suborn their egos to a false identity, a process that leads them to their true selves. The Faceless often serve the order as assassins, killing those who have fallen too far into hubris."
+	}, {
+		"Term" : "Eye of the Dragon",
+		"Definition" : "The name of the Atlantean incarnation of the Guardians of the Veil. Originally tasked with protecting the isle from the depredations of monstrous creatures and the foreign, unwashed masses, what was left of the order after the Fall was forced to reshape its principles."
+	}, {
+		"Term" : "Exoteric Tenets, the",
+		"Definition" : "The philosophies of the order taught to initiates past the first Veil and known to the public."
+	}, {
+		"Term" : "Esoteric Tenets, the",
+		"Definition" : "The hidden doctrines of the Guardians of the Veil."
+	}, {
+		"Term" : "Diamond Wheel, the",
+		"Definition" : "An expression of the second Exoteric Tenet, describing the cycle of Awakened souls."
+	}, {
+		"Term" : "Wraith",
+		"Definition" : "A recondite Daimonic entity, embodying the Mind Arcanum."
+	}, {
+		"Term" : "Wild.  Beasts come  in  one  of  two  forms",
+		"Definition" : "Atavisms and Totems."
+	}, {
+		"Term" : "Void, the",
+		"Definition" : "The Abyss."
+	}, {
+		"Term" : "Trial",
+		"Definition" : "The ordeal demanded by a Supernal entity of its summoner. In some cases, the trial is preemptive — a task that must be performed before the spirit can be called or interacted with — while, in others, it outlines behaviors that must be observed during or even after the summoning."
+	}, {
+		"Term" : "Totem",
+		"Definition" : "A recondite Primal entity, embodying the Spirit Arcanum."
+	}, {
+		"Term" : "Tithe",
+		"Definition" : "The price requested by a summoned Abyssal entity in exchange for its services. Distinct from a pact in that a binding agreement is not necessary."
+	}, {
+		"Term" : "Term",
+		"Definition" : "The period of time during which a mage benefits from the request of a pact."
+	}, {
+		"Term" : "Stygian",
+		"Definition" : "Of or pertaining to the Supernal Realm of Stygia."
+	}, {
+		"Term" : "Spirit",
+		"Definition" : "Any ephemeral entity native to the Shadow Realm. Also, frequently used for any being comprised of ephemera or similar substances (such as Supernal entities, Acamoth or Gulmoth, and sometimes even ghosts)."
+	}, {
+		"Term" : "Specter",
+		"Definition" : "A recondite Stygian entity, embodying the Death Arcanum."
+	}, {
+		"Term" : "Shade",
+		"Definition" : "Specifically as it applies to Awakened summoners, a Shadeis a being native to Stygia. Shades may be either Apeirons or Specters. Also, frequently used to refer to ghosts."
+	}, {
+		"Term" : "Seraph",
+		"Definition" : "A manifest Aethial entity, embodying the Forces Arcanum (pl. Seraphim)."
+	}, {
+		"Term" : "Royal Avatar",
+		"Definition" : "An ephemeral shell containing a portion of the power and consciousness of a spirit of Prince/Princess (Rank 6) standing or greater."
+	}, {
+		"Term" : "Request",
+		"Definition" : "The service (of whatever sort) acquired by a summoner through means of a pact."
+	}, {
+		"Term" : "Recondite",
+		"Definition" : "A term referring to a Supernal entity tied to a Subtle Arcanum (Death, Fate, Mind, Prime, or Spirit)."
+	}, {
+		"Term" : "Primal",
+		"Definition" : "Of or pertaining to the Supernal Realm of the Primal Wild."
+	}, {
+		"Term" : "Pact",
+		"Definition" : "A mystically-fortified agreement between a willworker and an otherworldly entity, typically a spirit of some sort, which entails an exchange of goods and/or services. Some pacts last a matter of days, while others may persist for a lifetime (or even longer)."
+	}, {
+		"Term" : "Morphean",
+		"Definition" : "An Astral entity originating within an Oneiros."
+	}, {
+		"Term" : "Moira",
+		"Definition" : "A recondite Arcadian entity, embodying the Fate Arcanum (pl. Moirae)."
+	}, {
+		"Term" : "Manifest",
+		"Definition" : "A term referring to a Supernal entity tied to a Gross Arcanum (Forces, Life, Matter, Space, or Time)."
+	}, {
+		"Term" : "Iniquity",
+		"Definition" : "An Astral entity embodying a vice."
+	}, {
+		"Term" : "in two different types",
+		"Definition" : "Anachronisms and Moirae."
+	}, {
+		"Term" : "Imp",
+		"Definition" : "A manifest Daimonic entity, embodying the Space Arcanum."
+	}, {
+		"Term" : "Gulmoth",
+		"Definition" : "An Abyssal spirit called down from the Void by a summoner, into the Fallen World (as opposed to an Acamoth; an Abyssal spirit trapped within the earthly realm)."
+	}, {
+		"Term" : "Forfeiture",
+		"Definition" : "The consequences of reneging on the cost of a pact."
+	}, {
+		"Term" : "Fae",
+		"Definition" : "Specifically as it applies to Awakened summoners, a Faeis a being native to Arcadia. Fae come"
+	}, {
+		"Term" : "Exemplar",
+		"Definition" : "An Astral being embodying a virtue."
+	}, {
+		"Term" : "Esoteric",
+		"Definition" : "An Astral entity embodying an aspect of the conscious self."
+	}, {
+		"Term" : "Demons come in two varieties",
+		"Definition" : "Imps and Shades."
+	}, {
+		"Term" : "Demon",
+		"Definition" : "Specifically as it applies to Awakened summoners, a Demonis a denizen of Pandemonium."
+	}, {
+		"Term" : "Dementia",
+		"Definition" : "As the term applies to summoners, a dementia is an Astral being embodying a given derangement."
+	}, {
+		"Term" : "Daimonic",
+		"Definition" : "Of or pertaining to the Supernal Realm of Pandemonium."
+	}, {
+		"Term" : "Cost",
+		"Definition" : "The commodity (goods, services, or whatever) that a mage exchanges for the request of a pact."
+	}, {
+		"Term" : "Chthonian",
+		"Definition" : "An entity of the Underworld, dead but never born. Possibly somehow related to the Specters of Stygia."
+	}, {
+		"Term" : "Cherub",
+		"Definition" : "A recondite Aethial entity, embodying the Prime Arcanum (pl. Cherubim)."
+	}, {
+		"Term" : "Boon",
+		"Definition" : "One of the services standardly offered by a summoned Abyssal spirit; its particular specialty. The boons of such beings are frequently catalogued by those that know of them and researched by would-be summoners."
+	}, {
+		"Term" : "Beast",
+		"Definition" : "Specifically as it applies to Awakened summoners, a Beast is an entity native to the Primal"
+	}, {
+		"Term" : "Atavism",
+		"Definition" : "A manifest Primal entity, embodying the Life Arcanum."
+	}, {
+		"Term" : "Arcadian",
+		"Definition" : "Of or pertaining to the Supernal Realm of Arcadia."
+	}, {
+		"Term" : "Apeiron",
+		"Definition" : "A manifest Stygian entity, embodying the Matter Arcanum."
+	}, {
+		"Term" : "Angel",
+		"Definition" : "Specifically as it applies to an Awakened summoner, an Angel is a creature from the Aether. Aetherial Angels are either Cherubim or Seraphim."
+	}, {
+		"Term" : "Anachronism",
+		"Definition" : "A manifest Arcadian entity, embodying the Time Arcanum."
+	}, {
+		"Term" : "Alien",
+		"Definition" : "Specifically as it applies to an Awakened summoner, alien is a term occasionally used to describe an entity — spirit or otherwise — stemming from outside of the known realms of existence."
+	}, {
+		"Term" : "Aletheian",
+		"Definition" : "An Astral being encompassing a concept or ideal."
+	}, {
+		"Term" : "Aetherial",
+		"Definition" : "Of or pertaining to the Supernal Realm of the Aether."
+	}, {
+		"Term" : "Acamoth",
+		"Definition" : "An Abyssal spirit imprisoned in or otherwise confined to the Fallen World on a long-term basis. These spirits aspire to tear a rift in the Tapestry, so that the Void might flood in through it and annihilate all of reality."
 	}
 ]
