@@ -25,11 +25,34 @@ $(document).ready(function () {
 		
 		sourceBooks.forEach(function( sourceBook, index ) {
 			if(sourceBook.Name == spell.SourceBook){
-				$('#SourceImage').attr( 'src', sourceBook.Image );
+				if(sourceBook.ID){
+					$('#SourceImageThumbnail').attr( 'src', 'images/covers/' + sourceBook.ID + '-t.png' );
+					$('#SourceLink').attr( 'href', 'images/covers/' + sourceBook.ID + '.png' );
+				}else{					
+					$('#SourceImageThumbnail').attr( 'src', sourceBook.Image );
+					$('#SourceLink').attr( 'href', sourceBook.Image );
+				}
 				
-				$('#amazonLink').attr( 'href', sourceBook.Links.Amazon );
-				$('#driveThruRpgLink').attr( 'href', sourceBook.Links.DriveThruRpg );
-				$('#wikiaLink').attr( 'href', sourceBook.Links.Wikia );
+				// Amazon Link
+				if(sourceBook.Links.Amazon){
+					$('#amazonLink').attr( 'href', sourceBook.Links.Amazon );
+				}else{
+					$('#amazonLink').hide();
+				}
+				
+				// Drive Thru Rpg Link
+				if(sourceBook.Links.DriveThruRpg){
+					$('#driveThruRpgLink').attr( 'href', sourceBook.Links.DriveThruRpg );
+				}else{
+					$('#driveThruRpgLink').hide();
+				}
+				
+				// White Wolf Wikia Link
+				if(sourceBook.Links.Wikia){
+					$('#wikiaLink').attr( 'href', sourceBook.Links.Wikia );
+				}else{
+					$('#wikiaLink').hide();
+				}
 			}
 		});
 		$("#Requirements").append(renderRequirements(spell.Requirements));
@@ -45,6 +68,7 @@ $(document).ready(function () {
 		$(spells).each(function (index, spell) {
 			spellEffect = spellEffect.replace(new RegExp('\b'+spell.Name+'\b'), "<a href='spell.html\?spell=" + escape(spell.Name) + "'>" + spell.Name + "</a>");
 		});
+		
 		// Emphasise Arcana names
 		$(arcanum).each(function (index, arcana) {
 			spellEffect = spellEffect.replace(new RegExp(arcana.Name, "g"), "<strong>" + arcana.Name + "</strong>");

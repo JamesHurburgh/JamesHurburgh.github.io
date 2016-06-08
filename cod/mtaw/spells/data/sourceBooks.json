@@ -1,41 +1,45 @@
-[
-	{
+[{
+		"ID" : "WW40103",
 		"Name" : "Adamantine Arrow",
 		"Image" : "http://www.drivethrurpg.com/images/1/51534.jpg",
 		"Links" : {
-			"Wikia" : "",
+			"Wikia" : "http://whitewolf.wikia.com/wiki/The_Adamantine_Arrow_(book)",
 			"DriveThruRpg" : "",
-			"Amazon" : ""
+			"Amazon" : "http://amzn.to/1VLrNT0"
 		}
 	}, {
 
+		"ID" : "WW40202",
 		"Name" : "Astral Realms",
 		"Image" : "http://www.drivethrurpg.com/images/1/50992.jpg",
 		"Links" : {
 			"Wikia" : "http://whitewolf.wikia.com/wiki/Astral_Realms",
 			"DriveThruRpg" : "",
-			"Amazon" : ""
+			"Amazon" : "http://amzn.to/1XCx3dz"
 		}
 	}, {
 
+		"ID" : "WW40104",
 		"Name" : "Banishers",
 		"Image" : "http://www.drivethrurpg.com/images/1/54790.jpg",
 		"Links" : {
 			"Wikia" : "http://whitewolf.wikia.com/wiki/Banishers_(book)",
 			"DriveThruRpg" : "http://www.drivethrurpg.com/product/54790/Banishers",
-			"Amazon" : ""
+			"Amazon" : "http://amzn.to/1Uoabr9"
 		}
 	}, {
 
+		"ID" : "WW40200",
 		"Name" : "Boston Unveiled",
 		"Image" : "",
 		"Links" : {
 			"Wikia" : "http://whitewolf.wikia.com/wiki/Boston_Unveiled",
 			"DriveThruRpg" : "",
-			"Amazon" : ""
+			"Amazon" : "http://amzn.to/1RWKtrZ"
 		}
 	}, {
 
+		"ID" : "Dark_Eras",
 		"Name" : "Chronicles of Darkness: Dark Eras",
 		"Image" : "https://www.drivethrurpg.com/images/4261/178583.jpg",
 		"Links" : {
@@ -45,6 +49,7 @@
 		}
 	}, {
 
+		"ID" : "",
 		"Name" : "Glimpses Of The Unknown",
 		"Image" : "http://www.drivethrurpg.com/images/1/93242.jpg",
 		"Links" : {
@@ -54,6 +59,7 @@
 		}
 	}, {
 
+		"ID" : "WW40900",
 		"Name" : "Gazing Into You",
 		"Image" : "",
 		"Links" : {
@@ -63,24 +69,27 @@
 		}
 	}, {
 
+		"ID" : "WW40203",
 		"Name" : "Grimoire Of Grimoires",
 		"Image" : "http://www.drivethrurpg.com/images/1/56033.jpg",
 		"Links" : {
 			"Wikia" : "http://whitewolf.wikia.com/wiki/Grimoire_of_Grimoires",
 			"DriveThruRpg" : "http://www.drivethrurpg.com/product/56033/Grimoire-of-Grimoires",
-			"Amazon" : ""
+			"Amazon" : "http://amzn.to/1XCyd8R"
 		}
 	}, {
 
+		"ID" : "WW40305",
 		"Name" : "Guardians Of The Veil",
 		"Image" : "http://www.drivethrurpg.com/images/1/3549.jpg",
 		"Links" : {
 			"Wikia" : "http://whitewolf.wikia.com/wiki/Guardians_of_the_Veil_(book)",
 			"DriveThruRpg" : "http://www.drivethrurpg.com/product/3549/Guardians-of-the-Veil",
-			"Amazon" : ""
+			"Amazon" : "http://amzn.to/1VLt0tj"
 		}
 	}, {
 
+		"ID" : "WW40010",
 		"Name" : "Imperial Mysteries",
 		"Image" : "",
 		"Links" : {
@@ -90,24 +99,27 @@
 		}
 	}, {
 
+		"ID" : "WW40307",
 		"Name" : "Intruders: Encounters With the Abyss",
 		"Image" : "http://www.drivethrurpg.com/images/1/25526.jpg",
 		"Links" : {
 			"Wikia" : "http://whitewolf.wikia.com/wiki/Intruders:_Encounters_With_the_Abyss",
 			"DriveThruRpg" : "http://www.drivethrurpg.com/product/25526/Intruders-Encounters-With-the-Abyss",
-			"Amazon" : ""
+			"Amazon" : "http://amzn.to/1RWKfRA"
 		}
 	}, {
 
+		"ID" : "WW40312",
 		"Name" : "Keys to the Supernal Tarot",
 		"Image" : "http://www.drivethrurpg.com/images/1/58743.jpg",
 		"Links" : {
 			"Wikia" : "http://whitewolf.wikia.com/wiki/Keys_to_the_Supernal_Tarot",
 			"DriveThruRpg" : "http://www.drivethrurpg.com/product/58743/Keys-to-the-Supernal-Tarot",
-			"Amazon" : ""
+			"Amazon" : "http://amzn.to/24xZWpL"
 		}
 	}, {
 
+		"ID" : "",
 		"Name" : "Left-Hand Path",
 		"Image" : "http://www.drivethrurpg.com/images/4261/107263.jpg",
 		"Links" : {
@@ -117,24 +129,27 @@
 		}
 	}, {
 
+		"ID" : "WW40101",
 		"Name" : "Legacies: The Ancient",
 		"Image" : "http://www.drivethrurpg.com/images/1/24481.jpg",
 		"Links" : {
 			"Wikia" : "http://whitewolf.wikia.com/wiki/Legacies:_The_Ancient",
 			"DriveThruRpg" : "http://www.drivethrurpg.com/product/24481/Legacies-The-Ancient",
-			"Amazon" : ""
+			"Amazon" : "http://amzn.to/1XCxN2d"
 		}
 	}, {
 
+		"ID" : "WW40100",
 		"Name" : "Legacies: The Sublime",
 		"Image" : "http://www.drivethrurpg.com/images/1/3404.jpg",
 		"Links" : {
 			"Wikia" : "http://whitewolf.wikia.com/wiki/Legacies:_The_Sublime",
 			"DriveThruRpg" : "http://www.drivethrurpg.com/product/3404/Legacies-The-Sublime",
-			"Amazon" : ""
+			"Amazon" : "http://amzn.to/1ZwrRFk"
 		}
 	}, {
 
+		"ID" : "WW40908",
 		"Name" : "Lines of Power",
 		"Image" : "",
 		"Links" : {
@@ -144,15 +159,17 @@
 		}
 	}, {
 
+		"ID" : "WW40325",
 		"Name" : "Mage Chronicler's Guide",
 		"Image" : "",
 		"Links" : {
 			"Wikia" : "http://whitewolf.wikia.com/wiki/Mage_Chronicler%27s_Guide",
 			"DriveThruRpg" : "",
-			"Amazon" : ""
+			"Amazon" : "http://amzn.to/1Zwsi2d"
 		}
 	}, {
 
+		"ID" : "WW55106",
 		"Name" : "Mage Noir",
 		"Image" : "",
 		"Links" : {
@@ -162,6 +179,7 @@
 		}
 	}, {
 
+		"ID" : "",
 		"Name" : "Mage Translation Guide",
 		"Image" : "",
 		"Links" : {
@@ -171,24 +189,27 @@
 		}
 	}, {
 
+		"ID" : "WW40000",
 		"Name" : "Mage: The Awakening",
 		"Image" : "http://www.drivethrurpg.com/images/1/2743.jpg",
 		"Links" : {
 			"Wikia" : "http://whitewolf.wikia.com/wiki/Mage:_The_Awakening_Rulebook",
 			"DriveThruRpg" : "http://www.drivethrurpg.com/product/2743/Mage-The-Awakening",
-			"Amazon" : ""
+			"Amazon" : "http://amzn.to/1t7vxmf"
 		}
 	}, {
 
+		"ID" : "WW40309",
 		"Name" : "Magical Traditions",
 		"Image" : "http://www.drivethrurpg.com/images/1/28280.jpg",
 		"Links" : {
 			"Wikia" : "http://whitewolf.wikia.com/wiki/Magical_Traditions",
 			"DriveThruRpg" : "http://www.drivethrurpg.com/product/28280/Magical-Traditions",
-			"Amazon" : ""
+			"Amazon" : "http://amzn.to/1Uobwy4"
 		}
 	}, {
 
+		"ID" : "",
 		"Name" : "Mind's Eye Theatre: The Awakening",
 		"Image" : "",
 		"Links" : {
@@ -198,6 +219,7 @@
 		}
 	}, {
 
+		"ID" : "WW40324",
 		"Name" : "Night Horrors: The Unbidden",
 		"Image" : "http://www.drivethrurpg.com/images/1/78098.jpg",
 		"Links" : {
@@ -207,93 +229,103 @@
 		}
 	}, {
 
+		"ID" : "WW40306",
 		"Name" : "Reign of the Exarchs",
 		"Image" : "http://www.drivethrurpg.com/images/1/12416.jpg",
 		"Links" : {
 			"Wikia" : "http://whitewolf.wikia.com/wiki/Reign_of_the_Exarchs",
 			"DriveThruRpg" : "http://www.drivethrurpg.com/product/12416/Reign-of-the-Exarchs",
-			"Amazon" : ""
+			"Amazon" : "http://amzn.to/1RWL3G0"
 		}
 	}, {
 
+		"ID" : "WW40201",
 		"Name" : "Sanctum And Sigil",
 		"Image" : "http://www.drivethrurpg.com/images/1/3137.jpg",
 		"Links" : {
 			"Wikia" : "http://whitewolf.wikia.com/wiki/Sanctum_%26_Sigil",
 			"DriveThruRpg" : "http://www.drivethrurpg.com/product/3137/Sanctum--Sigil",
-			"Amazon" : ""
+			"Amazon" : "http://amzn.to/1Zwta6U"
 		}
 	}, {
 
+		"ID" : "WW40310",
 		"Name" : "Secrets of the Ruined Temple",
 		"Image" : "http://www.drivethrurpg.com/images/1/11922.jpg",
 		"Links" : {
 			"Wikia" : "http://whitewolf.wikia.com/wiki/Secrets_of_the_Ruined_Temple",
 			"DriveThruRpg" : "http://www.drivethrurpg.com/product/11922/Secrets-of-the-Ruined-Temple",
-			"Amazon" : ""
+			"Amazon" : "http://amzn.to/1OcEaG8"
 		}
 	}, {
 
+		"ID" : "WW40321",
 		"Name" : "Seers of the Throne",
 		"Image" : "http://www.drivethrurpg.com/images/1/60246.jpg",
 		"Links" : {
 			"Wikia" : "http://whitewolf.wikia.com/wiki/Seers_of_the_Throne_(book)",
 			"DriveThruRpg" : "http://www.drivethrurpg.com/product/60246/Seers-of-the-Throne",
-			"Amazon" : ""
+			"Amazon" : "http://amzn.to/1XCxJ2w"
 		}
 	}, {
 
+		"ID" : "WW40322",
 		"Name" : "Summoners",
 		"Image" : "http://www.drivethrurpg.com/images/1/60624.jpg",
 		"Links" : {
 			"Wikia" : "http://whitewolf.wikia.com/wiki/Summoners",
 			"DriveThruRpg" : "http://www.drivethrurpg.com/product/60624/Summoners",
-			"Amazon" : ""
+			"Amazon" : "http://amzn.to/1OcEF2J"
 		}
 	}, {
 
+		"ID" : "WW40308",
 		"Name" : "The Free Council",
 		"Image" : "http://www.drivethrurpg.com/images/1/25983.jpg",
 		"Links" : {
 			"Wikia" : "http://whitewolf.wikia.com/wiki/The_Free_Council",
 			"DriveThruRpg" : "http://www.drivethrurpg.com/product/25983/The-Free-Council",
-			"Amazon" : ""
+			"Amazon" : "http://amzn.to/1Uob7vE"
 		}
 	}, {
 
+		"ID" : "WW40102",
 		"Name" : "The Mysterium",
 		"Image" : "http://www.drivethrurpg.com/images/1/50486.jpg",
 		"Links" : {
 			"Wikia" : "http://whitewolf.wikia.com/wiki/The_Mysterium",
 			"DriveThruRpg" : "http://www.drivethrurpg.com/product/50486/The-Mysterium",
-			"Amazon" : ""
+			"Amazon" : "http://amzn.to/1PgO2JK"
 		}
 	}, {
 
+		"ID" : "WW40105",
 		"Name" : "The Silver Ladder",
 		"Image" : "http://www.drivethrurpg.com/images/1/56644.jpg",
 		"Links" : {
 			"Wikia" : "http://whitewolf.wikia.com/wiki/The_Silver_Ladder",
 			"DriveThruRpg" : "http://www.drivethrurpg.com/product/56644/Silver-Ladder",
-			"Amazon" : ""
+			"Amazon" : "http://amzn.to/1RWKtZ2"
 		}
 	}, {
 
+		"ID" : "WW40302",
 		"Name" : "Tome Of The Mysteries",
 		"Image" : "http://www.drivethrurpg.com/images/1/23534.jpg",
 		"Links" : {
 			"Wikia" : "http://whitewolf.wikia.com/wiki/Tome_of_the_Mysteries",
 			"DriveThruRpg" : "http://www.drivethrurpg.com/product/23534/Tome-of-the-Mysteries",
-			"Amazon" : ""
+			"Amazon" : "http://amzn.to/1ZwsVJh"
 		}
 	}, {
 
+		"ID" : "WW40301",
 		"Name" : "Tome of the Watchtowers",
 		"Image" : "",
 		"Links" : {
 			"Wikia" : "http://whitewolf.wikia.com/wiki/Tome_of_the_Watchtowers",
 			"DriveThruRpg" : "",
-			"Amazon" : ""
+			"Amazon" : "http://amzn.to/1PgNFir"
 		}
 	}
 ]
