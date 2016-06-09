@@ -66,7 +66,7 @@ $(document).ready(function () {
 		spellEffect = spell.Effect;
 		// Turn spell names into links
 		$(spells).each(function (index, spell) {
-			spellEffect = spellEffect.replace(new RegExp('\b'+spell.Name+'\b'), "<a href='spell.html\?spell=" + escape(spell.Name) + "'>" + spell.Name + "</a>");
+			spellEffect = spellEffect.replace(new RegExp('\\b'+spell.Name+'\\b'), "<a href='spell.html\?spell=" + escape(spell.Name) + "'>" + spell.Name + "</a>");
 		});
 		
 		// Emphasise Arcana names
@@ -77,9 +77,8 @@ $(document).ready(function () {
 		// Popover text for glossary
 		$(glossary).each(function (index, term) {
 			regex = new RegExp('(\\b' + term.Term + '\\b)(?![^<]*>|[^<>]*</)');
-			replacement = "<a href='#' data-toggle='popover' title='" + term.Definition + "'>" + term.Term + "</a>";
+			replacement = "<span class='text-primary' data-toggle='tooltip' title='" + term.Definition + "'>" + term.Term + "</span>";
 			spellEffect = spellEffect.replace(regex, replacement);
-			// <a href="#" data-toggle="popover" title="Popover Header" data-content="" + term.Definition + "">" + term.Term + "</a>
 		});
 		
 		$('#Effect').append(spellEffect);

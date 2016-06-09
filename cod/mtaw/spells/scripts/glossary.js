@@ -26,6 +26,16 @@ $(document).ready(function () {
 						data: 'Term'
 					},
 					{ 
+						data: 'Context',
+						render: function ( data, type, term ) {
+							var contextString = ">";
+							$(term.Context).each(function(index, context){
+								contextString = contextString + ", " + context;
+							});
+							return contextString.trim().replace(">, ","");
+						} 
+					},
+					{ 
 						data: 'Definition'
 					}
 				]

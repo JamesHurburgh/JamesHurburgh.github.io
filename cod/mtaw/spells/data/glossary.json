@@ -1,878 +1,1346 @@
 [{
 		"Term" : "Wisdom",
+		"Context" : ["Mage"],
 		"Definition" : "The quality of understanding a mage possesses about the proper balance of magic and the mundane. Wisdom is hard to acquire and maintain when practicing the Ars Mysteriorum, but it is well worth the effort, for many mages believe that only the Wise can attain the Final Key to the Mysteries."
 	}, {
 		"Term" : "willworker",
+		"Context" : ["Mage"],
 		"Definition" : "A mage, someone who \"works his will\" on reality."
 	}, {
 		"Term" : "will",
+		"Context" : ["Mage"],
 		"Definition" : "The force of intent someone can bring to bear to accomplish a task. For mages, this has the extra meaning of \"the magical will,\" the intent to alter reality through magic."
 	}, {
 		"Term" : "Watchtower",
+		"Context" : ["Mage"],
 		"Definition" : "A mystical edifice in a Supernal Realm, erected by the Atlantean kings or Oracles to oppose the Exarchs and restore magic to the Fallen World after the creation of the Abyss."
 	}, {
 		"Term" : "ward",
+		"Context" : ["Mage"],
 		"Definition" : "A Space spell that forms a barrier against Space magic, including sympathetic spells and scrying. Some wards called \"Bans\"act as a barrier against certain classes of creature or thing."
 	}, {
 		"Term" : "Verge",
+		"Context" : ["Mage"],
 		"Definition" : "A place where the Gauntlet has no strength, so that beings can pass between the material realm and the Shadow Realm without need of magic."
 	}, {
 		"Term" : "Veil",
+		"Context" : ["Mage"],
 		"Definition" : "The body of customs used to keep the Mysteries secret from those who could taint them, including Sleepers."
 	}, {
 		"Term" : "undead",
+		"Context" : ["Mage"],
 		"Definition" : "A once\"living creature that continues to exist after death in an animate form. Includes ghosts, zombies and vampires."
 	}, {
 		"Term" : "Twilight",
+		"Context" : ["Mage"],
 		"Definition" : "The state of existence within the material realm for most ephemeral beings that find themselves on the material side of the Gauntlet, including ghosts and spirits. Beings and things within Twilight cannot be seen or touched by those without the requisite spells."
 	}, {
 		"Term" : "Time",
+		"Context" : ["Mage"],
 		"Definition" : "The Arcanum that governs divination, prophecy and temporal acceleration/deceleration."
 	}, {
 		"Term" : "Thyrsus",
+		"Context" : ["Mage"],
 		"Definition" : "A mage whose Path leads to the Primal Wild. Thyrsus epitomize the tarot card of \"The Moon.\""
 	}, {
 		"Term" : "thrall",
+		"Context" : ["Mage"],
 		"Definition" : "A mage whose soul stone has come into the possession of another mage. There are ancient customs over what rights the possessor has, usually involving only three favors or tasks he can ask of the soul stone’s true owner before he must relinquish possession."
 	}, {
 		"Term" : "theriomorph",
+		"Context" : ["Mage"],
 		"Definition" : " being with the ability to shape\"shift at will into an animal (i.e., a werewolf), as distinct from someone who uses magic to shape\"shift."
 	}, {
 		"Term" : "Temenos",
+		"Context" : ["Mage"],
 		"Definition" : "The plane of the collective soul within Astral Space, likened to the concept of the Jungian collective unconscious."
 	}, {
 		"Term" : "tass",
+		"Context" : ["Mage"],
 		"Definition" : "Magical substance. A form of the prima materia (Prime), tass is likened to the \"earth\"or \"solid\"state of that substance. It can be \"broken\"or \"melted\"down into Mana."
 	}, {
 		"Term" : "Tapestry",
+		"Context" : ["Mage"],
 		"Definition" : "A metaphor for the whole of Creation, made up of many discrete Patterns."
 	}, {
 		"Term" : "Supernal World",
+		"Context" : ["Mage"],
 		"Definition" : "he higher reality that was cut off by creation of the Abyssin the Celestial War of Atlantis. It is the source of magic and is believed to be the true home for all souls."
 	}, {
 		"Term" : "Supernal Realm",
+		"Context" : ["Mage"],
 		"Definition" : "A realm within the Supernal World. Mages know of five such realms, because of the Watchtowers placed in them."
 	}, {
 		"Term" : "Stygia",
+		"Context" : ["Mage"],
 		"Definition" : "A Supernal Realm where the Ruling Arcana are Death and Matter. Mages who walk the MorosPath claim a Watchtower in this realm."
 	}, {
 		"Term" : "Spirit",
+		"Context" : ["Mage"],
 		"Definition" : "The Arcanum that governs exorcism, the Gauntlet, the Shadow Realm, soul retrieval and spirits."
 	}, {
 		"Term" : "Space",
+		"Context" : ["Mage"],
 		"Definition" : "The Arcanum that governs conjuration, scrying, sympathy, teleportation and wards."
 	}, {
 		"Term" : "soul stone",
+		"Context" : ["Mage"],
 		"Definition" : "A physical piece of a mage’s soul, voluntarily created at the cost of the mage’s own magical potential, but which forms the necessary foundation of a Demesne."
 	}, {
 		"Term" : "soul",
+		"Context" : ["Mage"],
 		"Definition" : "The essential core of a human being, as distinct from the mind or psyche and the spirit (the subtle body). It is the soul that Awakens and yearns to ascend to the Supernal World."
 	}, {
 		"Term" : "Sleepwalker",
+		"Context" : ["Mage"],
 		"Definition" : "A Sleeper who is not Awake but who does not suffer from Quiescence and Disbelief, and who does not increase the chance of a Paradox should he witness vulgar or improbable magic."
 	}, {
 		"Term" : "Sleeper",
+		"Context" : ["Mage"],
 		"Definition" : "A mortal who is not Awake —the majority of human beings in the modern era. Sleepers suffer from the Quiescence and Disbelief, and worsen the chances of a Paradox if they witness vulgar or improbable magic."
 	}, {
 		"Term" : "Silver Ladder",
+		"Context" : ["Mage"],
 		"Definition" : "A mystical order with roots in Atlantis. They were the viziers and priests of the Awakened City."
 	}, {
 		"Term" : "Shadow Realm",
+		"Context" : ["Mage"],
 		"Definition" : "The spiritual or ephemeral portion of the Fallen World, separated from the material realm by the Gauntlet."
 	}, {
 		"Term" : "shadow name",
+		"Context" : ["Mage"],
 		"Definition" : "The moniker a mage adopts to hide his real name from mages who would use sympathetic magic against him or threaten his Sleeper friends and family."
 	}, {
 		"Term" : "Sentinel",
+		"Context" : ["Mage"],
 		"Definition" : "An official role within the Consilium, representing a mage enforcer. Sentinels see to the military a tasks of the Consilium."
 	}, {
 		"Term" : "Scelestus",
+		"Context" : ["Mage"],
 		"Definition" : "\"The Accursed.\" A mage whose soul is tainted by the Abyss or pledged to an Abyssal entity. A Scelestus is created through a Legacy."
 	}, {
 		"Term" : "sanctum",
+		"Context" : ["Mage"],
 		"Definition" : "The place where a mage or a cabal performs magical studies and practices the Ars Mysteriorum."
 	}, {
 		"Term" : "Quiescence",
+		"Context" : ["Mage"],
 		"Definition" : "The curse that keeps most souls from Awakening, closing people’s eyes to the truth of reality and indoctrinating them into the Lie."
 	}, {
 		"Term" : "Provost",
+		"Context" : ["Mage"],
 		"Definition" : "An official role within the Consilium, representing a mage bailiff. Provosts are tasked with ensuring Consilium’s rulings are carried out by those affected."
 	}, {
 		"Term" : "Prime",
+		"Context" : ["Mage"],
 		"Definition" : "The Arcanum that governs Hallows, illusions, magical imbuement, Mana, resonance and tass."
 	}, {
 		"Term" : "Primal Wild",
+		"Context" : ["Mage"],
 		"Definition" : "A Supernal Realm where the Ruling Arcana are Life and Spirit. Mages who walk the ThyrsusPath claim a Watchtower in this realm."
 	}, {
 		"Term" : "prima materia",
+		"Context" : ["Mage"],
 		"Definition" : "The Supernal substance, also called Prime. In the Fallen World, the prima materia is known in two states, Mana and tass."
 	}, {
 		"Term" : "Practice of Weaving",
+		"Context" : ["Mage"],
 		"Definition" : "A body of knowledge associated with the third degree (3rd dot) of an Arcanum, describing how a mage can mystically alter a target."
 	}, {
 		"Term" : "Practice of Veiling",
+		"Context" : ["Mage"],
 		"Definition" : "A body of knowledge associated with the second degree (2nd dot) of an Arcanum, describing how a mage can mystically conceal phenomena within the Arcanum’s purview."
 	}, {
 		"Term" : "Practice of Unveiling",
+		"Context" : ["Mage"],
 		"Definition" : "A body of knowledge associated with the first degree (1st dot) of an Arcanum, describing how a mage can mystically perceive phenomena within the Arcanum’s purview."
 	}, {
 		"Term" : "Practice of Unraveling",
+		"Context" : ["Mage"],
 		"Definition" : "A body of knowledge associated with the fourth degree (4th dot) of an Arcanum, describing how a mage can gravely injure or degrade targets."
 	}, {
 		"Term" : "Practice of Unmaking",
+		"Context" : ["Mage"],
 		"Definition" : "A body of knowledge associated with the fifth degree (5th dot) of an Arcanum, describing how a mage can mystically destroy targets or phenomena within the Arcanum’s purview."
 	}, {
 		"Term" : "Practice of Shielding",
+		"Context" : ["Mage"],
 		"Definition" : "A body of knowledge associated with the second degree (2nd dot) of an Arcanum, describing how a mage can mystically protect targets."
 	}, {
 		"Term" : "Practice of Ruling",
+		"Context" : ["Mage"],
 		"Definition" : "A body of knowledge associated with the second degree (2nd dot) of an Arcanum, describing how a mage can mystically command and control targets."
 	}, {
 		"Term" : "Practice of Perfecting",
+		"Context" : ["Mage"],
 		"Definition" : "A body of knowledge associated with the third degree (3rd dot) of an Arcanum, describing how a mage can mystically bolster or improve targets."
 	}, {
 		"Term" : "Practice of Patterning",
+		"Context" : ["Mage"],
 		"Definition" : "A body of knowledge associated with the fourth degree (4th dot) of an Arcanum, describing how a mage can significantly transform targets."
 	}, {
 		"Term" : "Practice of Making",
+		"Context" : ["Mage"],
 		"Definition" : "A body of knowledge associated with the fifth degree (5th dot) of an Arcanum, describing how a mage can mystically create phenomena within the Arcanum’s purview from nothing."
 	}, {
 		"Term" : "Practice of Knowing",
+		"Context" : ["Mage"],
 		"Definition" : "A body of knowledge associated with the first degree (1st dot) of an Arcanum, describing how a mage can gain mystical knowledge and understanding of phenomena within the Arcanum’s purview."
 	}, {
 		"Term" : "Practice of Fraying",
+		"Context" : ["Mage"],
 		"Definition" : "A body of knowledge associated with the third degree (3rd dot) of an Arcanum, describing how a mage can mystically harm a target."
 	}, {
 		"Term" : "Practice of Compelling",
+		"Context" : ["Mage"],
 		"Definition" : "A body of knowledge associated with the first degree (1st dot) of an Arcanum, describing how a mage can mystically nudge events or targets within the Arcanum’s purview toward a desired outcome."
 	}, {
 		"Term" : "Pentacle",
+		"Context" : ["Mage"],
 		"Definition" : "The loose alliance of the four Atlantean magical orders (Adamantine Arrow, Guardians of the Veil, the Mysterium and the Silver Ladder) and the Free Council order. This term also refers to Consilii in which all five of these orders participate."
 	}, {
 		"Term" : "Pattern",
+		"Context" : ["Mage"],
 		"Definition" : "The mystical \"body\"of a person, place or thing, describing the Arcana of which it is composed."
 	}, {
 		"Term" : "Path",
+		"Context" : ["Mage"],
 		"Definition" : "A mage’s personal connection to a Watchtowerin a Supernal Realm, by which he can work magic."
 	}, {
 		"Term" : "Paradox",
+		"Context" : ["Mage"],
 		"Definition" : "A temporary break in reality caused by the misapplication of magic. There are five types of Paradoxes \" Anomaly, Bedlam, Branding, Havoc and Manifestation."
 	}, {
 		"Term" : "Pandemonium",
+		"Context" : ["Mage"],
 		"Definition" : "A Supernal Realm where the Ruling Arcana are Mind and Space. Mages who walk the MastigosPath claim a Watchtower in this realm."
 	}, {
 		"Term" : "order",
+		"Context" : ["Mage"],
 		"Definition" : "A formal organization of mages that seeks to cultivate the Ars Mysteriorum among its members and diss its goals to other mages."
 	}, {
 		"Term" : "Oracle",
+		"Context" : ["Mage"],
 		"Definition" : "A mythical arch-mage who resides in the Supernal World, one of those who held true to Atlantean ideals in the Celestial War. Oracles oppose the Exarchs."
 	}, {
 		"Term" : "Oneiros",
+		"Context" : ["Mage"],
 		"Definition" : "A mage’s personal dream plane within Astral Space."
 	}, {
 		"Term" : "Obrimos",
+		"Context" : ["Mage"],
 		"Definition" : "A mage whose Path leads to the Aether. Obrimos epitomize the tarot card of \"Strength.\""
 	}, {
 		"Term" : "Mysterium",
+		"Context" : ["Mage"],
 		"Definition" : "A mystical order with roots in Atlantis. They were the scholars and explorers of the Awakened City."
 	}, {
 		"Term" : "Mysteries",
+		"Context" : ["Mage"],
 		"Definition" : "The ways of magic, especially concerning how the art and practice of magic can ascend the soul safely across the Abyss."
 	}, {
 		"Term" : "Moros",
+		"Context" : ["Mage"],
 		"Definition" : " mage whose Path leads to Stygia. Moros epitomize the tarot card of \"Death.\""
 	}, {
 		"Term" : "Mind",
+		"Context" : ["Mage"],
 		"Definition" : "he Arcanum that governs communication, hallucinations, mental projection, mind control and telepathy."
 	}, {
 		"Term" : "Matter",
+		"Context" : ["Mage"],
 		"Definition" : "The Arcanum that governs alchemy, elemental air, elemental earth, elemental water, shaping and transmutation."
 	}, {
 		"Term" : "material realm",
+		"Context" : ["Mage"],
 		"Definition" : "The physical portion of the Fallen World, the only realm of existence known to Sleepers."
 	}, {
 		"Term" : "Mastigos",
+		"Context" : ["Mage"],
 		"Definition" : "A mage whose Path leads to Pandemonium. Mastigos epitomize the tarot card of \"The Devil.\""
 	}, {
 		"Term" : "master",
+		"Context" : ["Mage"],
 		"Definition" : "A mage who has attained the fifth degree (5 dots) of knowledge in an Arcanum."
 	}, {
 		"Term" : "Manifestation",
+		"Context" : ["Mage"],
 		"Definition" : "A Paradox where a creature from the Abyss manifests within the caster’s vicinity."
 	}, {
 		"Term" : "Mana",
+		"Context" : ["Mage"],
 		"Definition" : "Magical energy. A form of the prima materia (Prime), Mana is likened to the \"water\"or \"liquid\"state of that magical substance, as compared to tass, the \"earth\" or \"solid\" state."
 	}, {
 		"Term" : "magical tools",
+		"Context" : ["Mage"],
 		"Definition" : "Items a mage uses to help prevent a Paradox when casting magic. Tools can be chosen from the mage’s Path or order lists."
 	}, {
 		"Term" : "Life",
+		"Context" : ["Mage"],
 		"Definition" : "The Arcanum that governs disease, evolution, healing, metamorphosis and vigor."
 	}, {
 		"Term" : "Lie",
+		"Context" : ["Mage"],
 		"Definition" : "The world of Sleepers, ignorant to magic and the supernatural. Conversely, it refers to the state of being ignorant of the Mysteries, as contrasted with the Invisible Truth. Also, any force that tries to hide the truth (i.e., the schemes of the Exarchs)."
 	}, {
 		"Term" : "Lex Magicus",
+		"Context" : ["Mage"],
 		"Definition" : "The body of law concerning magic and the Awakened community. Each cabal is expected to police itself within the bounds of this law, and the Consilium can adjudicate the law when a cabal does not honor it or comes into conflict with another cabal or mage."
 	}, {
 		"Term" : "Legacy",
+		"Context" : ["Mage"],
 		"Definition" : "A mystical teaching about the crafting of the Awakened soul. Legacies cannot be learned from books, but must be taught from mentor to student. Legacies allow a mage to acquire mystical attainments."
 	}, {
 		"Term" : "Invisible Truth",
+		"Context" : ["Mage"],
 		"Definition" : "Awareness and knowledge of the supernatural world, especially the Supernal World and the Mysteries. Mainly used as a term that counters the Lie."
 	}, {
 		"Term" : "initiate",
+		"Context" : ["Mage"],
 		"Definition" : "A mage who attains the first degree (1 dot) of knowledge in an Arcanum."
 	}, {
 		"Term" : "Imperium Mysteriorum",
+		"Context" : ["Mage"],
 		"Definition" : "\"Sovereignty of the Mysteries.\""
 	}, {
 		"Term" : "Imago",
+		"Context" : ["Mage"],
 		"Definition" : "The image of a spell in the mind’s eye of its caster."
 	}, {
 		"Term" : "Hubris",
+		"Context" : ["Mage"],
 		"Definition" : "An act or state of mind that causes a mage to stray from the path of Wisdom(i.e., to suffer Wisdom degeneration)."
 	}, {
 		"Term" : "High Speech",
+		"Context" : ["Mage"],
 		"Definition" : "The Atlantean language, woven into the Tapestry itself so that statements made with this tongue can alter reality. It is believed that this is because it was the native tongue of the Oracles and Exarchs, and their reign in the Supernal World gives their language power over the Fallen World. Although poorly understood by modern mages, it can be spoken to increase magical efficacy. Sleeper minds cannot process the language, and they mishear it as noise or foreign babble."
 	}, {
 		"Term" : "Hierarch",
+		"Context" : ["Mage"],
 		"Definition" : "The leader of the Consilium, usually one of the most powerful and influential mages in a region."
 	}, {
 		"Term" : "Herald",
+		"Context" : ["Mage"],
 		"Definition" : "An official role within the Consilium, representing a mage diplomat. Heralds are usually sent as mes or ambassadors to member cabals or other Consilii."
 	}, {
 		"Term" : "Havoc",
+		"Context" : ["Mage"],
 		"Definition" : "A Paradox where the caster loses control of his spell, causing it to affect a random target, and in some cases reverse the spell’s effect."
 	}, {
 		"Term" : "Hallow",
+		"Context" : ["Mage"],
 		"Definition" : "A place that collects and/or generates Mana."
 	}, {
 		"Term" : "Guardians of the Veil",
+		"Context" : ["Mage"],
 		"Definition" : "A mystical order with roots in Atlantis. They were the spies and secret police of the Awakened City."
 	}, {
 		"Term" : "goetic",
+		"Context" : ["Mage"],
 		"Definition" : "An adjective describing demons within Astral Space."
 	}, {
 		"Term" : "Gnosis",
+		"Context" : ["Mage"],
 		"Definition" : "A mage’s understanding of the Supernal World. This is not a conscious knowledge so much as an instinct. It is the core of a mage’s Awakened consciousness, the means by which he can contact a higher realm. (His Arcanum lore provides the mechanism by which he draws down the laws of that higher realm.)"
 	}, {
 		"Term" : "geas",
+		"Context" : ["Mage"],
 		"Definition" : "A powerful Fate spell that forces its target to perform a certain deed or accomplish a certain goal. From the early Irish word for \"taboo.\""
 	}, {
 		"Term" : "Gauntlet",
+		"Context" : ["Mage"],
 		"Definition" : "The barrier between the material realm and the Shadow Realm. The strength of the Gauntlet varies in certain areas, and even disappears completely at a Verge."
 	}, {
 		"Term" : "Free Council",
+		"Context" : ["Mage"],
 		"Definition" : "A mystical order that was officially formed at the beginning of the 20th century. It proudly claims no ties to Atlantis and seeks to modernize the craft of magic."
 	}, {
 		"Term" : "Forces",
+		"Context" : ["Mage"],
 		"Definition" : "The Arcanum that governs electricity, gravity, kinetic energy, light, physics, radiation, sound and weather."
 	}, {
 		"Term" : "Final Key",
+		"Context" : ["Mage"],
 		"Definition" : "The legendary state of understanding where a mage has solved the Mysteries and can ascend to the Supernal World."
 	}, {
 		"Term" : "Fate",
+		"Context" : ["Mage"],
 		"Definition" : "The Arcanum that governs blessings, curses, destiny, fortune, oaths and probability."
 	}, {
 		"Term" : "familiar",
+		"Context" : ["Mage"],
 		"Definition" : "A spirit aide to a mage, mystically bonded to his soul through use of Spirit magic. Familiars make excellent spies for those mages capable of casting scrying spells and sympathetic magic."
 	}, {
 		"Term" : "Fallen World",
+		"Context" : ["Mage"],
 		"Definition" : "The prosaic world — this world, including both the material realm and the Shadow Realm."
 	}, {
 		"Term" : "Exarch",
+		"Context" : ["Mage"],
 		"Definition" : "A mythical archmage who resides in the Supernal World, one of the victors in the Atlantean Celestial War. Exarchs are opposed by Oracles."
 	}, {
 		"Term" : "ephemera",
+		"Context" : ["Mage"],
 		"Definition" : "Spiritual substance, the thing of which spirits are made. Beings and objects of Twilight are made of ephemera, as is anything within the Shadow Realm."
 	}, {
 		"Term" : "disciple",
+		"Context" : ["Mage"],
 		"Definition" : "A mage who has attained the third degree (3 dots) of knowledge in an Arcanum."
 	}, {
 		"Term" : "Disbelief",
+		"Context" : ["Mage"],
 		"Definition" : "The power of a Sleeping soul to deny the existence of magic (causing a Sleeper witness to forget or misremember what he saw) and to unravel a vulgar spell that is persistently under Sleeper scrutiny."
 	}, {
 		"Term" : "Demesne",
+		"Context" : ["Mage"],
 		"Definition" : "A place imbued with Supernal power by way of one or more soul stones. Vulgar magic cast within a Demesne is considered to be covert, unless witnessed by one or more Sleepers."
 	}, {
 		"Term" : "Death",
+		"Context" : ["Mage"],
 		"Definition" : "The Arcanum that governs darkness, decay, ectoplasm, enervation, ghosts and soul stealing."
 	}, {
 		"Term" : "Councilor",
+		"Context" : ["Mage"],
 		"Definition" : "A member of the Consilium. There are usually no more than five, including the Hierarch."
 	}, {
 		"Term" : "Consilium",
+		"Context" : ["Mage"],
 		"Definition" : "The highest political body of the Awakened in a region. Councilors from various local cabals serve, making collective decisions as necessary that concern the Awakened as a whole, guided by a Hierarch."
 	}, {
 		"Term" : "cabal",
+		"Context" : ["Mage"],
 		"Definition" : "A formal group of mages, sometimes formed around a symbolic theme."
 	}, {
 		"Term" : "Branding",
+		"Context" : ["Mage"],
 		"Definition" : " Paradox where the caster is inflicted with a supernatural physical disfigurement."
 	}, {
 		"Term" : "Bedlam",
+		"Context" : ["Mage"],
 		"Definition" : "A Paradox where the caster suffers a derangement, worsened by susceptibility to certain magics. In so cases, the derangement might be contagious, affecting one or more other mages."
 	}, {
 		"Term" : "Attainment",
+		"Context" : ["Mage"],
 		"Definition" : "A power gained through the crafting of one’s soul by way of a Legacy, a special mystical teaching from a mentor to a student."
 	}, {
 		"Term" : "Atlantis",
+		"Context" : ["Mage"],
 		"Definition" : "In mage mythology, Atlantis was the Awakened City, the nation\"state from pre\"history that first codified the Ars Mysteriorum. Four mystical orders claim to continue its heritage."
 	}, {
 		"Term" : "Astral Space",
+		"Context" : ["Mage"],
 		"Definition" : "The internal landscape of an Awakened soul. There are three layers\" the personal (individual) dream plane (an Oneiros), the collective dream plane (the Temenos) and the world soul (the Dreamtime). Astral Space is populated by denizens who represent aspects of a mage’s individual or collective psyche."
 	}, {
 		"Term" : "Ars Mysteriorum",
+		"Context" : ["Mage"],
 		"Definition" : "Magic. The \"Art of the Mysteries.\""
 	}, {
 		"Term" : "archmaster",
+		"Context" : ["Mage"],
 		"Definition" : "A mage who has attained the alleged sixth degree (6 dots) or higher of knowledge in an Arcanum."
 	}, {
 		"Term" : "Arcanum",
+		"Context" : ["Mage"],
 		"Definition" : "A secret teaching of the Mysteries. The Arcana are the 10 elemental principles or substances believed to make up the Tapestry of Creation. The threads of a Pattern are made from the Arcana. A mage\"s Arcanum lore is the mechanism by which he draws down the laws of a higher realm. (His Gnosis provides his connection to that realm.)"
 	}, {
 		"Term" : "Arcadia",
+		"Context" : ["Mage"],
 		"Definition" : "A Supernal Realm where the Ruling Arcana are Fate and Time. Mages who walk the AcanthusPath claim a Watchtower in this realm."
 	}, {
 		"Term" : "apprentice",
+		"Context" : ["Mage"],
 		"Definition" : "A mage who has attained the second degree (2 dots) of knowledge in an Arcanum."
 	}, {
 		"Term" : "Anomaly",
+		"Context" : ["Mage"],
 		"Definition" : "Paradox where the local area around the caster is tainted by negative supernatural effects, most often by the imposition of a Supernal Realm."
 	}, {
 		"Term" : "Aether",
+		"Context" : ["Mage"],
 		"Definition" : "A Supernal Realm where the Ruling Arcana are Forces and Prime. Mages who walk the ObrimosPath claim a Watchtower in this realm."
 	}, {
 		"Term" : "adept",
+		"Context" : ["Mage"],
 		"Definition" : "A mage who has attained the fourth degree (4 dots) of knowledge in an Arcanum."
 	}, {
 		"Term" : "Adamantine Arrow",
+		"Context" : ["Mage"],
 		"Definition" : "A mystical order with roots in Atlantis. They were the warriors and soldiers of the Awakened City."
 	}, {
 		"Term" : "Acanthus",
+		"Context" : ["Mage"],
 		"Definition" : "A mage whose Path leads to Arcadia. Acanthus epitomize the tarot card of \"The Fool.\""
 	}, {
 		"Term" : "Abyss",
+		"Context" : ["Mage"],
 		"Definition" : "The rift between the Supernal World and the Fallen World, said by some to grow wider with each Paradox."
 	}, {
 		"Term" : "Wending",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "The Golden Road of a deceased or Ascended archmage, which can still be accessed through any Irises that remain."
 	}, {
 		"Term" : "Tyrannate",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "A Chantry used by a Seer archmaster (usually a Minister), which has been passed down from one archmage to another for centuries and may have originally been built by the Exarch the Seer worships. Due to their nature, Tyrannates are larger than normal Chantries, but are not entirely within the occupant’s control."
 	}, {
 		"Term" : "Traveler",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "A mage who is still bound by a Path; a nonarchmaster."
 	}, {
 		"Term" : "Threshold Seeking, the",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "The process in which a mage attempts to become an archmaster, starting as an obsessive need to understand a mystery relating to their Arcanum of choice, progressing to a Mystery Play and culminating in the aspirant vanishing to face tests in both the Abyss and the Supernal Realms."
 	}, {
 		"Term" : "Tetrarchs",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "1) The entente of archmasters claiming membership in the Seers of the Throne and serving the Exarchs in the Ascension War. 2) The political position within the Seers of the Throne hierarchy held by Seer archmasters who are not Ministers."
 	}, {
 		"Term" : "Talisman",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "An Artifact that is also a sub-soul of the creating archmage, enabling it to cast spells without a u"
 	}, {
 		"Term" : "Supernal Work, the",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "A theoretical spell that causes the Ascension of the caster."
 	}, {
 		"Term" : "sub-soul",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "An independent soul created from that of an archmaster, usually with a Gnosis Trait and Arcana included. Sub-souls remain mystically part of the archmage but survive after death and are capable of casting spells of their own. Also see “Ochema” and “Talisman”."
 	}, {
 		"Term" : "Siddha",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "An entente of archmasters focusing on the pure study of the Arcana."
 	}, {
 		"Term" : "Seeker",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "A term used by archmasters to refer to one another, distinct from “Traveler.”"
 	}, {
 		"Term" : "Seed",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "The area of the Fallen World used as a basis for a Chantry. At the heart of every Chantry is a duplicate of the Seed, containing a gateway to the corresponding location."
 	}, {
 		"Term" : "Sarira",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "The physical remains left behind after an Ascension, containing jewels or crystals formed of solidi resonance."
 	}, {
 		"Term" : "Royal Avatar",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "A representative of a spirit entity of godlike power; a rank 5 “face” for a rank 6 or more being."
 	}, {
 		"Term" : "Quintessence",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "A symbolic representation of a spell drawing on the Imperial Practices that an archmaster intends to cast. A Quintessence is much more than a mere sacrament, it is a Mystery; the act of seeking Quintessence out is what enables the Archmage to cast the spell."
 	}, {
 		"Term" : "Qliphoth",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "A once-human “shell” fi lled with the lies of the Abyss, created from a failed aspirant or an established archmage who succumbs to the most severe forms of Paradox."
 	}, {
 		"Term" : "Pneuma",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "The spiritual energy making up the Golden Road."
 	}, {
 		"Term" : "Phenomenal World, the",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "A term used by some archmasters to refer to the non-Supernal world as a whole, denoting a respect for the material realm and related cosmology that “Fallen” lacks. Based on the idea that while the Supernal is the realm of pure truths, those truths must be expressed as phenomena in the world Travelers are familiar with."
 	}, {
 		"Term" : "Pax Arcanum",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "The rules of behavior for archmasters, which new Seekers are informed of shortly after overcoming the Threshold. Breaking or being seen to be intending to break the Pax leads to intervention from other archmages."
 	}, {
 		"Term" : "Omens",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "The specifi c goals of an archmaster in the Golden Road Ascension, the changes she is attempting to make to reality in order to achieve her Noumenon."
 	}, {
 		"Term" : "Old One",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "A godlike native of the Supernal, often indistinguishable from the region of the Supernal Realms in which it is encountered."
 	}, {
 		"Term" : "Ochema",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "Lit. “Vehicle,” a self-aware sub-soul of an archmaster created as an autonomous servant with abiliti those of its creator. Plural “Ochemata.” Also see “avatar.”"
 	}, {
 		"Term" : "Noumenon",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "An Imago formed by an archmage of her own Ascension; the vision of the Fallen World she is working towards in her Omens."
 	}, {
 		"Term" : "move",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "A measurement of time in the Supernal."
 	}, {
 		"Term" : "Mitrata",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "The Ascension sought by Bodhisattvas through Wisdom."
 	}, {
 		"Term" : "Minister",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "The chief slave in the Fallen World of a particular Exarch, head of one of the internal Ministries that divide the Seers of the Throne. The most powerful Ministers are archmasters that are partially merged with their Supernal patron."
 	}, {
 		"Term" : "Mandira",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "A site in the Fallen World that resonates with a particular Old God."
 	}, {
 		"Term" : "Lustrum",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "The subjective experience of the Supernal Realms, formed by interpreting the raw power of the Supernal through Gnosis into something a human mind can withstand. 19 introduction"
 	}, {
 		"Term" : "Kenoma",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "The Ascension sought by Aswadim through freeing themselves of the universe, usually by attempting to destroy it."
 	}, {
 		"Term" : "Iris",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "A gateway between worlds. Many types of Irises exist, but archmages are most familiar with those they create to connect the Golden Road to another realm."
 	}, {
 		"Term" : "Invisible Masters",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "A Pentacle order term for archmages, based on their legendary reclusiveness from the point of view of Travelers."
 	}, {
 		"Term" : "Imperium Rite",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "A magical ritual conducted within the Supernal Realms as part of the Golden Road Ascension."
 	}, {
 		"Term" : "Imperial Practice",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "The Practices of the Arcana that an archmaster can learn to use in spells by channeling the Supernal through the Road rather than the Path; the Practices of Dynamics, Entities, Excision, Dominions and Transfiguration."
 	}, {
 		"Term" : "greater Abyssal entity",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "A stillborn or castoff world within the Abyss, made of hundreds of smaller Abyssal beings."
 	}, {
 		"Term" : "Golden Road",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "1) Also referred to as just “Road,” an archmaster’s personal connection to the Supernal, built from the archmage’s Astral Path and the symbols of every Quintessence she has ever used. 2) The Ascension sought by the majority of archmasters, in which they forge a vision for the Fallen World and make it reality by altering the Supernal in Imperium Rites."
 	}, {
 		"Term" : "Final Key",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "The item, solution, Quintessence or realization that allows the Ascension of the mage experiencing it."
 	}, {
 		"Term" : "Exemplars",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "An entente of ex-Pentacle archmages remaining loyal to their orders, taking an interest in lesser Pe mages and performing feats of Imperial magic on their behalf when the Pax Arcanum will allow."
 	}, {
 		"Term" : "Exarchate",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "A region in the Supernal containing the throne of an Exarch."
 	}, {
 		"Term" : "epitome",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "A mage or archmage who has learned the fourth Attainment of a Legacy."
 	}, {
 		"Term" : "entente",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "A loose alliance among archmasters of similar philosophy."
 	}, {
 		"Term" : "Emanation",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "One of several stable realms on the far side of the Abyss, linked to the Supernal Realms but not fully Supernal."
 	}, {
 		"Term" : "Dhatu",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "A region in the Supernal ruled by an Old God."
 	}, {
 		"Term" : "common Practice",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "A term for the first ten Practices of the Arcana, distinct from the Imperial Practices."
 	}, {
 		"Term" : "Cintamani",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "The site in the Supernal that serves as the symbol of an archmage’s power, created during the Threshold Seeking."
 	}, {
 		"Term" : "Chantry",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "A physical pocket-world created within an archmaster’s soul by copying a region of the Fallen World as a Seed, serving as combination fortress, hermitage and laboratory free from the threat of Paradox."
 	}, {
 		"Term" : "Bodhisattvas",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "An entente of archmages focusing on Wisdom and guiding humanity to Awakening, attempting to follow the example (as they see it) of the mysterious Oracles."
 	}, {
 		"Term" : "Banishment",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "Supernal counter-magic; an attempt to interfere with another archmage’s Imperium Rite."
 	}, {
 		"Term" : "avatar",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "An alternative name for an Ochema, used by archmasters who do not see their sub-souls as servants but equal representatives of the whole."
 	}, {
 		"Term" : "Aswadim",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "An entente of archmasters who believe that the Abyss offers the only true freedom from a universe of forms and laws."
 	}, {
 		"Term" : "Astral Path",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "The imagined journey meditating mages use to enter the Astral Realms, used by archmages as the basis of the Golden Road."
 	}, {
 		"Term" : "Astra",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "A Supernal Artifact forming part of the regalia of an Old God."
 	}, {
 		"Term" : "aspirant",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "A mage attempting to become an archmaster who is within the process of a Threshold Seeking."
 	}, {
 		"Term" : "Ascension War, the",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "The confl ict between archmasters, godlike entities and Ascended beings in which the ententes attempt to promote their rival meanings for the Phenomenal World."
 	}, {
 		"Term" : "Aponoia",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "The alterations to Fallen reality caused by staying too long in the Supernal Realms or causing dama the truth-symbols there."
 	}, {
 		"Term" : "Alienated",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "An entente of archmasters focusing on the natives of the Supernal, aiding the Old Gods against the Exarchs."
 	}, {
 		"Term" : "akathartoi",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "The “Unclean,” creatures formed from human evil that hunger for Mana. Inhabitants of Abaddon."
 	}, {
 		"Term" : "Agama",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "A grimoire containing spells powered by one of the Old Gods."
 	}, {
 		"Term" : "Aeon",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "An Astral spirit representing one of the ten Arcana or Paradox, inhabitants of the very far edge of the Dreamtime."
 	}, {
 		"Term" : "Abaddon",
+		"Context" : ["Mage", "Imperial Mysteries"],
 		"Definition" : "The “Lower Depths” of the orders’ cosmology, realm of the akathartoi."
 	}, {
 		"Term" : "Wings of the Dragon",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Atlantean order from which the Mysterium evolved, as commonly accepted by modern mages. The order gathered, valued, protected and advanced knowledge of the Ars Mysteriorum in all venues. Unknown outside the Mysterium, its inner circle held initiation ceremonies to advance worthy members into ever more secret knowledge and toward enlightenment. The current order upholds both traditions."
 	}, {
 		"Term" : "theonom",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Elder mystagogue leading an initiate through one of the Five Mysteries."
 	}, {
 		"Term" : "thaumatology",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Sub-discipline of soriology, focusing on the practical application of magic rather than the theory of it."
 	}, {
 		"Term" : "teratology",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Sub-discipline of esotology, focusing on the various supernatural creatures of the Fallen World."
 	}, {
 		"Term" : "supernology",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Sub-discipline of soriology, focusing on the Supernal Realms, the Tapestry and the why over the how."
 	}, {
 		"Term" : "soriology",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Mysterium name for the study of magic, divided into magosophy, supernologyand thaumatology."
 	}, {
 		"Term" : "sidereology",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Sub-discipline of esotology, focusing on the Astral Realms."
 	}, {
 		"Term" : "Seekers",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Faction of the order, primarily concerned with theory and magical research."
 	}, {
 		"Term" : "Savant",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Mystagogue who focuses on preserving knowledge at all costs, to the extent of voluminous memorization."
 	}, {
 		"Term" : "Reclaimers",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Faction of the order, promoting “reclaiming” ancient lore from those unworthy of it."
 	}, {
 		"Term" : "Pancryptia",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Mysterium term for magic’s nature to obscure itself in the meaningless noise around it. Part of the order’s task is to fight this phenomenon by sorting magic from the dross."
 	}, {
 		"Term" : "occultism",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Sub-discipline of esotology, focusing on supernatural miscellany."
 	}, {
 		"Term" : "neokoros",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Initiate of the order."
 	}, {
 		"Term" : "mystagogue",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Generic term for a mage of the Mysterium."
 	}, {
 		"Term" : "magosophy",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Sub-discipline of soriology, focusing on the Awakened soul and morality from the Awakened perspective."
 	}, {
 		"Term" : "Hierophant",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Member of the order with great status, who is generally above worldly concerns."
 	}, {
 		"Term" : "guanxi",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Mysterium term for the social give-and-take between its members."
 	}, {
 		"Term" : "four protocols, the",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Four general ethical guidelines for dealing with life as a mage."
 	}, {
 		"Term" : "Five Mysteries, the",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "The five rungs of the ladder that is the Atlantean Mystery, each of which demands a separate initiation and conveys greater understanding of the entire Mystery."
 	}, {
 		"Term" : "factotum",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Sleepwalker initiated into the lesser Atlantean Mystery and aware of the Mysterium as an order."
 	}, {
 		"Term" : "exoterics",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Mysterium name for the broad range of mortal academic disciplines."
 	}, {
 		"Term" : "esotology",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Mysterium name for the study of the supernatural outside of the Supernal, divided into occultism, sidereologyand teratology."
 	}, {
 		"Term" : "Egregori",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Faction of the order, containing those members most dedicated to the order’s mysteries and its spiritual aspects."
 	}, {
 		"Term" : "egregore",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "The theoretical spiritual “group mind” that comes to exist in any organization that embodies the goals and traditions of that organization or fellowship."
 	}, {
 		"Term" : "dadouchos",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Member of the order with moderate status, who likely sees to the order’s organization and administration."
 	}, {
 		"Term" : "Curator",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Mystagogue who watches over one of the order’s Athenaea, deciding who can access what within; usually influential within the caucus, if not the Consilium."
 	}, {
 		"Term" : "Corpus Mysteriorum, the",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Ancient grimoire known to the order, copied a hundred times over and of unknown authorship. This grimoire describes one of the Mysterium’s core theses, that magic is itself a living entity, and also contains at least 14 recorded rotes."
 	}, {
 		"Term" : "Censor",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Mystagogue who ensures that dangerous information is seen by none unless absolutely necessary."
 	}, {
 		"Term" : "Atlantean  Mystery,  the",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "The secret knowledge the Mysterium uses as a path to enlightenment; it is divided into the Five Mysteries."
 	}, {
 		"Term" : "Athenaeum",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "One of the order’s many repositories of lore and ancient Artifacts (Supernal or otherwise), watched over by a Curator."
 	}, {
 		"Term" : "Archivists",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Faction of the order, which promotes preservation of lore over all else."
 	}, {
 		"Term" : "Archaeomancers",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Faction of the order, whose members devote themselves to archaeology Supernal."
 	}, {
 		"Term" : "Alae Draconis",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "See Wings of the Dragon."
 	}, {
 		"Term" : "Acquisitionist",
+		"Context" : ["Mage", "Mysterium"],
 		"Definition" : "Mystagogue tasked with the dangerous work of recovering knowledge and Artifacts from the wrong hands and investigating strange phenomena."
 	}, {
 		"Term" : "théarch",
+		"Context" : ["Mage", "Silver Ladder"],
 		"Definition" : "A common term for a mage of the Silver Ladder. The connotation of the word implies leadership and wisdom intertwined- one who leads because she is wise, and who must be wise because she is called on to lead."
 	}, {
 		"Term" : "Stag",
+		"Context" : ["Mage", "Silver Ladder"],
 		"Definition" : "A symbol for passive human spirituality, of beliefs and practices that emphasize human unworthiness and reliance upon others."
 	}, {
 		"Term" : "Sage",
+		"Context" : ["Mage", "Silver Ladder"],
 		"Definition" : "The description of the best of human spirituality: the desire and will to cre the world without the passivity of the Stag or the amorality of the Lion."
 	}, {
 		"Term" : "Lion",
+		"Context" : ["Mage", "Silver Ladder"],
 		"Definition" : "A term describing the human impulse for selfishness and ambition at the expense of morality; those humans who prey on their fellows."
 	}, {
 		"Term" : "Hieraconis",
+		"Context" : ["Mage", "Silver Ladder"],
 		"Definition" : "The foretold Awakened Nation to come, one of the primary goals of the Silver Ladder. It is the civilization that will arrive when the Fallen and Supernal are joined once more, when humanity takes its rightful inheritance."
 	}, {
 		"Term" : "gnostocracy",
+		"Context" : ["Mage", "Silver Ladder"],
 		"Definition" : "The order’s idealized system of political rule; a political system in which enlightenment and Awakening govern."
 	}, {
 		"Term" : "Cryptopoly",
+		"Context" : ["Mage", "Silver Ladder"],
 		"Definition" : "The strategy of maintaining secret conspiracies to assist the struggle of mages and Sleepers against the Lie."
 	}, {
 		"Term" : "Convocation",
+		"Context" : ["Mage", "Silver Ladder"],
 		"Definition" : "A formal gathering of the order, expanding beyond the boundaries of a single Consilium."
 	}, {
 		"Term" : "Avatar",
+		"Context" : ["Mage", "Silver Ladder"],
 		"Definition" : "The godhead believed by the Silver Ladder to sleep in every mortal; the ultimate attainment of human mastery over the universe."
 	}, {
 		"Term" : "walker",
+		"Context" : ["Mage", "Astral Realms"],
 		"Definition" : "An astral construct in Temenos based on the common perception of a famous person."
 	}, {
 		"Term" : "Ecstatic Wind",
+		"Context" : ["Mage", "Astral Realms"],
 		"Definition" : "The property of the Anima Mundi that potentially erodes a mage’s astral form or identity."
 	}, {
 		"Term" : "dream vestibule",
+		"Context" : ["Mage", "Astral Realms"],
 		"Definition" : "The entry point into Oneiros."
 	}, {
 		"Term" : "daimon",
+		"Context" : ["Mage", "Astral Realms"],
 		"Definition" : "A mage’s personal astral guide, manifesting as a reflection of herself and/or her self-image."
 	}, {
 		"Term" : "Amnion",
+		"Context" : ["Mage", "Astral Realms"],
 		"Definition" : "A protective aura created to protect a mage from the Ecstatic Wind."
 	}, {
 		"Term" : "Visus Draconis",
+		"Context" : ["Mage", "Guardians of the Veil"],
 		"Definition" : "“Eye of the Dragon.”"
 	}, {
 		"Term" : "Visionaries",
+		"Context" : ["Mage", "Guardians of the Veil"],
 		"Definition" : "A historical Guardian of the Veil faction that, Guardians believe, supported the Silver Ladder in an early attempt to physically recreate the island of Atlantis. Members of this faction evolved into the Prophets."
 	}, {
 		"Term" : "Veils, the (plural)",
+		"Context" : ["Mage", "Guardians of the Veil"],
 		"Definition" : "The levels of initiation within the order, beginning with the Gray Veil, progressing to the Crimson Veil and ending with the Black Veil."
 	}, {
 		"Term" : "Veil, the (singular)",
+		"Context" : ["Mage", "Guardians of the Veil"],
 		"Definition" : "The secrecy that surrounds the Mysteries and that must be protected and maintained by the Guardians."
 	}, {
 		"Term" : "True",
+		"Context" : ["Mage", "Guardians of the Veil"],
 		"Definition" : "A term for mages of other orders who are considered trustworthy."
 	}, {
 		"Term" : "red brothers",
+		"Context" : ["Mage", "Guardians of the Veil"],
 		"Definition" : "Mages who have passed the Gray Veil (see Veils) but not yet achieved full admission into the order."
 	}, {
 		"Term" : "Quiet, the",
+		"Context" : ["Mage", "Guardians of the Veil"],
 		"Definition" : "The only name by which the founding cabal of the Eye of the Dragon is remembered, applied after the Fall to the group of cabals who ran the order. This term is still used in some places today, in reference to the most authoritative cabal in the local caucus."
 	}, {
 		"Term" : "Prophets",
+		"Context" : ["Mage", "Guardians of the Veil"],
 		"Definition" : "A Guardian of the Veil faction that watches the strands of Fate for important connections between people and events. Members interact more easily with other orders than most Guardians and share more often and more willingly. Prophets tend to have political heft."
 	}, {
 		"Term" : "Ordeal Keepers",
+		"Context" : ["Mage", "Guardians of the Veil"],
 		"Definition" : "A Guardian of the Veil faction that believes that mages should be constantly challenged to maintain the right to their enlightenment. Members are martially trained and believe in reincarnation toward a more enlightened end."
 	}, {
 		"Term" : "New Constructionists",
+		"Context" : ["Mage", "Guardians of the Veil"],
 		"Definition" : "A historical Guardian of the Veil faction that, Guardians believe, strongly influenced the direction and progression of the Roman Republic."
 	}, {
 		"Term" : "Messianics",
+		"Context" : ["Mage", "Guardians of the Veil"],
 		"Definition" : "A Guardian of the Veil faction that defends the integrity of magic until the arrival of the foreordained Hieromagus, who will cast the Exarchs from the higher realms. Members accept, even more so than most Guardians, that their own actions may damn them for hubris and are willing to accept that fate in order to accomplish their goal."
 	}, {
 		"Term" : "Mazed, the",
+		"Context" : ["Mage", "Guardians of the Veil"],
 		"Definition" : "An in-order term for Sleepers trapped within the Labyrinth. “To maze” means to introduce Sleepers to the Labyrinth. Also “mazer(s).”"
 	}, {
 		"Term" : "Masque, the",
+		"Context" : ["Mage", "Guardians of the Veil"],
 		"Definition" : "49 archetypal identities sometimes adopted by Guardians as learning tools or even disguises."
 	}, {
 		"Term" : "Law of the Mask",
+		"Context" : ["Mage", "Guardians of the Veil"],
 		"Definition" : "Guardian of the Veil praxis that holds the Guardians to an oral tradition, passing down history and lessons through parables."
 	}, {
 		"Term" : "Inheritors",
+		"Context" : ["Mage", "Guardians of the Veil"],
 		"Definition" : "A Guardian of the Veil faction that seeks and hoards knowledge in the belief that it should be kept from the unworthy. Members tend their own wisdom, but they also attempt to tease it out of others by withholding information until it is “earned.” The Inheritors oppose all attempts to prematurely Awaken Sleepers."
 	}, {
 		"Term" : "Hieromagus",
+		"Context" : ["Mage", "Guardians of the Veil"],
 		"Definition" : "A mage Guardians believe will one day appear, lead the Pentacle in defeating the Exarchs and re-establish Atlantis."
 	}, {
 		"Term" : "Faceless",
+		"Context" : ["Mage", "Guardians of the Veil"],
 		"Definition" : "A Guardian of the Veil faction that challenges the order’s identity by having none. Members practice the Masques in order to suborn their egos to a false identity, a process that leads them to their true selves. The Faceless often serve the order as assassins, killing those who have fallen too far into hubris."
 	}, {
 		"Term" : "Eye of the Dragon",
+		"Context" : ["Mage", "Guardians of the Veil"],
 		"Definition" : "The name of the Atlantean incarnation of the Guardians of the Veil. Originally tasked with protecting the isle from the depredations of monstrous creatures and the foreign, unwashed masses, what was left of the order after the Fall was forced to reshape its principles."
 	}, {
 		"Term" : "Exoteric Tenets, the",
+		"Context" : ["Mage", "Guardians of the Veil"],
 		"Definition" : "The philosophies of the order taught to initiates past the first Veil and known to the public."
 	}, {
 		"Term" : "Esoteric Tenets, the",
+		"Context" : ["Mage", "Guardians of the Veil"],
 		"Definition" : "The hidden doctrines of the Guardians of the Veil."
 	}, {
 		"Term" : "Diamond Wheel, the",
+		"Context" : ["Mage", "Guardians of the Veil"],
 		"Definition" : "An expression of the second Exoteric Tenet, describing the cycle of Awakened souls."
 	}, {
 		"Term" : "Wraith",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "A recondite Daimonic entity, embodying the Mind Arcanum."
 	}, {
 		"Term" : "Wild.  Beasts come  in  one  of  two  forms",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "Atavisms and Totems."
 	}, {
 		"Term" : "Void, the",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "The Abyss."
 	}, {
 		"Term" : "Trial",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "The ordeal demanded by a Supernal entity of its summoner. In some cases, the trial is preemptive — a task that must be performed before the spirit can be called or interacted with — while, in others, it outlines behaviors that must be observed during or even after the summoning."
 	}, {
 		"Term" : "Totem",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "A recondite Primal entity, embodying the Spirit Arcanum."
 	}, {
 		"Term" : "Tithe",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "The price requested by a summoned Abyssal entity in exchange for its services. Distinct from a pact in that a binding agreement is not necessary."
 	}, {
 		"Term" : "Term",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "The period of time during which a mage benefits from the request of a pact."
 	}, {
 		"Term" : "Stygian",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "Of or pertaining to the Supernal Realm of Stygia."
 	}, {
 		"Term" : "Spirit",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "Any ephemeral entity native to the Shadow Realm. Also, frequently used for any being comprised of ephemera or similar substances (such as Supernal entities, Acamoth or Gulmoth, and sometimes even ghosts)."
 	}, {
 		"Term" : "Specter",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "A recondite Stygian entity, embodying the Death Arcanum."
 	}, {
 		"Term" : "Shade",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "Specifically as it applies to Awakened summoners, a Shadeis a being native to Stygia. Shades may be either Apeirons or Specters. Also, frequently used to refer to ghosts."
 	}, {
 		"Term" : "Seraph",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "A manifest Aethial entity, embodying the Forces Arcanum (pl. Seraphim)."
 	}, {
 		"Term" : "Royal Avatar",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "An ephemeral shell containing a portion of the power and consciousness of a spirit of Prince/Princess (Rank 6) standing or greater."
 	}, {
 		"Term" : "Request",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "The service (of whatever sort) acquired by a summoner through means of a pact."
 	}, {
 		"Term" : "Recondite",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "A term referring to a Supernal entity tied to a Subtle Arcanum (Death, Fate, Mind, Prime, or Spirit)."
 	}, {
 		"Term" : "Primal",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "Of or pertaining to the Supernal Realm of the Primal Wild."
 	}, {
 		"Term" : "Pact",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "A mystically-fortified agreement between a willworker and an otherworldly entity, typically a spirit of some sort, which entails an exchange of goods and/or services. Some pacts last a matter of days, while others may persist for a lifetime (or even longer)."
 	}, {
 		"Term" : "Morphean",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "An Astral entity originating within an Oneiros."
 	}, {
 		"Term" : "Moira",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "A recondite Arcadian entity, embodying the Fate Arcanum (pl. Moirae)."
 	}, {
 		"Term" : "Manifest",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "A term referring to a Supernal entity tied to a Gross Arcanum (Forces, Life, Matter, Space, or Time)."
 	}, {
 		"Term" : "Iniquity",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "An Astral entity embodying a vice."
 	}, {
 		"Term" : "in two different types",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "Anachronisms and Moirae."
 	}, {
 		"Term" : "Imp",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "A manifest Daimonic entity, embodying the Space Arcanum."
 	}, {
 		"Term" : "Gulmoth",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "An Abyssal spirit called down from the Void by a summoner, into the Fallen World (as opposed to an Acamoth; an Abyssal spirit trapped within the earthly realm)."
 	}, {
 		"Term" : "Forfeiture",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "The consequences of reneging on the cost of a pact."
 	}, {
 		"Term" : "Fae",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "Specifically as it applies to Awakened summoners, a Faeis a being native to Arcadia. Fae come"
 	}, {
 		"Term" : "Exemplar",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "An Astral being embodying a virtue."
 	}, {
 		"Term" : "Esoteric",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "An Astral entity embodying an aspect of the conscious self."
 	}, {
 		"Term" : "Demons come in two varieties",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "Imps and Shades."
 	}, {
 		"Term" : "Demon",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "Specifically as it applies to Awakened summoners, a Demonis a denizen of Pandemonium."
 	}, {
 		"Term" : "Dementia",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "As the term applies to summoners, a dementia is an Astral being embodying a given derangement."
 	}, {
 		"Term" : "Daimonic",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "Of or pertaining to the Supernal Realm of Pandemonium."
 	}, {
 		"Term" : "Cost",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "The commodity (goods, services, or whatever) that a mage exchanges for the request of a pact."
 	}, {
 		"Term" : "Chthonian",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "An entity of the Underworld, dead but never born. Possibly somehow related to the Specters of Stygia."
 	}, {
 		"Term" : "Cherub",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "A recondite Aethial entity, embodying the Prime Arcanum (pl. Cherubim)."
 	}, {
 		"Term" : "Boon",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "One of the services standardly offered by a summoned Abyssal spirit; its particular specialty. The boons of such beings are frequently catalogued by those that know of them and researched by would-be summoners."
 	}, {
 		"Term" : "Beast",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "Specifically as it applies to Awakened summoners, a Beast is an entity native to the Primal"
 	}, {
 		"Term" : "Atavism",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "A manifest Primal entity, embodying the Life Arcanum."
 	}, {
 		"Term" : "Arcadian",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "Of or pertaining to the Supernal Realm of Arcadia."
 	}, {
 		"Term" : "Apeiron",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "A manifest Stygian entity, embodying the Matter Arcanum."
 	}, {
 		"Term" : "Angel",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "Specifically as it applies to an Awakened summoner, an Angel is a creature from the Aether. Aetherial Angels are either Cherubim or Seraphim."
 	}, {
 		"Term" : "Anachronism",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "A manifest Arcadian entity, embodying the Time Arcanum."
 	}, {
 		"Term" : "Alien",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "Specifically as it applies to an Awakened summoner, alien is a term occasionally used to describe an entity — spirit or otherwise — stemming from outside of the known realms of existence."
 	}, {
 		"Term" : "Aletheian",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "An Astral being encompassing a concept or ideal."
 	}, {
 		"Term" : "Aetherial",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "Of or pertaining to the Supernal Realm of the Aether."
 	}, {
 		"Term" : "Acamoth",
+		"Context" : ["Mage", "Summoners"],
 		"Definition" : "An Abyssal spirit imprisoned in or otherwise confined to the Fallen World on a long-term basis. These spirits aspire to tear a rift in the Tapestry, so that the Void might flood in through it and annihilate all of reality."
+	}, {
+		"Term" : "wound",
+		"Context" : ["Core", "Game Mechanic"],
+		"Definition" : "A marked Health point, denoting an injury from damage. Bashing wounds are marked with a “/”,lethal wounds with an “X” and aggravated wounds with a “* ”. (SeeHealth.)"
+	}, {
+		"Term" : "turn",
+		"Context" : ["Core", "Game Mechanic"],
+		"Definition" : "A three-second period of time. Instant actions are observed in turns. Combat (a series of instant actions) is observed in consecutive turns as each combatant tries to overcome opponents."
+	}, {
+		"Term" : "troupe",
+		"Context" : ["Core", "Game Mechanic"],
+		"Definition" : "Your gaming group of friends."
+	}, {
+		"Term" : "success",
+		"Context" : ["Core", "Game Mechanic"],
+		"Definition" : "Each die that rolls an 8, 9 0r 10 yields one success. (Exception; A chance roll must produce a 10 to succeed.) In an instant action, a player must roll at least one success for his character to accomplish a task. In an extended action, the number of successes required (accumulated over a series of rolls) depends on the task. In an attack roll, each success produces one point of damage."
+	}, {
+		"Term" : "Structure",
+		"Context" : ["Core", "Game Mechanic"],
+		"Definition" : "A trait representing an object’s integrity, determined by adding Durability and Size. Structure is measured in dots, which can be lost due to damage. Unlike the wounds of a living creature, an object does not heal damaged Structure; it must be repaired."
+	}, {
+		"Term" : "Storyteller",
+		"Context" : ["Core", "Game Mechanic"],
+		"Definition" : "The “director” or “editor” of the interactive story told by the players. The Storyteller creates the plot and roleplays the characters, both allies and villains, with which the players’ characters interact."
+	}, {
+		"Term" : "Specialty",
+		"Context" : ["Core", "Character Trait"],
+		"Definition" : "An area of Skill expertise in which a character excels. Whenever a Specialty applies to a character’s task, one die is added to his player’s dice pool. There’s no limit to the number of Specialties that you can assign to a single Skill."
+	}, {
+		"Term" : "Skill",
+		"Context" : ["Core", "Character Trait"],
+		"Definition" : "A character trait representing learned ability or knowledge. Added to an Attribute to determine a character’s basic dice pool for a task."
+	}, {
+		"Term" : "scene",
+		"Context" : ["Core", "Game Mechanic"],
+		"Definition" : "A division of time based on drama, such as the end of one plot point and the beginning of another. Whenever a character leaves a location where a dramatic event has occurred, or when a combat has ended, the current scene usually ends and the next one begins."
+	}, {
+		"Term" : "Resistance",
+		"Context" : ["Core", "Game Mechanic"],
+		"Definition" : "Characters can resist others’ attempts to socially sway them, physically grapple them or even mentally dominate them. Whenever applying such resistance requires a character’s full attention, it is performed as a contested action, but more often it is a reflexive action, allowing the target to also perform an action that turn."
+	}, {
+		"Term" : "reflexive action",
+		"Context" : ["Core", "Game Mechanic"],
+		"Definition" : "An instinctual task that takes no appreciable time, such as reacting to surprise or noticing something out of the corner of your eye. Performing a reflexive action does not prevent a character from performing another action within a turn."
+	}, {
+		"Term" : "ranged combat",
+		"Context" : ["Core"],
+		"Definition" : "An attack that sends a projectile of some sort at a target, whether it’s a bullet from a gun or a knife from a hand. Such attacks use the Dexterity Attribute for their dice pools. Characters’Defensecannot normally be used against firearm attacks, although targets can penalize an opponent’s accuracy by going prone or taking cover."
+	}, {
+		"Term" : "point",
+		"Context" : ["Core", "Game Mechanic"],
+		"Definition" : "A trait expended to gain certain effects, such as a Willpower point or a measurement of damage or Health. The amount of points available to spend is equal to the parent trait’s dots. Spent points are regained over time or through certain actions."
+	}, {
+		"Term" : "Morality",
+		"Context" : ["Core"],
+		"Definition" : "An advantage trait representing a character’s moral, ethical and even psychological standing and well being. Morality is measured in dots, which can be lost to degeneration by performing unethical or criminal acts."
+	}, {
+		"Term" : "modifiers",
+		"Context" : ["Core", "Game Mechanic"],
+		"Definition" : "Dice pools are often modified by a number of factors, from bonuses (adding dice) for equipment or ideal conditions to penalties (subtracting dice) for poor conditions."
+	}, {
+		"Term" : "Merit",
+		"Context" : ["Core"],
+		"Definition" : "A character trait representing enhancements or elements of a character’s background, such as his allies or influence. Merits are measured in dots, but are not always used to determine dice pools. Instead, they represent increasing degrees of quality or quantity concerning their subject."
+	}, {
+		"Term" : "lethal (damage)",
+		"Context" : ["Core"],
+		"Definition" : "A damage point that inflicts a sharp, slashing or piercing wound, such as from a sword or bullet. Lethal wounds normally heal at a rate of one point per two days."
+	}, {
+		"Term" : "instant action",
+		"Context" : ["Core", "Game Mechanic"],
+		"Definition" : "A task that takes place within a single turn. A character can perform only one action per turn, unless he has a Merit or power that lets him do otherwise."
+	}, {
+		"Term" : "Initiative roster",
+		"Context" : ["Core", "Game Mechanic"],
+		"Definition" : "The list that determines when each character can perform an action within a turn. For each character who is not surprised, a player rolls a die and adds his character’sInitiativeto the result. Whoever gets the highest number acts first, followed by the character with the next highest, and so on until everyone who can has acted that turn. Initiative is usually rolled once per encounter, but the Storyteller can decide to re-roll it each turn."
+	}, {
+		"Term" : "Initiative",
+		"Context" : ["Core"],
+		"Definition" : "An advantage trait representing the character’s ability to respond to sudden surprise, determined by adding Dexterity + Composure. A character’s Initiative helps him get a high standing in the Initiative roster."
+	}, {
+		"Term" : "Health",
+		"Context" : ["Core"],
+		"Definition" : "An advantage trait, determined by adding Stamina + Size. Health is measured in dots and points. (See alsoWound.)"
+	}, {
+		"Term" : "failure",
+		"Context" : ["Core", "Game Mechanic"],
+		"Definition" : "A dice roll that yields no successes is a failure — the character does not succeed at his task."
+	}, {
+		"Term" : "extended action",
+		"Context" : ["Core", "Game Mechanic"],
+		"Definition" : "A task that takes time to accomplish. Players roll to accumulate successes during phases of the task, succeeding once they have acquired the needed total."
+	}, {
+		"Term" : "experience points",
+		"Context" : ["Core", "Game Mechanic"],
+		"Definition" : "Points awarded by the Storyteller at the end of a game session and story, used to purchase new traits or to boost the dots of existing traits. See p. 35 for costs."
+	}, {
+		"Term" : "exceptional success",
+		"Context" : ["Core", "Game Mechanic"],
+		"Definition" : "Whenever five or more successes are rolled, the character achieves an exceptional success. This achievement sometimes provides an extra perk over and above the effect of having multiple successes. For example, a character who gains five successes on a fast-talk roll might allay the target’s suspicions enough that he believes anything the character says for the remaining scene."
+	}, {
+		"Term" : "equipment",
+		"Context" : ["Core"],
+		"Definition" : "Characters can improve their chances of succeeding in a task by using the right equipment. This benefit is represented by modifiers to the dice pool,depending on the equipment used and its quality."
+	}, {
+		"Term" : "Durability",
+		"Context" : ["Core", "Character Trait"],
+		"Definition" : "A trait representing an object’s hardness, based on the material from which it is made (wood has less Durability than metal). Durability is measured in dots. An attack’s damage must exceed Durability before the object is harmed."
+	}, {
+		"Term" : "dramatic failure",
+		"Context" : ["Core", "Game Mechanic"],
+		"Definition" : "A result of 1 on a chance roll causes a dramatic failure, a catastrophe worse than a normal failure. The character’s gun might jam or he might wind up shooting a friend by accident. The Storyteller determines and describes the result."
+	}, {
+		"Term" : "dot",
+		"Context" : ["Core"],
+		"Definition" : "The incremental measurement of a permanent trait. Most traits range from 1 to 5 dots, but some (such as Willpower) range from 1 to 10, and others (Health) can go higher."
+	}, {
+		"Term" : "dice pool",
+		"Context" : ["Core", "Game Mechanic"],
+		"Definition" : "The number of dice rolled to determine failure or success (and the degree of success) for a character’s action. Dice pools are usually determined by adding an Attribute to a Skill, plus any relevant equipment and/or modifiers."
+	}, {
+		"Term" : "dice",
+		"Context" : ["Core", "Game Mechanic"],
+		"Definition" : "The Storytelling System uses 10-sided dice to represent the element of chance. Dice are collected to form a character’s dice pool for an action."
+	}, {
+		"Term" : "derangement",
+		"Context" : ["Core"],
+		"Definition" : "Characters whose Morality dots are lost through degeneration or who suffer horrible psychological trauma can acquire a derangement. Some derangements are classified as “mild,” meaning they hinder the character mainly by plaguing his conscience. Others are “severe,” often cases of clinical insanity. Derangements caused by degeneration can be healed by restoring lost Morality dots."
+	}, {
+		"Term" : "degeneration",
+		"Context" : ["Core"],
+		"Definition" : "Characters who violate their ethics lose dots of Morality. Degeneration can cause a character to acquire a derangement."
+	}, {
+		"Term" : "Defense",
+		"Context" : ["Core"],
+		"Definition" : "An advantage trait determined by taking the lowest of Dexterity or Wits. Characters can penalize a close combat opponent’s accuracy by subtracting their Defense from his dice pool."
+	}, {
+		"Term" : "damage",
+		"Context" : ["Core"],
+		"Definition" : "The points inflicted against a character’s Health or an object’sStructure, rated as bashing, lethal or aggravated. One point of damage inflicts one wound."
+	}, {
+		"Term" : "contested action",
+		"Context" : ["Core", "Game Mechanic"],
+		"Definition" : "Two or more characters compete in a task or for a single goal. The one who gets the most successes wins. Contested actions can be instant or extended actions."
+	}, {
+		"Term" : "close combat",
+		"Context" : ["Core"],
+		"Definition" : "Attacks that involve hand-to-hand or weapon fighting. Such attacks use the Strength Attribute for their dice pools. Characters gain their Defense against close-combat attacks."
+	}, {
+		"Term" : "chance roll",
+		"Context" : ["Core", "Game Mechanic"],
+		"Definition" : "Whenever modifiers reduce your dice pool to zero or fewer dice, you may make a chance roll on a single die. Unlike a normal dice roll, a chance roll succeeds only on a result of 10. Worse, a result of 1 causes a dramatic failure."
+	}, {
+		"Term" : "bashing (damage)",
+		"Context" : ["Core"],
+		"Definition" : "A damage point that inflicts a blunt or bruising wound, such as from a fist or a baseball bat. Bashing wounds normally heal at a rate of one point per 15 minutes."
+	}, {
+		"Term" : "Attribute",
+		"Context" : ["Core"],
+		"Definition" : "A character trait representing innate capabilities, Mental, Physical and Social. An Attribute is added to a Skill(or another Attribute in certain cases) to determine your basic dice pool for a task."
+	}, {
+		"Term" : "aggravated (damage)",
+		"Context" : ["Core"],
+		"Definition" : "A damage point that inflicts a grievous or supernatural wound. Vampires suffer aggravated damage from fire; werewolves suffer it from silver. Mortals might suffer aggravated damage from a dire supernatural power such as a lightning bolt summoned from the sky by a witch. Aggravated wounds normally heal at a rate of one point per week."
+	}, {
+		"Term" : "advantage",
+		"Context" : ["Core"],
+		"Definition" : "A character trait such as Health or Willpower that usually represents abilities derived from other traits. Advantages are measured in dots and sometimes in points."
+	}, {
+		"Term" : "action",
+		"Context" : ["Core", "Game Mechanic"],
+		"Definition" : "A task that takes all of a character’s time and attention. Storytelling measures instant actions(one to three seconds, taking place within a single turn) and extended actions, taking longer (duration determined by the Storyteller). Also, there are reflexive actions, which take no time and do not prevent a character from performing another action within a turn, and contested actions, in which two or more characters compete in a task or for a single goal."
+	}, {
+		"Term" : "10 Again",
+		"Context" : ["Core", "Game Mechanic"],
+		"Definition" : "A result of 10 on any die is re-rolled in an attempt to achieve more successes. A further result of 10 on a re-rolled die is rolled yet again, over and over, until no more 10’s are rolled."
 	}
 ]
