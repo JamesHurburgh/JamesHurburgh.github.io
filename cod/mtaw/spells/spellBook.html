@@ -20,15 +20,6 @@
 						<link rel="stylesheet" type="text/css" href="ref/jquery.dataTables.css">  
 							<script type="text/javascript" charset="utf8" src="ref/jquery.dataTables.js"></script>
 
-							<!-- Datatable - Buttons 
-	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.2.0/css/buttons.dataTables.min.css">
-	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.2.0/js/dataTables.buttons.min.js"></script>
-	-->
-
-							<!-- Datatable - Buttons - Column visibility control 
-	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.2.0/js/buttons.colVis.min.js"></script>
-	-->
-
 							<!-- Store.js -->
 							<script type="text/javascript" charset="utf8" src="ref/store.min.js"></script> 
 
@@ -39,16 +30,11 @@
 							<script type="text/javascript" charset="utf8" src="ref/dataTables.responsive.min.js"></script>
 							<link rel="stylesheet" type="text/css" href="ref/responsive.dataTables.min.css"></link>
 
-							<!-- Spinner.js -->
-							<script type="text/javascript" charset="utf8" src="http://spin.js.org/spin.min.js"></script>
-
 							<!-- Common js -->
 							<script type="text/javascript" charset="utf8" src="scripts/common.js"></script>
 
 							<!-- SpellBook.js -->
 							<script type="text/javascript" charset="utf8" src="scripts/spellBook.js"></script>
-							<link rel="stylesheet" type="text/css" href="spellBook.css"></link>
-
 
 							<!-- require.js 
     <script data-main="scripts/spellBook" src="scripts/require.js"></script>-->
@@ -98,6 +84,13 @@
 												<div class="col-lg-12">
 													<label for="arcanaSearch" class="control-label">Arcana Filtering</label>
 													<div id="arcanaSearch">
+														<div class="col-sm-2">
+															<label for="arcanaFilterType" class="control-label">Filter Type</label>
+															<select class="arcana-search form-control input-sm" id="arcanaFilterType" name="arcanaFilterType" value="upto">
+																<option value="upto">Up To</option>
+																<option value="exactly">Exactly</option>
+															</select>
+														</div>
 														<div class="col-sm-2">
 															<label for="fateDots" class="control-label">Fate</label><input class="arcana-search form-control input-sm" type="number" id="fateDots" name="fateDots"  min="0" max="5" value="0"/>
 														</div>
@@ -153,7 +146,8 @@
 															<th class="none">Effect</th>
 															<th data-priority="7">Rote</th>
 															<th data-priority="3">Rote Dice Pool</th>
-															<th class="never">CastableBy</th>
+															<th class="none">CastableBy</th>
+															<th class="none">ExactArcana</th>
 														</tr>
 													</thead>
 													<tbody>

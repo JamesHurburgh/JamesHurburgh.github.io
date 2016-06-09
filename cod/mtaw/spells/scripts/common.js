@@ -54,6 +54,22 @@ function arcanaCastableBySearchTerms(requirements){
 		
 	return searchTerm;
 }
+function arcanaExactlySearchTerms(requirements){
+	if(!requirements) return "";
+	
+	var searchTerm = "";
+	arcanum = ['Fate','Forces','Death','Life','Matter','Mind','Prime','Space','Spirit','Time'];
+	for(var i = 0; i < arcanum.length; i++){
+		var dots = 0;
+		requirements.forEach(function( requirement, index ) {
+			if(requirement.Name == arcanum[i] && requirement.Optional != 'True'){
+				dots = requirement.Dots;
+			}
+		});	
+		searchTerm = searchTerm + arcanum[i] + '-' + dots + ' ';	
+	}		
+	return searchTerm;
+}
 
 
 // From https://gist.github.com/helpse/4d4842c69782b9f94a72
