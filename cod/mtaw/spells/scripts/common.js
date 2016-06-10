@@ -71,6 +71,18 @@ function arcanaExactlySearchTerms(requirements){
 	return searchTerm;
 }
 
+function arcanaRequirementSearchTerms(requirements){
+	if(!requirements) return "";
+	
+	var searchTerm = "";
+	requirements.forEach(function( requirement, index ) {
+		if(requirement.Optional != 'True'){
+			searchTerm = searchTerm + requirement.Name + '-' + requirement.Dots + ' ';	
+		}
+	});
+	return searchTerm;
+}
+
 
 // From https://gist.github.com/helpse/4d4842c69782b9f94a72
 function getQuery() {

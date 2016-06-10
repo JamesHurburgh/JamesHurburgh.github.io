@@ -49,7 +49,7 @@
 		"Duration" : "Prolonged (one scene)",
 		"Aspect" : "Vulgar",
 		"Cost" : "None",
-		"Effect" : "The mage can alter the form of an ectoplasmic manifestation, shaping it with his will into whatever form he desires. He must contend with the will of the mage who conjured the ectoplasm or the ghost who manifests through it. Successes are used as Potency to wrest control of the ectoplasm from the mage or ghost who currently controls it.",
+		"Effect" : "The mage can alter the form of an ectoplasmic manifestation (see \"Ectoplasm\"), shaping it with his will into whatever form he desires. He must contend with the will of the mage who conjured the ectoplasm or the ghost who manifests through it. Successes are used as Potency to wrest control of the ectoplasm from the mage or ghost who currently controls it.",
 		"Rotes" : [{
 				"RoteOrder" : "Mysterium Rote",
 				"RoteName" : "The Seal Of Harafax",
@@ -92,7 +92,6 @@
 		"SourceBook" : "Mage: The Awakening",
 		"SourcePage" : "134",
 		"PrimaryArcana" : "Death",
-		"ArcanaRequirement" : "Death 1",
 		"Requirements" : [{
 				"Name" : "Death",
 				"Dots" : "1"
@@ -103,13 +102,12 @@
 		"Duration" : "Concentration",
 		"Aspect" : "Covert",
 		"Cost" : "None",
-		"Effect" : "There are times when the most useful thing one can find out about a given dead body is how it got to be that way. An ability that most crime-scene investigators would give their eyeteeth for, this spell enables a mage to discern at a glance exactly how a creature died and how long ago. Thus, the mage might be able to realize that a cause of death obvious to all modern forensic evidence is in fact a ruse designed to distract from the subject's true cause of death. Because of the limitations of the Death Arcanum, Forensic Gaze reveals only cause of death and not mitigating circumstances. If used upon a human skeleton, for example, it can reveal that the individual died as a result of damage to the carotid artery two months ago to the day, but does not tell the mage that the victim also had a lethal dose of strychnine in his system at the time of his demise. This limitation on the sense can come in quite handy, however (such as finding a mutilated body and learning that it was a deliberate stab to the heart, rather than the obvious manic rending of flesh, that resulted in the person's death). Even if physical evidence of the cause of death is absent (as with a body reduced to ash), this spell reveals what killed the being in question and how much time has passed since it died. The mage peers at a corpse to ascertain the cause of death. He does not need to touch, prod, or cut into the corpse; he merely stares at it. Fairly obvious causes such as a knife wound or heart attack levy no penalties, but obscure causes such as a rare neurotoxin might cause a -2 or greater penalty. Likewise, deaths that took place more than a year ago suffer -1 dice. Deaths older than a decade suffer an additional -1 dice per decade. It is possible to detect a vampire with this spell, although the cause of death (the Embrace) is extremely obscure (-3 penalty). The caster also suffers the usual penalty of -1 die per decade that the vampire has been dead. Zombies, too, can be detected, although their state is usually obvious even to those without this spell.",
+		"Effect" : "There are times when the most useful thing one can find out about a given dead body is how it got to be that way. An ability that most crime-scene investigators would give their eye-teeth for, this spell enables a mage to discern at a glance exactly how a creature died and how long ago. Thus, the mage might be able to realize that a cause of death obvious to all modern forensic evidence is in fact a ruse designed to distract from the subject's true cause of death. Because of the limitations of the Death Arcanum, Forensic Gaze reveals only cause of death and not mitigating circumstances. If used upon a human skeleton, for example, it can reveal that the individual died as a result of damage to the carotid artery two months ago to the day, but does not tell the mage that the victim also had a lethal dose of strychnine in his system at the time of his demise. This limitation on the sense can come in quite handy, however (such as finding a mutilated body and learning that it was a deliberate stab to the heart, rather than the obvious manic rending of flesh, that resulted in the person's death). Even if physical evidence of the cause of death is absent (as with a body reduced to ash), this spell reveals what killed the being in question and how much time has passed since it died. The mage peers at a corpse to ascertain the cause of death. He does not need to touch, prod, or cut into the corpse; he merely stares at it. Fairly obvious causes such as a knife wound or heart attack levy no penalties, but obscure causes such as a rare neuro-toxin might cause a -2 or greater penalty. Likewise, deaths that took place more than a year ago suffer -1 dice. Deaths older than a decade suffer an additional -1 dice per decade. It is possible to detect a vampire with this spell, although the cause of death (the Embrace) is extremely obscure (-3 penalty). The caster also suffers the usual penalty of -1 die per decade that the vampire has been dead. Zombies, too, can be detected, although their state is usually obvious even to those without this spell.",
 		"Rotes" : [{
 				"RoteOrder" : "Free Council Rote",
 				"RoteName" : "Reaper's Scent",
 				"RoteDicePool_Attribute" : "Intelligence",
 				"RoteDicePool_Skill" : "Medicine",
-
 				"RoteDescription" : "This rote relies not only on sight, but on the olfactory senses to aid the mage in reading the secrets of a corpse. Some Free Council mages enjoy employing the seemingly miraculous forensic techniques seen in many of today's most popular prime-time shows in the casting of this rote."
 			}
 		]
@@ -118,7 +116,6 @@
 		"SourceBook" : "Mage: The Awakening",
 		"SourcePage" : "134",
 		"PrimaryArcana" : "Death",
-		"ArcanaRequirement" : "Death 1",
 		"Requirements" : [{
 				"Name" : "Death",
 				"Dots" : "1"
@@ -129,13 +126,12 @@
 		"Duration" : "Prolonged (one scene)",
 		"Aspect" : "Covert",
 		"Cost" : "None",
-		"Effect" : "The mage gains Mage Sight, perceiving the supernatural through the lens of Death. He sees the weight of death around a person -- not his likelihood of death (unless the subject has a terminal illness), but how often he has rubbed shoulders (knowingly or not) with the dead or dying. Those who have suffered the loss of many loved ones or who have killed many people tend to bear heavy burdens. This sight also applies to things or places. See the information on resonance for rules for scrutinizing magic with this sight. A +1 dice bonus is gained on perception and scrutiny rolls to sense vampiric Disciplines, Devotions, and rituals.",
+		"Effect" : "The mage gains Mage Sight, perceiving the supernatural through the lens of Death. He sees the weight of death around a person -- not his likelihood of death (unless the subject has a terminal illness), but how often he has rubbed shoulders (knowingly or not) with the dead or dying. Those who have suffered the loss of many loved ones or who have killed many people tend to bear heavy burdens. This sight also applies to things or places. See the information on Resonance for rules for scrutinizing magic with this sight. A +1 dice bonus is gained on perception and scrutiny rolls to sense vampiric Disciplines, Devotions, and rituals.",
 		"Rotes" : [{
 				"RoteOrder" : "Silver Ladder Rote",
 				"RoteName" : "Aura Of Gloom",
 				"RoteDicePool_Attribute" : "Wits",
 				"RoteDicePool_Skill" : "Occult",
-
 				"RoteDescription" : "Those whose lives have been touched in certain ways by Death can be manipulated through that contact. Using this rote, a mage can perceive another's grief through a recent loss, and use this knowledge to manipulate that person's emotional vulnerability. It can be used to identify murderers who have otherwise concealed their crimes from all knowledge (although this rote reveals no details about the murder, only that the target has blood on his hands). Some members of the Adamantine Arrow use a similar rote to size up a person as a potential threat."
 			}
 		]
@@ -225,7 +221,6 @@
 		"SourceBook" : "Mage: The Awakening",
 		"SourcePage" : "135",
 		"PrimaryArcana" : "Death",
-		"ArcanaRequirement" : "Death 1",
 		"Requirements" : [{
 				"Name" : "Death",
 				"Dots" : "1"
@@ -250,7 +245,6 @@
 		"SourceBook" : "Mage: The Awakening",
 		"SourcePage" : "135",
 		"PrimaryArcana" : "Death",
-		"ArcanaRequirement" : "Death 1",
 		"Requirements" : [{
 				"Name" : "Death",
 				"Dots" : "1"
@@ -261,13 +255,12 @@
 		"Duration" : "Concentration",
 		"Aspect" : "Covert",
 		"Cost" : "None",
-		"Effect" : "This sense enables a mage to perceive a soul's health. He can discern the presence of derangements, but not necessarily their kind (that might require a period of study with an extended Intelligence + Empathy roll). Other kinds of soul marks can also be detected, such as the telltale signs of a mage who has created a soul stone. Some soul marks (such as serving as a vampiric vessel) are sufficiently rare and insidious as to penalize rolls made to perceive them.",
+		"Effect" : "This sense enables a mage to perceive a soul's health. He can discern the presence of derangements, but not necessarily their kind (that might require a period of study with an extended Intelligence + Empathy roll). Other kinds of soul marks can also be detected, such as the telltale signs of a mage who has created a Soul Stone. Some soul marks (such as serving as a vampiric vessel) are sufficiently rare and insidious as to penalize rolls made to perceive them.",
 		"Rotes" : [{
 				"RoteOrder" : "Adamantine Arrow Rote",
 				"RoteName" : "Wounds Of The Soul",
 				"RoteDicePool_Attribute" : "Intelligence",
 				"RoteDicePool_Skill" : "Medicine",
-
 				"RoteDescription" : "Arrow mages seek to exploit any weakness their enemies might display. Conversely, this rote can also be used to detect vulnerabilities amongst one's allies."
 			}
 		]
@@ -280,6 +273,16 @@
 		"Requirements" : [{
 				"Name" : "Death",
 				"Dots" : "1"
+			},
+			{
+				"Name" : "Spirit",
+				"Dots" : "1",
+				"Optional" : "True"
+			},
+			{
+				"Name" : "Mind",
+				"Dots" : "1",
+				"Optional" : "True"
 			}
 		],
 		"Practice" : "Unveiling",
@@ -293,10 +296,10 @@
 				"RoteName" : "Song Of Orpheus",
 				"RoteDicePool_Attribute" : "Presence",
 				"RoteDicePool_Skill" : "Occult",
-
 				"RoteDescription" : "As Orpheus' music could move even the dead to weep and speak with him, the mage using this rote calls upon that precedent to compel the dead to speak with him. The Imago incorporates the use of stringed music, and the spell itself is augmented if the mage plays the Imago's tune on a stringed instrument while he casts. Factor Bonuses: Playing stringed instrument (factor bonus equal to equipment bonus)."
-			}
-		]
+			}			
+		],
+		"Notes" : "Spirit and Mind have been added as optional arcana based on the text in the description."
 	}, {
 		"Name" : "Animate Shadows",
 		"SourceBook" : "Mage: The Awakening",
@@ -641,7 +644,6 @@
 		"SourceBook" : "Mage: The Awakening",
 		"SourcePage" : "137",
 		"PrimaryArcana" : "Death",
-		"ArcanaRequirement" : "Death 2",
 		"Requirements" : [{
 				"Name" : "Death",
 				"Dots" : "2"
@@ -660,7 +662,8 @@
 				"RoteDicePool_Skill" : "Crafts",
 				"RoteDescription" : "In ancient times, Silver Ladder mages would carry out a terrible punishment levied against mage criminals: The severing of their souls. This was sometimes a temporary sentence; the caster would store the soul in a jar and release it once the convict's sentence had been served."
 			}
-		]
+		],
+		"Notes" : "The Death and Spirit version of this spell are identical except for their arcana requirement.  They are listed separately for completeness sake."
 	}, {
 		"Name" : "Suppress Aura",
 		"SourceBook" : "Mage: The Awakening",
@@ -1140,7 +1143,6 @@
 				"RoteName" : "Orpheus' Lament",
 				"RoteDicePool_Attribute" : "Manipulation",
 				"RoteDicePool_Skill" : "Expression",
-
 				"RoteDescription" : "Just as the spell, above."
 			}
 		]
@@ -1149,7 +1151,6 @@
 		"SourceBook" : "Mage: The Awakening",
 		"SourcePage" : "140",
 		"PrimaryArcana" : "Death",
-		"ArcanaRequirement" : "Death 3",
 		"Requirements" : [{
 				"Name" : "Death",
 				"Dots" : "3"
@@ -1160,18 +1161,17 @@
 		"Duration" : "Prolonged (one scene)",
 		"Aspect" : "Vulgar",
 		"Cost" : "None",
-		"Effect" : "Sometimes, it isn't enough to have loyal and steadfast living servants. A normal human being, no matter how trustworthy, has the capacity for betrayal. Whether his lips are loosened by seemingly sincere companionship, mystic compulsion, or even torture, he can be induced to fail his master's trust. Where, then, does an enterprising necromancer turn for assistance? Quicken Corpse animates one or more corpses to serve as unfailing, devoted slaves. What such servants lack in wits and motivation, they more than make up for in dogged determination and sheer, tireless pursuit of the tasks they are set. Generally speaking, such ambulatory corpses possess a level of reasoning just above that of a rather intelligent dog. They understand certain visual cues (such as the opening of the door they are meant to guard) and auditory commands (\"Defend me!\"), but cannot perform feats requiring abstract intellect. They have a limited memory, but cannot make even basic correlations or inferences. (While they can, for example, dimly recall that their master has changed their clothes once a day, they cannot determine that he is likely to do so again tomorrow.) They have no individual initiative. These corpse-slaves are not really any stronger than they were in life, but they are tireless and completely without the ability to sense or respond to pain. They need not eat or sleep and do whatever chore they are set to until told otherwise, even if it requires them to tear their own bodies apart in the attempt. They experience neither fear nor the desire for self-preservation and have no minds, per se, for others to control. They can, however, be wrested away from their master through the casting of this spell by another necromancer. Only one success is required to animate a corpse. Additional successes determine the strength of the mage's control. Someone attempting to wrest control of the walking dead with another casting of this spell must exceed the original caster's successes. Additional success can instead be used to boost the corpse's Physical (but not Mental or Social) traits, at a rate of one success per additional dot in any trait.",
+		"Effect" : "Sometimes, it isn't enough to have loyal and steadfast living servants. A normal human being, no matter how trustworthy, has the capacity for betrayal. Whether his lips are loosened by seemingly sincere companionship, mystic compulsion, or even torture, he can be induced to fail his master's trust. Where, then, does an enterprising necromancer turn for assistance? Quicken Corpse animates one or more corpses to serve as unfailing, devoted slaves. What such servants lack in wits and motivation, they more than make up for in dogged determination and sheer, tireless pursuit of the tasks they are set. Generally speaking, such ambulatory corpses possess a level of reasoning just above that of a rather intelligent dog. They understand certain visual cues (such as the opening of the door they are meant to guard) and auditory commands (\"Defend me!\"), but cannot perform feats requiring abstract intellect. They have a limited memory, but cannot make even basic correlations or inferences. (While they can, for example, dimly recall that their master has changed their clothes once a day, they cannot determine that he is likely to do so again tomorrow.) They have no individual initiative. These corpse-slaves are not really any stronger than they were in life, but they are tireless and completely without the ability to sense or respond to pain. They need not eat or sleep and do whatever chore they are set to until told otherwise, even if it requires them to tear their own bodies apart in the attempt. They experience neither fear nor the desire for self-preservation and have no minds, per se, for others to control. They can, however, be wrested away from their master through the casting of this spell by another necromancer. Only one success is required to animate a corpse. Additional successes determine the strength of the mage's control. Someone attempting to wrest control of the walking dead with another casting of this spell must exceed the original caster's successes. Additional success can instead be used to boost the corpse's Physical (but not Mental or Social) traits, at a rate of one success per additional dot in any trait. [[ZombieInfoBox]]",
 		"Rotes" : [{
 				"RoteOrder" : "Silver Ladder Rote",
 				"RoteName" : "Rise And Obey",
 				"RoteDicePool_Attribute" : "Presence",
 				"RoteDicePool_Skill" : "Persuasion",
-
 				"RoteDescription" : "Most Ladder mages have little compunction against creating zombies, since they view corpses as the material shells of departed souls. Such unthinking servants suit the temperament of imperious Silver Ladder willworkers quite well, but few members of the order debate their utility. Members of other orders create walking dead for their own purposes, ranging from cheap labor to defense to scaring the living hell out of intruders."
 			}
 		]
 	}, {
-		"Name" : "Restore Corpus",
+		"Name" : "Restore Corpus - Ghost",
 		"SourceBook" : "Mage: The Awakening",
 		"SourcePage" : "141",
 		"PrimaryArcana" : "Death",
@@ -17878,7 +17878,8 @@
 				"RoteDicePool_Skill" : "Crafts",
 				"RoteDescription" : "In ancient times, Silver Ladder mages would carry out a terrible punishment levied against mage criminals: The severing of their souls. This was sometimes a temporary sentence; the caster would store the soul in a jar and release it once the convict's sentence had been served."
 			}
-		]
+		],
+		"Notes" : "The Death and Spirit version of this spell are identical except for their arcana requirement.  They are listed separately for completeness sake."
 	}, {
 		"Name" : "Spirit Pact",
 		"SourceBook" : "Tome Of The Mysteries",
@@ -18295,7 +18296,7 @@
 			}
 		]
 	}, {
-		"Name" : "Restore Corpus",
+		"Name" : "Restore Corpus - Spirit",
 		"SourceBook" : "Mage: The Awakening",
 		"SourcePage" : "250",
 		"PrimaryArcana" : "Spirit",

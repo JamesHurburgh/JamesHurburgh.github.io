@@ -1,0 +1,20 @@
+[{
+		"Name" : "Intelligence"
+	}, {
+		"Name" : "Wits"
+	}, {
+		"Name" : "Resolve"
+	}, {
+		"Name" : "Strength"
+	}, {
+		"Name" : "Dexterity"
+	}, {
+		"Name" : "Stamina"
+	}, {
+		"Name" : "Presence"
+	}, {
+		"Name" : "Manipulation"
+	}, {
+		"Name" : "Composure"
+	}
+]

@@ -64,6 +64,15 @@ $(document).ready(function () {
 		$('#Notes').text(spell.Notes);
 		
 		spellEffect = spell.Effect;
+		
+		// Insert infoBoxes
+		$(infoBoxes).each(function(index, inset) {
+			if(inset.Type == "html"){
+				var replacementText = '<div class="well">' + inset.html + '</div>';
+				spellEffect = spellEffect.replace(inset.PlacementText, replacementText);
+			}
+		});
+		
 		// Turn spell names into links
 		$(spells).each(function (index, spell) {
 			spellEffect = spellEffect.replace(new RegExp('\\b'+spell.Name+'\\b'), "<a href='spell.html\?spell=" + escape(spell.Name) + "'>" + spell.Name + "</a>");
@@ -72,6 +81,16 @@ $(document).ready(function () {
 		// Emphasise Arcana names
 		$(arcanum).each(function (index, arcana) {
 			spellEffect = spellEffect.replace(new RegExp(arcana.Name, "g"), "<strong>" + arcana.Name + "</strong>");
+		});
+		
+		// Emphasise Attributes names
+		$(attributes).each(function (index, attribute) {
+			spellEffect = spellEffect.replace(new RegExp(attribute.Name, "g"), "<strong>" + attribute.Name + "</strong>");
+		});
+		
+		// Emphasise Attributes names
+		$(skills).each(function (index, skill) {
+			spellEffect = spellEffect.replace(new RegExp(skill.Name, "g"), "<strong>" + skill.Name + "</strong>");
 		});
 		
 		// Popover text for glossary
@@ -117,11 +136,17 @@ $(document).ready(function () {
 	var spells;
 	var arcanum;
 	var glossary;
+	var infoBoxes;
+	var attributes;
+	var skills;
 	
 	$.when()	
 	.then(	function() 	{ getData("arcanum", function(data){arcanum = data}); })
 	.then(	function() 	{ getData("sourceBooks", function(data){sourceBooks = data}); })
 	.then(	function() 	{ getData("glossary", function(data){glossary = data}); })	
+	.then(	function() 	{ getData("infoBoxes", function(data){infoBoxes = data}); })	
+	.then(	function() 	{ getData("attributes", function(data){attributes = data}); })	
+	.then(	function() 	{ getData("skills", function(data){skills = data}); })	
 	.then(	function() 	{ getData("spells", loadSpell); })	
 	.then(	function() 	{ $("[data-toggle='popover']").popover(); })	
 	.then(	function() 	{ $("[data-toggle='tooltip']").tooltip(); })	

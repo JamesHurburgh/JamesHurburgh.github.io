@@ -1,0 +1,76 @@
+[{
+		"Name" : "Athletics",
+		"Description" : "sports and movement"
+	}, {
+		"Name" : "Brawl",
+		"Description" : "unarmed combat"
+	}, {
+		"Name" : "Drive",
+		"Description" : "operating automobiles under rough conditions"
+	}, {
+		"Name" : "Firearms",
+		"Description" : "identifying, using, and maintaining firearms and bows."
+	}, {
+		"Name" : "Larceny",
+		"Description" : "picking locks, burglary, bypassing security, sleight of hand, etc"
+	}, {
+		"Name" : "Stealth",
+		"Description" : "moving silently and unnoticed"
+	}, {
+		"Name" : "Survival",
+		"Description" : "enduring harsh environments"
+	}, {
+		"Name" : "Weaponry",
+		"Description" : "identifying, using, and maintaining non-firearm weapons "
+	},
+	{
+		"Name" : "Academics",
+		"Description" : "knowledge in Arts and Humanities"
+	}, {
+		"Name" : "Computer",
+		"Description" : "computer programs and operating systems"
+	}, {
+		"Name" : "Crafts",
+		"Description" : "constructing, crafting, and repairing objects"
+	}, {
+		"Name" : "Investigation",
+		"Description" : "solving riddles and finding evidence"
+	}, {
+		"Name" : "Medicine",
+		"Description" : "physiology, anatomy, and medical treatments"
+	}, {
+		"Name" : "Occult",
+		"Description" : "lore about the supernatural"
+	}, {
+		"Name" : "Politics",
+		"Description" : "political processes and bureaucratic maneuvers"
+	}, {
+		"Name" : "Science",
+		"Description" : "physical and natural sciences "
+	},
+	{
+		"Name" : "Animal Ken",
+		"Description" : "understanding animal minds and behaviors"
+	}, {
+		"Name" : "Empathy",
+		"Description" : "observing emotions and understanding viewpoints"
+	}, {
+		"Name" : "Expression",
+		"Description" : "art of communication and entertainment"
+	}, {
+		"Name" : "Intimidation",
+		"Description" : "coercing via force and threat"
+	}, {
+		"Name" : "Persuasion",
+		"Description" : "convincing others and inspiring their emotions"
+	}, {
+		"Name" : "Socialize",
+		"Description" : "social interaction in various situations"
+	}, {
+		"Name" : "Streetwise",
+		"Description" : "navigating urban streets and gathering intel there"
+	}, {
+		"Name" : "Subterfuge",
+		"Description" : "deceiving others and noticing it "
+	}
+]
