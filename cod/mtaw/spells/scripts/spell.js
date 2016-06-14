@@ -26,7 +26,7 @@ $(document).ready(function () {
 		sourceBooks.forEach(function( sourceBook, index ) {
 			if(sourceBook.Name == spell.SourceBook){
 				if(sourceBook.ID){
-					$('#SourceImageThumbnail').attr( 'src', 'images/covers/' + sourceBook.ID + '-t.png' );
+					$('#SourceImageThumbnail').attr( 'src', 'images/covers/thumbs/' + sourceBook.ID + '.png' );
 					$('#SourceLink').attr( 'href', 'images/covers/' + sourceBook.ID + '.png' );
 				}else{					
 					$('#SourceImageThumbnail').attr( 'src', sourceBook.Image );
@@ -150,6 +150,7 @@ $(document).ready(function () {
 	.then(	function() 	{ getData("spells", loadSpell); })	
 	.then(	function() 	{ $("[data-toggle='popover']").popover(); })	
 	.then(	function() 	{ $("[data-toggle='tooltip']").tooltip(); })	
+	//.then(	function() 	{ $(".fb-comments").attr( 'data-href', window.location.href ); })	
 	.done();
 	
 });

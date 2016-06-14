@@ -1,0 +1,1580 @@
+# Research
+Dice Pool: Intelligence + Academics + equipment
+Action:Extended (3-10+ successes; each roll represents 30 minutes of research)
+Researching information is a fairly straightforward
+task that involves querying libraries and databases. Roll
+Intelligence + Academics + equipment. The number of
+successes required depends on the complexity and/or obscurity of the desired information. A simple set of facts
+might demand three successes to obtain, while a littleknown or difficult-to-find reference might demand 10 or more successes to uncover. Depending on the quality of
+the libraries or databases available, the Storyteller may
+grant a +1 or higher modifier to task rolls.
+Roll Results
+Dramatic Failure:Your character obtains flawed or
+inaccurate information that leads him to draw incorrect
+conclusions about the subject.
+Failure:Your character makes no progress in locating the information he’s after.
+Success:Your character makes progress in his search
+for information.
+Exceptional Success: Your character is well on his
+way to discovering the elusive information he’s after. If
+the roll provides enough successes to push the total well
+above the amount necessary to complete the task (by five
+or more), he gains additional information pertinent to his
+research, providing greater detail and insight into the subject.
+Suggested Equipment: Library card (+1), Internet
+connection (+1), access to a university library (+2), access to government databases (+3)
+Possible Penalties: Unusual topic (-1), obscure topic
+(-2), limited library or database (-2)
+
+#Hacking
+Dice Pool: Intelligence + Computer + equipment
+versus Intelligence + Computer + equipment
+Action:Extended and contested (5-10+ successes;
+each roll represents 30 minutes of programming)
+Gaining root access to a network requires talent, creativity and patience, and often results in a battle of wits
+with the system’s administrator(s). Before the hacking
+attempt begins, the Storyteller determines the network’s
+level of security. If there is a system administrator on duty,
+the hacking attempt is an extended and contested action.
+If the network is protected by basic security software alone,
+the task is simply an extended action.
+In a contested and extended action between hacker
+and sysadmin, roll Intelligence + Computer + any equipment modifiers for both participants. The winner is the
+first to accumulate the required number of successes. The
+hacker needs to accumulate a number of successes equal
+to the network’s basic security setup. This can be anywhere from five to 10 based on the sophistication of the
+network. The sysadmin needs to accumulate a number of
+successes equal to the hacker’s Intelligence + Computer.
+If the hacker wins, he gains unfettered access to the network. If the sysadmin wins, he kicks the hacker out of the
+network and can block any further attempts from that
+invader that day.
+Example:Greg is hacking into the network of a local
+financial group, which is protected by an on-duty sysadmin.
+Greg’s Intelligence is 4, his Computer is 3 and he’s using an
+average computer setup (no bonus dice). The sysadmin’s
+Intelligence is 3, his Computer is 3 and he’s using a decent
+system that gives him a +1 modifier. The network’s basic
+security software requires seven successes to be overcome.
+The sysadmin also needs to accumulate seven successes (the
+total of Greg’s Intelligence + Computer). The first rolls net
+three successes for Greg and two successes for the sysadmin.
+Greg needs to gain four more successes to make it past the
+sysadmin and gain access, while the sysadmin needs to
+accumulate five more successes to kick the intruder out of his
+network.
+If the network is protected by basic security software
+alone, the hacker needs to accumulate a number of successes equal to the network’s basic security setup, as above.
+Example:Later, Greg tries to hack into the network of
+the city’s Department of Motor Vehicles. The DMV network
+doesn’t have a sysadmin on duty, so the task is an extended
+roll. The network’s basic security software requires six
+successes to be overcome, so Greg simply needs to keep
+hacking at the system (and not suffer any dramatic failures)
+to get in.
+Roll Results
+Dramatic Failure:A dramatic failure on the part of
+the hacker indicates that he’s been kicked out of the network and can’t access it again for 24 hours. Worse, if a
+sysadmin contests the task, make another Intelligence +
+Computer roll to determine if the admin manages to gain
+the IP address of the hacker. A dramatic failure on the
+part of the sysadmin indicates that the hacker brushes aside
+his efforts and penetrates the network automatically.
+Failure:Your character does not succeed in making
+any headway in his effort.
+Success:Your character makes progress in his effort.
+Exceptional Success: Your character has found a
+vulnerability he can exploit against his opponent, giving
+him a substantial advantage (as reflected in the number
+of successes you achieve in one roll).
+Suggested Equipment: High-performance computer
+(+1 to +3), broadband Internet access (+1), disk of scripts
+(+2), system passwords (+3)
+Possible Penalties: Outdated computer system (-2),
+slow Internet connection (-3)
+
+#Create Art
+Dice Pool: Intelligence + Crafts + equipment
+Action:Extended (4-15+ successes; one roll equals
+30 minutes of work)
+Your character sets out to create a piece of art, whether
+it’s a painting, drawing or sculpture. It’s quicker and easier
+to create a clay bowl or doodle than a life-size replica or
+mural. The former may call for only four successes while
+the latter may call for 15 or more, and hours of effort.
+Creating poems, songs, novels or speeches calls for
+the Expression Skill (see p. 80).
+Roll Results
+Dramatic Failure:There’s a terrible accident and your
+character’s work or tools are destroyed or the creation bears
+an inherent, embarrassing flaw that he cannot see.
+Failure:Your character makes no headway in his
+project.
+Success:Your character makes progress in his project.
+Exceptional Success: Your character makes dramatic
+progress in creating the item, likely well ahead of schedule.
+Suggested Equipment:High-grade tool set (+1),
+high-quality marble or clay (+1), high-tech tools (laser
+leveler, saws with laser guides) (+2), specialized sculpting
+tools (+2), extensive reference library (+2), garage (+3),
+carpentry shop (+3)
+Possible Penalties:Poor-quality tool set (-1), poorquality materials (-1), lack of reference library (-1), improvised work area (-1)
+
+#Repair Item
+Dice Pool: Dexterity + Crafts + equipment
+Action:Extended (4-10 successes; one roll equals 30
+minutes of work)
+Repairing a damaged item is an extended action, requiring a number of successes depending on the extent of
+the repairs and the overall difficulty of the job. Changing
+a spark plug in a car might require only four successes,
+while rebuilding the entire engine might demand 15 or
+more. As a general rule, one success is required on an extended roll to repair one point of damage to a broken
+object’s Structure. (See “Objects,” p. 135.)
+Many repairs require specific tools and/or facilities. If
+your character does not have all the necessary equipment
+available, a -1 modifier applies. If he does not have anyof
+the necessary tools to fix the item, the Storyteller may
+declare that the task is impossible.
+Example:Shae is asked by a friend to fix a damaged
+computer. Shae’s Dexterity is 3 and his Crafts (with a
+Computer Specialty) is 2. He has all the proper electronics
+and tools to make the repair, so there is no negative modifier
+to the rolls, but his equipment is of average quality and
+doesn’t give a bonus. His dice pool therefore consists of six
+dice. Repairing the computer is a fairly complicated task, so
+the Storyteller determines that it will take seven successes to
+complete. Five rolls (and two-and-a-half hours) later, the
+necessary successes are accumulated and the computer is
+fixed.
+Roll Results
+Dramatic Failure:Your character fails to make any
+repairs on the item and actively worsens its condition.
+Each dramatic failure increases the number of successes
+required to complete repairs by one or more.
+Failure:Your character fails to make any headway in
+repairing the item.
+Success:Your character makes progress in completing the repair.
+Exceptional Success: Your character makes dramatic
+progress in repairing the item, likely well ahead of schedule.
+Suggested Equipment:High-grade tool set (+1),
+high-quality materials (+1), high-tech tools (laser leveler,
+saws with laser guides) (+2), specialized sculpting tools
+(+2), extensive reference library (+2), garage (+3), carpentry shop (+3)
+Possible Penalties:Poor-quality tool set (-1), poorquality materials (-1), lack of reference library (-1), improvised work area (-1)
+
+#Examining a Crime Scene
+Dice Pool: Wits + Investigation + equipment
+Action:Extended (3-10+ successes; one roll represents 10 minutes of activity)
+Examining a crime scene involves studying evidence
+and clues to piece together useful facts about events, perpetrators or a mystery. Roll Wits + Investigation. Each
+roll represents 10 minutes of observation and interpretation, and possibly referencing databases and calling expert witnesses. Depending on the size of the crime scene
+and the complexity and obscurity of details, the task could
+demand anywhere from three to 10 successes (or more)
+for your character to make sense of things.
+Unlike many tasks, this isn’t an all-or-nothing effort.
+If your character has to abandon the project before it’s
+completed, he may still come away with some useful information depending on the number of successes earned.
+The Storyteller should share information each time a roll
+yields a success, starting with the most obvious facts and
+revealing increasingly obscure bits as the investigation
+continues. At no time should the player know how many
+successes are needed to complete the analysis — he should
+always wonder whether his character should invest a little
+more time and dig deeper. Storytellers may choose to make
+these rolls for players in secret to add uncertainty and suspense.
+Example:Janet is called to the scene of a murder at a
+local park. Taking stock of the situation, she studies the area
+around the body to try and piece together what happened.
+The Storyteller decides that it takes eight successes to gather
+all the clues available. Janet’s Wits is 3 and her Investigation
+is 2. The first roll is 5,6,7,8,9. With two successes, Janet
+has gathered a quarter of the information available. The
+Storyteller reveals that the victim died due to massive blood
+loss, but there are no bloodstains around the corpse. At this
+point, Janet can continue to investigate or decide that she’s
+seen enough and move on.
+Roll Results
+Dramatic Failure:Your character draws incorrect
+conclusions from the information she gathers.
+Failure:Your character uncovers no useful information.
+Success:Your character uncovers useful information,
+but is that all there is to learn?
+Exceptional Success: Your character gains a wealth
+of useful information from a few minutes’ careful study.
+MENTAL SKILLS- INVESTIGATION
+Sitori Jardine (free product) 1
+Chapter 3- SKILLS
+60
+Suggested Equipment: Forensic kit (+1), surveillance
+gear (parabolic mikes, night-vision goggles, laser mikes)
+(+1), unrestricted access to the scene (+2), access to government databases (+3)
+Possible Penalties:Weather obscures scene (-1 to -3), scene has been compromised by intruders (-1 to -5),
+lack of forensic equipment (-3)
+
+#Solving Enigmas
+Dice Pool: Intelligence + Investigation + equipment
+Action:Instant or extended (3-10+ successes; one
+roll represents one hour of activity)
+A man scrawls a bizarre message before he dies. A
+ghost utters some cryptic, haunting words that are the clues
+to freeing the spirit from this world. A killer leaves a hint
+to his next crime. Your character is posed with a perplexing mystery, riddle, puzzle, code or series of clues to contemplate. Sometimes these brainteasers can be solved
+quickly, such as a short riddle meant to lead your character to his next destination. Such conundrums might be
+solved with a simple success and an instant action. Other
+stumpers demand consideration, research, interpretation
+and/or legwork — an extended action. For your character
+to understand what “Blue Heron” written in blood means,
+she needs to look into the murder victim’s past and do
+research into what the term itself is applied.
+Often times, such an enigma goes unsolved until the
+required successes are gained. Partial insights along the
+way aren’t forthcoming, because the elements of the answer don’t make sense until they’re all gathered. When
+they are, eureka!
+Roll Results
+Dramatic Failure:Your character arrives at the wrong
+solution. Storytellers may want to make enigma rolls on
+players’ behalf for this reason.
+Failure:Your character does not solve the puzzle or
+gains no headway toward the answer.
+Success:Your character finds a simple answer, or gathers some information or insight toward complete comprehension.
+Exceptional Success: Your character arrives at the
+answer quickly or makes an enormous intuitive leap.
+Suggested Equipment: Internet access (+1), codedeciphering computer programs (+2), extensive reference
+library (+2), extensive library dedicated to the specific
+subject matter in question (+3)
+Possible Penalties:No reference library (-1); distracting phenomena in area, from noise (-1) to dangers (-4);
+incomplete clues (-1 to -5)
+
+#Healing Wounds
+Dice Pool: Dexterity or Intelligence + Medicine +
+equipment
+Action:Extended (one success is required per Health
+point of damage suffered; each roll represents one minute
+of work (first aid) or one hour of work (long-term hospital treatment))
+Application of the healing arts can help restore a
+patient’s lost Health points. Treatment can occur in the
+field through first aid or in a doctor’s clinic or ER. While
+medical treatment can stabilize a patient or alleviate his
+pain, it isn’t usually capable of miraculous cures or recoveries. That requires time and rest on the patient’s part,
+and prolonged care.
+Dexterity + Medicine may be rolled in the field or
+ER, while Intelligence + Medicine may be rolled in a lab
+or operating room, where science and technology does
+much of the work of healing injuries. Typically, Dexterity
++ Medicine is rolled when a patient is dying while being
+cared for. Intelligence + Medicine is rolled once a patient
+has been stabilized and can undergo long-term care.
+Achieving sufficient successes (equal to the total,
+overall Health points lost by the patient) restores one
+Health point lost to bashing damage, in addition to any
+healing that the character already does under his own
+power. A patient may regain no more than one “extra”
+Health point by this means per day. Alternatively, a patient who’s bleeding to death or in a coma is stabilized if
+one success is achieved on the roll. (The loss of Health
+points to aggravated damage each minute is stopped; see
+“Incapacitation,” p. 173.)
+Round-the-clock, intensive care diminishes a patient’s
+injuries, downgrading the nature of wounds by one degree. Thus, a lethal wound can be downgraded to bashing, and an aggravated wound can be downgraded to lethal. Such treatment can occur only in a hospital or other
+intensive-care facility. An extended Intelligence + Medicine roll is made. The number of successes required is five
+for a lethal wound and 10 for an aggravated one. Each roll
+requires an hour.
+This kind of treatment always focuses on the worst of
+the patient’s injuries first. Thus, an aggravated wound is
+downgraded to lethal before a lethal wound is downgraded
+to bashing. No more than one wound can be downgraded
+per day of treatment.
+Note that this treatment does not eliminate wounds.
+It simply minimizes them. A patient must heal downgraded
+injuries completely by himself or receive other treatment
+to eliminate them.
+Example:Someone has beaten the crap out of Emir.
+He has lost all of his 7 Health points to lethal damage and is
+now bleeding to death (acquiring an aggravated wound per
+minute). Landers discovers Emir and performs first aid.
+Landers’ Dexterity is 2 and Medicine is 2. He must
+accumulate seven successes to stop the flow of blood and
+save Emir’s life. Three rolls (and minutes) pass before
+Landers accumulates the required successes, at which point
+Emir stops incurring aggravated injuries. That leaves him
+with three aggravated and four lethal wounds. (Until
+Landers accumulates the number of successes required to
+stop the bleeding, Emir continues to gain one aggravated
+wound per minute as he keeps bleeding — see “Incapacitation,” p. 173. If Landers’ rolls were repeatedly unsuccessful, Emir could have died while being treated.)
+Later, in the hospital, the attending physician puts Emir
+in intensive care to alleviate the worst of his injuries. The
+doctor has 4 Intelligence and 4 Medicine, and gains four
+bonus dice for tools and facilities. In three hours, 10
+successes are rolled for him and he reduces one of Emir’s
+aggravated wounds to lethal damage. At least two more days
+of such successful treatment must pass before Emir’s
+remaining two aggravated wounds are reduced to lethal, one
+per day. After that, Emir is allowed to recover on his own
+with rest. It takes two days before he heals one of his lethal
+MENTAL SKILLS- MEDICINE
+Sitori Jardine (free product) 1
+Chapter 3- SKILLS
+62
+injuries and his right-most Health box is emptied (see
+“Healing,” p. 175). Before any more time is lost, however,
+a staggering Emir escapes from the hospital to avoid explanations, to hole up and to plot his revenge.
+Roll Results
+Dramatic Failure:Your character’s efforts make the
+patient’s condition worse instead of better. The subject is
+moved prematurely or incorrectly, or the wrong medication is administered. The patient loses one Health point
+to bashing damage and all your character’s accumulated
+successes are lost. He must start from scratch if he’s to
+help the patient. If the subject is bleeding to death, an
+extrawound turns from lethal to aggravated, in addition
+to that lost for the minute that’s wasted.
+Failure:Your character makes no progress in alleviating the patient’s injuries. If the subject is bleeding to
+death, a wound turns from lethal to aggravated over the
+course of the wasted minute.
+Success:Your character makes progress in alleviating the patient’s injuries. Until you acquire the total number of successes required to stop a patient from bleeding
+to death, one more of his wounds turns from lethal to aggravated per minute.
+Exceptional Success: Your character makes significant progress toward alleviating the patient’s injuries.
+Suggested Equipment: Set of surgeon’s tools (scalpels, retractors, clamps) (+1), field surgical kit (+1), military surgical kit (+2), access to surgical facilities (+3)
+Possible Penalties: Lack of tools (-1 to -4), bad
+weather (-2), distraction from noise (-1) to imminent danger (-4)
+
+#Climbing
+Dice Pool: Strength + Athletics + equipment
+Action:Instant or extended (one success is required
+per 10 feet of height; in an extended task each roll represents one minute of climbing)
+Climbing an object requires a number of successes in
+an instant or extended action. Your character can climb
+10 feet with each success rolled. Objects that are 10 feet
+or less in height can be climbed as an instant action. Rolls
+may be modified based on the availability of hand- and
+footholds, sheerness or slipperiness of the slope, and wind
+conditions, all at the Storyteller’s discretion. By the same
+token, if the character chooses to take his time and pick
+his way carefully up the incline, each minute added to the
+roll provides a +1 modifier, to a maximum of +3. Thus, if
+a character takes his time and each roll represents three
+minutes of effort instead of one, a +2 modifier is added to
+each roll.
+Example:Miles attempts to climb a tree to get his
+bearings while lost in a forest. He finds a suitable tree with
+lots of accessible branches and starts to climb. The Storyteller determines that the tree is 60 feet tall, and that it has
+been raining so the branches are slick. Miles’ Strength is 3
+and his Athletics is 2. He has no tools other than his hands
+and feet, so he takes his time; three minutes pass on each roll
+for a +2 bonus. The Storyteller imposes a -1 modifier due to
+Sitori Jardine (free product) 1
+65
+the slippery conditions. Climbing to the top of the tree
+requires a total of six successes (one success per 10 feet) over
+the course of an extended action. If it takes four rolls to
+accumulate the required six successes, Miles reaches the top
+of the tree after 12 minutes.
+Roll Results
+Dramatic Failure:Your character has lost his grip or
+footing and falls. It could be fatal depending on the height
+involved. See the rules on falling, p. 179.
+Failure:Your character doesn’t make any headway
+on his attempted climb. He doesn’t lose altitude, but he
+doesn’t gain any, either.
+Success:Your character reaches the top of the object
+he wishes to climb (if performed as an instant action), or
+makes continued headway to the top (in an extended action).
+Exceptional Success: Your character reaches the top
+with time and energy to spare. If successes gained exceed
+the amount required to climb the object (whether performed as an instant action or exceeding the total required
+for an extended action), your character may attempt another instant action at the top, such as a flip, at the
+Storyteller’s discretion.
+Suggested Equipment: Nylon rope (+1), climbing
+cleats (+1), grappling hook (+2), pitons and hammer (+3)
+Possible Penalties:Lack of tools (-1 to -5), bad weather
+(-1 to -3), sheer slope (-1), lack of handholds (-3)
+
+#Foot Chase
+Dice Pool: Stamina + Athletics + equipment versus
+Stamina + Athletics + equipment
+Action:Extended and contested (each roll represents
+one turn of running)
+It’s inevitable that your character will chase someone (or more likely be chased) in his burgeoning experiences with the supernatural. He may interrupt a creature
+preying upon a hapless victim and race after the thing, or
+he may stumble upon a scene not meant for his eyes and
+suddenly he’s the hunted.
+A chase is a matter of endurance, reflexes and fleetness of foot. Roll Stamina + Athletics for each participant. This is not quite the conventional extended and
+contested task, however. Rolls are made for each participant in each stage (in each turn), but the quarry has a
+different goal than the pursuer. The number of successes
+that must be acquired for the quarry equals the pursuer’s
+Speed. So, if the pursuer has a Speed of 12, successes accumulated for the quarry must reach 12 for him to get
+away.
+The pursuer, however, does not seek to get away. His
+goal is much more specific: to stop the quarry from escaping. The number of successes that the pursuer needs is
+therefore different. He seeks to tally a number that equals
+or exceeds the quarry’s current total of successes at any
+point in the chase. If the pursuer gets that number, he
+catches up.
+The Speed trait of quarry and pursuer is also a factor
+in determining who is likely to get away or be caught. A
+human adult isn’t likely to catch a cheetah, for example,
+but a cheetah can probably catch a human adult. For every three points of difference between competitors’ Speed
+traits, the faster one gets a +1 bonus on chase rolls. Remainders are rounded down. So, if a pursuer has a Speed
+of 11 and a quarry has a Speed of 8, rolls made for the
+pursuer get a +1 bonus. If a pursuer has a Speed of 10 and
+a quarry has a Speed of 11, neither party gets a bonus (the
+difference between Speed traits is less than three and is
+rounded down).
+Example:Katla runs from a would-be attacker. She
+has 2 Stamina, 4 Athletics and a Speed of 9. The attacker
+has 3 Stamina, 1 Athletics and a Speed of 10. The difference between their Speed traits is not sufficient to give either
+a bonus (it’s less than three, so is rounded down to zero). Six
+dice are rolled for Katla, and a total of 10 successes must be
+accumulated for her to get away. Four dice are rolled for the
+attacker, but he need only accumulate a number of successes
+that equals or exceeds what Katla has in any turn. Thus, if
+she gets one success in the first turn and he gets one or more,
+he catches her right away. If by the fifth turn she has eight
+successes and he has four, and his total successes from turn
+to turn has never equaled or exceeded her total, she has
+always maintained the lead. If by seventh turn Katla has 10
+successes and her pursuer has eight, she gets away. Her
+pursuer runs out of steam or stumbles.
+If the quarry of a chase has a head start, she gets a
+number of automatic successes at the beginning of the
+chase. Any successes rolled for her throughout the extended and contested task are added to that number from
+turn to turn, giving the quarry an advantage throughout.
+As a rule of thumb, a 10-yard head start is worth one automatic success. So, if Katla were 30 yards away from her
+assailant when the chase broke out, she would have a foundation of three successes on which to add her own throughout the chase. That bonus would make it all the harder
+for her pursuer to accumulate an equal or greater number
+than she has in any given turn.
+Negative modifiers to rolls due to hazardous terrain
+or dangerous conditions apply equally to opposing participants. A desperate escapee can even intentionally incur a negative modifier (leaping a hurdle or navigating a
+construction site) to force her pursuer to cope with the
+same conditions.
+All of a participant’s actions must be dedicated to
+running in a chase. If someone performs a different action
+in any turn, such as firing a gun, his Stamina + Athletics
+roll for that turn is forfeit. The character might even perform another action and travel his Speed, but he loses
+momentum in the race; he adds no successes to his total.
+Only a character who possesses a supernatural power or a
+special Merit might maintain a chase andbe able to perform a separate action in a turn.
+The actual distance between quarry and pursuer at
+any point in a chase is based on the difference of total
+successes between them. Each success is worth about 10
+PHYSICAL SKILLS- ATHLETICS
+Sitori Jardine (free product) 1
+Chapter 3- SKILLS
+66
+yards. So, if Katla has six successes and her pursuer has two, she is 40 yards ahead.
+Of course, the Storyteller can set another standard for what the difference measures. If opponents race over broken, uneven ground, each success
+between them could represent only five yards or one yard. Or,
+if the chase occurs in wide-open spaces, each success between
+subjects could represent 20 yards.
+If a pursuer’s total successes ever equal or exceed a quarry’s
+in any given turn, the pursuer catches up. The race comes to an
+end. The pursuer is allowed one free action against the quarry, such
+as a charge maneuver. See “Charging,” p. 164. The quarry is fully
+aware of the threat, is not surprised and is entitled to her Defense. Initiative is rolled thereafter for both participants if
+combat breaks out.
+Note that a simple foot race in which competitors seek to be the first to cross a finish line is handled
+like a conventional extended and contested task. Successes for each participant are accumulated and all seek the
+same total number of successes. The first
+one to get that total is the winner.
+See “Catching Vehicles on Foot” on p. 71 for
+systems on chasing after and jumping aboard vehicles.
+Roll Results
+Dramatic Failure:The participant
+trips, falls or wipes out. He may suffer a
+Health point of bashing damage at the
+Storyteller’s discretion. The race is
+over.
+Failure:The participant gains no ground
+in the pursuit.
+Success:The participant gains some
+ground in the chase, whether fleeing or in
+pursuit.
+Exceptional Success: The participant gains a great deal of ground through
+a mixture of luck and capability.
+Suggested Equipment: Athletic
+shoes (+1)
+Possible Penalties:Bad weather
+(-1 to -3), debris (-1 to -3), difficult
+terrain (-1 to -5)
+
+#Jumping
+Dice Pool: Strength + Athletics
++ equipment
+Action:Instant
+A character can jump one foot
+vertically for each success gained
+on a jumping roll. In a standing
+Sitori Jardine (free product) 1
+67
+broad jump, a character can cross two feet per success
+rolled. In a running jump, a character can cross a number
+of feet equal to her Size + four more feet per success rolled.
+So, if a person who’s Size 5 gets three successes in a running jump, she travels 17 feet. In order to make a running
+jump, a character must be able to run a distance of at least
+10 feet. If space is limited, every two feet (rounding up)
+short of 10 imposes a -1 penalty on the Strength + Athletics roll. So, if a character who wants to make jump needs
+at least 10 feet in which to get a running start, but she has
+only five feet with which to work, the roll suffers a -3
+penalty.
+Before jumping, a character may attempt to gauge the
+distance and her chances of success before committing.
+Roll Intelligence + Composure or Athletics, at the
+Storyteller’s discretion. If the roll is successful, you learn
+the number of successes needed to make the jump and
+decide if it’s worth the risk. You may also learn what penalties are imposed by having insufficient space to get a
+proper running start.
+Example:Diana finds herself trapped on the roof of her
+apartment building with the vampire’s blood slaves charging
+up the stairs after her. Her only hope is to jump to the roof of
+the adjacent building and hope that the thugs won’t have the
+nerve to follow. The distance between buildings is 20 feet.
+Diana is Size 5. A jumping roll must generate at least four
+successes (for a total of 21 feet) and she needs at least 10
+feet to get a running start, which the Storyteller says is
+available. Her Strength is 3 and her Athletics is 3. The roll is
+4, 5, 8, 8, 8 and 9 — four successes. Leaping from the
+stone parapet, Diana crosses the intervening distance and
+lands on the far roof.
+It was a dangerous feat, though. Under less stressful
+circumstances, Diana might have gauged her chances before
+risking her life. The Storyteller could have allowed her player
+an Intelligence + Composure or Athletics roll to determine
+that four successes were required. Or if the Storyteller
+decided that only eight feet were available to get a running
+start, a successful gauging roll would have told Diana’s
+player that four successes were required, and that a -1
+penalty would have applied.
+Roll Results
+Dramatic Failure:The task not only fails but your
+character loses her balance. Perhaps she trips on a piece
+of debris or catches a part of her clothing on a branch or
+jagged rock. Instead of jumping, she hits the ground and
+suffers a bashing wound if it was a vertical jump. See “Falling,” p. 179, if it was a horizontal jump.
+Failure:Your character doesn’t achieve any significant distance at all — she jumps too early, has a false start
+or loses her nerve. She gains a few inches vertically or
+about a foot horizontally, which could also mean a fall.
+Success:Your character leaps a number of feet based
+on the successes rolled.
+Exceptional Success: Your character leaps an impressive distance. If successes gained exceed the amount required to make the jump, your character may attempt another instant action in the air (say, firing a shot) or upon
+landing (maybe running up to her Speed), at the
+Storyteller’s discretion.
+Suggested Equipment: Running shoes (+1), ramp
+(+1), springboard (+2), vaulting pole (+3)
+Possible Penalties:Slippery conditions (-1), bad
+weather (-1 to -3), difficult terrain (-1 to -3), strong wind
+(-2)
+
+#Throwing
+Dice Pool: Dexterity + Athletics + equipment
+Action:Instant
+Throwing an object can be a brute-force physical act
+or a combination of grace and hand-eye coordination to
+hit a distant target. Your character can throw a non-aerodynamic object (such as a clay pot or tire) a distance in
+yards equal to his Strength + Dexterity + Athletics, minus the object’s Size. The result is considered short range.
+Medium range is double that number, and long range is
+twice medium range. So, a character with 4 Strength, 3
+Dexterity and 2 Athletics can throw a tire with 2 Size a
+short range of seven yards, a medium range of 14 yards
+and a long range of 28 yards.
+Aerodynamic objects such as footballs and spears can
+be thrown double those distances. Thus, the same character who throws a football (Size 1) has a short range of
+16 yards, a medium range of 32 yards and a long range of
+64 yards.
+An object with a Size that equals or exceeds your
+character’s Strength simply can’t be thrown far enough to
+constitute range, even if it’s an aerodynamic item. It’s simply too heavy or bulky to be thrown.
+While the distance that an item can be thrown is
+relatively fixed, your character’s accuracy is rolled: Dexterity + Athletics + equipment. Weapons such as knives,
+spears and rocks, however, confer their Damage ratings as
+bonuses when thrown (see the Combat Chapter). Mundane items such as baseballs or footballs can be thrown to
+hit and hurt (probably unsuspecting) targets, too. These
+items typically confer a +1 bonus and do bashing damage
+(see p. 153).
+Modifiers to hit targets are -2 at medium and -4 at
+long range. By no means is long range the limit to which
+an item can be hurled. Your character could throw it with
+everything he has and achieve greater distance — up to
+twice long range. Accuracy is forgone, though. If your
+character tries to throw an object at a target beyond long
+range, he can still make the attempt. Make a chance roll
+to determine success (see p. 125), regardless of what your
+character’s dice pool might normally be. Any target that’s
+more than double long range away is considered completely out of range and no throw can hit it.
+Roll Results
+Dramatic Failure:Your character loses control of the
+object. If it’s large or heavy (Size 4 or greater), he loses his
+grip and drops it, potentially injuring himself in the process. Smaller objects land wildly off the mark, striking
+PHYSICAL SKILLS- ATHLETICS
+Sitori Jardine (free product) 1
+Chapter 3- SKILLS
+68
+something (or someone) accidentally or overshooting the
+target entirely.
+Failure:The object misses its mark or simply does
+not make it as far as intended.
+Success:Your character hits his intended target. In
+the case of a thrown weapon, each success inflicts one
+point of damage.
+Exceptional Success: The object hits the target with
+great accuracy and/or force.
+Suggested Equipment: See the Damage ratings of
+thrown weapons in the Combat Chapter, p. 150.
+Possible Penalties: Slippery conditions (-1), strong
+wind (-2), bad weather (-1 to -3)
+
+[[CatchingThrownObjectsInfoBox]]
+
+#Vehicle Pursuit
+Dice Pool: Dexterity + Drive + vehicle Handling
+versus Dexterity + Drive + vehicle Handling
+Action:Extended and contested (each roll represents
+one turn of driving)
+Pursuing a fleeing vehicle is a test of both sharp reflexes and steel nerves as the escaping driver attempts to
+increase the distance between himself and his pursuer. Roll
+Dexterity + Drive + Handling for each driver. Each roll
+represents one turn’s time. This is not quite the conventional extended and contested task, however. Rolls are
+made for each participant in each turn, but the quarry has
+a different goal than the pursuer. The number of successes
+that must be acquired for the quarry equals the pursuing
+vehicle’s Acceleration (see “Sample Vehicles,” p. 146, for
+more information). So, if the pursuer’s vehicle has an
+Acceleration of 15, successes accumulated for the quarry
+must reach 15 for him to get away.
+The pursuer, however, does not seek to get away. His
+goal is much more specific: to stop the quarry from escaping. The number of successes that the pursuer needs is
+therefore different. He seeks to tally a number that equals
+or exceeds the quarry’s current total of successes at any
+point in the chase. If the pursuer gets that number, he
+catches up.
+PHYSICAL SKILLS- BRAWL-DRIVE
+Sitori Jardine (free product) 1
+Chapter 3- SKILLS
+70
+The relative speed of vehicles is also a factor in determining who is likely to get away or be caught. An 18-wheeler isn’t likely to catch a sports car, for example, but
+a sports car could probably catch an 18-wheeler. For every three points of difference between competitors’ Acceleration traits, the faster one gets a +1 bonus on pursuit
+rolls. Remainders are rounded down. So, if a pursuer has
+an Acceleration of 22 and a quarry has an Acceleration
+of 13, rolls made for the pursuer get a +3 bonus. If a pursuer has an Acceleration of 15 and a quarry has an Acceleration of 13, neither party gets a bonus (the difference
+between Acceleration traits is less than three and is
+rounded down).
+Example:Serge seeks to elude mobsters who are out
+for his blood. He has 3 Dexterity and 2 Drive, and a
+compact car with a Handling of 3 and Acceleration of 15.
+The pursuing driver has 2 Dexterity and 4 Drive, and a
+sedan with a Handling of 2 and an Acceleration of 14. The
+difference between their Acceleration traits is not sufficient
+to give either a bonus (it’s less than three, so is rounded
+down to zero). Eight dice are rolled for Serge (3+2+3), and
+a total of 14 successes must be accumulated for him to get
+away. Eight dice are also rolled for the pursuer (2+4+2),
+but he need only accumulate a number of successes that
+equals or exceeds what Serge has in any turn. Thus, if Serge
+gets three successes in the first turn and the mobsters get
+three or more, they catch him right away. If by the fifth turn
+Serge has eight successes and the mobsters have five, and the
+mobsters’ total successes from turn to turn have never
+equaled or exceeded Serge’s total, he has always maintained
+the lead. If by the ninth turn Serge has 14 successes and his
+pursuers have 10, Serge gets away. Maybe he turns a corner
+and the mobsters can’t keep up, or Serge narrowly avoids a
+vehicle that blocks the pursuers completely.
+If the quarry of a pursuit has a head start, he gets a
+number of automatic successes at the beginning of the
+chase. Any successes rolled for him throughout the extended and contested task are added to that number from
+turn to turn, giving the quarry an advantage throughout.
+As a rule of thumb, a full 20-yard head start is worth one
+automatic success. So, if Serge were 40 yards away from
+the mobsters when the pursuit broke out, he would have a
+foundation of two free successes on which to add his own
+throughout the chase. That bonus would make it all the
+harder for his pursuers to accumulate an equal or greater
+number than he has in any given turn.
+Negative modifiers to rolls due to hazardous terrain
+or dangerous conditions apply equally to opposing participants. A desperate escapee can intentionally incur a
+negative modifier (driving into oncoming traffic, going
+over a median, navigating a trash-strewn alley) to force
+the pursuer to cope with the same conditions.
+A driver’s actions must be dedicated to conducting a
+pursuit. If a driver performs a different action in any turn,
+such as firing a gun, his Dexterity + Drive + Handling roll
+for that turn is forfeit. The pursuit still continues, but the
+character accumulates no successes. (The Storyteller also
+makes a chance roll on the driver’s behalf to see if he retains control of the vehicle, as explained on p. 125.) Only
+a driver who possesses a supernatural power or the Stunt
+Driver Merit can maintain a pursuit andbe able to perform a separate action in a turn.
+Passengers in either vehicle can perform other actions, however. Most likely they shoot back and forth at
+each other. If combat between pursuing vehicles breaks
+out, roll Initiative for all combatants. Regardless of
+whether drivers contribute to the fight, their Dexterity +
+Drive + Handling rolls are made at the beginning of each
+turn. Actual combatants’ places in the Initiative roster
+are then addressed in order until the next turn gets underway and new Dexterity + Drive + Handling rolls are made.
+The Vehicle rules in Chapter 6 (p. 141) help you
+handle combat between cars. Important to that process is
+the range between quarry and pursuer at any point in the
+chase. That distance is based on the difference of total
+successes achieved thus far between vehicles. Each success is worth about 20 yards. So, if Serge has eight successes and the mobsters have four, Serge is 80 yards ahead.
+Of course, the Storyteller can set another standard for what
+that difference measures. If opponents race through rushhour traffic, each success between them could represent
+only 10 yards. Or, if the pursuit occurs across a prairie,
+each success between subjects could represent 30 yards.
+The distance between quarry and pursuer must be compared to the ranges of firearms used in a “shooting pursuit” (see “Ranged Weapons Chart,” p. 169).
+If a pursuer’s total successes ever equal or exceed a
+quarry’s in any given turn, the pursuer catches up. The
+race comes to an end. The pursuing driver (and only the
+driver) is allowed one free action against the quarry, such
+as ramming the other vehicle. The quarry is fully aware of
+the threat and is not surprised. Otherwise, if Initiative
+has not yet been rolled in the pursuit, it is now. If it has
+been rolled previously in the scene, rolls are now made
+for the vehicle drivers and they’re added to the existing
+roster. On their actions in each turn, drivers can now try
+to ram each other or perform other maneuvers as outlined
+under “Vehicles,” p. 141.
+Note that a simple drag race in which opposing drivers seek to be the first to cross a finish line is handled like
+a conventional extended and contested task. Successes
+for each participant are accumulated and all seek the same
+total number. The first one to get that total is the winner.
+Roll Results
+Dramatic Failure:The driver loses control of his vehicle and crashes, wrecking the car and possibly injuring
+occupants, or he attempts a maneuver that immobilizes
+his vehicle (say, attempting to drive a short distance on a
+sidewalk and blowing out all four tires by running over an
+ornamental fence). The pursuit is over.
+Failure:The driver gains no ground in the pursuit.
+Success:The driver gains some ground in the pursuit, whether fleeing or chasing.
+Sitori Jardine (free product) 1
+71
+Exceptional Success: The driver gains a great deal of
+ground through a mixture of luck and capability. Perhaps
+the driver downshifts and cuts between two vehicles at
+just the right moment, darting down the shoulder of the
+road and picking up precious yards.
+Suggested Equipment: For a list of sample vehicles,
+see p. 146 (+1 for every three points difference between
+Acceleration traits)
+Possible Penalties:Bad weather (-1 to -3), slippery
+conditions (-2), obstacles (-1 to -3), vehicle damage (see
+“Vehicles,” p. 141)
+
+[[CatchingVehiclesOnFootInfoBox]]
+
+#Vehicle Tailing
+Dice Pool: Wits + Drive + vehicle Handling (tail)
+versus Wits + Composure + equipment (subject)
+Action:Contested
+Tailing is a stealthy form of pursuit in which the pursuer attempts to follow a subject without being detected.
+Rather than depending on fast reflexes to stay close, the
+pursuer engages in a game of alertness with his unsuspecting opponent, hanging back just far enough to keep the
+subject in sight while blending in with surrounding traffic.
+When your character attempts to tail a vehicle, make
+a Wits + Drive + equipment roll. In this case, “equipment” is equal to the vehicle’s Handling (see p. 146) as
+your character speeds up, slows down or makes turns to
+avoid being spotted.
+Tailing is a contested action. A Wits + Composure
+roll is made for the subject. His equipment modifier is not
+based on the maneuverability of his own vehicle, but on
+PHYSICAL SKILLS- DRIVE
+Sitori Jardine (free product) 1
+Chapter 3- SKILLS
+72
+the ostentation or obviousness of the pursuer’s vehicle. If
+the tail drives a blue sedan, the subject probably gets no
+bonus because the pursuing car blends in with all the other
+vehicles on the road. A tailing motorcycle offers a +1 bonus, a tailing sports car offers a +3, and a tailing 18-wheeler
+or Porsche offers a +4 or +5 bonus. A tailing vehicle as
+subtle as an airplane flying overhead probably eludes a
+subject altogether or imposes a -5 penalty to recognize
+the aerial shadow.
+The contested roll is made when the tail begins. If
+the subject wins he notices he’s being followed and can
+attempt to escape (in which case it becomes a pursuit; see
+the above task). If the tail wins, he follows the subject
+without being detected. If this is a short drive, one roll
+may be sufficient. For longer rides, the Storyteller may
+call for a roll every 10 miles or so.
+Roll Results
+Dramatic Failure:Your character’s divided attention
+results in a crash, damaging or wrecking the car and potentially injuring its occupants. Alternately, a low-speed
+(or low-intensity) tail might end with your character trying to take a shortcut and finding his path blocked by a
+delivery truck or other obstacle.
+Failure:If the pursuer’s roll fails, he has not maintained enough distance from his subject and has been
+noticed. If the subject chooses to run for it the task becomes a pursuit. If the subject’s roll fails he does not notice the strange car pacing his every move. If both fail, reroll.
+Success:If the pursuer wins the contested action, he
+remains hidden from his subject and can follow for up to
+10 miles without requiring another contested roll. If the
+subject wins he sees that he’s being followed and can attempt to escape.
+If both sides get an equal number of successes, the
+pursuer doesn’t give himself away completely, but he’s
+gotten close enough to arouse the subject’s suspicion. Make
+a second contested roll to decide the situation.
+Exceptional Success: If the pursuer wins the contested action with five or more successes on his roll, he
+has found the perfect distance and position in traffic to
+remain undetected for the duration of the trip. No further
+rolls are required until the Storyteller deems otherwise. If
+the subject wins the contested action with a similar roll,
+he not only detects that he’s being tailed but he gets a
+good look at his pursuer.
+Suggested Equipment: Handling of the tailing car;
+see above for the obviousness of the tailing car; binoculars (+1), second tail car (+3)
+Possible Penalties:Cracked (-1) or missing (-3) rearview mirrors, intervening traffic (-1 to -3), bad weather (-1 to -3), twisting roads (-2)
+
+#Bypass Security System
+Dice Pool: Dexterity + Larceny + equipment
+Action:Extended (5-15 successes, depending on the
+complexity of the system; each roll represents a turn —
+three seconds — of work)
+Bypassing a security system can be as simple as shorting out two contacts on a window frame, or as complex as
+opening a junction box and making major modifications
+to a sophisticated circuit board, all in a matter of seconds.
+The task is an extended action, with the required number
+of successes depending on the complexity of the system in
+question. A basic alarm might demand five, while a standard home-security system might require as many as 10.
+Sophisticated corporate or government security systems
+might require 15 or more successes to disarm, at the
+Storyteller’s discretion. Using specialized tools can add
+modifiers to the roll.
+Most home and corporate alarm systems have a warning period of 30 or 45 seconds to allow for an authorized
+user to disarm the system before triggering an alarm. Thus,
+a would-be burglar only has 10 or 15 turns to locate and
+disarm the system before the alarm goes off.
+Example:Sasha picks the lock on the councilman’s
+back door and slips inside. The house’s security system beeps
+a warning and Sasha heads for the main junction box in the
+basement. It takes three turns to dash down the stairs and
+find the box, leaving only seven turns before the alarm
+activates. Sasha’s Dexterity is 4 and her Larceny is 2, and
+she has a set of electronics tools that give her a +1 modifier.
+A standard home-security system requires 10 successes to
+disarm, and the first roll is 2, 3, 5, 6, 8, 8, 9 — three
+successes earned, seven to go. The second roll earns no
+successes. The third roll is 3, 5, 6, 7, 8, 9, 9 — three more
+successes that bring her total to six. The fourth roll is 1, 2,
+4, 7, 7, 8, 9 — two successes. With time running out, the
+fifth roll is 2, 3, 3, 4, 4, 8, 9 — two successes and enough
+to disarm the system, six seconds (two turns) before the
+alarm activates.
+Roll Results
+Dramatic Failure:Your character not only fails to
+disarm the system, he accidentally sets it off early. In the
+case of sophisticated alarm systems, this might be a silent
+alarm that alerts authorities without tipping off the intruder.
+Failure:Your character fails to make any headway in
+disarming the security system. Is it the red wire or the
+yellow one?
+Success:Your character makes progress in disarming
+the system (apply successes rolled toward the total needed).
+Exceptional Success: Your character is well on his
+way to bypassing the system.
+Suggested Equipment: Electronics toolkit (+1), mirrors, conductive tape and aerosol spray (+1), alarm schematics (+2), portable decryption gear (+3)
+Possible Penalties:Lack of tools (-1 to -5), unfamiliarity with system (-1), state-of-the-art system (-2), charging guard dogs (-2), darkness (-3)
+
+#Lockpicking
+Dice Pool: Dexterity + Larceny + equipment
+Action:Extended (2-12+ successes required, depending on the sophistication of the lock; one roll represents
+one turn — three seconds — of work)
+Picking a lock is one of the most common applications of Larceny, and requires nothing more than a basic
+set of tools, a steady hand and a few moments’ concentraSitori Jardine (free product) 1
+75
+tion. The task is an extended action, requiring a number
+of successes based on the toughness and sophistication of
+the lock. A suitcase or diary lock might require two or
+three successes, while a padlock or a house lock might
+demand anywhere from four to seven. Combination locks
+could require anywhere from eight to 12. Using specialized lockpicking tools (as opposed to improvised picks)
+can add a bonus to the roll.
+Example:Once inside the house, Sasha finds the
+councilman’s study and locates his wall safe. The safe has a
+basic combination lock requiring eight successes to pick.
+Sasha’s Dexterity is 4 and her Larceny is 2, and she has a set
+of safecracking tools that add a +1 modifier. The first roll is
+1, 2, 6, 8, 8, 8, 9 — she is halfway there with four
+successes. The second roll is 1, 2, 3, 8, 8, 8, 9. The last
+tumbler clicks into place and the small door swings open after
+only two turns (six seconds).
+Roll Results
+Dramatic Failure:Not only has your character failed
+to make any progress with the lock, a mishap causes him
+to break one or more tools. Any previous successes earned
+are lost. He may start again from scratch with the
+Storyteller’s permission.
+Failure:Your character makes no headway against
+the lock.
+Success:Your character makes progress toward picking the lock (apply successes toward the total needed).
+Exceptional Success: Your character is well on his
+way to picking the lock.
+Suggested Equipment: Prybar (+1), basic lockpicks
+(+1), lockpick gun (+2), electronic keypad decryptor (+3)
+Possible Penalties:Lack of tools (-1 to -5), darkness
+(-3), someone approaching (-2)
+
+#Sleight of Hand
+Dice Pool: Dexterity + Larceny + equipment versus
+Wits + Composure or Wits + Larceny
+Action:Contested
+Your character picks a pocket. Palms an item. Slips
+something inside his clothing or bag — all without being
+noticed, or so he hopes. Your character could develop this
+skill for unscrupulous reasons, or because he’s a magician
+or performer. Or maybe he runs an “honest” shell game
+on the street. Regardless of the rationale, your character
+can take things or move things without attracting attention. They typically need to be Size 1 or less — he can’t
+make a piano disappear with a flick of the wrist. But he
+might make an artifact disappear from a museum showing
+with the right timing and a convenient distraction.
+Roll your character’s Dexterity + Larceny + equipment versus a victim or possible observer’s Wits + Composure or Wits + Larceny (whichever makes for the larger
+pool). The Storyteller decides how many people could be
+possible observers, or just makes a single collective roll
+for a crowd. If you get the most successes, your character
+grabs, produces or hides something. If the victim or observer gets as many or more successes, she’s wise to your
+character’s efforts. She could call foul, call for the police
+or call your character out privately and insist on a cut of
+whatever scheme he’s running.
+Roll Results
+Dramatic Failure:Your character utterly bungles the
+effort. He attracts everyone’s attention. He trips, manhandles his intended victim or sets off an alarm.
+Failure:The effort to grab, move or hide something
+goes incomplete. The item remains where it was or is still
+exposed in your character’s hands. The Storyteller could
+allow one or more successive attempts (see p. 132) before
+your character draws attention to himself.
+Success:Your character steals, palms or moves an
+item as planned, without notice.
+Exceptional Success: The item disappears with none
+the wiser. Your character’s effort is so seamless, in fact,
+that turns, minutes or hours pass before anyone notices
+that something is missing or has been relocated. The Storyteller decides how much time is appropriate based on
+the general attention dedicated to the item in question.
+Suggested Equipment: Crowded area (+1), few possible observers (+1), timely distraction (+1 to +3), partner to whom to transfer an item (+2)
+Possible Penalties:Subject wears tight clothes (-1),
+security system (-3 to -5), public attention on item (-3)
+
+#Shadowing
+Dice Pool: Wits + Stealth + equipment (shadow)
+versus Wits + Composure + equipment (subject)
+Action:Contested
+Shadowing occurs when a character attempts to follow a subject without being detected. Rather than depending on fast reflexes to stay close, the pursuer engages in a
+game with his unsuspecting opponent, hanging back just
+far enough to keep the subject in sight while remaining
+unnoticed in the crowd.
+When your character attempts to shadow a person,
+make a contested roll against the subject’s Wits + Composure + equipment. If the subject wins, he notices he’s
+being followed. If the pursuer wins, he follows the subject
+without being detected. If this is a short walk, one roll
+may be sufficient. The Storyteller may call for a roll every
+half-mile for long trips.
+If your character acquires a shadow, the Storyteller
+may secretly make Wits + Composure rolls on your behalf. If the rolls fail, neither you nor your character should
+know that something is amiss.
+Roll Results
+Dramatic Failure:Your shadowing character does
+something to call attention to himself. Perhaps he crosses
+the street and into the path of a car. Your character is
+noticed automatically. If the subject of the tail suffers a
+dramatic failure, he is completely at ease. No further rolls
+are made to detect the shadow until the Storyteller rules
+otherwise.
+Failure:If the shadow’s roll fails, he does not maintain enough distance from his subject and is probably noticed. If the subject’s roll fails, he does not notice anyone
+dogging his every move. If both fail, re-roll.
+Success:If the pursuer wins the contested action, he
+remains hidden from his subject and can follow up to a
+half-mile without requiring another contested roll. If the
+subject wins, he sees that he’s being followed and can attempt to escape.
+If both sides get the same number of successes, the
+pursuer doesn’t give himself away completely, but gets close
+enough to arouse the subject’s suspicion. Make a second
+contested roll to resolve the situation.
+Exceptional Success: If the pursuer wins the contested action with five or more successes, he has found
+the perfect distance and cover to remain undetected for
+the duration of the trip. No further rolls are required regardless of the length of the walk, or until the Storyteller
+rules otherwise. If the subject wins the contested action
+with five or more successes, he not only detects that he’s
+being tailed, he gets a good look at his pursuer.
+Suggested Equipment: For shadow: Athletic shoes
+(+1), nondescript clothes (+1), small binoculars (+2),
+additional shadowers (+3); For subject: Shadow wears
+gaudy clothes (+1 to +3), tipped off (+4)
+Possible Penalties:For shadow: Unfamiliar subject
+(-1), poor visibility (-1); For subject: Crowded area (-1 to
+-3), poor visibility (-1 to -3)
+
+#Foraging
+Dice Pool: Wits + Survival + equipment
+Action:Extended (five successes required; one roll represents one hour of searching)
+Foraging for food and water is an extended
+action. Each roll represents an hour of diligent work.
+Five successes are required to gather enough food and
+water to sustain one person for a single day. One success still provides some amount of food and water, but
+fewer than five means that your character becomes
+progressively malnourished and vulnerable to deprivation (p. 175) and disease (p. 176).
+Roll Results
+Dramatic Failure:Your character makes an incorrect assumption regarding a food or water source,
+collecting plants or unclean water that makes him ill.
+Failure:Your character does not locate any sources
+of food or water in an hour of careful
+searching.
+Success:Your character is
+on his way to gathering sufficient food to fulfill his needs
+for the day (apply successes to the total
+needed).
+Exceptional Success:
+Your character finds a small
+windfall of food or water that fulfills his
+daily needs — and even provides some
+sustenance for the following day.
+Suggested Equipment: Survival
+knife (+1), water purification tablets
+(+1), field survival guide (+2), field survival kit (+3)
+Possible Penalties: Arid locale (-2), frozen locale (-2), foreign environment (-1 to -3),
+lack of tools (-2)
+
+#Animal Training
+Dice Pool: Composure + Animal Ken + equipment
+(trainer) versus Stamina + Resolve (animal)
+Action:Extended and contested (the task demands
+a number of successes equal to the opponent’s Willpower;
+each roll represents one day of training)
+Training an animal involves communicating a need,
+encouraging a type of behavior and/or discouraging unwanted behavior. It’s an extended and contested process.
+Make Composure + Animal Ken + equipment rolls for
+the trainer. Roll Stamina + Resolve for the animal. The
+number of successes that each participant seeks is equal
+to the other’s Willpower dots. Thus, if a trainer has 5
+Willpower and the animal has 3, the interrogator wins if
+he accumulates three successes first. The animal wins if it
+accumulates five successes first. The winner breaks the
+opponent’s will to continue training or to resist the desired behavior. The trainer’s roll can be modified by equipment such as rewards (food) offered and abuse inflicted.
+Rolls made for the animal might receive a bonus based on
+how feral it is. A cat brought in from the wild might get a
++3 bonus, for example. Likewise, non-mammals (lizards,
+birds) can be harder to train than mammals, imposing a
+penalty on a trainer’s rolls (say, -1 to -3). Some animals
+such as wolverines are so fierce that they simply can’t be
+trained.
+Only one trick or type of behavior (house breaking,
+“attack,” or retrieving a certain item whenever it’s thrown)
+can be taught per extended and contested series of rolls.
+Alternatively, a few minor tricks such as “sit,” “shake” and
+“stay” can be combined in a single series of rolls.
+Should an extended and contested training session
+end in a tie, neither side applies its will over the other.
+The process must start again from scratch if the trick is to
+be learned.
+If training for a type of behavior is interrupted for a
+number of consecutive days in excess of the animal’s Intelligence, all successes gained thus far are lost. Training
+for that trick must start again from scratch. Animals with
+zero Intelligence cannot be trained at all.
+An animal can be taught a number of tricks (can
+undergo a separate number of training sessions) equal to
+its Wits.
+Example:Raymond has a pet raven that he seeks to
+train to fly away and return to him on command, which the
+Storyteller decides is one trick. Raymond has 4 Composure,
+3 Animal Ken and 6 Willpower. The bird has 2 Stamina, 4
+Resolve and 7 Willpower. Raymond needs to get seven
+successes before six are rolled for the bird. The process
+begins, but is interrupted for two days in which no training
+occurs at all. Those two days exceed the bird’s 1 Intelligence,
+so the training process has to begin again from scratch.
+For animals’ traits, see p. 202.
+Even after an animal has been trained in a behavior
+or trick, it does not necessarily perform the action automatically on command. You need to make a successful
+Manipulation + Animal Ken roll for the animal to respond as intended. You also get a bonus on the roll equal
+to the animal’s Wits.
+Roll Results
+Dramatic Failure:The regimen fails completely and
+the animal resists the intended behavior. A whole new
+training session must get underway for the intended trick.
+If animal abuse is involved, the creature may attack and
+try to escape its handler.
+Failure:Your character fails to make any progress on
+the current trick.
+Success:Your character makes progress in conditioning the animal’s behavior.
+Exceptional Success: Your character makes dramatic
+progress with the creature.
+Suggested Equipment: Physical abuse (+1), rewards
+or treats (+2)
+Possible Penalties:Training non-mammal (-1 to -3), animal already been trained poorly (-1), animal distracted by environment (-2)
+
+#Interrogation
+Dice Pool: Wits + Intimidation + equipment (interrogator) versus Stamina + Resolve (subject)
+Action:Extended and contested (the task demands
+a number of successes equal to the subject’s Willpower;
+each roll represents one hour of interrogation)
+Interrogation involves wearing down a subject’s resistance until he or she is incapable of concealing information. It’s an extended and contested process. Make Wits
++ Intimidation + equipment rolls for the interrogator. Roll
+Stamina + Resolve for the subject. The number of successes that each participant seeks is equal to his opponent’s
+Willpower dots. Thus, if an interrogator has 5 Willpower
+and his subject has 3, the interrogator wins if he accumulates three successes first, and the subject wins if he accumulates five successes first. The winner breaks the
+opponent’s will to continue asking questions or to resist
+any longer. The interrogator’s roll can be modified by
+equipment such as torture instruments. If the subject is
+allowed sleep between interview sessions, rolls are made
+for him normally. If he’s denied normal sleep, he suffers a
+cumulative -1 penalty for each night of sleep that he misses.
+Thus, he’s at -1 after the first night, -2 after the second,
+and so on.
+Example:Wilson has arrested a suspect in the recent
+“Vampire Killer” murders and interrogates him in hopes that
+his alibi will fall apart. Wilson’s Wits is 4, his Intimidation is
+2, and he uses the department’s bleak interrogation room,
+designed to make subjects feel isolated, which provides a +1
+modifier. Wilson’s Willpower is 4. The suspect’s Stamina +
+Resolve dice pool is five, and he has a 5 Willpower. Wilson’s
+first roll produces a 4, 4, 5, 6, 7, 8 and 9 (two successes),
+while the suspect’s roll is 2, 3, 4, 6 and 8 (one success). An
+hour passes. Both need three more successes to break the
+other, but can Wilson win before the man’s lawyer arrives?
+If participants’ accumulated successes meet their targets simultaneously, the interrogator fails to learn what
+he wants and the process must start over again from
+scratch.
+Roll Results
+Dramatic Failure:Your character’s system of threats,
+violence and deprivation falls apart, reinforcing the
+subject’s resistance. She cannot be broken by your character at this time. An interrogation subject who suffers a
+dramatic failure collapses completely and tells everything
+she knows.
+Failure:Your character fails to make any headway
+against his opponent, either as interrogator or subject.
+SOCIAL SKILLS-EXPRESSION-INTIMIDATION
+Sitori Jardine (free product) 1
+Chapter 3- SKILLS
+82
+Success:Your character makes progress against his
+opponent.
+Exceptional Success: Your character makes dramatic
+progress with his opponent.
+Suggested Equipment: For interrogator: Law enforcement or government credentials (+1), interrogation room
+(+1), torture implements (+2), interrogation drugs (+3);
+For subject: Airtight alibi (+3), lawyer on the way (+2),
+important cause (+3)
+Possible Penalties:For interrogator: Language barrier (-2 to -3), lack of evidence against subject (-3); For
+subject: Denied food and/or water for extended period (-3), loved ones threatened (-1), loved ones harmed (-3)
+
+#Cutting a Deal
+Dice Pool: Manipulation + Persuasion + equipment
+versus Manipulation + Persuasion + equipment
+Action:Extended and contested (3-10+ successes
+required; each roll represents an hour of negotiation)
+Negotiating terms for legally binding arrangements
+such as contracts, settlements or treaties is a long and complex process, with both parties fighting hard to gain every
+possible advantage. The Storyteller must assign a required
+number of successes for negotiations as a whole, relative
+to the complexity of the terms under discussion. An entertainment contract might require only three successes,
+while a class-action lawsuit might require six. Major negotiations, such as cease-fires between nations or the drawing of national borders could demand as many as 10 or
+more successes to resolve.
+Once the success value has been determined, both
+parties lay out their positions and the rolling begins. Make
+a contested Manipulation + Persuasion + equipment (if
+any) roll between the leaders of the two parties. Successes
+earned are added to their respective totals. Discussions
+end when one party hits the success value set. That participant is the winner, but must make some concessions
+to the competitor based on the difference between the
+two parties’ success totals. If the winner has three times
+the competitor’s successes, no concessions are required. If
+the winner has double the competitor’s successes, the winner must concede to a quarter of the competitor’s demands.
+If the winner has only a simple majority of successes, he
+must concede to half of the competitor’s demands. The
+winner of negotiations gets to choose which concessions
+to make, but the Storyteller is the final arbiter over every
+aspect of the process.
+Example:Gwen negotiates a new contract with her
+employer, Carstairs Industries. She wants a pay increase,
+better benefits, her own parking spot and a key to the
+executive spa. The company wants to give her none of these
+things, declaring that she should be happy with her current
+contract. The Storyteller determines that the negotiation
+requires five successes to settle. Gwen’s Manipulation is 4
+and her Persuasion is 3. She has no pertinent equipment to
+help her in the talks. The company rep’s Manipulation is 3
+and his Persuasion is 3. He has no equipment, either. Six
+rolls (and six hours) later, Gwen wins the negotiation with
+five successes to Carstairs’ two. Since Gwen’s total is more
+than double the company’s, she has to concede to a quarter
+of the company’s demands. Since Carstairs doesn’t want her
+to have anything, a concession in this case means giving up
+one of her four objectives. After some consideration, Gwen
+declares that she’ll give up her claim to the employee parking
+space and take the money, the benefits and access to the spa.
+If opponents achieve their required number of successes simultaneously, they remain at loggerheads. Both
+must conceded at least one point of contention to the
+other if talks are to continue. The process then begins
+again from scratch.
+Sitori Jardine (free product) 1
+83
+Roll Results
+Dramatic Failure: Your character not only fails to
+make headway against her competitor, she has to make
+some concessions or the talks will break down altogether.
+Your character loses one success from her accumulated
+total.
+Failure:Your character makes no headway against
+her competitor. Time to try a different tack.
+Success:Your character stakes out a significant position against the competition that may be difficult to overcome.
+Exceptional Success: A bold move on your character’s
+part places her in a highly advantageous position that is
+hard for the opposition to overcome.
+Suggested Equipment: Access to legal texts (+1),
+pertinent background information on the opposing party
+(+1), legal credentials (+2), resources to facilitate bribes,
+kickbacks or fund luxury junkets (+3), evidence to blackmail the opposition (+1 to +5)
+Possible Penalties:Lack of research (-1), language
+barrier (-2 to -5), lack of negotiating chips (-4)
+
+#Fast-Talk
+Dice Pool: Manipulation + Persuasion + equipment
+(talker) versus Composure + Empathy or Subterfuge (subject)
+Action:Contested
+Your character needs to convince another person to
+perform a service, to look the other way or to simply be
+distracted for a few moments’ time. Or maybe he just wants
+to convince some thugs to let him go. Rather than cook
+up an elaborate lie or ruse, he hurls explanations, excuses,
+pleas and/or trivia at his target in hopes of bewildering
+her. The intent is to achieve his intended result in the
+confusion.
+Fast-talk is a contested action. Roll Manipulation +
+Persuasion + equipment for your character, against the
+target’s Composure + Empathy or Subterfuge. (Empathy
+if your character preys upon the subject’s feelings, Subterfuge if he preys upon her intellect.) If your character wins,
+the subject performs the intended minor chore, or is otherwise tricked into doing what your character wants. If
+the target wins, she sees through the bluster and refuses to
+comply or needs further convincing (see “Cutting a Deal,”
+above, at this point). If the two tie, the subject is in a
+daze, not convinced to do anything yet too confused not
+to listen. In the case of a failed or tied effort, your character can make a successive attempt (see p. 132) if the Storyteller agrees that the subject can or will still listen.
+Fast-talk can be used to achieve only harmless favors
+or results, such as gaining entrance to a club, allowing
+your character to “take a closer look” at the diamonds
+that should be kept under glass, or distracting a guard while
+partners sneak by. It cannot be used to convince subjects
+to perform actions that are patently dangerous or harmful. The target still retains her common sense.
+Roll Results
+Dramatic Failure:Not only does your character fail
+to convince or distract the subject, his clumsy effort turns
+her against him or she is alerted to trouble. No successive
+attempts are allowed and the intended target may call security.
+Failure:Your character has no success in getting the
+subject to listen to him.
+Success:Your character’s blather lulls the target into
+a daze of compliance.
+Exceptional Success: Your character has the subject
+eating out of his hand. She hangs on every nonsensical
+word and may be distracted for minutes or could be convinced to leave the room entirely.
+Suggested Equipment: Convincing clothing (+1),
+cash or expensive jewelry (+1), a genuine or fake ID (+2)
+Possible Penalties:Inappropriate appearance (-1 to
+-3), lack of bribery items (-1), subject hard of hearing (-3)
+
+#Oratory
+Dice Pool: Presence + Persuasion + equipment versus highest Resolve + Composure of audience
+Action:Contested
+Sometimes your character is called on to convince a
+crowd of people to accept his assertions, calling for a rousing, compelling speech. This is a contested action. Roll
+Presence + Persuasion + equipment versus the highest
+Resolve + Composure present in the audience. If the orator wins, he convinces the crowd. If he fails, one or two
+people believe, but the group on the whole is unconvinced.
+A tie indicates that the group is willing to listen, but remains unconvinced. In the case of a failed or tied effort,
+your character can make a successive attempt (see p. 132)
+if the Storyteller agrees that the crowd is willing to listen.
+Note that oratory conducted to convince a crowd to
+do what your character wants is different from a performance. The former is based on Persuasion, because your
+character tries to sway listeners, while the latter is based
+on Expression, because your character simply seeks to entertain or inform an audience.
+Roll Results
+Dramatic Failure:Not only does your character fail
+to persuade the crowd, his clumsy effort turns the mob
+against him. No successive attempts are allowed and the
+crowd could try to physically silence him.
+Failure:Your character has no success in getting the
+crowd to listen to him.
+Success:Your character’s speech convinces the crowd
+to accept his assertions.
+Exceptional Success: Your character has the crowd
+eating out of his hand. They accept whatever he says.
+Suggested Equipment: Intimidating uniform or expensive suit (+1), megaphone (+1), professional sound
+and video system (+2), state-of-the-art media suite (+3)
+Possible Penalties:Audience distracted (-1), audience aggressive (-3), unimpressive or inappropriate appearance (-1 to -3), laryngitis (-5)
+
+#Seduction
+Dice Pool: Presence + Persuasion + equipment or
+Manipulation + Persuasion + equipment (seducer) versus
+Wits + Composure + equipment (subject)
+Action:Contested and/or extended (the extended
+and contested part of the task requires a number of successes equal to double the seducer’s Presence or double
+the subject’s Resolve; one roll equals 10 minutes of banter)
+Your character seeks to ply his allure, charm and sheer
+magnetism to make someone else compliant to his will,
+typically to agree to a sexual tryst. Or your character’s aim
+might be some goal short of a physical encounter, such as
+getting a person’s phone number, learning his or her address, or convincing a subject to do a favor with the implicit reward of romance. The same forms of coercion
+might also be applied on your character by inhuman beings, to make him agreeable to a private rendezvous that
+could mean his life.
+The act of seduction has two basic elements, physical and social, and those elements tend to indicate stages
+of the overall process. The first stage is based largely on
+physical attraction. Your character plies his appearance
+and demeanor to win the subject’s attention and interest.
+This phase is typically non-verbal. Presence + Persuasion
++ equipment is rolled in a contested action against the
+subject’s Wits + Composure + equipment. Appearances
+are important, so possessing the Striking Looks Merit
+(p. 117) offers a bonus to the roll for the seducer. If the
+seducer gets more successes, he gains the subject’s interest. If successes tie or the seducer gets fewer, the subject is
+disinterested or needs further convincing (see below).
+“Equipment” in the contested roll might include alluring clothing (+1), an appealing perfume or cologne (+1)
+or an offered drink (+1) for the seducer. The subject might
+have an existing significant other (+1 to +3), a headache
+(+1) or be in a really bad mood (+1) for his or her roll.
+The social aspect of the seduction begins after the
+initial contested action is complete. The social aspect involves dialogue and interaction between participants. In
+this stage, the seducer’s Manipulation + Persuasion +
+equipment is rolled against the subject’s Wits + Composure + equipment in an extended and contested task. Each
+roll represents about 10 minutes of time. The winner of
+the previous contested roll also gains bonus dice equal to
+the successes rolled before. So, if your character seeks to
+seduce a woman at a bar and you win the initial contested
+roll with three successes to the woman’s two, you add three
+dice to your Manipulation + Persuasion rolls in the social
+part of the process. “Equipment” bonuses at this stage
+might include a good pick-up line (+1), an excellent line
+(+2), a mutual acquaintance (+1) or suggestive physical
+contact (+2) for the seducer. Those listed above can be
+applied again for the subject.
+The required number of successes for the seducer
+equals twice the subject’s Resolve. The required number
+of successes for the subject equals twice the aggressor’s
+Presence. While the process has become much more interactive, the relative attractiveness of the aggressor is still
+encouraging or discouraging. Whoever accumulates the
+required number of successes first either convinces the
+other to cooperate or refuses the proposal. Once a wouldbe seducer is rebuked, no other attempts can be made to
+charm the same subject in the same scene.
+If the seducer loses the initial contested roll to determine physical interest, he can still try to engage in social
+interaction to sway the subject’s opinion. He’s on thin
+ice, though. The subject gains the number of successes
+rolled for her in the contested action as a bonus to her
+rolls in the extended and contested process. So, if in the
+previous example the seducer had acquired two successes
+and the subject had acquired three, she would have gone
+unimpressed with his looks. If he had still tried to engage
+her socially, her Wits + Composure rolls would have received a +3 bonus to resist his charm.
+Example:Now that James is dead, he has discovered
+that he possesses an unearthly air that attracts almost anyone
+he desires. Little do they know that he really desires their
+life’s breath. Hungry for more, James turns his allure on a
+woman in a mall. James has 5 Presence and 3 Persuasion.
+He uses no particular props beyond his own bearing to get
+her attention. The woman has 2 Wits and 2 Composure and
+is happily married (which the Storyteller decides is worth a
++3 bonus). James’ eight-dice pool gets four successes. The
+woman’s seven-dice pool gets two successes. Despite herself,
+the woman is physically interested in James.
+James’ four successes on the first roll give him a +4
+bonus in the social stage of the seduction. He also has 1
+Manipulation and 3 Persuasion, but the Storyteller decrees
+that his days spent without washing impose a -2 penalty, for
+a total of six dice in his pool. Once again, the woman has a
+Wits + Composure of four, with a +3 bonus for being
+happily married. The woman’s Resolve is 3. James therefore
+needs a total of six successes to win (twice the woman’s
+Resolve), and the woman needs 10 (twice James’ Presence).
+After four rolls (40 minutes of banter), the woman
+accumulates 10 successes while James has only five. She
+soon wonders what she saw in him. Suffering pangs of guilt
+for even considering an indiscretion, she quickly leaves.
+James must seek prey elsewhere.
+Example:A rival investigator wants to learn what
+Royce has discovered thus far on a case. She decides to
+seduce him for whatever information she can get, but has no
+intention of actually participating in a physical encounter.
+Royce proves disinterested in the rival physically. He gets one
+success to her none in the initial contested roll. She doesn’t
+let that stop her, though. She becomes more aggressive and
+tries to tease Royce into confessing what he knows in return
+for “favors.”
+Both parties arrive at their required number of successes
+simultaneously in the extended and contested part of the
+process. The Storyteller rules that Royce sees through the
+ruse, confesses nothing and expects nothing, and sends his
+rival packing. Had Royce lost the extended and contested
+Sitori Jardine (free product) 1
+85
+task, the Storyteller was prepared for him to reveal one piece
+of information for every point that Royce was short of his
+required successes. So, if he had lost the competition and still
+needed three more successes, he would have revealed three
+pieces of information. The fact that he would have gotten
+nothing in return would have been learned too late.
+For most human interaction, seduction involves both
+verbal and non-verbal interaction. (Thus, both Presence
++ Persuasion and Manipulation + Persuasion rolls for the
+aggressor.) More instinct-driven seduction, such as that
+between animalistic or bestial beings, can be based on
+physical attraction alone. In those cases, the Storyteller
+may rule that Presence + Persuasion versus Wits + Composure rolls are made in an extended and contested action. There is no two-step process. There is still a contest
+of attraction and will, but it’s based purely on demeanor
+rather than dialogue. In this case, each participant still
+seeks a number of successes equal to double the opponent’s
+Resolve or Presence.
+Roll Results
+Dramatic Failure:Your character looks awkward,
+clumsy or foolish, or puts his foot in his mouth. He’s likely
+to be laughed at publicly, gets a drink thrown in his face,
+or draws the attention of an angry boyfriend or bouncer.
+No one else is willing to pay your character sexual interest for the remainder of the scene.
+Failure:Your character kills time with the object of
+his attention, but gains little ground. She is not yet encouraged or discouraged in him.
+Success:Your character gathers some interest in his
+subject.
+Exceptional Success: Your character has his subjected
+riveted, maintaining her attention with his every move
+or word.
+Suggested Equipment: For seducer — alluring clothes
+(+1), an appealing perfume or cologne (+1), an offered
+drink (+1), a good pick-up line (+1), an excellent line
+(+2), a mutual acquaintance (+1), suggestive physical
+contact (+2); For subject — significant other (+1 to +3),
+a headache (+1), bad mood (+1)
+Possible Penalties:For seducer — ugly or inappropriate clothes (-1), bad personal hygiene (-2), unkempt
+appearance (-1); For subject — drunk (-2), sexually frustrated (-1), recent break-up (-2)
+
+#Carousing
+Dice Pool: Manipulation + Socialize + equipment
+(carouser) versus Composure + Empathy (subject)
+Action:Extended and contested (the task requires a
+number of successes equal to double the highest Stamina
+among the character’s acquaintances; one roll equals one
+hour of carrying on)
+Sometimes the best way to uncover someone’s secrets
+or to secure their help is to show them a good time on the
+town — provided your character can keep up with his
+intended victim. Carousing is an extended and contested
+action. Roll Manipulation + Socialize + equipment for
+your character. The subject’s Composure + Empathy is
+rolled in competition (or roll the highest dice pool in a
+group of companions). The side that accumulates a number of successes equal to double the opponent’s Stamina
+wins the contest. If your character wins, the victim is at
+his mercy and agrees to any reasonable request your character makes. If your character loses, he’s left in the dust by
+his hard-drinking buddies and can’t try again until the
+following night — provided he doesn’t wind up in jail
+first.
+SOCIAL SKILLS-SOCIALIZE
+Sitori Jardine (free product) 1
+Chapter 3- SKILLS
+86
+Example:Benoit is eager to uncover the secret behind
+Mike’s financial success, and takes him out for a night on the
+town, hoping that a few beers will loosen Mike’s tongue.
+Benoit’s Manipulation is 3 and Socialize is 3, but he has no
+special equipment to aid him in his endeavor. Mike’s
+Composure is 2 and Empathy is 2. Benoit’s Stamina is 3
+and Mike’s Stamina is 3, so they begin on an even footing,
+each requiring six successes to win. On the first roll, Benoit
+gets three successes and Mike gets one. On the next roll,
+Benoit gets one success while Mike gets two. On the third
+roll, Benoit gets three successes and Mike gets only two —
+Benoit wins with seven successes to Mike’s five. Mike tells
+Benoit (and anyone else within earshot) everything about his
+financial dealings. Mike will regret it the next day — if he
+remembers at all.
+If both sides achieve the required number of success
+simultaneously, no advantages are gained and the carouser’s
+efforts go for naught — this time. Another night on the
+town starts the process all over again.
+Roll Results
+Dramatic Failure:Your character can’t hold his liquor nearly as well as he thought. He loses the contest
+immediately.
+Failure:Your character keeps up with his partying
+companions but doesn’t gain the upper hand over them.
+Success:Your character hangs tough and dares his
+companions to keep up.
+Exceptional Success: Your character pulls out all the
+stops, leaving his companions reeling in his wake.
+Suggested Equipment: High-limit credit cards (+1),
+running tab at a bar (+1), expensive liquor (+2), knowing attractive bar patrons (+2), various illegal drugs (+3)
+Possible Penalties:Poor-quality booze (-1), ugly bar
+patrons (-1), unappealing bar (-2), limited funds (-3), bad
+music (-3)
+
+#Working the Black Market
+Dice Pool: Manipulation + Streetwise + equipment
+Action:Extended (2-10 success; each roll represents
+one day of searching the street)
+Black markets thrive in every city across the globe,
+making money from illegal property such as weapons and
+stolen merchandise. Practically anything can be had on
+the black market if a buyer has enough money and time
+to find the right contacts and to secure a deal.
+When your character wants to turn to the black market to buy illegal items (or unload stolen goods), the Storyteller first determines how many successes are necessary
+to complete the task. That number depends on the size or
+value of the items sought. Buying or selling handguns
+might require only three successes, while dealing in stolen cars might demand six. Highly illegal, hard-to-find
+items such as military hardware might require eight or more
+successes. A successful series of rolls means your character
+finds someone able to trade, and a meeting is arranged.
+All your character has to do is show up with the money
+(or items to sell) and the deal is done.
+Example:Adam is on the run and needs a car to get
+out of town. He knows a few people on the street who deal
+in stolen cars, and starts hitting the corners. Adam’s
+Manipulation is 3 and his Streetwise is 2. He’s got some
+Cuban cigars he can offer as gifts, to grease the wheels of
+industry, which the Storyteller decides is a +1 modifier. The
+Storyteller also determines that it will take six successes to
+arrange the deal. The first roll nets Adam two successes — a
+good start, but a full day passes and he’s got a long way to go
+before he can find someone to sell him a car. Can he do it
+before his luck runs out?
+Sitori Jardine (free product) 1
+87
+Roll Results
+Dramatic Failure:Your character makes a serious
+mistake in choice of associate. He may deal with an undercover cop or federal agent, or the associate plans to
+rob him during the meeting.
+Failure:Your character has no luck finding an associate who can lead him to the goods.
+Success:Your character locates a potential seller or
+buyer and a meeting is arranged.
+Exceptional Success: Your character finds someone
+who will sell him quality materials at a cost below market
+value. It probably means the seller is trying to unload some
+very hot merchandise, but the price is excellent.
+Suggested Equipment: Pager (+1), cell phone (+1),
+gang or prison tattoos (+2), valuable barter items (guns,
+drugs) (+3)
+Possible Penalties: Unfamiliar neighborhood (-1 to
+-3), foreign country (-4), upscale neighborhood (-1), lack
+of phone (-1), inappropriate clothes (-2), “You look like a
+cop” (-3)
+
+#Disguise
+Dice Pool: Wits + Subterfuge + equipment (impersonator) versus Wits + Subterfuge (subject)
+Action:Contested
+If your character attempts to pass himself off as someone else, roll Wits + Subterfuge in a contested action
+against the individual whom he tries to deceive. The subject gets the same roll. If your character has supporting
+documents (passport, driver’s license) that help reinforce
+the disguise, apply a +1 to +3 modifier depending on the
+quality of the documentation (see below). If the subject
+knows or is familiar with the person being impersonated,
+apply a -2 to -5 modifier to your roll (-2 if familiarity is
+passing, -5 if it’s intimate).
+If rolls achieve the same number of successes, re-roll.
+Example:Stoe attempts to bluff his way into a
+corporate office posing as a police officer. Stoe’s Wits is 4
+and Subterfuge is 2. He has a fake badge and ID that look
+good enough to pass a cursory inspection, adding a +2
+modifier to the roll. The secretary at the front desk has a
+Wits of 3 and a Subterfuge of 1. Stoe wins the roll handily
+with three successes to her one, and the secretary hurriedly
+ushers the “detective” into the vice president’s office.
+Roll Results
+Dramatic Failure:Your character’s disguise is badly
+flawed. Not only does the deception fail but the disguise
+must be abandoned altogether before any other attempt
+can be made.
+Failure:Your character does not pass himself off as
+someone else.
+Success:Your character manages to pass himself off
+as someone else.
+Exceptional Success: Your character so thoroughly
+convinces his subject that she actively vouches for his assumed identity.
+Suggested Equipment: Fake ID (+1), hair dye (+1),
+professional makeup kit (+2), full set of fake credentials
+(driver’s license, social security card) (+3)
+Possible Penalties:Lack of tools (-3 to -5), lack of
+appropriate clothes (-2 to -4), rushed disguise (-2), no credentials (-1 to -3)

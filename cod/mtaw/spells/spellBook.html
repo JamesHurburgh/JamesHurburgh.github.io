@@ -23,6 +23,9 @@
 							<!-- Store.js -->
 							<script type="text/javascript" charset="utf8" src="ref/store.min.js"></script> 
 
+							<!-- References.js -->
+							<script type="text/javascript" charset="utf8" src="scripts/references.js"></script>
+
 							<!-- Theme.js -->
 							<script type="text/javascript" charset="utf8" src="scripts/theme.js"></script>
 
@@ -46,6 +49,8 @@
 								<div class="header clearfix">
 									<nav>
 										<ul class="nav nav-pills pull-right">
+											<li role="presentation" class="active"><a href="./merits.html">Merits</a></li>
+											<li role="presentation" class="active"><a href="./traits.html">Traits</a></li>
 											<li role="presentation" class="active"><a href="./spellBook.html">Spell Book</a></li>
 											<li role="presentation" class="active"><a href="./glossary.html">Glossary</a></li>
 										</ul>
@@ -57,30 +62,42 @@
 										<div class="panel panel-default">
 											<div class="panel-heading"><h3>Search \ Filter</h3></div>
 											<div class="panel-body">
-												<div class="col-lg-2">
-													<label for="sourceSelect" class="control-label">Source</label>
-													<select class="form-control input-sm" id="sourceSelect"></select>
+												<div class="col-lg-12">
+													<div class="col-sm-3">
+														<label for="sourceSelect" class="control-label">Source</label>
+														<select class="form-control input-sm" id="sourceSelect"></select>
+													</div>
+													<div class="col-sm-3">
+														<label for="practiceSelect" class="control-label">Practice</label>
+														<select class="form-control input-sm" id="practiceSelect"></select>
+													</div>
+													<div class="col-sm-3">
+														<label for="actionSelect" class="control-label">Action</label>
+														<select class="form-control input-sm" id="actionSelect"></select>
+													</div>	
+													<div class="col-sm-3">
+														<label for="durationSelect" class="control-label">Duration</label>
+														<select class="form-control input-sm" id="durationSelect"></select>
+													</div>
 												</div>
-												<div class="col-lg-2">
-													<label for="practiceSelect" class="control-label">Practice</label>
-													<select class="form-control input-sm" id="practiceSelect"></select>
+												<div class="col-lg-12">
+													<div class="col-sm-3">
+														<label for="aspectSelect" class="control-label">Aspect</label>
+														<select class="form-control input-sm" id="aspectSelect"></select>
+													</div>
+													<div class="col-sm-3">
+														<label for="costSelect" class="control-label">Cost</label>
+														<select class="form-control input-sm" id="costSelect"></select>
+													</div>
+													<div class="col-sm-3">
+														<label for="roteDicePoolSelect" class="control-label">Rote Dice Pool</label>
+														<select class="form-control input-sm" id="roteDicePoolSelect"></select>
+													</div>
+													<div class="col-sm-3">
+														<label for="clearFiltersButton" class="control-label">Options</label>
+														<a href="#" class="btn btn-link" id="clearFiltersButton">Clear filters</a>
+													</div>	
 												</div>
-												<div class="col-lg-2">
-													<label for="actionSelect" class="control-label">Action</label>
-													<select class="form-control input-sm" id="actionSelect"></select>
-												</div>	
-												<div class="col-lg-2">
-													<label for="durationSelect" class="control-label">Duration</label>
-													<select class="form-control input-sm" id="durationSelect"></select>
-												</div>	
-												<div class="col-lg-2">
-													<label for="aspectSelect" class="control-label">Aspect</label>
-													<select class="form-control input-sm" id="aspectSelect"></select>
-												</div>	
-												<div class="col-lg-2">
-													<label for="costSelect" class="control-label">Cost</label>
-													<select class="form-control input-sm" id="costSelect"></select>
-												</div>	
 												<div class="col-lg-12">
 													<label for="arcanaSearch" class="control-label">Arcana Filtering</label>
 													<div id="arcanaSearch">
@@ -91,40 +108,35 @@
 																<option value="exactly">Exactly</option>
 															</select>
 														</div>
-														<div class="col-sm-2">
+														<div class="col-sm-1">
 															<label for="deathDots" class="control-label">Death</label><input class="arcana-search form-control input-sm" type="number" id="deathDots" name="deathDots"  min="0" max="5" value="0"/>
 														</div>
-														<div class="col-sm-2">
+														<div class="col-sm-1">
 															<label for="fateDots" class="control-label">Fate</label><input class="arcana-search form-control input-sm" type="number" id="fateDots" name="fateDots"  min="0" max="5" value="0"/>
 														</div>
-														<div class="col-sm-2">
+														<div class="col-sm-1">
 															<label for="forcesDots" class="control-label">Forces</label><input class="arcana-search form-control input-sm" type="number" id="forcesDots" name="forcesDots"  min="0" max="5" value="0"/>
 														</div>
-														<div class="col-sm-2">
+														<div class="col-sm-1">
 															<label for="lifeDots" class="control-label">Life</label><input class="arcana-search form-control input-sm" type="number" id="lifeDots" name="lifeDots"  min="0" max="5" value="0"/>
 														</div>
-														<div class="col-sm-2">
+														<div class="col-sm-1">
 															<label for="matterDots" class="control-label">Matter</label><input class="arcana-search form-control input-sm" type="number" id="matterDots" name="matterDots"  min="0" max="5" value="0"/>
 														</div>
-														<div class="col-sm-2">
+														<div class="col-sm-1">
 															<label for="mindDots" class="control-label">Mind</label><input class="arcana-search form-control input-sm" type="number" id="mindDots" name="mindDots"  min="0" max="5" value="0"/>
 														</div>
-														<div class="col-sm-2">
+														<div class="col-sm-1">
 															<label for="primeDots" class="control-label">Prime</label><input class="arcana-search form-control input-sm" type="number" id="primeDots" name="primeDots"  min="0" max="5" value="0"/>
 														</div>
-														<div class="col-sm-2">
+														<div class="col-sm-1">
 															<label for="spaceDots" class="control-label">Space</label><input class="arcana-search form-control input-sm" type="number" id="spaceDots" name="spaceDots"  min="0" max="5" value="0"/>
 														</div>
-														<div class="col-sm-2">
+														<div class="col-sm-1">
 															<label for="spiritDots" class="control-label">Spirit</label><input class="arcana-search form-control input-sm" type="number" id="spiritDots" name="spiritDots"  min="0" max="5" value="0"/>
 														</div>
-														<div class="col-sm-2">
+														<div class="col-sm-1">
 															<label for="timeDots" class="control-label">Time</label><input class="arcana-search form-control input-sm" type="number" id="timeDots" name="timeDots"  min="0" max="5" value="0"/>
-														</div>
-														<div class="col-sm-2">
-															<label for="clearFiltersButton" class="control-label">Options</label>
-															<a href="#" class="btn btn-link" id="clearFiltersButton">Clear filters</a>
-															<!--<a href="#" class="btn btn-link" id="refreshDataButton">Refresh data</a>-->
 														</div>
 													</div>
 												</div>	

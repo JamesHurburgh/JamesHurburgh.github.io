@@ -1,0 +1,22 @@
+[
+	{
+		"Name" : "Spells",
+		"FileName" : "data/spells.json",
+		"Version" : "1.0"
+	},
+	{
+		"Name" : "Practices",
+		"FileName" : "data/practices.json",
+		"Version" : "1.0"
+	},
+	{
+		"Name" : "Arcanum",
+		"FileName" : "data/arcanum.json",
+		"Version" : "1.0"
+	},
+	{
+		"Name" : "SourceBooks",
+		"FileName" : "data/sourceBooks.json",
+		"Version" : "1.0"
+	}
+]

@@ -97,6 +97,22 @@ $(document).ready(function () {
 		sel.append($("<option>").attr('value', 'Special').text('Special'));
 	}
 
+	function loadAttributes(data) {
+		var sel = $('#roteDicePoolSelect');
+		sel.empty();
+		$(data).each(function () {
+			sel.append($("<option>").attr('value', this.Name).text(this.Name));
+		});
+	}
+
+	function loadSkills(data) {
+		var sel = $('#roteDicePoolSelect');
+		sel.empty();
+		$(data).each(function () {
+			sel.append($("<option>").attr('value', this.Name).text(this.Name));
+		});
+	}
+
 	function loadArcanumLevelComparators() {
 		var sel = $('#arcanaLevelComparator');
 		sel.empty();
@@ -484,8 +500,29 @@ $(document).ready(function () {
 		})
 		.then(function (data) {
 			loadPractices(data);
-		})
+		})	
 		.done();
+
+		$.when()
+		.then(function () {
+			return retrieveReferenceData('attributes', 'data/attributes.json');
+		})
+		.then(function (data) {
+			loadAttributes(data);
+		})	
+		.done();
+
+		$.when()
+		.then(function () {
+			return retrieveReferenceData('skills', 'data/skills.json');
+		})
+		.then(function (data) {
+			loadSkills(data);
+		})	
+		.done();
+		
+		//.then(function() 	{ getData("attributes", function(data){attributes = data}); })	
+		//.then(function() 	{ getData("skills", function(data){skills = data}); })	
 
 		loadArcanumLevels();
 		loadArcanumLevelComparators();

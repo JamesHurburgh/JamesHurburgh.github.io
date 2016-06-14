@@ -1,0 +1,139 @@
+[
+	{
+		"Name" : "Flash Bang",
+		"SourceBook" : "CA",
+		"PrimaryArcana" : "Forces",
+		"Requirements" : [
+			{ "Name" : "Forces", "Dots" : "3" }
+		],
+		"Practice" : "?",
+		"Action" : "Instant",
+		"Duration" : "Instant",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "Create a bunch of bright lights and piercing sounds to stun people. Use rules for stun grenades from Armory.",
+		"Rotes" : [{
+				"RoteOrder" : "Adamantine Arrow",
+				"RoteName" : "?",
+				"RoteDicePool_Attribute" : "Wits",
+				"RoteDicePool_Skill" : "Science",
+				"RoteDescription" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Siphon Energy",
+		"SourceBook" : "CA",
+		"PrimaryArcana" : "Prime",
+		"Requirements" : [
+			{ "Name" : "Prime", "Dots" : "4" },
+			{ "Name" : "Forces", "Dots" : "2" },
+		],
+		"Practice" : "?",
+		"Action" : "Instant",
+		"Duration" : "Instant",
+		"Aspect" : "Vulgar",
+		"Cost" : "None",
+		"Effect" : "Allows the caster to siphon mana from an electrical source or from a fire. Successes equal mana points siphoned, to a maximum of the intensity of the energy source. Note, doing this automatically extinguishes/burns out the source, regardless of how many successes gained.  Either the fuel from the fire is depleted or the electrical circuit fries.",
+		"Rotes" : [{
+				"RoteOrder" : "Free Council Rote",
+				"RoteName" : "Trickle Charge",
+				"RoteDicePool_Attribute" : "Stamina",
+				"RoteDicePool_Skill" : "Science",
+				"RoteDescription" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Disguise Spell",
+		"SourceBook" : "CA",
+		"PrimaryArcana" : "Prime",
+		"Requirements" : [
+			{ "Name" : "Prime", "Dots" : "3" }
+		],
+		"Practice" : "?",
+		"Action" : "Extended",
+		"Duration" : "Prolonged",
+		"Aspect" : "Covert",
+		"Cost" : "1 Mana",
+		"Effect" : "This spell allows a mage to hide an active spell from Mage Sight/Unseen Senses. Similar to the Prime 2 ability Spell Cloaks, but can now be cast on other existing spells (wards for instance). Somewhere between Spell Cloaks and Disguise Resonance.",
+		"Rotes" : [{
+				"RoteOrder" : "Guardian Rote",
+				"RoteName" : "Covering Tracks",
+				"RoteDicePool_Attribute" : "Manipulation",
+				"RoteDicePool_Skill" : "Subterfuge",
+				"RoteDescription" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Unseen Armor",
+		"SourceBook" : "CA",
+		"PrimaryArcana" : "Prime",
+		"Requirements" : [
+			{ "Name" : "Forces", "Dots" : "2" },
+			{ "Name" : "Prime", "Dots" : "3" }
+		],
+		"Practice" : "?",
+		"Action" : "Instant",
+		"Duration" : "Prolonged",
+		"Aspect" : "Covert",
+		"Cost" : "Special",
+		"Effect" : "Same as Forces Shield except when a supernatural ability causes damage to be upgraded to Aggravated when spending mana (5th level spells), can spend a point of mana (per attack) to downgrade to Lethal. Or can be imbued with points of mana in advance.",
+		"Rotes" : [{
+				"RoteOrder" : "Adamantine Arrow",
+				"RoteName" : "Second Line",
+				"RoteDicePool_Attribute" : "Stamina",
+				"RoteDicePool_Skill" : "Occult",
+				"RoteDescription" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Extra Corporeal Shockwave",
+		"SourceBook" : "CA",
+		"PrimaryArcana" : "Prime",
+		"Requirements" : [
+			{ "Name" : "Forces", "Dots" : "3" },
+			{ "Name" : "Space", "Dots" : "2" }
+		],
+		"Practice" : "?",
+		"Action" : "Instant",
+		"Duration" : "Instant",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "Extra corporeal shock wave. (Read about doctors who use sound waves to break up kidney stones. Send two sound waves from different directions and focus on a point where the wave becomes harmonic).  Create two Forces waves to destroy an object. Bypass Armor.  This aimed spell has a -2 penalty for extra targeting factors.",
+		"Rotes" : [{
+				"RoteOrder" : "Rote",
+				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
+				"RoteDescription" : ""
+			}
+		]
+	},
+	{
+		"Name" : "Thunder Pulse",
+		"SourceBook" : "CA",
+		"ArcanaRequirement" : "Life 2 + Forces 2",
+		"PrimaryArcana" : "Forces",
+		"Requirements" : [
+			{ "Name" : "Forces", "Dots" : "2" },
+			{ "Name" : "Life", "Dots" : "2" }
+		],
+		"Practice" : "?",
+		"Action" : "Instant",
+		"Duration" : "Prolonged",
+		"Aspect" : "Vulgar",
+		"Cost" : "1 Mana",
+		"Effect" : "Store electricity from a source ie wall socket, and release on touch.",
+		"Rotes" : [{
+				"RoteOrder" : "Rote",
+				"RoteName" : "",
+				"RoteDicePool_Attribute" : "",
+				"RoteDicePool_Skill" : "",
+				"RoteDescription" : ""
+			}
+		]
+	}
+]

@@ -1,0 +1,60 @@
+attributeDotsRating = [{
+		Dots : 1,
+		Talent : "Poor. Unexercised, unpracticed or inept."
+	}, {
+		Dots : 2,
+		Talent : "Average. The result of occasional effort or application."
+	}, {
+		Dots : 3,
+		Talent : "Good. Regular practice or effort, or naturally talented."
+	}, {
+		Dots : 4,
+		Talent : "Exceptional. Frequently applied, tested and honed, or naturally gifted."
+	}, {
+		Dots : 5,
+		Talent : "Outstanding. The peak of normal human capability. Continuously exercised or naturally blessed."
+	}
+];
+
+;
+
+skillDotsRating = [{
+		Dots : 1,
+		ProficiencyLevel : "Novice. Basic knowledge and/or techniques."
+	}, {
+		Dots : 2,
+		ProficiencyLevel : "Practitioner. Solid working knowledge and/or techniques."
+	}, {
+		Dots : 3,
+		ProficiencyLevel : "Professional. Broad, detailed knowledge and/or techniques."
+	}, {
+		Dots : 4,
+		ProficiencyLevel : "Expert. Exceptional depth of knowledge and/or techniques."
+	}, {
+		Dots : 5,
+		ProficiencyLevel : "Master. Unsurpassed depth of knowledge and/or techniques. A leader in the field."
+	}
+]
+holdingBreath = [{
+		Stamina : 1,
+		Time : "30 seconds"
+	}, {
+		Stamina : 2,
+		Time : "One minute"
+	}, {
+		Stamina : 3,
+		Time : "Two minutes"
+	}, {
+		Stamina : 4,
+		Time : "Four minutes"
+	}, {
+		Stamina : 5,
+		Time : "Eight minutes"
+	}, {
+		Stamina : 6,
+		Time : "15 minutes"
+	}, {
+		Stamina : 7,
+		Time : "30 minutes"
+	}
+];
