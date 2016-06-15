@@ -1,310 +1,310 @@
 [{
 		"Name" : "Common Sense",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "108",
 		"DisplayName" : "Common Sense (••••)",
 		"Category" : "Mental",
 		"Effect" : "Your character is exceptionally grounded and pragmatic, and can usually be depended upon to make sound, straightforward decisions after a few moments’ thought. The Storyteller can make a reflexive Wits + Composure roll once per chapter for your character if he is about to embark on a disastrous course of action, or if you find yourself at a point in the story where you’re completely stumped for ideas. If the roll succeeds, the Storyteller may point out the risks of a particular course, or suggest possible actions that your character can take that might get events back on track. N ote: While you’re free to ask the Storyteller for a Common Sense roll when you’re out of ideas, he is under no obligation to comply. It’s an aid, not a crutch. Available at character creation only."
 	}, {
 		"Name" : "Danger Sense",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "108",
 		"DisplayName" : "Danger Sense (••)",
 		"Category" : "Mental",
 		"Effect" : "You gain a +2 modifier on reflexive Wits + Composure rolls for your character to detect an impending ambush. This kind of roll is typically made prior to the first turn of a surprise attack. Your character has a well-developed survival instinct that warns him of impending danger. Perhaps he’s adept at reading subtle clues in his environment or he possesses an uncanny “sixth sense” when it comes to avoiding trouble."
 	}, {
 		"Name" : "Eidetic Memory",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "108",
 		"DisplayName" : "Eidetic Memory (••)",
 		"Category" : "Mental",
 		"Effect" : "Your character has a near-photographic memory, being able to recall vast amounts of observed detail with astonishing accuracy. You do not normally need to make a roll for your character to remember an obscure fact or past experience, unless he is under stress (such as in combat). Under stress, there is a +2 modifier on any Intelligence + Composure or other Skill-based roll (say, Academics, to remember a fact) for memory recall. Available at character creation only."
 	}, {
 		"Name" : "Encyclopedic Knowledge",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "109",
 		"DisplayName" : "Encyclopedic Knowledge (••••)",
 		"Category" : "Mental",
 		"Effect" : "Your character is a veritable font of useful (and sometimes useless) information on a wide variety of topics. Chances are he can come up with an anecdote pertaining to any situation based on something he’s read, witnessed or seen on TV. You can make an Intelligence + Wits roll any time your character is confronted with a situation or phenomenon outside his normal realm of experience. If the roll is successful, he may recall a “factoid” that he’s heard at some point that may shed light on matters. Available at character creation only. Your character has either been soaking up trivia all his life or he hasn’t. Dramatic Failure: Your character “remembers” something about the situation that is completely inaccurate. “Wait! Wait! I saw something like this in a movie once!” The Storyteller might make Intelligence + Wits rolls on your behalf when a dramatic failure is possible. Failure: Your character wracks his brain but comes up empty. Success: Your character remembers a detail or fact that sheds some light on the situation. “You said there was an almond odor? Seems to me I read somewhere that’s a sign of cyanide poisoning.” Exceptional Success: Your character recalls a number of useful details that provide extensive insight. “Hey, cool — a little candy skull. They make these in Mexico for the Day of the Dead. It’s an offering for a loved one who’s died. And they say you can’t learn anything on TV.”"
 	}, {
 		"Name" : "Holistic Awareness",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "109",
 		"DisplayName" : "Holistic Awareness (•••)",
 		"Category" : "Mental",
 		"Effect" : "Your character is skilled in the arts of wholebody healing, promoting health and recovery by keeping a person’s entire physiology balanced and strong. The result is that he is able to treat sickness and some injuries (those not requiring surgery, and ones suffered to bashing or lethal damage but not aggravated) with a collection of natural remedies rather than resorting to a doctor or hospital.  Make an Intelligence + Medicine roll once per day when your character spends an hour treating a patient. If the roll is successful, the patient’s healing times that day are halved. The worst of a patient’s injuries must be treated first. So, if he has suffered a lethal wound and a successful roll is made, the wound heals that day rather than in two days. If the patient has suffered nothing but bashing damage, all wounds are healed in mere minutes (about eight each). See Chapter 7, p. 175, for healing times. Dramatic Failure: Your character misdiagnoses or mistreats the problem, making it worse. The patient does not heal more quickly (he maintains normal healing times). He does, however, suffer an additional point of bashing damage. Your character cannot try to heal the patient again for his current injuries. Failure: The treatment has no effect and normal healing times apply to any bashing wounds or to a single lethal wound. If the Storyteller allows, your character can make a successive attempt to try again that day (see p. 132). If still no successes are gained to heal a single lethal wound or one or more bashing wounds, those must be allowed to heal naturally before another effort can be made. Thus, if no successes are rolled to heal one of a patient’s lethal wounds, that wound must heal naturally over two days before your character can try to heal another lethal wound. Success: Your character’s treatment is rewarding and the patient’s healing time that day is halved. Exceptional Success: The patient responds remarkably well to treatment. You can skip tomorrow’s roll altogether. It’s automatically assumed to succeed. In that case, two lethal wounds can be healed in two days. Suggested Equipment: Holistic medicines (+1), healing-touch manuals (+1), body-purifying foods and liquids (+1) Possible Penalties: Lack of remedies (-1 to -4), noisy environment (-1), imminent danger (-3), improvised facilities (-1)"
 	}, {
 		"Name" : "Language",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "109",
 		"DisplayName" : "Language (• to •••)",
 		"Category" : "Mental",
 		"Effect" : "Your character knows an additional language besides his own. One dot in this Merit means that he can read, write and speak an extra language with minimal fluency. Two dots indicate that he is literate and conversationally fluent. Three dots indicate that he can speak the language like a native and is well-read in it. You must specify which language your character is familiar with when purchasing this Merit."
 	}, {
 		"Name" : "Meditative Mind",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "109",
 		"DisplayName" : "Meditative Mind (•)",
 		"Category" : "Mental",
 		"Effect" : "Your character can effortlessly enter a meditative state when she chooses, and can remain in it for as long as she wishes. All environmental penalties imposed to Wits + Composure rolls to meditate are ignored. Not even wound penalties apply to your character’s efforts to focus. See the Meditation Attribute task in Chapter 2, p. 51."
 	}, {
 		"Name" : "Unseen Sense",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "109",
 		"DisplayName" : "Unseen Sense (•••)",
 		"Category" : "Mental",
 		"Prerequisite" : "Mortal (non-supernatural); Wits ••",
 		"Effect" : "Your character has a “sixth sense” when it comes to the supernatural. Perhaps his hair stands on end, goose bumps race along his arms, or a shiver runs up his spine. Regardless of the manner, his body reacts to the presence of unseen forces. He can’t see or hear anything, and in fact he might not know at first what causes this reaction. It might be a response to a specific type of supernatural phenomenon such as ghosts or vampires, or it might be a general sense that something isn’t right. Over time and with a little trial and error, he might be able to qualify what his body tries to tell him. The specific type of supernatural phenomenon to which your character is sensitive must be determined when this Merit is purchased. It can be something as vague as a creepy feeling when in the presence of ghosts, or something as specific as a sudden chill when a vampire is nearby. The Storyteller has final say on the exact nature and trigger of your character’s sixth sense, and can keep its nature secret if desired, leaving you to figure it out during play. Only mortal, mundane characters can possess this Merit. The pivotal moment of becoming or being changed into a being with supernatural capabilities eliminates it."
 	}, {
 		"Name" : "Ambidextrous",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "110",
 		"DisplayName" : "Ambidextrous (•••)",
 		"Category" : "Physical",
 		"Effect" : "Your character does not suffer the -2 penalty for using his off-hand in combat or to perform other actions. Available at character creation only."
 	}, {
 		"Name" : "Brawling Dodge",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "110",
 		"DisplayName" : "Brawling Dodge (•)",
 		"Category" : "Physical",
 		"Prerequisite" : "Strength •• and Brawl •",
 		"Effect" : "Whenever your character performs a dodge (see “Dodge,” p. 156), you can choose to add his Brawl Skill dots to his Defense instead of doubling his Defense. He essentially draws on his training in blocking and evading attacks rather than relying on his raw ability alone. While this might provide little benefit to a brawling novice, it can give the advanced fighter an edge. Brawling Dodge applies against incoming Brawl and Weaponry-based attacks, against thrown-weapon attacks, and against Firearms attacks made within close-combat range. Your character can move up to his Speed and perform a Brawling Dodge maneuver in a turn. A character can possess both the Brawling Dodge and Weaponry Dodge Merits, but only one can be used per turn."
 	}, {
 		"Name" : "Direction Sense",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "110",
 		"DisplayName" : "Direction Sense (•)",
 		"Category" : "Physical",
 		"Effect" : "Your character has an innate sense of direction that instinctively allows him to remain oriented. He can enter unfamiliar territory and always retrace his steps back to his starting point, and can orient himself to any of the compass points (i.e., face north, face south) without references."
 	}, {
 		"Name" : "Disarm",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "110",
 		"DisplayName" : "Disarm (••)",
 		"Category" : "Physical",
 		"Prerequisite" : "Dexterity ••• and Weaponry ••",
 		"Effect" : "Your character has refined his Weaponry Skill to the extent that he can use a weapon to disarm opponents in close combat. When making a normal attack, compare your successes to the opponent’s Dexterity. If you get a number of successes equal to or greater than the opponent’s Dexterity, you can choose to have your character disarm him instead of doing damage. A weapon lands a number of yards away from the opponent equal to your successes rolled. Disarming is a different activity than specifically attacking or breaking weapons or items carried by opponents. See “Equipment” (p. 139) for rules on doing that."
 	}, {
 		"Name" : "Fast Reflexes",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "110",
 		"DisplayName" : "Fast Reflexes (• or ••)",
 		"Category" : "Physical",
 		"Prerequisite" : "Dexterity •••",
 		"Effect" : "+1 Initiative per dot.  Your character’s mix of sharp reflexes and steady nerves helps him get the drop on adversaries."
 	}, {
 		"Name" : "Fighting Finesse",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "110",
 		"DisplayName" : "Fighting Finesse (••)",
 		"Category" : "Physical",
 		"Prerequisite" : "Dexterity ••• and Weaponry ••",
 		"Effect" : "Your character prefers to fight with a chosen weapon in a manner that favors agility over power. With that one weapon (a rapier or katana, for example), you may substitute your character’s Dexterity for Strength when making attack rolls. This Merit may be purchased multiple times to gain agility with more weapons, one for each purchase."
 	}, {
 		"Name" : "Fighting Style: Boxing",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "110",
 		"DisplayName" : "Fighting Style: Boxing (• to •••••)",
 		"Category" : "Physical",
 		"Prerequisite" : "Strength •••, Stamina •• and Brawl ••",
 		"Effect" : "Your character is trained in the art of boxing, able to deliver swift, powerful punches, and to duck and weave away from opponents’ attacks. He might have participated in the sport in high school or college, or made a go of it professionally. Or he might have taken some classes at the local health club as a form of exercise. Dots purchased in this Merit allow access to special combat maneuvers. Each maneuver is a prerequisite for the next. So, your character can’t have “Duck and Weave” until he has “Body Blow.” The maneuvers and their effects are described below, most of which are based on the Brawl Skill. Body Blow (•): Your character can deliver powerful blows that leave opponents reeling and gasping for air. If successes inflicted in a single Brawl attack equal or exceed a target’s Size, the victim loses his next action. Duck and Weave (••): Your character is trained to instinctively duck and evade an opponent’s blows. Use the higher of your character’s Dexterity or Wits to determine his Defense when dealing with Brawl-based attacks only (not against Weaponry attacks). If a combination of Brawl and Weaponry-based attacks is focused on your character in the same turn, use his normal Defense against both. Combination Blows (•••): Your character’s training and experience allow him to devastate opponents with a flurry of rapid blows. He can make two Brawl attacks against the same target in a single action. The second attack suffers a -1 penalty. Drawback: Your character cannot use his Defense against any attack in the same turn in which he intends to use this maneuver. If he uses Defense against attacks that occur earlier in the Initiative roster, before he can perform this maneuver, he cannot perform the maneuver in the turn. He is too busy bobbing and weaving out of the way of attacks. Haymaker (••••): Your character can deliver powerful, accurate blows capable of knocking an opponent unconscious with a single punch. A single Brawl attack that equals or exceeds the target’s Size in damage might knock him unconscious. A Stamina roll is made for the victim. If it succeeds, he is conscious but he still loses his next action due to the Body Blow (see above). If it fails, he is unconscious for a number of turns equal to the damage done. Drawback: Your character cannot use his Defense against any attack in the same turn in which he intends to use this maneuver. If he uses Defense against attacks that occur earlier in the Initiative roster, before he can perform this maneuver, he cannot perform the maneuver in the turn. He is too busy bobbing and weaving out of the way of attacks. Brutal Blow (•••••): Your character’s accuracy and power are such that his fists are lethal weapons, able to injure or kill opponents. A brutal blow inflicts lethal instead of bashing damage. Drawback: Spend one Willpower point per attack. Note that this Willpower expenditure does not add three dice to the attack."
 	}, {
 		"Name" : "Fighting Style: Kung Fu",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "111",
 		"DisplayName" : "Fighting Style: Kung Fu (• to •••••)",
 		"Category" : "Physical",
 		"Prerequisite" : "Strength ••, Dexterity ••, Stamina •• and Brawl ••",
 		"Effect" : "Your character is trained in one of the many forms of Kung Fu, conditioning his mind and body for the purposes of focus and self-defense. He may have begun his training at an early age, following in the footsteps of family or friends, or he may have joined a school as an adult for the purposes of exercise or protection. Dots purchased in this Merit allow access to special combat maneuvers. Each maneuver is a prerequisite for the next. So, your character can’t have “Iron Skin” until he has “Focused Attack.” The maneuvers and their effects are listed below, most of which are based on the Brawl Skill. Focused Attack (•): Physical conditioning and accuracy allow your character to deliver blows at vulnerable spots on targets. Penalties to hit specific targets are reduced by one. See “Specified Targets,” p. 165. Even when a specific part of an opponent is not targeted, armor penalties to your character’s Brawl attacks are reduced by one. Iron Skin (••): Your character has hardened his body to physical blows, allowing him to withstand repeated hits with minimal effect. He has an effective armor trait of 1 against bashing attacks only. Defensive Attack (•••): Your character has mastered the ability to fight defensively. When using this maneuver, your character gains +2 to his Defense for the turn, but any attack he makes suffers a -2 penalty. He can move no more than his Speed while performing a Defense Attack maneuver in a turn. Whirlwind Strike (••••): Your character can unleash a storm of blows against an opponent. He can make a number of extra Brawl attacks for each point of Dexterity that he has above 2 in a single action. Each extra attack is made at a cumulative -1 modifier. Thus, he can perform a total of two attacks at Dexterity 3 (the second of which is at -1), three attacks at Dexterity 4 (the third of which is at -2), and four at Dexterity 5 (the fourth of which is at -3). All attacks must be on the same target. Drawback: Your character cannot use his Defense against any attack in the same turn in which he intends to use this maneuver. If he uses Defense against attacks that occur earlier in the Initiative roster, before he can perform this maneuver, he cannot perform the maneuver this turn. He is too busy bobbing and weaving out of the way of attacks. Lethal Strike (•••••): By focusing his might and concentration, your character can kill or maim an opponent with a well-placed strike. A strike inflicts lethal instead of bashing damage. Drawback: Spend one Willpower point per attack. Note that this Willpower expenditure does not add three dice to the attack."
 	}, {
 		"Name" : "Fighting Style: Two Weapons",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "112",
 		"DisplayName" : "Fighting Style: Two Weapons (• to ••••)",
 		"Category" : "Physical",
 		"Prerequisite" : "Dexterity ••• and Weaponry •••",
 		"Effect" : "Your character has trained to fight with a weapon in both hands, allowing him to attack and dodge or make two attacks in the same turn. Your character still suffers the -2 offhand penalty when attacking with a weapon in his secondary hand (unless you have also purchased the Ambidextrous Merit). Dots purchased in this Merit allow access to special combat maneuvers. Each maneuver is a prerequisite for the next. So, your character can’t have “Deflect and Thrust” until he has “Whirling Blades.” The maneuvers and their effects are detailed below, all of which are based on the Weaponry Skill. Whirling Blades (•): Your character’s Dodge trait (Defense doubled; see p. 156) is not penalized by multiple attacks staged against him in a turn until the number of attacks exceeds his Weaponry dots, at which point each attack thereafter reduces his Dodge by -1. So, if your character (with 2 Defense and 3 Weaponry) dodges attacks in a turn, the first three incoming attacks suffer his full Dodge trait as a penalty (-4). The fourth suffers a -3 penalty, the fifth suffers a -2 penalty, and so on. Basically, your character’s weapons move so quickly all about him that opponents in close combat have trouble reaching or assaulting him. The Brawling Dodge Merit (see p. 110) cannot replace normal Dodge (Defense doubled) when this maneuver is performed. Deflect and Thrust (••): Your character can avoid attacks and strike back in the same motion. When using this maneuver, your character gains +2 to his Defense for the turn, but any attack he makes suffers a -2 penalty. He can move no more than his Speed while performing a Deflect and Thrust maneuver in a turn. Focused Attack (•••): Your character can attack a single target twice in one turn. The second attack suffers a -1 penalty. Drawback: Your character cannot use his Defense against any attack in the same turn in which he intends to use this maneuver. If he uses Defense against attacks that occur earlier in the Initiative roster, before he can perform this maneuver, he cannot perform the maneuver this turn. He is too busy bobbing and weaving out of the way of attacks. Fluid Attack (••••): Your character can make a single attack on two different targets in one turn. The targets cannot be a distance apart in excess of your character’s Speed trait. The second attack suffers a -1 penalty. Drawback: Your character cannot use his Defense against any attack in the same turn in which he intends to use this maneuver. If he uses Defense against attacks that occur earlier in the Initiative roster, before he can perform this maneuver, he cannot perform the maneuver  this turn. He is too busy bobbing and weaving out of the way of attacks."
 	}, {
 		"Name" : "Fleet of Foot",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "112",
 		"DisplayName" : "Fleet of Foot (• to •••)",
 		"Category" : "Physical",
 		"Prerequisite" : "Strength ••",
 		"Effect" : "+1 Speed per dot. Regardless of your character’s physical build, he can run quickly when he chooses to."
 	}, {
 		"Name" : "Fresh Start",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "112",
 		"DisplayName" : "Fresh Start (•)",
 		"Category" : "Physical",
 		"Prerequisite" : "Fast Reflexes ••",
 		"Effect" : "Your character dedicates an action to altering his standing in the Initiative order in the following turn and for all subsequent turns, choosing to insert himself at a new point in the roster, even if it means going first when he went last before. For example, if your Initiative roll (see p. 151) resulted in a 9, but a rival whom your character wanted to waylay got a 12, your character can forfeit an action in turn one to get a fresh start and then act before that rival at 13 in turn two and afterward. Drawback: A character must take an action to change his Initiative ranking in subsequent turns. He can do nothing else in that action except move up to his Speed."
 	}, {
 		"Name" : "Giant",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "112",
 		"DisplayName" : "Giant (••••)",
 		"Category" : "Physical",
 		"Effect" : "Your character is seven or more feet tall and over 250 pounds. He is +1 Size (and thus +1 Health). Available at character creation only. Drawback: Your character needs to shop in big-and-tall clothing stores or gets clothes custom tailored. He might also be required to purchase two seats for air travel, depending on the airline."
 	}, {
 		"Name" : "Gunslinger",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "112",
 		"DisplayName" : "Gunslinger (•••)",
 		"Category" : "Physical",
 		"Prerequisite" : "Dexterity ••• and Firearms •••",
 		"Effect" : "Your character’s capability and experience with firearms is such that he can accurately fire two pistols at the same time. Your character still suffers the -2 offhand penalty for shooting with his secondary hand (unless he also possesses the Ambidextrous Merit, above), but he can shoot both pistols as a single action during a turn. The second attack is also at a -1 penalty. Your character may shoot at two different targets if he wishes, but the amount of concentration required negates his Defense for the turn. The Merit can be used with pistols only. Drawback: Your character cannot use his Defense against any attack in the same turn in which he intends to use this Merit on two separate targets in the same turn. If he uses Defense against attacks that occur earlier in the Initiative roster, before he can perform this maneuver, he cannot perform the maneuver this turn. He is too busy bobbing and weaving out of the way of attacks."
 	}, {
 		"Name" : "Iron Stamina",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "113",
 		"DisplayName" : "Iron Stamina (• to •••)",
 		"Category" : "Physical",
 		"Prerequisite" : "Stamina ••• or Resolve •••",
 		"Effect" : "Each dot eliminates a negative modifier (on a one-for-one basis) when resisting the effects of fatigue or injury. For example: A character with Iron Stamina •• is able to ignore up to a -2 modifier brought on by fatigue. See “Fatigue,” p. 179. The Merit also counteracts the effects of wound penalties. So, if all of your character’s Health boxes are filled (which normally imposes a -3 penalty to his actions) and he has Iron Stamina •, those penalties are reduced to -2. This Merit cannot be used to gain positive modifiers for actions, only to cancel out negative ones. Your character can push his body well past the limits of physical endurance when he has to, pressing on in the face of mounting exhaustion or pain. Perhaps he trained himself to go without sleep for days at a time in order to get through college, or a lifetime of sports has taught your character how to play through the pain no matter how bad it gets. Drawback: When your character does finally rest, he sleeps like the dead. After staying awake for an extended period, your character is extremely difficult to wake until he’s slept for a minimum of 12 hours, regardless of the situation."
 	}, {
 		"Name" : "Iron Stomach",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "113",
 		"DisplayName" : "Iron Stomach (••)",
 		"Category" : "Physical",
 		"Prerequisite" : "Stamina ••",
 		"Effect" : "Your character can eat almost anything, under almost any conditions. Greasy bacon and runny eggs on a raging hangover? No problem. The green meat in the fridge? No problem. Milk two weeks past its expiration date? No problem. He could be dropped in the middle of the forest and could live off bugs and roots as long as necessary in order to survive — and with no ill effects. Add two dice to appropriate Survival rolls. Add three to Stamina to resist deprivation (see p. 175)."
 	}, {
 		"Name" : "Natural Immunity",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "113",
 		"DisplayName" : "Natural Immunity (•)",
 		"Category" : "Physical",
 		"Prerequisite" : "Stamina ••",
 		"Effect" : "Your character gains a +2 modifier on Stamina rolls to resist infection, sickness and disease. His immune system is exceptionally effective at resisting infections, viruses and bacteria. Your character can probably count on one hand the number of times he’s been seriously ill."
 	}, {
 		"Name" : "Quick Draw",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "113",
 		"DisplayName" : "Quick Draw (•)",
 		"Category" : "Physical",
 		"Prerequisite" : "Dexterity •••",
 		"Effect" : "Your character can draw a pistol and fire or pull a melee weapon and attack without penalty as a single action in a turn. If a weapon is hidden on your character’s person (under a coat or in a purse), it can be drawn and used in the same turn without the normal loss of Defense. A separate Quick Draw Merit must be acquired for use with firearms and melee weapons."
 	}, {
 		"Name" : "Quick Healer",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "113",
 		"DisplayName" : "Quick Healer (••••)",
 		"Category" : "Physical",
 		"Prerequisite" : "Stamina ••••",
 		"Effect" : "Your character’s healing abilities are remarkable, allowing him to bounce back quickly from injuries that would leave most people bedridden for months. Your character recovers from injuries in half the time that others do. One point of bashing damage is healed in eight minutes. One point of lethal damage is healed in one day. One point of aggravated damage is healed in four days."
 	}, {
 		"Name" : "Strong Back",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "113",
 		"DisplayName" : "Strong Back (•)",
 		"Category" : "Physical",
 		"Prerequisite" : "Strength ••",
 		"Effect" : "Your character gains a +1 modifier to actions involving lifting or carrying heavy weights. She can lift and carry much more weight than her build and body type suggests."
 	}, {
 		"Name" : "Strong Lungs",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "113",
 		"DisplayName" : "Strong Lungs (•••)",
 		"Category" : "Physical",
 		"Prerequisite" : "Athletics •••",
 		"Effect" : "Your character is practiced at holding his breath for long periods of time. He might be a pearl diver or escape artist, capable of staying underwater without aid for longer than most people believe is possible. When determining how long your character can hold his breath, add two to Stamina when referencing the Holding Breath chart on p. 49. For example, if your character’s Stamina is 2, he can hold his breath for four minutes before you need to make a roll."
 	}, {
 		"Name" : "Stunt Driver",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "113",
 		"DisplayName" : "Stunt Driver (•••)",
 		"Category" : "Physical",
 		"Prerequisite" : "Dexterity •••",
 		"Effect" : "Your character can drive a vehicle and perform an unrelated action (e.g., fire a gun, punch another passenger) in the same turn. Drive rolls may still be necessary for dangerous maneuvers or situations. See “Vehicles,” p. 141."
 	}, {
 		"Name" : "Toxin Resistance",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "113",
 		"DisplayName" : "Toxin Resistance (••)",
 		"Category" : "Physical",
 		"Prerequisite" : "Stamina •••",
 		"Effect" : "Your character gains a +2 modifier to Stamina rolls to resist the effects of drugs, poisons and toxins. His body is capable of withstanding high levels of chemicals without suffering any ill effects. He’s probably never had a case of food poisoning, much less a hangover. Drawbacks: Your character’s body can’t tell the difference between recreational toxins and intentional ones. It’s very difficult for him to become intoxicated, whether from alcohol, nicotine or other drugs. Also, painkillers and anesthetics are only half as effective as normal."
 	}, {
 		"Name" : "Weaponry Dodge",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "114",
 		"DisplayName" : "Weaponry Dodge (•)",
 		"Category" : "Physical",
 		"Prerequisite" : "Strength •• and Weaponry •",
 		"Effect" : "Whenever your character performs a dodge (see “Dodge,” p. 156), you can choose to add his Weaponry Skill dots to his Defense instead of doubling his Defense. He essentially draws on his training in parrying and evading attacks rather than relying on his raw ability alone. While this might provide little benefit to a fencing novice, it can give the advanced fighter an edge. Weaponry Dodge applies against incoming Brawl and Weaponry-based attacks, against thrown-weapon attacks, and against Firearms attacks made within close-combat range. Your character can move up to his Speed and perform a Weaponry Dodge maneuver in a turn. A character can possess both the Brawling Dodge and Weaponry Dodge Merits, but only one can be used per turn."
 	}, {
 		"Name" : "Allies",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "114",
 		"DisplayName" : "Allies (• to •••••)",
 		"Category" : "Social",
 		"Effect" : "Allies are people who are willing to help your character from time to time. They may be associates, friends of convenience or people who owe your character a favor. Each acquisition of this Merit is dedicated to one type of ally, whether in an organization, society or circle. Examples include the police, City Hall, criminals, unions, banks, university faculty and hospital staff. In order to have alliances in more than one venue, you need to purchase this Merit multiple times, each trait with its own dots. Thus, your character might have Allies (Police) ••, Allies (Criminals) ••• and Allies (City Hall) •, each acquired separately at character creation or during play. Each dot that your character has indicates how deep his influence runs in that group. One dot might mean he can ask for minor favors, such as being spared a parking ticket if alliance is among police, or being allowed to see an article before it goes to press if alliance is among reporters. Three dots garner considerable favors, such as a building permit “going missing” at City Hall, or a strike resolution being wrapped up early among union leaders. Five dots allow for dangerous and even overtly criminal favors, such as a stock being sabotaged on Wall Street or the answers to an exam being shared by a university professor. The kinds of requests made of people in an organization typically have to relate to their sphere of influence. Asking a criminal to slow down the bureaucratic process at City Hall makes no sense, but asking him to pass along word of a drug buy does. Favors might be minor and within the bounds of a person’s job or role, such as processing some paperwork more quickly than usual, or could be significant or dangerous and outside what’s allowed or even legal, such as allowing a civilian access to the police evidence locker. The Storyteller has final say over what is an acceptable request and what is not. If there’s any doubt, the Storyteller could call for a Manipulation + Persuasion roll, with a bonus equal to your character’s Allies dots. Penalties might also apply based on the importance or danger of the request. Asking someone to do something already in the bounds of their role imposes no modifier, while asking them to do something that could get them suspended imposes a -3 penalty, and asking for something that could get them jailed or killed is -5. Frequent favors asked of the same group also imposes a penalty as group members grow tired of being called upon. Similarly, a roll of Manipulation + Persuasion + Allies dots could determine how many police answer your character’s call for help, or how many longshoremen turn up when your character needs a show of force (one per success rolled). Allies doesn’t have to be defined in terms of specific individuals over whom your character has sway. He could simply know a variety of people among city reporters and he can call upon them in general from time to time. You should, however, explain why your character has influence in a particular body. Maybe he worked there himself at one time and still has friends in the organization. Or he has done a group a favor and its members still owe him. Drawback: Allies are not automatons, waiting for your character to ask for help. They have their own lives and needs. An alliance is a two-way relationship. Calling for favors makes your character indebted to his friends, and they are sure to call such favors in when they need help. The Storyteller can use such debts as inspiration for future stories."
 	}, {
 		"Name" : "Barfly",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "114",
 		"DisplayName" : "Barfly (•)",
 		"Category" : "Social",
 		"Effect" : "No matter what town or city your character is in, he can find his way into the best nightspots with a few quick words and a timely bribe. There isn’t a velvet rope made that can keep him out of a restaurant or club."
 	}, {
 		"Name" : "Contacts",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "114",
 		"DisplayName" : "Contacts (• to •••••)",
 		"Category" : "Social",
 		"Effect" : "Contacts provide your character information in a particular area of awareness. Each dot in this Merit represents one arena or circle in which your character has a web of connections and from which he may draw infor mation. If he has Contacts •••, his dots might be assigned to computer hackers, couriers and big business, respectively. Contacts can include individuals whom you or the Storyteller defines, but more likely they comprise an array of people from whom your character can draw information with a phone call, email or face-to-face query. Contacts is strictly information-gathering. Contacts do not come perform services for your character or rush to his aid. Those actions are the purview of other Merits such as Allies and Retainer. Gaining information from contacts requires a successful Manipulation + Persuasion or Socialize roll, depending on the relationship between your character and the people in question. Penalties might apply if the information sought is little known (-1 to -3), confidential (-3), or if sharing it could get people in trouble or harmed (-3 to 5). Success doesn’t guarantee exactly the information for which your character looks. Contacts aren’t all-knowing, and the Storyteller is perfectly justified in saying that a particular contact simply doesn’t know something. Dramatic Failure: The contact doesn’t tell your character the full extent of what he knows, or provides misleading information. Perhaps he’s holding out for money or favors, or simply makes an honest mistake. Failure: The contact doesn’t have the information your character needs. Success: The contact is able to provide some information that’s helpful to your character. Exceptional Success: The contact is able to provide a wealth of information to your character, providing answers to questions that aren’t even asked. Suggested Equipment: Gift (+1), small bribe (+1), large bribe (+2), an outstanding favor (+1 to +3) Possible Penalties: Lack of bribe (-1), frequent and recent requests (-1 to -2), information confidential (-1 to -3), information scarce (-2), information obscure (-3)"
 	}, {
 		"Name" : "Fame",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "115",
 		"DisplayName" : "Fame (• to •••)",
 		"Category" : "Social",
 		"Effect" : "Your character has a measure of recognition in today’s media-saturated society, possibly as a performer, athlete, politician or other sort of public personality. He’s frequently identified and can often get star treatment. On the other hand, it’s difficult for your character to go places without being recognized, and the media watches him carefully. Each dot adds a +1 modifier to your character’s Socialize (or Persuasion, where applicable) rolls among those who are impressed by his celebrity status. Drawback: The more famous your character is, the more easily he is recognized by the public. The Storyteller should apply the same +1 modifier per dot to a general Wits + Composure roll to see if he is recognized by anyone on the street. An exceptional success indicates that one or more people are loyal fans who approach him for autographs, pictures and long conversations."
 	}, {
 		"Name" : "Inspiring",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "115",
 		"DisplayName" : "Inspiring (••••)",
 		"Category" : "Social",
 		"Prerequisite" : "Presence ••••",
 		"Effect" : "Your character is able to rally others in times of great distress, renewing their courage and determination in the face of adversity. Once per game session, your character can exhort those around him to redouble their efforts in the face of great stress or danger. Make a Presence + Persuasion roll. If the roll succeeds, any individuals who actively assist your character and who are within earshot regain one spent Willpower point (not to exceed their Willpower dots). The character may not use this Merit on himself, and may not use it on the same subjects more than once a day."
 	}, {
 		"Name" : "Mentor",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "115",
 		"DisplayName" : "Mentor (• to •••••)",
 		"Category" : "Social",
 		"Effect" : "This Merit gives your character a friend and teacher who provides her with advice and guidance. Your character’s mentor acts on her behalf, although the Storyteller determines exactly how. A mentor usually offers advice, allowing the Storyteller to use him to help guide your character through tough situations. A mentor may also use his influence or abilities to help your character out, although he probably wants to see his charge do things for herself. A mentor is likely to give up in disgust on a pupil who constantly asks for aid. Mentors may also ask for something in return for their assistance, which can lead your character into some interesting situations. The number of dots purchased in this Merit determines the relative power, knowledge and experience of your character’s teacher. One dot indicates a mentor with one or more specialized Skills and a small amount of experience in your character’s field of interest. Two dots indicate a mentor with a wide range of capability and experience in your character’s field of interest. Three dots indicate a mentor possessing a broad range of Skills, years of experience and significant influence in your character’s field of interest. Four dots indicate a mentor who not only possesses a broad range of Skills and decades (or in some cases, centuries) of experience, he is also a preeminent figure with major influence in your character’s field of interest. Five dots indicate a mentor with towering influence and power in your character’s field of interest. A five-dot patron watches over your character and influences her life in ways both obvious and subtle, and likely has an agenda in which your character is pivotal."
 	}, {
 		"Name" : "Resources",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "115",
 		"DisplayName" : "Resources (• to •••••)",
 		"Category" : "Social",
 		"Effect" : "This Merit measures your character’s material resources, both possessions and wealth. All characters are assumed to have a job or a source of income (trust fund, parents) that is sufficient to cover their basic needs: food, shelter and transportation. Dots in this Merit represent disposable income — wealth and assets that can be liquidated for more money in case of emergency. The number of dots indicates your character’s general level of wealth. One dot suggests low disposable income: $500 a month and approximately $1,000 worth of assets. Two dots suggest moderate disposable income: $1,000 a month and approximately $5000 worth of assets. Three dots suggest significant disposable income: $2000 a month and maybe $10,000 worth of assets. Four dots suggest substantial disposable income: $10,000 a month and $500,000 worth of assets. Five dots suggest significant wealth: $50,000 a month and as much as $5,000,000 worth of assets. Resources can be used to determine if your character can reasonably afford a purchase or expenditure. Equipment, weapons and items throughout these rules are assigned costs in dots. The Storyteller can assign cost dots to other items during play based on what’s here. If your character has the same or more dots in Resources, he can afford the item on his disposable income. That doesn’t mean he has a blank check with which to buy everything he sees. He might be able to afford one or two items with a cost equal to his Resources dots in a single month. Items with lower costs can be acquired more often. The Storyteller has final say on what’s too much or what’s too often. Your character’s Resources dots aren’t spent and don’t go away. They represent available cash at any given moment. The only means by which your character’s Resource dots might decrease is if story events conspire against them. Perhaps your character’s fortune is wiped out, he loses his job or his company is subjected to a hostile takeover. The Storyteller therefore influences how your character’s dots might decrease, and whether they can be salvaged."
 	}, {
 		"Name" : "Retainer",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "116",
 		"DisplayName" : "Retainer (• to •••••)",
 		"Category" : "Social",
 		"Effect" : "Your character has an assistant, aide, indentured servant or fanatical follower on whom she can rely. You need to establish how this trusty companion was acquired. He may be paid exorbitant amounts of money that buy his unwavering loyalty. He might owe his life to your character (or to your character’s predecessors). Your character might blackmail this person or threaten his family with harm if services are not rendered. Or your character might have a supernatural hold over this poor person. Regardless of the circumstances, this person is constantly loyal and follows almost any order without question. A retainer can be called upon to perform many duties without fail. A bodyguard might be willing to hurt other people on a mere command. A dedicated street kid might hang on your character’s every word and get her information or contacts without being asked. Unless your character has direct control over a retainer’s mind, however, this person can’t be made to perform any task. He might not risk his own life unduly or perform a task that violates his own morals. You or the Storyteller should detail your retainer with an identity, background and character sheet of his own. The Storyteller usually plays your character’s retainer. Each acquisition of this Merit grants your character one follower. Dots spent in the trait indicate the training, capability or flexibility of the aide. One dot suggests a child, an automaton or a madman with limited capabilities and freedom of thought. Two dots indicate an ordinary person over whom your character has sway. The servant is completely mundane and has no particular training above the human norm (he has two dots in all of his Attributes and Skills). Three dots represent a capable employee with a range of training at his disposal (three or four of his traits have three dots). Four dots represent a valued and irreplaceable assistant (someone with a handful of traits with four dots each). Five dots indicate an extraordinary follower. He is exceptional in many ways (five dots in a couple traits, and four in many others) or he may be capable of supernatural feats. Retainer is different from Allies in that no roll is ever made to get results from an aide. He performs the task requested, unless subjected to repeated abuse or an utterly intolerable assignment (as decided by the Storyteller based on the assistant’s personality). Drawback: If your retainer is ever hurt he may be incapable of service while recovering. If he is killed, he’s lost forever unless supernatural in origin. A retainer who possesses his own will and who is forced to perform a duty that offends his sensibilities or defies his morals may abandon your character, temporarily or permanently. Points spent to acquire a retainer who is killed or driven off are lost."
 	}, {
 		"Name" : "Status",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "116",
 		"DisplayName" : "Status (• to •••••)",
 		"Category" : "Social",
 		"Prerequisite" : "Varies (see below)",
 		"Effect" : "Your character has standing, credentials, authority or respect within an organization, group, company or social body. He might have an official position or title, or might simply be revered and honored within the group and therefore accorded a degree of authority. Your character might be a company vice president, a police sergeant or lieutenant, an army corporal or a nurse at a hospital. Or he could be a lowly member of the group whom everyone likes or who has won some acclaim and is allowed more standing than he is officially entitled. Each acquisition of this Merit is dedicated to one type of authority, whether in an organization, society or circle. Examples include police, City Hall, criminals, unions, banks, a university faculty and hospital staff. In order to have authority in more than one venue, you need to purchase this Merit multiple times, each trait with its own dots. Thus, your character might have Status (Police) ••, Status (Criminals) ••• and Status (City Hall) •, each acquired separately at character creation or during play. You would need to explain how he reconciles all this authority in the setting. The aforementioned character might be a dirty police sergeant who has paid his dues in civil elections and gained some recognition among city officials. Status represents the privileges and liberties that your character is authorized to take within the confines and definitions of his group. Increasing dots reflect increasing clout. A cop with Status 1 can enter the suspect lockup and interrogation rooms, while a cop with Status 4 can enter the evidence locker without supervision or get involved in a crimescene investigation without specifically being called in. The phrase “within the confines and definitions of his group” is emphasized above because Status operates exclusively through official channels. A surgeon might have one patient seen or operated on before another, because that’s within the official confines of his authority. Exceeding the confines of authority or proper channels transcends the limits of the Status Merit. Going above and beyond — to ask for favors rather than give orders or to requisition an official request — enters the realm of the Allies Merit. So, a police detective who gets a lower-ranking officer to investigate a case may do so with Status. That request is conducted through proper channels. Meanwhile, a police detective who asks another officer to overlook some evidence or to delay an investigation does so with Allies. The favor is asked outside official channels. While Status might allow your character to give orders to underlings, the Merit doesn’t automatically get results. Subordinates or co-workers might resent their assignments, dislike your character or have personal agendas that interfere with your character’s needs. Efforts to get things done through official channels still call for Manipulation + Intimidation, Persuasion or Socialize rolls, whichever Skill is appropriate to the request, circumstances and your character’s standing within the organization. Bonus dice equal your character’s Status dots. Penalties might apply if your character browbeats someone (-1), uses threats (-2), skirts the limits of his authority (-2) or exceeds his authority (-3 to -5). Some sample organizations and the basic benefits, perks and privileges of standing in them are listed below. City Police: A patrol officer has legal powers of search, seizure and arrest, is permitted to carry a firearm at all times and has access to a wide range of local databases. High-ranking officers (•••+) can initiate investigations, coordinate with neighboring county or state police, and call in urban-assault teams. Clerical Standing: Your character is a licensed minister, gaining access to people and places such as accused criminals, hospital patients, crime and accident scenes, and restricted areas in religious institutions. Prerequisite: Academics Skill Specialty: Religion. Corporate Executive: A low-level corporate executive has access to much of the company’s resources, including corporate credit cards, vehicles, cell phones and computer equipment. Depending on the company, he can also access sources of information and influence not available to the general public. Executives (•••+) have larger salaries, expense accounts, and hiring and firing powers, not to mention social perks and access to connected political figures and/or celebrities. Diplomat: Your character is a registered diplomat for a sovereign country. If he works in a foreign country he has free lodging, access to his country’s embassy and immunity from foreign criminal prosecution. Prerequisites: Politics •• and Persuasion ••. Licensed Professional: Your character is licensed in a recognized profession that affords him privileges unavailable to most civilians. He might be a private investigator and authorized to carry a concealed weapon and to have access to restricted databases and government files, or he could be a building contractor and be authorized to own and use explosives for professional applications. Prerequisite: Academics Skill Specialty: Law (private investigator), Science Skill Specialty: Demolitions (building contractor). Medical: Your character is licensed to practice medicine. He can write prescriptions, access medical records and gain access to restricted areas such as crime and accident scenes. Prerequisite: Medicine ••. Military: An enlisted soldier has a monthly stipend, is permitted to possess military-grade firearms and has access to restricted sources of information and equipment. If he is an active-duty soldier he receives free room and board and medical care. High-ranking soldiers (•••+) are officers who can command units, requisition military equipment and perhaps even initiate foreign insurgencies. Rotary Club: A basic member in good standing has access to the local meeting hall and a network of members who can provide club-related information or perform club-related duties. A basic member can also benefit from the organization’s emergency fund in times of need. High-ranking members (•••+) have access to other clubs around the country, and have sway over connected civic groups and political figures. Drawback: Your character’s standing in a given organization is dependent on the fulfillment of his duties and on abiding by the regulations required of members."
 	}, {
 		"Name" : "Striking Looks",
-		"SourceBook" : "Chronicles of Darkness",
-		"SourcePage" : "?",
+		"SourceBook" : "World of Darkness",
+		"SourcePage" : "117",
 		"DisplayName" : "Striking Looks (•• or ••••)",
 		"Category" : "Social",
 		"Effect" : "Your character is exceptionally attractive by modern standards; heads turn and conversations stop when she enters a room. For two dots, your character gets a +1 modifier to all Presence or Manipulation rolls when she attempts to use her looks to entertain, persuade, distract or deceive others. For four dots, your character’s looks are angelic; she gets a +2 modifier. Drawback: The more attractive your character is, the harder it is for her to avoid notice in public. Witnesses to any criminal acts are much more likely to remember your character’s appearance, and easily recognize her in a lineup. Your character is also likely to receive a great degree of unwanted attention in social situations."
