@@ -18,33 +18,39 @@ $(document).ready(function () {
 			table = $('#merits').DataTable( {
 				responsive: true,
 				"ajax": {
-					"url": "data/merits.json",
+					"url": "data/merits2.json",
 					"dataSrc": ""
 				},
 				columns: [
 					{ 
 						data: 'Name',
-						render: function ( data, type, merit ) {
-							return merit.DisplayName;
+						render: function ( data, type, merit ) {							
+							return merit.Name;
 						} 
 					},
 					{ 
 						data: 'Source',
 						render: function ( data, type, merit ) {
-								return merit.SourceBook + ' p' + merit.SourcePage;
+								if(!merit.Sources){ return "";}
+								var sourceList = "";
+								$(merit.Sources).each(function (index, source){
+									if(sourceList != "") {sourceList = sourceList + " & ";}
+									sourceList = sourceList + source.SourceBook + ' p' + source.SourcePage
+								});
+								return sourceList;
 						} 
 					},
 					{ 
 						data: 'Category'
 					},
 					{ 
-						data: 'Prerequisite',
+						data: 'Levels'
+					},
+					{ 
+						data: 'Prerequisites',
 						render: function ( data, type, merit ) {
-							if(merit.Prerequisite)
-							{
-								return merit.Prerequisite;
-							}
-							return "None";
+							if(!merit.Prerequistes) { return "None"; }
+							return merit.Prerequistes;
 						} 
 					},
 					{ 

@@ -1,0 +1,3984 @@
+[{
+		"ID" : "WW2000",
+		"ISBN" : "0-9627790-6-7",
+		"Title" : "Vampire: The Masquerade",
+		"GameLine" : "Vampire: The Masquerade",
+		"Published" : "1991",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2002",
+		"ISBN" : "1-56504-029-5",
+		"Title" : "Vampire: The Masquerade, 2nd Ed.",
+		"GameLine" : "Vampire: The Masquerade",
+		"Published" : "1992",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2005",
+		"ISBN" : "1-56504-018-X",
+		"Title" : "Awakening: Diablerie Mexico",
+		"GameLine" : "Vampire: The Masquerade",
+		"Published" : "1992",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2205",
+		"ISBN" : "1-56504-020-1",
+		"Title" : "The Hunters Hunted",
+		"GameLine" : "Vampire: The Masquerade",
+		"Published" : "1992",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2010",
+		"ISBN" : "1-56504-074-0",
+		"Title" : "Bloody Hearts: Diablerie Britain",
+		"GameLine" : "Vampire: The Masquerade",
+		"Published" : "1993",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2052",
+		"ISBN" : "1-56504-046-5",
+		"Title" : "Clanbook: Gangrel",
+		"GameLine" : "Vampire: The Masquerade",
+		"Published" : "1993",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW5001",
+		"ISBN" : "1-56504-068-6",
+		"Title" : "Book of the Damned",
+		"GameLine" : "Vampire: The Masquerade",
+		"Published" : "1993",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW02021",
+		"ISBN" : "1-56504-230-1",
+		"Title" : "Ghouls: Fatal Addiction",
+		"GameLine" : "Vampire: The Masquerade",
+		"Published" : "1997",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2009",
+		"ISBN" : "1-56504-222-0",
+		"Title" : "Hong Kong",
+		"GameLine" : "Vampire: The Masquerade",
+		"Published" : "1998",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2300",
+		"ISBN" : "1-56504-249-2",
+		"Title" : "Vampire: The Masquerade Revised Edition",
+		"GameLine" : "Vampire: The Masquerade",
+		"Published" : "1998",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2301",
+		"ISBN" : "1-56504-259-9",
+		"Title" : "Vampire Storytellers Companion",
+		"GameLine" : "Vampire: The Masquerade",
+		"Published" : "1998",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW02302",
+		"ISBN" : "1-56504-261-1",
+		"Title" : "Guide to the Camarilla",
+		"GameLine" : "Vampire: The Masquerade",
+		"Published" : "1999",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW02303",
+		"ISBN" : "1-56504-263-8",
+		"Title" : "Guide to the Sabbat",
+		"GameLine" : "Vampire: The Masquerade",
+		"Published" : "1999",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2106",
+		"ISBN" : "1-56504-248-6",
+		"Title" : "Blood Magic: Secrets of Thaumaturgy",
+		"GameLine" : "Vampire: The Masquerade",
+		"Published" : "2000",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2304",
+		"ISBN" : "1-56504-264-6",
+		"Title" : "Vampire Storytellers Handbook Revised",
+		"GameLine" : "Vampire: The Masquerade",
+		"Published" : "2000",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2353",
+		"ISBN" : "1-56504-268-9",
+		"Title" : "Clanbook: Malkavian Revised",
+		"GameLine" : "Vampire: The Masquerade",
+		"Published" : "2000",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2359",
+		"ISBN" : "1-56504-256-5",
+		"Title" : "Clanbook: Assamite Revised",
+		"GameLine" : "Vampire: The Masquerade",
+		"Published" : "2000",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2421",
+		"ISBN" : "1-58846-217-X",
+		"Title" : "Sins of the Blood",
+		"GameLine" : "Vampire: The Masquerade",
+		"Published" : "2001",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2431",
+		"ISBN" : "1-58846-245-5",
+		"Title" : "The Red Sign",
+		"GameLine" : "Vampire: The Masquerade",
+		"Published" : "2003",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2441",
+		"ISBN" : "1-58846-239-0",
+		"Title" : "Kindred of the Ebony Kingdom",
+		"GameLine" : "Vampire: The Masquerade",
+		"Published" : "2003",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW02999",
+		"ISBN" : "1-58846-246-3",
+		"Title" : "Gehenna",
+		"GameLine" : "Vampire: The Masquerade",
+		"Published" : "2004",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3065",
+		"ISBN" : "1-56504-312-X",
+		"Title" : "Outcasts: A Players Guide to Pariahs",
+		"GameLine" : "World of Darkness",
+		"Published" : "1995",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3068",
+		"ISBN" : "1-56504-317-0",
+		"Title" : "Midnight Circus",
+		"GameLine" : "World of Darkness",
+		"Published" : "1996",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3206",
+		"ISBN" : "1-56504-316-2",
+		"Title" : "Combat",
+		"GameLine" : "World of Darkness",
+		"Published" : "1997",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2223",
+		"ISBN" : "1-56504-136-4",
+		"Title" : "Gypsies",
+		"GameLine" : "World of Darkness",
+		"Published" : "1997",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW4802",
+		"ISBN" : "1-56504-491-6",
+		"Title" : "The Bygone Bestiary",
+		"GameLine" : "World of Darkness",
+		"Published" : "1998",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3350",
+		"ISBN" : "1-56504-354-5",
+		"Title" : "Blood-Dimmed Tides",
+		"GameLine" : "World of Darkness",
+		"Published" : "1999",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2228",
+		"ISBN" : "1-58846-266-9",
+		"Title" : "Mafia",
+		"GameLine" : "World of Darkness",
+		"Published" : "2002",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW5399",
+		"ISBN" : "1-58846-475-X",
+		"Title" : "Time of Judgment",
+		"GameLine" : "World of Darkness",
+		"Published" : "2004",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3000",
+		"ISBN" : "1-56504-027-9",
+		"Title" : "Werewolf: The Apocalypse",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1992",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3001",
+		"ISBN" : "1-56504-035-X",
+		"Title" : "Werewolf Storyteller's Screen",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1992",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3002",
+		"ISBN" : "1-56504-037-8",
+		"Title" : "Rite of Passage",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1992",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3100",
+		"ISBN" : "1-56504-040-6",
+		"Title" : "Rage Across New York",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1992",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3050",
+		"ISBN" : "1-56504-044-9",
+		"Title" : "Ways of the Wolf",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1993",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3101",
+		"ISBN" : "1-56504-047-3",
+		"Title" : "Valkenburg Foundation",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1993",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3102",
+		"ISBN" : "1-56504-049-X",
+		"Title" : "Under a Blood Red Moon",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1993",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3103",
+		"ISBN" : "1-56504-059-7",
+		"Title" : "Dark Alliance: Vancouver",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1993",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3104",
+		"ISBN" : "1-56504-061-9",
+		"Title" : "Rage Across the Amazon",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1993",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3105",
+		"ISBN" : "1-56504-077-5",
+		"Title" : "Rage Across Russia",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1993",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3200",
+		"ISBN" : "1-56504-041-4",
+		"Title" : "Book of the Wyrm",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1993",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3201",
+		"ISBN" : "1-56504-066-X",
+		"Title" : "Caerns: Places of Power",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1993",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3202",
+		"ISBN" : "1-56504-057-0",
+		"Title" : "Werewolf Players Guide",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1993",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3204",
+		"ISBN" : "1-56504-076-7",
+		"Title" : "Umbra: The Velvet Shadow",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1993",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3600",
+		"ISBN" : "1-56504-112-7",
+		"Title" : "Werewolf: The Apocalypse, 2nd Ed.",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1994",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3203",
+		"ISBN" : "1-56504-060-0",
+		"Title" : "Monkeywrench! Pentex",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1994",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3106",
+		"ISBN" : "1-56504-127-5",
+		"Title" : "Rage Across Australia",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1994",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3205",
+		"ISBN" : "1-56504-131-3",
+		"Title" : "Werewolf Storytellers Handbook",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1994",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3601",
+		"ISBN" : "1-56504-113-5",
+		"Title" : "Werewolf Storytellers Screen Second Edition",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1994",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3401",
+		"ISBN" : "1-56504-140-2",
+		"Title" : "Who's Who Among Werewolves: Garou Saga",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1994",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3051",
+		"ISBN" : "1-56504-093-7",
+		"Title" : "Black Furies Tribebook",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1994",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3052",
+		"ISBN" : "1-56504 094-5",
+		"Title" : "Bone Gnawers Tribebook",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1994",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3053",
+		"ISBN" : "1-56504-141-0",
+		"Title" : "Children of Gaia Tribebook",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1994",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3064",
+		"ISBN" : "1-56504-310-3",
+		"Title" : "Project Twilight",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1995",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3207",
+		"ISBN" : "1-56504-321-9",
+		"Title" : "Werewolf Chronicles Volume 1",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1997",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3063",
+		"ISBN" : "1-56504-338-3",
+		"Title" : "Hengeyokai: Shapeshifters of the East",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1998",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3110",
+		"ISBN" : "1-56504-309-X",
+		"Title" : "Rage Across the Heavens",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "1999",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3801",
+		"ISBN" : "1-56504-365-0",
+		"Title" : "Werewolf: The Apocalypse Revised Edition",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "2000",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3066",
+		"ISBN" : "1-56504-350-2",
+		"Title" : "Freak Legion: A Players Guide to Fomori[1]",
+		"GameLine" : "Werewolf: The Apocalypse",
+		"Published" : "2000",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW4000",
+		"ISBN" : "1-56504-065-1",
+		"Title" : "Mage: The Ascension",
+		"GameLine" : "Mage: The Ascension",
+		"Published" : "1993",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW4251",
+		"ISBN" : "1-56504-137-2",
+		"Title" : "The Book of Madness",
+		"GameLine" : "Mage: The Ascension",
+		"Published" : "1994",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW4300",
+		"ISBN" : "1-56504-400-2",
+		"Title" : "Mage: The Ascension Second Edition",
+		"GameLine" : "Mage: The Ascension",
+		"Published" : "1995",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW4014",
+		"ISBN" : "1-56504-400-2",
+		"Title" : "Guide to the Technocracy",
+		"GameLine" : "Mage: The Ascension",
+		"Published" : "1999",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW4600",
+		"ISBN" : "1-56504-455-X",
+		"Title" : "Mage: The Ascension Revised Edition",
+		"GameLine" : "Mage: The Ascension",
+		"Published" : "2001",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW4603",
+		"ISBN" : "1-56504-400-2",
+		"Title" : "Guide to the Traditions",
+		"GameLine" : "Mage: The Ascension",
+		"Published" : "2001",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW4602",
+		"ISBN" : "1-56504-442-8",
+		"Title" : "The Book of Madness Revised",
+		"GameLine" : "Mage: The Ascension",
+		"Published" : "2001",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6000",
+		"ISBN" : "1-56504-133-X",
+		"Title" : "Wraith: The Oblivion",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1994",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6002",
+		"ISBN" : "1-56504-168-2",
+		"Title" : "Wraith Storyteller's Kit",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1994",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6004",
+		"ISBN" : "1-56504-611-0",
+		"Title" : "Love Beyond Death",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1994",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6005",
+		"ISBN" : "1-56504-122-4",
+		"Title" : "The Face of Death",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1994",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6060",
+		"ISBN" : "1-56504-610-2",
+		"Title" : "Haunts",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1994",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6100",
+		"ISBN" : "1-56504-132-1",
+		"Title" : "Wraith Players Kit",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1994",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6101",
+		"ISBN" : "1-56504-156-9",
+		"Title" : "Midnight Express",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1994",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6200",
+		"ISBN" : "1-56504-164-X",
+		"Title" : "Necropolis: Atlanta",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1994",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6006",
+		"ISBN" : "1-56504-612-9",
+		"Title" : "The Sea of Shadows",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1995",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6007",
+		"ISBN" : "1-56504-601-3",
+		"Title" : "Wraith Players Guide",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1995",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6008",
+		"ISBN" : "1-56504-613-7",
+		"Title" : "The Quick & the Dead",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1995",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6009",
+		"ISBN" : "1-56504-614-5",
+		"Title" : "The Hierarchy",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1995",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6300",
+		"ISBN" : "1-56504-661-7",
+		"Title" : "Guildbook: Artificers",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1995",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6301",
+		"ISBN" : "1-56504-662-5",
+		"Title" : "Guildbook: Sandmen",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1995",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6010",
+		"ISBN" : "1-56504-615-3",
+		"Title" : "Dark Kingdom of Jade",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1995",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6011",
+		"ISBN" : "1-56504-604-8",
+		"Title" : "Guildbook: Masquers",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1995",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6012",
+		"ISBN" : "1-56504-617-X",
+		"Title" : "Dark Kingdom of Jade Adventures",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1995",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6902",
+		"ISBN" : "1-56504-650-1",
+		"Title" : "Dark Reflections: Spectres ",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1995",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6302",
+		"ISBN" : "1-56504-663-3",
+		"Title" : "The Risen",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1996",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6600",
+		"ISBN" : "1-56504-600-5",
+		"Title" : "Wraith: The Oblivion Second Edition",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1996",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6601",
+		"ISBN" : "1-56504-603-X",
+		"Title" : "Buried Secrets",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1996",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6013",
+		"ISBN" : "1-56504-602-1",
+		"Title" : "Shadow Players Guide",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1997",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6102",
+		"ISBN" : "1-56504-619-6",
+		"Title" : "Mediums: Speakers with the Dead",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1997",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6303",
+		"ISBN" : "1-56504-604-8",
+		"Title" : "Guildbook: Haunters",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1997",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6304",
+		"ISBN" : "1-56504-665-X",
+		"Title" : "Guildbook: Pardoners and Puppeteers",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1997",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6903",
+		"ISBN" : "1-56504-651-X",
+		"Title" : "Charnel Houses of Europe: The Shoah ",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1997",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6305",
+		"ISBN" : "1-56504-666-8",
+		"Title" : "Guildbook: Spooks and Oracles",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1998",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6064",
+		"ISBN" : "1-56504-635-8",
+		"Title" : "Doomslayers: Into the Labyrinth",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1998",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6065",
+		"ISBN" : "1-56504-636-6",
+		"Title" : "Renegades",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1998",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6063",
+		"ISBN" : "1-56504-652-8",
+		"Title" : "The Book of Legions",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1998",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6103",
+		"ISBN" : "1-56504-633-1",
+		"Title" : "Tokyo",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1998",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6800",
+		"ISBN" : "1-56504-634-X",
+		"Title" : "WTGW: Wraith: The Great War Rulebook",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1999",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW6014",
+		"ISBN" : "1-56504-618-8",
+		"Title" : "Ends of Empire",
+		"GameLine" : "Wraith: The Oblivion",
+		"Published" : "1999",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW7000",
+		"ISBN" : "1-56504-700-1",
+		"Title" : "Changeling: The Dreaming",
+		"GameLine" : "Changeling: The Dreaming",
+		"Published" : "1995",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW7001",
+		"ISBN" : "1-56504-702-8",
+		"Title" : "Book of Storyteller Secrets (CTD)",
+		"GameLine" : "Changeling: The Dreaming",
+		"Published" : "1995",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW7200",
+		"ISBN" : "1-56504-703-6",
+		"Title" : "Immortal Eyes: The Toybox",
+		"GameLine" : "Changeling: The Dreaming",
+		"Published" : "1995",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW7002",
+		"ISBN" : "1-56504-706-0",
+		"Title" : "Freeholds & Hidden Glens",
+		"GameLine" : "Changeling: The Dreaming",
+		"Published" : "1995",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW7006",
+		"ISBN" : "1-56504-711-7",
+		"Title" : "Nobles: The Shining Host",
+		"GameLine" : "Changeling: The Dreaming",
+		"Published" : "1995",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW7003",
+		"ISBN" : "1-56504-704-4",
+		"Title" : "Changeling Players Kit",
+		"GameLine" : "Changeling: The Dreaming",
+		"Published" : "1995",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW7004",
+		"ISBN" : "1-56504-709-5",
+		"Title" : "The Autumn People",
+		"GameLine" : "Changeling: The Dreaming",
+		"Published" : "1995",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW7100",
+		"ISBN" : "1-56504-701-X",
+		"Title" : "Changeling Players Guide",
+		"GameLine" : "Changeling: The Dreaming",
+		"Published" : "1996",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW7050",
+		"ISBN" : "1-56504-725-7",
+		"Title" : "Kithbook: Trolls",
+		"GameLine" : "Changeling: The Dreaming",
+		"Published" : "1996",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW7201",
+		"ISBN" : "1-56504-705-2",
+		"Title" : "Immortal Eyes: Shadows on the Hill",
+		"GameLine" : "Changeling: The Dreaming",
+		"Published" : "1996",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW7202",
+		"ISBN" : "1-56504-713-3",
+		"Title" : "Immortal Eyes: Court of All Kings",
+		"GameLine" : "Changeling: The Dreaming",
+		"Published" : "1996",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW7300",
+		"ISBN" : "1-56504-716-8",
+		"Title" : "Changeling: The Dreaming Second Edition",
+		"GameLine" : "Changeling: The Dreaming",
+		"Published" : "1997",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW07302",
+		"ISBN" : "1-56504-717-6",
+		"Title" : "Book of Lost Dreams",
+		"GameLine" : "Changeling: The Dreaming",
+		"Published" : "1997",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW7308",
+		"ISBN" : "1-56504-722-2",
+		"Title" : "Land of Eight Million Dreams",
+		"GameLine" : "Changeling: The Dreaming",
+		"Published" : "1998",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW7010",
+		"ISBN" : "1-56504-715-X",
+		"Title" : "The Fool's Luck: The Way of the Commoner",
+		"GameLine" : "Changeling: The Dreaming",
+		"Published" : "1999",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2800",
+		"ISBN" : "1-56504-275-1",
+		"Title" : "Vampire: The Dark Ages (1st edition)",
+		"GameLine" : "Vampire: The Dark Ages",
+		"Published" : "1996",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2802",
+		"ISBN" : "1-56504-277-8",
+		"Title" : "Book of Storyteller Secrets",
+		"GameLine" : "Vampire: The Dark Ages",
+		"Published" : "1996",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2803",
+		"ISBN" : "1-56504-278-6",
+		"Title" : "Constantinople by Night",
+		"GameLine" : "Vampire: The Dark Ages",
+		"Published" : "1996",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2804",
+		"ISBN" : "1-56504-279-4",
+		"Title" : "Dark Ages Companion",
+		"GameLine" : "Vampire: The Dark Ages",
+		"Published" : "1997",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2805",
+		"ISBN" : "1-56504-280-8",
+		"Title" : "Clanbook: Cappadocian",
+		"GameLine" : "Vampire: The Dark Ages",
+		"Published" : "1997",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2808",
+		"ISBN" : "1-56504-287-5",
+		"Title" : "Transylvania by Night",
+		"GameLine" : "Vampire: The Dark Ages",
+		"Published" : "1997",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2817",
+		"ISBN" : "1-56504-213-1",
+		"Title" : "Clanbook: Baali ",
+		"GameLine" : "Vampire: The Dark Ages",
+		"Published" : "1998",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2819",
+		"ISBN" : "1-56504-296-4",
+		"Title" : "Cainite Heresy",
+		"GameLine" : "Vampire: The Dark Ages",
+		"Published" : "1999",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2821",
+		"ISBN" : "1-56504-299-9",
+		"Title" : "Jerusalem by Night",
+		"GameLine" : "Vampire: The Dark Ages",
+		"Published" : "1999",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2822",
+		"ISBN" : "1-56504-212-3",
+		"Title" : "Clanbook: Salubri",
+		"GameLine" : "Vampire: The Dark Ages",
+		"Published" : "1999",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2825",
+		"ISBN" : "1-56504-270-0",
+		"Title" : "Fountains of Bright Crimson",
+		"GameLine" : "Vampire: The Dark Ages",
+		"Published" : "1999",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2826",
+		"ISBN" : "1-56504-241-7",
+		"Title" : "The Ashen Knight",
+		"GameLine" : "Vampire: The Dark Ages",
+		"Published" : "2000",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2827",
+		"ISBN" : "1-56504-236-0",
+		"Title" : "The Ashen Thief",
+		"GameLine" : "Vampire: The Dark Ages",
+		"Published" : "2000",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2828",
+		"ISBN" : "1-56504-271-9",
+		"Title" : "Wind From the East",
+		"GameLine" : "Vampire: The Dark Ages",
+		"Published" : "2000",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2829",
+		"ISBN" : "1-56504-272-7",
+		"Title" : "House of Tremere",
+		"GameLine" : "Vampire: The Dark Ages",
+		"Published" : "2000",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2832",
+		"ISBN" : "1-56504-206-4",
+		"Title" : "Veil of Night",
+		"GameLine" : "Vampire: The Dark Ages",
+		"Published" : "2001",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2834",
+		"ISBN" : "1-56504-212-9",
+		"Title" : "Iberia by Night",
+		"GameLine" : "Vampire: The Dark Ages",
+		"Published" : "2001",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3700",
+		"ISBN" : "1-56504-340-5",
+		"Title" : "Werewolf: The Wild West",
+		"GameLine" : "Werewolf: The Wild West",
+		"Published" : "1997",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3701",
+		"ISBN" : "1-56504-341-3",
+		"Title" : "Frontier Secrets",
+		"GameLine" : "Werewolf: The Wild West",
+		"Published" : "1997",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3703",
+		"ISBN" : "1-56504-343-X",
+		"Title" : "Ghost Towns",
+		"GameLine" : "Werewolf: The Wild West",
+		"Published" : "1998",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW3704",
+		"ISBN" : "1-56504-344-8",
+		"Title" : "The Wild West Companion",
+		"GameLine" : "Werewolf: The Wild West",
+		"Published" : "1998",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2900",
+		"ISBN" : "1-56504-232-8",
+		"Title" : "Kindred of the East",
+		"GameLine" : "Kindred of the East",
+		"Published" : "1998",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2901",
+		"ISBN" : "1-56504-223-9",
+		"Title" : "Kindred of the East Companion",
+		"GameLine" : "Kindred of the East",
+		"Published" : "1998",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2902",
+		"ISBN" : "1-56504-226-3",
+		"Title" : "The Thousand Hells",
+		"GameLine" : "Kindred of the East",
+		"Published" : "1999",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2903",
+		"ISBN" : "1-56504-227-1",
+		"Title" : "Shadow War",
+		"GameLine" : "Kindred of the East",
+		"Published" : "1999",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2904",
+		"ISBN" : "1-56504-239-5",
+		"Title" : "Dharma Book: Devil-Tigers",
+		"GameLine" : "Kindred of the East",
+		"Published" : "1999",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2920",
+		"ISBN" : "1-56504-247-6",
+		"Title" : "Half-Damned: Dhampyr",
+		"GameLine" : "Kindred of the East",
+		"Published" : "2000",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2905",
+		"ISBN" : "1-56504-240-9",
+		"Title" : "Dharma Book: Bone Flowers",
+		"GameLine" : "Kindred of the East",
+		"Published" : "2000",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2930",
+		"ISBN" : "1-58846-208-0",
+		"Title" : "Killing Streets",
+		"GameLine" : "Kindred of the East",
+		"Published" : "2001",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2907",
+		"ISBN" : "1-58846-211-0",
+		"Title" : "Dharma Book: Thrashing Dragons",
+		"GameLine" : "Kindred of the East",
+		"Published" : "2001",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2906",
+		"ISBN" : "1-58846-200-5",
+		"Title" : "Dharma Book: Thousand Whispers",
+		"GameLine" : "Kindred of the East",
+		"Published" : "2001",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2921",
+		"ISBN" : "1-58846-231-5",
+		"Title" : "San Francisco by Night",
+		"GameLine" : "Kindred of the East",
+		"Published" : "2002",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2922",
+		"ISBN" : "1-58846-232-3",
+		"Title" : "Heresies of the Way",
+		"GameLine" : "Kindred of the East",
+		"Published" : "2002",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2908",
+		"ISBN" : "1-58846-221-8",
+		"Title" : "Dharma Book: Resplendent Cranes",
+		"GameLine" : "Kindred of the East",
+		"Published" : "2002",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8100",
+		"ISBN" : "1-56504-735-4",
+		"Title" : "The Reckoning",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "1999",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8101",
+		"ISBN" : "1-56504-736-2",
+		"Title" : "Hunter Storytellers Companion",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "1999",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8102",
+		"ISBN" : "1-56504-737-0",
+		"Title" : "Hunter Survival Guide",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "1999",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8103",
+		"ISBN" : "1-56504-739-7",
+		"Title" : "Avenger",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "2000",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8104",
+		"ISBN" : "1-56504-740-0",
+		"Title" : "Defender",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "2000",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8105",
+		"ISBN" : "1-56504-741-9",
+		"Title" : "The Walking Dead",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "2000",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8106",
+		"ISBN" : "1-56504-742-7",
+		"Title" : "Innocent",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "2000",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8107",
+		"ISBN" : "1-56504-743-5",
+		"Title" : "Judge",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "2000",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8108",
+		"ISBN" : "1-56504-744-3",
+		"Title" : "Hunter Apocrypha",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "2000",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8109",
+		"ISBN" : "1-56504-745-1",
+		"Title" : "Martyr",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "2000",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8110",
+		"ISBN" : "1-56504-746-X",
+		"Title" : "Redeemer",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "2000",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8111",
+		"ISBN" : "1-56504-747-8",
+		"Title" : "Visionary",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "2001",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8112",
+		"ISBN" : "1-56504-748-6",
+		"Title" : "Hermit",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "2001",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8113",
+		"ISBN" : "1-58846-703-1",
+		"Title" : "Wayward ",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "2002",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8120",
+		"ISBN" : "1-58846-700-7",
+		"Title" : "Hunter Player's Guide",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "2001",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8121",
+		"ISBN" : "1-58846-701-5",
+		"Title" : "Hunter Storyteller's Handbook",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "2001",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8130",
+		"ISBN" : "1-58846-702-3",
+		"Title" : "Holy War",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "2001",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8131",
+		"ISBN" : "1-58846-704-X",
+		"Title" : "First Contact",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "2002",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8132",
+		"ISBN" : "1-58846-705-8",
+		"Title" : "The Nocturnal",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "2002",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8133",
+		"ISBN" : "1-58846-706-6",
+		"Title" : "Utopia",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "2002",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8134",
+		"ISBN" : "1-58846-707-4",
+		"Title" : "The Moonstruck",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "2002",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8135",
+		"ISBN" : "1-58846-708-2",
+		"Title" : "Fall From Grace",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "2002",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8136",
+		"ISBN" : "1-58846-709-0",
+		"Title" : "The Spellbound",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "2003",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8137",
+		"ISBN" : "1-58846-710-4",
+		"Title" : "The Infernal",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "2003",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8138",
+		"ISBN" : "1-58846-711-2",
+		"Title" : "Urban Legends",
+		"GameLine" : "Hunter: The Reckoning",
+		"Published" : "2003",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW20000",
+		"ISBN" : "1-58846-276-5",
+		"Title" : "Dark Ages: Vampire Rulebook",
+		"GameLine" : "Dark Ages",
+		"Published" : "2002",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW20002",
+		"ISBN" : "1-56504-625-0",
+		"Title" : "Dark Ages: Mage",
+		"GameLine" : "Dark Ages",
+		"Published" : "2002",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW20003",
+		"ISBN" : "1-58846-278-1",
+		"Title" : "Dark Ages Storyteller Companion",
+		"GameLine" : "Dark Ages",
+		"Published" : "2002",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW20004",
+		"ISBN" : "1-58846-282-X",
+		"Title" : "Dark Ages: Inquisitor",
+		"GameLine" : "Dark Ages",
+		"Published" : "2002",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW20030",
+		"ISBN" : "1-58846-280-3",
+		"Title" : "Road of the Beast",
+		"GameLine" : "Dark Ages",
+		"Published" : "2002",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW20031",
+		"ISBN" : "1-58846-281-1",
+		"Title" : "Road of Kings",
+		"GameLine" : "Dark Ages",
+		"Published" : "2002",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW20005",
+		"ISBN" : "1-58846-284-6",
+		"Title" : "Dark Ages: Werewolf",
+		"GameLine" : "Dark Ages",
+		"Published" : "2003",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW20006",
+		"ISBN" : "1-58846-287-0",
+		"Title" : "Players Guide to Low Clans",
+		"GameLine" : "Dark Ages",
+		"Published" : "2003",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW20007",
+		"ISBN" : "1-58846-289-7",
+		"Title" : "Players Guide to High Clans",
+		"GameLine" : "Dark Ages",
+		"Published" : "2003",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW20032",
+		"ISBN" : "1-58846-285-4",
+		"Title" : "Road of Heaven",
+		"GameLine" : "Dark Ages",
+		"Published" : "2003",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW20033",
+		"ISBN" : "1-58846-288-9",
+		"Title" : "Road of Sin",
+		"GameLine" : "Dark Ages",
+		"Published" : "2003",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW20045",
+		"ISBN" : "1-58846-283-8",
+		"Title" : "Right of Princes",
+		"GameLine" : "Dark Ages",
+		"Published" : "2003",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW20008",
+		"ISBN" : "1-58846-292-7",
+		"Title" : "Fae Rulebook",
+		"GameLine" : "Dark Ages",
+		"Published" : "2004",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2470",
+		"ISBN" : "1-58846-299-3",
+		"Title" : "Vampire Rulebook",
+		"GameLine" : "Victorian Age",
+		"Published" : "2002",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2471",
+		"ISBN" : "1-58846-230-7",
+		"Title" : "London by Night",
+		"GameLine" : "Victorian Age",
+		"Published" : "2002",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW2472",
+		"ISBN" : "1-58846-238-2",
+		"Title" : "Vampire Companion",
+		"GameLine" : "Victorian Age",
+		"Published" : "2003",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8200",
+		"ISBN" : "1-58846-750-3",
+		"Title" : "The Fallen",
+		"GameLine" : "Demon: The Fallen",
+		"Published" : "2002",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8201",
+		"ISBN" : "1-58846-751-1",
+		"Title" : "Demon Storytellers Companion",
+		"GameLine" : "Demon: The Fallen",
+		"Published" : "2002",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8202",
+		"ISBN" : "1-58846-756-2",
+		"Title" : "Demon Players Guide",
+		"GameLine" : "Demon: The Fallen",
+		"Published" : "2003",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8203",
+		"ISBN" : "1-58846-760-0",
+		"Title" : "Houses of the Fallen",
+		"GameLine" : "Demon: The Fallen",
+		"Published" : "2003",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8211",
+		"ISBN" : "1-58846-752-X",
+		"Title" : "City of Angels",
+		"GameLine" : "Demon: The Fallen",
+		"Published" : "2003",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8220",
+		"ISBN" : "1-58846-754-6",
+		"Title" : "Saviors and Destroyers",
+		"GameLine" : "Demon: The Fallen",
+		"Published" : "2003",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8221",
+		"ISBN" : "1-58846-758-9",
+		"Title" : "Damned and Deceived",
+		"GameLine" : "Demon: The Fallen",
+		"Published" : "2003",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8270",
+		"ISBN" : "1-58846-753-8",
+		"Title" : "Fear to Tread",
+		"GameLine" : "Demon: The Fallen",
+		"Published" : "2003",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8280",
+		"ISBN" : "1-58846-761-9",
+		"Title" : "Earthbound",
+		"GameLine" : "Demon: The Fallen",
+		"Published" : "2003",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW8281",
+		"ISBN" : "1-58846-762-7",
+		"Title" : "Days of Fire",
+		"GameLine" : "Demon: The Fallen",
+		"Published" : "2003",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW21000",
+		"ISBN" : "1-58846-600-00",
+		"Title" : "Orpheus",
+		"GameLine" : "Orpheus",
+		"Published" : "2003",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW21001",
+		"ISBN" : "1-58846-601-9",
+		"Title" : "Crusade of Ashes",
+		"GameLine" : "Orpheus",
+		"Published" : "2003",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW21010",
+		"ISBN" : "1-58846-602-7",
+		"Title" : "Shades of Gray",
+		"GameLine" : "Orpheus",
+		"Published" : "2003",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW21011",
+		"ISBN" : "1-58846-603-5",
+		"Title" : "Shadow Games",
+		"GameLine" : "Orpheus",
+		"Published" : "2003",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW21012",
+		"ISBN" : "1-58846-604-3",
+		"Title" : "The Orphan-Grinders",
+		"GameLine" : "Orpheus",
+		"Published" : "2004",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW21015",
+		"ISBN" : "1-58846-605-1",
+		"Title" : "End Game",
+		"GameLine" : "Orpheus",
+		"Published" : "2004",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55000",
+		"ISBN" : "1-58846-476-8",
+		"Title" : "Storytelling System Rulebook",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2004",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55400",
+		"ISBN" : "1-58846-483-0",
+		"Title" : "Ghost Stories",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2004",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55301",
+		"ISBN" : "1-58846-478-4",
+		"Title" : "Antagonists",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2004",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55302",
+		"ISBN" : "1-58846-485-7",
+		"Title" : "Mysterious Places",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2005",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55200",
+		"ISBN" : "1-58846-479-2",
+		"Title" : "Chicago",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2005",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55102",
+		"ISBN" : "1-58846-486-5",
+		"Title" : "Armory",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55100",
+		"ISBN" : "1-58846-546-2",
+		"Title" : "Second Sight",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW30202",
+		"ISBN" : "1-58846-334-6",
+		"Title" : "Shadows of the UK",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW30305",
+		"ISBN" : "1-58846-335-4",
+		"Title" : "Skinchangers",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55001",
+		"ISBN" : "1-58846-480-6",
+		"Title" : "Tales from the 13th Precinct",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25201",
+		"ISBN" : "1-58846-264-1",
+		"Title" : "Shadows of Mexico",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55303",
+		"ISBN" : "978-1-58846-489-7",
+		"Title" : "Urban Legends",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55202",
+		"ISBN" : "978-1-58846-490-3",
+		"Title" : "Book of Spirits",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55204",
+		"ISBN" : "978-1-58846-491-0",
+		"Title" : "Asylum",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55203",
+		"ISBN" : "978-1-58846-492-7",
+		"Title" : "Reliquary",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55103",
+		"ISBN" : "978-1-58846-493-4",
+		"Title" : "Changing Breeds",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55205",
+		"ISBN" : "978-1-58846-712-6",
+		"Title" : "Midnight Roads",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2008",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55004",
+		"ISBN" : "978-1-58846-713-3",
+		"Title" : "Innocents Rulebook",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2008",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55206",
+		"ISBN" : "978-1-58846-714-0",
+		"Title" : "Dogs of War",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2008",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55207",
+		"ISBN" : "978-1-58846-356-2",
+		"Title" : "Inferno",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2009",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55555",
+		"ISBN" : "978-1-58846-744-7",
+		"Title" : "Slasher",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2009",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55208",
+		"ISBN" : "978-1-58846-362-3",
+		"Title" : "Armory Reloaded",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2009",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55002",
+		"ISBN" : "978-1-58846-368-5",
+		"Title" : "Immortals",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2009",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "",
+		"ISBN" : "",
+		"Title" : "Proverbial Monsters",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2009",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW50501",
+		"ISBN" : "978-1-58846-382-1",
+		"Title" : "Book of the Dead",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2009",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WWoRLY?",
+		"ISBN" : "0-6666-696-0",
+		"Title" : "Dudes of Legend: How to Be Fucking Awesome",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2010",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55210",
+		"ISBN" : "1-58846-383-4",
+		"Title" : "Mirrors",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2010",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55210-1",
+		"ISBN" : "",
+		"Title" : "Mirrors - Bleeding Edge",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2011",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55210-2",
+		"ISBN" : "",
+		"Title" : "Mirrors - Infinite Macabre",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2011",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55211",
+		"ISBN" : "1-58846-393-1",
+		"Title" : "Nightmare on Hill Manor",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2011",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55020",
+		"ISBN" : "1-58846-536-5",
+		"Title" : "The Harvesters Compilation",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2011",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55107",
+		"ISBN" : "",
+		"Title" : "Glimpses of the Unknown",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2011",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WoD001",
+		"ISBN" : "237-0-00488-954-2",
+		"Title" : "The God-Machine Chronicle",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2013",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25102",
+		"ISBN" : "1-58846-255-2",
+		"Title" : "Bloodlines: The Hidden",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2005",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25001",
+		"ISBN" : "1-58846-249-8",
+		"Title" : "Lancea Sanctum",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2005",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25110",
+		"ISBN" : "1-58846-256-0",
+		"Title" : "Ghouls",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2005",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25200",
+		"ISBN" : "1-58846-248-X",
+		"Title" : "City of the Damned: New Orleans",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2005",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25120",
+		"ISBN" : "1-58846-257-9",
+		"Title" : "Ordo Dracul",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2005",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25301",
+		"ISBN" : "1-58846-285-7",
+		"Title" : "VII",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2005",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25121",
+		"ISBN" : "1-58846-259-5",
+		"Title" : "Invictus",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2005",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25103",
+		"ISBN" : "1-58846-260-9",
+		"Title" : "Bloodlines: The Legendary",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25302",
+		"ISBN" : "1-58846-261-7",
+		"Title" : "Requiem Chronicler's Guide",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25303",
+		"ISBN" : "1-58846-262-5",
+		"Title" : "Carthians",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25304",
+		"ISBN" : "1-58846-265-X",
+		"Title" : "Mythologies",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25305",
+		"ISBN" : "1-58846-263-3",
+		"Title" : "Circle of the Crone",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "",
+		"ISBN" : "978-0-470-03745-4",
+		"Title" : "Vampire: The Requiem for Dummies",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25111",
+		"ISBN" : "1-58846-266-8",
+		"Title" : "Belial's Brood",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25002",
+		"ISBN" : "1-58846-268-8",
+		"Title" : "The Blood",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25104",
+		"ISBN" : "1-58846-269-5",
+		"Title" : "Bloodlines: The Chosen",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25306",
+		"ISBN" : "1-58846-267-1",
+		"Title" : "Damnation City",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25140",
+		"ISBN" : "1-58846-270-1",
+		"Title" : "RFR: Requiem for Rome Rulebook",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25307",
+		"ISBN" : "1-58846-271-1",
+		"Title" : "RFR: Fall of the Camarilla",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2008",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25112",
+		"ISBN" : "1-58846-273-2",
+		"Title" : "Lords Over the Damned: Ventrue",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2008",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25115",
+		"ISBN" : "1-58846-352-4",
+		"Title" : "Kiss of the Succubus: Daeva",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2008",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25116",
+		"ISBN" : "1-58846-353-2",
+		"Title" : "Savage and Macabre: Gangrel",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2008",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25113",
+		"ISBN" : "1-58846-274-9",
+		"Title" : "Shadows in the Dark: Mekhet",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2009",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25113",
+		"ISBN" : "1-58846-274-9",
+		"Title" : "New Wave Requiem",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2009",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25308",
+		"ISBN" : "1-58846-449-0",
+		"Title" : "Night Horrors: Immortal Sinners",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2009",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25114",
+		"ISBN" : "1-58846-351-6",
+		"Title" : "The Beast That Haunts the Blood: Nosferatu",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2009",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25311",
+		"ISBN" : "1-58846-357-5",
+		"Title" : "Ancient Mysteries",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2009",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25312",
+		"ISBN" : "1-58846-364-8",
+		"Title" : "Ancient Bloodlines",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2009",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW 25313",
+		"ISBN" : "978-1-58846-374-6",
+		"Title" : "Night Horrors: Wicked Dead",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2009",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW 25315",
+		"ISBN" : "978-1-58846-392-3",
+		"Title" : "Invite Only",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2010",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW 25603",
+		"ISBN" : "",
+		"Title" : "Vampire Translation Guide",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2010",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW 25604",
+		"ISBN" : "",
+		"Title" : "The Danse Macabre",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2011",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "",
+		"ISBN" : "",
+		"Title" : "Strange, Dead Love",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2011",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW25033",
+		"ISBN" : "",
+		"Title" : "The Resurrectionists Collection",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2012",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "",
+		"ISBN" : "",
+		"Title" : "Blood Sorcery: Sacraments & Blasphemies",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2012",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "",
+		"ISBN" : "",
+		"Title" : "Reap the Whirlwind",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2013",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "VtR001",
+		"ISBN" : "237-0-00511-449-9",
+		"Title" : "Blood and Smoke: The Strix Chronicle",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2013",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW30000",
+		"ISBN" : "1-58846-324-9",
+		"Title" : "Werewolf: The Forsaken Rulebook",
+		"GameLine" : "Werewolf: The Forsaken",
+		"Published" : "2005",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW30200",
+		"ISBN" : "1-58846-325-7",
+		"Title" : "Hunting Ground: The Rockies",
+		"GameLine" : "Werewolf: The Forsaken",
+		"Published" : "2005",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW30300",
+		"ISBN" : "1-58846-326-5",
+		"Title" : "Predators",
+		"GameLine" : "Werewolf: The Forsaken",
+		"Published" : "2005",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW30100",
+		"ISBN" : "1-58846-327-3",
+		"Title" : "Lore of the Forsaken",
+		"GameLine" : "Werewolf: The Forsaken",
+		"Published" : "2005",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW30301",
+		"ISBN" : "1-58846-329-X",
+		"Title" : "Blood of the Wolf",
+		"GameLine" : "Werewolf: The Forsaken",
+		"Published" : "2005",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW30101",
+		"ISBN" : "1-58846-332-X",
+		"Title" : "Lodges: The Faithful",
+		"GameLine" : "Werewolf: The Forsaken",
+		"Published" : "2005",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW30303",
+		"ISBN" : "1-58846-332-X",
+		"Title" : "Blasphemies",
+		"GameLine" : "Werewolf: The Forsaken",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW30304",
+		"ISBN" : "1-58846-333-8",
+		"Title" : "Territories",
+		"GameLine" : "Werewolf: The Forsaken",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW30102",
+		"ISBN" : "1-58846-337-0",
+		"Title" : "Lodges: The Splintered",
+		"GameLine" : "Werewolf: The Forsaken",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW30110",
+		"ISBN" : "1-58846-336-2",
+		"Title" : "The Pure",
+		"GameLine" : "Werewolf: The Forsaken",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW30001",
+		"ISBN" : "1-58846-338-9",
+		"Title" : "The Rage: Forsaken Player's Guide",
+		"GameLine" : "Werewolf: The Forsaken",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW30306",
+		"ISBN" : "1-58846-339-5",
+		"Title" : "The War Against the Pure",
+		"GameLine" : "Werewolf: The Forsaken",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW30103",
+		"ISBN" : "1-58846-742-3",
+		"Title" : "Tribes of the Moon",
+		"GameLine" : "Werewolf: The Forsaken",
+		"Published" : "2008",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW30105",
+		"ISBN" : "",
+		"Title" : "Night Horrors: Wolfsbane",
+		"GameLine" : "Werewolf: The Forsaken",
+		"Published" : "2009",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW30106",
+		"ISBN" : "978-1-58846-375-3",
+		"Title" : "Signs of the Moon",
+		"GameLine" : "Werewolf: The Forsaken",
+		"Published" : "2010",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55108",
+		"ISBN" : "",
+		"Title" : "Forsaken Chronicler's Guide",
+		"GameLine" : "Werewolf: The Forsaken",
+		"Published" : "2011",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "",
+		"ISBN" : "",
+		"Title" : "Werewolf Translation Guide",
+		"GameLine" : "Werewolf: The Forsaken",
+		"Published" : "2012",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40900",
+		"ISBN" : "1-58846-424-5",
+		"Title" : "Gazing Into You",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2005",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40000",
+		"ISBN" : "1-58846-418-0",
+		"Title" : "Mage: The Awakening Rulebook",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2005",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40200",
+		"ISBN" : "1-58846-419-9",
+		"Title" : "Boston Unveiled",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2005",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40201",
+		"ISBN" : "1-58846-420-2",
+		"Title" : "Sanctum and Sigil",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2005",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40100",
+		"ISBN" : "1-58846-425-3",
+		"Title" : "Legacies: The Sublime",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40305",
+		"ISBN" : "1-58846-426-1",
+		"Title" : "Guardians of the Veil",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40301",
+		"ISBN" : "1-58846-427-X",
+		"Title" : "Tome of the Watchtowers",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40310",
+		"ISBN" : "1-58846-422-9",
+		"Title" : "Secrets of the Ruined Temple",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40306",
+		"ISBN" : "1-58846-428-8",
+		"Title" : "Reign of the Exarchs",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40302",
+		"ISBN" : "1-58846-429-6",
+		"Title" : "Tome of the Mysteries",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40101",
+		"ISBN" : "1-58846-430-X",
+		"Title" : "Legacies: The Ancient",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40307",
+		"ISBN" : "1-58846-431-8",
+		"Title" : "Intruders: Encounters With the Abyss",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40308",
+		"ISBN" : "1-58846-432-3",
+		"Title" : "The Free Council",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40309",
+		"ISBN" : "1-58846-433-0",
+		"Title" : "Magical Traditions",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40102",
+		"ISBN" : "1-58846-434-7",
+		"Title" : "The Mysterium",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40202",
+		"ISBN" : "1-58846-435-4",
+		"Title" : "Astral Realms",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40103",
+		"ISBN" : "1-58846-436-1",
+		"Title" : "The Adamantine Arrow",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40104",
+		"ISBN" : "1-58846-440-7",
+		"Title" : "Banishers",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2008",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40203",
+		"ISBN" : "1-58846-437-8",
+		"Title" : "Grimoire of Grimoires",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2008",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40105",
+		"ISBN" : "1-58846-438-5",
+		"Title" : "The Silver Ladder",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2008",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40312",
+		"ISBN" : "1-58846-439-2",
+		"Title" : "Keys to the Supernal Tarot",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2008",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40321",
+		"ISBN" : "1-58846-358-6",
+		"Title" : "Seers of the Throne",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2009",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40322",
+		"ISBN" : "1-58846-365-6",
+		"Title" : "Summoners",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2009",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40324",
+		"ISBN" : "978-1-58846-378-4",
+		"Title" : "Night Horrors: The Unbidden",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2010",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40325",
+		"ISBN" : "978-1-58846-386-9",
+		"Title" : "Mage Chronicler's Guide",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2010",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55106",
+		"ISBN" : "",
+		"Title" : "Mage Noir",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2011",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW40010",
+		"ISBN" : "",
+		"Title" : "Imperial Mysteries",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2012",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "",
+		"ISBN" : "",
+		"Title" : "Left-Hand Path",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2012",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "",
+		"ISBN" : "",
+		"Title" : "Mage Translation Guide",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2013",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW60000",
+		"ISBN" : "1-58846-606-X",
+		"Title" : "Promethean: The Created Rulebook",
+		"GameLine" : "Promethean: The Created",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW60300",
+		"ISBN" : "1-58846-488-1",
+		"Title" : "Pandora's Book",
+		"GameLine" : "Promethean: The Created",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW60100",
+		"ISBN" : "1-58846-607-8",
+		"Title" : "Strange Alchemies",
+		"GameLine" : "Promethean: The Created",
+		"Published" : "2006",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW60101",
+		"ISBN" : "1-58846-608-2",
+		"Title" : "Magnum Opus",
+		"GameLine" : "Promethean: The Created",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW60301",
+		"ISBN" : "978-1-58846-609",
+		"Title" : "Saturnine Night",
+		"GameLine" : "Promethean: The Created",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW70900",
+		"ISBN" : "",
+		"Title" : "Changeling: The Lost Quickstart",
+		"GameLine" : "Changeling: The Lost",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW70000",
+		"ISBN" : "1-58846-527-6",
+		"Title" : "Changeling: The Lost Rulebook",
+		"GameLine" : "Changeling: The Lost",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW70300",
+		"ISBN" : "1-58846-531-3",
+		"Title" : "Autumn Nightmares",
+		"GameLine" : "Changeling: The Lost",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW70200",
+		"ISBN" : "1-58846-532-0",
+		"Title" : "Winter Masques",
+		"GameLine" : "Changeling: The Lost",
+		"Published" : "2007",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW70201",
+		"ISBN" : "1-58846-246-0",
+		"Title" : "Rites of Spring",
+		"GameLine" : "Changeling: The Lost",
+		"Published" : "2008",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW70202",
+		"ISBN" : "1-58846-715-7",
+		"Title" : "Lords of Summer",
+		"GameLine" : "Changeling: The Lost",
+		"Published" : "2008",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW70203",
+		"ISBN" : "1-58846-717-1",
+		"Title" : "Equinox Road",
+		"GameLine" : "Changeling: The Lost",
+		"Published" : "2008",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW70205",
+		"ISBN" : "1-58846-743-0",
+		"Title" : "Night Horrors: Grim Fears",
+		"GameLine" : "Changeling: The Lost",
+		"Published" : "2008",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW70207",
+		"ISBN" : "1-58846-361-6",
+		"Title" : "Dancers in the Dusk",
+		"GameLine" : "Changeling: The Lost",
+		"Published" : "2009",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW70208",
+		"ISBN" : "1-58846-370-2",
+		"Title" : "Swords at Dawn",
+		"GameLine" : "Changeling: The Lost",
+		"Published" : "2009",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW70002",
+		"ISBN" : "",
+		"Title" : "Goblin Markets",
+		"GameLine" : "Changeling: The Lost",
+		"Published" : "2009",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW70004",
+		"ISBN" : "1-58846-464-4",
+		"Title" : "The Fear-Maker's Promise Compilation",
+		"GameLine" : "Changeling: The Lost",
+		"Published" : "2011",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW70006",
+		"ISBN" : "",
+		"Title" : "Victorian Lost",
+		"GameLine" : "Changeling: The Lost",
+		"Published" : "2012",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW-QS-2",
+		"ISBN" : "",
+		"Title" : "The Vigil Quickstart — One Year Later",
+		"GameLine" : "Hunter: The Vigil",
+		"Published" : "2008",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW-QS-1",
+		"ISBN" : "",
+		"Title" : "The Vigil Quickstart — The Hunt",
+		"GameLine" : "Hunter: The Vigil",
+		"Published" : "2008",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55550",
+		"ISBN" : "1-58846-718-8",
+		"Title" : "The Vigil Rulebook",
+		"GameLine" : "Hunter: The Vigil",
+		"Published" : "2008",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55554",
+		"ISBN" : "1-58846-722-5",
+		"Title" : "Witch Finders",
+		"GameLine" : "Hunter: The Vigil",
+		"Published" : "2008",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55588",
+		"ISBN" : "",
+		"Title" : "Block by Bloody Block",
+		"GameLine" : "Hunter: The Vigil",
+		"Published" : "2008",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55560",
+		"ISBN" : "1-58846-355-5",
+		"Title" : "Horror Recognition Guide",
+		"GameLine" : "Hunter: The Vigil",
+		"Published" : "2009",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55556",
+		"ISBN" : "1-58846-745-4",
+		"Title" : "Night Stalkers",
+		"GameLine" : "Hunter: The Vigil",
+		"Published" : "2009",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55557",
+		"ISBN" : "1-58846-746-1",
+		"Title" : "Spirit Slayers",
+		"GameLine" : "Hunter: The Vigil",
+		"Published" : "2009",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW55566",
+		"ISBN" : "1-58846-745-4",
+		"Title" : "Compacts & Conspiracies",
+		"GameLine" : "Hunter: The Vigil",
+		"Published" : "2010",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "",
+		"ISBN" : "237-0-00588-266-5",
+		"Title" : "Mortal Remains",
+		"GameLine" : "Hunter: The Vigil",
+		"Published" : "2014",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW60508",
+		"ISBN" : "978-1-58846-397-5",
+		"Title" : "Geist: The Sin-Eaters Quickstart",
+		"GameLine" : "Geist: The Sin-Eaters",
+		"Published" : "2009",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "WW60500",
+		"ISBN" : "1-58846-377-7",
+		"Title" : "Geist: The Sin-Eaters Rulebook",
+		"GameLine" : "Geist: The Sin-Eaters",
+		"Published" : "2009",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "",
+		"ISBN" : "",
+		"Title" : "Mummy: The Curse Rulebook",
+		"GameLine" : "Mummy: The Curse",
+		"Published" : "2013",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "",
+		"ISBN" : "",
+		"Title" : "Mummy: The Curse Player's Book",
+		"GameLine" : "Mummy: The Curse",
+		"Published" : "2013",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "",
+		"ISBN" : "",
+		"Title" : "Eve of Judgment",
+		"GameLine" : "Mummy: The Curse",
+		"Published" : "2013",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "",
+		"ISBN" : "",
+		"Title" : "Guildhalls of the Deathless",
+		"GameLine" : "Mummy: The Curse",
+		"Published" : "2013",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "",
+		"ISBN" : "",
+		"Title" : "Cursed Necropolis: D.C.",
+		"GameLine" : "Mummy: The Curse",
+		"Published" : "2014",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "",
+		"ISBN" : "",
+		"Title" : "Demon: The Descent Quickstart",
+		"GameLine" : "Demon: The Descent",
+		"Published" : "2013",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "",
+		"ISBN" : "",
+		"Title" : "Demon: The Descent Rulebook",
+		"GameLine" : "Demon: The Descent",
+		"Published" : "2014",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "",
+		"ISBN" : "237-0-00614-217-1",
+		"Title" : "Flowers of Hell: The Demon Players Guide",
+		"GameLine" : "Demon: The Descent",
+		"Published" : "2014",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "",
+		"ISBN" : "237-0-00610-101-7",
+		"Title" : "Heirs to Hell",
+		"GameLine" : "Demon: The Descent",
+		"Published" : "2014",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "",
+		"ISBN" : "237-0-00620-328-5",
+		"Title" : "Splintered City: Seattle",
+		"GameLine" : "Demon: The Descent",
+		"Published" : "2014",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "",
+		"ISBN" : "237-0-00620-331-5",
+		"Title" : "The Demon Seed Collection",
+		"GameLine" : "Demon: The Descent",
+		"Published" : "2014",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "",
+		"ISBN" : "",
+		"Title" : "Demon Translation Guide",
+		"GameLine" : "Demon: The Descent",
+		"Published" : "2015",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}
+]

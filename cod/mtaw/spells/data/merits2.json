@@ -1,0 +1,6566 @@
+[{
+		"Name" : "Architectural Attunement",
+		"Sources" : [{
+				"SourceBook" : "Chicago Workings",
+				"SourcePage" : "36"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "Perceive mystical resonance in a specific city",
+		"Levels" : "(••••) *pre: Wits ••, Academics ••, Occult •, Occult Specialty: Sacred Geometry or Mystic Architecture",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Area of Expertise",
+		"Sources" : [{
+				"SourceBook" : "FC",
+				"SourcePage" : "131 "
+			}, {
+				"SourceBook" : "GMCRU",
+				"SourcePage" : "161"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "increase a Mental Specialty to a +2",
+		"Levels" : "(••) *pre: Resolve ••, appropriate Mental Skill Specialty",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Atavism",
+		"Sources" : [{
+				"SourceBook" : "Slashers",
+				"SourcePage" : "127"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "Use higher of Wits or Dexterity for Defense",
+		"Levels" : "(•) *pre: Dexterity ••• or Wits •••, Intelligence •• or below",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Barrister",
+		"Sources" : [{
+				"SourceBook" : "BotD",
+				"SourcePage" : "91"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "Can safely gauge how far Old Law limits can be pushed",
+		"Levels" : "(••••) *pre: Politics •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Combat Awareness",
+		"Sources" : [{
+				"SourceBook" : "DoW",
+				"SourcePage" : "109"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "+2 to any situational awareness roll",
+		"Levels" : "(••) *pre: Military training or combat background.",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Common Sense",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "108 "
+			}, {
+				"SourceBook" : "GMCRU",
+				"SourcePage" : "161"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "gives significant cautions or ideas",
+		"Levels" : "(••••) (CO) (•••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Crafter's Sense",
+		"Sources" : [{
+				"SourceBook" : "FC",
+				"SourcePage" : "131"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "Common Sense related to a chosen Crafts Specialty",
+		"Levels" : "(•••) *pre: Crafts •••, Specialty",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Danger Sense",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "108 "
+			}, {
+				"SourceBook" : "GMCRU",
+				"SourcePage" : "162"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "+2 to detect ambush",
+		"Levels" : "(••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Dead Reckoning",
+		"Sources" : [{
+				"SourceBook" : "BotD",
+				"SourcePage" : "91"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "Gains 8-again when navigating in the Underworld; loses 10-again navigating above ground.",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Direction Sense",
+		"Sources" : [{
+				"SourceBook" : "GMCRU",
+				"SourcePage" : "162"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "inate sense of direction",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Eidetic Memory",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "108 "
+			}, {
+				"SourceBook" : "GMCRU",
+				"SourcePage" : "162"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "remember with ease, gain +2 to Intelligence + Composure to remember facts from large swaths of data",
+		"Levels" : "(••) (CO) (••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Emotional Detachment",
+		"Sources" : [{
+				"SourceBook" : "Asy",
+				"SourcePage" : "50"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "Ignores stress penalties equal to resolve",
+		"Levels" : "(•) *pre: Resolve ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Encyclopedic Knowledge",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "109 "
+			}, {
+				"SourceBook" : "GMCRU",
+				"SourcePage" : "162"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "know obscure facts choose a topic and can make Intelligence + Wits rolls to gain facts related to it at any time",
+		"Levels" : "(••••) (CO) (••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "EOD",
+		"Sources" : [{
+				"SourceBook" : "Arm",
+				"SourcePage" : "208"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "reduce penalty for disarming unfamiliar explosives",
+		"Levels" : "(••) *pre: Wits ••• or Dex •••, Crafts •••, Crafts Specialty of Demolitions",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Entheogenic Synesthesia",
+		"Sources" : [{
+				"SourceBook" : "MT",
+				"SourcePage" : "137"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "+1 to Perception when using psychoactive drugs",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Eye for the Strange",
+		"Sources" : [{
+				"SourceBook" : "GMCRU",
+				"SourcePage" : "162"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "can roll Intelligence + Composure to determine if scene has a supernatural cause",
+		"Levels" : "(••) *pre: Resolve",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Good Time Management",
+		"Sources" : [{
+				"SourceBook" : "Asy",
+				"SourcePage" : "50 "
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "cut time for non-magical Extended rolls by 1/4",
+		"Levels" : "(••) *pre: Academics, Medicine or Science ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Higher Calling",
+		"Sources" : [{
+				"SourceBook" : "Tome of the Watchtowers",
+				"SourcePage" : "125"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "+1 on Resolve rolls to resist coercion",
+		"Levels" : "(••) *pre: Resolve •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Holistic Awareness",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "109"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "Help others heal faster",
+		"Levels" : "(•••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Hypnotic Voice",
+		"Sources" : [{
+				"SourceBook" : "SS",
+				"SourcePage" : "66"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "induce trance state",
+		"Levels" : "(••••) *pre: Persuasion ••• or Science •••, Specialty of Hypnotherapy",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Hypnosis",
+		"Sources" : [{
+				"SourceBook" : "VII",
+				"SourcePage" : "149"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "Hypnotize subjects",
+		"Levels" : "(•••) *pre Medicine • or Occult •",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Informative",
+		"Sources" : [{
+				"SourceBook" : "FC",
+				"SourcePage" : "131"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "use specified Mental Skill in place of Expression",
+		"Levels" : "(•• or ••••) *pre: Wits ••, Appropriate Skill ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Interdisciplinary Specialty",
+		"Sources" : [{
+				"SourceBook" : "FC",
+				"SourcePage" : "132"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "share Specialty between two Skills",
+		"Levels" : "(•) *pre: Two Appropriate Skills •••, Specialty (mult)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Language",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "109"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "+1/dot Language known [Errata changed to buy separate merit per Language]",
+		"Levels" : "(• to •••) [Errata changed this to (•) with Expression to sound native]",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Lucid Dreamer",
+		"Sources" : [{
+				"SourceBook" : "SS",
+				"SourcePage" : "67"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "fight off intrusions into dreams",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Lucid Dreaming",
+		"Sources" : [{
+				"SourceBook" : "Changeling the Lost",
+				"SourcePage" : "195"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "",
+		"Levels" : "(••) *pre: non-changeling, Resolve •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Make Do",
+		"Sources" : [{
+				"SourceBook" : "FC",
+				"SourcePage" : "132"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "remove -1/dot penalty for shoddy tools",
+		"Levels" : "(• to •••) *pre: Wits •••, Appropriate Skill •",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Meditative Mind",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "109"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "no penalties to meditate",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Multi-Lingual",
+		"Sources" : [{
+				"SourceBook" : "Rel",
+				"SourcePage" : "85"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "2 languages per dot, conversationally",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Murder Expert",
+		"Sources" : [{
+				"SourceBook" : "Slasher",
+				"SourcePage" : "127"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "Strike a Killing Blow (WoD 168) against a single unsuspecting target",
+		"Levels" : "(•••) *pre:Intelligence ••, Stealth •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Mythologist",
+		"Sources" : [{
+				"SourceBook" : "BotD",
+				"SourcePage" : "91"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "Gains some insight into some of the Underworld's enigmas",
+		"Levels" : "(•••) *pre: Occult •• with specialty in Underworld lore or similar",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Psychic Resistance",
+		"Sources" : [{
+				"SourceBook" : "SS",
+				"SourcePage" : "6"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "inhibit mental alteration by Psychics",
+		"Levels" : "(• to •••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Rational Explanation",
+		"Sources" : [{
+				"SourceBook" : "FC",
+				"SourcePage" : "133"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "resist mental breakdown with Science or Academics",
+		"Levels" : "(••••) *pre: Resolve ••, Science or Academics ••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Scientist's Sense",
+		"Sources" : [{
+				"SourceBook" : "FC",
+				"SourcePage" : "133"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "Common Sense related to Science",
+		"Levels" : "(•••) *pre: Science •••, Specialty",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Supernatural Lore",
+		"Sources" : [{
+				"SourceBook" : "GotU",
+				"SourcePage" : "15"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "Know secret inner workings of a supernatural creature's capabilities",
+		"Levels" : "(• to •••••) *mult, choose focus each time taken",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Technophile",
+		"Sources" : [{
+				"SourceBook" : "Arn",
+				"SourcePage" : "208"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "Encyclopedic Knowledge in one topic",
+		"Levels" : "(• or ••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Telltale Murder",
+		"Sources" : [{
+				"SourceBook" : "Slasher",
+				"SourcePage" : "127"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "After killing something, roll Intelligence + Medicine. •• version allows to 'taunt' those who would make Wits + Investigation rolls. ••• version allows to change the 'meaning' of a murder.",
+		"Levels" : "(•• or •••) *pre: Intelligence ••••, Medicine ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Tolerance for Biology",
+		"Sources" : [{
+				"SourceBook" : "Asy",
+				"SourcePage" : "51"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "+2 to to keep composed when shown scenes of violence or carnage",
+		"Levels" : "(•) *pre: Resolve, Stamina or Composure ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Trained Memory",
+		"Sources" : [{
+				"SourceBook" : "Gaurdians of the Veil",
+				"SourcePage" : "46"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "memorize information perfectly; roll to memorize for entire scene (i.e. everything a character could sense in a given moment) instead of specific information or sensory input",
+		"Levels" : "(•) *pre: Composure ••, Investigation •",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Trained Observer",
+		"Sources" : [{
+				"SourceBook" : "DoW",
+				"SourcePage" : "38"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "ignore penalties or gain Rote quality on Perception rolls",
+		"Levels" : "(• or •••) *pre: Wits ••• or Composure •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Tunnel Rat",
+		"Sources" : [{
+				"SourceBook" : "Chi",
+				"SourcePage" : "54"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "",
+		"Levels" : "(• to •••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Vision",
+		"Sources" : [{
+				"SourceBook" : "FC",
+				"SourcePage" : "133"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "use successes on Vision+Skill roll to aid an Extended Action",
+		"Levels" : "(• to •••••) *pre: Intelligence or Wits or Resolve or Composure ••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Well-Traveled",
+		"Sources" : [{
+				"SourceBook" : "Rel",
+				"SourcePage" : "85"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "9-Again on Mental and Social rolls relating to foreign cultures",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Whispers",
+		"Sources" : [{
+				"SourceBook" : "Myst",
+				"SourcePage" : "179"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mental",
+		"Effect" : "can purchase Dream and use it as Instant Action, at the cost of sanity",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Ambidextrous",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "110"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "remove off-hand penalty to attack",
+		"Levels" : "(•••) (CO)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Armored Fighting",
+		"Sources" : [{
+				"SourceBook" : "Reload",
+				"SourcePage" : "84"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "reduce heavy armor penalties by 1 (••) or 2 (••••)",
+		"Levels" : "(•• or ••••) *pre: Strength ••• and Stamina •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Athletics Dodge",
+		"Sources" : [{
+				"SourceBook" : "DoW",
+				"SourcePage" : "38"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "add Athletics rather than doubling Defense on Dodge",
+		"Levels" : "(•) *pre: Dexterity •• and Athletics •",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Brawling Dodge",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "110"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "add Brawl rather than doubling Defense on Dodge",
+		"Levels" : "(•) *pre: Strength •• and Brawl •",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Demolisher",
+		"Sources" : [{
+				"SourceBook" : "BotW",
+				"SourcePage" : "62"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "can ignore 1 (•) or 2 (••) points of Durability when attempting to damage objects",
+		"Levels" : "(• to ••) *pre: Strength ••• or Intelligence •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Disarm",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "110"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "if damage exceeds Dexterity, disarm",
+		"Levels" : "(••) *pre: Dex ••• and Weaponry •",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Direction Sense",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "110"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "unfailing orientation",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Entering Strike",
+		"Sources" : [{
+				"SourceBook" : "Reload",
+				"SourcePage" : "72"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "successful, defenseless Brawl strike adds bonus (= damage dealt) to subsequent grappling attack.",
+		"Levels" : "(••) *pre: Dexterity ••, Brawl •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Equipped Grappling",
+		"Sources" : [{
+				"SourceBook" : "Reload",
+				"SourcePage" : "89"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "add size of blunt weapon (3 or less) to overpowering maneuver dice pool",
+		"Levels" : "(••) *pre: Dexterity •••, Brawl ••, Weaponry ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Fighting Finesse",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "110 "
+			}, {
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "303"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "sub Dexterity for Strength",
+		"Levels" : "(••) *pre: Dex ••• and Weaponry •• (••) Pre: Dex 3, a Specialty in Weaponry or Brawl",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Firearms Retention",
+		"Sources" : [{
+				"SourceBook" : "Reload",
+				"SourcePage" : "89"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "subtract Brawl dots from attempts to disarm by overpowering",
+		"Levels" : "(•) *pre: Dexterity ••, Wits ••, Brawl ••, Firearms ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Fast Reflexes",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "110 "
+			}, {
+				"SourceBook" : "GMCRU",
+				"SourcePage" : "162"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "+1/dot to Initiative",
+		"Levels" : "(• or ••) *pre Dexterity ••• (• to",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Fleet of Foot",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "112"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "+1/dot to Speed",
+		"Levels" : "(• to •••) *pre Strength ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Fresh Start",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "112"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "delay action into next round",
+		"Levels" : "(•) *pre: Fast Reflexes ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Giant",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "112"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "+1 Size",
+		"Levels" : "(••••) (CO)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Ground and Pound",
+		"Sources" : [{
+				"SourceBook" : "Reload",
+				"SourcePage" : "98"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "perform Takedown/Throw, gain +2 to following unarmed strike.",
+		"Levels" : "(••) *pre: Combination Blows, Boxing ••• or Aggressive Striking •••, Grappling ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Gunslinger",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "112"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "two gun attacks per round",
+		"Levels" : "(•••) *pre: Dexterity ••• and Firearms •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Heavy Hands",
+		"Sources" : [{
+				"SourceBook" : "Reload",
+				"SourcePage" : "98"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "+1 damage to unarmed strikes",
+		"Levels" : "(•••) *pre: Strength •••, Brawl ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Iron Stamina",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "112"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "eliminate fatigue/injury penalties",
+		"Levels" : "(• to •••) *pre: Stamina ••• or Resolve •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Iron Stomach",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "113"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "eat even unpalatable cuisine",
+		"Levels" : "(••) *pre: Stamina ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Natural Immunity",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "113"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "+2 on Stamina rolls to resist illness",
+		"Levels" : "(•) *pre: Stamina ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Outdoorsman",
+		"Sources" : [{
+				"SourceBook" : "MR",
+				"SourcePage" : "59"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "negate environmental penalties to Survival",
+		"Levels" : "(••) *pre: Survival •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Perfect Stillness",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "94"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "-2 to all rolls to visually detect character",
+		"Levels" : "(•) *pre: Stealth •",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Quick Draw",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "113"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "draw and attack in one turn",
+		"Levels" : "(•) *pre: Dexterity •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Quick Healer",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "113"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "1/2 healing time",
+		"Levels" : "(••••) *pre: Stamina ••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Shield-Bearer",
+		"Sources" : [{
+				"SourceBook" : "WAtP",
+				"SourcePage" : "89"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "Only -1 to attack when using a shield instead of -2.",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Steady Driver",
+		"Sources" : [{
+				"SourceBook" : "MR",
+				"SourcePage" : "59"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "use Resolve+Drive rather than Dex",
+		"Levels" : "(•) *pre: Drive ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Strong Back",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "113"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "+1 to lift or carry",
+		"Levels" : "(•) *pre:Strength ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Strong Lungs",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "113"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "+2 on Stamina rolls to hold breath",
+		"Levels" : "(•••) *pre: Athletics •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Student of the Blade",
+		"Sources" : [{
+				"SourceBook" : "Reload",
+				"SourcePage" : "66"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "May use Fighting Style with all size-2 blades.",
+		"Levels" : "(•) *pre: Fencing • or Iaido •",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Stunt Driver",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "113"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "drive and carry out another action",
+		"Levels" : "(•••) *pre: Dexterity •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Stunt Rider",
+		"Sources" : [{
+				"SourceBook" : "RfR",
+				"SourcePage" : "110"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "ride and carry out another action",
+		"Levels" : "(•••) *pre: Dexterity •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "The Weapon at Hand",
+		"Sources" : [{
+				"SourceBook" : "Reload",
+				"SourcePage" : "79"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "Reflexive Wits + Weaponry roll for Improvised Weapon, instant action to wield, no penalty for being improvised",
+		"Levels" : "(••) *pre: Krav Maga ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Toxin Resistance",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "113"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "+2 on Stamina rolls to resist toxins",
+		"Levels" : "(••) *pre: Stamina •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Weaponry Dodge",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "114"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "add Weaponry rather than doubling Defense on Dodge",
+		"Levels" : "(•) *pre: Strength •• and Weaponry •",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Weapons to Empty Hands",
+		"Sources" : [{
+				"SourceBook" : "Reload",
+				"SourcePage" : "66"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "use Brawl instead of Weaponry for maneuver-related attacks.",
+		"Levels" : "(••) *pre: Dexterity •••, Brawl •••, Weaponry •••, Two Weapons •••• or Filipino Martial Arts •••• or Knife Fighting ••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Wheelman",
+		"Sources" : [{
+				"SourceBook" : "MR",
+				"SourcePage" : "59"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Physical",
+		"Effect" : "gain 9-Again on Drive rolls",
+		"Levels" : "(••) *pre: Dexterity ••, Drive ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Allies",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "114"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "Groups or organizations that can be called upon for favors, usually through particular individuals within those groups or organizations. Each dot represents overall power, resources and influence of that Ally. Allies are not minions: a favor for a favor is the basis of this merit. Allies may also be individuals at the GM's discretion.",
+		"Levels" : "(• to •••••) (mult)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Animal Companion",
+		"Sources" : [{
+				"SourceBook" : "Changing Breeds",
+				"SourcePage" : "95"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "",
+		"Levels" : "(• to ••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Anonymity",
+		"Sources" : [{
+				"SourceBook" : "BotW",
+				"SourcePage" : "46"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "-1/dot to attempts to investigate character",
+		"Levels" : "(•• to ••••) *pre: Resolve ••, Larceny •• or Subterfuge ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Armory",
+		"Sources" : [{
+				"SourceBook" : "Ban",
+				"SourcePage" : "51"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "own an array of weapons and armor",
+		"Levels" : "(• to •••••) (SH) *pre: Resources •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Barfly",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "114"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "find ways into bars and clubs",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Bureaucratic Navigator",
+		"Sources" : [{
+				"SourceBook" : "Asy",
+				"SourcePage" : "51"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "+2 to navigate a bureaucratic system",
+		"Levels" : "(••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Contacts",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "115"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "Individuals that can be called upon for information -- at the GM's discretion, this can include groups or organizations, usually through particular individuals within those groups or organization. Each dot represents overall information-gathering ability, knowledge, accuracy and reliability of that Contact and any information they provide. Contacts are not minions: they may or may not readily supply information sought. Contacts are strictly channels through which information can be gained and serve no other purpose.",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Decorated",
+		"Sources" : [{
+				"SourceBook" : "DoW",
+				"SourcePage" : "39"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "military awards for meritorious conduct (substitute military for another organization at GM's discretion)",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Deep Rapport",
+		"Sources" : [{
+				"SourceBook" : "BbBB",
+				"SourcePage" : "9"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "strong beneficial or harmful relationship with another character",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Fame",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "115"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "mortal acclaim, +1/dot to Socialize",
+		"Levels" : "(• to •••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Fence",
+		"Sources" : [{
+				"SourceBook" : "Ban",
+				"SourcePage" : "51"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "always find a way to buy and sell stolen goods",
+		"Levels" : "(• or •••) *pre: Streetwise •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Friend",
+		"Sources" : [{
+				"SourceBook" : "RCG",
+				"SourcePage" : "68"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "Personal friends. Can be called upon for assistance, information and many other favours. Power represents the influence and abilities of the friend. Trust represents the closeness of the relationship and reliability of the Friend if things go sour or how much they've got the back of the character. Friends are not minions but they generally also have the characters best interests at heart: they are a fragile mix of Allies, Contacts, Retainer and Mentor.",
+		"Levels" : "(• to •••••) {Power, Trust}",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Ingratiating Wanderer",
+		"Sources" : [{
+				"SourceBook" : "MR",
+				"SourcePage" : "58"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "gain bonus to locate authority figures in local power structures",
+		"Levels" : "(••) *pre: Manipulation •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Inspiring",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "115"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "help others regain Willpower",
+		"Levels" : "(••••) *pre: Presence ••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Luxury",
+		"Sources" : [{
+				"SourceBook" : "SotT",
+				"SourcePage" : "52"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "access to a lifestyle of wealth and luxury",
+		"Levels" : "(•• or ••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Mentor",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "115"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "Authoritative tutor or father figure. 1 dot represents specific knowledge, minimal resources and little influence in their field; 5 dots represent much hard-won and hard-learned knowledge, an abundance of resources and that they are a behemoth in their field. May or may not ultimately have the character's best interests at heart. Generally, the higher the dot rating, the more influence that the Mentor has over the character's life, directly or indirectly.",
+		"Levels" : "(• to •••••) (mult)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "New Identity",
+		"Sources" : [{
+				"SourceBook" : "Changeling the Lost",
+				"SourcePage" : "98"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "have a separate identity",
+		"Levels" : "(•, •• or ••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Resources",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "115"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "Disposable income. 1 dot represents a few hundred GBP; 5 represents millions reaching billions of GBP.",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Retainer",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "116"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "Trustworthy agent of the character. May be a personal assistant, personal bodyguard or even a deputy of the character. Retainers are generally loyal followers of the character but it is rare that they are an actual friend of the character -- their loyalty may also be only as strong as they are compensated by the character. Each dot represents the abilities of the character: 1 dot represents a weak, unskilled or otherwise lowly agent; 5 dots represents a very strong, highly skilled or otherwise outstanding agent who may even be supernatural.",
+		"Levels" : "(• to •••••) (mult)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Shadow Cult Initiation",
+		"Sources" : [{
+				"SourceBook" : "Mehket",
+				"SourcePage" : "121"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "Membership in a shadow cult, with resultant benefits",
+		"Levels" : "(• to •••••) (mult)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Small Unit Tactics",
+		"Sources" : [{
+				"SourceBook" : "DoW",
+				"SourcePage" : "39"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "when conducting a tactical maneuver with squad, leader can spend Willpower to benefit entire group",
+		"Levels" : "(•••) *pre: Manipulation ••• and Persuasion ••• with Leadership Specialty",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Staff",
+		"Sources" : [{
+				"SourceBook" : "Ghou",
+				"SourcePage" : "74"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "Employees -- may also be volunteers at GM's discretion. Represents general minions that the character commands and who ensure the running and managing of day-to-day operations for a character's businesses or organizations even when the character or any of their associates are not present or available to personally oversee the operations. Staff are not directly at the beck-and-call of the character like a Retainer but are given general responsibilities and are tasked instead. Staff are only as loyal as they are compensated. 1 dot represents the minimum manpower required for operations and generally unskilled and/or inexperienced manpower; 5 dots represent an abundance of manpower and generally highly talented and/or very experienced manpower",
+		"Levels" : "(• to •••••) *pre: Resources >= dots",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Status",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "116"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "Reputation, social standing, rank or mixture of all in a group, organization or some other social order. 1 dot represents some small measure of recognition and/or official membership; 5 dots represents being held as a paragon within the social order and/or a senior leadership position within or the actual leader of the social order.",
+		"Levels" : "(• to •••••) (mult) *pre: varies",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Striking Looks",
+		"Sources" : [{
+				"SourceBook" : "World of Darkness",
+				"SourcePage" : "117"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "+1/+2 to influence with looks. Purely aesthetic -- Presence represents force of personality, magnetism and personal charisma. 2 dots represents above-average looks; 4 dots represents angelic or supermodel-esque looks.",
+		"Levels" : "(•• or ••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Sworn Officer",
+		"Sources" : [{
+				"SourceBook" : "13P",
+				"SourcePage" : "81"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "Membership within a law enforcement organization, granting respect from other organizations and powers such as arrest and use of force as typical for the area within your jurisdiction. The size and scope of said jurisdiction is dictated by merit rating, 1 dot represents a small rural town or country; 3 represents state-wide police; 4 represents a federal officer.",
+		"Levels" : "(• to ••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Trip Sitter",
+		"Sources" : [{
+				"SourceBook" : "MT",
+				"SourcePage" : "137"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "help others resist side effects of drugs",
+		"Levels" : "(•••) *pre: Composure •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Unobtrusive",
+		"Sources" : [{
+				"SourceBook" : "Ghou",
+				"SourcePage" : "74"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Social",
+		"Effect" : "In studying a subject or a location, the character gains a +2 die bonus to escape notice as long as she’s engaged in some practical task at the same time. (Such tasks include driving, clearing a table, gardening, washing a car, performing a mundane desk job or any other such routine, monotonous drudgery.) +1 to the ghoul victim’s Resolve for purposes of resisting The Forgetful Mind (Dominate •••).",
+		"Levels" : "(•••) *pre: Stealth ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Cursed Item",
+		"Sources" : [{
+				"SourceBook" : "BoS",
+				"SourcePage" : "108"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Supernatural",
+		"Effect" : "",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Difficult to Ride",
+		"Sources" : [{
+				"SourceBook" : "BoS",
+				"SourcePage" : "108"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Supernatural",
+		"Effect" : "+2 against being affected by spirits or ghosts",
+		"Levels" : "(",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Driver's Charm",
+		"Sources" : [{
+				"SourceBook" : "MR",
+				"SourcePage" : "56"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Supernatural",
+		"Effect" : "grant a vehicle bonuses once per day",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Pleasing Aura",
+		"Sources" : [{
+				"SourceBook" : "BoS",
+				"SourcePage" : "109"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Supernatural",
+		"Effect" : "",
+		"Levels" : "(•••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Relic Creator",
+		"Sources" : [{
+				"SourceBook" : "Rel",
+				"SourcePage" : "85"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Supernatural",
+		"Effect" : "make limited-use Relics",
+		"Levels" : "(••••) *pre: Occult ••, Crafts ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Relic",
+		"Sources" : [{
+				"SourceBook" : "Rel",
+				"SourcePage" : "85"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Supernatural",
+		"Effect" : "own an empowered Relic",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Relic Analyst",
+		"Sources" : [{
+				"SourceBook" : "Rel",
+				"SourcePage" : "86"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Supernatural",
+		"Effect" : "+1 bonus to determine Relic's uses",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Saintly",
+		"Sources" : [{
+				"SourceBook" : "BoS",
+				"SourcePage" : "110"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Supernatural",
+		"Effect" : "",
+		"Levels" : "(•••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Seventh Son of a Seventh Son",
+		"Sources" : [{
+				"SourceBook" : "MT",
+				"SourcePage" : "122"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Supernatural",
+		"Effect" : "gain bonuses if casting Hoodoo magical tradition spells, once per story, roll Wits + Comp, success equal bonus dice for any roll except spell casting",
+		"Levels" : "(••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Shadow Contacts",
+		"Sources" : [{
+				"SourceBook" : "BoS",
+				"SourcePage" : "110"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Supernatural",
+		"Effect" : "",
+		"Levels" : "(••• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Shadowless Chambers",
+		"Sources" : [{
+				"SourceBook" : "BoS",
+				"SourcePage" : "110"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Supernatural",
+		"Effect" : "",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Additional Familiars",
+		"Sources" : [{
+				"SourceBook" : "Tome of the Watchtowers",
+				"SourcePage" : "154"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "have multiple spirit companions",
+		"Levels" : "(••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Ancient Lands Awakening",
+		"Sources" : [{
+				"SourceBook" : "Grimoire of Grimoires",
+				"SourcePage" : "23"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "gain Rotes, mana from Virtue",
+		"Levels" : "(••••) *pre: Virtue of Charity or Hope (CO)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Artifact",
+		"Sources" : [{
+				"SourceBook" : "M:tA",
+				"SourcePage" : "80"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "treasure, imbued, refills own Mana",
+		"Levels" : "(•••+) (mult)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Atlantean Hesychia",
+		"Sources" : [{
+				"SourceBook" : "SotRT",
+				"SourcePage" : "111"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "reach Astral Planes easier",
+		"Levels" : "(•) *pre: High Speech",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Cartomancer",
+		"Sources" : [{
+				"SourceBook" : "KST",
+				"SourcePage" : "13"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "gain benefits to magical tasks from Tarot draw",
+		"Levels" : "(• to •••) *pre: Occult Specialty of Tarot, Wits •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Daimon",
+		"Sources" : [{
+				"SourceBook" : "Tome of the Watchtowers",
+				"SourcePage" : "66"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "specialized Dream",
+		"Levels" : "(•••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Destiny",
+		"Sources" : [{
+				"SourceBook" : "M:tA",
+				"SourcePage" : "81"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "bonus die pool, associated Bane penalty",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Dream",
+		"Sources" : [{
+				"SourceBook" : "M:tA",
+				"SourcePage" : "82"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "gain clues to questions",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Enhanced Item",
+		"Sources" : [{
+				"SourceBook" : "M:tA",
+				"SourcePage" : "82"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "super-effective tool",
+		"Levels" : "(• to •••••) (mult)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Enhanced Item: Armor",
+		"Sources" : [{
+				"SourceBook" : "AA",
+				"SourcePage" : "201"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "",
+		"Levels" : "",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Enhanced Item: Bulletproof",
+		"Sources" : [{
+				"SourceBook" : "AA",
+				"SourcePage" : "202"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "",
+		"Levels" : "",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Enhanced Item: Decreased Size",
+		"Sources" : [{
+				"SourceBook" : "Gaurdians of the Veil",
+				"SourcePage" : "204"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "",
+		"Levels" : "",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Extemporaneous Affinity",
+		"Sources" : [{
+				"SourceBook" : "Ban",
+				"SourcePage" : "41"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "+1/2/3 to casting Improvised Spells, represents extensive time with no formal training",
+		"Levels" : "(•, ••• or •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Familiar",
+		"Sources" : [{
+				"SourceBook" : "M:tA",
+				"SourcePage" : "82"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "Fetch/Animal spirit",
+		"Levels" : "(••• or ••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Feral Mien",
+		"Sources" : [{
+				"SourceBook" : "Tome of the Watchtowers",
+				"SourcePage" : "154"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "+3 on Intimidation/Seduction rolls",
+		"Levels" : "(•••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Friend of Beasts",
+		"Sources" : [{
+				"SourceBook" : "Tome of the Watchtowers",
+				"SourcePage" : "154"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "+3 on Animal Ken, -2/0 on Socialize",
+		"Levels" : "(• or ••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Geomancer",
+		"Sources" : [{
+				"SourceBook" : "S&S",
+				"SourcePage" : "99 "
+			}, {
+				"SourceBook" : "SotRT",
+				"SourcePage" : "51 LoP p?"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "understand and alter Ley Line with construction",
+		"Levels" : "(•) *pre: Occult Specialty of Geomancy",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Gesture Lore",
+		"Sources" : [{
+				"SourceBook" : "Tome of the Mysteries",
+				"SourcePage" : "94"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "modify Rote mundras between forms",
+		"Levels" : "(• to •••••) *pre: Dexterity •••, Occult •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Ghost Familiar",
+		"Sources" : [{
+				"SourceBook" : "Summ",
+				"SourcePage" : "39"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "Ghost bound as Familiar",
+		"Levels" : "(•••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Glyph Lore",
+		"Sources" : [{
+				"SourceBook" : "Tome of the Mysteries",
+				"SourcePage" : "97"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "modify Rune aspects between forms",
+		"Levels" : "(• to ••••) *pre: High Speech, Intelligence •••, Occult •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Goetic Familiar",
+		"Sources" : [{
+				"SourceBook" : "Grimoire of Grimoires",
+				"SourcePage" : "96"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "attach an embodiment of your Vice to yourself as a familiar",
+		"Levels" : "(•••• or •••••) *pre: have cast \" Goetic Manifestation \"",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Guise of Death",
+		"Sources" : [{
+				"SourceBook" : "Summ",
+				"SourcePage" : "184"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "Coat a Soul Stone in blood to substitute for human sacrafice",
+		"Levels" : "(•••••) *pre: Gnosis •••••, Stamina ••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "High Speech",
+		"Sources" : [{
+				"SourceBook" : "M:tA",
+				"SourcePage" : "84"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "allows use of Words of Power",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Identity Anchor",
+		"Sources" : [{
+				"SourceBook" : "Tome of the Watchtowers",
+				"SourcePage" : "153"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "never risk sentience when shapechanged",
+		"Levels" : "(••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Imbued Item",
+		"Sources" : [{
+				"SourceBook" : "M:tA",
+				"SourcePage" : "84"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "item with magical ability",
+		"Levels" : "(••+) (mult)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Law of Embodiment",
+		"Sources" : [{
+				"SourceBook" : "Tome of the Mysteries",
+				"SourcePage" : "77"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "cast Rote while attacking",
+		"Levels" : "(•••••) *pre: Gnosis •••, at least 5 Rotes",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Long Shifting",
+		"Sources" : [{
+				"SourceBook" : "Tome of the Watchtowers",
+				"SourcePage" : "154"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "cast Shapechange as if +2 Life",
+		"Levels" : "(•••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Manifestation Machine",
+		"Sources" : [{
+				"SourceBook" : "FC",
+				"SourcePage" : "131"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "+1/dot to Fetch's Manifest rolls",
+		"Levels" : "(• to •••) *pre: Familiar •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Master Exorcist",
+		"Sources" : [{
+				"SourceBook" : "Tome of the Watchtowers",
+				"SourcePage" : "153"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "gain +3 to end possessions",
+		"Levels" : "(••) *pre: Spirit •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Myrmidon Oath Tongue",
+		"Sources" : [{
+				"SourceBook" : "SoT",
+				"SourcePage" : "218"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "language that commands the Proximi family known as Myrmidons",
+		"Levels" : "(••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Occultation",
+		"Sources" : [{
+				"SourceBook" : "M:tA",
+				"SourcePage" : "86"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "become lost to mortal society",
+		"Levels" : "(• to •••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Otherworldly Eyes",
+		"Sources" : [{
+				"SourceBook" : "Tome of the Watchtowers",
+				"SourcePage" : "154"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "+2 to see Shadow, -2 to see Fallen",
+		"Levels" : "(••) *pre: Spirit •",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Otherworldly Lore",
+		"Sources" : [{
+				"SourceBook" : "Summ",
+				"SourcePage" : "184"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "gain 9-Again when dealing with a particular breed of other-world creature",
+		"Levels" : "(••••) *pre: Gnosis •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Potent Familiar",
+		"Sources" : [{
+				"SourceBook" : "Tome of the Watchtowers",
+				"SourcePage" : "154"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "gain bonus points to create Familiar",
+		"Levels" : "(••) (CO)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Predator’s Innocence",
+		"Sources" : [{
+				"SourceBook" : "Tome of the Watchtowers",
+				"SourcePage" : "154"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "be less bothered by natural cycle",
+		"Levels" : "(•••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Rote Specialty",
+		"Sources" : [{
+				"SourceBook" : "Ban",
+				"SourcePage" : "42"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "gain one Skill-based Rote Specialty / dot",
+		"Levels" : "(• to •••) *pre: not a full member of any Order",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Ritual Synergy",
+		"Sources" : [{
+				"SourceBook" : "Tome of the Mysteries",
+				"SourcePage" : "74"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "cooperate on a spell even if not all participants can cast it",
+		"Levels" : "(••• or •••••) *pre: Gnosis ••• or Gnosis •••••, Storyteller Option",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Slayer",
+		"Sources" : [{
+				"SourceBook" : "Summ",
+				"SourcePage" : "185"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "May make Int+Occult check to reduce summoned creature's Defense against attacks",
+		"Levels" : "(•••) *pre: Occult 4, Brawl 4 or Weaponry 4",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Sleepwalker Retainer",
+		"Sources" : [{
+				"SourceBook" : "M:tA",
+				"SourcePage" : "88"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "faithful Sleepwalker assistant",
+		"Levels" : "(• to •••••) (mult)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Spirit Status",
+		"Sources" : [{
+				"SourceBook" : "Tome of the Watchtowers",
+				"SourcePage" : "154"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "remove -1/dot penalty for Spirit negotiations",
+		"Levels" : "(••, •••• or •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Status (Consilium)",
+		"Sources" : [{
+				"SourceBook" : "M:tA",
+				"SourcePage" : "88"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "Awakened society standing",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Status (Order)",
+		"Sources" : [{
+				"SourceBook" : "M:tA",
+				"SourcePage" : "88"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "Order standing, 1 dot is full member",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Status (Seers of the Throne)",
+		"Sources" : [{
+				"SourceBook" : "SoT",
+				"SourcePage" : "43"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "Standing within the Seers, also allows increasing of Dream Merit. Having Dream and at least Status (•) requires taking of Flaw: Mystery Commands",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Summoner's Soul",
+		"Sources" : [{
+				"SourceBook" : "Summ",
+				"SourcePage" : "186"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "gain bonuses when dealing with creatures of favored Realm",
+		"Levels" : "(•••) (CO)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Supernal Anchor",
+		"Sources" : [{
+				"SourceBook" : "Summ",
+				"SourcePage" : "186"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "defeat Supernal creature in combat to create artificial Soul Stone",
+		"Levels" : "(•••••) *pre: Gnosis •••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Supernal Companion",
+		"Sources" : [{
+				"SourceBook" : "Summ",
+				"SourcePage" : "186"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "Familiar from Supernal Realm",
+		"Levels" : "(•••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Thrall",
+		"Sources" : [{
+				"SourceBook" : "M:tA",
+				"SourcePage" : "89"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "owned Soulstone, 3 tasks provided",
+		"Levels" : "(•••) (mult)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Void Scourged",
+		"Sources" : [{
+				"SourceBook" : "Summ",
+				"SourcePage" : "187"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage ",
+		"Effect" : "gain bonuses when interacting with Acamoth and Gulmoth",
+		"Levels" : "(•• (at character creation) or ••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Ancient Signs",
+		"Sources" : [{
+				"SourceBook" : "Gaurdians of the Veil",
+				"SourcePage" : "58"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Order Merits",
+		"Effect" : "influence secret societies",
+		"Levels" : "(•••) *pre: Occult •••, Status (Guardians of the Veil) •",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Athenaeum",
+		"Sources" : [{
+				"SourceBook" : "Myst",
+				"SourcePage" : "66"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Order Merits",
+		"Effect" : "gain two dots in Laboratory, Library or Scriptorium per dot",
+		"Levels" : "(• to •••••) *pre: Status (Mysterium) •, Sanctum •",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Graduate of Otranto",
+		"Sources" : [{
+				"SourceBook" : "Myst",
+				"SourcePage" : "72"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Order Merits",
+		"Effect" : "gain bonus to cast curses",
+		"Levels" : "(•••) *pre: Acanthus, Status (Mysterium) •, graduate of Scuola di Otranto",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Masque",
+		"Sources" : [{
+				"SourceBook" : "Gaurdians of the Veil",
+				"SourcePage" : "69"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Order Merits",
+		"Effect" : "alternate identities, various bonuses (see below)",
+		"Levels" : "(•) *pre: Manipulation •••, Status (Guardians of the Veil) • (mult)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Mystery Initiation",
+		"Sources" : [{
+				"SourceBook" : "Myst",
+				"SourcePage" : "102"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Order Merits",
+		"Effect" : "gain bonuses related to Order",
+		"Levels" : "(• to •••••) *pre: Status (Mysterium) >= dots",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Oathbound",
+		"Sources" : [{
+				"SourceBook" : "AA",
+				"SourcePage" : "63"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Order Merits",
+		"Effect" : "bind Allegiance, Principle or Questing Oaths to your soul to gain benefits",
+		"Levels" : "(• to •••••) *pre: Adamantine Arrow",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Celestial Name",
+		"Sources" : [{
+				"SourceBook" : "L:tA",
+				"SourcePage" : "114"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Legacy Merits",
+		"Effect" : "aid in dealing with planetary spirits",
+		"Levels" : "(• to •••••••) *pre: Thrice Great",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Dreamland",
+		"Sources" : [{
+				"SourceBook" : "L:tA",
+				"SourcePage" : "21"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Legacy Merits",
+		"Effect" : "visit Dreamtime Libraries",
+		"Levels" : "(• to •••••) *pre: Dreamspeaker",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Image of Perfection",
+		"Sources" : [{
+				"SourceBook" : "L:tA",
+				"SourcePage" : "108"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Legacy Merits",
+		"Effect" : "resist insanity with driving goal",
+		"Levels" : "(••) *pre: Echo Walker, Death ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Skald Cant",
+		"Sources" : [{
+				"SourceBook" : "L:tA",
+				"SourcePage" : "86"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Legacy Merits",
+		"Effect" : "aid in memory and spirit dealing",
+		"Levels" : "(•) *pre: Skald, Composure ••, Expression ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Astral Adept",
+		"Sources" : [{
+				"SourceBook" : "MT",
+				"SourcePage" : "57"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Tradition Merits",
+		"Effect" : "travel to Astral Planes anywhere",
+		"Levels" : "(•••) *pre: Magical Tradition (Taoism)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Magical Tradition",
+		"Sources" : [{
+				"SourceBook" : "MT",
+				"SourcePage" : "23"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Tradition Merits",
+		"Effect" : "gain bonus to Tradition Rotes",
+		"Levels" : "(••) *pre: Occult ••, Academics or Occult Specialty in Tradition",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Lu",
+		"Sources" : [{
+				"SourceBook" : "MT",
+				"SourcePage" : "54"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Tradition Merits",
+		"Effect" : "call on spirit court for service",
+		"Levels" : "(• to •••••) *pre: Magical Tradition (Taoism)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Pawns",
+		"Sources" : [{
+				"SourceBook" : "Imperial Mysteries",
+				"SourcePage" : "14"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Archmasters",
+		"Effect" : "lesser mages as allies",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Bastion",
+		"Sources" : [{
+				"SourceBook" : "Swords at Dawn",
+				"SourcePage" : "108"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Secured Location",
+		"Effect" : "Changeling Motley Dream Fortress",
+		"Levels" : "(• to •••••) {Size, Amenities, Battlements} (SH)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Den",
+		"Sources" : [{
+				"SourceBook" : "Skin",
+				"SourcePage" : "21 "
+			}, {
+				"SourceBook" : "Changing Breeds",
+				"SourcePage" : "96"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Den",
+		"Effect" : "Skinthief or Changing Breed",
+		"Levels" : "(•••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Haunt",
+		"Sources" : [{
+				"SourceBook" : "GtSE",
+				"SourcePage" : "87"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Haunt",
+		"Effect" : "Sin-Eater",
+		"Levels" : "(• to •••••) {Fluidity, Residue, Utility} (SH)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Haven",
+		"Sources" : [{
+				"SourceBook" : "VtR",
+				"SourcePage" : "100"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Haven",
+		"Effect" : "Vampire",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Hollow",
+		"Sources" : [{
+				"SourceBook" : "Changeling the Lost",
+				"SourcePage" : "94"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Hollow",
+		"Effect" : "Changeling",
+		"Levels" : "(• to •••••) {Size, Amenities, Doors, Wards} (SH)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Lair",
+		"Sources" : [{
+				"SourceBook" : "PtC",
+				"SourcePage" : "96"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Lair",
+		"Effect" : "Promethean",
+		"Levels" : "(• to •••) (SH)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Safehouse",
+		"Sources" : [{
+				"SourceBook" : "H:tV",
+				"SourcePage" : "71"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Safehouse",
+		"Effect" : "Hunter",
+		"Levels" : "(• to •••••) {Cache, Secrecy, Size, Traps}",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Sanctum",
+		"Sources" : [{
+				"SourceBook" : "M:tA",
+				"SourcePage" : "86"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Sanctum",
+		"Effect" : "Mage",
+		"Levels" : "(• to •••••) {Security, Size} (SH)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Temple",
+		"Sources" : [{
+				"SourceBook" : "Circle of the Crone",
+				"SourcePage" : "42"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Temple",
+		"Effect" : "Circle of the Crone",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Archive",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "87"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Universal Fixtures",
+		"Effect" : "Every dot is single topic, cuts study time.",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Sanctum Materials",
+		"Sources" : [{
+				"SourceBook" : "S&S",
+				"SourcePage" : "86"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Universal Fixtures",
+		"Effect" : "increase strength of structure",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Portable",
+		"Sources" : [{
+				"SourceBook" : "Myst",
+				"SourcePage" : "141"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Universal Fixtures",
+		"Effect" : "change location, personal only",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Geomantic Nexus",
+		"Sources" : [{
+				"SourceBook" : "Ordo",
+				"SourcePage" : "202"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Universal Fixtures",
+		"Effect" : "Fung Shui",
+		"Levels" : "(• to •••••) Size and (• to •••) +1 attribute per dot",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Guardian Retainer",
+		"Sources" : [{
+				"SourceBook" : "S&S",
+				"SourcePage" : "85"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Universal Fixtures",
+		"Effect" : "armed guard",
+		"Levels" : "(• to •••••) (mult)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Library",
+		"Sources" : [{
+				"SourceBook" : "M:tA",
+				"SourcePage" : "85"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Universal Fixtures",
+		"Effect" : "1/dot topics of research",
+		"Levels" : "(• to •••••) (SH)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Security",
+		"Sources" : [{
+				"SourceBook" : "VtR",
+				"SourcePage" : "100 "
+			}, {
+				"SourceBook" : "PtC",
+				"SourcePage" : "96 MtA p86"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Universal Fixtures",
+		"Effect" : "+1 intiative against break-ins per dot.",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Size",
+		"Sources" : [{
+				"SourceBook" : "VtR",
+				"SourcePage" : "100 "
+			}, {
+				"SourceBook" : "PtC",
+				"SourcePage" : "96 MtA p86 CtL p95"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Universal Fixtures",
+		"Effect" : "• - 1-2 rooms, •• - 3-4 rooms, ••• - 5-8 rooms, •••• - 9-15 rooms, ••••• - Countless rooms",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Location",
+		"Sources" : [{
+				"SourceBook" : "VtR",
+				"SourcePage" : "100"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "+1 bonus to hunting per dot for owner and invitees.",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Occultation",
+		"Sources" : [{
+				"SourceBook" : "Mehket",
+				"SourcePage" : "119"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Penalizes attempts to find the Haven",
+		"Levels" : "(• to •••••) *pre: Haven Size ••• or less",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Temple Library",
+		"Sources" : [{
+				"SourceBook" : "Circle of the Crone",
+				"SourcePage" : "42"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "",
+		"Levels" : "(• to •••••) *pre: Temple",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Alchemical Lab",
+		"Sources" : [{
+				"SourceBook" : "Tome of the Mysteries",
+				"SourcePage" : "146"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage",
+		"Effect" : "resources to produce Gross Matter",
+		"Levels" : "(• to •••••) (SH)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Guardian Ghost",
+		"Sources" : [{
+				"SourceBook" : "S&S",
+				"SourcePage" : "85"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage",
+		"Effect" : "bound Ghost",
+		"Levels" : "(•• to •••••) (mult)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Guardian Spirit",
+		"Sources" : [{
+				"SourceBook" : "S&S",
+				"SourcePage" : "86"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage",
+		"Effect" : "bound Spirit",
+		"Levels" : "(•• to •••••) (mult)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Hallow",
+		"Sources" : [{
+				"SourceBook" : "M:tA",
+				"SourcePage" : "83"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage",
+		"Effect" : "upwelling of Mana",
+		"Levels" : "(• to •••••) (SH)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Sanctum Gauntlet",
+		"Sources" : [{
+				"SourceBook" : "S&S",
+				"SourcePage" : "86"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage",
+		"Effect" : "+/- 1/dot Gauntlet",
+		"Levels" : "(• to ••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Scriptorium",
+		"Sources" : [{
+				"SourceBook" : "Myst",
+				"SourcePage" : "67"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage",
+		"Effect" : "reduce cost to learn Rotes",
+		"Levels" : "(•• to •••••) (SH)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Summoning Circle",
+		"Sources" : [{
+				"SourceBook" : "Summ",
+				"SourcePage" : "185"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mage",
+		"Effect" : "attuned circle to particular realm",
+		"Levels" : "(• to •••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Amenities",
+		"Sources" : [{
+				"SourceBook" : "Changeling the Lost",
+				"SourcePage" : "95"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "How comfortable the Hollow is.",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Doors",
+		"Sources" : [{
+				"SourceBook" : "Changeling the Lost",
+				"SourcePage" : "95"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Add doors in Hedge and on Earth.",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Hob Kin",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "92"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Hobgoblins protect your Hollow.",
+		"Levels" : "(••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Ritual Doorway",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "95"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Enter from anywhere on Earth. One way.",
+		"Levels" : "(•••) *pre: Doors •••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Wards",
+		"Sources" : [{
+				"SourceBook" : "Changeling the Lost",
+				"SourcePage" : "95"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Ability to hide and fortify Hollow",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Workshop",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "97"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Space and tools for various crafts, 1/dot",
+		"Levels" : "(• to •••••) *pre: Size >= Workshop",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Mobile Hollow",
+		"Sources" : [{
+				"SourceBook" : "Swords at Dawn",
+				"SourcePage" : "92"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "More dots = further and faster, more control",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Amenities",
+		"Sources" : [{
+				"SourceBook" : "Swords at Dawn",
+				"SourcePage" : "108"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling Bastions",
+		"Effect" : "How comfortable the Bastion is.",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Battlements",
+		"Sources" : [{
+				"SourceBook" : "Changeling the Lost",
+				"SourcePage" : "198"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling Bastions",
+		"Effect" : "10 points of damage per •, ranged attacks allowed",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Arsenal",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "120"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon Boltholes",
+		"Effect" : "Your bolthole stores a metaphysical arsenal of mundane weapons for you to withdraw once a session.",
+		"Levels" : "• to •••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "No Twilight",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "120"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon Boltholes",
+		"Effect" : "The state of Twilight does not exist in your bolthole, and any entities in Twilight must Manifest when they enter.",
+		"Levels" : "•",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Self-Destruct",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "120"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon Boltholes",
+		"Effect" : "You can destroy your bolthole from anywhere, dealing (Bolthole) lethal damage and giving those within one turn to escape before they are trapped beyond spacetime.",
+		"Levels" : "•",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Cover-Linked",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "120"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon Boltholes",
+		"Effect" : "Your bolthole is so strongly linked to a specific Cover that when you are not using that Cover, the bolthole ceases to exist and those within simply vanish.",
+		"Levels" : "••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Trap Door",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "121"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon Boltholes",
+		"Effect" : "When you are in your bolthole, no one else can find the physical entrance, though it still remains in Twilight.",
+		"Levels" : "••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Easy Access",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "121"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon Boltholes",
+		"Effect" : "Spend a point of Aether to redesignate a new door into and out of your bolthole.",
+		"Levels" : "•••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Ambush Site",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "40"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Apartment Building",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "27"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Arcane",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "40"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(+•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Artic",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "46"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "-",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Barren",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "37"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "-",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Big Box Store",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "27"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Catalyst",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "37"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Caverns/Tunnels",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "19"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Cemetary",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "33"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Church",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "33"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Cliff/Ridge",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "19"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Club or Bar",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "28"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Contested",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "41"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(-•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Criminal District",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "34"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Desert",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "19"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Dry",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "46"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "-",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Empty Building",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "34"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Essence Current/Ley Line",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "41"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(+•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Fallow Prairie",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "21"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Factory",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "29"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Factory Farm",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "21"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "-",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Farm",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "21"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(• or ••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Glade",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "38"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Haunted",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "42"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(+•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "High",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "46"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "-",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Highway",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "34"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Houses/Housing",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "29"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Hospital",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "35"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Landfill or Garbage Dump",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "22"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Locus",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "38"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Mall/Strip Mall",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "29"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Media Center",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "42"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(+•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Military Base",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "35"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Mountain",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "22"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Museum/Library",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "30"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Neutral Ground",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "43"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "-",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Notorious",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "42"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "-",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Ocean/Sea/Great Lake",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "23"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Office Building/Skyscraper",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "30"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Park",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "30"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Pond/Lake/Lakefront",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "24"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Poor",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "44"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(+•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Pure",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "44"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(-••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Rich",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "45"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(+•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "River/Riverside",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "24"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Sanguine",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "45"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(+•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Shoal",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "38"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "-",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Shop or Restaurant",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "31"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Spring",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "24"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Stadium or Arena",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "31"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Stream",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "25"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Swamp/Marsh/Wetland",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "25"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Theater/Opera House",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "33"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Tropical",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "46"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "-",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "University or Postsecondary School",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "36"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Utilities",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "36"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Verge",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "39"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "-",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Virgin",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "45"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(+••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Wet",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "46"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "-",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Window",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "39"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Woods/Forest",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "26"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "(••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Wound",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "39"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf Territory",
+		"Effect" : "",
+		"Levels" : "-",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Cant Fluency",
+		"Sources" : [{
+				"SourceBook" : "Damnation City",
+				"SourcePage" : "200"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Barony Merits",
+		"Effect" : "",
+		"Levels" : "(·) *Pre: Politics · or Occult · or Streetwise ·",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Cant Savvy",
+		"Sources" : [{
+				"SourceBook" : "Damnation City",
+				"SourcePage" : "200"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Barony Merits",
+		"Effect" : "",
+		"Levels" : "(··) Pre: Intelligence ·· and Politics · or Occult · or Streetwise ·",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Connections",
+		"Sources" : [{
+				"SourceBook" : "Damnation City",
+				"SourcePage" : "200"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Barony Merits",
+		"Effect" : "",
+		"Levels" : "(· to ·····) Pre: Presence ·· and Politics ·· or Streetwise ···",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Domain",
+		"Sources" : [{
+				"SourceBook" : "Damnation City",
+				"SourcePage" : "200"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Barony Merits",
+		"Effect" : "",
+		"Levels" : "(· to ·····) Pre: Fealty Flaw",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Feeding Ground",
+		"Sources" : [{
+				"SourceBook" : "Damnation City",
+				"SourcePage" : "202"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Barony Merits",
+		"Effect" : "",
+		"Levels" : "(· to ·····) Pre: Fealty Flaw (for ···· and ····· only)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Site",
+		"Sources" : [{
+				"SourceBook" : "Damnation City",
+				"SourcePage" : "202"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Barony Merits",
+		"Effect" : "",
+		"Levels" : "(· to ·····)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Tenant",
+		"Sources" : [{
+				"SourceBook" : "Damnation City",
+				"SourcePage" : "202"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Barony Merits",
+		"Effect" : "",
+		"Levels" : "(· to ·····) Pre: Domain Size per merit, Fealty Flaw",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Vassal",
+		"Sources" : [{
+				"SourceBook" : "Damnation City",
+				"SourcePage" : "203"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Barony Merits",
+		"Effect" : "",
+		"Levels" : "(· to ·····) Pre: Domain Size per merit, Fealty Flaw",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Acute Senses",
+		"Sources" : [{
+				"SourceBook" : "Blood and Smoke: The Strix Chronicle",
+				"SourcePage" : "109"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Add Blood Potency to all rolls involving the kindred's senses. This includes rolls to remember sensory details.",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Altar",
+		"Sources" : [{
+				"SourceBook" : "Circle of the Crone",
+				"SourcePage" : "40 "
+			}, {
+				"SourceBook" : "Blood and Smoke: The Strix Chronicle",
+				"SourcePage" : "109"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Grants bonuses to Crúac rituals performed before the altar, and allows characters without dots in Crúac to participate in rituals and add dice bonuses.",
+		"Levels" : "(•••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Annointed",
+		"Sources" : [{
+				"SourceBook" : "Blood and Smoke: The Strix Chronicle",
+				"SourcePage" : "109/110"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Once per chapter, gain the ability to make a Presence+Expression roll to subject listeners to the Raptured condition by way of fiery preaching.",
+		"Levels" : "(••) *pre: Lancea Sanctum Status",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Atrocious",
+		"Sources" : [{
+				"SourceBook" : "Blood and Smoke: The Strix Chronicle",
+				"SourcePage" : "110"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Any rolls involving the Monstrous beast gain the 8-again quality.",
+		"Levels" : "(•) *pre: Cannot have Cutthroat or Enticing.",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Attache",
+		"Sources" : [{
+				"SourceBook" : "Blood and Smoke: The Strix Chronicle",
+				"SourcePage" : "110"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Retainers get any combination of the following merits equal to the Kindred's dots in Invictus Status; Contacts, Resources, and Safe Place.",
+		"Levels" : "(•) *pre: Invictus Status",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Bad Breeding",
+		"Sources" : [{
+				"SourceBook" : "Ven",
+				"SourcePage" : "105"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "May gain a social bonus up to the dot rating amongst those who would underestimate the Kindred due to their background. Also, Kindred from \" low society \" respect your background and Kindred from \" high society \" shun you.",
+		"Levels" : "(• to •••) *pre: Does not have Good Breeding",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Bloodhound",
+		"Sources" : [{
+				"SourceBook" : "Blood and Smoke: The Strix Chronicle",
+				"SourcePage" : "110"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Can detect blood, track by blood, or determine details of blood through scent alone.",
+		"Levels" : "(•••) *pre: Wits",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Cacophony Listener",
+		"Sources" : [{
+				"SourceBook" : "Dae",
+				"SourcePage" : "116"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Familiarity and comprehension of many subtle methods of communique used by Kindred.",
+		"Levels" : "(••• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Cacophony Saavy",
+		"Sources" : [{
+				"SourceBook" : "Blood and Smoke: The Strix Chronicle",
+				"SourcePage" : "110"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "At one dot, spot and identify all cacophony messages. Two dots allows one to familiarize themselves with new kindred within a week. Three dots means the character is a hub of local politics, with several benefits.",
+		"Levels" : "(• to •••) *pre: City Status",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Carthian Pull",
+		"Sources" : [{
+				"SourceBook" : "Blood and Smoke: The Strix Chronicle",
+				"SourcePage" : "110"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Gain temporary Allies, Contacts, Haven, and Herd merits equal to Carthian Status.",
+		"Levels" : "(•) *pre: Carthian Status",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Claws of the Unholy",
+		"Sources" : [{
+				"SourceBook" : "Blood and Smoke: The Strix Chronicle",
+				"SourcePage" : "110/111"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "When using claws granted by Unnatural Aspect, the weapon modifier becomes +0A and ignore all armor not granted by Resilience. Only usable while frenzied or riding the wave.",
+		"Levels" : "(•) *pre: Protean •",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Close Family",
+		"Sources" : [{
+				"SourceBook" : "Dae",
+				"SourcePage" : "117 "
+			}, {
+				"SourceBook" : "Blood and Smoke: The Strix Chronicle",
+				"SourcePage" : "111"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "",
+		"Levels" : "",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Cutthroat",
+		"Sources" : [{
+				"SourceBook" : "Blood and Smoke: The Strix Chronicle",
+				"SourcePage" : "111"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Any rolls involving the Competitive beast gain the 8-again quality.",
+		"Levels" : "(•) *pre: Cannot have Atrocious or Enticing.",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Distant Sympathy",
+		"Sources" : [{
+				"SourceBook" : "AM",
+				"SourcePage" : "67"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "No longer limited when attempting to sense another through Blood Sympathy; this is only sensory, and does not allow use of disciplines over long distances.",
+		"Levels" : "(••) *pre: Blood Potency 6",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Distinguished Palate",
+		"Sources" : [{
+				"SourceBook" : "Blood and Smoke: The Strix Chronicle",
+				"SourcePage" : "111"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Consider any Taste of Blood roll to be an exceptional success with only a single success.",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Doll Face",
+		"Sources" : [{
+				"SourceBook" : "Meh",
+				"SourcePage" : "118"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Awaken from sleep each night automatically groomed.",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Dream Visions",
+		"Sources" : [{
+				"SourceBook" : "Meh",
+				"SourcePage" : "119"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Once per night, when first meeting a new person or finding a new place, roll blood potency, and on success may ask one question about them.",
+		"Levels" : "(•)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Dynastic Membership",
+		"Sources" : [{
+				"SourceBook" : "Blood and Smoke: The Strix Chronicle",
+				"SourcePage" : "112"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Allows several useful bonuses by associating the Kindred in question with elder and more powerful vampires of higher standing, or, at the highest level, as head of a Dynasty.",
+		"Levels" : "(• to •••) *pre: Clan Status",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Enticing",
+		"Sources" : [{
+				"SourceBook" : "Blood and Smoke: The Strix Chronicle",
+				"SourcePage" : "?"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "All rolls involving the Seductive beast gain the 8-again quality.",
+		"Levels" : "(•) *pre: Cannot have Atrocious or Cutthroat.",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Feeding Grounds",
+		"Sources" : [{
+				"SourceBook" : "Blood and Smoke: The Strix Chronicle",
+				"SourcePage" : "112"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Effective places to hunt, whether officially sanctioned or not. Add dots in this merit to any hunting rolls, and to starting vitae rolls. In addition, add the dot rating to any predatory aura conflicts in the territory.",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Friends in High Places",
+		"Sources" : [{
+				"SourceBook" : "Blood and Smoke: The Strix Chronicle",
+				"SourcePage" : "112"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Each month, gain a number of favors (or, using the new social system, 'doors') that can be automatically opened, so long as the favor being asked is within an organization's purview.",
+		"Levels" : "(•) *pre:",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Ghost Eater",
+		"Sources" : [{
+				"SourceBook" : "BotD",
+				"SourcePage" : "54"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Can feed on ghostly Essence through their anchors; overuse can result in the loss of the ability to feed on blood.",
+		"Levels" : "(•••) *pre: Has learned to feed on ghosts in the Underworld",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Good Breeding",
+		"Sources" : [{
+				"SourceBook" : "Ven",
+				"SourcePage" : "106"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "May gain a social bonus up to the dot rating amongst those who respect your background. Also, Kindred from \" high society \" respect your background and Kindred from \" low society \" shun you.",
+		"Levels" : "(• to •••) *pre: Does not have Bad Breeding",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Haunted Channel",
+		"Sources" : [{
+				"SourceBook" : "Nos",
+				"SourcePage" : "109"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Ghosts gain +1 bonus per dot",
+		"Levels" : "(• to •••••) *pre:Nosferatu",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Haunted Hand",
+		"Sources" : [{
+				"SourceBook" : "Nos",
+				"SourcePage" : "109"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "The character gains a +1 bonus per dot in all interactions with a ghost, such as exorcism or communication. Does not apply to the ghost's anchor.",
+		"Levels" : "(• to •••••) *pre:Nosferatu",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Herd",
+		"Sources" : [{
+				"SourceBook" : "VtR",
+				"SourcePage" : "101"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Possession of a faithful group of kine upon which one can easily feed - each week, gain a number of Vitae equal to twice this merit's rating. This requires no rolls, only a quick interlude.",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Honey Trap",
+		"Sources" : [{
+				"SourceBook" : "Blood and Smoke: The Strix Chronicle",
+				"SourcePage" : "112"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Your blood not only bonds, but invigorates. When a vampire tastes your character's Vitae, they regain a point of Willpower. If this results in a new bond, or increases an existing bond, they also gain an experience.",
+		"Levels" : "()",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Inherited Ghoul",
+		"Sources" : [{
+				"SourceBook" : "GHL",
+				"SourcePage" : "71"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Reflects a ghoul who has worked with previous masters, and may possess vital information relating to them.",
+		"Levels" : "(••) *pre: Ghoul (CO only)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Inherited Resistance",
+		"Sources" : [{
+				"SourceBook" : "Ven",
+				"SourcePage" : "106"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Gains a bonus to resist Animalism and Dominate Disciplines from other Ventrue; four dot variant provides resistance from all clans",
+		"Levels" : "(•• or ••••) *pre: Ventrue, Animalism • or Domination •",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Inhuman Resistance",
+		"Sources" : [{
+				"SourceBook" : "Gang",
+				"SourcePage" : "113"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Gains a bonus to resist Dominate and Majesty, but a weakness to powers from the Animalism Discipline.",
+		"Levels" : "(•••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Invested",
+		"Sources" : [{
+				"SourceBook" : "Blood and Smoke: The Strix Chronicle",
+				"SourcePage" : "112"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Divide the Kindred's Invictus Status dots between Herd, Mentor, Resources, and Retainer merits. These can add to existing merit dots or exist on their own. Losing status forfeits the dots as well.",
+		"Levels" : "(•) Invictus Status •",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Kindred Medium",
+		"Sources" : [{
+				"SourceBook" : "Cotd: NO",
+				"SourcePage" : "93"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Gains a special connection with a spirit, and the ability to see and interact with it, along with the ability to feel the presence of other spirits. Two dots if bought at character creation, four dots otherwise.",
+		"Levels" : "(•• or ••••) *pre: Wits ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Lordly Palette",
+		"Sources" : [{
+				"SourceBook" : "Ven",
+				"SourcePage" : "106"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "May discern information about a subject through the consumption of their blood.",
+		"Levels" : "(• to •••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Noble Heritage",
+		"Sources" : [{
+				"SourceBook" : "RfR",
+				"SourcePage" : "111"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "A Roman citizen in noble standing, grants a bonus to Presence or Manipulation rolls to influence citizens who are aware of one's status, but a penalty if tagged as a criminal or a disgrace.",
+		"Levels" : "(•• or ••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Occultation",
+		"Sources" : [{
+				"SourceBook" : "Meh",
+				"SourcePage" : "120"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Penalizes attempts to find the character, even with Auspex; grants a bonus to Obfuscate and a penalty to Majesty.",
+		"Levels" : "(• to •••) *pre: No Fame merit",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Of Rose and Thorn",
+		"Sources" : [{
+				"SourceBook" : "Gang",
+				"SourcePage" : "113"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Gain the ability to use Animalism powers on plants",
+		"Levels" : "(••••) *pre: Blood Potency ••, Animalism ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Regnant",
+		"Sources" : [{
+				"SourceBook" : "GHL",
+				"SourcePage" : "71"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Reflects a healthy relationship with one's keeper.",
+		"Levels" : "(• to •••••) *pre: Ghoul",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Remnant of Clarity",
+		"Sources" : [{
+				"SourceBook" : "AM",
+				"SourcePage" : "66"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Keep a year of memory completely clearly through the Fog of Ages, each dot adds dice to rolls to remember it.",
+		"Levels" : "(",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Pack Blooded",
+		"Sources" : [{
+				"SourceBook" : "Gang",
+				"SourcePage" : "114"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Gain significant combat bonuses when nearby other coterie mates who share this merit, but experience a penalty to degeneration in their presence as well.",
+		"Levels" : "(••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Requiem Diary",
+		"Sources" : [{
+				"SourceBook" : "AM",
+				"SourcePage" : "?"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Represents a written record of unlife, allowing 9-again on rolls to research one's own past.",
+		"Levels" : "(",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Patron",
+		"Sources" : [{
+				"SourceBook" : "RfR",
+				"SourcePage" : "111"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Be owed favors or debts by one or more individuals, who is expected to do whatever is necessary to pay it off quickly.",
+		"Levels" : "(• to •••••) *pre: Status (Camarilla) or Status (Wing) •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Savage Kenning",
+		"Sources" : [{
+				"SourceBook" : "Gang",
+				"SourcePage" : "114"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Gain a bonus to interactions with a specific type of animals.",
+		"Levels" : "(•••) *pre: Gangrel, Animalism • or Animal Ken • (CO only)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Social Chameleon",
+		"Sources" : [{
+				"SourceBook" : "Dae",
+				"SourcePage" : "115"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Gains a bonus to all social rolls within a specified subculture.",
+		"Levels" : "(• to •••) *pre: Fame <= •",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Swarm Mind",
+		"Sources" : [{
+				"SourceBook" : "Gang",
+				"SourcePage" : "114"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Transform into a swarm of small animals, but suffer mental derangement for a time after reforming.",
+		"Levels" : "(••) *pre: Protean ••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Taste of the Strange",
+		"Sources" : [{
+				"SourceBook" : "AM",
+				"SourcePage" : "67"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Allows one to regain Vitae from drinking the blood of other supernatural creatures; may be taken up to three times.",
+		"Levels" : "(•) *pre: Blood Potency",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Tenacious Consciousness",
+		"Sources" : [{
+				"SourceBook" : "AM",
+				"SourcePage" : "67"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Gain a +2 bonus to awaken from torpor or daytime slumber due to external threats.",
+		"Levels" : "(",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Tomb",
+		"Sources" : [{
+				"SourceBook" : "AM",
+				"SourcePage" : "67"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Add dots in Tomb to Haven Security for the purposes of repelling intrusion.",
+		"Levels" : "(",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "True Worm",
+		"Sources" : [{
+				"SourceBook" : "Nos",
+				"SourcePage" : "109"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Can stay awake through the day, functioning at 1/2 max speed. Must be 30 feet or more underground, in tunnels never touched by the sun. Increases damage given by sunlight by +1.",
+		"Levels" : "(•••) *pre:Nosferatu",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Undead Menses",
+		"Sources" : [{
+				"SourceBook" : "Gang",
+				"SourcePage" : "115"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Experience menstruation, which grants a variety of special powers.",
+		"Levels" : "(•••) *pre: Female",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Unliving Anchor",
+		"Sources" : [{
+				"SourceBook" : "Nos",
+				"SourcePage" : "109"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "The Nosferatu becomes an anchor for a ghost, whose numina equals the purchased dots. The ghost acts as a retainer, but occasionally asks favors, losing numina if they are not carried out.",
+		"Levels" : "(• to •••••) *pre:Nosferatu",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Unyeilding Mask",
+		"Sources" : [{
+				"SourceBook" : "Nos",
+				"SourcePage" : "110"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Permanently affixes a mask to the face. At •••, grants a +2 to resist mental and social Disciplines. At ••••, it also grants +1 to any appropriate Social skill.",
+		"Levels" : "(",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Vice over Virtue",
+		"Sources" : [{
+				"SourceBook" : "AM",
+				"SourcePage" : "68"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Reverse how one regains Willpower through Vice and Virtue; Vice returns all spent Willpower, and Virtue returns a single point.",
+		"Levels" : "(••) *pre: Blood Potency",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Vitae Connoisseur",
+		"Sources" : [{
+				"SourceBook" : "AM",
+				"SourcePage" : "68"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Choose a specific kind of favored prey (blondes, terrified victims, etc.) and regain a point of Willpower. This only works once a night.",
+		"Levels" : "(•) *pre: Blood Potency",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Voyeur",
+		"Sources" : [{
+				"SourceBook" : "Dae",
+				"SourcePage" : "117"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Once per session, regain Willpower as someone else indulges their vice. Three dots requires the Daeva to act as a tempter, with five dots simply observation will suffice.",
+		"Levels" : "(••• or •••••) *pre: Daeva",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Zeal",
+		"Sources" : [{
+				"SourceBook" : "AM",
+				"SourcePage" : "68-69"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Gain a +1 bonus to all social rolls where one's cause might prove helpful. Substitute Resolve for a lower attribute once per chapter.",
+		"Levels" : "(••) *Pre: Resolve",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Carthian Lawyer",
+		"Sources" : [{
+				"SourceBook" : "Carthians",
+				"SourcePage" : "184"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Character is adept at twisting Carthian Law for their own purposes.",
+		"Levels" : "(••) *pre: Status (Carthians), Academics •",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Carthian Pull",
+		"Sources" : [{
+				"SourceBook" : "Carthians",
+				"SourcePage" : "181"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Once per month, may substitute Carthian Pull dots for Contacts, Haven, Herd, or Resources.",
+		"Levels" : "(• to •••••) *pre: Status (Carthians) >= Dots",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Coder Clique",
+		"Sources" : [{
+				"SourceBook" : "Carthians",
+				"SourcePage" : "181"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Gains 9-Again on Computer rolls",
+		"Levels" : "(•) *pre: Status (Carthians) •, Computer ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Current Events Circle",
+		"Sources" : [{
+				"SourceBook" : "Carthians",
+				"SourcePage" : "182"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Gains 9-Again on Politics rolls",
+		"Levels" : "(•) *pre: Status (Carthians) •, Politics ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Debate Club",
+		"Sources" : [{
+				"SourceBook" : "Carthians",
+				"SourcePage" : "182"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Gains 9-Again on Persuasion rolls",
+		"Levels" : "(•) *pre: Status (Carthians) •, Persuasion ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Encounter Group",
+		"Sources" : [{
+				"SourceBook" : "Carthians",
+				"SourcePage" : "182"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Gains 9-Again on Empathy rolls",
+		"Levels" : "(•) *pre: Status (Carthians) •, Empathy ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Lab Section",
+		"Sources" : [{
+				"SourceBook" : "Carthians",
+				"SourcePage" : "182"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Gains 9-Again on Medicine rolls",
+		"Levels" : "(•) *pre: Status (Carthians) •, Medicine ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Night Doctor Surgery",
+		"Sources" : [{
+				"SourceBook" : "Carthians",
+				"SourcePage" : "183"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Perform surgery to convert lethal to bashing damage, or aggravated to lethal",
+		"Levels" : "(•••) *pre: Status (Carthians) •••, Medicine •••, Night Doctor clique",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Study Group",
+		"Sources" : [{
+				"SourceBook" : "Carthians",
+				"SourcePage" : "181"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Gains 9-Again on Academics rolls",
+		"Levels" : "(•) *pre: Status (Carthians) •, Academics ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Theater Society",
+		"Sources" : [{
+				"SourceBook" : "Carthians",
+				"SourcePage" : "182"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Gains 9-Again on Expression rolls",
+		"Levels" : "(•) *pre: Status (Carthians) •, Expression ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "The Right Bar",
+		"Sources" : [{
+				"SourceBook" : "Carthians",
+				"SourcePage" : "182"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Gains 9-Again on Streetwise rolls",
+		"Levels" : "(•) *pre: Status (Carthians) •, Streetwise ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "House Membership",
+		"Sources" : [{
+				"SourceBook" : "Inv",
+				"SourcePage" : "187"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Reflects membership in a dynastic house, granting social bonuses equal to merit dots when interacting with others of the House.",
+		"Levels" : "(• or •••) *pre: Vampire or Ghoul",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Speaker for the Eclipsed",
+		"Sources" : [{
+				"SourceBook" : "Inv",
+				"SourcePage" : "188"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "May telepathically commune with a torpid fellow, at a distance of up to five miles per dot in this merit.",
+		"Levels" : "(• to •••••) *pre: Torpor Connection •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Tap of the Torpid Mind",
+		"Sources" : [{
+				"SourceBook" : "Inv",
+				"SourcePage" : "188"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "May briefly use the skill or discipline of the target of Speaker for the Eclipsed",
+		"Levels" : "(• to •••••) *pre: Vampire, House Membership •••, Speaker for the Eclipsed •",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Torpor Connection",
+		"Sources" : [{
+				"SourceBook" : "Inv",
+				"SourcePage" : "187"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Commune with a specific torpid fellow.",
+		"Levels" : "(• to •••••) *pre: Vampire, Presence ••, House Membership •",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Virtue's Twin",
+		"Sources" : [{
+				"SourceBook" : "Inv",
+				"SourcePage" : "188"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Torpor duration uses the Humanity of the highest house member with this merit.",
+		"Levels" : "(•••) *pre: Vampire, House Membership •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Will of the Dynasty",
+		"Sources" : [{
+				"SourceBook" : "Inv",
+				"SourcePage" : "188"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Any attempts to compel the character with this merit to act against their house is resisted as if they had spent a willpower point.",
+		"Levels" : "(•••) *pre: Vampire, House Membership •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Crucible Ritual",
+		"Sources" : [{
+				"SourceBook" : "OD",
+				"SourcePage" : "202"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Can make use of a 'crucible', a beneficial type of Wyrm's Nest. Can gain a discount to learn a coil or other benefits.",
+		"Levels" : "(•••) *pre: Resolve •• and Coils •",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Fontal Ritual",
+		"Sources" : [{
+				"SourceBook" : "OD",
+				"SourcePage" : "202"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Can make use of Wyrm's Nests known as \" wellheads \" or \" fontal nests \"; can learn fontal rituals and gains bonuses to find fontal nests.",
+		"Levels" : "(••) *pre: Academics • and Occult ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Geomantic Nexus",
+		"Sources" : [{
+				"SourceBook" : "OD",
+				"SourcePage" : "202"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Has a specially prepared area which provides bonuses to specific actions within; similar to and can overlap with the Haven merit.",
+		"Levels" : "(• to ••••• and • to •••; special) *pre: Occult ••• and Wits ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Mind of the Devouring Worm",
+		"Sources" : [{
+				"SourceBook" : "OD",
+				"SourcePage" : "203"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "As Eidetic Memory, but can be purchased after character creation.",
+		"Levels" : "(•••) *pre: Intelligence •••, Kindred Only",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Mind of the Unblinking Serpent",
+		"Sources" : [{
+				"SourceBook" : "OD",
+				"SourcePage" : "203"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Can determine when Obsfucate or Dominate have been used on the character.",
+		"Levels" : "(••) *pre: Mind of the Devouring Worm",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Mind of the Inscrutable Hydra",
+		"Sources" : [{
+				"SourceBook" : "OD",
+				"SourcePage" : "203"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Vampire",
+		"Effect" : "Character can switch their mind to a state that grants a penalty to Intelligence tests, but all effects that attempt to read their mind are resisted or contested as if a Willpower point had been spent.",
+		"Levels" : "(••) *pre: Mind of the Unblinking Serpent",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Ancestral Vessel",
+		"Sources" : [{
+				"SourceBook" : "Faithful",
+				"SourcePage" : "104"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "Allows the channeling of a specific ancestor spirit, granting skill bonuses or other wisdom.",
+		"Levels" : "(• to •••••) *pre: Lodge of Voices",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Animal Magnetism",
+		"Sources" : [{
+				"SourceBook" : "The Rage: Forsaken Player's Guide",
+				"SourcePage" : "105"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "Reduces penalty from Primal Urge for purposes of seduction, but penalizes all social rolls with those not attracted to you",
+		"Levels" : "(•••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Auspice Blessing",
+		"Sources" : [{
+				"SourceBook" : "The Rage: Forsaken Player's Guide",
+				"SourcePage" : "103"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "When auspice moon is visible overhead, gain a bonus to a select affinity skill",
+		"Levels" : "(•) *pre: One Auspice Affinity skill at •• (CO)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Beginner's Luck",
+		"Sources" : [{
+				"SourceBook" : "SotM",
+				"SourcePage" : "29"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "Only -1 for Untrained Mental Skills. Dramatic failure results in losing a point of Willpower.",
+		"Levels" : "(••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Chain Breaker",
+		"Sources" : [{
+				"SourceBook" : "Faithful",
+				"SourcePage" : "36"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "Frees a spirit from a bound fetish.",
+		"Levels" : "(••••) *pre: Lodge of Ashes",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Ephemeral Reckoning",
+		"Sources" : [{
+				"SourceBook" : "The Rage: Forsaken Player's Guide",
+				"SourcePage" : "103"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "Two dot version can sense the resonance of an area, four dot can sense the resonance of a source of Essence",
+		"Levels" : "(•• or ••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Eyrie",
+		"Sources" : [{
+				"SourceBook" : "Terr",
+				"SourcePage" : "47"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "+2 Perception within your territory. +1 to ranged attack pools within the territory",
+		"Levels" : "(•••) Pre: Uratha",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Far-Runner's Intuition",
+		"Sources" : [{
+				"SourceBook" : "SotM",
+				"SourcePage" : "30"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "May roll Wits + Streetice or Wits+Survival to find a given packmate in the city or the wild, respectively along with other details.",
+		"Levels" : "(•",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Fetish",
+		"Sources" : [{
+				"SourceBook" : "WtF",
+				"SourcePage" : "79"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "An item containing a bound spirit which has a specific, useful benefit.",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Local",
+		"Sources" : [{
+				"SourceBook" : "Terr",
+				"SourcePage" : "47"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "+1 to social rolls dealing with humans within the werewolfs territory. Humans living in the territory get +1 effective willpower for Lunacy caused by the werewolf with this merit.",
+		"Levels" : "(••) Pre: Uratha",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Mercy of Luna",
+		"Sources" : [{
+				"SourceBook" : "SotM",
+				"SourcePage" : "30"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "May spend a point of Willpower to reduce Primal Urge Social penalties by Cunning score to a max of of 0.",
+		"Levels" : "(•",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Metabolic Control",
+		"Sources" : [{
+				"SourceBook" : "The Rage: Forsaken Player's Guide",
+				"SourcePage" : "105"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "May suppress regeneration or other physical advantages of being a werewolf in order to hide",
+		"Levels" : "(••) *pre: Stamina •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Moon Centered",
+		"Sources" : [{
+				"SourceBook" : "The Rage: Forsaken Player's Guide",
+				"SourcePage" : "103"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "During auspice moon gain a bonus to rolls to stay in war form, but suffer a penalty to Composure checks until the first such transformation is done in a lunar cycle.",
+		"Levels" : "(••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Naturally Deceptive",
+		"Sources" : [{
+				"SourceBook" : "SotM",
+				"SourcePage" : "30"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "By spending a point of Willpower on a Larceny, Stealth ,or Subterfuge the Irraka may add their Cunning score instead of +3.",
+		"Levels" : "(•",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Nimble Defender",
+		"Sources" : [{
+				"SourceBook" : "Terr",
+				"SourcePage" : "47"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "+1 Defense within your territory. +1 to Athletics to move around your territory.",
+		"Levels" : "(••••) Pre: Uratha.",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Pathfinder's Blessing",
+		"Sources" : [{
+				"SourceBook" : "SotM",
+				"SourcePage" : "30"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "The Irraka rolls 4 additional dice for Pathfinder's Sense instead of the normal 2.",
+		"Levels" : "(••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Predator’s Gaze",
+		"Sources" : [{
+				"SourceBook" : "The Rage: Forsaken Player's Guide",
+				"SourcePage" : "103"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "Make people slightly uncomfortable, making them more inclined to do what you say or do anything to make you go away.",
+		"Levels" : "(••) *pre: Presence ••, Intimidation ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Prophet's Voice",
+		"Sources" : [{
+				"SourceBook" : "Faithful",
+				"SourcePage" : "79"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "Similar to Dream merit; can gain symbolic but prophetic visions once per story",
+		"Levels" : "(•••) *pre: Resolve ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Scout",
+		"Sources" : [{
+				"SourceBook" : "Territories",
+				"SourcePage" : "48"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "+1 perception and Stealth in another pack's territory, as long as you are not attacked or interfered with.",
+		"Levels" : "(••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Secret Paths",
+		"Sources" : [{
+				"SourceBook" : "Terr",
+				"SourcePage" : "47"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "+2 stealth within one's territory. A hiding place can be created in a turn which provides a further +2 and 1 point of cover.",
+		"Levels" : "(••) Pre: Uratha",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Short Cuts",
+		"Sources" : [{
+				"SourceBook" : "Terr",
+				"SourcePage" : "47"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "Werewolves with this merit can find alternate paths around obstacles in their territory without losing any time.",
+		"Levels" : "(•) Pre: Uratha",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Staunch Defender",
+		"Sources" : [{
+				"SourceBook" : "Terr",
+				"SourcePage" : "48"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "+1 to attack pools with claws and teeth against invaders of your territory. Drawback: -1 to Death Rage while defending your territory",
+		"Levels" : "(•••) Pre: Uratha",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Strong Bloodline",
+		"Sources" : [{
+				"SourceBook" : "Pure",
+				"SourcePage" : "111"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "Increases effective Purity renown for some social purposes.",
+		"Levels" : "(•) *pre: Ivory Claw",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Trained Senses",
+		"Sources" : [{
+				"SourceBook" : "SotM",
+				"SourcePage" : "30"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "May ignore up to two dice of penalties to perception rolls. By spending a point of Willpower the Werewolf may ignore a penalty of any size for a perception roll.",
+		"Levels" : "(",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Territorial Familiarity",
+		"Sources" : [{
+				"SourceBook" : "BotW",
+				"SourcePage" : "99"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "+2 to Survival within region of territory. At one dot, this territory is a few city blocks. Three dots, it is several miles worth of territory. Werewolves get the full effect at 2 dots.",
+		"Levels" : "(• to •••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Vicious Attacker",
+		"Sources" : [{
+				"SourceBook" : "Terr",
+				"SourcePage" : "48"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Werewolf",
+		"Effect" : "+1 to attack pools against werewolves in their territory.",
+		"Levels" : "(•••) Pre: Uratha",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Acid Stomach",
+		"Sources" : [{
+				"SourceBook" : "Strange Alchemies",
+				"SourcePage" : "55"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Promethean",
+		"Effect" : "digest any ingested substance, instead of purely organic",
+		"Levels" : "•",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Azothic Object",
+		"Sources" : [{
+				"SourceBook" : "Strange Alchemies",
+				"SourcePage" : "55"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Promethean",
+		"Effect" : "own a Pyros-infused object",
+		"Levels" : "• to •••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Companion",
+		"Sources" : [{
+				"SourceBook" : "Strange Alchemies",
+				"SourcePage" : "55"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Promethean",
+		"Effect" : "Spirit companion follows and aids you",
+		"Levels" : "••• or ••••",
+		"Prerequistes" : "Ephemeral Flesh bestowment"
+	}, {
+		"Name" : "Device",
+		"Sources" : [{
+				"SourceBook" : "SN",
+				"SourcePage" : "59"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Promethean",
+		"Effect" : "internal mechanism",
+		"Levels" : "•• to •••••",
+		"Prerequistes" : "Unfleshed"
+	}, {
+		"Name" : "Elpis",
+		"Sources" : [{
+				"SourceBook" : "PtC",
+				"SourcePage" : "95"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Promethean",
+		"Effect" : "gain insight into Milestones",
+		"Levels" : "• to •••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Famous Face",
+		"Sources" : [{
+				"SourceBook" : "Strange Alchemies",
+				"SourcePage" : "56"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Promethean",
+		"Effect" : "influence those your corpse used to know",
+		"Levels" : "• to •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Fresh Corpse",
+		"Sources" : [{
+				"SourceBook" : "Strange Alchemies",
+				"SourcePage" : "58"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Promethean",
+		"Effect" : "ignore untrained physical penalties",
+		"Levels" : "•• (CO)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Good Brain",
+		"Sources" : [{
+				"SourceBook" : "Strange Alchemies",
+				"SourcePage" : "58"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Promethean",
+		"Effect" : "ignore untrained mental penalties",
+		"Levels" : "••• (CO)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Hideous Anyway",
+		"Sources" : [{
+				"SourceBook" : "Strange Alchemies",
+				"SourcePage" : "58"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Promethean",
+		"Effect" : "improves intimidation, but damages other social rolls",
+		"Levels" : "••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Incorruptible",
+		"Sources" : [{
+				"SourceBook" : "PB",
+				"SourcePage" : "49"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Promethean",
+		"Effect" : "bonus on humanity rolls when activating Pandoran transmutations",
+		"Levels" : "••••",
+		"Prerequistes" : "Composure •••"
+	}, {
+		"Name" : "Pilgrim",
+		"Sources" : [{
+				"SourceBook" : "MO",
+				"SourcePage" : "53"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Promethean",
+		"Effect" : "when telling the story of your Pilgrimage, gain Willpower",
+		"Levels" : "••",
+		"Prerequistes" : "experienced the Revelation"
+	}, {
+		"Name" : "Pilgrim",
+		"Sources" : [{
+				"SourceBook" : "Strange Alchemies",
+				"SourcePage" : "58"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Promethean",
+		"Effect" : "Gain more Vitriol from Milestones",
+		"Levels" : "••••",
+		"Prerequistes" : "Elpis ••, Humanity 6"
+	}, {
+		"Name" : "Repute",
+		"Sources" : [{
+				"SourceBook" : "PtC",
+				"SourcePage" : "97"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Promethean",
+		"Effect" : "Status amongst Prometheans",
+		"Levels" : "• to •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Residual Memory",
+		"Sources" : [{
+				"SourceBook" : "PtC",
+				"SourcePage" : "97"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Promethean",
+		"Effect" : "have clearer memories of your past life",
+		"Levels" : "• to •••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Shabti",
+		"Sources" : [{
+				"SourceBook" : "Strange Alchemies",
+				"SourcePage" : "58"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Promethean",
+		"Effect" : "Pyros-infused statue companion",
+		"Levels" : "•••",
+		"Prerequistes" : "Revivification bestowment"
+	}, {
+		"Name" : "Shepherd",
+		"Sources" : [{
+				"SourceBook" : "Strange Alchemies",
+				"SourcePage" : "59"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Promethean",
+		"Effect" : "Help others gain Vitriol from Milestones",
+		"Levels" : "••••",
+		"Prerequistes" : "Elpis •, Repute ••, Humanity 6"
+	}, {
+		"Name" : "Unpalatable Aura",
+		"Sources" : [{
+				"SourceBook" : "PtC",
+				"SourcePage" : "98"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Promethean",
+		"Effect" : "Pandorans attack other Prometheans for food first",
+		"Levels" : "••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Weatherproof",
+		"Sources" : [{
+				"SourceBook" : "Strange Alchemies",
+				"SourcePage" : "59"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Promethean",
+		"Effect" : "never be affected by environmental conditions",
+		"Levels" : "• (CO)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Endowments",
+		"Sources" : [{
+				"SourceBook" : "HTV",
+				"SourcePage" : "67"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Hunter",
+		"Effect" : "Grants access to Endowments",
+		"Levels" : "• to •••••",
+		"Prerequistes" : "Conspiracy Status"
+	}, {
+		"Name" : "Favored Weapon",
+		"Sources" : [{
+				"SourceBook" : "HTV",
+				"SourcePage" : "67"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Hunter",
+		"Effect" : "User selects a specific weapon he has used in combat upholding the vigil. As long as the weapon is being used or is nearby, in and out combat, the user gains +2 to Resolve+Composure",
+		"Levels" : "••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Indomitable",
+		"Sources" : [{
+				"SourceBook" : "NS",
+				"SourcePage" : "134"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Hunter",
+		"Effect" : "Gain dots to all rolls to resist any form of suggestion, mundane or supernatural.",
+		"Levels" : "• to •••••",
+		"Prerequistes" : "Resolve •••,Composure •••"
+	}, {
+		"Name" : "Kin",
+		"Sources" : [{
+				"SourceBook" : "SpSl",
+				"SourcePage" : "139"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Hunter",
+		"Effect" : "Character is related to werewolves. +3 to resist Lunacy, +2 to social dealing with werewolves, Unseen sense relating to werewolves. -1 to Social rolls dealing with normal humans. Also viewed as breeding stock by werewolves.",
+		"Levels" : "•••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Language: ConLang",
+		"Sources" : [{
+				"SourceBook" : "NS",
+				"SourcePage" : "134"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Hunter",
+		"Effect" : "Military sign language. +1 to all Tactic rolls for each cell member who has this Merit (minimum two). Each cell member who lacks it takes a -1 penalty instead.",
+		"Levels" : "•",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Natural Medium",
+		"Sources" : [{
+				"SourceBook" : "SpSl",
+				"SourcePage" : "139"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Hunter",
+		"Effect" : "Unseen Sense relating to spirits, understand spirit language, for 1 point of Willpower, can \" speak \" to spirits. Immune to possession by spirits unless they voluntarily allow it,but may suffer from Flaw: Nightmares.",
+		"Levels" : "•••",
+		"Prerequistes" : "Presence •••"
+	}, {
+		"Name" : "Null",
+		"Sources" : [{
+				"SourceBook" : "SpSl",
+				"SourcePage" : "140"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Hunter",
+		"Effect" : "+1 to Intimidation vs. Spirits. Penalties to spirits materializing around character. -2 to Social rolls dealing with werewolves and spirits.",
+		"Levels" : "••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Professional Training",
+		"Sources" : [{
+				"SourceBook" : "HTV",
+				"SourcePage" : "87"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Hunter",
+		"Effect" : "Reflects job experiences, and natural prowess at the talents important to character's line of work.",
+		"Levels" : "• to •••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Status, Compact or Conspiracy",
+		"Sources" : [{
+				"SourceBook" : "HTV",
+				"SourcePage" : "72"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Hunter",
+		"Effect" : "Character holds membership in a hunter compact (Tier 2) or Conspiracy (Tier 3)",
+		"Levels" : "• to •••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Torture Suite",
+		"Sources" : [{
+				"SourceBook" : "HTV",
+				"SourcePage" : "74"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Hunter",
+		"Effect" : "a private space that adds to Intimidation rolls for interrogations.",
+		"Levels" : "• to •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Unbondable",
+		"Sources" : [{
+				"SourceBook" : "NS",
+				"SourcePage" : "135"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Hunter",
+		"Effect" : "It takes twice as many drinks of Vitae to blood bond you (six instead of three).",
+		"Levels" : "••",
+		"Prerequistes" : "Stamina ••, Resolve •••"
+	}, {
+		"Name" : "Ceremony",
+		"Sources" : [{
+				"SourceBook" : "Geist",
+				"SourcePage" : "87"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Geist",
+		"Effect" : "Gain Number of Ceremonies Based on Number of Dots Held",
+		"Levels" : "(•+)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Death-Touched",
+		"Sources" : [{
+				"SourceBook" : "BotD",
+				"SourcePage" : "93"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Geist",
+		"Effect" : "Gain a one or two die bonus to non-hostile rolls to interact with ghosts in the Underworld; for an additional merit dot this applies to ghosts anywhere.",
+		"Levels" : "•• to •••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Memento",
+		"Sources" : [{
+				"SourceBook" : "Geist",
+				"SourcePage" : "89"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Geist",
+		"Effect" : "Item with various bonuses",
+		"Levels" : "(•+)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Encylopedic Knowledge*",
+		"Sources" : [{
+				"SourceBook" : "MtC",
+				"SourcePage" : "79"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mummy",
+		"Effect" : "Modified from the mortal merit - this is much more limited in scope, and only references information from the past.",
+		"Levels" : "•••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Language*",
+		"Sources" : [{
+				"SourceBook" : "MtC",
+				"SourcePage" : "79"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mummy",
+		"Effect" : "As well as speaking Iremite Egyptian, the Mummy learns two languages at chargen, and additional languages cost 1xp.",
+		"Levels" : "•",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Cult",
+		"Sources" : [{
+				"SourceBook" : "MtC",
+				"SourcePage" : "79"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mummy",
+		"Effect" : "This is detailed in it's own chapter.",
+		"Levels" : "*",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Benefit",
+		"Sources" : [{
+				"SourceBook" : "MtC",
+				"SourcePage" : "79"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mummy",
+		"Effect" : "",
+		"Levels" : "• to •••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Grasp",
+		"Sources" : [{
+				"SourceBook" : "MtC",
+				"SourcePage" : "79"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mummy",
+		"Effect" : "",
+		"Levels" : "• to •••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Reach",
+		"Sources" : [{
+				"SourceBook" : "MtC",
+				"SourcePage" : "79"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mummy",
+		"Effect" : "",
+		"Levels" : "• to •••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Enigma",
+		"Sources" : [{
+				"SourceBook" : "MtC",
+				"SourcePage" : "79"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mummy",
+		"Effect" : "Acts similarly to the Occult background - whenever someone makes a roll to learn about, track, or find information regarding the Mummy, he takes a penalty equal to the Mummy's Enigma rating.",
+		"Levels" : "• to •••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Guild Status",
+		"Sources" : [{
+				"SourceBook" : "MtC",
+				"SourcePage" : "79"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mummy",
+		"Effect" : "Status in the five guilds of Irem. One dot represents Apprentices, where two to four dots represent Journeymen. Five dots represent a guildmaster. A Mummy adds his dots of Guild status to interactions with her guild.",
+		"Levels" : "• to •••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Relic",
+		"Sources" : [{
+				"SourceBook" : "MtC",
+				"SourcePage" : "81"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mummy",
+		"Effect" : "Offers the use of Relics; One to three dots provides single relics of increasing dot strength, four dots provides either a four-dot or a three dot and a one dot, and five dots follows the same pattern; either a five dot relic or a three dot and a two dot relic.",
+		"Levels" : "• to •••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Tomb",
+		"Sources" : [{
+				"SourceBook" : "MtC",
+				"SourcePage" : "81"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mummy",
+		"Effect" : "",
+		"Levels" : "*",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Drawbacks",
+		"Sources" : [{
+				"SourceBook" : "MtC",
+				"SourcePage" : "81"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mummy",
+		"Effect" : "",
+		"Levels" : "• to •••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Endowments",
+		"Sources" : [{
+				"SourceBook" : "MtC",
+				"SourcePage" : "81"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mummy",
+		"Effect" : "",
+		"Levels" : "• to •••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Geometry",
+		"Sources" : [{
+				"SourceBook" : "MtC",
+				"SourcePage" : "81"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mummy",
+		"Effect" : "",
+		"Levels" : "• to •••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Peril",
+		"Sources" : [{
+				"SourceBook" : "MtC",
+				"SourcePage" : "81"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mummy",
+		"Effect" : "",
+		"Levels" : "• to •••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Vestige",
+		"Sources" : [{
+				"SourceBook" : "MtC",
+				"SourcePage" : "81"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mummy",
+		"Effect" : "",
+		"Levels" : "• to •••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Witness",
+		"Sources" : [{
+				"SourceBook" : "MtC",
+				"SourcePage" : "83-84"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Mummy",
+		"Effect" : "",
+		"Levels" : "•••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Advance Form",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "?"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon",
+		"Effect" : "Have one less Modification or Technology, but one more Propulsion or Process.",
+		"Levels" : "•",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Bolthole",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "?"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon",
+		"Effect" : "Your Cover's Infrastructure contains a time-static warded safehole to duck into. Dots in Bolthole are used to purchase Bolthole aspects below.",
+		"Levels" : "• to •••••+",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Consummate Professional (Agenda)",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "?"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon",
+		"Effect" : "You can resolve an Agenda Condition twice rather than once per session.",
+		"Levels" : "••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Cultists",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "?"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon",
+		"Effect" : "You have a cult loyal to your demonic identity. More dots purchase more dedicated and loyal cultists, or at five dots, supernaturally endowed cultists.",
+		"Levels" : "•• to •••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Efficient Dealer",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "?"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon",
+		"Effect" : "Ignore one level of asset on the Demon's side when creating a pact.",
+		"Levels" : "••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Electromagnetic Linguistics",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "?"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon",
+		"Effect" : "Can speak and understand machine code. Includes instinctively understanding what computer code does or 'hearing' text messages as they're transmitted.",
+		"Levels" : "••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "High Tolerance",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "?"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon",
+		"Effect" : "Can graft one gadget containing a Demon Form ability without losing access to an existing one. One dot allows for Modification or Technology, Two dots allows for Propulsion or Process.",
+		"Levels" : "• or ••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Living the Lie",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "?"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon",
+		"Effect" : "Allows you to give Covers a Virtue and Vice and regain willpower using them or the Demon's own Virtue and Vice.",
+		"Levels" : "•",
+		"Prerequistes" : "Primum ••"
+	}, {
+		"Name" : "Monkeywrencher",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "?"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon",
+		"Effect" : "R Gain the ability to negate Embeds that match the Demon's Cipher (with known Keys) or Incarnation. Spend an Aether and roll Resolve + Primum, each success subtracting from the Embed user's success. Can also counter Numina from Angels.",
+		"Levels" : "••",
+		"Prerequistes" : "Primum ••"
+	}, {
+		"Name" : "Multiple Agendas",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "?"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon",
+		"Effect" : "You have dedicated yourself to two Agendas.",
+		"Levels" : "••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Resonance Aware",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "?"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon",
+		"Effect" : "Add the dots in Resonance Awareness to Primum when determining the range of sensing Aether.",
+		"Levels" : "• to •••••",
+		"Prerequistes" : "Wits •••"
+	}, {
+		"Name" : "Resonance Sensitivity",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "?"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon",
+		"Effect" : "Activating the ability to detect Aether does not cost Aether. The ability to detect Aether can be turn on and off reflexively and you can automatically detect any nearby Aether.",
+		"Levels" : "•",
+		"Prerequistes" : "Wits ••••"
+	}, {
+		"Name" : "Suborned Infrastructure",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "?"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon",
+		"Effect" : "You have taken over and rigged an instance of God-Machine Infrastructure to produce Aether. Like all Infrastructure, it has a linchpin.",
+		"Levels" : "• to •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Subsumed Gadget",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "?"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon",
+		"Effect" : "Integrate a Gadget into your Demonic form so it can be healed as if a part of their body and can be activated by concentrating. However, it cannot be hidden when Demonic Form is exposed.",
+		"Levels" : "••",
+		"Prerequistes" : "Primum ••"
+	}, {
+		"Name" : "Sympathetic Stigmatic",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "?"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon",
+		"Effect" : "Have a sympathetic friend who understands the Demon's plight. Gain +2 on all rolls to find a Key if the Sympathetic Stigmatic is present. Additionally, gain 9-again on all rolls to use an Interlock that has been unlocked in that Stigmatic's presence. The Stigmatic bears no obvious Stigmata, but suffers the same injury that the Demon does. Comes with the equivalent Stigmatic merit \" Sympathetic Demon \".",
+		"Levels" : "••",
+		"Prerequistes" : "True Friend"
+	}, {
+		"Name" : "Tattooed Gadget",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "?"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon",
+		"Effect" : "Can use your own body as hardware for Embedded Gadget creation. Tattooed Gadgets cannot be lost, stolen, destroyed or overclocked and do not need triggers for activation.",
+		"Levels" : "••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Terrible Form (Style)",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "?"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon",
+		"Effect" : "Body Modification: Your demonic form has an extra Modification.",
+		"Levels" : "• to ••••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Technological Advancement: Your demonic form has an extra Technology.",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "?"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon",
+		"Effect" : "",
+		"Levels" : "",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Jet Propulsion: Your demonic form has an extra Propulsion.",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "?"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon",
+		"Effect" : "",
+		"Levels" : "",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Dual Processors: Your demonic form has an extra Process.",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "122"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon",
+		"Effect" : "",
+		"Levels" : "DtD 122",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Versatile Transformation",
+		"Sources" : [{
+				"SourceBook" : "Demon: The Descent",
+				"SourcePage" : "?"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Demon",
+		"Effect" : "When you partially transform, it costs one Aether for every two form abilities manifested. Manifesting extra abilities is optional.",
+		"Levels" : "•",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Age Reversal",
+		"Sources" : [{
+				"SourceBook" : "Night Horrors: Grim Fears",
+				"SourcePage" : "84"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Your Changeling begins to age backwards.",
+		"Levels" : "(•)",
+		"Prerequistes" : "Wyrd ••••"
+	}, {
+		"Name" : "Arcadian Body",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "87"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Bring an attribute to a maximum of +6 , 5th dot only costs one dot at character creation.",
+		"Levels" : "(••••)",
+		"Prerequistes" : "Attribute •••+ Creation Only"
+	}, {
+		"Name" : "Arcadian Metabolism",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "87"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Greater healing when eating Goblin Fruits, but suffer malnutrition without one Fruit per week.",
+		"Levels" : "(•••)",
+		"Prerequistes" : "-"
+	}, {
+		"Name" : "Brownie's Boon",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "88"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "You complete mundane tasks in half the time that it would take others! Well, except you can't be watched while you do it. You can spend a glamour to half this time again. And again. And a gain. Though, this tops out at being able to finish something in 1/16th the time.",
+		"Levels" : "(•)",
+		"Prerequistes" : "-"
+	}, {
+		"Name" : "Charmed Life",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "88"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Reroll when dealt aggravated damage or would otherwise be killed.",
+		"Levels" : "(••)",
+		"Prerequistes" : "-"
+	}, {
+		"Name" : "Court Goodwill",
+		"Sources" : [{
+				"SourceBook" : "Changeling the Lost",
+				"SourcePage" : "93 "
+			}, {
+				"SourceBook" : "AN",
+				"SourcePage" : " 45"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Develop favor with members of a Court. Ensorcelled mortals can take this merit.",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : "-"
+	}, {
+		"Name" : "Devotee",
+		"Sources" : [{
+				"SourceBook" : "ER",
+				"SourcePage" : "14"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "You have a group of loyal, but broken followers.",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : "Wyrd •••••••"
+	}, {
+		"Name" : "Disenchanting Kiss",
+		"Sources" : [{
+				"SourceBook" : "Swords at Dawn",
+				"SourcePage" : "92"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "With high Clarity, you have a kiss that cancels mind and emotional controll",
+		"Levels" : "(••••)",
+		"Prerequistes" : "Wyrd ••••• Clarity 9+"
+	}, {
+		"Name" : "Dual Kith",
+		"Sources" : [{
+				"SourceBook" : "WM",
+				"SourcePage" : "98"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Your character possesses two or more kiths, and by proxy the blessing that comes with it.",
+		"Levels" : "(•••)",
+		"Prerequistes" : "Wyrd ••"
+	}, {
+		"Name" : "Dual Kith",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "88"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Your character possesses two or more kiths, and by proxy the blessing that comes with it.",
+		"Levels" : "(•• or •••)",
+		"Prerequistes" : "Creation Only"
+	}, {
+		"Name" : "Enchanting Performance",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "88"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Reduce negative situation modifiers to Expression or Persuasion equal to your wyrd. Spending a point of Glamour the performance becomes rote, and if successful, it inspires an emotion appropriate to performance.",
+		"Levels" : "(••••)",
+		"Prerequistes" : "Expression •••"
+	}, {
+		"Name" : "Fae Mount",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "89"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "You own a Hobgoblin/Token/Otherwise magical mount.",
+		"Levels" : "(•, ••, ••• or •••••)",
+		"Prerequistes" : "-"
+	}, {
+		"Name" : "Faerie Favor",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "90"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "You possess a token, which, when broken, will summon your Keeper, who owes you a single favor.",
+		"Levels" : "(•••)",
+		"Prerequistes" : "-"
+	}, {
+		"Name" : "Faerie Healing",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "90"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Capable of using Goblin Fruits to restore health to others. Does not apply to the dead (Ghosts, Vampires)",
+		"Levels" : "(••)",
+		"Prerequistes" : "-"
+	}, {
+		"Name" : "Fighting Style Dream Combat",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "90"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Abilities for fighting while in a dream. Look under the Styles Merits page for more information.",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : "Wyrd ••, Empathy •••"
+	}, {
+		"Name" : "Fighting Style Hedge Duelist",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "91"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Abilities to use in a formal duel while in the Hedge. Look under the Styles Merits page for more information.",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : "Wyrd •••"
+	}, {
+		"Name" : "Gentrified Bearing",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "92"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "You look a bit like the True Fae, and can fool Hobgoblins and Gentry at a distance.",
+		"Levels" : "(••••)",
+		"Prerequistes" : "Wyrd •••"
+	}, {
+		"Name" : "Goblin Merchant",
+		"Sources" : [{
+				"SourceBook" : "Goblin Markets",
+				"SourcePage" : "34"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Sell at Goblin Market without being price-gouged and while protected by Market Law",
+		"Levels" : "(• or •••)",
+		"Prerequistes" : "-"
+	}, {
+		"Name" : "Goblin Vow",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "38"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Can make pledges with one Wyrd-purview/dot; no sanction and boon and task must be related to purview",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : "-"
+	}, {
+		"Name" : "Harvest",
+		"Sources" : [{
+				"SourceBook" : "Changeling the Lost",
+				"SourcePage" : "94"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "A list of your consistent sources of Glamour. Examples include: Emotion, Dreaming, Oaths, Hedge Fruit",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : "-"
+	}, {
+		"Name" : "Hedge Gate Sense",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "92"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Sensitivity to established Hedge Gates, lower time spent finding such a gate cut by half, granted a reflexive roll when near one.",
+		"Levels" : "(•)",
+		"Prerequistes" : "-"
+	}, {
+		"Name" : "Hedgebeast Companion",
+		"Sources" : [{
+				"SourceBook" : "AN",
+				"SourcePage" : "132"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Intelligent Hobgoblin familiars who act as animal retainers. The more dots you have, the stronger the Hobgoblin is.",
+		"Levels" : "(• to •••)",
+		"Prerequistes" : "-"
+	}, {
+		"Name" : "Hidden Life",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "92"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Seeking information about your character takes a penalty, including remembering contact or physical details.",
+		"Levels" : "(• to •••)",
+		"Prerequistes" : "Fame 0, Wyrd equal to dots in Hidden Life"
+	}, {
+		"Name" : "Hob Kin",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "92"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Feel like family to Hobs, making it easier to make fair deals with them.",
+		"Levels" : "(••)",
+		"Prerequistes" : "Hollow •+"
+	}, {
+		"Name" : "Hobgoblin Trainer",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "93"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Ability (and rules) for temporarily training Hobgoblins.",
+		"Levels" : "(••)",
+		"Prerequistes" : "-"
+	}, {
+		"Name" : "Hollow",
+		"Sources" : [{
+				"SourceBook" : "Changeling the Lost",
+				"SourcePage" : "94"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "House for changelings that is between the hedge and the real world.",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : "-"
+	}, {
+		"Name" : "Lethal Mien",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "94"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "A part of the body becomes a weapon, and granted a damage bonus. This can stack with Blessings.",
+		"Levels" : "(••)",
+		"Prerequistes" : "Wyrd •••"
+	}, {
+		"Name" : "Long of Days",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "94"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "When determining maximum age, the Changeling is treated as if her Wyrd is +4. For information on aging, see CtL p. 174 - 175.",
+		"Levels" : "(••)",
+		"Prerequistes" : "-"
+	}, {
+		"Name" : "Mantle",
+		"Sources" : [{
+				"SourceBook" : "Changeling the Lost",
+				"SourcePage" : "97"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Membership in a court, benefits in the form of bonuses to social interaction, Contracts and Blessing. The first dot for free.",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : "-"
+	}, {
+		"Name" : "Manymask",
+		"Sources" : [{
+				"SourceBook" : "ER",
+				"SourcePage" : "14"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "The Changeling possesses multiple masks (One per dot) and can change them. The masks do not change your size and gender.",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : "Wyrd •••••••"
+	}, {
+		"Name" : "Market Familiarity",
+		"Sources" : [{
+				"SourceBook" : "Goblin Markets",
+				"SourcePage" : "14"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Locate and attend Goblin Markets.",
+		"Levels" : "(• or •••)",
+		"Prerequistes" : "Changeling"
+	}, {
+		"Name" : "Market Sense",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "94 "
+			}, {
+				"SourceBook" : "Goblin Markets",
+				"SourcePage" : "33"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "+3 bonus to determine if being cheated in deals.",
+		"Levels" : "(•)",
+		"Prerequistes" : "-"
+	}, {
+		"Name" : "Market Stall",
+		"Sources" : [{
+				"SourceBook" : "Goblin Markets",
+				"SourcePage" : "34"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Own a stall where you can store goods and be able to extract and store abstractions.",
+		"Levels" : "(••••)",
+		"Prerequistes" : "Goblin Merchant •••"
+	}, {
+		"Name" : "New Identity",
+		"Sources" : [{
+				"SourceBook" : "Changeling the Lost",
+				"SourcePage" : "98 "
+			}, {
+				"SourceBook" : "AN",
+				"SourcePage" : "45"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "The quality of legal (Or illegal) documentation supporting your new identity. This merit can be taken by mortals or other supernaturals as well.",
+		"Levels" : "(•, •• or •••• )",
+		"Prerequistes" : "-"
+	}, {
+		"Name" : "Perfect Stillness",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "94"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "The Changeling is capable of standing absolutely still, and all rolls to notice or locate take -2.",
+		"Levels" : "(•)",
+		"Prerequistes" : "Stealth •"
+	}, {
+		"Name" : "Pledgesmith",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "94"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Your character is known for having a way with words. Gain +1 for every merit dot when discussing Pledges.",
+		"Levels" : "(• to •••)",
+		"Prerequistes" : "-"
+	}, {
+		"Name" : "Prophet Circle",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "94"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Grants ensorcelled mortals to receive Prophetic dreams. Costs 1 glamour and a Wits + Occult roll.",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : "-"
+	}, {
+		"Name" : "Rigid Mask",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "95"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Hide your emotions very well, even from lie detectors and such.",
+		"Levels" : "(••)",
+		"Prerequistes" : "Subterfuge ••"
+	}, {
+		"Name" : "Second-Hand Skills",
+		"Sources" : [{
+				"SourceBook" : "Goblin Markets",
+				"SourcePage" : "26"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Gain bonus equal to dots to three skills once per Chapter.",
+		"Levels" : "(• to •••)",
+		"Prerequistes" : "Wyrd •••"
+	}, {
+		"Name" : "Shared Sleep",
+		"Sources" : [{
+				"SourceBook" : "Changeling the Lost",
+				"SourcePage" : "44"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Need only 4 hours sleep as long as you spends 6 hours in each of your personalities.",
+		"Levels" : "(•)",
+		"Prerequistes" : "Functional Multiple Personalities or Multiple Personality Disorder"
+	}, {
+		"Name" : "Siren Song",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "96"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "While speaking, everyone within earshot takes a -2 penalty to all actions.",
+		"Levels" : "(•••)",
+		"Prerequistes" : "-"
+	}, {
+		"Name" : "Slave",
+		"Sources" : [{
+				"SourceBook" : "Goblin Markets",
+				"SourcePage" : "23"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Supernatural servant purchased at Market.",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : "-"
+	}, {
+		"Name" : "Soul Sense",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "96"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Always know the direction and distance to your Fetch, its moods and emotions, and a +2 to social rolls when interacting. Take penalties when it is injured or killed.",
+		"Levels" : "(••)",
+		"Prerequistes" : "A Living Fetch"
+	}, {
+		"Name" : "Sublime",
+		"Sources" : [{
+				"SourceBook" : "ER",
+				"SourcePage" : "14"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "The Changeling's mein becomes transcendental, and mortals become bewitched, limiting their actions. Changelings must roll Resolve + Composure or be bewitched.",
+		"Levels" : "(•••••)",
+		"Prerequistes" : "Wyrd •••••••••"
+	}, {
+		"Name" : "Narrative Master",
+		"Sources" : [{
+				"SourceBook" : "Swords at Dawn",
+				"SourcePage" : "78"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Spend Glamour to increase Talecrafting rolls.",
+		"Levels" : "(•••)",
+		"Prerequistes" : "Wyrd •••"
+	}, {
+		"Name" : "Token",
+		"Sources" : [{
+				"SourceBook" : "Changeling the Lost",
+				"SourcePage" : "98"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Own a once mundane charm turned magical from its time in the Hedge or Arcadia. You may not use this merit to obtain Legendary Tokens (••••• or more). See the list here]].",
+		"Levels" : "(• to •••••)",
+		"Prerequistes" : "-"
+	}, {
+		"Name" : "Token Maker",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "150"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Through extended actions and spending Glamour a Changeling may create a Token at 25 successes per level.",
+		"Levels" : "(•••)",
+		"Prerequistes" : "Wyrd •••, Crafts •••"
+	}, {
+		"Name" : "Tokenmaster",
+		"Sources" : [{
+				"SourceBook" : "ER",
+				"SourcePage" : "14"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Being in constant touch with objects turns them into Tokens. See the list here]].",
+		"Levels" : "(•••)",
+		"Prerequistes" : "Wyrd •••••••"
+	}, {
+		"Name" : "Unseen Sense, Talecrafting",
+		"Sources" : [{
+				"SourceBook" : "Swords at Dawn",
+				"SourcePage" : "78"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Sense when the an opportunity to set up a Hook comes up.",
+		"Levels" : "(•••)",
+		"Prerequistes" : "Wits ••• Academics ••"
+	}, {
+		"Name" : "Visionary Dreams",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "97"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Your character receives Prophetic Dreams. Costs 1 Willpower point and a Intelligence + Wits roll.",
+		"Levels" : "(••)",
+		"Prerequistes" : "Wyrd •••"
+	}, {
+		"Name" : "Wholesale Wares",
+		"Sources" : [{
+				"SourceBook" : "Goblin Markets",
+				"SourcePage" : "35"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Once per chapter, reduce the cost of an item by dots in the Merit so long as intent is to resell.",
+		"Levels" : "(• to ••)",
+		"Prerequistes" : "Market Stall ••••"
+	}, {
+		"Name" : "Wisdom of Dreams",
+		"Sources" : [{
+				"SourceBook" : "Rites of Spring",
+				"SourcePage" : "97"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "A successful Wits + Composure leads to borrowing a skill specialty or language for one day from a known mortals dreams",
+		"Levels" : "(•••)",
+		"Prerequistes" : "Wyrd ••+"
+	}, {
+		"Name" : "Wyrdskill",
+		"Sources" : [{
+				"SourceBook" : "ER",
+				"SourcePage" : "15"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Gain a free skill specialty in one field every time you grow in Wyrd. Developing other skills may cost more.",
+		"Levels" : "(•••)",
+		"Prerequistes" : "Wyrd ••••••"
+	}, {
+		"Name" : "Kiss of Life",
+		"Sources" : [{
+				"SourceBook" : "Swords at Dawn",
+				"SourcePage" : "24"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "The Leechfinger can store stolen health and use it to heal himself or others.",
+		"Levels" : "(••••) *pre: Sap the Vital Spark Blessing",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Subtle Liquer",
+		"Sources" : [{
+				"SourceBook" : "Swords at Dawn",
+				"SourcePage" : "29"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "When the Brewer uses his blessing, the merit makes the fermented drink unrecognizable as alcoholic.",
+		"Levels" : "(•) *pre: Inebriating Elixir Blessing",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Outsider Fetish",
+		"Sources" : [{
+				"SourceBook" : "LoS",
+				"SourcePage" : "150"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Begin play with a talen or fetish. Must be instructed on the usage by a Werewolf. List of Talens and Fetishs.",
+		"Levels" : "(• to •••) *pre: The Lord Sages of the Unknown Reaches",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Bloodied Ground",
+		"Sources" : [{
+				"SourceBook" : "AN",
+				"SourcePage" : ". "
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Milestone",
+		"Effect" : "The milestone is achieved on the human side of an open gateway (The Hedge must be seen). Reach the spot where the Fetch died easier.",
+		"Levels" : "",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Broken Mirror",
+		"Sources" : [{
+				"SourceBook" : "Changeling the Lost",
+				"SourcePage" : ". "
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Milestone",
+		"Effect" : "The milestone is achieved when done personally. Once per story, the Changeling can activate the merit to gain +3 to any roll.",
+		"Levels" : "",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Cuckoo's Egg",
+		"Sources" : [{
+				"SourceBook" : "AN",
+				"SourcePage" : ". "
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Milestone",
+		"Effect" : "The milestone is achieved with no witnesses, even animals. Receive an item that lets you play the part of the fetch. Can be stolen and used to impersonate the Changeling.",
+		"Levels" : "",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "False Heart",
+		"Sources" : [{
+				"SourceBook" : "AN",
+				"SourcePage" : ". "
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Milestone",
+		"Effect" : "The milestone is achieved. A fist-sized object that was the fetches heart is taken, which can be used as Glamour reserves. Usable only by the owner.",
+		"Levels" : "",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Fetchbane",
+		"Sources" : [{
+				"SourceBook" : "AN",
+				"SourcePage" : ". "
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Milestone",
+		"Effect" : "The milestone is achieved with a single weapon not made of Cold Iron. The weapon does lethal damage (Or +2 if lethal) when infused with Glamour. Take penalties for using it in self-defense.",
+		"Levels" : "",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Shared Guilt",
+		"Sources" : [{
+				"SourceBook" : "AN",
+				"SourcePage" : ". "
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Milestone",
+		"Effect" : "The milestone is achieved when every member of a motley gets at least one hit into a Fetch, and is applied to every member. When any member is rolling for degeneration, the motley can activate this merit to have every member roll a degeneration check. If there is even one success, then it counts as a sucess for everyone.",
+		"Levels" : "",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Bean Buyer",
+		"Sources" : [{
+				"SourceBook" : "Swords at Dawn",
+				"SourcePage" : "89"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Fate Merits",
+		"Effect" : "Once per story, after being tricked, spend a glamour to gain a significant advantage.",
+		"Levels" : "Streetwise •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Cloistered Spinne",
+		"Sources" : [{
+				"SourceBook" : "Swords at Dawn",
+				"SourcePage" : "90"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Fate Merits",
+		"Effect" : "Do an instant Action to turn trash into something valuable.",
+		"Levels" : "Crafts •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Cowherd and Weaver",
+		"Sources" : [{
+				"SourceBook" : "Swords at Dawn",
+				"SourcePage" : "90"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Fate Merits",
+		"Effect" : "Gain some knowledge of circumstance when forcibly seperated from your lover, and your lover escapes.",
+		"Levels" : "Resolve •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Evil Stepsister",
+		"Sources" : [{
+				"SourceBook" : "Swords at Dawn",
+				"SourcePage" : "90"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Fate Merits",
+		"Effect" : "Spend a Glamour whilst being cruel to a subordinate to get something that will help you in the future.",
+		"Levels" : "Manipulation •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Fair Prince",
+		"Sources" : [{
+				"SourceBook" : "Swords at Dawn",
+				"SourcePage" : "91"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Fate Merits",
+		"Effect" : "You are loved by almost all the courts, and receive a bonus for dealing with non-fae.",
+		"Levels" : "Court Mantle •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Fisher King",
+		"Sources" : [{
+				"SourceBook" : "Swords at Dawn",
+				"SourcePage" : "91"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Fate Merits",
+		"Effect" : "When at full health, all Social Merits act as though you have them twice over (Not doubled).",
+		"Levels" : "Court Mantle ••••• Court Crown",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Mobled Queen",
+		"Sources" : [{
+				"SourceBook" : "Swords at Dawn",
+				"SourcePage" : "91"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Fate Merits",
+		"Effect" : "Massive bonuses when activating a Court Contract, and a bonus when harvest a Court Emotion.",
+		"Levels" : "Court Mantle ••••• Court Crown",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Monkey Heart",
+		"Sources" : [{
+				"SourceBook" : "Swords at Dawn",
+				"SourcePage" : "91"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Fate Merits",
+		"Effect" : "+5 to notice traps and avoid being suprised by an adversary for a second time after.",
+		"Levels" : "Wits •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Mortal Enemy",
+		"Sources" : [{
+				"SourceBook" : "Swords at Dawn",
+				"SourcePage" : "92"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Fate Merits",
+		"Effect" : "Get extra dice when dealing with your enemy, as well as other bonuses.",
+		"Levels" : "Resolve •••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Star-Crossed Lover",
+		"Sources" : [{
+				"SourceBook" : "Swords at Dawn",
+				"SourcePage" : "92"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Fate Merits",
+		"Effect" : "Spending a Willpower point when working to protect or save your love is an automatic success and regain a point of Willpower per scene spent protecting her.",
+		"Levels" : "Presence•••",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Enchanted Mortal",
+		"Sources" : [{
+				"SourceBook" : "ER",
+				"SourcePage" : "107"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Character is treated as if permanently Ensorcelled.",
+		"Levels" : "(••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "No Seeming",
+		"Sources" : [{
+				"SourceBook" : "ER",
+				"SourcePage" : "107"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Character is treated as if she has no kith or seeming, therefore no curse or blessing. Gains +1 to all rolls involving clarity loss or gaining a derangement.",
+		"Levels" : "(••) *pre: Changelings Only Character Creation Only",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Seeming",
+		"Sources" : [{
+				"SourceBook" : "ER",
+				"SourcePage" : "107"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Character possesses a seeming, and has the associated blessing and curse. -1 to rolls to avoid derangement.",
+		"Levels" : "(•••) *pre: Fey-Touched Only Character Creation Only",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Fae Pet",
+		"Sources" : [{
+				"SourceBook" : "Autumn Nightmares",
+				"SourcePage" : "71-72"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Similar to Retainer, grants the Fey an animal companion that is willing to die for its master. Any pet that dies is replaced within 24 hours.",
+		"Levels" : "(•• or ••••)",
+		"Prerequistes" : ""
+	}, {
+		"Name" : "Fair Haven",
+		"Sources" : [{
+				"SourceBook" : "Autumn Nightmares",
+				"SourcePage" : "71-75"
+			}
+		],
+		"DisplayName" : "",
+		"Category" : "Changeling",
+		"Effect" : "Designated area in the real world where the Fey can stay without being poisoned by reality.",
+		"Levels" : "(•••)",
+		"Prerequistes" : ""
+	}
+]
