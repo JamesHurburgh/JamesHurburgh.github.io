@@ -34,8 +34,7 @@ $(document).ready(function () {
 							var bookId = book.ID;
 							if(!bookId || bookId == ""){ 
 								bookId = book.Title.replace(new RegExp(" ", "g"), ""); 
-							}
-							
+							}							
 							return "<a href='images/covers/" + bookId + ".png'><img src='images/covers/thumbs/" + bookId + ".png' width ='100px'/></a>";
 						} 
 					},

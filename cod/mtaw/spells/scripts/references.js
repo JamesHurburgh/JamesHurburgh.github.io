@@ -34,6 +34,10 @@ referenceDataDefinitionList = [{
 	{
 		"Name" : "merits2",
 		"Path" : "data/merits2.json"
+	},
+	{
+		"Name" : "books",
+		"Path" : "data/books.json"
 	}
 ];
 

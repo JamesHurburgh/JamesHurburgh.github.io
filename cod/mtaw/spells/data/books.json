@@ -2606,6 +2606,17 @@
 			"Amazon" : ""
 		}
 	}, {
+		"ID" : "WW25000",
+		"ISBN" : "1-58846-247-1",
+		"Title" : "Vampire: The Requiem",
+		"GameLine" : "Vampire: The Requiem",
+		"Published" : "2004-08-20",
+		"Links" : {
+			"Wikia" : "http://whitewolf.wikia.com/wiki/Vampire:_The_Requiem_Rulebook",
+			"DriveThruRpg" : "",
+			"Amazon" : ""
+		}
+	}, {
 		"ID" : "WW25102",
 		"ISBN" : "1-58846-255-2",
 		"Title" : "Bloodlines: The Hidden",
@@ -2859,7 +2870,7 @@
 			"Amazon" : ""
 		}
 	}, {
-		"ID" : "WW25113",
+		"ID" : "WW25320",
 		"ISBN" : "1-58846-274-9",
 		"Title" : "New Wave Requiem",
 		"GameLine" : "Vampire: The Requiem",
@@ -2914,7 +2925,7 @@
 			"Amazon" : ""
 		}
 	}, {
-		"ID" : "WW 25313",
+		"ID" : "WW25313",
 		"ISBN" : "978-1-58846-374-6",
 		"Title" : "Night Horrors: Wicked Dead",
 		"GameLine" : "Vampire: The Requiem",
@@ -2925,7 +2936,7 @@
 			"Amazon" : ""
 		}
 	}, {
-		"ID" : "WW 25315",
+		"ID" : "WW25315",
 		"ISBN" : "978-1-58846-392-3",
 		"Title" : "Invite Only",
 		"GameLine" : "Vampire: The Requiem",
@@ -2936,7 +2947,7 @@
 			"Amazon" : ""
 		}
 	}, {
-		"ID" : "WW 25603",
+		"ID" : "WW25603",
 		"ISBN" : "",
 		"Title" : "Vampire Translation Guide",
 		"GameLine" : "Vampire: The Requiem",
@@ -2947,7 +2958,7 @@
 			"Amazon" : ""
 		}
 	}, {
-		"ID" : "WW 25604",
+		"ID" : "WW25604",
 		"ISBN" : "",
 		"Title" : "The Danse Macabre",
 		"GameLine" : "Vampire: The Requiem",
@@ -3204,7 +3215,7 @@
 		"ISBN" : "1-58846-424-5",
 		"Title" : "Gazing Into You",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2005",
+		"Published" : "2005-08-01",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3215,7 +3226,7 @@
 		"ISBN" : "1-58846-418-0",
 		"Title" : "Mage: The Awakening Rulebook",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2005",
+		"Published" : "2005-08-29",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3226,7 +3237,7 @@
 		"ISBN" : "1-58846-419-9",
 		"Title" : "Boston Unveiled",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2005",
+		"Published" : "2005-10-31",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3237,7 +3248,7 @@
 		"ISBN" : "1-58846-420-2",
 		"Title" : "Sanctum and Sigil",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2005",
+		"Published" : "2005-11-28",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3248,7 +3259,7 @@
 		"ISBN" : "1-58846-425-3",
 		"Title" : "Legacies: The Sublime",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2006",
+		"Published" : "2006-01-16",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3259,7 +3270,7 @@
 		"ISBN" : "1-58846-426-1",
 		"Title" : "Guardians of the Veil",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2006",
+		"Published" : "2006-02-27",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3270,7 +3281,7 @@
 		"ISBN" : "1-58846-427-X",
 		"Title" : "Tome of the Watchtowers",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2006",
+		"Published" : "2006-04-17",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3281,7 +3292,7 @@
 		"ISBN" : "1-58846-422-9",
 		"Title" : "Secrets of the Ruined Temple",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2006",
+		"Published" : "2006-05-15",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3292,7 +3303,7 @@
 		"ISBN" : "1-58846-428-8",
 		"Title" : "Reign of the Exarchs",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2006",
+		"Published" : "2006-07-26",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3303,7 +3314,7 @@
 		"ISBN" : "1-58846-429-6",
 		"Title" : "Tome of the Mysteries",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2006",
+		"Published" : "2006-11-15",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3314,7 +3325,7 @@
 		"ISBN" : "1-58846-430-X",
 		"Title" : "Legacies: The Ancient",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2007",
+		"Published" : "2007-01-24",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3325,7 +3336,7 @@
 		"ISBN" : "1-58846-431-8",
 		"Title" : "Intruders: Encounters With the Abyss",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2007",
+		"Published" : "2007-03-21",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3336,7 +3347,7 @@
 		"ISBN" : "1-58846-432-3",
 		"Title" : "The Free Council",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2007",
+		"Published" : "2007-05-02",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3347,7 +3358,7 @@
 		"ISBN" : "1-58846-433-0",
 		"Title" : "Magical Traditions",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2007",
+		"Published" : "2007-06-27",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3358,7 +3369,7 @@
 		"ISBN" : "1-58846-434-7",
 		"Title" : "The Mysterium",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2007",
+		"Published" : "2007-09-26",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3369,7 +3380,7 @@
 		"ISBN" : "1-58846-435-4",
 		"Title" : "Astral Realms",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2007",
+		"Published" : "2007-11-07",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3380,7 +3391,7 @@
 		"ISBN" : "1-58846-436-1",
 		"Title" : "The Adamantine Arrow",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2007",
+		"Published" : "2007-12-19",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3391,7 +3402,7 @@
 		"ISBN" : "1-58846-440-7",
 		"Title" : "Banishers",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2008",
+		"Published" : "2008-02-20",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3402,7 +3413,7 @@
 		"ISBN" : "1-58846-437-8",
 		"Title" : "Grimoire of Grimoires",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2008",
+		"Published" : "2008-05-14",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3413,7 +3424,7 @@
 		"ISBN" : "1-58846-438-5",
 		"Title" : "The Silver Ladder",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2008",
+		"Published" : "2008-07-09",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3424,7 +3435,7 @@
 		"ISBN" : "1-58846-439-2",
 		"Title" : "Keys to the Supernal Tarot",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2008",
+		"Published" : "2008-11-05",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3435,7 +3446,7 @@
 		"ISBN" : "1-58846-358-6",
 		"Title" : "Seers of the Throne",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2009",
+		"Published" : "2009-03-04",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3446,7 +3457,7 @@
 		"ISBN" : "1-58846-365-6",
 		"Title" : "Summoners",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2009",
+		"Published" : "2009-04-19",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3457,7 +3468,7 @@
 		"ISBN" : "978-1-58846-378-4",
 		"Title" : "Night Horrors: The Unbidden",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2010",
+		"Published" : "2010-01-20",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3468,7 +3479,7 @@
 		"ISBN" : "978-1-58846-386-9",
 		"Title" : "Mage Chronicler's Guide",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2010",
+		"Published" : "2010-07-07",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3479,7 +3490,7 @@
 		"ISBN" : "",
 		"Title" : "Mage Noir",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2011",
+		"Published" : "2011-03-16",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3490,7 +3501,7 @@
 		"ISBN" : "",
 		"Title" : "Imperial Mysteries",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2012",
+		"Published" : "2012-01-10",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3501,7 +3512,7 @@
 		"ISBN" : "",
 		"Title" : "Left-Hand Path",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2012",
+		"Published" : "2012-11-07",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",
@@ -3512,7 +3523,7 @@
 		"ISBN" : "",
 		"Title" : "Mage Translation Guide",
 		"GameLine" : "Mage: The Awakening",
-		"Published" : "2013",
+		"Published" : "2013-05-27",
 		"Links" : {
 			"Wikia" : "",
 			"DriveThruRpg" : "",

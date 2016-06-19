@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Book Timeline</title>
+
+		<!-- Bootstrap theme -->
+		<link rel="stylesheet" href="ref/bootstrap.min.css"/>
+
+		<!-- jQuery -->
+		<script   src="ref/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="ref/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+		<!-- Datatable -->
+		<link rel="stylesheet" type="text/css" href="ref/jquery.dataTables.css"/> 
+		<script type="text/javascript" charset="utf8" src="ref/jquery.dataTables.js"></script>
+
+		<!-- Store.js -->
+		<script type="text/javascript" charset="utf8" src="ref/store.min.js"></script> 
+
+		<!-- References.js -->
+		<script type="text/javascript" charset="utf8" src="scripts/references.js"></script>
+
+		<!-- Theme.js -->
+		<script type="text/javascript" charset="utf8" src="scripts/theme.js"></script>
+
+		<!-- Common js -->
+		<script type="text/javascript" charset="utf8" src="scripts/common.js"></script>
+
+		<!-- Spell js -->
+		<script type="text/javascript" charset="utf8" src="scripts/bookTimeline.js"></script>
+		
+		<!-- 1 -->
+		<link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+		<script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+		<!-- require.js 
+							<script data-main="scripts/spell" src="scripts/require.js"></script>-->
+	</head>
+	<body>						
+		<div class="container">
+			<div class="header clearfix">
+				<nav>
+					<ul class="nav nav-pills pull-right">
+						<li role="presentation" class="active"><a href="./books.html">Books</a></li>
+						<li role="presentation" class="active"><a href="./merits.html">Merits</a></li>
+						<li role="presentation" class="active"><a href="./traits.html">Traits</a></li>
+						<li role="presentation" class="active"><a href="./spellBook.html">Spell Book</a></li>
+						<li role="presentation" class="active"><a href="./glossary.html">Glossary</a></li>
+					</ul>
+				</nav>
+				<h3 class="text-muted">Book Timeline</h3>
+			</div>
+			
+			<div class="row marketing">
+				
+				<div id='timeline-embed' style="width: 100%; height: 600px"></div>
+				
+			</div>
+		<footer class="footer">
+			<div class="col-sm-1">
+				<label for="themeSelect" class="control-label">Theme</label>
+			</div>
+			<div class="col-sm-2">
+				<select class="form-control input-sm" id="themeSelect"></select>
+			</div>
+			<div class="col-sm-7">&copy; 2016 James Hurburgh.</div>
+			<div class="col-sm-2"><a target="_blank" href="https://docs.google.com/forms/d/1bWQEaNAPKBhkERpV5IkrWLrNAO0Hjp1vYMQuf8hA8kE/viewform">Feedback</a></div>
+		</footer>
+
+	</div> <!-- /container -->
+</body>
+</html>
