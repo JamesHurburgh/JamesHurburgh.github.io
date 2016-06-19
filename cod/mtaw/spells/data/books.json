@@ -2069,7 +2069,7 @@
 	}, {
 		"ID" : "WW8200",
 		"ISBN" : "1-58846-750-3",
-		"Title" : "The Fallen",
+		"Title" : "Demon: The Fallen",
 		"GameLine" : "Demon: The Fallen",
 		"Published" : "2002",
 		"Links" : {
@@ -3991,5 +3991,60 @@
 			"DriveThruRpg" : "",
 			"Amazon" : ""
 		}
-	}
-]
+	}, {
+		"ID" : "",
+		"ISBN" : "",
+		"Title" : "Dark Eras",
+		"GameLine" : "Chronicles of Darkness",
+		"Published" : "2016-05-25",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "http://www.drivethrurpg.com/product/178583",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "",
+		"ISBN" : "",
+		"Title" : "The Pack",
+		"GameLine" : "Werewolf: The Forsaken",
+		"Published" : "2016-05-11",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "http://drivethrurpg.com/product/181760",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "",
+		"ISBN" : "",
+		"Title" : "Mage the Awakening 2nd Edition",
+		"GameLine" : "Mage: The Awakening",
+		"Published" : "2016-05-04",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "http://www.drivethrurpg.com/product/181754",
+			"Amazon" : ""
+		}
+	}, {
+		"ID" : "",
+		"ISBN" : "",
+		"Title" : "Beast: The Primordial",
+		"GameLine" : "Beast: The Primordial",
+		"Published" : "2016-03-30",
+		"Links" : {
+			"Wikia" : "",
+			"DriveThruRpg" : "http://drivethrurpg.com/product/162443",
+			"Amazon" : ""
+		}
+	}, {
+			"ID" : "",
+			"ISBN" : "",
+			"Title" : "Demon Storyteller's Guide",
+			"GameLine" : "Demon: The Descent",
+			"Published" : "2016-03-30",
+			"Links" : {
+				"Wikia" : "",
+				"DriveThruRpg" : "http://drivethrurpg.com/product/162443",
+				"Amazon" : ""
+			}
+		}
+		]
