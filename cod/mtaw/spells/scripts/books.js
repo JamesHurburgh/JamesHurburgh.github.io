@@ -70,7 +70,29 @@ $(document).ready(function () {
 						data: 'Links',
 						render: function ( data, type, book ) {
 							if(!book.Links) { return ""; }
-							return "-"; // TODO add links
+							var links = "";
+							
+							if(book.Links.Wikia)
+							{
+								links = links + "<a href='" + book.Links.Wikia + "' target='_blank' title='" + book.Title + "on WhiteWolf Wikia'><img src='http://www.google.com/s2/favicons?domain_url=www.wikia.com'/></a>"
+							}else {
+								links = links + "<a href='http://whitewolf.wikia.com/wiki/Special:Search?search=" + book.Title + "' target='_blank' title='Search for " + book.Title + " on WhiteWolf Wikia'><img src='http://www.google.com/s2/favicons?domain_url=www.wikia.com'/>?</a>"
+							}
+							
+							if(book.Links.DriveThruRpg)
+							{
+								links = links + "<a href='" + book.Links.DriveThruRpg + "' target='_blank' title='" + book.Title + "on DriveThruRpg'><img src='http://www.google.com/s2/favicons?domain_url=www.drivethrurpg.com'/></a>"
+							}else {
+								links = links + "<a href='http://drivethrurpg.com/browse.php?keywords=" + book.Title + "' target='_blank' title='Search for " + book.Title + " on DriveThruRpg'><img src='http://www.google.com/s2/favicons?domain_url=www.drivethrurpg.com'/>?</a>"
+							}
+							
+							if(book.Links.Amazon) 
+							{
+								links = links + "<a href='" + book.Links.Amazon + "' target='_blank' title='" + book.Title + "on Amazon'><img src='http://www.google.com/s2/favicons?domain_url=www.amazon.com'/></a>"}else {
+								links = links + "<a href='https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=" + book.Title + "' target='_blank' title='Search for " + book.Title + " on Amazon'><img src='http://www.google.com/s2/favicons?domain_url=www.amazon.com'/>?</a>"
+							}
+							
+							return links;
 						} 
 					},
 				]
