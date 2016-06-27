@@ -1,0 +1,24 @@
+
+.container.ChroniclesofDarkness {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+75,1e5799+100&0+75,1+100 */
+	background: -moz-linear-gradient(left,  rgba(255,255,255,0) 75%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 75%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(255,255,255,0) 75%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+}
+
+.container.VampireTheRequiem {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+75,1e5799+100&0+75,1+100 */
+	background: -moz-linear-gradient(left,  rgba(255,255,255,0) 75%, rgba(48,0,0,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 75%,rgba(48,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(255,255,255,0) 75%,rgba(48,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#300000',GradientType=1 ); /* IE6-9 */
+}
+
+.container.ChangelingTheLost {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+75,1e5799+100&0+75,1+100 */
+	background: -moz-linear-gradient(left,  rgba(255,255,255,0) 75%, rgba(8,56,27,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 75%,rgba(8,56,27,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(255,255,255,0) 75%,rgba(8,56,27,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#08381B',GradientType=1 ); /* IE6-9 */
+}
