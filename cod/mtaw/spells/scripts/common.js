@@ -15,7 +15,7 @@ var affiliates = [{
 	},,{
 		"AffiliateName" : "Amazon",
 		"FaviconSource" : "http://www.google.com/s2/favicons?domain_url=www.amazon.com",
-		"SearchPrefix" : "http://drivethrurpg.com/browse.php?keywords=",
+		"SearchPrefix" : "https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Dstripbooks&field-keywords=",
 		"SearchSuffix" : ""
 	},
 ];
