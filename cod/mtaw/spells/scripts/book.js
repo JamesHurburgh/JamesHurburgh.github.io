@@ -9,7 +9,13 @@ $(document).ready(function () {
 	}
 	initStorage();
 	
-	theme($('#themeSelect'), "Readable");
+	$("nav").load("webParts/menu.html");
+	$("footer").load("webParts/footer.html", function(){
+		theme($('#themeSelect'), "Readable");
+	});
+
+	
+	
 	
 	function displayBook(book){
 		
@@ -19,7 +25,7 @@ $(document).ready(function () {
 		var safeGameLine = book.GameLine.removeAll(" ").removeAll(":");
 		$('#GameLine').text(book.GameLine);
 		
-		// $('#container').addClass(safeGameLine); // TODO put this back in once css is looking good.
+		// $('#container').addClass(safeGameLine); // TODO: put this back in once css is looking good.
 		
 		var bookId = book.ID;
 		if(!bookId || bookId == ""){ 

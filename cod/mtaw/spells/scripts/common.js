@@ -167,3 +167,16 @@ function getParameterByName(name, url) {
 		return '';
 	return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
+
+function makeSpellLink(spellName){
+	return "<a target='_blank' href='spell.html\?spell=" + escape(spellName) + "'>" + spellName + "</a>";
+}
+
+function makeBookLink(bookName){
+	return "<a target='_blank' href='book.html\?book=" + escape(bookName) + "'>" + bookName + "</a>";
+}
+
+function makeLegacyLink(legacyName){
+	return legacy;
+	//return "<a target='_blank' href='legacy.html\?spell=" + escape(legacyName) + "'>" + legacyName + "</a>";
+}

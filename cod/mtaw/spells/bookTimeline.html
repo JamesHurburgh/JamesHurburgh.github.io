@@ -8,7 +8,7 @@
 		<title>Book Timeline</title>
 
 		<!-- Bootstrap theme -->
-		<link rel="stylesheet" href="ref/bootstrap.min.css"/>
+		<link rel="stylesheet" href="ref/bootstrap.readable.min.css" id="customCss">
 
 		<!-- jQuery -->
 		<script   src="ref/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
@@ -17,7 +17,7 @@
 		<script src="ref/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 		<!-- Datatable -->
-		<link rel="stylesheet" type="text/css" href="ref/jquery.dataTables.css"/> 
+		<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"/> 
 		<script type="text/javascript" charset="utf8" src="ref/jquery.dataTables.js"></script>
 
 		<!-- Store.js -->
@@ -45,33 +45,16 @@
 	<body>						
 		<div class="container">
 			<div class="header clearfix">
-				<nav>
-					<ul class="nav nav-pills pull-right">
-						<li role="presentation" class="active"><a href="./books.html">Books</a></li>
-						<li role="presentation" class="active"><a href="./merits.html">Merits</a></li>
-						<li role="presentation" class="active"><a href="./traits.html">Traits</a></li>
-						<li role="presentation" class="active"><a href="./spellBook.html">Spell Book</a></li>
-						<li role="presentation" class="active"><a href="./glossary.html">Glossary</a></li>
-					</ul>
-				</nav>
+				<nav></nav>
 				<h3 class="text-muted">Book Timeline</h3>
 			</div>
 			
 			<div class="row marketing">
 				
-				<div id='timeline-embed' style="width: 100%; height: 600px"></div>
+				<div id="timeline-embed" style="width: 100%; height: 600px"></div>
 				
 			</div>
-		<footer class="footer">
-			<div class="col-sm-1">
-				<label for="themeSelect" class="control-label">Theme</label>
-			</div>
-			<div class="col-sm-2">
-				<select class="form-control input-sm" id="themeSelect"></select>
-			</div>
-			<div class="col-sm-7">&copy; 2016 James Hurburgh.</div>
-			<div class="col-sm-2"><a target="_blank" href="https://docs.google.com/forms/d/1bWQEaNAPKBhkERpV5IkrWLrNAO0Hjp1vYMQuf8hA8kE/viewform">Feedback</a></div>
-		</footer>
+		<footer class="footer"></footer>
 
 	</div> <!-- /container -->
 </body>

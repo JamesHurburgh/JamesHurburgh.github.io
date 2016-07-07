@@ -1,0 +1,44 @@
+[{
+		"Name" : "Envy",
+		"Description" : "An envious person is never satisfied with what she has. No matter her wealth, status or accomplishments, there is always someone else who seems to have more, and it's coveted. Envious characters are never secure or content with their place in life. They always measure themselves against their rivals and look for ways to get what they deserve. They might be considered paranoid or just consumed by a self-loathing that they project onto others.",
+		"Trigger" : "Your character regains one Willpower point whenever she gains something important from a rival or has a hand in harming that rival's well-being.",
+		"OtherNames" : ["Covetousness", "Jealousy", "Paranoia"],
+		"PossessedBy" : ["Celebrities", "Executives", "Politicians"]
+	}, {
+		"Name" : "Gluttony",
+		"Description" : "Gluttony is about indulging appetites to the exclusion of everything else. It's about dedicating oneself to sensual pleasures or chasing the next high. A glutton makes any sacrifice to feed his insatiable appetite for pleasure, regardless of the cost to himself or those around him. He might be considered a junky or even a kleptomaniac (he steals things he doesnÕt need just for the thrill of it).",
+		"Trigger" : " character regains one spent Willpower point whenever he indulges in his addiction or appetites at some risk to himself or a loved one.",
+		"OtherNames" : ["Addictive personality", "Conspicuous consumer", "Epicurean"],
+		"PossessedBy" : ["Celebrities", "Junkies", "Thieves"]
+	}, {
+		"Name" : "Greed",
+		"Description" : "Like the envious, the greedy are never satisfied with what they have. They want more -- more money, a bigger house, more status or influence -- no matter that they may already have more than they can possibly handle. Everything is taken to excess. To the greedy, there is no such thing as having too much. If that means snatching someone else's hard-earned reward just to feather one's own nest, well, that's the way it goes.",
+		"Trigger" : "Your character regains one Willpower point whenever he acquires something at the expense of another. Gaining it must come at some potential risk (of assault, arrest or simple loss of peer respect).",
+		"OtherNames" : ["Avarice", "Parsimony"],
+		"PossessedBy" : ["CEOs", "Lawyers", "Stock brokers"]
+	}, {
+		"Name" : "Lust",
+		"Description" : "The Vice of Lust is the sin of uncontrolled desire. A lusty individual is driven by a passion for something (usually sex, but it can be a craving for virtually any experience or activity) that he acts upon without consideration for the needs or feelings of others. A lusty individual uses any means at his disposal to indulge his desires, from deception to manipulation to acts of violence.",
+		"Trigger" : "Your character is consumed by a passion for something. He regains one Willpower point whenever he satisfies his lust or compulsion in a way that victimizes others.",
+		"OtherNames" : ["Lasciviousness", "Impatience", "Impetuousness"],
+		"PossessedBy" : ["Movie producers", "Politicians", "Rock stars"]
+	}, {
+		"Name" : "Pride",
+		"Description" : "Pride is the Vice of self-confidence run amok. It is the belief that oneÕs every action is inherently right, even when it should be obvious that it is anything but. A prideful person refuses to back down when his decision or reputation is called into question, even when the evidence is clear that he is in the wrong. His ego does not accept any outcome that suggests fallibility, and he is willing to see others suffer rather than admit that he's wrong.",
+		"Trigger" : "Your character regains one Willpower point whenever he exerts his own wants (not needs) over others at some potential risk to himself. This is most commonly the desire for adulation, but it could be the desire to make others do as he commands.",
+		"OtherNames" : ["Arrogance", "Ego complex", "Vanity"],
+		"PossessedBy" : ["Corporate executives", "Movie stars", "Street thugs"]
+	}, {
+		"Name" : "Sloth",
+		"Description" : "The Vice of Sloth is about avoiding work until someone else has to step in to get the job done. Rather than put in the effort -- and possibly risk failure -- in a difficult situation, the slothful person simply refuses to do anything, knowing that someone else will step in and fix the problem sooner or later. The fact that people might needlessly suffer while the slothful person sits on his thumbs doesn't matter one bit.",
+		"Trigger" : "Your character regains one Willpower point whenever he successfully avoids a difficult task but achieves the same goal nonetheless.",
+		"OtherNames" : ["Apathy", "Cowardice", "Ignorance"],
+		"PossessedBy" : ["Couch potatoes", "Trust-fund heirs", "Welfare cheats"]
+	}, {
+		"Name" : "Wrath",
+		"Description" : "The Vice of Wrath is the sin of uncontrolled anger. The wrathful look for ways to vent their anger and frustration on people or objects at the slightest provocation. In most cases the reaction is far out of proportion to the perceived slight. A wrathful person cut off on the freeway might try to force another driver off the road, or a wrathful cop might delight in beating each and every person he arrests, regardless of the offense.",
+		"Trigger" : "Your character regains one spent Willpower point whenever he unleashes his anger in a situation where doing so is dangerous. If the fight has already begun, no Willpower points are regained. It must take place in a situation where anger is unwarranted or inappropriate.",
+		"OtherNames" : ["Antisocial tendencies", "Hotheadedness", "Poor anger management", "Sadism"],
+		"PossessedBy" : ["Bullies", "Drill sergeants", "Street thugs"]
+	}
+]

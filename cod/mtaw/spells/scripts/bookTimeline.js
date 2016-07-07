@@ -9,7 +9,11 @@ $(document).ready(function () {
 	}
 	initStorage();
 	
-	theme($('#themeSelect'), "Readable");
+	
+	$("nav").load("webParts/menu.html");
+	$("footer").load("webParts/footer.html", function(){
+		theme($('#themeSelect'), "Readable");
+	});
 	
 	var books;
 	

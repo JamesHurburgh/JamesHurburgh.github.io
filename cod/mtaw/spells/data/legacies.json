@@ -1,0 +1,5655 @@
+[
+	{
+		"Name": "Legion ",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"L"
+		],
+		"Order": [
+			"Guardians of the Veil"
+		],
+		"Path": [
+			"Mastigos"
+		],
+		"Arcana": [
+			"Death",
+			"Mind"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Left-Hand Path",
+				"SourcePage": "92-95"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Alienist ",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"L"
+		],
+		"Order": [
+			"Free Council"
+		],
+		"Path": [
+			"Mastigos"
+		],
+		"Arcana": [
+			"Death"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Left-Hand Path",
+				"SourcePage": "25"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Architects of the Future",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Seers of the Throne"
+		],
+		"Path": [
+			"Acanthus"
+		],
+		"Arcana": [
+			"Time"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Seers of the Throne",
+				"SourcePage": "167-170"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Ascended Adepts",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Obrimos"
+		],
+		"Arcana": [
+			"Mind"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Tome of the Watchtowers",
+				"SourcePage": "125-127"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Austere",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"L"
+		],
+		"Order": [
+			"Guardians of the Veil"
+		],
+		"Path": [
+			""
+		],
+		"Arcana": [
+			"Matter",
+			"Life"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Guardians of the Veil",
+				"SourcePage": "72-175"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Awakening Gambit",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Adamantine Arrow"
+		],
+		"Path": [
+			"Acanthus"
+		],
+		"Arcana": [
+			"Mind"
+		],
+		"Sources": [
+			{
+				"SourceBook": "The Adamantine Arrow",
+				"SourcePage": "151-157"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Bearer of the Eternal Voice",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Guardians of the Veil"
+		],
+		"Path": [
+			"Mastigos"
+		],
+		"Arcana": [
+			"Mind"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Guardians of the Veil",
+				"SourcePage": "63-165"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Bene Ashmedai",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Silver Ladder"
+		],
+		"Path": [
+			"Mastigos"
+		],
+		"Arcana": [
+			"Spirit"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Silver Ladder",
+				"SourcePage": "156-159"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Blank Badges",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Free Council"
+		],
+		"Path": [
+			"Acanthus"
+		],
+		"Arcana": [
+			"Attainments focus on Occultation"
+		],
+		"Sources": [
+			{
+				"SourceBook": "The Free Council",
+				"SourcePage": "94-96"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Bokor",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Moros"
+		],
+		"Arcana": [
+			"Death"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Tome of the Watchtowers",
+				"SourcePage": "95-98"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Brotherhood of the Demon Wind",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Adamantine Arrow"
+		],
+		"Path": [
+			"Mastigos"
+		],
+		"Arcana": [
+			"Time"
+		],
+		"Sources": [
+			{
+				"SourceBook": "The Adamantine Arrow",
+				"SourcePage": "157-160"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Carnival Melancholy ",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"L"
+		],
+		"Order": [
+			"Silver Ladder"
+		],
+		"Path": [
+			"Acanthus"
+		],
+		"Arcana": [
+			"Death"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Silver Ladder",
+				"SourcePage": "182-186"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Celestial Masters ",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R",
+			"L"
+		],
+		"Order": [
+			"Free Council",
+			"Silver Ladder"
+		],
+		"Path": [
+			"Moros"
+		],
+		"Arcana": [
+			"Matter",
+			"Forces"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Keys to the Supernal Tarot",
+				"SourcePage": "39-46"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Choir of the Hashmallim",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Obrimos"
+		],
+		"Arcana": [
+			"Prime"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Summoners",
+				"SourcePage": "188-191"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Chrysalides",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Seers of the Throne"
+		],
+		"Path": [
+			"Thyrsus"
+		],
+		"Arcana": [
+			"Life"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Seers of the Throne",
+				"SourcePage": "170-172"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Clavicularius",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Silver Ladder"
+		],
+		"Path": [
+			"Mastigos"
+		],
+		"Arcana": [
+			"Mind"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Sublime",
+				"SourcePage": "13-22"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Cloud Infinite ",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"L"
+		],
+		"Order": [
+			"Free Council"
+		],
+		"Path": [
+			"Obrimos"
+		],
+		"Arcana": [
+			"Mind"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Left-Hand Path",
+				"SourcePage": "88-91"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Concord of Serpents",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Mastigos"
+		],
+		"Arcana": [
+			"Mind"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Summoners",
+				"SourcePage": "192-194"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Cryptologos",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Free Council"
+		],
+		"Path": [
+			"Mastigos"
+		],
+		"Arcana": [
+			"Mind"
+		],
+		"Sources": [
+			{
+				"SourceBook": "The Free Council",
+				"SourcePage": "97-99"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Cult of the Doomsday Clock ",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"L"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Moros"
+		],
+		"Arcana": [
+			"Time"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Sublime",
+				"SourcePage": "128-137"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Cwn Annwn",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"L"
+		],
+		"Order": [
+			"Silver Ladder"
+		],
+		"Path": [
+			"Obrimos"
+		],
+		"Arcana": [
+			"Prime"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Left-Hand Path",
+				"SourcePage": "38-41"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Daksha",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Mysterium"
+		],
+		"Path": [
+			"Obrimos"
+		],
+		"Arcana": [
+			"Life"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Sublime",
+				"SourcePage": "23-32"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Daoine",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Acanthus"
+		],
+		"Arcana": [
+			"Fate"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Sublime",
+				"SourcePage": "33-42"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Devourers of the Flesh ",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"L"
+		],
+		"Order": [
+			"Adamantine Arrow"
+		],
+		"Path": [
+			"Thyrsus"
+		],
+		"Arcana": [
+			"Death"
+		],
+		"Sources": [
+			{
+				"SourceBook": "The Adamantine Arrow",
+				"SourcePage": "60-163"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Dreamers of the Black Sun ",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"L"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Mastigos"
+		],
+		"Arcana": [
+			"Mind"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Shadows of Mexico",
+				"SourcePage": "107-110"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Dreamspeakers",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Free Council"
+		],
+		"Path": [
+			"Thyrsus"
+		],
+		"Arcana": [
+			"Mind"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Ancient",
+				"SourcePage": "14-24"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Echo Walkers ",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"L"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Obrimos"
+		],
+		"Arcana": [
+			"Life"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Ancient",
+				"SourcePage": "121-130"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Eleventh Question",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Guardians of the Veil"
+		],
+		"Path": [
+			""
+		],
+		"Arcana": [
+			"Time"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Guardians of the Veil",
+				"SourcePage": "166-168"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Epiuad ",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"L"
+		],
+		"Order": [
+			"Seers of the Throne"
+		],
+		"Path": [
+			""
+		],
+		"Arcana": [
+			"Mind,"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Left-Hand Path",
+				"SourcePage": "27"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Eyes of Ain Soph",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Mysterium"
+		],
+		"Path": [
+			"Obrimos"
+		],
+		"Arcana": [
+			"Prime"
+		],
+		"Sources": [
+			{
+				"SourceBook": "The Mysterium",
+				"SourcePage": "166-169"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Fallen Pillar",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Thyrsus"
+		],
+		"Arcana": [
+			"Life"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Sublime",
+				"SourcePage": "43-52"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Fangs of Mara ",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"L"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Mastigos"
+		],
+		"Arcana": [
+			"Mind"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Sublime",
+				"SourcePage": "138-147"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Flood ",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"L"
+		],
+		"Order": [
+			"Banishers"
+		],
+		"Path": [
+			""
+		],
+		"Arcana": [
+			"Prime"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Left-Hand Path",
+				"SourcePage": "26"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Forge Masters",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Moros"
+		],
+		"Arcana": [
+			"Prime"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Ancient",
+				"SourcePage": "72-81"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Gaolers of Ialdabaoth",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			""
+		],
+		"Arcana": [
+			"Spirit"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Grimoire of Grimoires",
+				"SourcePage": "84"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Haruspex ",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"L"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Thyrsus"
+		],
+		"Arcana": [
+			"Time"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Left-Hand Path",
+				"SourcePage": "27"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "House of Ariadne",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Acanthus"
+		],
+		"Arcana": [
+			"Time"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Sublime",
+				"SourcePage": "53-62"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Illumined Path ",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R",
+			"L"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Thyrsus"
+		],
+		"Arcana": [
+			"Forces"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Keys to the Supernal Tarot",
+				"SourcePage": "119-126"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Imagineers",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Free Council"
+		],
+		"Path": [
+			"Thyrsus"
+		],
+		"Arcana": [
+			"Spirit"
+		],
+		"Sources": [
+			{
+				"SourceBook": "The Free Council",
+				"SourcePage": "100-102"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Katsinam Suukya",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Thyrsus"
+		],
+		"Arcana": [
+			"Spirit"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Summoners",
+				"SourcePage": "195-194"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Keeper of the Covenant",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Silver Ladder"
+		],
+		"Path": [
+			"Thyrsus"
+		],
+		"Arcana": [
+			"Fate"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Silver Ladder",
+				"SourcePage": "160-163"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Legion, The ",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"L"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			""
+		],
+		"Arcana": [
+			"Life"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Summoners",
+				"SourcePage": "204-207"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Liberatores",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Mastigos"
+		],
+		"Arcana": [
+			"Mind"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Tome of the Watchtowers",
+				"SourcePage": "67-69"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Logophages ",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"L"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			""
+		],
+		"Arcana": [
+			"Mind"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Ancient",
+				"SourcePage": "131-140"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Lords of the Inanimate",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Silver Ladder"
+		],
+		"Path": [
+			"Thyrsus"
+		],
+		"Arcana": [
+			"Matter"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Silver Ladder",
+				"SourcePage": "164-167"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Masters of Destruction",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Seers of the Throne"
+		],
+		"Path": [
+			"Moros"
+		],
+		"Arcana": [
+			"Death"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Seers of the Throne",
+				"SourcePage": "172-176"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Mimir’s Voice ",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R",
+			"L"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Mastigos"
+		],
+		"Arcana": [
+			"Forces"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Keys to the Supernal Tarot",
+				"SourcePage": "23-30"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Morphean Continuity",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Free Council"
+		],
+		"Path": [
+			"Acanthus"
+		],
+		"Arcana": [
+			"Mind"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Night Horrors: The Unbidden",
+				"SourcePage": "137-141"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Neocologists",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Thyrsus"
+		],
+		"Arcana": [
+			"Spirit"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Tome of the Watchtowers",
+				"SourcePage": "155-158"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Orphans of Proteus",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Thyrsus"
+		],
+		"Arcana": [
+			"Life"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Mage: The Awakening",
+				"SourcePage": "346-348"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Path of the Book",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			""
+		],
+		"Arcana": [
+			"Mind"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Grimoire of Grimoires",
+				"SourcePage": "123-124"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "People of the Hour",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Acanthus"
+		],
+		"Arcana": [
+			"Time"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Summoners",
+				"SourcePage": "198-200"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Perfected Adepts",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Adamantine Arrow"
+		],
+		"Path": [
+			"Obrimos"
+		],
+		"Arcana": [
+			"Life"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Mage: The Awakening",
+				"SourcePage": "349-351"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Princes of Many Masks",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Seers of the Throne"
+		],
+		"Path": [
+			"Acanthus"
+		],
+		"Arcana": [
+			"Life"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Seers of the Throne",
+				"SourcePage": "176-177"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Pure Sovereign",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Silver Ladder"
+		],
+		"Path": [
+			"Obrimos"
+		],
+		"Arcana": [
+			"Life"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Silver Ladder",
+				"SourcePage": "168-170"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Pygmalian Society",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Acanthus"
+		],
+		"Arcana": [
+			"Mind"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Sublime",
+				"SourcePage": "63-72"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Quiescent",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			""
+		],
+		"Arcana": [
+			"Time"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Mage Noir",
+				"SourcePage": "22-24"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Reality Maker",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Silver Ladder"
+		],
+		"Path": [
+			"Mastigos"
+		],
+		"Arcana": [
+			"Prime"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Silver Ladder",
+				"SourcePage": "171-173"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Reality Stalker",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Mysterium"
+		],
+		"Path": [
+			"Mastigos"
+		],
+		"Arcana": [
+			"Space"
+		],
+		"Sources": [
+			{
+				"SourceBook": "The Mysterium",
+				"SourcePage": "173-176"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Roses of Eden ",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"L"
+		],
+		"Order": [
+			"Free Council"
+		],
+		"Path": [
+			"Acanthus"
+		],
+		"Arcana": [
+			"Life"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Keys to the Supernal Tarot",
+				"SourcePage": "31-363"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Scelestus ",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"L"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			""
+		],
+		"Arcana": [
+			"varies, observed are Spirit, Time , Space and Mind"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Mage: The Awakening",
+				"SourcePage": "361-363"
+			},
+			{
+				"SourceBook": "Keys to the Supernal Tarot",
+				"SourcePage": "111-112"
+			},
+			{
+				"SourceBook": "The Left-Hand Path",
+				"SourcePage": "73"
+			},
+			{
+				"SourceBook": "Night Horrors: The Unbid",
+				"SourcePage": ""
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Scions of God",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Silver Ladder"
+		],
+		"Path": [
+			""
+		],
+		"Arcana": [
+			"Spirit"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Sublime",
+				"SourcePage": "73-82"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Secret Order of the Gate ",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"L"
+		],
+		"Order": [
+			"Seers of the Throne"
+		],
+		"Path": [
+			""
+		],
+		"Arcana": [
+			"Space"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Seers of the Throne",
+				"SourcePage": "178-181"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Shadowbinders ",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"L"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Moros"
+		],
+		"Arcana": [
+			"Death"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Left-Hand Path",
+				"SourcePage": "26"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Singers in Silence",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Mysterium"
+		],
+		"Path": [
+			"Acanthus"
+		],
+		"Arcana": [
+			"Death"
+		],
+		"Sources": [
+			{
+				"SourceBook": "The Mysterium",
+				"SourcePage": "169-173"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Sisterhood of the Blessed",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Silver Ladder"
+		],
+		"Path": [
+			"Acanthus"
+		],
+		"Arcana": [
+			"Fate"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Silver Ladder",
+				"SourcePage": "174-177"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Skalds",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Acanthus"
+		],
+		"Arcana": [
+			"Mind"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Ancient",
+				"SourcePage": "82-90"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Sodality of the Tor",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Thyrsus"
+		],
+		"Arcana": [
+			"Fate"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Sublime",
+				"SourcePage": "83-94"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Sphinx",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Mysterium"
+		],
+		"Path": [
+			"Mastigos"
+		],
+		"Arcana": [
+			"Fate"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Ancient",
+				"SourcePage": "91-100"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Stewards of the Celestial Orrery",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Silver Ladder"
+		],
+		"Path": [
+			"Obrimos"
+		],
+		"Arcana": [
+			"Time"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Silver Ladder",
+				"SourcePage": "178-181"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Stone Scribes",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Mysterium"
+		],
+		"Path": [
+			"Moros"
+		],
+		"Arcana": [
+			"Fate"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Sublime",
+				"SourcePage": "95-106"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Storm Keepers",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Acanthus"
+		],
+		"Arcana": [
+			"Forces"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Tome of the Watchtowers",
+				"SourcePage": "38-41"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Stygian Herold",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Moros"
+		],
+		"Arcana": [
+			"Death"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Summoners",
+				"SourcePage": "201-203"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Subtle Ones",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Guardians of the Veil"
+		],
+		"Path": [
+			"Mastigos"
+		],
+		"Arcana": [
+			"Mind"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Mage: The Awakening",
+				"SourcePage": "352-354"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Tamers of Blood ",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"L"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Thyrsus"
+		],
+		"Arcana": [
+			"Life"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Left-Hand Path",
+				"SourcePage": "27"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Tamers of Fire",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Obrimos"
+		],
+		"Arcana": [
+			"Forces"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Ancient",
+				"SourcePage": "39-47"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Tamers of Rivers",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Thyrsus"
+		],
+		"Arcana": [
+			"Matter"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Ancient",
+				"SourcePage": "48-56"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Tamers of Stone",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Moros"
+		],
+		"Arcana": [
+			"Space"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Ancient",
+				"SourcePage": "57-64"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Tamers of the Cave",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Mastigos"
+		],
+		"Arcana": [
+			"Death"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Ancient",
+				"SourcePage": "28-38"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Tamers of Wind",
+		"Nicknames": [
+			"Mapmakers"
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Acanthus"
+		],
+		"Arcana": [
+			"Forces"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Ancient",
+				"SourcePage": "65-71"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Tellurians",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Mysterium"
+		],
+		"Path": [
+			"Obrimos"
+		],
+		"Arcana": [
+			"Space"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Lines of Power",
+				"SourcePage": "3-6"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": "Ley lines and the power they carry have existed longer than human memory, and man has attempted to harness this unseen power to his advantage ever since their discovery. Many examples of such ancient controls exist: Stonehenge, Mayan temples and even some Roman roads exist along ley lines or sit atop powerful nodes. By focusing the energy that courses over the Earth, the ancients were able to influence natural and unnatural occurrences wherever the energy flowed. They could cause crops to produce untold harvests, or create blight that led to starvation and death. They could inspire wisdom and understanding or fuel depravity and breed despair. And, through careful control of resonance, the Tellurians could aid in the creation of a nation or bring one to its knees. Wherever people have sought to control the power these lines possess, the Tellurians have always been nearby. Ever since the fall of Atlantis, these mages have dedicated their lives to understanding the power that flows from node to node. They have amassed vast libraries of maps detailing ley lines all over the world. However, as the world evolves and changes, so does the energy that flows around it. The work of the Tellurians is never done because the lines are constantly shifting. The original Tellurians were a disparate lot. Each discovered the power of the ley lines within their own cultures and learned to manipulate them as they advanced along their chosen Paths. Eventually they stumbled across other members of other Paths and orders who shared their interests, and the first Telluric Council was formed. They agreed that the ley lines should be observed and manipulated only for the prosperity of mankind. To enforce their will, they created the Telluric Wardens, a militant division that punishes those offenders who dare to destroy or manipulate ley lines for destructive purposes. The Obrimos were the original founders of the Tellurians because of their leanings towards the Prime Arcanum and interest in the flow of magic. Eventually, the Mysterium became interested in these trackers of ley lines, and other Paths were introduced to the Legacy. Each Path was able to turn their particular talent to understanding the resonances that supply the main power to the ley lines. The Acanthus devote themselves primarily to understanding how the particular resonances of ley lines and nodes affect the fates of those they touch. Mastigos are often the most adept with their knowledge of the Space Arcanum, and provide some of the best cartographers the Legacy possesses. The Moros of the Legacy are few and far between, although those who have joined focus most of their attention on how the different resonances affect Matter and inanimate objects. As the Legacy’s founders, Obrimos are by far the most common Path represented. The Thyrsus are a close second within the Legacy, as they are intimately concerned with the effects ley lines have on the physical and spiritual landscapes of the world."
+			},
+			{
+				"Title": "Orders",
+				"Text": "Most of the Mapmakers originally belonged to or eventually joined the Mysterium as they pursued their research on ley lines. The Mysterium considers most of the members of the Legacy to be entertaining and largely useless old eccentrics. However, they arethe foremost experts in the field of mapping and understanding of resonances. The Mysterium is where most of the Legacy’s students are recruited from as they seek mentors in the Order’s libraries to extract information on the peculiar science of ley lines. The Wardens tend to come from the Adamantine Arrow. They are often found watching over nodes or acting as bodyguards to their researching colleagues. They are also the enforcers of the Telluric Council’s will, protecting fragile lines or punishing mages who disturb or destroy lines wantonly. The Guardians of the Veil, Free Council and Silver Ladder are in the minority of the orders represented among the Mapmakers. After induction into the Legacy, most members remain in their parent order, but a fair number end up defecting to the Mysterium."
+			},
+			{
+				"Title": "Appearance",
+				"Text": "The Mapmakers’ appearances often reflect their beliefs concerning ley lines. If they believe the lines are to be controlled, they tend to be neat freaks, with their clothes and surroundings perfect in every detail. If they believe in merely monitoring the lines and letting them form on their own, then their appearance may be more free-form and artistic, showing their more organic philosophy."
+			},
+			{
+				"Title": "Background",
+				"Text": "The Mapmakers come from all walks of life and have only one thing in common: They seek to understand the currents of power that flow over the earth. Some followed the traditions of the Druids, manipulating all sorts of connections from toadstool circles to Stonehenge. Others learned the arts of feng shuiand manipulate the dragon lines on smaller levels in residential areas. However, they all followed their passion even after their Awakening, and sought greater understanding of ley lines through their magic. Most Mapmakers keep fastidious notes and maps so that they can keep track of the ley lines in their area and the different resonances that travel down them. Often they hold positions of power in the mortal world, which allow them to manipulate the architecture in the city they reside in or own swathes of untouched virgin forests to preserve the lines flowing within them."
+			},
+			{
+				"Title": "Organization",
+				"Text": "The Mapmakers are one of the more organized Legacies. They are led by the Telluric Council, comprised of the eldest living or most acclaimed members of the Legacy. Rank among the Mapmakers is due to age and accomplishment. Once in a blue moon, a younger member will perform a truly remarkable feat that earns them the respect and recognition of the Council, but most of the Mapmakers operate under the simple rule of “avoid the Council’s attention.” The strongest connection within the Legacy is between mentor and student. Someone interested in joining the Legacy has to first locate a Mapmaker who is willing to take him on as a student. He is then introduced to the Attainments and the vast libraries that the Mapmakers have accumulated over the centuries in the study of ley lines. Once the mentor believes the student is ready, the student faces a test to become a full-fledged member of the Legacy. This trial usually comes after the student learns the second Attainment. The tests range from successfully documenting the resonances of a particularly complex ley line to the mapping of all lines that intersect with a particular node. Once they successfully pass the test, they are free to do as they please. There is, however, retribution if a Mapmaker steps over the line. The Council’s interpretation of a wrongdoing does not follow most societal norms; they are far more concerned with the disruption of energy flow along the lines, and anything that destroys or significantly interferes with a large amount of ley lines will draw the Council’s immediate attention. Wardens are then dispatched to deal with the offending party."
+			},
+			{
+				"Title": "Suggested Oblations",
+				"Text": "rearranging furniture for at least half an hour to aid the flow of energy in a living space, making maps, walking through the city to find new ley lines, meditating at a node, successfully mapping the ley lines in an untouched rural area"
+			},
+			{
+				"Title": "Concepts",
+				"Text": "Feng shuiadvisor, construction worker, real estate agent, building code inspector, park ranger, eco-terrorist, mountain climber"
+			}
+		],
+		"AttainmentDescription": "While Prime is an essential Arcanum when dealing with the mystical energies in ley lines, knowing where the lines come from and go to is an invaluable skill. All Mapmakers are taught the Space Arcanum to do this as it is part of the first Attainment. The Skill of Science (Cartography) is also required as the Mapmaker keeps detailed maps of all the ley lines they find using the first Attainment. In addition to these Attainments, Mapmakers also generally know the spells “Ley Shift” (Sanctum and Sigil,p. 97), “Ley Flow” (Sanctum and Sigil,p. 98) and “Ley Lines” (Mage: The Awakening, p. 226), and possess the Geomancer Merit (see the sidebar on p. 7).",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "Map of the Land",
+				"Prerequisites": [
+					"Gnosis 3",
+					"Prime 1",
+					"Space 2 (primary)",
+					"Science (Cartography) 1"
+				],
+				"Description": "With this Attainment, the Mapmaker can activate a combination of the spells “Supernatural Vision” (Mage: The Awakening, p. 221) for Prime and “Spatial Map” (Mage: The Awakening, p. 233) at will. All ley lines within her line of sight appear as vivid lines of various colors, depending on the resonance they carry. With the Space Arcanum, the mage can extend her senses beyond mortal norms to locate these lines at greater and greater ranges as her mastery increases. Many Mapmakers claim they can feel the ley lines “in their bones” (and with a successful Wits + Investigation roll) when they are beyond the range of sight. This Attainment is best applied at great heights to maximize viewing distance, which leads many Mapmakers to live in tall buildings or on mountaintops."
+			},
+			{
+				"Order": 2,
+				"Name": "Riding Between",
+				"Prerequisites": [
+					"Gnosis 5",
+					"Space 3",
+					"Science (Cartography) 3"
+				],
+				"Description": "This Attainment gives the Mapmakers one of their more mysterious abilities. To the uninitiated, this Attainment appears to be teleportation, since the mage disappears and appears either nearby or halfway around the world. What the mage is actually doing is riding ley lines. Through mastery of Space and knowledge of the components of ley lines, the Mapmaker can enter any ley line at any point and travel to any node. Many Mapmakers explain it as opening a Portal (as per the spell in Mage: The Awakening, p. 238) and simply using the ley lines as a conduit. While they can enter a ley line at any point, they can only exit at a node, where the power lines cross and the energy is briefly disrupted. Many younger Mapmakers describe it as akin hopping a train or riding the subway. The Mapmaker can only take herself on the Ride, along with any non-living things she can hold onto. While the mage is Riding Between, they exist with the ley line and travel along its energy. They cannot be harmed until they step out at a node. Riding Between isn’t without its risks: unless the Mapmaker knows exactly where he is going, he could very well end up on top of a mountain in Tibet, in the middle of a battlefield in Africa or over the ocean in the middle of a hurricane."
+			},
+			{
+				"Order": 3,
+				"Name": "Manipulate Telluric Currents",
+				"Prerequisites": [
+					"Gnosis 7",
+					"Prime 4",
+					"Space 4",
+					"Science (Cartography) 5"
+				],
+				"Description": "This Attainment allows the Mapmaker to temporarily redirect ley lines as she sees fit. While great good can be done with the new power (such as growing crops with positive growth energy), so can great harm. Ley lines that carry negative resonances can be redirected to a Hallow, tainting the Mana that springs forth, or entire nodes can be destroyed as the lines that form them are redirected. The Mapmaker must make a Gnosis + Prime roll to activate this attainment – the length of time the ley line is moved is as per the prolonged Duration table in Mage: The Awakening, p. 120."
+			}
+		]
+	},
+	{
+		"Name": "Thread Cutters",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Guardians of the Veil"
+		],
+		"Path": [
+			"Moros"
+		],
+		"Arcana": [
+			"Fate"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Ancient",
+				"SourcePage": "100-109"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Threnodist",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Free Council"
+		],
+		"Path": [
+			"Mastigos"
+		],
+		"Arcana": [
+			"Space"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Sublime",
+				"SourcePage": "107-117"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Thrice-Great",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Silver Ladder"
+		],
+		"Path": [
+			"Obrimos"
+		],
+		"Arcana": [
+			"Spirit"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Ancient",
+				"SourcePage": "110-120"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Timori ",
+		"Nicknames": [
+			"The Feared"
+		],
+		"Hand": [
+			"L"
+		],
+		"Order": [
+			"Banishers"
+		],
+		"Path": [
+			""
+		],
+		"Arcana": [
+			"Mind, Prime"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Banishers",
+				"SourcePage": "153-157"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": "The syntax of the spoken language of Atlantis isn’t fully understood by any mage alive today. Small nuances in how a word is spoken, or used, can create major differences in meaning that would be almost impossible to comprehend just by studying the writings of a dead language. This is especially true in a tonal language (such as Chinese) in which the same word can have multiple meanings depending on how the syllable is stressed. It is no wonder, then, that some Atlantean words are difficult to translate properly into modern languages built on comparatively limited concepts. There are some who claim that Timori is one such word that has likely received an incomplete translation. Timori can certainly be translated as fearful. The word probably was used in association with the Locust-Eaters, who forsook magic to take their place in what they perceived as the natural order of the world. But those who tread this path state that another possible translation for Timori, one that has been overlooked or suppressed by modern scholars, is “feared.”"
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Transhuman Engineers",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Obrimos"
+		],
+		"Arcana": [
+			"Forces"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Legacies: The Sublime",
+				"SourcePage": "118-127"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Tremere liches ",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"L"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Moros"
+		],
+		"Arcana": [
+			"Death"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Mage: The Awakening",
+				"SourcePage": "352-354"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "True Soul",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Mastigos"
+		],
+		"Arcana": [
+			"Mind"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Grimoire of Grimoires",
+				"SourcePage": "152-155"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Uncrowned Kings",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Free Council"
+		],
+		"Path": [
+			"Moros"
+		],
+		"Arcana": [
+			"Mind"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Mage: The Awakening",
+				"SourcePage": "355-357"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Unforgotten Scions",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Mysterium"
+		],
+		"Path": [
+			""
+		],
+		"Arcana": [
+			"Mind"
+		],
+		"Sources": [
+			{
+				"SourceBook": "The Mysterium",
+				"SourcePage": "176-180"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Votaries of the Ordained",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Guardians of the Veil"
+		],
+		"Path": [
+			"Moros"
+		],
+		"Arcana": [
+			"Fate"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Guardians of the Veil",
+				"SourcePage": "169-171"
+			}
+		]
+	},
+	{
+		"Name": "Walkers in Mist",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Mysterium"
+		],
+		"Path": [
+			"Acanthus"
+		],
+		"Arcana": [
+			"Space"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Mage: The Awakening",
+				"SourcePage": "358-357"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Whipping Boys ",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R",
+			"L"
+		],
+		"Order": [
+			""
+		],
+		"Path": [
+			"Obrimos"
+		],
+		"Arcana": [
+			"Life"
+		],
+		"Sources": [
+			{
+				"SourceBook": "Keys to the Supernal Tarot",
+				"SourcePage": "88-93"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	},
+	{
+		"Name": "Wraiths of Epochs",
+		"Nicknames": [
+			""
+		],
+		"Hand": [
+			"R"
+		],
+		"Order": [
+			"Mysterium"
+		],
+		"Path": [
+			"Moros"
+		],
+		"Arcana": [
+			"Time"
+		],
+		"Sources": [
+			{
+				"SourceBook": "The Mysterium",
+				"SourcePage": "180-183"
+			}
+		],
+		"Sections": [
+			{
+				"Title": "Introduction",
+				"Text": ""
+			}
+		],
+		"AttainmentDescription": "",
+		"Attainments": [
+			{
+				"Order": 1,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 3",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 2,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 5",
+					""
+				],
+				"Description": ""
+			},
+			{
+				"Order": 3,
+				"Name": "",
+				"Prerequisites": [
+					"Gnosis 7",
+					""
+				],
+				"Description": ""
+			}
+		]
+	}
+]

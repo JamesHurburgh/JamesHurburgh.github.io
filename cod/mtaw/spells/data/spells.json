@@ -1,6 +1,6 @@
 [{
 		"Name" : "Abyssal Perception",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "77",
 		"PrimaryArcana" : "Death",
 		"ArcanaRequirement" : "Death 1 + Prime 1 + Space 1 + Spirit 1",
@@ -744,7 +744,7 @@
 		]
 	}, {
 		"Name" : "Call Shadow Person",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "78",
 		"PrimaryArcana" : "Death",
 		"ArcanaRequirement" : "Death 3 + Mind 3 + Spirit 3",
@@ -791,7 +791,7 @@
 		]
 	}, {
 		"Name" : "Corpse Flesh",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "173",
 		"PrimaryArcana" : "Death",
 		"ArcanaRequirement" : "Death 3 + Life 3",
@@ -1092,7 +1092,7 @@
 		]
 	}, {
 		"Name" : "The Metal Dead",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "56",
 		"PrimaryArcana" : "Death",
 		"ArcanaRequirement" : "Death 3, Matter 3; Song: Blade Broken",
@@ -1123,7 +1123,7 @@
 		]
 	}, {
 		"Name" : "Orpheus' Lament",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "131",
 		"PrimaryArcana" : "Death",
 		"ArcanaRequirement" : "Death 3",
@@ -1224,7 +1224,7 @@
 		]
 	}, {
 		"Name" : "Self-Repairing Zombie",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "173",
 		"PrimaryArcana" : "Death",
 		"ArcanaRequirement" : "Death 3 + Matter 3",
@@ -1279,7 +1279,7 @@
 		]
 	}, {
 		"Name" : "Shadow-Forged",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "174",
 		"PrimaryArcana" : "Death",
 		"ArcanaRequirement" : "Death 3 + Matter 3",
@@ -1386,7 +1386,7 @@
 		]
 	}, {
 		"Name" : "Cloak Of Decay",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "175",
 		"PrimaryArcana" : "Death",
 		"ArcanaRequirement" : "Death 4 + Fate 2",
@@ -1414,7 +1414,7 @@
 		]
 	}, {
 		"Name" : "Deathless Oath",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "110",
 		"PrimaryArcana" : "Death",
 		"ArcanaRequirement" : "Death 4 + Fate 2",
@@ -1495,7 +1495,7 @@
 		]
 	}, {
 		"Name" : "Ghostly Archive",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "110",
 		"PrimaryArcana" : "Death",
 		"ArcanaRequirement" : "Death 4 + Spirit 3",
@@ -1524,7 +1524,7 @@
 		]
 	}, {
 		"Name" : "Haunted Shell",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "29",
 		"PrimaryArcana" : "Death",
 		"ArcanaRequirement" : "Death 4 + Matter 4",
@@ -2646,7 +2646,7 @@
 		]
 	}, {
 		"Name" : "Heroic Effort",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "175",
 		"PrimaryArcana" : "Fate",
 		"ArcanaRequirement" : "Fate 2",
@@ -2941,7 +2941,7 @@
 		]
 	}, {
 		"Name" : "Alternate Scenario",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "57",
 		"PrimaryArcana" : "Fate",
 		"ArcanaRequirement" : "Fate 3, Time 3; Song: No Trap",
@@ -3254,7 +3254,7 @@
 		]
 	}, {
 		"Name" : "Sense Strength And Weakness",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "72",
 		"PrimaryArcana" : "Fate",
 		"ArcanaRequirement" : "Fate 3",
@@ -3332,7 +3332,7 @@
 		]
 	}, {
 		"Name" : "Tangle The Threads",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "176",
 		"PrimaryArcana" : "Fate",
 		"ArcanaRequirement" : "Fate 3 + Mind 2 + Prime 2",
@@ -3528,7 +3528,7 @@
 		]
 	}, {
 		"Name" : "Fortune's Fool",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "177",
 		"PrimaryArcana" : "Fate",
 		"ArcanaRequirement" : "Fate 4",
@@ -3896,7 +3896,7 @@
 		]
 	}, {
 		"Name" : "True Love",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "132",
 		"PrimaryArcana" : "Fate",
 		"ArcanaRequirement" : "Fate 5",
@@ -4488,7 +4488,7 @@
 		"Cost" : "None",
 		"Effect" : "The mage can influence the direction or flow of electricity. He can, for example, cause an existing electrical current (such as that moving through appliances or in walls) to flash or arc out and strike a target. He could not amplify the current at this level. The mage does not directly attack a person or object with this spell; he instead manipulates an existing electrical current, redirecting it toward the target of his choice. The damage inflicted depends entirely on the electrical current. The raw power of the current is not altered in any way at this level. This spell usually causes the power source to shut down (a circuit breaker engages) or short out in following turn (although Duration factors can be increased to prevent this termination for additional turns). A simple success allows the electricity to affect one target. (The mage can arc the electricity to any target within five yards of the source per dot of Forces; a mage with Forces 2 can affect a target 10 yards away.) Excess successes  affect additional adjacent targets next to one another (this is an exception to the normal rule that disallows aimed spells to affect multiple targets). Targets must each be within three yards in either direction of each other. The source itself, however, limits the total number that can be affected.",
 		"Rotes" : [{
-				"RoteOrder" : "Adamantine Arrow",
+				"RoteOrder" : "The Adamantine Arrow",
 				"RoteName" : "Shock Therapy",
 				"RoteDicePool_Attribute" : "Dexterity",
 				"RoteDicePool_Skill" : "Athletics",
@@ -4649,7 +4649,7 @@
 		]
 	}, {
 		"Name" : "Modulate Frequency",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "177",
 		"PrimaryArcana" : "Forces",
 		"ArcanaRequirement" : "Forces 2 + Fate 1",
@@ -4706,7 +4706,7 @@
 		]
 	}, {
 		"Name" : "Nullify Combustion",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "177",
 		"PrimaryArcana" : "Forces",
 		"ArcanaRequirement" : "Forces 2 + Death 2",
@@ -5031,7 +5031,7 @@
 		]
 	}, {
 		"Name" : "Cutting Scream",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "178",
 		"PrimaryArcana" : "Forces",
 		"ArcanaRequirement" : "Forces 3",
@@ -5057,7 +5057,7 @@
 		]
 	}, {
 		"Name" : "Empowered Voice",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "178",
 		"PrimaryArcana" : "Forces",
 		"ArcanaRequirement" : "Forces 3",
@@ -5083,7 +5083,7 @@
 		]
 	}, {
 		"Name" : "Floating Step",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "70",
 		"PrimaryArcana" : "Forces",
 		"ArcanaRequirement" : "Forces 3",
@@ -5159,7 +5159,7 @@
 		]
 	}, {
 		"Name" : "Optimize Kinetic Attack",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "71",
 		"PrimaryArcana" : "Forces",
 		"ArcanaRequirement" : "Forces 3",
@@ -5339,7 +5339,7 @@
 		]
 	}, {
 		"Name" : "Sorcerer's Retribution",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "55",
 		"PrimaryArcana" : "Forces",
 		"ArcanaRequirement" : "Forces 3, Prime 2; Song: Angels Of Malice",
@@ -5567,7 +5567,7 @@
 		]
 	}, {
 		"Name" : "Firebolt",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "179",
 		"PrimaryArcana" : "Forces",
 		"ArcanaRequirement" : "Forces 4",
@@ -5645,7 +5645,7 @@
 		]
 	}, {
 		"Name" : "Gravity Shift",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "179",
 		"PrimaryArcana" : "Forces",
 		"ArcanaRequirement" : "Forces 4",
@@ -5723,7 +5723,7 @@
 		]
 	}, {
 		"Name" : "Kinetic Ripple",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "180",
 		"PrimaryArcana" : "Forces",
 		"ArcanaRequirement" : "Forces 4",
@@ -6761,7 +6761,7 @@
 		]
 	}, {
 		"Name" : "Sustenance",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "140",
 		"PrimaryArcana" : "Life",
 		"ArcanaRequirement" : "Life 2 + Spirit 2",
@@ -6893,7 +6893,7 @@
 		]
 	}, {
 		"Name" : "Body Mastery",
-		"SourceBook" : "The Mysterium -- Page 195 ) ( Grimoire Of Grimoires",
+		"SourceBook" : "The Mysterium -- Page 195 ) ( Grimoire of Grimoires",
 		"SourcePage" : "32",
 		"PrimaryArcana" : "Life",
 		"ArcanaRequirement" : "Life 3",
@@ -6918,7 +6918,7 @@
 		]
 	}, {
 		"Name" : "Channel Paradox",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "47",
 		"PrimaryArcana" : "Life",
 		"ArcanaRequirement" : "Life 3 + Prime 4",
@@ -7081,7 +7081,7 @@
 		]
 	}, {
 		"Name" : "Feral Reflex",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "180",
 		"PrimaryArcana" : "Life",
 		"ArcanaRequirement" : "Life 3 + Mind 3",
@@ -7110,7 +7110,7 @@
 		]
 	}, {
 		"Name" : "Gaia's Hold",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "180",
 		"PrimaryArcana" : "Life",
 		"ArcanaRequirement" : "Life 3",
@@ -7351,7 +7351,7 @@
 		]
 	}, {
 		"Name" : "Scent Of Nature",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "139",
 		"PrimaryArcana" : "Life",
 		"ArcanaRequirement" : "Life 3",
@@ -7511,7 +7511,7 @@
 		]
 	}, {
 		"Name" : "Accelerate Healing",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "180",
 		"PrimaryArcana" : "Life",
 		"ArcanaRequirement" : "Life 4",
@@ -8192,7 +8192,7 @@
 		]
 	}, {
 		"Name" : "Multitudinous Form",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "140",
 		"PrimaryArcana" : "Life",
 		"ArcanaRequirement" : "Life 5",
@@ -8295,7 +8295,7 @@
 		]
 	}, {
 		"Name" : "Vital Balance",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "33",
 		"PrimaryArcana" : "Life",
 		"ArcanaRequirement" : "Life 5; optional + Death 4",
@@ -8351,7 +8351,7 @@
 		]
 	}, {
 		"Name" : "Breach Point",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "181",
 		"PrimaryArcana" : "Matter",
 		"ArcanaRequirement" : "Matter 1 + Death 1 + Space 1",
@@ -8701,7 +8701,7 @@
 		]
 	}, {
 		"Name" : "Loosen The Threads",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "103",
 		"PrimaryArcana" : "Matter",
 		"ArcanaRequirement" : "Matter 2",
@@ -8854,7 +8854,7 @@
 		]
 	}, {
 		"Name" : "Weaponize Object",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "181",
 		"PrimaryArcana" : "Matter",
 		"ArcanaRequirement" : "Matter 2",
@@ -8880,7 +8880,7 @@
 		]
 	}, {
 		"Name" : "Acidic Spatter",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "182",
 		"PrimaryArcana" : "Matter",
 		"ArcanaRequirement" : "Matter 3 + Life 2",
@@ -9550,7 +9550,7 @@
 		]
 	}, {
 		"Name" : "Fold Object",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "182",
 		"PrimaryArcana" : "Matter",
 		"ArcanaRequirement" : "Matter 4 + Space 3",
@@ -10298,7 +10298,7 @@
 		]
 	}, {
 		"Name" : "Eagle-Eye View",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "182",
 		"PrimaryArcana" : "Mind",
 		"ArcanaRequirement" : "Mind 2 + Space 2",
@@ -10641,7 +10641,7 @@
 		]
 	}, {
 		"Name" : "Phantom Thoughts",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "183",
 		"PrimaryArcana" : "Mind",
 		"ArcanaRequirement" : "Mind 2",
@@ -11007,7 +11007,7 @@
 		]
 	}, {
 		"Name" : "Defer Conscience",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "183",
 		"PrimaryArcana" : "Mind",
 		"ArcanaRequirement" : "Mind 3 + Time 3",
@@ -11114,7 +11114,7 @@
 		]
 	}, {
 		"Name" : "Disinhibiting Sympathy",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "57",
 		"PrimaryArcana" : "Mind",
 		"ArcanaRequirement" : "Mind 3 + Space 3; Song: Evil / Truth",
@@ -11441,7 +11441,7 @@
 		]
 	}, {
 		"Name" : "Kinesthesia",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "183",
 		"PrimaryArcana" : "Mind",
 		"ArcanaRequirement" : "Mind 3 + Space 1 + Time 1",
@@ -11876,7 +11876,7 @@
 		]
 	}, {
 		"Name" : "Shackled Morality",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "117",
 		"PrimaryArcana" : "Mind",
 		"ArcanaRequirement" : "Mind 3",
@@ -12896,7 +12896,7 @@
 		]
 	}, {
 		"Name" : "Skeptic",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "184",
 		"PrimaryArcana" : "Mind",
 		"ArcanaRequirement" : "Mind 4",
@@ -13133,7 +13133,7 @@
 		]
 	}, {
 		"Name" : "Casual Brutality",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "118",
 		"PrimaryArcana" : "Mind",
 		"ArcanaRequirement" : "Mind 5",
@@ -13240,7 +13240,7 @@
 		]
 	}, {
 		"Name" : "Goetic Manifestation",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "95",
 		"PrimaryArcana" : "Mind",
 		"ArcanaRequirement" : "Mind 5 + Spirit 5",
@@ -13451,7 +13451,7 @@
 		]
 	}, {
 		"Name" : "Sin Eating",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "48",
 		"PrimaryArcana" : "Mind",
 		"ArcanaRequirement" : "Mind 5",
@@ -13969,7 +13969,7 @@
 		]
 	}, {
 		"Name" : "Paths Of Power",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "139",
 		"PrimaryArcana" : "Prime",
 		"ArcanaRequirement" : "Prime 2",
@@ -14387,7 +14387,7 @@
 		]
 	}, {
 		"Name" : "False Signature",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "184",
 		"PrimaryArcana" : "Prime",
 		"ArcanaRequirement" : "Prime 3 (+ conjunctional Arcanum)",
@@ -15063,7 +15063,7 @@
 		]
 	}, {
 		"Name" : "Activate Spirit",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "109",
 		"PrimaryArcana" : "Prime",
 		"ArcanaRequirement" : "Prime 4 + Spirit 4",
@@ -15176,7 +15176,7 @@
 		]
 	}, {
 		"Name" : "Bodyguard's Blessing",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "184",
 		"PrimaryArcana" : "Prime",
 		"ArcanaRequirement" : "Prime 4",
@@ -15568,7 +15568,7 @@
 		]
 	}, {
 		"Name" : "Supernal Augmentation",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "185",
 		"PrimaryArcana" : "Prime",
 		"ArcanaRequirement" : "Prime 4 + (Life 3 or Matter 3)",
@@ -15680,7 +15680,7 @@
 		]
 	}, {
 		"Name" : "Concealing The Dragon's Paths",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "103",
 		"PrimaryArcana" : "Prime",
 		"ArcanaRequirement" : "Prime 5",
@@ -16291,7 +16291,7 @@
 		]
 	}, {
 		"Name" : "Track Projectile",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "185",
 		"PrimaryArcana" : "Space",
 		"ArcanaRequirement" : "Space 2 or (Space 2 + Time 2)",
@@ -16636,7 +16636,7 @@
 		]
 	}, {
 		"Name" : "Interpose",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "186",
 		"PrimaryArcana" : "Space",
 		"ArcanaRequirement" : "Space 3",
@@ -16792,7 +16792,7 @@
 		]
 	}, {
 		"Name" : "Repel",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "186",
 		"PrimaryArcana" : "Space",
 		"ArcanaRequirement" : "Space 3 + (conjunctional Arcanum)",
@@ -17335,7 +17335,7 @@
 		]
 	}, {
 		"Name" : "Phased Strike",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "187",
 		"PrimaryArcana" : "Space",
 		"ArcanaRequirement" : "Space 5 + (Matter 3, 4, or 5)",
@@ -17622,7 +17622,7 @@
 		]
 	}, {
 		"Name" : "Cowing The Spirit",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "187",
 		"PrimaryArcana" : "Spirit",
 		"ArcanaRequirement" : "Spirit 2",
@@ -17830,7 +17830,7 @@
 		]
 	}, {
 		"Name" : "Read Spirit",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "188",
 		"PrimaryArcana" : "Spirit",
 		"ArcanaRequirement" : "Spirit 2",
@@ -18152,7 +18152,7 @@
 		]
 	}, {
 		"Name" : "Hone The Pack Spirit",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "57",
 		"PrimaryArcana" : "Spirit",
 		"ArcanaRequirement" : "Spirit 3 + Life 2; Song: Bleeding Leviathan",
@@ -18401,7 +18401,7 @@
 		]
 	}, {
 		"Name" : "Spirit Steed",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "188",
 		"PrimaryArcana" : "Spirit",
 		"ArcanaRequirement" : "Spirit 3 + or (Spirit 3 + Space 2 + Fate 2)",
@@ -18515,7 +18515,7 @@
 		]
 	}, {
 		"Name" : "Goetic Doppelganger",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "117",
 		"PrimaryArcana" : "Spirit",
 		"ArcanaRequirement" : "Spirit 4 + Mind 4",
@@ -18599,7 +18599,7 @@
 		]
 	}, {
 		"Name" : "Living Land",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "69",
 		"PrimaryArcana" : "Spirit",
 		"ArcanaRequirement" : "Spirit 4 + Fate 2",
@@ -19549,7 +19549,7 @@
 		]
 	}, {
 		"Name" : "Rapid Fire",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "189",
 		"PrimaryArcana" : "Time",
 		"ArcanaRequirement" : "Time 3 + Forces 2 + Life 2 + Matter 2",
@@ -19610,7 +19610,7 @@
 		]
 	}, {
 		"Name" : "Strike In The Perfect Moment",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "72",
 		"PrimaryArcana" : "Time",
 		"ArcanaRequirement" : "Time 3",
@@ -19769,7 +19769,7 @@
 		]
 	}, {
 		"Name" : "Eternal Object",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "133",
 		"PrimaryArcana" : "Time",
 		"ArcanaRequirement" : "Time 4 + Matter 1",
@@ -19798,7 +19798,7 @@
 		]
 	}, {
 		"Name" : "Precognitive Ordeal",
-		"SourceBook" : "Grimoire Of Grimoires",
+		"SourceBook" : "Grimoire of Grimoires",
 		"SourcePage" : "47",
 		"PrimaryArcana" : "Time",
 		"ArcanaRequirement" : "Time 4",
@@ -19902,7 +19902,7 @@
 		]
 	}, {
 		"Name" : "Duplicate",
-		"SourceBook" : "Adamantine Arrow",
+		"SourceBook" : "The Adamantine Arrow",
 		"SourcePage" : "189",
 		"PrimaryArcana" : "Time",
 		"ArcanaRequirement" : "Time 5",
@@ -20627,7 +20627,7 @@
 		"Cost" : "None",
 		"Effect" : "The mage can discern the mental and emotional states of a thinking being by reading his aura. Some mages perceive auras as a series of colors, while others describe them in terms of musical notes, odors, tastes or other purely non-physical senses. See the chart below for specifics. Note that this spell does not allow a mage to read a target's nature. That requires the \"Supernal Vision\" spell.",
 		"Rotes" : [{
-				"RoteOrder" : "Adamantine Arrow",
+				"RoteOrder" : "The Adamantine Arrow",
 				"RoteName" : "Know The Wolf By His Stance",
 				"RoteDicePool_Attribute" : "Wits",
 				"RoteDicePool_Skill" : "Empathy",
@@ -20658,7 +20658,7 @@
 		"Cost" : "None",
 		"Effect" : "Imbuing her words with arcane gravitas, a mage can brand an idea directly into a subject's memory. Should such a subject fall prey to dementia or brain damage, forgetting even his own name, he will never forget the ideas burned into the deepest recesses of his psyche. In order to cast this rote, the mage must vocalize the intended knowledge to the subject, even if that subject is the mage himself. The presence of bystanders has no effect on the magic, though the speech must be targeted specifically at an individual rather than being a general address. If the spell succeeds, the subject never forgets that information without the interference of other magic or powers. Mind 2 is required for the mage to target himself; scribing other minds requires Mind 3. With an additional dot of Mind beyond these requirements, knowledge may be imparted telepathically rather than aloud. Resolve is not subtracted from the caster's pool if the target is aware and willing. Although not widely known outside of the forbidden ranks of the Unforgotten Scions, this spell can also be cast more aggressively on a Sleeper target, in which case the spell costs one Mana point. If the spell succeeds, the target not only remembers the branded information forever but also develops a perverse fascination to share the knowledge with others per the Fixation derangement; this derangement potentially flares up whenever the subject of the information comes up in conversation or the target is actively reminded of it, promoting the usual Resolve + Composure roll to resist. Any new fixation implanted this way replaces all existing ones, so a victim only needs to worry about the most recent obsession. Furthermore, he may permanently overcome such madness by spending one dot of Willpower or raising his Morality; otherwise, such madness is permanent. Damaging a Sleeper's mind this way is an act of hubris, requiring a mage with a Wisdom higher than four dots to make a degeneration roll. More importantly, doing this is an excellent way to attract the attention of the Unforgotten and its enemies.",
 		"Rotes" : [{
-				"RoteOrder" : "Adamantine Arrow",
+				"RoteOrder" : "The Adamantine Arrow",
 				"RoteName" : "Soul Scribing",
 				"RoteDicePool_Attribute" : "Manipulation",
 				"RoteDicePool_Skill" : "Expression",

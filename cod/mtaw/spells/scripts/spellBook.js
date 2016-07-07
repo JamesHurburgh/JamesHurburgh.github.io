@@ -8,8 +8,11 @@ $(document).ready(function () {
 		}
 	}
 	initStorage();
-
-	theme($('#themeSelect'), "Readable");
+	
+	$("nav").load("webParts/menu.html");
+	$("footer").load("webParts/footer.html", function(){
+		theme($('#themeSelect'), "Readable");
+	});
 
 	// Setup Ajax calls
 	// OBSOLETE
@@ -382,12 +385,12 @@ $(document).ready(function () {
 					columns : [{
 							data : 'Name',
 							render : function (data, type, spell) {
-								return "<a target='_blank' href='spell.html\?spell=" + escape(spell.Name) + "'>" + spell.Name + "</a>";
+								return makeSpellLink(spell.Name);
 							}
 						}, {
 							data : 'Source',
 							render : function (data, type, spell) {
-								return spell.SourceBook + ' p' + spell.SourcePage;
+								return makeBookLink(spell.SourceBook) + ' p' + spell.SourcePage;
 							}
 						}, {
 							data : 'Requirements',

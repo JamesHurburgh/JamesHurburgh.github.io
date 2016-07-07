@@ -5,22 +5,22 @@
     //the module value for "helper/util".
 
 	themes = [
-		{ "Name" : "Cerulean", "Path" : "ref/bootstrap.cerulean.min.css"},
-		{ "Name" : "Cosmo", "Path" : "ref/bootstrap.cosmo.min.css"},
-		//{ "Name" : "Cyborg", "Path" : "ref/bootstrap.cyborg.min.css"},
-		//{ "Name" : "Darkly", "Path" : "ref/bootstrap.darkly.min.css"},
-		{ "Name" : "Flatly", "Path" : "ref/bootstrap.flatly.min.css"},
-		{ "Name" : "Journal", "Path" : "ref/bootstrap.journal.min.css"},
-		{ "Name" : "Lumen", "Path" : "ref/bootstrap.lumen.min.css"},
-		{ "Name" : "Paper", "Path" : "ref/bootstrap.paper.min.css"},
-		{ "Name" : "Readable", "Path" : "ref/bootstrap.readable.min.css"},
-		{ "Name" : "Sandstone", "Path" : "ref/bootstrap.sandstone.min.css"},
-		{ "Name" : "Simplex", "Path" : "ref/bootstrap.simplex.min.css"},
-		//{ "Name" : "Slate", "Path" : "ref/bootstrap.slate.min.css"},
-		{ "Name" : "Spacelab", "Path" : "ref/bootstrap.spacelab.min.css"},
-		//{ "Name" : "Superhero", "Path" : "ref/bootstrap.superhero.min.css"},
-		{ "Name" : "United", "Path" : "ref/bootstrap.united.min.css"},
-		{ "Name" : "Yeti", "Path" : "ref/bootstrap.yeti.min.css"}
+		{ "Name" : "Cerulean", "Path" : "css/bootstrap.cerulean.min.css"},
+		{ "Name" : "Cosmo", "Path" : "css/bootstrap.cosmo.min.css"},
+		//{ "Name" : "Cyborg", "Path" : "css/bootstrap.cyborg.min.css"},
+		//{ "Name" : "Darkly", "Path" : "css/bootstrap.darkly.min.css"},
+		{ "Name" : "Flatly", "Path" : "css/bootstrap.flatly.min.css"},
+		{ "Name" : "Journal", "Path" : "css/bootstrap.journal.min.css"},
+		{ "Name" : "Lumen", "Path" : "css/bootstrap.lumen.min.css"},
+		{ "Name" : "Paper", "Path" : "css/bootstrap.paper.min.css"},
+		{ "Name" : "Readable", "Path" : "css/bootstrap.readable.min.css"},
+		{ "Name" : "Sandstone", "Path" : "css/bootstrap.sandstone.min.css"},
+		{ "Name" : "Simplex", "Path" : "css/bootstrap.simplex.min.css"},
+		//{ "Name" : "Slate", "Path" : "css/bootstrap.slate.min.css"},
+		{ "Name" : "Spacelab", "Path" : "css/bootstrap.spacelab.min.css"},
+		//{ "Name" : "Superhero", "Path" : "css/bootstrap.superhero.min.css"},
+		{ "Name" : "United", "Path" : "css/bootstrap.united.min.css"},
+		{ "Name" : "Yeti", "Path" : "css/bootstrap.yeti.min.css"}
 	];
 
 	var themeSelector;
@@ -30,7 +30,7 @@
 		themeSelector = jQuerythemeSelector;
 		// Add change handler
 		themeSelector.change(function () {
-			changeCSS(themeSelector.val(), 0);
+			changeCSSFile(themeSelector.val());
 			if(store != null && store.enabled){
 				store.set('theme', themeSelector.find('option:selected').text());
 			}
@@ -53,16 +53,9 @@
 				
 	}	
 
-	function changeCSS(cssFile, cssLinkIndex) {
-
-		var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
-
-		var newlink = document.createElement("link");
-		newlink.setAttribute("rel", "stylesheet");
-		newlink.setAttribute("type", "text/css");
-		newlink.setAttribute("href", cssFile);
-
-		document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+	function changeCSSFile(cssFile) {
+		var linkObject = $("#customCss");
+    linkObject.attr("href", cssFile);
 	}
 
 //});
