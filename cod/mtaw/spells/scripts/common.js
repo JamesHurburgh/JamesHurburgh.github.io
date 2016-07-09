@@ -169,20 +169,74 @@ function getParameterByName(name, url) {
 }
 
 function makeSpellLink(spellName){
-	return "<a target='_blank' href='spell.html\?spell=" + escape(spellName) + "'>" + spellName + "</a>";
+	return makePageLink(spellName, "spell");
 }
 
 function makeBookLink(bookName){
-	return "<a target='_blank' href='book.html\?book=" + escape(bookName) + "'>" + bookName + "</a>";
+	return makePageLink(bookName, "book");
 }
 
 function makeLegacyLink(legacyName){
-	makePageLink(legacyName, "legacy")
-	//return legacy;
-	return "<a target='_blank' href='legacy.html\?legacy=" + escape(legacyName) + "'>" + legacyName + "</a>";
+	return makePageLink(legacyName, "legacy");
 }
 
 function makePageLink(name, type){
 	//return legacy;
 	return "<a target='_blank' href='" + type + ".html\?" + type + "=" + escape(name) + "'>" + name + "</a>";
 }
+
+function emphasiseText(text, callback){
+		
+		$.when()	
+		.then(	
+			function() 	{ getData("infoBoxes", function(data){
+				// Insert infoBoxes
+				data.forEach(function(inset) {
+					if(inset.Type == "html"){
+						var replacementText = '<div class="well">' + inset.html + '</div>';
+						text = text.replace(inset.PlacementText, replacementText);
+					}
+				});
+			}); 
+		})
+		.then(	
+			function() 	{ getData("spells", function(data){
+				// Insert infoBoxes
+				data.forEach(function(spell) {
+					text = text.replace(new RegExp('\\b'+spell.Name+'\\b'), makePageLink(spell.Name, "spell"));
+				});
+			}); 
+		})
+		.done();
+
+		callback(text);
+}
+function doNOhitng(){
+		
+		// Turn spell names into links
+		$(spells).each(function (index, spell) {
+			text = text.replace(new RegExp('\\b'+spell.Name+'\\b'), "<a href='spell.html\?spell=" + escape(spell.Name) + "'>" + spell.Name + "</a>");
+		});
+		
+		// Emphasise Arcana names
+		$(arcanum).each(function (index, arcana) {
+			text = text.replace(new RegExp(arcana.Name, "g"), "<strong>" + arcana.Name + "</strong>");
+		});
+		
+		// Emphasise Attribute names
+		$(attributes).each(function (index, attribute) {
+			text = text.replace(new RegExp(attribute.Name, "g"), "<strong>" + attribute.Name + "</strong>");
+		});
+		
+		// Emphasise Skill names
+		$(skills).each(function (index, skill) {
+			text = text.replace(new RegExp(skill.Name, "g"), "<strong>" + skill.Name + "</strong>");
+		});
+		
+		// Popover text for glossary
+		$(glossary).each(function (index, term) {
+			regex = new RegExp('(\\b' + term.Term + '\\b)(?![^<]*>|[^<>]*</)');
+			replacement = "<span class='text-primary' data-toggle='tooltip' title='" + term.Definition + "'>" + term.Term + "</span>";
+			text = text.replace(regex, replacement);
+		});
+	}

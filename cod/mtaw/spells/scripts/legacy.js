@@ -45,7 +45,11 @@ $(document).ready(function () {
 	function displayLegacy(legacy){
 		
 		document.title = legacy.Name;
-		$('#LegacyName').text(legacy.Name);
+		name = legacy.Name;
+		if(legacy.Nicknames && legacy.Nicknames[0]){
+			name = name + " (" + legacy.Nicknames[0] + ")";
+		}
+		$('#LegacyName').text(name);
 
 		$('#Source').append(makePageLink(legacy.Sources[0].SourceBook, "book") + ' p' + legacy.Sources[0].SourcePage);
 		
@@ -55,7 +59,8 @@ $(document).ready(function () {
 
 		$('#Notes').text(legacyName.Notes);
 		
-
+		// Description
+		descriptionTOC = $("<ul>");
 		legacy.Sections.forEach(function(section) {
 			title = $("<h4>").append(section.Title);
 			title.attr("id", section.Title);
@@ -67,49 +72,46 @@ $(document).ready(function () {
 
 			link = $("<a>").append(section.Title);
 			link.attr("href", "#" + section.Title);
-			$('#TableOfContents').append($("<li>").append(link));
+			descriptionTOC.append($("<li>").append(link));
 		}, this);
+		$('#TableOfContents').append($("<li>Description</li>").append(descriptionTOC));
+
+		// Attainments
+		$('#Attainments').append(legacy.AttainmentDescription);
+		attainmentsTOC = $("<ul>");
+		legacy.Attainments.forEach(function(attainment) {
+			
+			// Title
+			title = $("<h4>").append(attainment.Order + ": " + attainment.Name);
+			title.attr("id", attainment.Name);
+			
+			// Table of Contents link
+			link = $("<a>").append(attainment.Order + ": " + attainment.Name);
+			link.attr("href", "#" + attainment.Name);
+			attainmentsTOC.append($("<li>").append(link));
+
+			// Prerequisites
+			prerequisteList = $("<ul>");
+			attainment.Prerequisites.forEach(function(prerequiste) {
+				prerequisteList.append($("<li>").append(prerequiste));
+			});
+
+			// Description
+			//description = $("<p>").append(attainment.Description);
+
+			$('#Attainments').append(title);
+			$('#Attainments').append("Prerequisites");
+			$('#Attainments').append(prerequisteList);
+		  
+			//emphasiseText(attainment.Description, function(description){
+				$('#Attainments').append($("<p>").append(attainment.Description));
+			//});
+
+		}, this);
+		$('#TableOfContents').append($("<li>Attainments</li>").append(attainmentsTOC));
 				
 	}
 
-	function emphasiseText(text){
-
-		// Insert infoBoxes
-		$(infoBoxes).each(function(index, inset) {
-			if(inset.Type == "html"){
-				var replacementText = '<div class="well">' + inset.html + '</div>';
-				text = text.replace(inset.PlacementText, replacementText);
-			}
-		});
-		
-		// Turn spell names into links
-		$(spells).each(function (index, spell) {
-			text = text.replace(new RegExp('\\b'+spell.Name+'\\b'), "<a href='spell.html\?spell=" + escape(spell.Name) + "'>" + spell.Name + "</a>");
-		});
-		
-		// Emphasise Arcana names
-		$(arcanum).each(function (index, arcana) {
-			text = text.replace(new RegExp(arcana.Name, "g"), "<strong>" + arcana.Name + "</strong>");
-		});
-		
-		// Emphasise Attributes names
-		$(attributes).each(function (index, attribute) {
-			text = text.replace(new RegExp(attribute.Name, "g"), "<strong>" + attribute.Name + "</strong>");
-		});
-		
-		// Emphasise Attributes names
-		$(skills).each(function (index, skill) {
-			text = text.replace(new RegExp(skill.Name, "g"), "<strong>" + skill.Name + "</strong>");
-		});
-		
-		// Popover text for glossary
-		$(glossary).each(function (index, term) {
-			regex = new RegExp('(\\b' + term.Term + '\\b)(?![^<]*>|[^<>]*</)');
-			replacement = "<span class='text-primary' data-toggle='tooltip' title='" + term.Definition + "'>" + term.Term + "</span>";
-			text = text.replace(regex, replacement);
-		});
-	}
-	
 	function loadLegacy(data){
 		legacyName = getParameterByName('legacy');
 		$(data).each(function () {
