@@ -3,7 +3,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"L"
 		],
 		"Order" : [
@@ -23,6 +24,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -58,7 +77,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"L"
 		],
 		"Order" : [
@@ -77,6 +97,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -112,7 +150,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -131,6 +170,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -166,7 +223,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -185,6 +243,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -220,7 +296,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"L"
 		],
 		"Order" : [
@@ -240,6 +317,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -275,7 +370,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -294,6 +390,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -329,7 +443,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -348,6 +463,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -383,7 +516,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -402,6 +536,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -437,7 +589,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -456,6 +609,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -491,7 +662,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -510,6 +682,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -545,7 +735,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -564,6 +755,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -599,7 +808,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"L"
 		],
 		"Order" : [
@@ -618,6 +828,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -653,7 +881,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R",
 			"L"
 		],
@@ -675,6 +904,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -710,7 +957,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -729,6 +977,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -764,7 +1030,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -783,6 +1050,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -818,7 +1103,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -837,6 +1123,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -872,7 +1176,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"L"
 		],
 		"Order" : [
@@ -891,6 +1196,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -926,7 +1249,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -945,6 +1269,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -980,7 +1322,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -999,6 +1342,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -1034,7 +1395,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"L"
 		],
 		"Order" : [
@@ -1053,6 +1415,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -1088,7 +1468,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"L"
 		],
 		"Order" : [
@@ -1107,6 +1488,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -1142,7 +1541,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -1161,6 +1561,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -1196,7 +1614,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -1215,6 +1634,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -1250,7 +1687,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"L"
 		],
 		"Order" : [
@@ -1269,6 +1707,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -1304,7 +1760,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"L"
 		],
 		"Order" : [
@@ -1323,6 +1780,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -1358,7 +1833,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -1377,6 +1853,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -1412,7 +1906,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"L"
 		],
 		"Order" : [
@@ -1431,6 +1926,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -1466,7 +1979,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -1485,6 +1999,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -1520,7 +2052,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"L"
 		],
 		"Order" : [
@@ -1539,6 +2072,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -1574,7 +2125,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -1593,6 +2145,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -1628,7 +2198,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -1647,6 +2218,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -1682,7 +2271,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"L"
 		],
 		"Order" : [
@@ -1701,6 +2291,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -1736,7 +2344,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"L"
 		],
 		"Order" : [
@@ -1755,6 +2364,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -1790,7 +2417,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -1809,6 +2437,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -1844,7 +2490,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -1863,6 +2510,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -1898,7 +2563,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"L"
 		],
 		"Order" : [
@@ -1917,6 +2583,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -1952,7 +2636,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -1971,6 +2656,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -2006,7 +2709,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R",
 			"L"
 		],
@@ -2026,6 +2730,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -2061,7 +2783,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -2080,6 +2803,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -2115,7 +2856,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -2134,6 +2876,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -2169,7 +2929,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -2188,6 +2949,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -2223,7 +3002,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"L"
 		],
 		"Order" : [
@@ -2242,6 +3022,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -2277,7 +3075,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -2296,6 +3095,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -2331,7 +3148,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"L"
 		],
 		"Order" : [
@@ -2350,6 +3168,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -2385,7 +3221,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -2404,6 +3241,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -2439,7 +3294,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -2458,6 +3314,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -2493,7 +3367,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R",
 			"L"
 		],
@@ -2513,6 +3388,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -2548,7 +3441,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -2567,6 +3461,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -2602,7 +3514,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -2621,6 +3534,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -2656,7 +3587,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -2675,6 +3607,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -2710,7 +3660,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -2729,6 +3680,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -2764,7 +3733,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -2783,6 +3753,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -2816,9 +3804,10 @@
 	}, {
 		"Name" : "Perfected Adepts",
 		"Nicknames" : [
-			""
+			"Monks"
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "Seek perfection within.",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -2837,34 +3826,49 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
-				"Text" : ""
+				"Text" : "Often upon Awakening, fledgling mages turn dismissive of the mundane material world. Having penetrated the veil of lies and illusion, they stand upon the threshold of a whole new world so dazzling that they tend to forget their previous mode of existence. They reckon that the old rules no longer apply to them. Admitted into a new confraternity of like souls, they draw away from their families and friends, who cannot understand their new vision and abilities. Now able to transcend the gross limitations of matter and energy, some even neglect their own corporeal bodies, regarding them as a mere hindrances, husks to be discarded once their usefulness has ended. While there is some truth to this way of thinking, it is not a whole truth. It is a road that leads to dissolution and disembodiment. The Perfected Adeptsstand as a warning sign upon that road, reminding all mages where they came from and what their ultimate goal is, or should be. Their presence signifies a return to the source, a remembrance that all mages are still human beings —they are born, live their lives and die. If magic cannot be made to enrich and fulfill that process, then it is not magic but delusion. The Adepts teach that before one can truly transcend the limitations of being human, one must learn what the true limitations of humanity are. Furthermore, they teach that the wisdom gained through transcendence must be brought back to humanity, so as to enable others to follow the same road. A human being is a work in progress, they hold. Awakening is not the completion of that work, but the opportunity for completion, for perfection. And yet, the task of perfecting oneself cannot be accomplished while still entangled in the web of lies and illusion. Though the Adepts do not disdain or reject the affairs the material world, they do require a substantial removal in order to pursue their goals. Renunciation of worldly attachments or wealth is the first necessary step for disentangling oneself from the world. Adepts tend to retreat into hermitages or cloistered communities, both magical and mundane, in order to disconnect from influences that distract from self-observation and cultivation. They simplify their lives, shunning extraneous noise and clutter so that they can hear the murmurs of their innermost selves. Once a suitable degree of quietude and simplification is attained, an Adept begins the process of perfection by concentrating upon the base from which his consciousness springs, his own physical body. With worldly concerns out of the way, the first thing that the Adept may notice are the noises and sensations that come from within his corporeal frame. True calm and peace of mind are not possible while the body exists in a state of discomfort or disease, or even less than optimal health. A strict regimen of adjusted diet and exercise must be undertaken to ensure that the body does not distract from the clarity of the mind. The Perfected Adepts consider martial training to be the most effective type of physical exercise for their purposes. In addition to building strength and flexibility, the student is taught to focus mind and body to function as a unified whole. Besides enhancing the capability of the body, martial arts have a calming effect upon the mind by instilling knowledge and confidence to deal with direct physical threats. Discipline and perseverance, also necessary in magical training, are encouraged and honed. (Asian martial arts in particular incorporate esoteric elements such as focused meditation and occult physiology that perfectly complement the study of magic.) Most systematized fighting styles around the world include some ethical principles whereby practitioners are exhorted to aid and protect those of lesser ability, an ideal that the Adepts proudly espouse. As the mind works at perfecting the body, it also learns to operate upon itself, gaining mastery over thought and emotion rather than being ruled by them. Just as the distractions of the outer world can be dispelled, just as the wants and urgings of the body can be quelled, so can the chatter and babble of the lower mind be silenced, leaving the soul free hear what it most needs to tell itself. Only when everything has fallen away can the innermost self be free to seek perfection by uniting the highest reality with the lowest. To some this union might seem to be the ultimate goal, the reason for a mage’s existence. But for the Perfected Adepts, this is not the end of their work, but the beginning. Perfection is meaningless if it is static and removed from the world, so the Adept is obligated to return to the world and help others to find the way to inner peace. The Adept’s martial prowess makes him a natural champion and protector, but perfection is not bound to any one role. The patience and discipline that mark an Adept’s training make him suitable for a number of callings, from the most repetitive of mindless menial labor to the most arcane and convoluted of intellectual pursuits such as science or philosophy. In this way, the Perfected Adept brings perfection into an imperfect world, making himself an exemplar for others to follow and by which to measure themselves."
+			}, {
+				"Title" : "Appearance",
+				"Text" : "Perfected Adepts tend to be the healthiest looking of mages since they focus on mastering their bodies throughout their careers. They are also the plainest, due to the extreme simplification of their lifestyle. Most keep their heads shaved, wear no jewelry or makeup, and favor plain utilitarian clothing (usually homespun). Ornaments and adornments are scrupulously avoided, but some emblems may be worn or tattooed only if they hold a particular importance and significance."
+			}, {
+				"Title" : "Background",
+				"Text" : "Prospective Adepts can come from any background, but usually find their way to this Legacy through the martial arts, sports, medicine or other body-oriented pursuits."
+			}, {
+				"Title" : "Organization",
+				"Text" : "To maintain a sufficient degree of removal from the outside world, Perfected Adepts organize themselves according to a monastic model. Adept communities are generally self-contained with their own sources of food, water and energy to minimize distractions and pollutants from without. Everyone takes turns at maintenance and housekeeping duties. Older or more accomplished Adepts handle most transactions with the world at large. No Adept is allowed to remain cloistered for too long, however. At some point he must return to the outside world, where other Adepts, other mages and the rest of mankind may decide how to interact with him according to his own individual worth."
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : "Rigorous martial arts practice, including sparring with other Perfected Adepts; feats of endurance, such as long-distance running, holding weights for long periods and exposure to the elements; exhibiting humility, such as serving another person for an hour by seeing to all his needs"
+			}, {
+				"Title" : "Concepts",
+				"Text" : "Martial artists, athletes, doctors and therapists (both physical and psychiatric), dieticians"
 			}
 		],
-		"AttainmentDescription" : "",
+		"AttainmentDescription" : "Perfected Adepts must devote themselves to study of the Life Arcanum, along with basic principles from the Prime Arcanum. In addition, their bodies must be physically fit (Athletics 3+). With the second attainment and higher, they must also have established competency with the martial arts (Brawl 3+).",
 		"Attainments" : [{
 				"Order" : 1,
-				"Name" : "",
+				"Name" : "Body Temple",
 				"Prerequisites" : [
 					"Gnosis 3",
-					""
+					"Life 2 (primary)", "Prime 1", "Athletics 3"
 				],
-				"Description" : ""
+				"Description" : "The mage can consciously control his normally autonomous bodily functions, similar to the Life 2 “Body Control” spell (p. 182). This attainment is always active and of indefinite Duration. Use the Adept’s Life dots as successes to determine exact effects; see the spell description. He also gains a sense of his own subtle energy, what has been called chior prana, and can see such energy in other life forms. Basically, he gains the Prime 1 “Supernal Vision”spell effect (p. 221) with an indefinite Duration, although it applies only to analyzing living creatures. In other words, he can take an extended action (one turn per roll) to view auras and scrutinize people to discern the strength of their chi (that is, how many Mana points they currently have in their pool), but can’t analyze place-based Resonance. Use the rules for scrutinizing beings (p. 278), with a target number equal to the being’s Mana points to be able to determine the target’s total current points."
 			}, {
 				"Order" : 2,
-				"Name" : "",
+				"Name" : "Chi Force",
 				"Prerequisites" : [
 					"Gnosis 5",
-					""
+					"Life 3", "Brawl 3"
 				],
-				"Description" : ""
+				"Description" : "The mage controls the flow of his chi, boosting one specific Physical Attribute, similar to the Life 3 “Honing the Form” spell (p. 186). When this attainment is gained, the mage must choose a single Attribute (Strength, Dexterity or Stamina) that he wishes to concentrate upon in the perfection of his body. He cannot later choose a different Attribute. To gain the boost thereafter, the mage performs an instant action to channel his chi, and his Mind dots are added to the chosen Attribute. The effect lasts for up to one hour per activation. Since this is not a spell, the mage could use this attainment at the same time that he casts a Honing the Form spell to gain a truly phenomenal Attribute rating. The one limitation, however, is that the default Duration of any spell that boosts the same Physical Attribute becomes transitory (one turn), even if it is normally prolonged. Optional Arcanum: Forces 3 If your character also has Forces 3, he can use his chi to strike at a distance, similar to the Forces 3 “Telekinetic Strike”spell (pp. 170-171). An instant action is performed and a Resolve + Brawl + Forces roll is made. Each success inflicts one bashing point of damage. As with the spell, this effect is aimed, so anything that would normally protect the target from a ranged attack applies against the mage’s chi strike."
 			}, {
 				"Order" : 3,
-				"Name" : "",
+				"Name" : "Perfect Body",
 				"Prerequisites" : [
 					"Gnosis 7",
-					""
+					"Life 4"
 				],
-				"Description" : ""
+				"Description" : "As with Chi Force, above, but the mage can now choose a second Physical Attribute to boost. He can even use both of these attainments at the same time, as long as he spends separate instant actions to activate the powers. Optional Arcanum: Forces 4 If he also has Forces 4, his Telekinetic Strike now delivers lethal damage. In addition, he can use his chi to turn aside bullets and other projectiles, similar to the Forces 4 “Control Velocity”spell (p. 172). An instant action is performed and a Dexterity + Brawl + Forces roll is made. The number of successes determines the degree to which he can turn the projectile (as per the spell description). He can take this action at any point in the initiative roster, even before he is normally allowed to act, as long as he has not yet acted the turn."
 			}
 		]
 	}, {
@@ -2872,7 +3876,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -2891,6 +3896,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -2926,7 +3949,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -2945,6 +3969,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -2980,7 +4022,7 @@
 		"Nicknames" : [
 			"Sculptors"
 		],
-		"Tagline" : "Bring me my bow of burning gold!",		
+		"Tagline" : "Bring me my bow of burning gold!",
 		"Hand" : [
 			"R"
 		],
@@ -3001,37 +4043,37 @@
 		"Sections" : [{
 				"Title" : "Introduction",
 				"Text" : "Pygmalion sculpts an image, the perfect Platonic form  of woman. He prays. Through his act of  will, the unliving image becomes the  perfect  living  form.  It’s  a  romantic  conceit.  The  Pygmalian  Society  takes this conceit as a manifesto for  the transformation of the human race,  an allegory for their great work: every  Pygmalian strives to be at once artist,  artwork and animating force. Art  is  at  the  middle  of  everything.  Although  the  Pygmalian   Society’s  members’ styles vary, they agree that art, true art,  Real Art with a capital “A,” becomes a link  to the Supernal World that inspires and alters  the human soul. Real Art creates an  Awakening — a small, temporary  Awakening,  sure  —  but  it’s  an  Awakening.  Art  is  magic.  And  Magic is Art. The Pygmalians believe that Art  is one of the last things that still link  the Sleepers to the Supernal realm.  True  Art  —  great  Art  —  molds  and  shapes  human  history.  Great  Art inspires people. Great Art incites anger. Great Art  provokes action. Every Pygmalian is an artist. The Pygmalians’ magical  attainments  reflect  this.  They  style  themselves  as  the  “Sculptors” of magical reality. They try to imbue every  action, every spell they cast, with meaning. As Pygmalians progress, they become their own greatest Artworks. Pygmalians adopt roles. They take on parts,  deliberately altering their memories, senses and the way  they see things in a search for inspiration — for themselves  and others. The Sculptors remake themselves in their own  image. They act i  their own plays, become the protagonists  of their own stories. Through the creation of Art and themselves as Artworks,  the Pygmalians seek to effect change. An inspired human  soul leads to action, and history takes a new course. These  mages recognized from the very beginning that the power  of Disbelief stops their magic from altering the world in  any but the smallest way, so the Pygmalians work to inspire  and change the minds and souls of Sleepers with the power  to do the same. Through the Pygmalians’ art, they inspire  artists, who in turn have the potential to create something  great. The Pygmalians are muses. They’re propagandists.  They’re agents provocateur. The true Sculptor is obsessed with the future, but lives in  the here and now. A Pygmalian develops the ability to sense  the interplay of time and fate in the lives of the  people around him, experiencin  an intense kind of  synesthesia. He can smell pain, hear joy, taste anger.  The most talented Pygmalians can se  human destinies  laid out before them in tastes and colors. These Pygmalians  sense the weft and weave of destiny  and possibility. Then they embroider  with new potentials for inspiration. They  want to create a path that the Awakened  can travel more easily, at the end of which  lies the Awakening of every man, woman  and child on the planet. The actual medium of the Pygmalians’  Art is open — any art, high or low, can  change things. The Sculptors are obsessed  with finding a Holy Grail of true inspiration that will bring about history changing  art. Charles Dickens wrote a few works of fiction  and ignited Western society’s conscience toward the urban  poor. Renaissance painters invented perspective drawing,  and a mathematics of space that redefined the world. The  writers and translators of the Bible changed the course of  human history many times over. Art  can  be  deadly,  too.  Leni  Riefenstahl  propagated  the sinister glamour that made a nation complicit in the  deaths of millions. China’s official TV and newspapers have  convinced the most populous nation in the world that the  Tiananman Square massacre never happened, that stories of  the massacre are just an American plot. Advertising agencies  use art to relieve people of their money and leave them in  perpetual discontent. Change happens around the Pygmalians. They are not  always the direct cause, but they’re always there, nudging things along. People fall in love. Scientists find new  insights into the nature of things. Revolutions begin, or  end in blood and fire. Whatever the Pygmalians do, they accept no barriers to  their Art. With no boundaries, it’s inevitable that some  Sculptors go bad. These fallen Pygmalians don’t confine  their Art within moral limits. A Pygmalian might commit  atrocities to effect the inspiration of a single individual. A  Pygmalian’s deeds can easily result in dozens of lives ruined  or ended at a single stroke. Love ends more easily than it begins. Even the most noble of revolutions can descend into  tyranny. These ruthless mages give the Pygmalian Society the  bad reputation it currently suffers among the Awakened. True Pygmalians are much more than the terrorists and  instigators  of  chaos  that  other  mages  often  believe  the Sculptors to be. True Pygmalians are artists, and more than that: they think they know the means by which the entire human race can one day Awaken."
-			},{
+			}, {
 				"Title" : "Orders",
 				"Text" : "All five of the great mystical orders have Pygmalian  members, but more than half of them of the Sculptors end  up in the Free Council (if they join an order at all). The first  Pygmalians all belonged to the Free Council, and, although  the Legacy is not intimately connected to the order, the line  of tutor to pupil frequently ensures that new Pygmalians join  the Free Council in turn, or belonged to the order in the first  place. The Free Council is certainly the order that is most  amenable to radical social and intellectual change as a means  to  Awaken  humanity.  The  less-regulated  Free  Council  is  also the order most likely to accept a Pygmalian despite the  Legacy’s checkered reputation. The  four  Atlantean  orders  all  have  a  few  Pygmalians.  The Silver Ladder’s stated aim for the Awakening of the  human race attracts a fair number of Sculptors, but these  mages often find themselves frustrated by the order’s strict  and convoluted hierarchy. The Mysterium, with its emphasis on acquiring mystical  knowledge, is fairly accommodating, since the Pygmalians are  often expert at interpreting the past, connecting it to the present and suggesting implications for the future. Mundane and  magical archeology can give the facts about what people did,  but an artist’s insight into human emotions can suggest why. Of the old orders, the Guardians of the Veil and the  Adamantine  Arrow  attract  the  fewest  Sculptors.  The  Guardians don’t generally tolerate the meddling of Pygmalians who try too hard to change human affairs; however,  a few of the more subtle Sculptors do find a home among  the Guardians. Meanwhile, the Arrows sometimes attract  some of the more martially inclined Pygmalians. These  Sculptors are respected by other mages within the order,  but rarely trusted, and it’s often these Pygmalians who fall  into violence as a means of effecting change."
-			},{
+			}, {
 				"Title" : "Appearance",
 				"Text" : "Like Sleeper artists, Pygmalians are as easy to  recognize as they choose to be. Some follow clichés such as the  Galois-smoking bohemian with his beret, straight from the Left  Bank of Paris, or the intellectual sophisticate clad all in basic  black. More Sculptors just look like ordinary, middle-class people.  Their manner gives a truer guide. Whoever Sculptors might  be, they speak and act passionately. Sometimes, they slide into  melodrama that makes cooler-tempered people wince or shake  their heads. Subtler mannerisms and an attention to details of  the Sculptors’ surroundings make Sleepers think the Sculptors  ought to be artists, even if they wear exactly the same clothes  as the people standing next to them."
-			},{
+			}, {
 				"Title" : "Background",
 				"Text" : "Every Pygmalian is an artist with a fair amount  of talent and promise. This includes every possible expression  of art: novelists, painters, poets, performance artists, musicians,  architects, filmmakers, stand-up comedians and DJs are all  represented among the Pygmalians. They are not necessarily  professional artists. Occasionally, an individual who is not  usually considered an artist — a mathematician, a software  developer or even a soldier or a politician — joins the Legacy.  As long as someone considers what she does to be an art, and  is passionate about it, the person is eligible to join. Pygmalians also know their art isn’t enough. Their promise  is unfulfilled, and they all want more. Most Pygmalians are just  talented enough to realize that they’re not quite talented enough  to change the world through their chosen media. They can  never reach the supreme heights attained by a Shakespeare, a  Rembrandt or a Dante. The Pygmalians offer them an alternative through magic, the Ars Mysteriorum itself."
-			},{
+			}, {
 				"Title" : "Organization",
 				"Text" : "The Pygmalian Society has little or no formal organization. Pygmalians have no central authority and  recognize no precedence other than the respect due teachers  from their pupils. Tutors and pupils seem to find each other  without trying. Training can vary greatly in intensity and style.  One tutor, for example, teaches two or three pupils at a time,  holding regular and highly formal classes, where he imparts the  mystical knowledge of the tradition in a theoretical, academic  form and leaves his pupils to perfect the Legacy’s attainments  in their own time, as “homework.” Another tutor disappears  from her pupil’s life for weeks on end, turning up apparently  according  to  whim.  She  spends  a  few  days  alongside  her  pupil, accompanying the less experienced mage through the  beginning of each new stage, before vanishing again, leaving  the pupil to work out what to do with his new knowledge on  his own. Still another tutor demands that he move into his  pupil’s home, taking over his unfortunate apprentice’s entire  life in order to make a real Sculptor out of her. Whatever the method, all Pygmalian tutors allow their  pupils freedom in their choice of Art form (no matter what  their personal opinions of its validity as a medium might  be). Although it’s common for a tutor to take a pupil who works on the same kind of Art, it’s not universal."
-			},{
+			}, {
 				"Title" : "Suggested Oblations",
 				"Text" : "Write a poem or short story by  hand, let one person read it, then burn the manuscript.  Paint  a  self-portrait  and  slash  it  to  shreds.  Meditate  in  the Louvre, Tate Britain, the Getty Center or any other  famous gallery (without getting kicked out). Play an all-night DJ set. Spend an entire day posing as someone else,  with radically different attitudes."
-			},{
+			}, {
 				"Title" : "Concepts",
 				"Text" : "Street theater activist, Beat poet, war photographer, local TV journalist, underground filmmaker, superstar DJ, indie band frontman, Chatterton wannabe"
-			},{
+			}, {
 				"Title" : "History",
 				"Text" : "The Pygmalian Society has its origins in the Wars of the  Roses, a series of schisms and mystical conflicts between a  number  of  mystical  groups  (particularly  Rosicrucians)  in  19th-century Paris. The conflict seems unthinkable today,  but was widely reported in the Parisian press at the time, since  several well-known people of the day were involved. The factions in the “Wars” were mostly composed of Sleepers. A few  Awakened were also present, indulging their own schisms and  conflicts under cover of the very public and, to them, trivial  arguments of their unwitting Sleeper colleagues. One of these mages was Patrice Cajean. Born penniless in  Brittany in the late 1860s, Cajean Awakened as a teenager into  a nightmare of swirling sounds and colors. By the end of the  1880s, Cajean, through a combination of charm, talent and  Awakened magic, reinvented himself as a figure of urbanity  and wit. He became a popular figure in the bohemian salons  of fin de siècleParis. Through his powers, Cajean was no stranger to the formal  mysticism of the Paris sects. He found himself drawn to one  particular Rosicrucian splinter group. This group declared that  Art was a great mystery, a great empire and a great miracle, and  that Artists were hence the secret kings, priests and magicians  of the world. Cajean wondered if there was something to this  theory. Although he felt contempt for of the importance this  faction attached to its petty squabbles, Cajean investigated the  possibility that Art was in fact a small form of magic, a link  between human beings and the Supernal World (which Cajean,  inspired by Neoplatonist philosophy, identified as the Divine  Principle, or the Godhead). He posited that when God said,  “let there be light,” He created Art through pure inspiration,  distilled into creation by an act of will. Cajean investigated ways to harness this true, inspired  creativity. He believed he could manipulate human history through Art, planting some ideas and stifling others to  weaken the Lie. Just about everyone could appreciate some  sort of Art; so Cajean believed he could Awaken everyone  through this slender thread connecting their souls to the  Supernal World. The project might take a century or more,  but an Acanthus mage is not discouraged by time. A few other mages thought Cajean had a good idea. Cajean  pictured himself as a new Pygmalion, breathing life into the  Fallen World’s lifeless images of the True Forms, so he called  his formal and highly ritualized cabal of like-minded mages the  Pygmalian Society. His magical program for mass Awakening  depended upon communication and control, on ascertaining  the intricate web of connections between the soul and other  souls, between the soul and the past, present and future. To  the Legacy’s existing skill at Fate and Time, the Legacy’s  founders added a deep study of Mind, in order to gain a precise  knowledge of how the arts could manipulate thoughts and  emotions. They had no real plan, though — just a deep faith  in the transformative power of Art. Cajean’s first pupil, Marcus Naismith, was an Englishman.  He brought the Pygmalian Society into the English-speaking world. Naismith’s own take on the Legacy’s magic was  influenced by his great love of the philosophy and art of the  visionary poet and engraver William Blake. English-speak-ing Pygmalians in particular have used Blakean language  to describe their magic and rituals ever since. A member of the Society last saw Patrice Cajean alive in  March of 1916. Right up to the end of his life, Cajean felt  the need to live among the ordinary people he longed to see  reunited with the Godhead. He believed a Supernal inspiration brought the human race to the Great War: patriotic  fervor and the need to prove the courage of nations led the  entire world into a storm of death, plague and famine. Cajean  knew the Great War would shatter the age of European  colonial empires, with possibilities for great Good and terrifying Evil opening up through the rest of the century. The  idealistic mage hoped to avert the horrors of the Great War  and its aftermath, but could not stand to hide in a secure  sanctum far from harm. He needed to share the danger and  the struggle. Cajean failed; he died in the fighting at Verdun,  wearing the face of a man 30 years his junior. In the years after the Great War, the Pygmalian Society fragmented. Without Cajean’s charisma to temper the remaining  founders’ personal quarrels, they drifted apart. Art was changing, too. New movements such as futurism, cubism, and Dada  brought new ideas and new Pygmalians who had little time for  a structured organization. They preferred to use the Legacy in  their own way. By World War II, “Pygmalians” had ceased to  be anything more than a catch-all term for those mages who  crafted their souls in the tradition of Patrice Cajean, and the  Pygmalians have resisted formal organization ever since. Their  methods and Art have changed, but they still hold true to Patrice Cajean’s faith in the Supernal power of Art."
-			},{
+			}, {
 				"Title" : "Society and Culture",
 				"Text" : "The first principles of the Pygmalian Society grew out of  Western occult traditions. Although most Pygmalians don’t  dress up their magic in the formal principles of Rosicrucian  practice any more, the study of their attainments shows the  influence of a very European style of mysticism, with a special  nod to William Blake. They still use much of Patrice Cajean’s  language. Most Pygmalians still refer to the Supernal as the  “Godhead,”  for  example;  they  call  their  goal  of  universal  Awakening the “Reconciliation,” or the “Marriage of Heaven  and Hell.” As a corollary, most Pygmalians practice European styles  of creative Art. Awakened artists representing non-Western  artistic forms (such as African woodcarving, for example, or  Japanese verse) seldom find their way into the Pygmalian  Society. If such artists-mages do get the opportunity to  join, it’s generally because they try to practice their art in  a Western context; for example, a member of a group of Indian musicians performing in New York state art centers. Apart from the relationship between tutors and their pupils,  Pygmalians aren’t known for working together. They don’t  hold to any network, and they don’t recognize any obligations to each other above and beyond that normally expected  because of membership in a cabal or a mystical order. As Artists, the Pygmalians have more than their fair share  of  self-publicists  in  their  number.  They  tend  to  become  well known among the mystical orders, particularly among  Consilii in Western Europe and in urbanized areas of the  United  States.  Many  more  mages  hear  about  Pygmalian  mages than actually meet them. Unfortunately, the greatest  self-publicists among the Pygmalians are often those who  went wrong. Many mages who know about Pygmalians by  reputation don’t even realize that they’re Artists, and imagine  instead that they are a Legacy of terrorists or lunatics. The wide variation among the methods and styles of the  Pygmalians often means that this assessment goes unchallenged.  Most  Sculptors  don’t  care  in  the  end  what  other  mages think. The nature of the Sculptors’ goal is such that  they care more about the Sleepers, anyway. A Pygmalian mage surrounds herself with Sleepers — talented, passionate people who achieve more than simple talk,  never art-school poseurs. She does her absolute level best to  become a conduit of inspiration for the extraordinary people  around her. At best, a Sculptor tries to drive her companions  to create something special, something fantastic. It’s not the  mage’s own role to change things. No great invention or epochmaking artwork has ever been made by a mage: it’s the way that  the Fallen World works. The Pygmalians recognize that this is  the Sleepers’ world, and the Sleepers have to change it. The credit for great art never belongs to the Sculptor. All  he does is attempt to contribute through magic and other arts  to an environment where genius can flourish; creation can  occur only through inspiration. Simply to give ideas to an  artist is not enough. True genius can work with secondhand  materials (you only need to look at the work of Shakespeare  and Mozart to see that), but great artists transform their  sources in unique, inspired ways. What the Sculptor tries to  do is simply be there and guide his Artists to find the Godhead  themselves. He’s a lover, a companion, a patron, a friend,  sometimes a rival or an enemy. Sometimes, loneliest of all,  he’s an unattainable figure in the distance that haunts his  Artists’ steps. Whatever role he takes, he’s a muse and a  catalyst for the real Artist and the real work. The Pygmalian’s goal is to create the conditions through  which the Reconciliation can happen. Any incursion of  magic, any minor half-Awakening is enough. It doesn’t  matter if there isn’t a specific plan as such. If enough of  these small victories are won, the mages of the Pygmalian  Society are confident that, one day, the Marriage of Heaven  and Hell will take place and everyone will Awaken."
-			},{
+			}, {
 				"Title" : "The Tygers of Wrath Are Wiser Than the Horses of Instruction",
 				"Text" : "Art is a dangerous thing. The Pygmalian Society recognizes  this, but, at the same time, the Legacy’s lack of organization  means that the group has no checks and balances. The freedom of its members to find any way at all to create art can  become a trap of Hubris. While fallen Pygmalians have been few, a Sculptor gone wrong can have a terrible influence on  the world around her. These fallen Sculptors are Jonahs. Chaos surrounds them.  When they’re nearby, relationships collapse. Families tear apart.  Cars crash. Crops fail. Diseases break out. Buildings explode. Riots  erupt. Governments lose their grip. Wars start. People die. The most notorious of these Sculptors was Enoch Christopher, a Welsh poet who joined the Pygmalian Society in  1936. Christopher, influenced by the futurists, composed  puzzling  non-linear  works  that,  thanks  to  his  mastery  of  Pygmalian magic, held his manifesto encoded within them:  true inspiration requires conflict. Anger, grief and terror open  artists to Supernal truth and goad them to the heights of  self-expression. Christopher believed that if his Art was to  have any chance of bringing about real transformation, the  Art had to be unfettered by any limits of scale or morality. This manifesto of change through violence has cropped  up, quite independently, on a number of occasions. These  Pygmalians might not openly say so to begin with, but they  share the assumption that human beings are just raw clay for  the Sculptor’s Art. Some Sculptors begin to directly manipulate lives. The more powerful among them tear up human  memories and put them back together like a Burroughsian  cut-up, using trauma to drive their victims to action. Some Pygmalians become equally cavalier with themselves. They alter their own minds, messing with everything  from taste in clothes right through to sexual orientation,  even temporarily rebuilding their own memories in order  to becometheir grand Artwork and, through the inspiration  they gain, alter the world. It’s not healthy to become close  to Pygmalians who works like this. Everything goes wrong  around them, as they engineer conflict in their own lives. They  manipulate people around them to create lovers, enemies,  tragedies,  accidents  and  obstacles  to  overcome  —  often  without even informing themselves that they’re doing it.  For instance, a Sculptor creates an alternate personality to  fall in love, then the master personality kills the lover so  the other self can experience true loss. Enoch Christopher himself died in the late 1980s, a notorious harbinger of disaster. He had become possibly the  best-known Pygmalian who had ever lived, almost singlehandedly responsible for the Pygmalian Society’s bad name.  The original manuscript copy of Christopher’s 1939 collection of “automatic poetry,” When I Came Back It Was Gone,  still exists and is a powerful, spontaneously generated Artifact  in its own right. The revisions and alterations contained in this sheaf of yellowing paper hold frightening secrets and great power along with cold, brutal resonance."
-			},{
+			}, {
 				"Title" : "Induction",
 				"Text" : "The Pygmalian Society sets few requirements for its members. Pygmalians are Awakened and Artists. All have that  desire, that need, to make a powerful difference to creation.  The Pygmalians have no hard rules for choosing their pupils.  Some Pygmalians seek particular individuals; others wait for pupils  to come to them. Time seems to play tricks on new Pygmalians,  and many even experience their first initiation before deciding  to join the order, or even knowing that they’re being initiated  — which is just as well, since, given the Legacy’s terrible reputation, very few mages would actually join without some kind of  revelation as to what the Pygmalian Society really is. In his induction, the mage enters a deep coma. Initiation  plays out as a hyper-real dream in which the mage, placed in the  surroundings of his mind’s eye, is forced to undergo an ordeal  of some kind. Ordeals vary, but they are always deadly serious,  and sometimes just deadly: the new Pygmalian might have to  endure what seems like a week-long ritual dance, survive a  crucifixion or experience being tattooed all over his body. In  the ordeal, the Pygmalian is guided or hindered (or both) by  a visionary figure who will return in each of the Pygmalian’s  initiatory ordeals. Sometimes, this figure is a mirror image of  the Pygmalian, a past self or a potential future self. Sometimes,  the guide is a sexual complement of the Pygmalian, a perfect  “other half” of the opposite gender to the initiate (or, if the  initiate is gay, the same gender). Sometimes, the guide is an  entirely different figure, perhaps one of the regular cast of the  initiate’s  dreams  elevated  to  the  position  of  spokesperson.  Sometimes, the guide is a mythical or literary figure: anything  from a Grail-questing knight to a talking animal that leads the  mage down a rabbit hole. When  the  ordeal  is  over,  the  Pygmalian  returns  to  consciousness and the real world. There is always some  anomaly that suggests that the ordeal was not a dream. A  Pygmalian who endures being tattooed wakes up with a small  tattoo on her face. A Pygmalian who endures crucifixion  in his vision wakes up with small scars on his hands, feet  and sides. Another Pygmalian finds small objects or items  of jewellery belonging to her mage’s guide in her pockets.  On the other hand, a Pygmalian who fails his initiation  usually has no memory of what happened, and is likely to be found very ill, or with broken bones or just covered from  head-to-toe with bruises or superficial burns. Although every Pygmalian tutor teaches his pupils in his  own way, the substance of the teaching is fairly constant: pupils  are taught the Pygmalian philosophy of Art. At the same time,  Pygmalian pupils receive absolute freedom with what they do  with the teaching, how they express their Art and whom they  choose to guide in turn. In each subsequent initiation, the Pygmalian undergoes  another hallucinatory ordeal, and, each time, gains another  sign that the ordeal was more than simply a dream. These  dream-ordeals, however, are not spontaneous unless the Sculptor has cut her tie to her tutor and decided to craft her soul  without further help. Soulcrafting for the second and third  attainments involves a preparatory ritual. Each tutor and pupil  design a unique ritual to induce the initiatory vision, but the  ceremony uses paraphernalia drawn from Western magical  traditions. Depending on the tutor, this could involve robes  or nakedness, magic circles, wands, knives and the like. Shortly before Cajean’s death, he underwent a fourth ordeal.  He told one of his pupils that he had learned the truth about  where these visions came from and who the visionary figures  really are. He died before he could lead anyone else to the  fourth attainment. If any other Pygmalians have reached the  fourth ordeal by themselves, they’ve kept quiet about what  they learned."
-			},{
+			}, {
 				"Title" : "Induction Before Choice",
 				"Text" : "Many Pygmalians say they had their initiatory  ordeal before they decided to join the Legacy, and  their initiatory ordeal guided them to their tutors.  That’s only partly accurate: Acanthus mages take  a free and easy view of Time, but even they don’t  engage in rampant causality violation. Unconsciously, an Acanthus mage’s soul can see  the possible futures and the option of joining the Pygmalians. The soul induces the initiatory coma; mind  and soul have their dialogue and reach a conclusion.  The soulcrafting is not complete, however. Unless the  nascent Pygmalian has a Gnosis of 4 or higher, he still  needs a tutor’s help to “lock in” his soul’s new shape. "
 			}
@@ -3068,7 +4110,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -3087,6 +4130,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -3122,7 +4183,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -3141,6 +4203,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -3176,7 +4256,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -3195,6 +4276,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -3230,7 +4329,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"L"
 		],
 		"Order" : [
@@ -3249,6 +4349,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -3284,7 +4402,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"L"
 		],
 		"Order" : [
@@ -3312,6 +4431,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -3347,7 +4484,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -3366,6 +4504,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -3401,7 +4557,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"L"
 		],
 		"Order" : [
@@ -3420,6 +4577,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -3455,7 +4630,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"L"
 		],
 		"Order" : [
@@ -3474,6 +4650,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -3509,7 +4703,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -3528,6 +4723,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -3563,7 +4776,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -3582,6 +4796,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -3617,7 +4849,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -3636,6 +4869,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -3671,7 +4922,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -3690,6 +4942,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -3725,7 +4995,8 @@
 		"Nicknames" : [
 			"Pathfinders"
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -3816,7 +5087,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -3835,6 +5107,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -3870,7 +5160,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -3889,6 +5180,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -3924,7 +5233,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -3943,6 +5253,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -3978,7 +5306,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -3997,6 +5326,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -4032,7 +5379,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -4051,6 +5399,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -4086,7 +5452,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"L"
 		],
 		"Order" : [
@@ -4105,6 +5472,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -4140,7 +5525,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -4159,6 +5545,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -4194,7 +5598,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -4213,6 +5618,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -4248,7 +5671,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -4267,6 +5691,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -4302,7 +5744,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -4321,6 +5764,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -4356,7 +5817,8 @@
 		"Nicknames" : [
 			"Mapmakers"
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -4375,6 +5837,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -4410,7 +5890,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -4487,7 +5968,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -4506,6 +5988,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -4541,7 +6041,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -4560,6 +6061,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -4595,7 +6114,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -4614,6 +6134,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -4649,7 +6187,8 @@
 		"Nicknames" : [
 			"The Feared"
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"L"
 		],
 		"Order" : [
@@ -4668,6 +6207,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : "The syntax of the spoken language of Atlantis isn’t fully understood by any mage alive today. Small nuances in how a word is spoken, or used, can create major differences in meaning that would be almost impossible to comprehend just by studying the writings of a dead language. This is especially true in a tonal language (such as Chinese) in which the same word can have multiple meanings depending on how the syllable is stressed. It is no wonder, then, that some Atlantean words are difficult to translate properly into modern languages built on comparatively limited concepts. There are some who claim that Timori is one such word that has likely received an incomplete translation. Timori can certainly be translated as fearful. The word probably was used in association with the Locust-Eaters, who forsook magic to take their place in what they perceived as the natural order of the world. But those who tread this path state that another possible translation for Timori, one that has been overlooked or suppressed by modern scholars, is “feared.”"
 			}
 		],
@@ -4703,7 +6260,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -4722,6 +6280,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -4757,7 +6333,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"L"
 		],
 		"Order" : [
@@ -4776,6 +6353,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -4811,7 +6406,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -4830,6 +6426,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -4865,7 +6479,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -4884,6 +6499,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -4919,7 +6552,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -4938,6 +6572,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -4973,7 +6625,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -4995,7 +6648,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -5014,6 +6668,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -5049,7 +6721,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R",
 			"L"
 		],
@@ -5069,6 +6742,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
@@ -5104,7 +6795,8 @@
 		"Nicknames" : [
 			""
 		],
-		"Tagline" : "",		"Hand" : [
+		"Tagline" : "",
+		"Hand" : [
 			"R"
 		],
 		"Order" : [
@@ -5123,6 +6815,24 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
+				"Text" : ""
+			}, {
+				"Title" : "Appearance",
+				"Text" : ""
+			}, {
+				"Title" : "Background",
+				"Text" : ""
+			}, {
+				"Title" : "Organization",
+				"Text" : ""
+			}, {
+				"Title" : "Suggested Oblations",
+				"Text" : ""
+			}, {
+				"Title" : "Concepts",
+				"Text" : ""
+			}, {
+				"Title" : "",
 				"Text" : ""
 			}
 		],
