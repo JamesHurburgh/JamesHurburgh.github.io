@@ -1,5 +1,5 @@
 
-referenceDataDefinitionList = [{
+wwData = [{
 		"Name" : "arcanum",
 		"Path" : "data/arcanum.json"
 	},
@@ -38,6 +38,10 @@ referenceDataDefinitionList = [{
 	{
 		"Name" : "books",
 		"Path" : "data/books.json"
+	},
+	{
+		"Name" : "legacies",
+		"Path" : "data/legacies.json"
 	}
 ];
 
@@ -63,7 +67,7 @@ function loadJson(url, callback) {
 
 function getData(dataName, callback) {
 	
-	$(referenceDataDefinitionList).each(function (index, referenceDataDefinition) {
+	$(wwData).each(function (index, referenceDataDefinition) {
 		if(referenceDataDefinition.Name == dataName){
 			if(!referenceDataDefinition.Data){
 				loadJson(referenceDataDefinition.Path, function (data){

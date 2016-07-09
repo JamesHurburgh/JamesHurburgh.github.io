@@ -12,10 +12,7 @@ $(document).ready(function () {
 	$("nav").load("webParts/menu.html");
 	$("footer").load("webParts/footer.html", function(){
 		theme($('#themeSelect'), "Readable");
-	});
-
-	
-	
+	});	
 	
 	function displayBook(book){
 		

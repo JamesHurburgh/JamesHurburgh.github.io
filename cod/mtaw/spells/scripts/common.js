@@ -177,6 +177,12 @@ function makeBookLink(bookName){
 }
 
 function makeLegacyLink(legacyName){
-	return legacy;
-	//return "<a target='_blank' href='legacy.html\?spell=" + escape(legacyName) + "'>" + legacyName + "</a>";
+	makePageLink(legacyName, "legacy")
+	//return legacy;
+	return "<a target='_blank' href='legacy.html\?legacy=" + escape(legacyName) + "'>" + legacyName + "</a>";
+}
+
+function makePageLink(name, type){
+	//return legacy;
+	return "<a target='_blank' href='" + type + ".html\?" + type + "=" + escape(name) + "'>" + name + "</a>";
 }

@@ -28,7 +28,10 @@ $(document).ready(function () {
 				},
 				columns: [
 					{ 
-						data: 'Name'
+						data: 'Name',
+						render : function (data, type, legacy) {
+							return makePageLink(legacy.Name, "legacy");
+						}
 					},
 					{
 						data : 'Source',

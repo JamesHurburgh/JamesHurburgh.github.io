@@ -1,6 +1,6 @@
 [
 	{
-		"Name": "Legion ",
+		"Name": "Legion",
 		"Nicknames": [
 			""
 		],
@@ -61,7 +61,7 @@
 		]
 	},
 	{
-		"Name": "Alienist ",
+		"Name": "Alienist",
 		"Nicknames": [
 			""
 		],
@@ -662,7 +662,7 @@
 		]
 	},
 	{
-		"Name": "Carnival Melancholy ",
+		"Name": "Carnival Melancholy",
 		"Nicknames": [
 			""
 		],
@@ -722,7 +722,7 @@
 		]
 	},
 	{
-		"Name": "Celestial Masters ",
+		"Name": "Celestial Masters",
 		"Nicknames": [
 			""
 		],
@@ -965,7 +965,7 @@
 		]
 	},
 	{
-		"Name": "Cloud Infinite ",
+		"Name": "Cloud Infinite",
 		"Nicknames": [
 			""
 		],
@@ -1145,7 +1145,7 @@
 		]
 	},
 	{
-		"Name": "Cult of the Doomsday Clock ",
+		"Name": "Cult of the Doomsday Clock",
 		"Nicknames": [
 			""
 		],
@@ -1385,7 +1385,7 @@
 		]
 	},
 	{
-		"Name": "Devourers of the Flesh ",
+		"Name": "Devourers of the Flesh",
 		"Nicknames": [
 			""
 		],
@@ -1445,7 +1445,7 @@
 		]
 	},
 	{
-		"Name": "Dreamers of the Black Sun ",
+		"Name": "Dreamers of the Black Sun",
 		"Nicknames": [
 			""
 		],
@@ -1565,7 +1565,7 @@
 		]
 	},
 	{
-		"Name": "Echo Walkers ",
+		"Name": "Echo Walkers",
 		"Nicknames": [
 			""
 		],
@@ -1685,7 +1685,7 @@
 		]
 	},
 	{
-		"Name": "Epiuad ",
+		"Name": "Epiuad",
 		"Nicknames": [
 			""
 		],
@@ -1865,7 +1865,7 @@
 		]
 	},
 	{
-		"Name": "Fangs of Mara ",
+		"Name": "Fangs of Mara",
 		"Nicknames": [
 			""
 		],
@@ -1925,7 +1925,7 @@
 		]
 	},
 	{
-		"Name": "Flood ",
+		"Name": "Flood",
 		"Nicknames": [
 			""
 		],
@@ -2105,7 +2105,7 @@
 		]
 	},
 	{
-		"Name": "Haruspex ",
+		"Name": "Haruspex",
 		"Nicknames": [
 			""
 		],
@@ -2225,7 +2225,7 @@
 		]
 	},
 	{
-		"Name": "Illumined Path ",
+		"Name": "Illumined Path",
 		"Nicknames": [
 			""
 		],
@@ -2466,7 +2466,7 @@
 		]
 	},
 	{
-		"Name": "Legion, The ",
+		"Name": "Legion, The",
 		"Nicknames": [
 			""
 		],
@@ -2586,7 +2586,7 @@
 		]
 	},
 	{
-		"Name": "Logophages ",
+		"Name": "Logophages",
 		"Nicknames": [
 			""
 		],
@@ -2766,7 +2766,7 @@
 		]
 	},
 	{
-		"Name": "Mimir’s Voice ",
+		"Name": "Mimir’s Voice",
 		"Nicknames": [
 			""
 		],
@@ -3547,7 +3547,7 @@
 		]
 	},
 	{
-		"Name": "Roses of Eden ",
+		"Name": "Roses of Eden",
 		"Nicknames": [
 			""
 		],
@@ -3607,7 +3607,7 @@
 		]
 	},
 	{
-		"Name": "Scelestus ",
+		"Name": "Scelestus",
 		"Nicknames": [
 			""
 		],
@@ -3739,7 +3739,7 @@
 		]
 	},
 	{
-		"Name": "Secret Order of the Gate ",
+		"Name": "Secret Order of the Gate",
 		"Nicknames": [
 			""
 		],
@@ -3799,7 +3799,7 @@
 		]
 	},
 	{
-		"Name": "Shadowbinders ",
+		"Name": "Shadowbinders",
 		"Nicknames": [
 			""
 		],
@@ -4101,7 +4101,7 @@
 	{
 		"Name": "Sphinx",
 		"Nicknames": [
-			""
+			"Pathfinders"
 		],
 		"Hand": [
 			"R"
@@ -4124,37 +4124,73 @@
 		"Sections": [
 			{
 				"Title": "Introduction",
-				"Text": ""
-			}
+				"Text": "What  makes  humanity  special?  Is  it  the  capacity  to Awaken?  Such  a  view  is  arrogant  in  the  extreme,  say the Sphinxes, for to look at the Sleepers as inferior is to ignore one’s own humanity. No, to the mages who choose to follow this Legacy, the true magic of humanity is language. More to the point, it is the capacity for symbolic recognition, to see a gesture or a marking, hear a collection of sounds, and from that understand. Human beings are optimized, either by the design of a greater being or the rigors of evolution, toward speech and language, both anatomically and neurologically. But all of the biophysical adaptations of the human body toward speech mean nothing without the ability to understand symbols. Upon this phenomenon (some would say “miracle”), the Legacy of the Sphinx is based. Walking the path of the Sphinx is an exercise in abstraction, for the Legacy teaches understanding without processing, learning truth without realizing fact.  A  Sphinx  sees  meaning  everywhere  —  in  the number of cracks in a sidewalk, in the seemingly random sounds from a baby’s babbling, in the texture of a brick wall. Intrinsic in this ability to find meaning anywhere is the knowledge that this meaning comes from somewhere. Sphinxes who cleave to the Atlantean model of mystical understanding posit that this meaning might come from ancient masters sending information forward in time, in a much more subtle way than with the ananke (see p. 330 of Mage: The Awakening). Those who do not follow the orders of the Pentacle — and even some who do — believe that this truth comes directly from the Supernal Realms. The name “Sphinx,” of course, comes from the mythological creature that Oedipus confronted near Thebes. He solved the riddle of the Sphinx, and she leaped to her death in horror that her secret was revealed. Whether the name “Sphinx” was one that members of this Legacy originally applied to themselves or not, they do not see themselves as jealous keepers of secrets. Indeed, they tend to view themselves as searchers trying to solve a riddle. That riddle is difficult to express, because it is so vast in scope, but the basic idea is this: If meaning can be found in anything, at any level of understanding or consciousness, then  what  is  the  ultimate  meaning?  Where  does  the  truth come from, and to what purpose?"
+			},
+			{
+				"Title": "Orders",
+				"Text": "While any  Mastigos can  become  a  Sphinx, the  Legacy’s  membership  is  primarily  drawn  from  the  Mysterium. The order’s predilection for finding, analyzing and  cataloguing knowledge, combined with the fact that the  Mysterium often encounters information too  dangerous to be read and understood by an  untrained mage, points members of all Paths  toward the Legacy.  Outside of the Mysterium, the order that claims  the largest number of Pathfinders is unquestionably the  Guardians of the Veil. Sphinxes are by nature superlative ciphers, capable of breaking almost any code  or circumventing any puzzle, given enough time.  The Guardians thus appreciate their ability to  weave  symbols  and  hidden  messages,  both  true and misleading, into the secret societies  and fronts that the order sets up. In fact, it  isn’t  uncommon  for  an  Epopt  to  be  a  Sphinx  herself or at least work with one. It’s easy for even the  Guardians themselves to become lost in the morass of  conflicting symbolism and double-blind codes, and a Sphinx  makes a good “skeleton key” when quick understanding and  interpretation are necessary. Warlocks of other orders do find their way to the Legacy as  well, of course. Sphinxes of the Adamantine Arrow tend to  use their ability to find meaning and truth in the mundane  as  a  way  to  avoid  danger  and  protect  those  around  them.  Pathfinders in the Free Council stay on the cutting edge of  linguistic  theory  and  language  development,  searching  for  ways  to  expand  people’s  understanding  of  each  other  and  themselves. The Silver Ladder’s few Sphinxes often believe  that the Ladder is the best way to recreate some of the conditions in lost Atlantis, and thus come closer to the secrets and messages that the ancients held."},
+			{
+				"Title": "Appearance",
+				"Text": "Sphinxes might come from any walk of life. The  Legacy is not culturally based, and so doesn’t dictate a lifestyle  or a given mode of dress. Most Sphinxes are contemplative  and observant, and many are easily distracted, staring for long  minutes at patterns of texture or light as they try to interpret  them. Pathfinders also tend to be good listeners and remain  open to communication with others. Thus, Pathfinders go out of their way to appear non-threatening and available."},
+			{
+				"Title": "Background",
+				"Text": "Prospective Sphinxes are often linguists, or at  least interested in language and symbolism. Some are computer  programmers working with code; others are teachers or speech  pathologists attempting to help others communicate. Some  don’t come from a background relating to communication at  all, but feel that the universe has a greater meaning that needs  to be deciphered.  Mastigos who choose this Legacy are often struck by the cacophony of Pandemonium during their Awakenings, and wish to interpret the ranting and screaming of the demons found there."},
+			{
+				"Title": "Organization",
+				"Text": "Sphinxes of the Mysterium have a worldwide  system of coded messages spread throughout a variety of media.  Small radio stations, public access television shows, magazine  articles, books and, of course, Internet sites, all serve as bulletin  boards for the Legacy. The messages are all heavily coded and  require time and effort to encode or decode, but the wealth of  knowledge that a Sphinx of the order can draw upon is great. Outside the order, Pathfinders have little  in the way of formal contact, though  when they encounter each other the  meeting is usually friendly.  The relationship between mentor  and student varies. Since the training requires so much intuition and  comparatively  little  actual  study,  some  students  come  to  resent  their  mentors,  feeling  that  they  are  deliberately  keeping  secrets  and knowledge from the students.  Others  (typically  those  who  go  on  to become successful as Sphinxes)  recognize that the philosophy and  wisdom of the Legacy is extremely  difficult  to  teach,  and  respect their  mentors  all  the  more because of it."},
+			{
+				"Title": "The Mysterium Network",
+				"Text": "Any Sphinx, Mysterium or otherwise, can take  advantage of the network of information created  by the order’s Pathfinders. Doing so requires  purchasing the Contacts Merit (Mysterium Network). The information that can be gained via  the network is vast and usually accurate, but  requires use of the Hidden Meaning Attainment  (see p. 96) to ask a question and decode the  answer. As such, the network is almost useless  for time-sensitive queries (most questions get  answered in less than a month, at least)."},
+			{
+				"Title": "Suggested  Oblations",
+				"Text": "Solving a puzzle (crosswo r d ,  S u d o k u ,  even  certain  video  games). Translating  a  written work, transcribing a speech  (be  it  a  story,  monologue, even a political address). Facilitating communication (by acting as a mediator or translator, for instance)."},
+			{
+				"Title": "Concepts",
+				"Text": "Translator, spy, speech-language pathologist, linguist, historian, fortune-teller, therapist, humanist philosopher."},
+			{
+				"Title": "History",
+				"Text": "After the Fall of Atlantis and the subsequent scattering of  mages across the world, language became a barrier rather than  a tool for the Awakened. The greatest secrets of the Supernal  Realms were fractured, shards of power and knowledge spread  out among the mages of the world. Without the Island of the  Magi’s society to compile the knowledge, the Awakened had  to work alone or in small cabals, never knowing enough of  the truth to recapture their past glories.  The Sphinx Legacy arose from the frustration of those mages.  The Mastigos of the time knew that with the application of the  Mind Arcanum they could comprehend any earthly language,  but  that  wasn’t  enough.  Language  wasn’t  the  true  barrier,  these mages discovered, because a language is merely a set of  symbols. These primordial Sphinxes realized that inherent in  the process of making symbols lay the solution to the confusion caused by the destruction of the Celestial Ladder — that  they could look beyond graphemes and sounds and simply  communicate with pure meaning.  Modern-day  Sphinxes  sometimes  claim  that  the  Legacy  was an important part of the formation of the Mysterium,  and  that  might  well  be  true. Whether or  not this was the  case, the Sphinx  Legacy  became,  over time, the province of  the  Wings  of  the  Dragon  almost  exclusively.  While  a  lone  Mastigos  might occasionally discover and follow the Legacy, the order guarded its  secrets jealously.  Something as basic to humanity  as the quest for communication  and language, however, wasn’t  going to remain under lock  and key forever."}, 			{
+				"Title": "The De Velasco Resurgence",
+				"Text": "The  first  reliably  recorded  instance  of  a  mage  outside  the  Mysterium joining  the Legacy came  in 1575 or so,  in  a  book  written  by  a Spanish nobleman (and Mastigos) named Juan de Velasco. De  Velasco had observed his two young cousins, who were both  born deaf, being tutored by a Benedictine monk named Pedro  Ponce de Léon. Classical opinions on the deaf stated that they  had very little education potential and that they could never  learn to speak (if deafness occurred pre-lingually). Ponce de Léon,  himself a Sleeper, challenged that opinion, and taught the de  Velasco brothers not only to read and write, but to speak three  different languages. He did not, however, record his methods,  and so history would have to wait for widespread methods of  educating the deaf, but Juan de Velasco watched his cousins’  lessons with interest. He was less interested in teaching deaf  people than in the conveyance of meaning in non-verbal ways.  He wrote several treatises on the topic for his Consilium, the  most famous of which was titled “The Art and Science of the  Recognition of Meaning.” In that document, he detailed how he  was able to send coded messages through paintings and divine  the immediate future by listening to hymns at Mass (as later  mages have pointed out, de Velasco probably wasn’t reading the  future per se; rather, he was reading probability).  De Velasco’s writings have been translated into many different  languages over the years, although modern Sphinxes have found  that reading them in their original Latin yields layers of meaning far beyond the simple message of the words. The Mysterium  currently holds most of these documents, but de Velasco was a  prolific writer and painter, and historians the world over might  unknowingly hold either one of his esoteric writings or hauntingly  beautiful paintings. Either type of work might actually be a road  map to a rote, an Atlantean temple or some other worthy goal. De Velasco left no record behind of a pupil, but it is widely  accepted that de Velasco passed his learning along to another  Mastigos. Whether this pupil was a member of the Mysterium  or not is a debated issue; the order claims that he was, while  members of all of the other orders also claim him (and often  have records that seem to support their claims). The Mysterium has history on its side, of course, but after de Velasco the  Legacy became available to any mage of the order who wished  to become a Pathfinder. Since then, the Mysterium has tried  to project the image that they created the Legacy in the first  place. Even so, the Legacy remains the province of the Warlocks  just as much as that of the Alae Draconis. Other than de Velasco, history has not produced famous  Sphinxes. The Pathfinders tend to be inscrutable and unobtrusive, even by Awakened standards, and, of course, any mage  who achieved mastery of the Legacy’s Attainments would be  exceptionally difficult to find in any record (see the Off the  Path Attainment, below). The Mysterium, true to form, tries  to keep records of the members of the order who have gone on  to become Pathfinders, but the Sphinxes themselves often alter  such records, leaving behind only obtuse riddles that, properly  interpreted, might lead to the mage in question."},
+			{
+				"Title": "Society and Culture",
+				"Text": "Because so much of the Sphinx mindset and activity relies  on observation rather than direct action, mages outside of the  Mysterium don’t often know much about the Legacy. What  they do know tends to depend on who they hear it from or  the particular Sphinx they’ve encountered. Some Sphinxes  are infuriatingly cryptic, either because they genuinely enjoy  lording their uncanny insight over others or because they are  inundated with so much information that they fear to reveal  too much or too little. Other Sphinxes are happy to share what  they know, but are well aware that their information tends to  be true, but lacking in context. Consider: A Sphinx can read a  thick book in an ancient language in an hour and understand  all of the information it contains, but he will be hard-pressed  to convey the nuances and intricacies of the information. His  rendition of the information resembles a quick summary, and  this leaves listeners to wonder about its accuracy. Indeed, it’s  not uncommon for non-Sphinxes to assume that a Pathfinder  is using some kind of fortune-telling method to glean the information, and such methods (often based on Time or Space  magic) aren’t often completely accurate. The Sphinxes protest  this, saying that their methods rely on direct observation rather  than symbolic guesswork, but because those methods are based  largely on intuition that non-Sphinxes do not possess these  protests often go unheard. In the end, many Pathfinders find  it easiest not to advertise their membership in the Legacy and  to offer help and advice only when it is requested. Of course,  that sometimes results in other mages labeling them reclusive  and unhelpful, but an experienced Pathfinder has long since  given up on pleasing all the people all the time.  The culture of the Sphinx Legacy is one of research, academia  and intuition. Sphinxes aren’t necessarily impulsive, but they  do tend to be easily distracted, and mentors of the Legacy encourage Pathfinders to follow clues that they see in the hidden  patterns of the world. This leads Sphinxes to cross paths with  cabals of mages and even stranger inhabitants of the World of  Darkness, and so members of the Legacy tend to be skilled at  either diplomacy or flight (or, more rarely, defensive combat).  Among the Awakened, Sphinxes try to become well-versed in  which cabal holds influence in what area and who the local  movers  and  shakers  of  the  Consilium  are,  just  in  case  the  Sphinxes need to name-drop to justify trespassing. Their skill  in dealing with people grants them a great deal of latitude in  such situations, and so Sphinxes often occupy positions in a  Consilium such as Herald or Councilor.  In the Mysterium, the Sphinx takes up the role of guardian,  much like his namesake. Sphinxes don’t ask riddles of seekers, but they also don’t give information out to just anyone.  This isn’t due to a perception that others aren’t worthy of the  knowledge (usually), but rather that the knowledge in question  might be dangerous. Sphinxes can absorb information without  attracting its attention, learning by observation of patterns  rather than direct reading and study. As such, a Sphinx might  administer a coded test to a mage seeking a book or fact that  the Sphinx considers risky. If the mage has the patience and  skill to decipher it, the Sphinx considers it safe to grant the  mage what he seeks. This role, of course, is the very definition of a thankless task, since it brands the Sphinx as a stingy  distributor of knowledge. Even so, it is a role for which the Pathfinders are uniquely suited, and so members of the Legacy  who belong to the Mysterium often become Censors.  The Legacy’s overarching philosophy — that the universe  has meaning and that this meaning was put in place deliberately — doesn’t actually see much discussion among Sphinxes  unless one of them has made a breakthrough. New members  of the Legacy often hear the theory on the matter that their  tutors espouse, and pick up more as they interact with other  Pathfinders. Most Sphinxes have preconceived notions about  the nature of the meaning of the universe. Popular hypotheses  include the following: • God: Regardless what religion or faith the Sphinx espouses,  the notion of a Divine creator (or at least organizer) is almost  as popular among mages as among Sleepers. The fact that no  explanation of Atlantis, the Fall, the Celestial Ladder or the  Supernal  Realms  actually  contradicts  this  belief  is  helpful.  Theist Sphinxes believe that the messages they see in everyday  patterns are God’s communication with Earth, and that the  language of pure meaning is the true divine language.  • Oracles: Sphinxes with a more magic-centered view of  the world believe that the Oracles, the secret masters trapped  in the Supernal Realms during the collapse of the Celestial  Ladder, manipulate events and patterns so subtly that these  machinations are virtually unnoticeable unless one is specifically looking. These Sphinxes claim that, with rare exceptions  (such as the ananke), the Oracles cannot communicate directly,  as  the  Abyss  thwarts  them.  Only  by  nudging  the  world  in  imperceptible ways — causing a flock of  birds to take flight at the right second,  a gust of wind that alters the direction  of raindrops, and so on — can they send  their messages. Of course, if the Oracles  can  do  this,  the  Sphinxes  sometimes  wonder, what stops the Exarchs from  doing so as well? The answer is: nothing,  and the Seers of the Throne boast their  share of Pathfinders.  • The Supernal Realms: Although the  Sphinx  Legacy  belongs  as  much  to  the  Warlocks as to the Mysterium, comparatively  few Mastigos espouse this particular theory  to explain the origin of the messages in the  world. Those who do are quite different  from the usual contemplative and observant  Pathfinders  —  such  Mastigos  tend  to  be  fearful and paranoid. Some Sphinxes believe  that the denizens of the Supernal Realms are  responsible for the informative patterns that  the Sphinxes so diligently analyze. These denizens might not even be creating these patterns  deliberately, the mages say, but the Fallen World  reflects the Supernal Realms. Therefore, the true  nature of reality comes through in everything the  world has to offer, regardless of whether Sleepers (or  even most of the Awakened) are prepared to look for it.  Of course, the implications of the inhabitants of Pandemonium  leaving hints for mages to find are troubling, to say the least.  This, perhaps, is why this theory has more adherents among  Mysterium Sphinxes of other Paths. The notion that the patterns  are the inhuman whispers of demons is profoundly disquieting.  No matter which Supernal Realm the patterns originate from,  though (and it would make more sense to assume that allof  them have some input), their natives are inscrutable and largely  unknowable by human standards, yet certainly not all-powerful.  Is there a greater design above even the mysterious clues left in random patterns of wind, ink and brick?"},
+			{
+				"Title": "Induction",
+				"Text": "Prospective Sphinxes often begin their training for the Legacy  before they know it exists. Inquisitive and persistent, they pay  close attention to the world around them, searching for an  overlying meaning. Chaos theory, fractal theory and even the  “theory” of intelligent design have produced students of the  right mindset to become Pathfinders. If a mage looks deeply  enough into the right patterns, using the right methods, he  might receive a flash of insight that allows him to break a message coded with the Hidden Meaning Attainment. Alternately,  his studies might just lead him to a mage already known for  the same kind of research. In any case, sooner or later the  prospective Sphinx finds a Sphinx. Presuming  that  the  Sphinx  that  the  prospective  member  finds  is  willing  and  able  to  take  on  a  pupil,  and  that  the chemistry between the two mages is of the right sort to permit  such a relationship, the tutor typically inundates the student  with coded messages. At first, the mage simply uses mundane  codes, starting with simple alphabetical ciphers and moving up  to complex encryption. The mage doesn’t need to learn how  to break all of these codes, and certainly isn’t forbidden from  using magic in his attempt. The important lesson here is to  look beyond letters, numbers and words and see meaning in  markings, sounds and patterns. This kind of approach isn’t easy  to teach, as it relies more on intuition than process, and some  mages simply aren’t up to the task. The tutor watches carefully  to see if his student is capable of learning what the tutor is  presenting, of seeing a meaning greater than the message. If  so, they can begin the process of soulcrafting. If not, the tutor  gently (or not-so-gently, depending on the mage in question)  suggests that the student might find what he seeks elsewhere.  In the Mysterium, the process works a little differently. Mages  who show a predilection for puzzles, ciphers and language are  often told about the Legacy in a roundabout fashion (so as to  avoid making it seem as though membership in a Legacy is  being offered or suggested). A mage who is a good candidate  for becoming a Pathfinder will pursue information about the  Legacy, or so goes the theory. Once word gets out in a given  Consilium’s  Mysterium  cabal(s)  that  a  mage  wants  to  join  the Legacy, the network becomes activated and the mage’s  accomplishments, history, faults and foibles are made known  to any Sphinx who bothers to check. If the mage is a good fit  for the Legacy, a tutor arranges to travel to the student or have  the student brought to him for training. In either case, the stages of soulcrafting don’t require much  in the way of ceremony. Once a mage has reached the required  level of power, his tutor assists him in delving deeper into the  mysteries of the world’s wisdom. This is normally accompanied  by several days of study, questioning and observation of whatever phenomena the mentor feels hold the wisdom the student  needs in order to progress. Some tutors hole their students up  in libraries preceding a new Attainment, others immerse their  charges in as much sensation as possible in order to force the  student to focus on one pattern at a time. Tutors, whatever their methods, watch their students for  signs of madness at all times. When everything around a mage  is significant, when nothingis coincidence or meaningless, he  can feel paralyzed and helpless, afraid to do anything for fear  of offsetting some cosmic balance. Alternately, some Sphinxes  become drunk with the power and knowledge they possess,  striving to learn as much as they can to exert maximum possible influence in the world. Either of these eventualities is  cause for alarm to the tutor, because they distract the student  from his quest to learn the origin of meaning. A Sphinx who  degenerates too much or too quickly in Wisdom might find  himself  placed  in  an  oubliette,  magically  deprived  of  any  sensation whatsoever. It is believed that, in this kind of environment with no patterns from which to derive information,  that a mad Sphinx can find himself again and regain his sanity.  This doesn’t always work, of course; sometimes the madness  just intensifies, but the oubliette is the best the Legacy can do to help. The alternative is to remove the mage’s ability to  see the world’s meaning permanently, and the only way to do  that is to kill him."},
+			{
+				"Title": "",
+				"Text": ""}
 		],
-		"AttainmentDescription": "",
+		"AttainmentDescription": "The Attainments of the Sphinx are, for the most part, perceptive in nature rather than proactive. To the Pathfinders, the  important and most difficult part of problem-solving is gaining  the knowledge required to solve it. Alexander’s brutish solution  to the Gordian Knot repulses them, because it sends the message that brute force can replace patience and understanding.  Destructive magic can be countered, manipulative magic can  be redirected, but magic that hides knowledge cannot stop a persistent and intelligent willworker.",
 		"Attainments": [
 			{
 				"Order": 1,
-				"Name": "",
+				"Name": "Hidden Meaning",
 				"Prerequisites": [
 					"Gnosis 3",
-					""
+					"Fate 2",
+					"Investigation 2"
 				],
-				"Description": ""
+				"Description": "The Sphinx’s first Attainment allows her to find and decipher  wisdom in the mundane. Anything that has a pattern can be  used for this purpose, be it cracks in the ceiling or the calls of  a flock of birds. The mage merely needs to study the pattern  for a few seconds to gain the information contained therein.  The effect is similar to the Fate 1 “Interconnections” spell  (see p. 148 of Mage: The Awakening), except that the Attainment requires only an instant action and bestows information  as though the mage had achieved five successes on the roll.  Sphinxes, therefore, are awash in information if they stop to  consider it, able to see connections, however faint, between  any objects, people or places in sight. In addition to see these  sympathetic connections, a Sphinx can use this Attainment to  solve puzzles and riddles, since she can see the patterns behind  their creation. Sphinx characters with this Attainment receive  a +3 modifier to all Mental rolls involving riddles, puzzles,  mazes or other such conundrums.  A  more  common  use  of  this  Attainment,  however,  is  its  ability to hide meaning within seemingly random patterns. A  Sphinx can use Hidden Meaning to write (or draw or record) a  message in a code that no Sleeper cipher can crack. The mage  must physically create the message, either by writing a seemingly innocuous letter, drawing a picture or any other method  she prefers. The player rolls Manipulation + Investigation or  Academics to encrypt the message. When another mage with  this Attainment tries to decipher the code, her player must make  an extended Intelligence + Investigation roll to do so, with a  number of required successes equal to [5 x the successes on the  encryption roll]. Again, each roll requires an hour of deciphering. The encoding mage may choose to forego her roll, meaning  that any Sphinx can decode the message automatically.  A mage with Fate 2 can also attempt to uncover the meaning  in the message. First she must be aware that the underlying  meaning exists, which is by itself difficult (she might be tipped  off by an ally, a hunch or even the Dream Merit). She then  casts an improvised and extended Fate 2 spell, with a number of required successes equal to [5 x encoder’s successes,  minimum of five].  Optional Arcanum: Mind 2 A Sphinx who has studied the Arcanum of Mind can use her  knowledge of the patterns and intrinsic meaning to aid her in  interactions with others. By studying a person’s movements, the  subtle messages conveyed by facial expression, body language  and breathing and even how others react to him, the Sphinx  gains an advantage in dealing with him. This effect is similar  to the Mind 2 “First Impressions” spell (see p. 208 of Mage:  The Awakening). The Sphinx may add her dots in Mind as a  dice bonus to the first roll made with a given target.  Many Pathfinders discover that the first Attainment of the  Legacy is all that they require. Indeed, much of the Legacy’s  reputation is based upon the knowledge and insight conveyed  in Hidden Meaning — the ability to solve puzzles and escape  labyrinths, to see meaning in the mundane. Sphinxes who  continue on use this Attainment as a basis upon which later,  more powerful magic rests. Those who pursue other agendas,  however, use Hidden Meaning to send messages to double  agents in other factions (or even orders), to share research  with colleagues around the world, right under the noses of  their enemies, and to help Sleepers and even other mages solve  puzzles that no methods the Fallen World has produced can  fathom. Sphinxes who make frequent use of this Attainment  to encrypt messages often develop a preferred format for those  messages.  One  Sphinx  might  design  websites  dedicated  to  some inane fandom, while another writes poetry reproduced  only in small-circulation periodicals. As long as the message  reaches its intended viewer, the Sphinx doesn’t often care how  the vehicle for the message is regarded.  Sometimes, though, a Sphinx creates a vehicle for a message  that  has  resonance  and  value  in  its  own  right.  When  this happens, the message might gain fame and widespread  circulation, inadvertently passing the message along to any  mage  who  knows  how  to  look  for  it.  Some  such  messages  are even rumored to trigger Awakenings, as Sleepers on the  verge of enlightenment see the Supernal Realms lurking in  an otherwise mundane painting or song."
 			},
 			{
 				"Order": 2,
-				"Name": "",
+				"Name": "Truth Without Knowledge",
 				"Prerequisites": [
 					"Gnosis 5",
-					""
+					"Fate 3", "Investigation 3"
 				],
-				"Description": ""
+				"Description": "Knowing the truth of the world by interpreting its many  hidden messages is only the first step toward the superlative  understanding that the Sphinx hopes one day to reach. Along  that way, however, she learns to take advantage of the clues  that surround her as to the fundamental nature of reality. To  the untrained eye, she looks lucky or simply confident, but to  a mage, every action she takes is fraught with significance. The second Attainment that a Sphinx can achieve allows  her  to  mimic  the  effects  of  the  Fate  2  “Exceptional  Luck”  spell (see p. 151 of Mage: The Awakening). No roll or Mana expenditure  is  required.  The  mage  simply  takes  an  instant  action to study the patterns of meaning around her, in the  same way as described for the Hidden Meaning Attainment.  The player may then designate a number of rolls equal to the  character’s Gnosis rating during the same scene to have the  9 again quality.  Pathfinders also find that the more they rely on this Attainment, the more resonant their actions become. Mage Sight  cast through the Fate Arcanum can easily detect them. Mages  attempting to use Fate spells such as “Interconnections” or  “The Sybil’s Sight” receive a +1 dice bonus during any scene  in which Sphinx has used this Attainment to gain the 9 again  quality. This bonus can cancel penalties levied by the Occultation Merit and spells such as Fate 3 “Fabricate Fortune.” Optional Arcanum: Mind 3 By listening to patterns of sound in speech (or watching  patterns of letters in written discourse), the mage can understand anything she hears or reads. This mimics the Mind 3  “Universal Language” spell, save that the mage can only understand rather than express with this Attainment. Also, she can  perform research and learning-related extended Mental tasks  in half the time they would normally take (that is, if every roll  in an extended task would normally take an hour, this time is  reduced to 30 minutes).  The second Attainment of the Sphinx Legacy opens the mage  further to the truth of the world and the hidden messages it  contains, but still does not address the question of who or  what might be sending these messages. Pathfinders at this stage  make superb interpreters, translators and researchers (which is  one reason the Mysterium teaches this Legacy). More martial  Sphinxes enjoy the tactical benefits of this Attainment, but are  careful when using it in conflict with other Awakened, as the  Sphinxes are wary of coming to the notice of powerful mages  by weaving themselves too tightly into the universe’s inner  workings. Indeed, the Sphinxes tell stories of members of the  Legacy who have become unable to see the world as anything  other  than  an  abstract  mess  of  implication  and  possibility  — unable to perceive light or sound anymore, they function  solely through the information this Attainment grants."
 			},
 			{
 				"Order": 3,
-				"Name": "",
+				"Name": "Off the Path",
 				"Prerequisites": [
 					"Gnosis 7",
-					""
+					"Fate 4"
 				],
-				"Description": ""
+				"Description": "The mage learns to “walk between” the paths of meaning in  the world, disappearing from the cycles of destiny. As far as the  world and its many layers of hidden messages are concerned,  the Sphinx no longer exists (for as long as this Attainment is  active). The Sphinx spends a moment in silent meditation,  perceiving the threads of fate and stepping between them (this  requires three turns of contemplation). After this, the mage’s  destiny can remain “invisible” in this manner for as long as  she wishes, but during this time she cannot use the Truth  Without Knowledge Attainment to gain the 9 again quality,  or cast any spell altering another person’s destiny (this include  spells dealing with oaths, such as “Alter Oath,” as well as spells  such as “Occlude Destiny” or “Destroy Bindings”). While the  Attainment is active, however, she is immune to all spells that  would perceive, alter, improve or denigrate her fate (including  the  spells  just  mentioned).  All  sympathetic  magic  targeted  against her is considered to be four steps further removed.  (So, to even attempt targeting her with a sympathetic spell,  the caster would need an Intimate connection, which would  then suffer a –10 penalty as though it were Described.) Also,  the Sphinx is extremely difficult to scrutinize magically. She  is considered to have the Occultation Merit at a rating equal  to her dots in the Fate Arcanum. This  Attainment  does  not  make  the  character  physically  invisible, but does make her easy to ignore. She receives a +3  on all Stealth rolls while the Attainment is active.  Optional Arcanum: Mind 4 Reading a person’s intentions isn’t difficult; a Sphinx can  decipher a target’s basic mood and reactions enough to play  off them with the first Attainment of the Legacy. At this advanced stage, however, a tic of the eye or a shift of the hand  betrays everything about the target — his hopes, his fears and  even his memories. This effect is much like the Mind 4 “Read  the Depths” spell (see p. 215 of Mage: The Awakening). The  mage must spend at least one turn studying the target before  using this Attainment. After that, the player rolls Intelligence +  Academics – the subject’s Composure. Unlike Read the Depths,  mages with the Mind Arcanum do notget a chance to detect  the Attainment’s effect, since it is based entirely on external  observation rather than telepathic intrusion. Modifiers for distant memories might apply, but memories or experiences that  significantly contributed to the target’s development (such as  child abuse or the death of an important figure) might actually  grant bonuses, even if the target has repressed them.  The third Attainment of the Legacy allows the Sphinx to  exert  some  influence  over  the  world’s  meanings.  Very  few  Sphinxes progress to this point, because most of them focus  more on discovering what being or phenomenon is responsible  for the meaning of the world. Those who do are among the  most powerful and inscrutable beings in the World of Darkness, fully in tune with the world’s patterns and able to step outside of those patterns at any time."
 			}
 		]
 	},
@@ -4459,7 +4495,7 @@
 		]
 	},
 	{
-		"Name": "Tamers of Blood ",
+		"Name": "Tamers of Blood",
 		"Nicknames": [
 			""
 		],
@@ -5088,7 +5124,7 @@
 		]
 	},
 	{
-		"Name": "Timori ",
+		"Name": "Timori",
 		"Nicknames": [
 			"The Feared"
 		],
@@ -5208,7 +5244,7 @@
 		]
 	},
 	{
-		"Name": "Tremere liches ",
+		"Name": "Tremere liches",
 		"Nicknames": [
 			""
 		],
@@ -5532,7 +5568,7 @@
 		]
 	},
 	{
-		"Name": "Whipping Boys ",
+		"Name": "Whipping Boys",
 		"Nicknames": [
 			""
 		],
