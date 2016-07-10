@@ -3585,9 +3585,9 @@
 	}, {
 		"Name" : "Orphans of Proteus",
 		"Nicknames" : [
-			""
+			"Shifters"
 		],
-		"Tagline" : "",
+		"Tagline" : "Am I not both man and beast, one and the same? I say that this makes me more than man or beast alone.",
 		"Hand" : [
 			"R"
 		],
@@ -3607,52 +3607,49 @@
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
-				"Text" : ""
+				"Text" : "They have been with us since before the beginning. Before Atlantis called. Before apes learned to walk upright and pile stones atop one another to make their caves. Before man chose to set himself apart from beasts and trees and rocks, they knew the truth: that the circle of life is broad enough to include all things “organic”and “inorganic,”that this great wheel turns easily from one form to another, that man and beast and tree and rock are one. It was they who first took to the grazing-fields, to follow the comings and goings of the herds. And when they had learned the steps of the herddance and could sing the words of the herd-song, they put on themselves the skins of the herd-dress and slept in the cold and rain until they became part of the herd itself. It was they who first ran with the wolves and learned the worth of honesty when the wolves pointed toward unseen prey in hopes of sharing the kill. And it was they who stalked against the great cats and learned the value of deception, letting other hunters pass by in hopes of keeping the “lion’s share” of the kill for themselves. They it was who flew with the birds, crept with the vines and slept with the stones. They went where others could not go and did what others could not do. They learned the lessons that life taught from every angle and brought their knowledge back to their tribes to teach the business of living. They sought wisdom to lead their tribes out of darkness and cold and hunger, and set mankind on a path that would eventually lead to civilization. But mankind mistook its new powers of stewardship over the land as mastery, and regarded the animals, plants and rocks only as resources to be plundered rather than as partners in the circle of life. In their hubris, they forgot the wisdom that they had taught and dismissed their utterances as backward superstition. They who had sacrificed the semblance of their humanity for the greater good were now cast out. Ostracized and despised, they were relegated to the status of monsters and bogeymen used to frighten unruly children. The mighty warriors who had once donned hide and claw and fang in the service of their people were now cast in the role of bloodthirsty murderer. Those who lived by the old lore of leaf and stone were hunted down and torn to pieces or burned in public spectacle. The horns and hooves of the most sacred were denounced as emblems of evil. All the oldest languages of the world once had a name for them, most now forgotten. In modern English, they are known as the Orphans of Proteus, for their metamorphosis ability. Some say they, not the Atlanteans, were the very first humans to Awaken, and some even go so far as to suggest that all other types of magic are derived from theirs. Whether that is true or not, many now consider them to be a dying breed. Marginalized by the encroachment of civilization, they are usually found only at the fringes of mage society. They engage in few formalities, and the kinship of spirit they share is something that is felt, unspoken, deep within their souls. Inheritors of the Proteus Legacy can be unnerving, not only to other mages, but to those who know nothing of magic. Social customs and mores —at least, those of the modern civilized world —mean little to them, and they may at times break laws, cross boundaries or ignore table manners and dress codes without compunction. This is not to say that they are dumb brutes. Members may exhibit as much intelligence and compassion as any other sorcerer. They tend to be plain spoken, even rudely blunt, and act impulsively upon primal urges known only to them. For those who have experienced the non-human world directly, such phrases as “nature red in tooth and claw”or “the force that through the green fuse drives the flower”are no mere poetic conceits, but the very bedrock of reality."
 			}, {
 				"Title" : "Appearance",
-				"Text" : ""
+				"Text" : "The more time an Orphan spends using her attainments —whether they provide animal, vegetable or mineral features —the more likely she is to physically resemble that form in some way. Common features include excessive hairiness, a forward-slumping posture, enlarged teeth and nails, overdeveloped ears or nose, iridescent eyes, dermatological conditions that cause the skin to resemble the bark of a tree, or an angular craggy profile like the face of a cliff. In general, all scratches, scars, rashes, infections and other outwardly visible ailments that might mark the mage while in animal form remain visible in an analogous place on his human form, (although these features tend to fade over time if the Orphan avoids frequent use of his attainments)."
 			}, {
 				"Title" : "Background",
-				"Text" : ""
+				"Text" : "It is generally assumed that Orphans come almost exclusively from beyond the fringes of civilization — rural areas, remote wildernesses or underdeveloped nations —and this is often the case. As such places dwindle and disappear, however, more inheritors of the Proteus Legacy can be found in cities and suburbs, taking on the forms of domesticated animals, cultivated plants and manufactured objects. Of these, some may be descendants of tribal cultures that knew and respected the power of the Orphans, while others have rejected modern culture and attempt to reconstruct and/or reclaim earlier values that they consider to be safer, healthier and (so to speak) more humane."
 			}, {
 				"Title" : "Organization",
-				"Text" : ""
+				"Text" : "All Orphans are Thyrsus, Awakened to the Watchtower of the Primal Wild. While they are often initiated into one order or another (although some are apostates), they tend to spurn the traditional politics and schemes of Awakened society, retreating to the wilderness as soon as they adopt this Legacy. Most Orphans tend to be either solitary hermits or isolated, clannish groups, so they have little in the way of overall social organization. Affinity groups may spontaneously form along the lines of preferred habitats, species, phylum or kingdom. Regional groups tend to form around places like virgin wilderness, wildlife refuges or well-conceived parks as protection, or as a response against urban expansion, dumping sites and other ecological crime scenes. Communication is generally conducted through non-human media, with speech expressed in the languages of animals, and with “written”messages formed by anomalous plant growth or geological formations. Orphans tend to claim certain territories, which brings them into conflict with other supernatural beings that might want such territories for their own purposes. Some Orphans are nomadic, following the migratory patterns of birds or herd animals, or the hunting habits of certain predators."
 			}, {
 				"Title" : "Suggested Oblations",
-				"Text" : ""
+				"Text" : "A sacred hunt; the ritual acting out of an animal’s behavior; the ceremonial offering of food to animals; the ritual arrangement of rocks and stones in a certain area; sacred gardening"
 			}, {
 				"Title" : "Concepts",
-				"Text" : ""
-			}, {
-				"Title" : "",
-				"Text" : ""
+				"Text" : "Ecologists and conservationists, animal wranglers, rural hermits, tribal or “primitive” folk"
 			}
 		],
-		"AttainmentDescription" : "",
+		"AttainmentDescription" : "Most Orphans work to emulate a particular life form, such as a bear, cat, eagle or even a tree. Some eccentrics choose to delve into the mysteries of mineral “life.”",
 		"Attainments" : [{
 				"Order" : 1,
-				"Name" : "",
+				"Name" : "Snake Skin",
 				"Prerequisites" : [
 					"Gnosis 3",
-					""
+					"Life 2 (primary)", "Mind 1", "Animal Ken 2 or Survival 2"
 				],
-				"Description" : ""
+				"Description" : "The mage gains the ability to regenerate wounds to her body, similar to the Life 2 “Self-Healing”spell (p. 183), by sloughing off her damaged skin and replacing it with a freshly grown one. An instant action is required and Stamina + Athletics + Life is rolled. Each success heals one bashing or lethal point of damage. This action can be made reflexive in turn by spending one Willpower point. The user can also communicate with animals in their own language of behaviors, growls, grunts, cues and/or markings. A Presence + Animal Ken roll and instant action is required to communicate simple concepts. She can communicate only the kind of information that another animal of that type could convey to one of its fellow species."
 			}, {
 				"Order" : 2,
-				"Name" : "",
+				"Name" : "Beast Gift",
 				"Prerequisites" : [
 					"Gnosis 5",
-					""
+					"Life 3"
 				],
-				"Description" : ""
+				"Description" : "The mage can transform a portion of her body with a single, specific animal or plant feature, such as bear claws, cat eyes or tree-bark skin, similar to the Life 3 “Transform Self” spell (p. 187). Doing so requires an instant action, during which she can move up to her Speed, but no roll is needed. She must choose her unique feature upon gaining this attainment, and cannot change it thereafter. The shift lasts for up to one hour per activation. Any natural weapon (claws, fangs) she gains adds two dice to attack rolls (and damage is lethal), while a protective feature (fur, tree bark) provides two armor points. The character can also now heal aggravated wounds using Snake Skin (above), but it also requires the expenditure of one Mana. Optional Arcanum: Matter 3 If the mage also knows Matter 3, her unique transformative feature could be mineral rather than organic. She might shift her fists or feet into stone, or cover her epidermis with a layer of thin, flexible shale “scales.”Stone fists or feet add four dice to punches or kicks, but the damage is bashing instead of lethal. Stone skin provides three points of armor."
 			}, {
 				"Order" : 3,
-				"Name" : "",
+				"Name" : "Beast Form",
 				"Prerequisites" : [
 					"Gnosis 7",
-					""
+					"Life 4"
 				],
-				"Description" : ""
+				"Description" : "The mage can now reflexively shapeshift at will into a single, specific creature or plant, similar to the Life 4 “Shapechanging”spell (p. 190). The shift lasts for up to one hour per activation. She does not suffer the problems of losing herself in a form’s mindset. If she chooses a plant form instead of an animal, she is inanimate but can communicate with any nearby plant based spirits without needing the Spirit Arcanum, or if she journeys through Astral Space while her body is in plant form, she can interact with the ancient plant spirits of the Dreamtime. Optional Arcanum: Matter 4 If the mage also knows Matter 4, she could choose stone as her shapeshifting form, changing herself into a rock. She cannot move, although she can perceive her surroundings. The obvious use for this version of the attainment is camouflage, but it provides another unique benefit. The mage can communicate with any nearby mineral-based spirits without needing the Spirit Arcanum, or if she journeys through Astral Space while her body is in rock form, she can interact with the ancient mineral spirits of the Dreamtime."
 			}
 		]
 	}, {
@@ -4398,11 +4395,13 @@
 			}
 		]
 	}, {
-		"Name" : "Scelestus",
+		"Name" : "Scelesti",
 		"Nicknames" : [
-			""
+			"The Accursed",
+			"The Wicked",
+			"Nefandi, the Unutterable"
 		],
-		"Tagline" : "",
+		"Tagline" : "Gaze into the Abyss!",
 		"Hand" : [
 			"L"
 		],
@@ -4425,60 +4424,58 @@
 				"SourceBook" : "The Left-Hand Path",
 				"SourcePage" : "73"
 			}, {
-				"SourceBook" : "Night Horrors: The Unbid",
-				"SourcePage" : ""
+				"SourceBook" : "Night Horrors: The Unbidden",
+				"SourcePage" : "19-20"
 			}
 		],
 		"Sections" : [{
 				"Title" : "Introduction",
-				"Text" : ""
+				"Text" : "Every mage must reach across the Abyss to grasp Supernal power. This is no mere initiatic hurdle to weed out the unworthy, but a very real danger to a mage’s psyche, for the Abyss is far from empty. Awash in its torrents, its darkness clings, permeating clothing, body and soul. The slightest misstep in the Abyss can so derange the enlightened that any illumination they transmit is tainted with madness. Thus do the Legacies collectively known as the Scelesti —the Accursed —come into being. If the hordes of the Abyss can be said to have an agenda or motive, it would seem to be a desire to claim the Fallen World in lieu of the shining realms of the Supernal World that are closed to them. These entities, languishing in a kind of non-existence between the pure light of the Supernal and the gross matter of the Fallen World, seek to establish themselves in the latter. To accomplish this, an Abyssal entity must have some instrument through which to work its will in the material world. The Scelesti are such instruments. Unable to emerge in being by their own power alone, Abyssal beings must first make themselves known to an Awakened consciousness, who can then make their presence real in the Fallen World by writing the spirits’unpronounceable names across the earth in letters of fear, suffering and disaster. Mages who gaze too long into the Abyss fall prey to fascination and awe, their souls bound up in madness and obsession with the yawning chasms of unreason. Some might escape with psychic scars. Others fall prey to their own delusions and desires. Mistaking the vastness of the Abyss for a source of knowledge and strength, they abandon all sense and reason to lose themselves in endless chaos. Or they pledge themselves to the entities that lurk therein, and so consign their souls to oblivion. Those who are able to retain enough of their identity to contain their madness find that the Abyss has power in and of itself, apart from the hordes of non-beings that haunt it. Some swim in a primordial ocean of chaosplasm, riding its currents and shaping it to their ends. Others are lost to the void, their inner light swallowed in darkness and silence. Still others may find twisted reflections of their Supernal ideals in delusions. Meanwhile, the new overlords of the corrupted mages goad them on with promises of worldly glory and opulence —once the Fallen World has fallen into their clutches, of course. Such a thing cannot be accomplished alone, however, so the immediate task of the Scelesti becomes that of luring other mages into their sway and bringing them to the brink of the Abyss. Being one of the Accursed has its advantages. In a corrupt world, the expert corrupter can rule. The Abyssal hordes are not without power, and grant portions of their might to a mage who can provide them with a foothold in the Fallen World. And there are legions of lesser entities, any of which may be dispatched to serve a Scelestus as slave, guardian or familiar. Damnation by this magical course is not specific to any Path. Inheritors of this Legacy may be found practicing anywhere in mage society, using arcane symbolism and hermetic secrecy to conceal their true nature from peers and the rest of the world. Sometimes when a Scelestus is discovered within an order, his entire tutorial lineage may be stricken from the order’s records if it cannot be determined at which point a teacher was corrupted. (Hence, the Scelesti are also sometimes called Nefandi, the Unutterable, or “that which is not to be spoken of.”)"
 			}, {
 				"Title" : "Appearance",
-				"Text" : ""
+				"Text" : "There is no distinct physiognomy that marks the Accursed, but over time and with degenerate Wisdom damnation reveals itself by twisting one’s Nimbus into exaggerated forms —predatory, diseased, deformed, simply bizarre or even unnaturally beautiful."
 			}, {
 				"Title" : "Background",
-				"Text" : ""
+				"Text" : "The Accursed can derive from any possible background, but most often bear some psychological scar that an Abyssal entity can use to reach inside and twist the mage’s soul. Such scars can be caused by an abusive or neglectful upbringing, a deeply traumatic event or recent personal tragedy."
 			}, {
 				"Title" : "Organization",
-				"Text" : ""
+				"Text" : "Accursed mages who serve different Abyssal entities (or none at all) seldom have direct contact with each other, so there is no overarching social order that encompasses all corrupt mages. Generally speaking, an all Scelestus cabal would be pledged as a whole to a single overlord or an exceptionally powerful Accursed mage. The Abyss is not entirely without its own internal “politics,” however, with alliances and enmities forming between its most powerful entities. Relations between Scelesti with different affiliations tend to reflect whatever situation exists between their respective patrons."
 			}, {
 				"Title" : "Suggested Oblations",
-				"Text" : ""
+				"Text" : "Terrorizing innocents; destroying property; goading others to harm a person or to destroy property; cannibalism; a ritual killing"
 			}, {
 				"Title" : "Concepts",
-				"Text" : ""
-			}, {
-				"Title" : "",
-				"Text" : ""
+				"Text" : "Professional deceivers and manipulators: cult leaders, double agents, performers, lawyers, diplomats, lobbyists, media and advertising executives"
 			}
 		],
-		"AttainmentDescription" : "",
+		"AttainmentDescription" : "The attainment below is for one type of Scelestus, although there are alternate tainted Legacies that involve different attainments, some of them concerned with identifying others’psychological weaknesses and exploiting them. The attainments listed below all call on Abyssal powers. The spirits affected might become tainted and twisted, gaining one dot in the Corruption Influence if they are exposed and manipulated by the mage over a long period of time (at least a week). This Influence allows Scelesti to pervert the intentions of living creatures toward base ends.",
 		"Attainments" : [{
 				"Order" : 1,
-				"Name" : "",
+				"Name" : "Magic Circle",
 				"Prerequisites" : [
 					"Gnosis 3",
-					""
+					"Space 1, Spirit 2 (primary), Occult 2"
 				],
-				"Description" : ""
+				"Description" : "The mage can physically interact with Twilight spirits (but not ghosts), similar to the “Gossamer Touch”spell (p. 247). He must first create a “magic circle,”and can affect spirits only while he is within the circle (although he can affect them with magic at a distance while he is standing in his circle). Creating the circle requires an instant action (no roll required), and its radius can equal the mage’s Space dots. [[MtAw_Legacy_Scelesti_MagicCircle]]If a mage has Space 2, he can use the advanced area affecting chart (see p. 118), using dots instead of dice penalties. Before the circle is complete, the mage must demarcate its outmost boundaries. The most common method is to scrape a piece of chalk or marker in a dash along each of the four cardinal directions, although the mage could just as easily place coins, empty coffee cups or soda cans, or even dirt if he doesn’t want to be too obvious about doing something arcane. Once established, the circle lasts for up to one hour. If two or more of the four markers are moved or erased, the effect is canceled until the circle is established again. While he stands within the circle, the mage gains an effect similar to the Spirit 1 “Spirit Tongue”spell (p. 246), allowing him to see and speak with nearby spirits. Optional Arcanum: Death 2 If the mage also has Death 2, he can affect ghosts in the same manner that he affects spirits."
 			}, {
 				"Order" : 2,
-				"Name" : "",
+				"Name" : "Abyssal Command",
 				"Prerequisites" : [
 					"Gnosis 5",
-					""
+					"Spirit 3"
 				],
-				"Description" : ""
+				"Description" : "Within his magic circle, the Accursed can issue commands to spirits that they must heed, similar to the “Control Spirit” spell (p. 248). An instant action is performed and Presence + Intimidation + Spirit is rolled, contested by a Resistance roll for the spirit. Each success allows the mage to issue a command of increasing complexity. He can repeatedly use this attainment while the circle is operative, but he can issue only one command to a spirit at a time. He cannot command the same spirit again until his first command is completed. Optional Arcanum: Time 3 If the mage also has Time 3, he can command a spirit to speak of the future. The spirit itself does not know the future, but becomes a mouthpiece by which the mage can ask questions of what is to come. This is similar to the Time 3 “Divination”spell (p. 263). The mage performs an instant action and can ask one question about a specified target’s future per Time dot. This power can be used concerning the same target only once every 24 hours."
 			}, {
 				"Order" : 3,
-				"Name" : "",
+				"Name" : "Shadow Circle",
 				"Prerequisites" : [
 					"Gnosis 7",
-					""
+					"Spirit 4"
 				],
-				"Description" : ""
+				"Description" : "From within his magic circle, the mage can “step sideways” across the Gauntlet, similar to the Spirit 4 “Road Master” spell (p. 254). To step across, an instant action is performed and Presence + Occult + Spirit roll is rolled, modified by the Gauntlet’s Strength (p. 282). The mage can do this as many times as he likes, stepping back and forth, as long as his magic circle is operative. He can leave the circle, but must return (or create a new circle) to step over again. Optional Arcanum: Time 4 If the mage also has Time 4, he can use a spirit as the mouthpiece of a greater prophecy, similar to the Time 4 “Prophecy”spell (p. 264). He performs an instant action and can ask one question about a specified target’s possible future (what mighthappen rather than what will happen) per Time dot. This power can be used concerning the same target only once every 24 hours."
 			}
-		]
+		],
+		"Notes" : "The base for this legacy is defined in the core book Mage: The Awakening and this is the information presented here.  There are custom attainments given for NPCs which can be found in Night Horrors: The Unbidden p19-20 and Keys to the Supernal Tarot p11-112.  In addition to this the legacy is greatly expanded on in the book Left-Hand Path - Chapter 3."
 	}, {
 		"Name" : "Scions of God",
 		"Nicknames" : [
@@ -6394,7 +6391,8 @@
 				],
 				"Description" : "The mage can now take an Awakened soul, as he did a Sleeper soul with the first attainment. The victim contests with Resolve + Gnosis. In addition, the mage can drain his enemies of their strength, similar to the Death 4 “Enervation”spell (p. 143), with an instant action and a Presence + Occult + Death roll. See the spell description for complete rules."
 			}
-		]
+		],
+		"Notes" : "The length of time a stolen soul preserves a lich depends on the lich’s age. [[MtAw_Legacy_TremereLich_SoulNourishment]] Once a soul begins to erode, a Tremere loses one Willpower dotper week until his will is gone. With each lost dot, the Tremere’s body takes on increasingly morbid features, becoming necrotic until he resembles a rotting corpse or mummy (although his traits are not affected). Once he has no more Willpower dots, he can no longer regain Willpower points (through a Virtue, Vice or any other means), and he then begins to suffer one aggravated Health wound per week. He cannot heal this damage naturally, and it is Resistant, meaning it cannot be healed supernaturally (see “Resistant Damage,” p. 124). Unless he gets a new soul before he runs out of Health, he perishes completely, with no trace or remnant of his identity left in the Tapestry. Only replacing an eroding soul with a fresh soul stops the decline, and the damage begins to heal naturally. Once the Tremere’s Health is restored, he then begins regaining Willpower dots at a rate of one per week. A mage’s soul is far more valuable than any mere mortal’s. Each Awakened soul can actually reduce a Tremere’s chronological age by one stage on the chart above. Thus, a 100-year-old Tremere requires a human soul each month, but if he can steal the soul of another mage (other than a Tremere), he can go six months without a fresh sacrifice."
 	}, {
 		"Name" : "True Soul",
 		"Nicknames" : [

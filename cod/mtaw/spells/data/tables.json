@@ -1,0 +1,23 @@
+[{
+		"Context" : "MtAw_Legacy_TremereLich_SoulNourishment",
+		"Title" : "Soul Nourishment",
+		"Headers" : ["Tremere’s Age", "Soul Begins to Erode After…"],
+		"Rows" : [
+			["1-50", "One year (i.e., the Tremere needs to steal only one soul per year)"],
+			["51-75", "Nine months"],
+			["76-100", "Six months"],
+			["100+", "One month"],
+			]
+	},
+	{
+		"Context" : "MtAw_Legacy_Scelesti_MagicCircle",
+		"Title" : "Magic Circle",
+		"Headers" : ["Radius or", "Defined Area", "Space Dots"],
+		"Rows" : [
+		["1-yard radius","5 sq. yards","•"],
+		["2-yard radius","10 sq. yards","••"],
+		["4-yard radius","20 sq. yards","•••"],
+		["8-yard radius","40 sq. yards","••••"],
+		["16-yard radius","80 sq. yards","•••••"]
+	]}	
+]

@@ -50,6 +50,7 @@ $(document).ready(function () {
 			name = name + " (" + legacy.Nicknames[0] + ")";
 		}
 		$('#LegacyName').text(name);
+		$('#Tagline').text(legacy.Tagline);
 
 		hand = legacy.Hand.join(" & ").replace("R","Right-Handed").replace("L","Left-Handed");
 		$('#Hand').text(hand);
@@ -106,12 +107,19 @@ $(document).ready(function () {
 			$('#Attainments').append("Prerequisites");
 			$('#Attainments').append(prerequisteList);
 		  
-			//emphasiseText(attainment.Description, function(description){
-				$('#Attainments').append($("<p>").append(attainment.Description));
-			//});
+			emphasiseText(attainment.Description, function(description){
+				$('#Attainments').append($("<p>").append(description));
+			});
+
+			//$('#Attainments').append(legacy.AttainmentDescription);
 
 		}, this);
 		$('#TableOfContents').append($("<li>Attainments</li>").append(attainmentsTOC));
+
+		emphasiseText(legacy.Notes, function(notes){
+			$('#Notes').append($("<p>").append(notes));
+		});
+
 				
 	}
 

@@ -187,6 +187,9 @@ function makePageLink(name, type){
 
 function emphasiseText(text, callback){
 		
+		callback(text);
+		return; 
+
 		$.when()	
 		.then(	
 			function() 	{ getData("infoBoxes", function(data){
@@ -211,6 +214,7 @@ function emphasiseText(text, callback){
 
 		callback(text);
 }
+
 function doNOhitng(){
 		
 		// Turn spell names into links
