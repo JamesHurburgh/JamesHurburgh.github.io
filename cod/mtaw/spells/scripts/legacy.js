@@ -51,6 +51,9 @@ $(document).ready(function () {
 		}
 		$('#LegacyName').text(name);
 
+		hand = legacy.Hand.join(" & ").replace("R","Right-Handed").replace("L","Left-Handed");
+		$('#Hand').text(hand);
+
 		$('#Source').append(makePageLink(legacy.Sources[0].SourceBook, "book") + ' p' + legacy.Sources[0].SourcePage);
 		
 		getData("books", function(data){
