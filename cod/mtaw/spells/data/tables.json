@@ -6,7 +6,7 @@
 			["1-50", "One year (i.e., the Tremere needs to steal only one soul per year)"],
 			["51-75", "Nine months"],
 			["76-100", "Six months"],
-			["100+", "One month"],
+			["100+", "One month"]
 			]
 	},
 	{
@@ -19,5 +19,31 @@
 		["4-yard radius","20 sq. yards","•••"],
 		["8-yard radius","40 sq. yards","••••"],
 		["16-yard radius","80 sq. yards","•••••"]
-	]}	
+	]},
+	{
+		"Context" : "MtAw_Legacy_CelestialMasters_EverythingIsStardust",
+		"Title" : "Everything Is Stardust",
+		"Headers" : ["Object’s Durability/Size (Whichever is higher)", "Light", "Sound", "Heat (Fahrenheit)", "Electricity", "Fire"],
+		"Rows" : [
+			["1", "Flashlight", "Casual talk", "Room temp. (72°)", "Car battery", "Lighter"],
+			["2", "75-watt lamp", "Scream", "Body temp. (98.6°)", "Wall socket", "Torch"],
+			["3", "Car headlight", "Electric guitar", "Kills bacteria (160°)", "Security fence", "Bonfire"],
+			["4", "Floodlight", "Gunshot", "Boiling point (212°)", "Junction box", "Inferno"],
+			["5", "Stadium lights", "Industrial", "Books burn (451°)", "Main line", "Conflagration"]
+		]
+	},
+	{
+		"Context" : "MtAw_Legacy_CelestialMasters_LightLongDead",
+		"Title" : "Light Long Dead",
+		"Headers" : ["Object’s Size/Durability", "Defined Volume"],
+		"Rows" : [
+			["1", "5 cubic yards"],
+			["2", "10 cu. yards"],
+			["3", "20 cu. yards"],
+			["4", "40 cu. yards"],
+			["5", "80 cu. yards"]
+		]
+	}			
 ]
+
+

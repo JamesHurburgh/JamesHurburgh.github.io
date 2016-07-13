@@ -75,7 +75,7 @@ function getData(dataName, callback) {
 					callback(data);
 				});
 			}else{
-				callback(data);
+				callback(referenceDataDefinition.Data);
 			}
 		}
 	});

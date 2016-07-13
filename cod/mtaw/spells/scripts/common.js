@@ -186,36 +186,35 @@ function makePageLink(name, type){
 }
 
 function emphasiseText(text, callback){
-		
-		callback(text);
-		return; 
-
+				
 		$.when()	
-		.then(	
-			function() 	{ getData("infoBoxes", function(data){
-				// Insert infoBoxes
-				data.forEach(function(inset) {
-					if(inset.Type == "html"){
-						var replacementText = '<div class="well">' + inset.html + '</div>';
-						text = text.replace(inset.PlacementText, replacementText);
-					}
-				});
-			}); 
-		})
-		.then(	
-			function() 	{ getData("spells", function(data){
-				// Insert infoBoxes
-				data.forEach(function(spell) {
-					text = text.replace(new RegExp('\\b'+spell.Name+'\\b'), makePageLink(spell.Name, "spell"));
-				});
-			}); 
-		})
-		.done();
+		.then(function() { getData("infoBoxes", function(data){ infoboxes = data})})
+		.then(function() { getData("spells", function(spells){ 
+			// Turn spell names into links
+			spells.forEach(function (spell) {
+				text = text.replace(new RegExp('\\b'+spell.Name+'\\b'), "<a href='spell.html\?spell=" + escape(spell.Name) + "'>" + spell.Name + "</a>");
+			});
+		})})
+		.then(function() { 
 
-		callback(text);
+		})
+		.then(function() { callback(text); })
+		.done();
+		
+
+		
+		
 }
 
 function doNOhitng(){
+		
+		// Insert infoBoxes
+		infoboxes.forEach(function(inset) {
+			if(inset.Type == "html"){
+				var replacementText = '<div class="well">' + inset.html + '</div>';
+				text = text.replace(inset.PlacementText, replacementText);
+			}
+		});
 		
 		// Turn spell names into links
 		$(spells).each(function (index, spell) {
