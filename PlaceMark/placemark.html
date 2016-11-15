@@ -63,19 +63,38 @@ PlaceMarks can be nested inside another PlaceMark.  For example you might want t
 
 ## {{Planned Features|Stuff I want to add|Things that I think would be {{fun|cool|useful|not terrible|ground breaking|profitable|are so awesome they would unravel the very fabric of the space time continuum, and destroy the entire universe! Granted, that's a worse case scenario. The destruction might in fact be very localized, limited to merely our own galaxy.}}}}
 
-### Functions
-* Things like maths evaluations
+### {{Saving and loading|Not having to cut and paste stuff in and out}}
+* This single page site is great, but there's no way to save what you've done to come back to it later.  I can do that.  I will do that.   Give me a little while and it'll happen.
+
+### Versioning
+* Because if you save over your script but didn't mean to, I don't want you to lose the stuff you made.
+
+### {{Functions|Methods|Not just lists}}
+* Things like maths evaluations {<wbr/>{}<wbr/>}
 * Number ranges eg. {<wbr/>{range:::1-10}<wbr/>}
 * This leads to being able to do things like {<wbr/>{roll:::3d10}<wbr/>}
-### Tables
-* Define tables to look up seperately then reference them so you don't have a massive list in your text all the time.  Could look like this:
-The shadowy figure disappeared {<wbr/>{::cardinalpoint}&nbsp;}.
 
-{{cardinalpoint::
-North|
-South|
-East|
-West}}
+### {{Tables|Lists}}
+* Define tables to look up seperately then reference them so you don't have a massive list in your text all the time.  Could look like this:
+The shadowy figure disappeared {<wbr/>{::cardinalpoint}&nbsp;}.  
+{<wbr/>{cardinalpoint::  
+North|  
+South|  
+East|  
+West}<wbr/>}
+
+### Imports
+* So you've made a PlaceMark Script that describes a commoner nicely.  But now you want to create a random encounter that includes a commoner.  Instead of redoing all your hard work, you want to just be able to go {<wbr/>{import::commoner}<wbr/>} don't you?  Yes you do, because that would be awesome.  I'll get right onto that after I've made saving and loading a thing.
+
+### {{Collaboration|Working with your {{friends|enemies|cohorts|group|buddies|crew}}|{{Using|Stealing|Borrowing}} other peoples stuff}}
+* Right now this is just hosted on a single page on github.  If enough peope are interested I'll put it on it's own server and give people user accounts.  Then we can:
+** Share our Scripts
+** Import other peoples scripts into your scripts (see above)
+** Favourite other peoples scripts
+** Vote on scripts
+** Comment on scripts
+** Categorise scripts to make them easier to find.
+
 
                             </textarea>
                                 <span class="help-block">Type your sentence in the box above.  Anything not in {{double curly quotes}} will be left alone.</span>
