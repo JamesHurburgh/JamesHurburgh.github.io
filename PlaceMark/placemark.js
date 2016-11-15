@@ -8,22 +8,14 @@ $(document).ready(function() {
         return list[randBetween(0, list.length)];
     }
 
-    function loadPlaceMark(script) {
-        $("#placeMark").val(script);
+    function loadScriptList() {
+        $("#scriptList").html("Loading scriptList...");
+        var scriptList = store.get('scriptList');
+        alert(scriptList);
     }
 
-    function readTextFile(file) {
-        var rawFile = new XMLHttpRequest();
-        rawFile.open("GET", file, false);
-        rawFile.onreadystatechange = function() {
-            if (rawFile.readyState === 4) {
-                if (rawFile.status === 200 || rawFile.status == 0) {
-                    var allText = rawFile.responseText;
-                    alert(allText);
-                }
-            }
-        }
-        rawFile.send(null);
+    function loadPlaceMark(script) {
+        $("#placeMark").val(script);
     }
 
     function transform() {
@@ -34,32 +26,33 @@ $(document).ready(function() {
         var tablesRegex = new RegExp(/{{{([^{}]*?:::[^{}]*?)}}}/);
         var tableMatch;
         while (tableMatch = tablesRegex.exec(output)) {
-            alert("Table Match:" + tableMatch);
-            var name = tableMatch[1].split(":::")[0];
-            var list = tableMatch[1].split(":::")[1];
+            var tableDef = tableMatch[1].split(":::");
+            var name = tableDef[0];
+            var list = tableDef[1];
 
             tables[name] = list.split("|");
 
-            output = output.replace(tableMatch[0],"");
+            output = output.replace(tableMatch[0], "");
         }
 
-        var placeMark = new RegExp(/{{([^{}]*?)}}/);
-        var match;
-        while (match = placeMark.exec(output)) {
+        var placeMarkRegex = new RegExp(/{{([^{}]*?)}}/);
+        var placeMarkMatch;
+        while (placeMarkMatch = placeMarkRegex.exec(output)) {
             var choice;
-            var fullText = match[0];
-            var innerText = match[1];
+            var fullMatch = placeMarkMatch[0];
+            var innerText = placeMarkMatch[1];
             var functionCall = innerText.split("::");
-            alert(functionCall);
-            if(functionCall == innerText){
+            if (functionCall == innerText) {
                 var list = innerText.split("|");
                 choice = chooseRandom(list);
-            }else if(functionCall[0] === "" || functionCall[0] === "table" ){
+            } else if (functionCall[0] === "" || functionCall[0] === "table") { // "" because table or list is the default
                 // This is a table call
                 choice = chooseRandom(tables[functionCall[1]]);
+            } else if (functionCall[0] === "range") {
+                choice = randBetween(functionCall[1].split("-")[0], functionCall[1].split("-")[1]);
             }
 
-            output = output.replace(fullText, choice);
+            output = output.replace(fullMatch, choice);
         }
 
         $("#markdown").val(output);
@@ -73,6 +66,7 @@ $(document).ready(function() {
         transform();
     });
 
-    // Initialise
+    // Initialise    
     transform();
+    loadScriptList();
 });

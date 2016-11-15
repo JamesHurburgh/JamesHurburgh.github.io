@@ -17,8 +17,21 @@
     <!-- showdown.js -->
     <script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.5.0/showdown.min.js"></script>
 
+    <!-- store.js -->
+    <script type="text/javascript" charset="utf8" src="https://raw.github.com/marcuswestin/store.js/master/store.min.js"></script>
+    <script>
+        initStorejs()
+        function initStorejs() {
+            if (!store.enabled) {
+                alert('Local storage is not supported by your browser. Please disable "Private Mode", or upgrade to a modern browser.')
+                return
+            }
+        }
+    </script>
+
     <!-- placemark.js -->
     <script type="text/javascript" charset="utf8" src="placemark.js"></script>
+
 </head>
 
 <body>
@@ -79,6 +92,8 @@ South|
 East|
 West}}}
 
+## Functions
+* Ranges work.  Try {<wbr/>{range::1-100}<wbr/>} to get a results like this: {{range::1-100}}, {{range::1-100}}, {{range::1-100}}
 
 ## {{Planned Features|Stuff I want to add|Things that I think would be {{fun|cool|useful|not terrible|ground breaking|profitable|are so awesome they would unravel the very fabric of the space time continuum, and destroy the entire universe! Granted, that's a worse case scenario. The destruction might in fact be very localized, limited to merely our own galaxy.}}}}
 
@@ -122,6 +137,17 @@ West}}}
                             </div>
                             <label for="output" class="col-lg-2 control-label">Output</label>
                             <div class="col-lg-10" id="output">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="col-lg-2">
+                <form class="form-horizontal">
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="title" class="col-lg-12 control-label">Your Scripts</label>
+                            <div class="col-lg-12" id="scriptList">
                             </div>
                         </div>
                     </fieldset>
