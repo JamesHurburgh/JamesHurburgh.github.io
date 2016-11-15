@@ -29,28 +29,35 @@ $(document).ready(function() {
     function transform() {
         var output = $("#placeMark").val();
 
-        var tablesRegex = new RegExp(/{{([^{}]*?::[^{}]*?)}}/);
+        var tables = [];
+
+        var tablesRegex = new RegExp(/{{{([^{}]*?:::[^{}]*?)}}}/);
         var tableMatch;
-        if (tableMatch = tablesRegex.exec(output)) {
+        while (tableMatch = tablesRegex.exec(output)) {
             alert("Table Match:" + tableMatch);
-            var name = tableMatch[1].split("::")[0];
-            var list = tableMatch[1].split("::")[1];
+            var name = tableMatch[1].split(":::")[0];
+            var list = tableMatch[1].split(":::")[1];
 
-            alert("TableName:" + name);
-            alert("List:" + list);
+            tables[name] = list.split("|");
 
-
+            output = output.replace(tableMatch[0],"");
         }
 
-
-        //var placeMark = new RegExp(/{{(.|\n)*?)}}/);
         var placeMark = new RegExp(/{{([^{}]*?)}}/);
         var match;
         while (match = placeMark.exec(output)) {
+            var choice;
             var fullText = match[0];
             var innerText = match[1];
-            var list = innerText.split("|");
-            var choice = chooseRandom(list);
+            var functionCall = innerText.split("::");
+            alert(functionCall);
+            if(functionCall == innerText){
+                var list = innerText.split("|");
+                choice = chooseRandom(list);
+            }else if(functionCall[0] === "" || functionCall[0] === "table" ){
+                // This is a table call
+                choice = chooseRandom(tables[functionCall[1]]);
+            }
 
             output = output.replace(fullText, choice);
         }

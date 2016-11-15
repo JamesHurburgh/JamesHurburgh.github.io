@@ -61,7 +61,30 @@ PlaceMarks can be nested inside another PlaceMark.  For example you might want t
 
 *The figure is wearing a {{{{floppy |broad |}}hat|{{long |short |}}coat}} and seems to be nervous about something.*
 
+## {{Tables|Lists}}
+* Define tables to look up seperately then reference them so you don't have a massive list in your text all the time.  It looks like this:
+The shadowy figure disappeared to the {<wbr/>{::cardinalpoint}<wbr/>} becomes:
+*The shadowy figure disappeared to the {{::cardinalpoint}}*
+
+When the table is defined like this:  
+{<wbr/>{<wbr/>{cardinalpoint:::  
+North|  
+South|  
+East|  
+West}<wbr/>}<wbr/>}
+
+{{{cardinalpoint:::
+North|
+South|
+East|
+West}}}
+
+
 ## {{Planned Features|Stuff I want to add|Things that I think would be {{fun|cool|useful|not terrible|ground breaking|profitable|are so awesome they would unravel the very fabric of the space time continuum, and destroy the entire universe! Granted, that's a worse case scenario. The destruction might in fact be very localized, limited to merely our own galaxy.}}}}
+
+### Aliases
+* An alias is easy to define.  If you want to use compasspoint as a table/list name instead of cardinal just call the table from the table like so:
+{{{compasspoint:::{{::cardinalpoint}}}}}
 
 ### {{Saving and loading|Not having to cut and paste stuff in and out}}
 * This single page site is great, but there's no way to save what you've done to come back to it later.  I can do that.  I will do that.   Give me a little while and it'll happen.
@@ -73,17 +96,6 @@ PlaceMarks can be nested inside another PlaceMark.  For example you might want t
 * Things like maths evaluations {<wbr/>{}<wbr/>}
 * Number ranges eg. {<wbr/>{range:::1-10}<wbr/>}
 * This leads to being able to do things like {<wbr/>{roll:::3d10}<wbr/>}
-
-### {{Tables|Lists}}
-* Define tables to look up seperately then reference them so you don't have a massive list in your text all the time.  Could look like this:
-The shadowy figure disappeared {<wbr/>{::cardinalpoint}&nbsp;}.  
-{<wbr/>{cardinalpoint::  
-North|  
-South|  
-East|  
-West}<wbr/>}
-
-{{{table::option1|option2|option3}}}
 
 ### Imports
 * So you've made a PlaceMark Script that describes a commoner nicely.  But now you want to create a random encounter that includes a commoner.  Instead of redoing all your hard work, you want to just be able to go {<wbr/>{import::commoner}<wbr/>} don't you?  Yes you do, because that would be awesome.  I'll get right onto that after I've made saving and loading a thing.
