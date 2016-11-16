@@ -15,7 +15,7 @@ $(document).ready(function() {
             loadDefaultPlaceMarkScripts();
             scriptList = store.get('scriptList');
         }
-        alert(scriptList);
+        console.log(scriptList);
     }
 
     function loadDefaultPlaceMarkScripts() {
@@ -52,6 +52,7 @@ $(document).ready(function() {
             var fullMatch = placeMarkMatch[0];
             var innerText = placeMarkMatch[1];
             var functionCall = innerText.split("::");
+            // TODO switch here
             if (functionCall == innerText) {
                 var list = innerText.split("|");
                 choice = chooseRandom(list);
