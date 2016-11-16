@@ -11,7 +11,17 @@ $(document).ready(function() {
     function loadScriptList() {
         $("#scriptList").html("Loading scriptList...");
         var scriptList = store.get('scriptList');
+        if (!scriptList) {
+            loadDefaultPlaceMarkScripts();
+            scriptList = store.get('scriptList');
+        }
         alert(scriptList);
+    }
+
+    function loadDefaultPlaceMarkScripts() {
+        scriptList = [];
+        scriptList["Introduction"] = "# Introduction";
+        store.set('scriptList', scriptList);
     }
 
     function loadPlaceMark(script) {
