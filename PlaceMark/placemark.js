@@ -11,7 +11,7 @@ $(document).ready(function() {
     function loadScriptList() {
         $("#scriptList").html("Loading scriptList...");
         var scriptList = store.get('scriptList');
-        alert(scriptList);
+        console.log(scriptList);
     }
 
     function loadPlaceMark(script) {
@@ -42,6 +42,7 @@ $(document).ready(function() {
             var fullMatch = placeMarkMatch[0];
             var innerText = placeMarkMatch[1];
             var functionCall = innerText.split("::");
+            // TODO switch here
             if (functionCall == innerText) {
                 var list = innerText.split("|");
                 choice = chooseRandom(list);
