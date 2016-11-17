@@ -8,6 +8,13 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>PlaceMark</title>
 
+    <!-- Alertify JavaScript -->
+    <script src="https://cdn.jsdelivr.net/alertifyjs/1.8.0/alertify.min.js"></script>
+    <!-- Alertify CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/alertifyjs/1.8.0/css/alertify.min.css" />
+    <!-- Alertify Bootstrap theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/alertifyjs/1.8.0/css/themes/bootstrap.min.css" />
+
     <!-- bootswatch -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css" />
 
@@ -128,11 +135,13 @@ West}}}
                                 <span class="help-block">Type your sentence in the box above.  Anything not in {{double curly quotes}} will be left alone.</span>
                             </div>
                             <div class="col-lg-2"></div>
-                            <div class="col-lg-5">
-                                <a href="#" id="transform" class="btn btn-default btn-lg btn-block">Test</a>
+                            <div class="col-lg-8">
+                                <a href="#" id="transform" class="btn btn-primary">Transform</a>
+                                <a href="#" id="save" class="btn btn-default">Save</a>
+                                <a href="#" id="export" class="btn btn-default">Export</a>
                             </div>
-                            <div class="col-lg-5">
-                                <a href="#" id="save" class="btn btn-default btn-lg btn-block">Save</a>
+                            <div class="col-lg-2">
+                                <a href="#" id="delete" class="btn btn-danger pull-right">Delete</a>
                             </div>
                             <label for="markdown" class="col-lg-2 control-label">Markdown</label>
                             <div class="col-lg-10">
