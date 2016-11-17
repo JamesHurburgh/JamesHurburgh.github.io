@@ -15,12 +15,58 @@ $(document).ready(function() {
             loadDefaultPlaceMarkScripts();
             scriptList = store.get('scriptList');
         }
-        console.log(scriptList);
+        $("#scriptList").html("");
+        scriptList.forEach(function(element) {
+            var link = $("<a href='#' class='list-group-item'></a>");
+            link.append(element.title);
+            link.attr("href", "#" + element.title);
+            $("#scriptList").append(link);
+        }, this);
+    }
+
+
+    function load() {
+        var titleToLoad = window.location.hash.substr(1);
+        console.log("Loading " + window.location.hash.substr(1));
+        var scriptList = store.get('scriptList');
+        for (var i = 0; i < scriptList.length; i++) {
+            if (scriptList[i].title === titleToLoad) {
+                $("#title").val(scriptList[i].title);
+                $("#placeMark").val(scriptList[i].script);
+            }
+        }
+    }
+
+    function save() {
+
+        var scriptList = store.get('scriptList');
+
+        var title = $("#title").val();
+        var script = $("#placeMark").val();
+
+        var index = -1;
+        for (var i = 0; i < scriptList.length; i++) {
+            if (scriptList[i].title === title) {
+                index = i;
+            }
+        }
+
+        if (index === -1) {
+            scriptList.push({ "title": title, "script": script });
+        } else {
+            if (confirm("Overwrite " + title + "?")) {
+                scriptList[index].script = script;
+            }
+        }
+
+        store.set('scriptList', scriptList);
+        loadScriptList();
     }
 
     function loadDefaultPlaceMarkScripts() {
-        scriptList = [];
-        scriptList["Introduction"] = "# Introduction";
+        var scriptList = [];
+        scriptList.push({ "title": "Introduction", "script": "# Introduction" });
+        scriptList.push({ "title": "Getting started", "script": "# Getting started" });
         store.set('scriptList', scriptList);
     }
 
@@ -73,8 +119,17 @@ $(document).ready(function() {
 
     }
 
+    // Event Handlers
     $("#transform").click(function() {
         transform();
+    });
+
+    $("#save").click(function() {
+        save();
+        transform();
+    });
+    $(window).on('hashchange', function() {
+        load();
     });
 
     // Initialise    
