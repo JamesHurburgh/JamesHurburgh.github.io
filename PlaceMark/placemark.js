@@ -153,6 +153,9 @@ $(document).ready(function() {
             // TODO switch here
             if (functionCall == innerText) {
                 var list = innerText.split("|");
+                if(list.constructor != Array){
+                    list = [list]; // If the array only has one item it will be treated as a char array, instead of an array of one string.
+                }
                 choice = chooseRandom(list);
             } else {
                 switch (functionCall[0]) {
