@@ -6,23 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>PlaceMark</title>
+    <title>PlaceMark Editor</title>
 
     <!-- Alertify JavaScript -->
-    <script src="https://cdn.jsdelivr.net/alertifyjs/1.8.0/alertify.min.js"></script>
+    <script src="ref/alertifyjs/1.8.0/alertify.min.js"></script>
     <!-- Alertify CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/alertifyjs/1.8.0/css/alertify.min.css" />
+    <link rel="stylesheet" href="ref/alertifyjs/1.8.0/css/alertify.min.css" />
     <!-- Alertify Bootstrap theme -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/alertifyjs/1.8.0/css/themes/bootstrap.min.css" />
+    <link rel="stylesheet" href="ref/alertifyjs/1.8.0/css/themes/bootstrap.min.css" />
 
     <!-- bootswatch -->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css" />
-
-    <!-- jquery.js -->
-    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="ref/bootstrap.min.css" />
 
     <!-- showdown.js -->
-    <script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.5.0/showdown.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="ref/showdown.min.js"></script>
+
+    <!-- jquery.js -->
+    <script type="text/javascript" charset="utf8" src="ref/jquery-3.1.1.min.js"></script>
+
 
     <!-- store.js -->
     <script type="text/javascript" charset="utf8" src="ref/store.min.js"></script>
@@ -46,7 +47,10 @@
     <div id="overlay" style="display: none;"></div>
     <div class="container" id="container">
         <div class="header clearfix">
-            <nav></nav>
+            <nav>
+                <a href="placemark.html">Editor</a>
+                <a href="documentation.html">Documentation</a>
+            </nav>
             <h3 class="text-muted">PlaceMark Script Editor and Parser</h3>
         </div>
         <div class="row marketing">
