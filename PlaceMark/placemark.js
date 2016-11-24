@@ -1,27 +1,5 @@
 $(document).ready(function() {
 
-    function randBetween(min, max) {
-        return Math.floor(Math.random() * (max - min)) + min;
-    }
-
-    function chooseRandom(list) {
-        return list[randBetween(0, list.length)];
-    }
-
-    function shuffle(array){
-        var currentIndex = array.length, temporaryValue, randomIndex;
-
-        while(0 !== currentIndex){
-            randomIndex = Math.floor(Math.random() * currentIndex);
-            currentIndex -= 1;
-
-            temporaryValue = array[currentIndex];
-            array[currentIndex] = array[randomIndex];
-            array[randomIndex] = temporaryValue;
-        }
-        return array;
-    }
-
     function loadScriptList() {
         $("#scriptList").html("Loading scriptList...");
         var scriptList = store.get('scriptList');
