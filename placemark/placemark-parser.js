@@ -1,4 +1,6 @@
     
+    var tablesRegex = new RegExp(/{{{([^{}]*?:::[^{}]*?)}}}/);
+
     function randBetween(min, max) {
         return Math.floor(Math.random() * (max - min)) + min;
     }
@@ -20,21 +22,34 @@
         }
         return array;
     }
-    
-    function parse(output){
+
+    function parseTables(input){
         var tables = [];
 
-        var tablesRegex = new RegExp(/{{{([^{}]*?:::[^{}]*?)}}}/);
         var tableMatch;
-        while (tableMatch = tablesRegex.exec(output)) {
+        while (tableMatch = tablesRegex.exec(input)) {
             var tableDef = tableMatch[1].split(":::");
             var name = tableDef[0];
             var list = tableDef[1];
 
             tables[name] = list.split("|");
-
-            output = output.replace(tableMatch[0], "");
+            input = input.replace(tableMatch[0], "");
         }
+        return tables;
+    }
+
+    function removeTables(input){
+        var tableMatch;
+        while (tableMatch = tablesRegex.exec(output)) {
+            input = input.replace(tableMatch[0], "");
+        }
+        return input;
+    }
+    
+    function parse(output){
+
+        var tables = parseTables(output);
+        output = removeTables(output);
 
         var placeMarkRegex = new RegExp(/{{([^{}]*?)}}/);
         var placeMarkMatch;
