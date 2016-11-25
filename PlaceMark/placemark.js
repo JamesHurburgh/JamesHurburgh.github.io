@@ -118,9 +118,19 @@ $(document).ready(function() {
         $("#placeMark").val(script);
     }
 
+    function displayTables(tables){
+        var tableDiv = $("#tables");
+        tables.forEach(function(element) {
+            var table = element;
+            tableDiv.append($("<table>").append($("<th>").append($(table.name))));
+        }, this);
+    }
+
     function transform() {
 
         var output = $("#placeMark").val();
+        tables = parseTables(output);
+        displayTables(tables);
         result = parse(output);
 
         $("#markdown").val(result);
@@ -135,6 +145,11 @@ $(document).ready(function() {
     $("#transform").click(function() {
         transform();
     });
+    Mousetrap.bind('ctrl+t', function(e){
+        transform();
+        return false;
+    });
+
     $("#delete").click(function() {
         deleteScript()
     });
