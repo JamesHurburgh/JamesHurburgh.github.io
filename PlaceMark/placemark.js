@@ -118,11 +118,12 @@ $(document).ready(function() {
         $("#placeMark").val(script);
     }
 
-    function displayTables(tables){
+    function displayTables(tables) {
         var tableDiv = $("#tables");
-        tables.forEach(function(element) {
-            var table = element;
-            tableDiv.append($("<table>").append($("<th>").append($(table.name))));
+        var keys = Object.keys(tables);
+        keys.forEach(function(element) {
+            var table = tables[element];
+            tableDiv.append($("<table>").append($("<tr>").append($("<th>").append(element))));
         }, this);
     }
 
@@ -145,7 +146,7 @@ $(document).ready(function() {
     $("#transform").click(function() {
         transform();
     });
-    Mousetrap.bind('ctrl+t', function(e){
+    Mousetrap.bind('ctrl+t', function(e) {
         transform();
         return false;
     });
