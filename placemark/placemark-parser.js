@@ -94,7 +94,12 @@
                         choice = shuffle(list).join(seperator);
                         break;
                     case "repeat":
-                        choice = "Repeat function currently under construction.";
+                        var parameter = functionCall[1];
+                        var text = functionCall[2];
+                        choice = "";
+                        for (var i = 0; i < parameter; i++) {
+                            choice += text;
+                        }
                         break;
                     case "eval":
                         choice = eval(functionCall[1]);
