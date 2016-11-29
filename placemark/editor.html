@@ -70,7 +70,7 @@
                         <div class="form-group">
                             <label for="title" class="col-lg-2 control-label">Title</label>
                             <div class="col-lg-10">
-                                <input type="text" class="form-control" id="title" title="Title">
+                                <input type="text" class="form-control mousetrap" id="title" title="Title">
                             </div>
                             <label for="placeMark" class="col-lg-2 control-label">PlaceMark Script</label>
                             <div class="col-lg-10">
@@ -82,22 +82,30 @@
                                 <a href="#" id="transform" class="btn btn-primary">Transform</a>
                                 <a href="#" id="save" class="btn btn-default">Save</a>
                                 <a href="#" id="export" class="btn btn-default">Export</a>
+                                <label for="tablesVisibility">Show tables <input type="checkbox" id="tablesVisibility"></label>
+                                <label for="rawOutputVisibility">Show raw output <input type="checkbox" id="rawOutputVisibility"></label>
+                                <label for="markupVisibility">Show mark up <input type="checkbox" id="markupVisibility"></label>
                             </div>
                             <div class="col-lg-2">
                                 <a href="#" id="delete" class="btn btn-danger pull-right">Delete</a>
                             </div>
-                            <label for="tables" class="col-lg-2 control-label">Tables</label>
-                            <div class="col-lg-10">
-                                <div id="tables" style="height:30px;">&nbsp;
+                            <div id="tablesPanel">
+                                <label for="tables" class="col-lg-2 control-label">Tables</label>
+                                <div class="col-lg-10 well">
+                                    <div id="tables" style="min-height:30px;">&nbsp;</div>
                                 </div>
                             </div>
-                            <label for="markdown" class="col-lg-2 control-label">Markdown</label>
-                            <div class="col-lg-10">
-                                <textarea class="form-control" rows="3" id="markdown"></textarea>
-                                <span class="help-block">The box above contains your randomised creation. TODO put in a show hide Markdown button.</span>
+                            <div id="rawOutputPanel">
+                                <label for="markdown" class="col-lg-2 control-label">Raw Output</label>
+                                <div class="col-lg-10 well">
+                                    <textarea class="form-control" rows="3" id="markdown"></textarea>
+                                    <span class="help-block">The box above contains your randomised creation.</span>
+                                </div>
                             </div>
-                            <label for="output" class="col-lg-2 control-label">Output</label>
-                            <div class="col-lg-10" id="output">
+                            <div id="markupPanel">
+                                <label for="output" class="col-lg-2 control-label">Mark Up</label>
+                                <div class="col-lg-10 well" id="output">
+                                </div>
                             </div>
                         </div>
                     </fieldset>

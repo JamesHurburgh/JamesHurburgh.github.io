@@ -120,10 +120,16 @@ $(document).ready(function() {
 
     function displayTables(tables) {
         var tableDiv = $("#tables");
+        tableDiv.html("");
         var keys = Object.keys(tables);
         keys.forEach(function(element) {
             var table = tables[element];
-            tableDiv.append($("<table>").append($("<tr>").append($("<th>").append(element))));
+            var tableElement = $("<table class='table table-striped'>").append($("<thead>").append($("<tr>").append($("<th>").append(element))));
+            table.forEach(function(element) {
+                tableElement.append($("<tr>").append($("<td>").append(element)));
+            }, this);
+            tableDiv.append($("<div class='col-lg-2'>").append(tableElement));
+
         }, this);
     }
 
@@ -143,26 +149,62 @@ $(document).ready(function() {
     }
 
     // Event Handlers
+    //  Click handlers
     $("#transform").click(function() {
-        transform();
-    });
-    Mousetrap.bind('ctrl+t', function(e) {
         transform();
         return false;
     });
-
     $("#delete").click(function() {
-        deleteScript()
+        deleteScript();
+        return false;
     });
     $("#reloadDocumentation").click(function() {
-        reloadDocumentation()
+        reloadDocumentation();
+        return false;
     });
     $("#export").click(function() {
-        exportScript()
+        exportScript();
+        return false;
     });
     $("#save").click(function() {
         saveScript();
         transform();
+        return false;
+    });
+    /*
+    Mousetrap.bind(['ctrl+t', 'meta+t'], function(e) {
+        if (e.preventDefault) {
+            e.preventDefault();
+        } else {
+            // internet explorer
+            e.returnValue = false;
+        }
+        transform();
+        return false;
+    });
+    */
+
+    $('#tablesVisibility').change(function() {
+        $('#tablesPanel').toggle(!this.checked);
+    }).change();
+
+    $('#rawOutputVisibility').change(function() {
+        $('#rawOutputPanel').toggle(!this.checked);
+    }).change();
+
+    $('#markupVisibility').change(function() {
+        $('#markupPanel').toggle(!this.checked);
+    }).change();
+
+    Mousetrap.bind(['ctrl+s', 'meta+s'], function(e) {
+        if (e.preventDefault) {
+            e.preventDefault();
+        } else {
+            // internet explorer
+            e.returnValue = false;
+        }
+        saveScript();
+        return false;
     });
     $(window).on('hashchange', function() {
         loadScript();
