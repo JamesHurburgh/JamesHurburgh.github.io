@@ -1,4 +1,3 @@
-    
     var tablesRegex = new RegExp(/{{{([^{}]*?:::[^{}]*?)}}}/);
 
     function randBetween(min, max) {
@@ -9,10 +8,11 @@
         return list[randBetween(0, list.length)];
     }
 
-    function shuffle(array){
-        var currentIndex = array.length, temporaryValue, randomIndex;
+    function shuffle(array) {
+        var currentIndex = array.length,
+            temporaryValue, randomIndex;
 
-        while(0 !== currentIndex){
+        while (0 !== currentIndex) {
             randomIndex = Math.floor(Math.random() * currentIndex);
             currentIndex -= 1;
 
@@ -23,7 +23,7 @@
         return array;
     }
 
-    function parseTables(input){
+    function parseTables(input) {
         var tables = [];
 
         var tableMatch;
@@ -38,15 +38,15 @@
         return tables;
     }
 
-    function removeTables(input){
+    function removeTables(input) {
         var tableMatch;
-        while (tableMatch = tablesRegex.exec(output)) {
+        while (tableMatch = tablesRegex.exec(input)) {
             input = input.replace(tableMatch[0], "");
         }
         return input;
     }
-    
-    function parse(output){
+
+    function parse(output) {
 
         var tables = parseTables(output);
         output = removeTables(output);
@@ -60,15 +60,15 @@
             var functionCall = innerText.split("::");
             if (functionCall == innerText) {
                 var list = innerText.split("|");
-                if(list.constructor != Array){
+                if (list.constructor != Array) {
                     list = [list]; // If the array only has one item it will be treated as a char array, instead of an array of one string.
                 }
                 choice = chooseRandom(list);
-            } else {                
+            } else {
                 switch (functionCall[0]) {
                     case "":
                     case "lookup":
-                    var list = tables[functionCall[1]];
+                        var list = tables[functionCall[1]];
                         if (!list) {
                             choice = "[[ERR: No table definition found for '" + functionCall[1] + "']]"
                         } else {
@@ -92,10 +92,10 @@
                         var list = functionCall[1].split("|");
                         var seperator = ", ";
                         choice = shuffle(list).join(seperator);
-                        break;    
+                        break;
                     case "repeat":
                         choice = "Repeat function currently under construction.";
-                        break;                    
+                        break;
                     case "eval":
                         choice = eval(functionCall[1]);
                         break;
