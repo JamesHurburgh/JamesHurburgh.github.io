@@ -134,7 +134,7 @@ $(document).ready(function() {
                 tableElement.append($("<tr>").append($("<td>").append(index + 1 + " " + item)));
             }
 
-            tableDiv.append($("<div class='col-lg-2'>").append(tableElement));
+            tableDiv.append($("<div class='col-lg-3'>").append(tableElement));
 
         }, this);
     }

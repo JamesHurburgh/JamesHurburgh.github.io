@@ -58,7 +58,7 @@
             var roll = header.split(":")[1];
             var list = tableDef[1].split("|");
             if(!roll){
-                roll = list.length;
+                roll = "d" + list.length;
             }
 
             tables[name] = {roll:roll,list:list};
