@@ -123,12 +123,12 @@ $(document).ready(function() {
         tableDiv.html("");
         var keys = Object.keys(tables);
         keys.forEach(function(element) {
-            var table = tables[element];
+            var table = tables[element].list;
             var tableElement = $("<table class='table table-striped'>")
                 .append($("<thead>")
                 .append($("<tr>")
                 .append($("<th>")
-                .append(element))));            
+                .append(element + "(" + tables[element].roll + ")"))));            
             for(var index = 0;index < table.length; index++){
                 var item = table[index];
                 tableElement.append($("<tr>").append($("<td>").append(index + 1 + " " + item)));

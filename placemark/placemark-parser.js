@@ -23,16 +23,45 @@
         return array;
     }
 
+/* What a table definition shold look like
+
+{{size:2d4::
+    2:Diminuative|
+    3:Tiny|
+    4:Small|
+    5:Medium|
+    6:Large|
+    7:Huge|
+    8:Collosus}}
+
+{{hitLocation:d10::
+    1-6:Miss|
+    7:Torso|
+    8:Arms|
+    9:Legs|
+    10:Head}}
+
+*/
+
+    function rollOnTable(table){
+        return chooseRandom(table.list);
+    }
+
     function parseTables(input) {
         var tables = [];
 
         var tableMatch;
         while (tableMatch = tablesRegex.exec(input)) {
-            var tableDef = tableMatch[1].split(":::");
-            var name = tableDef[0];
-            var list = tableDef[1];
+            var tableDef = tableMatch[1].split(":::"); 
+            var header = tableDef[0];
+            var name = header.split(":")[0];
+            var roll = header.split(":")[1];
+            var list = tableDef[1].split("|");
+            if(!roll){
+                roll = list.length;
+            }
 
-            tables[name] = list.split("|");
+            tables[name] = {roll:roll,list:list};
             input = input.replace(tableMatch[0], "");
         }
         return tables;
@@ -68,11 +97,11 @@
                 switch (functionCall[0]) {
                     case "":
                     case "lookup":
-                        var list = tables[functionCall[1]];
-                        if (!list) {
+                        var table = tables[functionCall[1]];
+                        if (!table) {
                             choice = "[[ERR: No table definition found for '" + functionCall[1] + "']]"
                         } else {
-                            choice = chooseRandom(list);
+                            choice = rollOnTable(table);
                         }
                         break;
                     case "range":
