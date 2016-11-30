@@ -124,10 +124,16 @@ $(document).ready(function() {
         var keys = Object.keys(tables);
         keys.forEach(function(element) {
             var table = tables[element];
-            var tableElement = $("<table class='table table-striped'>").append($("<thead>").append($("<tr>").append($("<th>").append(element))));
-            table.forEach(function(element) {
-                tableElement.append($("<tr>").append($("<td>").append(element)));
-            }, this);
+            var tableElement = $("<table class='table table-striped'>")
+                .append($("<thead>")
+                .append($("<tr>")
+                .append($("<th>")
+                .append(element))));            
+            for(var index = 0;index < table.length; index++){
+                var item = table[index];
+                tableElement.append($("<tr>").append($("<td>").append(index + 1 + " " + item)));
+            }
+
             tableDiv.append($("<div class='col-lg-2'>").append(tableElement));
 
         }, this);
