@@ -24,6 +24,17 @@
         return array;
     }
 
+    function importScript(reference, scriptDao){
+        // TODO break down into namespace etc.
+        var scripts = scriptDao();
+        for(var i = 0; i < scripts.length; i++){
+            if(reference === scripts[i].title){
+                return parse(scripts[i].script);
+            }
+        }
+        return "[[ERR: No import found for '" + reference + "']]";
+    }
+
     /* What a table definition shold look like
 
     {{size:2d4::
@@ -170,7 +181,11 @@
                     case "get":
                         choice = variables[functionCall[1]];
                         break;
+                    case "import":
+                        choice = importScript(functionCall[1], function(){return store.get('scriptList')});
+                        break;
                     case "eval":
+                    // TODO Strip non maths symbols.
                         choice = eval(functionCall[1]);
                         break;
                     case "comment":
