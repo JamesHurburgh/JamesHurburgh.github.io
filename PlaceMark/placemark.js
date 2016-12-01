@@ -128,7 +128,7 @@ $(document).ready(function() {
                 .append($("<thead>")
                 .append($("<tr>")
                 .append($("<th>")
-                .append(element + "(" + tables[element].roll + ")"))));            
+                .append(element + " (" + tables[element].roll + ")"))));            
             for(var index = 0;index < table.length; index++){
                 var item = table[index];
                 tableElement.append($("<tr>").append($("<td>").append(index + 1 + " " + item)));

@@ -1,4 +1,5 @@
-    var tablesRegex = new RegExp(/{{{([^{}]*?:::[^{}]*?)}}}/);
+    var tablesRegex = new RegExp(/{{{((?:.|\n)+?)(?!({{{(?:.|\n)+?}}}))}}}/);
+//    var tablesRegex = new RegExp(/{{{([^{}]*?:::[^{}]*?)}}}/);
 
     function randBetween(min, max) {
         return Math.floor(Math.random() * (max - min)) + min;
@@ -60,7 +61,6 @@
             if(!roll){
                 roll = "d" + list.length;
             }
-
             tables[name] = {roll:roll,list:list};
             input = input.replace(tableMatch[0], "");
         }
@@ -79,7 +79,8 @@
 
         var tables = parseTables(output);
         output = removeTables(output);
-
+        var unnamedTables = [];
+        
         var placeMarkRegex = new RegExp(/{{([^{}]*?)}}/);
         var placeMarkMatch;
         while (placeMarkMatch = placeMarkRegex.exec(output)) {
