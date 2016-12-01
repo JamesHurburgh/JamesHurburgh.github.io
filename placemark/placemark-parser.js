@@ -1,5 +1,5 @@
     var tablesRegex = new RegExp(/{{{((?:.|\n)+?)(?!({{{(?:.|\n)+?}}}))}}}/);
-//    var tablesRegex = new RegExp(/{{{([^{}]*?:::[^{}]*?)}}}/);
+    //    var tablesRegex = new RegExp(/{{{([^{}]*?:::[^{}]*?)}}}/);
 
     function randBetween(min, max) {
         return Math.floor(Math.random() * (max - min)) + min;
@@ -24,27 +24,27 @@
         return array;
     }
 
-/* What a table definition shold look like
+    /* What a table definition shold look like
 
-{{size:2d4::
-    2:Diminuative|
-    3:Tiny|
-    4:Small|
-    5:Medium|
-    6:Large|
-    7:Huge|
-    8:Collosus}}
+    {{size:2d4::
+        2:Diminuative|
+        3:Tiny|
+        4:Small|
+        5:Medium|
+        6:Large|
+        7:Huge|
+        8:Collosus}}
 
-{{hitLocation:d10::
-    1-6:Miss|
-    7:Torso|
-    8:Arms|
-    9:Legs|
-    10:Head}}
+    {{hitLocation:d10::
+        1-6:Miss|
+        7:Torso|
+        8:Arms|
+        9:Legs|
+        10:Head}}
 
-*/
+    */
 
-    function rollOnTable(table){
+    function rollOnTable(table) {
         return chooseRandom(table.list);
     }
 
@@ -53,15 +53,15 @@
 
         var tableMatch;
         while (tableMatch = tablesRegex.exec(input)) {
-            var tableDef = tableMatch[1].split(":::"); 
+            var tableDef = tableMatch[1].split(":::");
             var header = tableDef[0];
             var name = header.split(":")[0];
             var roll = header.split(":")[1];
             var list = tableDef[1].split("|");
-            if(!roll){
+            if (!roll) {
                 roll = "d" + list.length;
             }
-            tables[name] = {roll:roll,list:list};
+            tables[name] = { roll: roll, list: list };
             input = input.replace(tableMatch[0], "");
         }
         return tables;
@@ -75,12 +75,49 @@
         return input;
     }
 
+    function parseRollString(rollString) {
+        // So far handles things like 2d4 + 3d8 + 10
+        // TODO Add rerolls, add function to count successes
+        var allRolls = rollString.split("+");
+        var total = 0;
+        for (var i = 0; i < allRolls.length; i++) {
+            total += parseSingleRoll(allRolls[i]);
+        }
+        return total
+    }
+
+    function parseSingleRoll(singleRollString) {
+        if (!singleRollString) {
+            console.log("parseSingleRoll(singleRollString) received null value.")
+            return 0;
+        }
+        var iterations = Number(singleRollString.split("d")[0]);
+        var dieValue = Number(singleRollString.split("d")[1]);
+        if (!dieValue) { // Then the input is just a number return that
+            return iterations;
+        }
+        if (singleRollString[0] === "d") { // If the string starts with 'd' then assume it's 1 die being rolled.
+            iterations = 1;
+        } // Otherwise, roll it out
+        return roll(iterations, dieValue);
+
+    }
+
+    function roll(iterations, dieValue) {
+        var total = 0;
+        for (var i = 0; i < iterations; i++) {
+            total += randBetween(1, dieValue);
+        }
+        return total;
+    }
+
     function parse(output) {
 
         var tables = parseTables(output);
         output = removeTables(output);
         var unnamedTables = [];
-        
+        var variables = {};
+
         var placeMarkRegex = new RegExp(/{{([^{}]*?)}}/);
         var placeMarkMatch;
         while (placeMarkMatch = placeMarkRegex.exec(output)) {
@@ -92,6 +129,7 @@
                 var list = innerText.split("|");
                 if (list.constructor != Array) {
                     list = [list]; // If the array only has one item it will be treated as a char array, instead of an array of one string.
+                    unnamedTables.push(list);
                 }
                 choice = chooseRandom(list);
             } else {
@@ -109,13 +147,7 @@
                         choice = randBetween(Number(functionCall[1].split("-")[0]), Number(functionCall[1].split("-")[1]));
                         break;
                     case "roll":
-                        var iterations = Number(functionCall[1].split("d")[0]);
-                        var dieValue = Number(functionCall[1].split("d")[1]);
-                        var total = 0;
-                        for (var i = 0; i < iterations; i++) {
-                            total += randBetween(1, dieValue);
-                        }
-                        choice = total;
+                        choice = parseRollString(functionCall[1]);
                         break;
                     case "shuffle":
                         // TODO allow for custom seperator
@@ -130,6 +162,13 @@
                         for (var i = 0; i < parameter; i++) {
                             choice += text;
                         }
+                        break;
+                    case "set":
+                        variables[functionCall[1]] = functionCall[2];
+                        choice = "";
+                        break;
+                    case "get":
+                        choice = variables[functionCall[1]];
                         break;
                     case "eval":
                         choice = eval(functionCall[1]);

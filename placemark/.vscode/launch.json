@@ -1,0 +1,10 @@
+{
+    "version": "0.2.0",
+    "configurations": [{
+        "name": "Launch Chrome against localhost, with sourcemaps",
+        "type": "chrome",
+        "request": "launch",
+        "url": "${workspaceRoot}/editor.html",
+        "webRoot": "${workspaceRoot}/editor.html"
+    }]
+}
