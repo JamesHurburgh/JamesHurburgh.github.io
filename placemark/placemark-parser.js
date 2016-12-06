@@ -264,7 +264,7 @@
                         }
                         break;
                     case "set":
-                        variables[functionCall[1]] = functionCall[2];
+                        variables[functionCall[1].split("=")[0]] = functionCall[1].split("=")[1];
                         choice = "";
                         break;
                     case "get":
