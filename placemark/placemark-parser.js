@@ -2,7 +2,7 @@
     //    var tablesRegex = new RegExp(/{{{([^{}]*?:::[^{}]*?)}}}/);
 
     function randBetween(min, max) {
-        return Math.floor(Math.random() * (max - min)) + min;
+        return Math.ceil(Math.random() * (max - min)) + min;
     }
 
     function chooseRandom(list) {
@@ -37,7 +37,7 @@
 
     /* What a table definition shold look like
 
-    {{size:2d4::
+    {{size[2d4]::
         2:Diminuative|
         3:Tiny|
         4:Small|
@@ -46,7 +46,7 @@
         7:Huge|
         8:Collosus}}
 
-    {{hitLocation:d10::
+    {{hitLocation[d10]::
         1-6:Miss|
         7:Torso|
         8:Arms|
@@ -56,7 +56,14 @@
     */
 
     function rollOnTable(table) {
-        return chooseRandom(table.list);
+        var rollDictionary = table.rollDictionary;
+        var roll = parseRollString(table.roll);
+        for(var i = 0; i < rollDictionary.length; i++){
+            if(rollDictionary[i].min <= roll && rollDictionary[i].max >= roll){
+                return rollDictionary[i].item;
+            }
+        }
+        return "[ERR: "+roll+" did not appear in lookup "+table.title+".]";
     }
 
     function parseTables(input) {
@@ -111,7 +118,7 @@
 
     function parseRollString(rollString) {
         // So far handles things like 2d4 + 3d8 + 10
-        // TODO Add rerolls, add function to count successes
+        // TODO Add rerolls, add function to count successes, fudge dice
         var allRolls = rollString.split("+");
         var total = 0;
         for (var i = 0; i < allRolls.length; i++) {

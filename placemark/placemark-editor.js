@@ -125,14 +125,14 @@ $(document).ready(function() {
         tableDiv.html("");
         var keys = Object.keys(tables);
         keys.forEach(function(element) {
-            var table = tables[element].list;
+            var table = tables[element];
             var tableElement = $("<table class='table table-striped'>")
                 .append($("<thead>")
                 .append($("<tr>")
                 .append($("<th>")
-                .append(element + " (" + tables[element].roll + ")"))));            
-            for(var index = tables[element].minRoll;index <= tables[element].maxRoll; index++){
-                var item = table[index-tables[element].minRoll];// TODO make this more like a dictionary
+                .append(element + " (" + table.roll + ")"))));            
+            for(var index = table.minRoll;index <= table.maxRoll; index++){
+                var item = table.list[index-table.minRoll];// TODO make this more like a dictionary
                 tableElement.append($("<tr>").append($("<td>").append(index + " " + item)));
             }
 
