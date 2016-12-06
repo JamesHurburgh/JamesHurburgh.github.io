@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
     function loadScriptList() {
+        console.log("Loadind script list.");
         $("#scriptList").html("Loading scriptList...");
         var scriptList = store.get('scriptList');
         if (!scriptList) {
@@ -13,7 +14,8 @@ $(document).ready(function() {
             link.append(element.title);
             link.attr("href", "#" + element.title);
             $("#scriptList").append(link);
-        }, this);
+        }, this);        
+        console.log("Script list loaded.");
     }
 
     function exportScript() {
@@ -129,9 +131,9 @@ $(document).ready(function() {
                 .append($("<tr>")
                 .append($("<th>")
                 .append(element + " (" + tables[element].roll + ")"))));            
-            for(var index = 0;index < table.length; index++){
-                var item = table[index];
-                tableElement.append($("<tr>").append($("<td>").append(index + 1 + " " + item)));
+            for(var index = tables[element].minRoll;index <= tables[element].maxRoll; index++){
+                var item = table[index-tables[element].minRoll];// TODO make this more like a dictionary
+                tableElement.append($("<tr>").append($("<td>").append(index + " " + item)));
             }
 
             tableDiv.append($("<div class='col-lg-3'>").append(tableElement));

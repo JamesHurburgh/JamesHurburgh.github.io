@@ -66,13 +66,36 @@
         while (tableMatch = tablesRegex.exec(input)) {
             var tableDef = tableMatch[1].split(":::");
             var header = tableDef[0];
-            var name = header.split(":")[0];
+            var name = header.split(":")[0]; // TODO change format to: tableName[roll] instead of tableName:roll
             var roll = header.split(":")[1];
             var list = tableDef[1].split("|");
+            var rollDictionary = [];
             if (!roll) {
                 roll = "d" + list.length;
             }
-            tables[name] = { roll: roll, list: list };
+            var minRoll = getMinRoll(roll);
+            var maxRoll = getMaxRoll(roll);
+            for(var i = 0; i < list.length; i++){
+                var rollDef = list[i];
+                var split = rollDef.split(":");
+                if(!split[1]){ //Then there is no numbering.  Use autonumbering.
+                    var min = i+minRoll; // This doesn't account for mixed mode.  It assumes if autonumbering occurs, it occurs for all.
+                    var max = i+minRoll;
+                    rollDictionary.push({item: split[0], min:min, max:max});
+                }else{                    
+                    var min = split[0].split("-")[0];
+                    var max = split[0].split("-")[1];
+                    if(!max){ max = min; }
+                    rollDictionary.push({item: split[1], min:min, max:max});
+                }
+            }
+            tables[name] = { 
+                roll: roll, 
+                list: list,
+                minRoll: getMinRoll(roll),
+                maxRoll: getMaxRoll(roll),
+                rollDictionary: rollDictionary
+            };
             input = input.replace(tableMatch[0], "");
         }
         return tables;
@@ -95,6 +118,65 @@
             total += parseSingleRoll(allRolls[i]);
         }
         return total
+    }
+
+    function getMinRoll(rollString){     
+        var allRolls = rollString.split("+");
+        var total = 0;
+        for (var i = 0; i < allRolls.length; i++) {
+            total += getMinFromSingleRoll(allRolls[i]);
+        }
+        return total;
+    }
+
+    function getMinFromSingleRoll(rollString){
+        var dice = Number(rollString.split("d")[0]);
+        var dieValue = Number(rollString.split("d")[1]);
+        if (!dieValue) { // Then the input is just a number return that
+            return dice;
+        }else if (rollString[0] === "d") { // If the string starts with 'd' then assume it's 1 die being rolled.
+            return 1;
+        }else{
+            return dice;
+        }
+    }
+
+    /// Handles single numbers: 7, single die rolls (e.g. d10, d20), multiple die rolls (e.g. 3d4, 2d12) and combinations of all of these (e.g. 2d12 + d4 + 10).
+    function getMaxRoll(rollString){     
+        var allRolls = rollString.split("+");
+        var total = 0;
+        for (var i = 0; i < allRolls.length; i++) {
+            total += getMaxFromSingleRoll(allRolls[i]);
+        }
+        return total;
+    }
+
+    function getMaxFromSingleRoll(rollString){
+        var dice = Number(rollString.split("d")[0]);
+        var dieValue = Number(rollString.split("d")[1]);
+        if (!dieValue) { // Then the input is just a number return that
+            return dice;
+        }else if (rollString[0] === "d") { // If the string starts with 'd' then assume it's 1 die being rolled.
+            return dieValue;
+        }else{
+            return dieValue * dice;
+        }
+    }
+
+    function getRollsFromString(rollString){
+        var allRolls = rollString.split("+");
+
+    }
+    
+    function getRollFromString(rollString){
+        var iterations = Number(singleRollString.split("d")[0]);
+        var dieValue = Number(singleRollString.split("d")[1]);
+        if (!dieValue) { // Then the input is just a number return that
+            return iterations;
+        }
+        if (singleRollString[0] === "d") { // If the string starts with 'd' then assume it's 1 die being rolled.
+            iterations = 1;
+        }
     }
 
     function parseSingleRoll(singleRollString) {
