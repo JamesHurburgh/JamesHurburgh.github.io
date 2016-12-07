@@ -26,6 +26,9 @@ $(document).ready(function() {
 
     function loadScript() {
         var titleToLoad = window.location.hash.substr(1);
+        if(!titleToLoad){
+            return;
+        }
         console.log("Loading " + window.location.hash.substr(1));
         var scriptList = store.get('scriptList');
         for (var i = 0; i < scriptList.length; i++) {
@@ -221,4 +224,5 @@ $(document).ready(function() {
     // Initialise    
     transform();
     loadScriptList();
+    loadScript();
 });
