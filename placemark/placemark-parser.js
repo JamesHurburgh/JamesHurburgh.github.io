@@ -2,11 +2,11 @@
     //    var tablesRegex = new RegExp(/{{{([^{}]*?:::[^{}]*?)}}}/);
 
     function randBetween(min, max) {
-        return Math.ceil(Math.random() * (max - min)) + min;
+        return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
     function chooseRandom(list) {
-        return list[randBetween(0, list.length)];
+        return list[randBetween(0, list.length-1)];
     }
 
     function shuffle(array) {
@@ -218,13 +218,13 @@
         var unnamedTables = [];
         var variables = {};
 
-        var placeMarkRegex = new RegExp(/{{([^{}]*?)}}/);
+        var placeMarkRegex = new RegExp(/{([^{}]*?)}/);
         var placeMarkMatch;
         while (placeMarkMatch = placeMarkRegex.exec(output)) {
             var choice;
             var fullMatch = placeMarkMatch[0];
             var innerText = placeMarkMatch[1];
-            var functionCall = innerText.split("::");
+            var functionCall = innerText.split(":");
             if (functionCall == innerText) {
                 var list = innerText.split("|");
                 if (list.constructor != Array) {
@@ -233,6 +233,7 @@
                 }
                 choice = chooseRandom(list);
             } else {
+                var functionName = functionCall[0];
                 switch (functionCall[0]) {
                     case "":
                     case "lookup":
