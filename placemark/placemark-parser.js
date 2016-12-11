@@ -38,16 +38,16 @@
     /* What a table definition shold look like
 
     {{size[2d4]::
-        2:Diminuative|
-        3:Tiny|
-        4:Small|
+        [2]Diminuative|
+        [3]Tiny|
+        [4]Small|
         5:Medium|
         6:Large|
         7:Huge|
         8:Collosus}}
 
     {{hitLocation[d10]::
-        1-6:Miss|
+        1-6:{:miss}|
         7:Torso|
         8:Arms|
         9:Legs|
@@ -84,16 +84,22 @@
             var maxRoll = getMaxRoll(roll);
             for(var i = 0; i < list.length; i++){
                 var rollDef = list[i];
-                var split = rollDef.split(":");
-                if(!split[1]){ //Then there is no numbering.  Use autonumbering.
+                var rollDefRegex = new RegExp(/(?:\[(\d)(?:-\d)?\])?(.+)/);
+                rollDefMatch = rollDefRegex.exec(rollDef);
+                if(!rollDef){
                     var min = i+minRoll; // This doesn't account for mixed mode.  It assumes if autonumbering occurs, it occurs for all.
                     var max = i+minRoll;
-                    rollDictionary.push({item: split[0], min:min, max:max});
+                    rollDictionary.push({item: "", min:min, max:max});
+                }else
+                if(!rollDefMatch[1]){ //Then there is no numbering.  Use autonumbering.
+                    var min = i+minRoll; // This doesn't account for mixed mode.  It assumes if autonumbering occurs, it occurs for all.
+                    var max = i+minRoll;
+                    rollDictionary.push({item: rollDefMatch[2], min:min, max:max});
                 }else{                    
-                    var min = split[0].split("-")[0];
-                    var max = split[0].split("-")[1];
+                    var min = rollDefMatch[1].split("-")[0];
+                    var max = rollDefMatch[1].split("-")[1];
                     if(!max){ max = min; }
-                    rollDictionary.push({item: split[1], min:min, max:max});
+                    rollDictionary.push({item: rollDefMatch[2], min:min, max:max});
                 }
             }
             tables[name] = { 
