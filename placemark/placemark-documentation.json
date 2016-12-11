@@ -1,0 +1,13 @@
+[
+    {"topic":"Introduction",
+    "documentation":"#Introduction\n\nThis {{awesome|fantastic|terrific|splendiferous}} {{website|webpage|online tool|magic portal}} {{helps|assists|just gets stuff done}} {{creating|making|assembling}} {{random|natural|funky}} {{output|text|sentences|works of art}}.\n\nThis is done by transforming PlaceMark script, which is {{what you see|}} in the text area above. It allows you to write natural sentences with placeamrks where you would like to include random words. This is done by using double curly braces {{placeholder}} with a list of possible {{words or phrases|phrases or words}} to use seperated by the bar \"|\" character. When the text is transformed a random option will be chosen from each PlaceMark. It's that simple!\n\nThe {{magic internet navigation buttons|links}} {{on the right|on the starboard side of your browser|over there -->}} (once they exist) will be all of your available PlaceMark Scripts. Right now I've (got the intention to) put a bunch of helpful tutorials that will help you familiarise yourself with the interface and get you started making your own fantastic PlaceMark Scripts.\n\nThe {{results are|output is}} {{parsed|transformed}} as [Markdown](https://en.wikipedia.org/wiki/Markdown) {{for your convinience|so you don't have to}}.",
+    "next":"Getting Started",
+    "previous":"",
+    "tags" : ["basic","intro"],
+    "relatedtopics":[]},
+    {"topic":"",
+    "documentation":"",
+    "tags" : [],
+    "relatedtopics":[]},
+
+];
