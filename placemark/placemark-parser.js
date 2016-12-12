@@ -1,4 +1,4 @@
-    var tablesRegex = new RegExp(/{{{((?:.|\n)+?)(?!({{{(?:.|\n)+?}}}))}}}/);
+    var tablesRegex = new RegExp(/{{((?:.|\n)+?)(?!({{(?:.|\n)+?}}))}}/);
     //    var tablesRegex = new RegExp(/{{{([^{}]*?:::[^{}]*?)}}}/);
 
     function randBetween(min, max) {
@@ -41,17 +41,17 @@
         [2]Diminuative|
         [3]Tiny|
         [4]Small|
-        5:Medium|
-        6:Large|
-        7:Huge|
-        8:Collosus}}
+        [5]Medium|
+        [6]Large|
+        [7]Huge|
+        [8]Collosus}}
 
     {{hitLocation[d10]::
-        1-6:{:miss}|
-        7:Torso|
-        8:Arms|
-        9:Legs|
-        10:Head}}
+        [1-6]{:miss}|
+        [7]Torso|
+        [8]Arms|
+        [9]Legs|
+        [10]Head}}
 
     */
 
@@ -71,7 +71,7 @@
 
         var tableMatch;
         while (tableMatch = tablesRegex.exec(input)) {
-            var tableDef = tableMatch[1].split(":::");
+            var tableDef = tableMatch[1].split("::");
             var header = tableDef[0];
             var name = header.split(":")[0]; // TODO change format to: tableName[roll] instead of tableName:roll
             var roll = header.split(":")[1];
@@ -84,7 +84,7 @@
             var maxRoll = getMaxRoll(roll);
             for(var i = 0; i < list.length; i++){
                 var rollDef = list[i];
-                var rollDefRegex = new RegExp(/(?:\[(\d)(?:-\d)?\])?(.+)/);
+                var rollDefRegex = new RegExp(/(?:\[(\d+(?:-\d+)?)\])?(.+)/);
                 rollDefMatch = rollDefRegex.exec(rollDef);
                 if(!rollDef){
                     var min = i+minRoll; // This doesn't account for mixed mode.  It assumes if autonumbering occurs, it occurs for all.
