@@ -24,12 +24,12 @@
         return array;
     }
 
-    function importScript(reference, scriptDao){
+    function getScript(reference, scriptDao){
         // TODO break down into namespace etc.
         var scripts = scriptDao();
         for(var i = 0; i < scripts.length; i++){
             if(reference === scripts[i].title){
-                return parse(scripts[i].script);
+                return scripts[i].script;
             }
         }
         return "[[ERR: No import found for '" + reference + "']]";
@@ -230,6 +230,24 @@
             var choice;
             var fullMatch = placeMarkMatch[0];
             var innerText = placeMarkMatch[1];
+
+            // var colonIndex = innerText.indexOf(":");
+            // if(colonIndex == -1){
+            //     var list = innerText.split("|");
+            //     if (list.constructor != Array) {
+            //         list = [list]; // If the array only has one item it will be treated as a char array, instead of an array of one string.
+            //         unnamedTables.push(list);
+            //     }
+            //     choice = chooseRandom(list);
+            // }else{
+            //     var functionName = innerText.substring(0, colonIndex);
+            //     var text = innerText.substring(colonIndex+1, innerText.length);
+            //     var functionNameRegExp = new RegExp(/(.+)(?:\[(.*?)\])?/);
+            //     var functionNameMatch = functionNameRegExp.exec(functionName);
+            //     functionName = functionNameMatch[1];
+            //     var functionParameters = functionNameMatch[2];
+            //     console.log("Function Called: '" + functionName + "[" + functionParameters + "]" + text + "'");
+            // }
             var functionCall = innerText.split(":");
             if (functionCall == innerText) {
                 var list = innerText.split("|");
@@ -278,7 +296,13 @@
                         choice = variables[functionCall[1]];
                         break;
                     case "import":
-                        choice = importScript(functionCall[1], function(){return store.get('scriptList')});
+                        var scriptImport = getScript(functionCall[1], function(){return store.get('scriptList')});
+                        var importedTables = parseTables(scriptImport);
+                        for(var key in importedTables){
+                            tables[key] = importedTables[key];
+                        }
+                        // displayTables(tables); // TODO Work out how to show imported tables
+                        choice = parse(scriptImport);
                         break;
                     case "eval":
                     // TODO Strip non maths symbols.
