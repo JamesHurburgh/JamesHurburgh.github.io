@@ -24,11 +24,11 @@
         return array;
     }
 
-    function importScript(reference, scriptDao){
+    function importScript(reference, scriptDao) {
         // TODO break down into namespace etc.
         var scripts = scriptDao();
-        for(var i = 0; i < scripts.length; i++){
-            if(reference === scripts[i].title){
+        for (var i = 0; i < scripts.length; i++) {
+            if (reference === scripts[i].title) {
                 return parse(scripts[i].script);
             }
         }
@@ -58,12 +58,12 @@
     function rollOnTable(table) {
         var rollDictionary = table.rollDictionary;
         var roll = parseRollString(table.roll);
-        for(var i = 0; i < rollDictionary.length; i++){
-            if(rollDictionary[i].min <= roll && rollDictionary[i].max >= roll){
+        for (var i = 0; i < rollDictionary.length; i++) {
+            if (rollDictionary[i].min <= roll && rollDictionary[i].max >= roll) {
                 return rollDictionary[i].item;
             }
         }
-        return "[ERR: "+roll+" did not appear in lookup "+table.title+".]";
+        return "[ERR: " + roll + " did not appear in lookup " + table.title + ".]";
     }
 
     function parseTables(input) {
@@ -82,22 +82,22 @@
             }
             var minRoll = getMinRoll(roll);
             var maxRoll = getMaxRoll(roll);
-            for(var i = 0; i < list.length; i++){
+            for (var i = 0; i < list.length; i++) {
                 var rollDef = list[i];
                 var split = rollDef.split(":");
-                if(!split[1]){ //Then there is no numbering.  Use autonumbering.
-                    var min = i+minRoll; // This doesn't account for mixed mode.  It assumes if autonumbering occurs, it occurs for all.
-                    var max = i+minRoll;
-                    rollDictionary.push({item: split[0], min:min, max:max});
-                }else{                    
+                if (!split[1]) { //Then there is no numbering.  Use autonumbering.
+                    var min = i + minRoll; // This doesn't account for mixed mode.  It assumes if autonumbering occurs, it occurs for all.
+                    var max = i + minRoll;
+                    rollDictionary.push({ item: split[0], min: min, max: max });
+                } else {
                     var min = split[0].split("-")[0];
                     var max = split[0].split("-")[1];
-                    if(!max){ max = min; }
-                    rollDictionary.push({item: split[1], min:min, max:max});
+                    if (!max) { max = min; }
+                    rollDictionary.push({ item: split[1], min: min, max: max });
                 }
             }
-            tables[name] = { 
-                roll: roll, 
+            tables[name] = {
+                roll: roll,
                 list: list,
                 minRoll: getMinRoll(roll),
                 maxRoll: getMaxRoll(roll),
@@ -127,7 +127,7 @@
         return total
     }
 
-    function getMinRoll(rollString){     
+    function getMinRoll(rollString) {
         var allRolls = rollString.split("+");
         var total = 0;
         for (var i = 0; i < allRolls.length; i++) {
@@ -136,20 +136,20 @@
         return total;
     }
 
-    function getMinFromSingleRoll(rollString){
+    function getMinFromSingleRoll(rollString) {
         var dice = Number(rollString.split("d")[0]);
         var dieValue = Number(rollString.split("d")[1]);
         if (!dieValue) { // Then the input is just a number return that
             return dice;
-        }else if (rollString[0] === "d") { // If the string starts with 'd' then assume it's 1 die being rolled.
+        } else if (rollString[0] === "d") { // If the string starts with 'd' then assume it's 1 die being rolled.
             return 1;
-        }else{
+        } else {
             return dice;
         }
     }
 
     /// Handles single numbers: 7, single die rolls (e.g. d10, d20), multiple die rolls (e.g. 3d4, 2d12) and combinations of all of these (e.g. 2d12 + d4 + 10).
-    function getMaxRoll(rollString){     
+    function getMaxRoll(rollString) {
         var allRolls = rollString.split("+");
         var total = 0;
         for (var i = 0; i < allRolls.length; i++) {
@@ -158,24 +158,24 @@
         return total;
     }
 
-    function getMaxFromSingleRoll(rollString){
+    function getMaxFromSingleRoll(rollString) {
         var dice = Number(rollString.split("d")[0]);
         var dieValue = Number(rollString.split("d")[1]);
         if (!dieValue) { // Then the input is just a number return that
             return dice;
-        }else if (rollString[0] === "d") { // If the string starts with 'd' then assume it's 1 die being rolled.
+        } else if (rollString[0] === "d") { // If the string starts with 'd' then assume it's 1 die being rolled.
             return dieValue;
-        }else{
+        } else {
             return dieValue * dice;
         }
     }
 
-    function getRollsFromString(rollString){
+    function getRollsFromString(rollString) {
         var allRolls = rollString.split("+");
 
     }
-    
-    function getRollFromString(rollString){
+
+    function getRollFromString(rollString) {
         var iterations = Number(singleRollString.split("d")[0]);
         var dieValue = Number(singleRollString.split("d")[1]);
         if (!dieValue) { // Then the input is just a number return that
@@ -233,7 +233,15 @@
                 }
                 choice = chooseRandom(list);
             } else {
-                switch (functionCall[0]) {
+                var functionWithParamsRegex = new RegExp(/(.+?)\[(.+?)\]/);
+                var functionWithParamsMatch = functionWithParamsRegex.exec(functionCall[0]);
+                var functionName = functionCall[0];
+                var parameters = [];
+                if (functionWithParamsMatch) {
+                    functionName = functionWithParamsMatch[0];
+                    parameters = functionWithParamsMatch[1].split(",");
+                }
+                switch (functionName) {
                     case "":
                     case "lookup":
                         var table = tables[functionCall[1]];
@@ -250,16 +258,17 @@
                         choice = parseRollString(functionCall[1]);
                         break;
                     case "shuffle":
-                        // TODO allow for custom seperator
-                        var list = functionCall[1].split("|");
                         var seperator = ", ";
+                        if (parameters[0]) {
+                            seperator = parameters[0];
+                        }
+                        var list = functionCall[1].split("|");
                         choice = shuffle(list).join(seperator);
                         break;
                     case "repeat":
-                        var parameter = functionCall[1];
-                        var text = functionCall[2];
+                        var text = functionCall[1];
                         choice = "";
-                        for (var i = 0; i < parameter; i++) {
+                        for (var i = 0; i < parameters[0]; i++) {
                             choice += text;
                         }
                         break;
@@ -271,10 +280,10 @@
                         choice = variables[functionCall[1]];
                         break;
                     case "import":
-                        choice = importScript(functionCall[1], function(){return store.get('scriptList')});
+                        choice = importScript(functionCall[1], function() { return store.get('scriptList') });
                         break;
                     case "eval":
-                    // TODO Strip non maths symbols.
+                        // TODO Strip non maths symbols.
                         choice = eval(functionCall[1]);
                         break;
                     case "comment":
