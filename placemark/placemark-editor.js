@@ -83,6 +83,7 @@ $(document).ready(function() {
 
         store.set('scriptList', scriptList);
         loadScriptList();
+        location.hash = "#" + title;
     }
 
     function reloadDocumentation() {
@@ -156,12 +157,18 @@ $(document).ready(function() {
         }, this);
     }
 
+    function exportAll(){
+        var scriptList = store.get('scriptList');
+
+    }
+
     function transform() {
 
         var output = $("#placeMark").val();
         tables = parseTables(output);
-        displayTables(tables);
         result = parse(output);
+
+        displayTables(tables);
 
         $("#markdown").val(result);
         converter = new showdown.Converter(),
@@ -187,6 +194,10 @@ $(document).ready(function() {
     });
     $("#export").click(function() {
         exportScript();
+        return false;
+    });
+    $("#exportAllButton").click(function() {
+        exportAll();
         return false;
     });
     $("#save").click(function() {
