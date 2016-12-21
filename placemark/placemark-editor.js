@@ -26,6 +26,9 @@ $(document).ready(function() {
 
     function loadScript() {
         var titleToLoad = window.location.hash.substr(1);
+        if(!titleToLoad){
+            return;
+        }
         console.log("Loading " + window.location.hash.substr(1));
         var scriptList = store.get('scriptList');
         for (var i = 0; i < scriptList.length; i++) {
@@ -80,6 +83,7 @@ $(document).ready(function() {
 
         store.set('scriptList', scriptList);
         loadScriptList();
+        location.hash = "#" + title;
     }
 
     function reloadDocumentation() {
@@ -128,25 +132,43 @@ $(document).ready(function() {
             var table = tables[element];
             var tableElement = $("<table class='table table-striped'>")
                 .append($("<thead>")
-                .append($("<tr>")
+                .append($("<tr>").append($("<th>"))
                 .append($("<th>")
-                .append(element + " (" + table.roll + ")"))));            
-            for(var index = table.minRoll;index <= table.maxRoll; index++){
-                var item = table.list[index-table.minRoll];// TODO make this more like a dictionary
-                tableElement.append($("<tr>").append($("<td>").append(index + " " + item)));
-            }
+                .append(element + " (" + table.roll + ")"))));           
+            for(var rowIndex = 0; rowIndex < table.rollDictionary.length; rowIndex++){
+                var row = table.rollDictionary[rowIndex];
+                var number = row.min;
+                if(row.min != row.max){
+                    number += "-" + row.max;
+                }
+
+                tableElement
+                    .append($("<tr>")
+                    .append($("<td>").append(number))
+                    .append($("<td>").append(row.item)));
+            } 
+            // for(var index = table.minRoll;index <= table.maxRoll; index++){
+            //     var item = table.list[index-table.minRoll];// TODO make this more like a dictionary
+            //     tableElement.append($("<tr>").append($("<td>").append(index + " " + item)));
+            // }
 
             tableDiv.append($("<div class='col-lg-3'>").append(tableElement));
 
         }, this);
     }
 
+    function exportAll(){
+        var scriptList = store.get('scriptList');
+
+    }
+
     function transform() {
 
         var output = $("#placeMark").val();
         tables = parseTables(output);
-        displayTables(tables);
         result = parse(output);
+
+        displayTables(tables);
 
         $("#markdown").val(result);
         converter = new showdown.Converter(),
@@ -172,6 +194,10 @@ $(document).ready(function() {
     });
     $("#export").click(function() {
         exportScript();
+        return false;
+    });
+    $("#exportAllButton").click(function() {
+        exportAll();
         return false;
     });
     $("#save").click(function() {
@@ -221,4 +247,5 @@ $(document).ready(function() {
     // Initialise    
     transform();
     loadScriptList();
+    loadScript();
 });

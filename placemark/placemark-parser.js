@@ -1,12 +1,12 @@
-    var tablesRegex = new RegExp(/{{{((?:.|\n)+?)(?!({{{(?:.|\n)+?}}}))}}}/);
+    var tablesRegex = new RegExp(/{{((?:.|\n)+?)(?!({{(?:.|\n)+?}}))}}/);
     //    var tablesRegex = new RegExp(/{{{([^{}]*?:::[^{}]*?)}}}/);
 
     function randBetween(min, max) {
-        return Math.ceil(Math.random() * (max - min)) + min;
+        return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
     function chooseRandom(list) {
-        return list[randBetween(0, list.length)];
+        return list[randBetween(0, list.length-1)];
     }
 
     function shuffle(array) {
@@ -24,12 +24,21 @@
         return array;
     }
 
+<<<<<<< HEAD
     function importScript(reference, scriptDao) {
         // TODO break down into namespace etc.
         var scripts = scriptDao();
         for (var i = 0; i < scripts.length; i++) {
             if (reference === scripts[i].title) {
                 return parse(scripts[i].script);
+=======
+    function getScript(reference, scriptDao){
+        // TODO break down into namespace etc.
+        var scripts = scriptDao();
+        for(var i = 0; i < scripts.length; i++){
+            if(reference === scripts[i].title){
+                return scripts[i].script;
+>>>>>>> origin/master
             }
         }
         return "[[ERR: No import found for '" + reference + "']]";
@@ -38,20 +47,20 @@
     /* What a table definition shold look like
 
     {{size[2d4]::
-        2:Diminuative|
-        3:Tiny|
-        4:Small|
-        5:Medium|
-        6:Large|
-        7:Huge|
-        8:Collosus}}
+        [2]Diminuative|
+        [3]Tiny|
+        [4]Small|
+        [5]Medium|
+        [6]Large|
+        [7]Huge|
+        [8]Collosus}}
 
     {{hitLocation[d10]::
-        1-6:Miss|
-        7:Torso|
-        8:Arms|
-        9:Legs|
-        10:Head}}
+        [1-6]{:miss}|
+        [7]Torso|
+        [8]Arms|
+        [9]Legs|
+        [10]Head}}
 
     */
 
@@ -71,7 +80,7 @@
 
         var tableMatch;
         while (tableMatch = tablesRegex.exec(input)) {
-            var tableDef = tableMatch[1].split(":::");
+            var tableDef = tableMatch[1].split("::");
             var header = tableDef[0];
             var name = header.split(":")[0]; // TODO change format to: tableName[roll] instead of tableName:roll
             var roll = header.split(":")[1];
@@ -84,6 +93,7 @@
             var maxRoll = getMaxRoll(roll);
             for (var i = 0; i < list.length; i++) {
                 var rollDef = list[i];
+<<<<<<< HEAD
                 var split = rollDef.split(":");
                 if (!split[1]) { //Then there is no numbering.  Use autonumbering.
                     var min = i + minRoll; // This doesn't account for mixed mode.  It assumes if autonumbering occurs, it occurs for all.
@@ -94,6 +104,24 @@
                     var max = split[0].split("-")[1];
                     if (!max) { max = min; }
                     rollDictionary.push({ item: split[1], min: min, max: max });
+=======
+                var rollDefRegex = new RegExp(/(?:\[(\d+(?:-\d+)?)\])?(.+)/);
+                rollDefMatch = rollDefRegex.exec(rollDef);
+                if(!rollDef){
+                    var min = i+minRoll; // This doesn't account for mixed mode.  It assumes if autonumbering occurs, it occurs for all.
+                    var max = i+minRoll;
+                    rollDictionary.push({item: "", min:min, max:max});
+                }else
+                if(!rollDefMatch[1]){ //Then there is no numbering.  Use autonumbering.
+                    var min = i+minRoll; // This doesn't account for mixed mode.  It assumes if autonumbering occurs, it occurs for all.
+                    var max = i+minRoll;
+                    rollDictionary.push({item: rollDefMatch[2], min:min, max:max});
+                }else{                    
+                    var min = rollDefMatch[1].split("-")[0];
+                    var max = rollDefMatch[1].split("-")[1];
+                    if(!max){ max = min; }
+                    rollDictionary.push({item: rollDefMatch[2], min:min, max:max});
+>>>>>>> origin/master
                 }
             }
             tables[name] = {
@@ -218,13 +246,31 @@
         var unnamedTables = [];
         var variables = {};
 
-        var placeMarkRegex = new RegExp(/{{([^{}]*?)}}/);
+        var placeMarkRegex = new RegExp(/{([^{}]*?)}/);
         var placeMarkMatch;
         while (placeMarkMatch = placeMarkRegex.exec(output)) {
             var choice;
             var fullMatch = placeMarkMatch[0];
             var innerText = placeMarkMatch[1];
-            var functionCall = innerText.split("::");
+
+            // var colonIndex = innerText.indexOf(":");
+            // if(colonIndex == -1){
+            //     var list = innerText.split("|");
+            //     if (list.constructor != Array) {
+            //         list = [list]; // If the array only has one item it will be treated as a char array, instead of an array of one string.
+            //         unnamedTables.push(list);
+            //     }
+            //     choice = chooseRandom(list);
+            // }else{
+            //     var functionName = innerText.substring(0, colonIndex);
+            //     var text = innerText.substring(colonIndex+1, innerText.length);
+            //     var functionNameRegExp = new RegExp(/(.+)(?:\[(.*?)\])?/);
+            //     var functionNameMatch = functionNameRegExp.exec(functionName);
+            //     functionName = functionNameMatch[1];
+            //     var functionParameters = functionNameMatch[2];
+            //     console.log("Function Called: '" + functionName + "[" + functionParameters + "]" + text + "'");
+            // }
+            var functionCall = innerText.split(":");
             if (functionCall == innerText) {
                 var list = innerText.split("|");
                 if (list.constructor != Array) {
@@ -233,6 +279,7 @@
                 }
                 choice = chooseRandom(list);
             } else {
+<<<<<<< HEAD
                 var functionWithParamsRegex = new RegExp(/(.+?)\[(.+?)\]/);
                 var functionWithParamsMatch = functionWithParamsRegex.exec(functionCall[0]);
                 var functionName = functionCall[0];
@@ -242,6 +289,10 @@
                     parameters = functionWithParamsMatch[1].split(",");
                 }
                 switch (functionName) {
+=======
+                var functionName = functionCall[0];
+                switch (functionCall[0]) {
+>>>>>>> origin/master
                     case "":
                     case "lookup":
                         var table = tables[functionCall[1]];
@@ -280,7 +331,17 @@
                         choice = variables[functionCall[1]];
                         break;
                     case "import":
+<<<<<<< HEAD
                         choice = importScript(functionCall[1], function() { return store.get('scriptList') });
+=======
+                        var scriptImport = getScript(functionCall[1], function(){return store.get('scriptList')});
+                        var importedTables = parseTables(scriptImport);
+                        for(var key in importedTables){
+                            tables[key] = importedTables[key];
+                        }
+                        // displayTables(tables); // TODO Work out how to show imported tables
+                        choice = parse(scriptImport);
+>>>>>>> origin/master
                         break;
                     case "eval":
                         // TODO Strip non maths symbols.
