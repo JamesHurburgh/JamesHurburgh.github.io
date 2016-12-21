@@ -14,7 +14,7 @@ $(document).ready(function() {
             link.append(element.title);
             link.attr("href", "#" + element.title);
             $("#scriptList").append(link);
-        }, this);        
+        }, this);
         console.log("Script list loaded.");
     }
 
@@ -26,7 +26,7 @@ $(document).ready(function() {
 
     function loadScript() {
         var titleToLoad = window.location.hash.substr(1);
-        if(!titleToLoad){
+        if (!titleToLoad) {
             return;
         }
         console.log("Loading " + window.location.hash.substr(1));
@@ -132,21 +132,21 @@ $(document).ready(function() {
             var table = tables[element];
             var tableElement = $("<table class='table table-striped'>")
                 .append($("<thead>")
-                .append($("<tr>").append($("<th>"))
-                .append($("<th>")
-                .append(element + " (" + table.roll + ")"))));           
-            for(var rowIndex = 0; rowIndex < table.rollDictionary.length; rowIndex++){
+                    .append($("<tr>").append($("<th>"))
+                        .append($("<th>")
+                            .append(element + " (" + table.roll + ")"))));
+            for (var rowIndex = 0; rowIndex < table.rollDictionary.length; rowIndex++) {
                 var row = table.rollDictionary[rowIndex];
                 var number = row.min;
-                if(row.min != row.max){
+                if (row.min != row.max) {
                     number += "-" + row.max;
                 }
 
                 tableElement
                     .append($("<tr>")
-                    .append($("<td>").append(number))
-                    .append($("<td>").append(row.item)));
-            } 
+                        .append($("<td>").append(number))
+                        .append($("<td>").append(row.item)));
+            }
             // for(var index = table.minRoll;index <= table.maxRoll; index++){
             //     var item = table.list[index-table.minRoll];// TODO make this more like a dictionary
             //     tableElement.append($("<tr>").append($("<td>").append(index + " " + item)));
@@ -157,9 +157,11 @@ $(document).ready(function() {
         }, this);
     }
 
-    function exportAll(){
+    function exportAll() {
         var scriptList = store.get('scriptList');
-
+        var url = 'data:text/json;charset=utf8,' + encodeURIComponent(scriptList);
+        window.open(url, '_blank');
+        window.focus();
     }
 
     function transform() {
