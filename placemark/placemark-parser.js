@@ -24,21 +24,12 @@
         return array;
     }
 
-<<<<<<< HEAD
-    function importScript(reference, scriptDao) {
-        // TODO break down into namespace etc.
-        var scripts = scriptDao();
-        for (var i = 0; i < scripts.length; i++) {
-            if (reference === scripts[i].title) {
-                return parse(scripts[i].script);
-=======
     function getScript(reference, scriptDao){
         // TODO break down into namespace etc.
         var scripts = scriptDao();
         for(var i = 0; i < scripts.length; i++){
             if(reference === scripts[i].title){
                 return scripts[i].script;
->>>>>>> origin/master
             }
         }
         return "[[ERR: No import found for '" + reference + "']]";
@@ -93,18 +84,6 @@
             var maxRoll = getMaxRoll(roll);
             for (var i = 0; i < list.length; i++) {
                 var rollDef = list[i];
-<<<<<<< HEAD
-                var split = rollDef.split(":");
-                if (!split[1]) { //Then there is no numbering.  Use autonumbering.
-                    var min = i + minRoll; // This doesn't account for mixed mode.  It assumes if autonumbering occurs, it occurs for all.
-                    var max = i + minRoll;
-                    rollDictionary.push({ item: split[0], min: min, max: max });
-                } else {
-                    var min = split[0].split("-")[0];
-                    var max = split[0].split("-")[1];
-                    if (!max) { max = min; }
-                    rollDictionary.push({ item: split[1], min: min, max: max });
-=======
                 var rollDefRegex = new RegExp(/(?:\[(\d+(?:-\d+)?)\])?(.+)/);
                 rollDefMatch = rollDefRegex.exec(rollDef);
                 if(!rollDef){
@@ -121,7 +100,6 @@
                     var max = rollDefMatch[1].split("-")[1];
                     if(!max){ max = min; }
                     rollDictionary.push({item: rollDefMatch[2], min:min, max:max});
->>>>>>> origin/master
                 }
             }
             tables[name] = {
@@ -279,7 +257,6 @@
                 }
                 choice = chooseRandom(list);
             } else {
-<<<<<<< HEAD
                 var functionWithParamsRegex = new RegExp(/(.+?)\[(.+?)\]/);
                 var functionWithParamsMatch = functionWithParamsRegex.exec(functionCall[0]);
                 var functionName = functionCall[0];
@@ -289,10 +266,6 @@
                     parameters = functionWithParamsMatch[1].split(",");
                 }
                 switch (functionName) {
-=======
-                var functionName = functionCall[0];
-                switch (functionCall[0]) {
->>>>>>> origin/master
                     case "":
                     case "lookup":
                         var table = tables[functionCall[1]];
@@ -331,9 +304,6 @@
                         choice = variables[functionCall[1]];
                         break;
                     case "import":
-<<<<<<< HEAD
-                        choice = importScript(functionCall[1], function() { return store.get('scriptList') });
-=======
                         var scriptImport = getScript(functionCall[1], function(){return store.get('scriptList')});
                         var importedTables = parseTables(scriptImport);
                         for(var key in importedTables){
@@ -341,7 +311,6 @@
                         }
                         // displayTables(tables); // TODO Work out how to show imported tables
                         choice = parse(scriptImport);
->>>>>>> origin/master
                         break;
                     case "eval":
                         // TODO Strip non maths symbols.
