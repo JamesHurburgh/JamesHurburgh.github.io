@@ -1,30 +1,11 @@
+define(['jquery', 'store', 'app/dicer'],
+function   ($,        store,   dicer) {
+
     var tablesRegex = new RegExp(/{{((?:.|\n)+?)(?!({{(?:.|\n)+?}}))}}/);
+    return {
     //    var tablesRegex = new RegExp(/{{{([^{}]*?:::[^{}]*?)}}}/);
 
-    function randBetween(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-
-    function chooseRandom(list) {
-        return list[randBetween(0, list.length-1)];
-    }
-
-    function shuffle(array) {
-        var currentIndex = array.length,
-            temporaryValue, randomIndex;
-
-        while (0 !== currentIndex) {
-            randomIndex = Math.floor(Math.random() * currentIndex);
-            currentIndex -= 1;
-
-            temporaryValue = array[currentIndex];
-            array[currentIndex] = array[randomIndex];
-            array[randomIndex] = temporaryValue;
-        }
-        return array;
-    }
-
-    function getScript(reference, scriptDao){
+    getScript : function(reference, scriptDao){
         // TODO break down into namespace etc.
         var scripts = scriptDao();
         for(var i = 0; i < scripts.length; i++){
@@ -33,7 +14,7 @@
             }
         }
         return "[[ERR: No import found for '" + reference + "']]";
-    }
+    },
 
     /* What a table definition shold look like
 
@@ -55,18 +36,18 @@
 
     */
 
-    function rollOnTable(table) {
+    rollOnTable : function(table) {
         var rollDictionary = table.rollDictionary;
-        var roll = parseRollString(table.roll);
+        var roll = dicer.parseRollString(table.roll);
         for (var i = 0; i < rollDictionary.length; i++) {
             if (rollDictionary[i].min <= roll && rollDictionary[i].max >= roll) {
                 return rollDictionary[i].item;
             }
         }
         return "[ERR: " + roll + " did not appear in lookup " + table.title + ".]";
-    }
+    },
 
-    function parseTables(input) {
+    parseTables : function(input) {
         var tables = [];
 
         var tableMatch;
@@ -75,13 +56,18 @@
             var header = tableDef[0];
             var name = header.split(":")[0]; // TODO change format to: tableName[roll] instead of tableName:roll
             var roll = header.split(":")[1];
+            if(!tableDef[1]){
+                // TODO throw an error.
+                Console.log("Invalid table definition: " + tableMatch[1])
+                return;
+            }
             var list = tableDef[1].split("|");
             var rollDictionary = [];
             if (!roll) {
                 roll = "d" + list.length;
             }
-            var minRoll = getMinRoll(roll);
-            var maxRoll = getMaxRoll(roll);
+            var minRoll = dicer.getMinRoll(roll);
+            var maxRoll = dicer.getMaxRoll(roll);
             for (var i = 0; i < list.length; i++) {
                 var rollDef = list[i];
                 var rollDefRegex = new RegExp(/(?:\[(\d+(?:-\d+)?)\])?(.+)/);
@@ -105,122 +91,27 @@
             tables[name] = {
                 roll: roll,
                 list: list,
-                minRoll: getMinRoll(roll),
-                maxRoll: getMaxRoll(roll),
+                minRoll: dicer.getMinRoll(roll),
+                maxRoll: dicer.getMaxRoll(roll),
                 rollDictionary: rollDictionary
             };
             input = input.replace(tableMatch[0], "");
         }
         return tables;
-    }
+    },
 
-    function removeTables(input) {
+    removeTables : function(input) {
         var tableMatch;
         while (tableMatch = tablesRegex.exec(input)) {
             input = input.replace(tableMatch[0], "");
         }
         return input;
-    }
+    },
 
-    function parseRollString(rollString) {
-        // So far handles things like 2d4 + 3d8 + 10
-        // TODO Add rerolls, add function to count successes, fudge dice
-        var allRolls = rollString.split("+");
-        var total = 0;
-        for (var i = 0; i < allRolls.length; i++) {
-            total += parseSingleRoll(allRolls[i]);
-        }
-        return total
-    }
+    parse : function(output) {
 
-    function getMinRoll(rollString) {
-        var allRolls = rollString.split("+");
-        var total = 0;
-        for (var i = 0; i < allRolls.length; i++) {
-            total += getMinFromSingleRoll(allRolls[i]);
-        }
-        return total;
-    }
-
-    function getMinFromSingleRoll(rollString) {
-        var dice = Number(rollString.split("d")[0]);
-        var dieValue = Number(rollString.split("d")[1]);
-        if (!dieValue) { // Then the input is just a number return that
-            return dice;
-        } else if (rollString[0] === "d") { // If the string starts with 'd' then assume it's 1 die being rolled.
-            return 1;
-        } else {
-            return dice;
-        }
-    }
-
-    /// Handles single numbers: 7, single die rolls (e.g. d10, d20), multiple die rolls (e.g. 3d4, 2d12) and combinations of all of these (e.g. 2d12 + d4 + 10).
-    function getMaxRoll(rollString) {
-        var allRolls = rollString.split("+");
-        var total = 0;
-        for (var i = 0; i < allRolls.length; i++) {
-            total += getMaxFromSingleRoll(allRolls[i]);
-        }
-        return total;
-    }
-
-    function getMaxFromSingleRoll(rollString) {
-        var dice = Number(rollString.split("d")[0]);
-        var dieValue = Number(rollString.split("d")[1]);
-        if (!dieValue) { // Then the input is just a number return that
-            return dice;
-        } else if (rollString[0] === "d") { // If the string starts with 'd' then assume it's 1 die being rolled.
-            return dieValue;
-        } else {
-            return dieValue * dice;
-        }
-    }
-
-    function getRollsFromString(rollString) {
-        var allRolls = rollString.split("+");
-
-    }
-
-    function getRollFromString(rollString) {
-        var iterations = Number(singleRollString.split("d")[0]);
-        var dieValue = Number(singleRollString.split("d")[1]);
-        if (!dieValue) { // Then the input is just a number return that
-            return iterations;
-        }
-        if (singleRollString[0] === "d") { // If the string starts with 'd' then assume it's 1 die being rolled.
-            iterations = 1;
-        }
-    }
-
-    function parseSingleRoll(singleRollString) {
-        if (!singleRollString) {
-            console.log("parseSingleRoll(singleRollString) received null value.")
-            return 0;
-        }
-        var iterations = Number(singleRollString.split("d")[0]);
-        var dieValue = Number(singleRollString.split("d")[1]);
-        if (!dieValue) { // Then the input is just a number return that
-            return iterations;
-        }
-        if (singleRollString[0] === "d") { // If the string starts with 'd' then assume it's 1 die being rolled.
-            iterations = 1;
-        } // Otherwise, roll it out
-        return roll(iterations, dieValue);
-
-    }
-
-    function roll(iterations, dieValue) {
-        var total = 0;
-        for (var i = 0; i < iterations; i++) {
-            total += randBetween(1, dieValue);
-        }
-        return total;
-    }
-
-    function parse(output) {
-
-        var tables = parseTables(output);
-        output = removeTables(output);
+        var tables = this.parseTables(output);
+        output = this.removeTables(output);
         var unnamedTables = [];
         var variables = {};
 
@@ -255,7 +146,7 @@
                     list = [list]; // If the array only has one item it will be treated as a char array, instead of an array of one string.
                     unnamedTables.push(list);
                 }
-                choice = chooseRandom(list);
+                choice = dicer.chooseRandom(list);
             } else {
                 var functionWithParamsRegex = new RegExp(/(.+?)\[(.+?)\]/);
                 var functionWithParamsMatch = functionWithParamsRegex.exec(functionCall[0]);
@@ -272,11 +163,11 @@
                         if (!table) {
                             choice = "[[ERR: No table definition found for '" + functionCall[1] + "']]"
                         } else {
-                            choice = rollOnTable(table);
+                            choice = this.rollOnTable(table);
                         }
                         break;
                     case "range":
-                        choice = randBetween(Number(functionCall[1].split("-")[0]), Number(functionCall[1].split("-")[1]));
+                        choice = dicer.randBetween(Number(functionCall[1].split("-")[0]), Number(functionCall[1].split("-")[1]));
                         break;
                     case "roll":
                         choice = parseRollString(functionCall[1]);
@@ -304,13 +195,13 @@
                         choice = variables[functionCall[1]];
                         break;
                     case "import":
-                        var scriptImport = getScript(functionCall[1], function(){return store.get('scriptList')});
-                        var importedTables = parseTables(scriptImport);
+                        var scriptImport = this.getScript(functionCall[1], function(){return store.get('scriptList')});
+                        var importedTables = this.parseTables(scriptImport);
                         for(var key in importedTables){
                             tables[key] = importedTables[key];
                         }
                         // displayTables(tables); // TODO Work out how to show imported tables
-                        choice = parse(scriptImport);
+                        choice = this.parse(scriptImport);
                         break;
                     case "eval":
                         // TODO Strip non maths symbols.
@@ -328,3 +219,5 @@
         return output;
 
     }
+    
+}});

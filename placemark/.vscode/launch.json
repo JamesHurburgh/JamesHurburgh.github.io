@@ -4,7 +4,7 @@
         "name": "Launch Chrome against localhost, with sourcemaps",
         "type": "chrome",
         "request": "launch",
-        "url": "${workspaceRoot}/editor.html",
-        "webRoot": "${workspaceRoot}/editor.html"
+        "url": "${workspaceRoot}/www/editor.html",
+        "webRoot": "${workspaceRoot}/www/editor.html"
     }]
 }

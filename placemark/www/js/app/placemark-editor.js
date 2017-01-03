@@ -1,4 +1,20 @@
-$(document).ready(function() {
+requirejs.config({
+    //By default load any module IDs from js/lib
+    baseUrl: 'js/lib',
+    //except, if the module ID starts with "app",
+    //load it from the js/app directory. paths
+    //config is relative to the baseUrl, and
+    //never includes a ".js" extension since
+    //the paths config could be for a directory.
+    paths: {
+        app: '../app'
+    }
+});
+
+requirejs(['jquery', 'alertify', 'store', 'mousetrap','showdown', 'app/parser'],
+function   ($,        alertify,   store,   mousetrap,  showdown,   parser) {
+
+    var parser = parser;
 
     function loadScriptList() {
         console.log("Loadind script list.");
@@ -86,7 +102,7 @@ $(document).ready(function() {
         location.hash = "#" + title;
     }
 
-    function reloadDocumentation() {
+    function reloadDocumentation() { // TODO extract merge method from this method
         var scriptList = store.get('scriptList');
         if (!scriptList) {
             scriptList = [];
@@ -167,8 +183,8 @@ $(document).ready(function() {
     function transform() {
 
         var output = $("#placeMark").val();
-        tables = parseTables(output);
-        result = parse(output);
+        tables = parser.parseTables(output);
+        result = parser.parse(output);
 
         displayTables(tables);
 

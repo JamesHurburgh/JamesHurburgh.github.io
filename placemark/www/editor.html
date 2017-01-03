@@ -9,41 +9,16 @@
     <title>PlaceMark Editor</title>
     <link rel="icon" type="image/png" href="favicon.png">
 
-    <!-- Alertify JavaScript -->
-    <script src="ref/alertifyjs/1.8.0/alertify.min.js"></script>
-    <!-- Alertify CSS -->
-    <link rel="stylesheet" href="ref/alertifyjs/1.8.0/css/alertify.min.css" />
+    <link rel="stylesheet" href="css/alertify.min.css" />
     <!-- Alertify Bootstrap theme -->
-    <link rel="stylesheet" href="ref/alertifyjs/1.8.0/css/themes/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/alertify.bootstrap.min.css" />
 
     <!-- bootswatch -->
-    <link rel="stylesheet" type="text/css" href="ref/bootstrap.min.css" />
-
-    <!-- showdown.js -->
-    <script type="text/javascript" charset="utf8" src="ref/showdown.min.js"></script>
-
-    <!-- jquery.js -->
-    <script type="text/javascript" charset="utf8" src="ref/jquery-3.1.1.min.js"></script>
-
-    <!-- mousetrap.js -->
-    <script type="text/javascript" charset="utf8" src="ref/mousetrap.min.js"></script>
-
-    <!-- store.js -->
-    <script type="text/javascript" charset="utf8" src="ref/store.min.js"></script>
-    <script>
-        initStorejs()
-
-        function initStorejs() {
-            if (!store.enabled) {
-                alert('Local storage is not supported by your browser. Please disable "Private Mode", or upgrade to a modern browser.')
-                return
-            }
-        }
-    </script>
-
-    <!-- placemark.js -->
-    <script type="text/javascript" charset="utf8" src="placemark-parser.js"></script>
-    <script type="text/javascript" charset="utf8" src="placemark-editor.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    
+    <!--This sets the baseUrl to the "scripts" directory, and
+    loads a script that will have a module ID of 'main'-->
+    <script data-main="js/app/placemark-editor.js" src="js/require.js"></script>
     
 </head>
 
