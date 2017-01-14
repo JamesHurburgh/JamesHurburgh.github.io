@@ -104,6 +104,23 @@ function   dicer() {
 
     },
     
+    /*
+    Parses and rolls a single rollString.  A roll string is a text representation of a dice roll.  It might be as simple as
+    '2d6' which it interprets as two six sided dice.
+    More complex dice rolls are also possible, such as '2d20 + d4 + 2' which defines 'two twenty sided dice plus one four sided die plus 2' which would give a result between 5 and 46.
+    The default mode is total all the dice rolled.  However some dice rolls are not made for their total.  White Wolf's World of Darkness for example,
+    uses a system of dice rolls that allow you to accumulate a success for each rolled die.
+    FUTURE WORK
+    White Wolf Dice:
+    Parse: '5d10 s:>=8 rr:10'
+    five 10 sided dice, success on eight or greater, reroll tens.
+    Parse: '5d10 v:[1-7=0,8-10=1] rr:10'
+    Chance die:
+    9Parse: 'd10 v:[1-7=0,8-10=1] rr:10'
+    
+    Fudge Dice:
+    Parse: '5d6 v:[1-2=-1,3-4=0,5-6=1]'
+    */
     parseRollString : function(rollString) {
         // So far handles things like 2d4 + 3d8 + 10
         // TODO Add rerolls, add function to count successes, fudge dice
