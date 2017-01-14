@@ -14,3 +14,4 @@
 [1209/171402:WARNING:in_range_cast.h(38)] value 2400325661184 out of range
 [1209/171402:WARNING:in_range_cast.h(38)] value 2400325657710 out of range
 [1209/171402:WARNING:in_range_cast.h(38)] value 2400325657938 out of range
+[0114/233202:ERROR:crash_report_database_win.cc(426)] unexpected header
