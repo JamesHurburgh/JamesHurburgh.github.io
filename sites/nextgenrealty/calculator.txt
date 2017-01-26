@@ -1,0 +1,133 @@
+<script>
+	function calculateSavings() {
+	  var sum1_plus = 18000;
+	  var sum1_divide = 40;
+	  
+	  var sum2_times = 0.018;
+
+	  var input = document.forms["calculator_form"]["salePrice"].value.replace("$","").replace(",","");
+	  var sale_price = parseFloat(input);
+	  
+	  document.getElementById("salePrice").value="$"+(sale_price).formatMoney();
+	  document.getElementById("comparison").value="$"+(sale_price*0.03).formatMoney();
+	  document.getElementById("commission").value="$"+(sale_price*0.0198).formatMoney();
+	  document.getElementById("savings").value="$"+(sale_price*0.0102).formatMoney();
+
+	  return false;
+	}
+
+	function roundNumber(num, dec) {
+		var result = Math.round(num*Math.pow(10,dec))/Math.pow(10,dec);
+		return result;
+	}
+	
+	Number.prototype.formatMoney = function(c, d, t){
+	var n = this, 
+		c = isNaN(c = Math.abs(c)) ? 0 : c, 
+		d = d == undefined ? "." : d, 
+		t = t == undefined ? "," : t, 
+		s = n < 0 ? "-" : "", 
+		i = String(parseInt(n = Math.abs(Number(n) || 0).toFixed(c))), 
+		j = (j = i.length) > 3 ? j % 3 : 0;
+	   return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(0) : "");
+	 };
+</script>
+<style>
+	
+.calc {
+	background: #333;
+	padding: 15px 20px 5px 20px;
+	border-radius: 3px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+	color: #CCC;"
+}	
+
+.calc h2{
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+}
+
+.calc h2 .emphasis{
+	font-size: 36px;	
+}
+
+.calc form p {
+	margin: 3px 0;
+	width: 100%;
+}
+
+.calc input {
+	background: #fafafa url(http://nextgenrealty.com.au/images/dollar.gif) 8px 6px no-repeat;
+	border: 1px #fafafa solid;
+	color: #333;
+	font-size: 18px;
+	font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+	margin: 0 0 12px;
+	padding: 6px 5px 6px 5px;
+	width: 100%;
+	border-radius: 3px;		
+}
+
+.calc input:focus {
+	background: #FFF url(http://nextgenrealty.com.au/images/dollar.gif) 8px 6px no-repeat;
+	border: 1px #db2323 solid;	
+}
+
+#savings{
+	font-size: 24px;
+	height: 45px;
+}
+
+.calc input.submit, .contact input.zemSubmit {
+	background: rgb(219,35,35); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RiMjMyMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhZTE2MTYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, rgba(219,35,35,1) 0%, rgba(174,22,22,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(219,35,35,1)), color-stop(100%,rgba(174,22,22,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(219,35,35,1) 0%,rgba(174,22,22,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(219,35,35,1) 0%,rgba(174,22,22,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(219,35,35,1) 0%,rgba(174,22,22,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(219,35,35,1) 0%,rgba(174,22,22,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db2323', endColorstr='#ae1616',GradientType=0 ); /* IE6-8 */
+	border: none;
+	color: #FFF;
+	display: block;
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: bold;
+	padding: 0;
+	margin-top: -6px;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+	height: 45px;
+	-webkit-text-shadow: 0 1px 0 #7e0808;
+	-moz-text-shadow: 0 1px 0 #7e0808;
+	text-shadow: 0 1px 0 #7e0808;	
+}
+	
+</style>
+
+<div class="calc">
+	<h2><div class="emphasis">Commission</div> savings calculator</h2>
+	
+	<form id="calculator_form">
+		<p>Sale price</p>
+		<input type="text" id="salePrice" name="calculator_sale_price">
+		<input class="submit" value="Calculate Savings" type="submit" onclick="return calculateSavings();">
+	
+		<p>Comparison rate (3%)</p>
+		<input type="text" id="comparison" name="calculator_sum1" disabled="disabled">
+	 
+		<p>Our commission (1.8% + GST)</p>                                       
+		<input type="text" id="commission" name="calculator_sum2" disabled="disabled">
+	
+		<p>Your savings</p>                                         
+		<input type="text" id="savings" name="calculator_sum3" disabled="disabled">
+	
+		<p>Our commission charged at <strong>1.8%+GST</strong> is approx <strong>a third less</strong> than the average industry commission charged at 3% (including GST) in Queensland.</p>
+		<p>&nbsp;</p>
+		<p>Figures quoted above include GST.</p>
+	</form>
+</div>	
