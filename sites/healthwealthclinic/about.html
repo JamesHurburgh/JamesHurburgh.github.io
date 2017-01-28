@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Afternoon Balloon - About Us</title>
+    <link rel="icon" type="image/png" href="balloons.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        
+        .row.content {
+            height: 450px
+        }
+        /* Set gray background color and 100% height */
+        
+        .sidenav {
+            padding-top: 20px;
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+        /* Set black background color, white text and some padding */
+        
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {
+                height: auto;
+            }
+        }
+        /* Profile images */
+        /**
+        * Profile image component
+        */
+        
+        .profile-header-container {
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .profile-header-img {
+            padding: 54px;
+        }
+        
+        .profile-header-img>img.img-circle {
+            width: 240px;
+            height: 240px;
+            border: 2px solid #51D2B7;
+        }
+        
+        .profile-header {
+            margin-top: 43px;
+        }
+        /**
+        * Ranking component
+        */
+        
+        .rank-label-container {
+            margin-top: -19px;
+            /* z-index: 1000; */
+            text-align: center;
+        }
+        
+        .label.label-default.rank-label {
+            background-color: rgb(81, 210, 183);
+            padding: 5px 10px 5px 10px;
+            border-radius: 27px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Afternoon Balloon</a><img src="./images/balloons.png">
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="about.html">About Us</a></li>
+                    <li><a href="https://www.facebook.com/pg/AfternoonBalloon/photos/">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><img src="./images/signing-the-contract.png"></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfcfi7FiiWmmxVnA6Z89RVWGi3qCPFAqnF-DlcdXgsHP_sB-A/viewform">Enquire Online</a></li>
+                    <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-2 sidenav">
+                <h3>Find us on Facebook</h3>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAfternoonBalloon%2F&tabs=timeline&width=250&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500"
+                    style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            </div>
+            <div class="col-sm-8 text-left">
+
+                <div class="col-sm-12">
+                    <h1>Meet the team</h1>
+                    <p>We are a wife and husband team who have been balloon twisting since 2014 and loving every minute.</p>
+                    <hr>
+                </div>
+
+                <div class="col-sm-6 profile-header-container">
+                    <div class="profile-header-img">
+                        <img class="img-circle" src="http://graph.facebook.com/730826748/picture?height=240&width=240" />
+                        <!-- badge -->
+                        <div class="rank-label-container">
+                            <span class="label label-default rank-label">Talia Hurburgh</span>
+                        </div>
+                    </div>
+                    <p>Talia has loved balloons since she was a child and has now been creating balloon sculptures for over 2 years. She is the main twister of Afternoon Balloon when she's not busy looking after our children.</p>
+                    <hr>
+                </div>
+
+                <div class="col-sm-6 profile-header-container">
+                    <div class="profile-header-img">
+                        <img class="img-circle" src="http://graph.facebook.com/638099875/picture?height=240&width=240" />
+                        <!-- badge -->
+                        <div class="rank-label-container">
+                            <span class="label label-default rank-label">James Hurburgh</span>
+                        </div>
+                    </div>
+                    <p>When he's not goofing around with our children James enjoys making challenging balloon animals like his famous T-rex or crocodile.</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-sm-2 sidenav">
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <p>Images © Afternoon Balloon 2016</p>
+        <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+                target="_blank">CC 3.0 BY</a></div>
+        <p>Site design by James Hurburgh. For your own site <a href="mailto:jameshurburgh@gmail.com">contact me via email</a> or call 0402 650 581.</p>
+    </footer>
+
+</body>
+
+</html>

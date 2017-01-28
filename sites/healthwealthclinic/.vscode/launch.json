@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [{
+            "name": "Launch Chrome against localhost",
+            "type": "chrome",
+            "request": "launch",
+            "url": "file:///E:/Family%20Documents/GitHub/JamesHurburgh.github.io/sites/afternoonballoon/index.html",
+            "webRoot": "${workspaceRoot}"
+        },
+        {
+            "name": "Attach to Chrome",
+            "type": "chrome",
+            "request": "attach",
+            "port": 9222,
+            "webRoot": "${workspaceRoot}"
+        }
+    ]
+}
