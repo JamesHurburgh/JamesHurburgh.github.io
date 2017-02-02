@@ -1,5 +1,7 @@
-define(['jquery', 'alertify', 'store', 'mousetrap', 'showdown', 'app/parser'],
-    function($, alertify, store, mousetrap, showdown, parser) {
+import _ from 'lodash';
+
+define(['jquery', 'app/parser'],
+    function($, parser) {
 
         QUnit.module('Parser Tests');
 
@@ -7,47 +9,62 @@ define(['jquery', 'alertify', 'store', 'mousetrap', 'showdown', 'app/parser'],
             assert.ok(true, "Passed!");
         });
 
-// One blank option:
+        QUnit.test("parser.parseSingleTable  One blank option returns no table", function(assert) {
 
-// One option:
-// # Option 1
+            var table = parser.parseSingleTable("Table::");
+            //assert.expect(0);
+            assert.ok(!table, "No table returned")
+                // assert.ok(table.rollDictionary.length == 1, "Roll dictionary has one entry");
+                // assert.ok(table.rollDictionary[0] == "", "Roll dictionary entry is empty string");
 
-// Two options:
-// # Option 1
-// # Option 2
+        });
 
-// Three options:
-// # Option 1
-// # Option 2
-// # Option 3
+        QUnit.test("parser.parseSingleTable One option", function(assert) {
 
-// One Numbered Option
-// 1: Option 1
+            var table = parser.parseSingleTable("One option::Option 1");
+            assert.equal(table.rollDictionary.length, 1, "Roll dictionary has one entry");
+            assert.equal(table.rollDictionary[0], "Option 1", "Roll dictionary entry is correct");
 
-// Two Numbered Options
-// 1: Option 1
-// 2: Option 2
+        });
+        // One option:
+        // # Option 1
 
-// Three Number Options
-// 1: Option 1
-// 2: Option 2
-// 3: Option 3
+        // Two options:
+        // # Option 1
+        // # Option 2
 
-// One option with a number range:
-// [1-100] The only option
+        // Three options:
+        // # Option 1
+        // # Option 2
+        // # Option 3
 
-// Two options with number ranges:
-// [1-2] Unlikely option
-// [3-100] Likely option
+        // One Numbered Option
+        // 1: Option 1
 
-// Some numbers and ranges:
-// [1] Numbered option
-// [9-10] Ranged option
+        // Two Numbered Options
+        // 1: Option 1
+        // 2: Option 2
 
-// Multiline options:
-// # This option goes
-// across multiple lines
-// # This option also goes
+        // Three Number Options
+        // 1: Option 1
+        // 2: Option 2
+        // 3: Option 3
 
-// across
+        // One option with a number range:
+        // [1-100] The only option
+
+        // Two options with number ranges:
+        // [1-2] Unlikely option
+        // [3-100] Likely option
+
+        // Some numbers and ranges:
+        // [1] Numbered option
+        // [9-10] Ranged option
+
+        // Multiline options:
+        // # This option goes
+        // across multiple lines
+        // # This option also goes
+
+        // across
     });
