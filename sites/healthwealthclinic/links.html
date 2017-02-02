@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Health Wealth Clinic</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Health Wealth Natural Medicine Clinic, Brisbane, Australia, Naturopathy, Massage, Acupuncture, Homeopathy, Massage Brisbane, Massage Mount Gravatt, Remedial Massage, Mount Gravatt.">
+    <meta name="keywords" content="Bowen Massage Brisbane, Bowen Massage Mount Gravatt, Massage Brisbane,  Massage Mount Gravatt, Remedial Massage Brisbane, Remedial Massage Mount Gravatt, Acupuncture, Bowen Therapy, Childrens Health, Herbal Medicine, Homeopathy, Iridology, Massage, Natural Fertility, Nutrition, Psychology, Reflexology, Weight Management, Sports Injury, Kinesiology??, Sports Massage">
+
+    <!--<link rel="stylesheet" href="./css/healthwealth.css">-->
+    <script src="./js/jquery-2.2.4.min.js"></script>
+    <!--<script src="//code.jquery.com/jquery.min.js"></script>-->
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <nav></nav>
+    <div class="container">
+        <h3>Links</h3><br>
+        <div class="row">
+            <div>
+                <a href="http://www.bowenbrisbane.com.au/">Bowen South</a>
+                <p>Bowen Centre Brisbane South is dedicated to the art of Bowen Therapy. Bowen therapy is a very gentle form of natural healing involving only light moves applied to very specific points on the body. It is a, non-invasive, therapeutic technique
+                    suitable for a range of ailments and conditions.</p>
+            </div>
+            <div>
+                <a href="http://www.bowtech.com/WebsiteProj/Pages/About/Welcome.aspx">Bowtech</a>
+                <p>The Bowen Technique (also known as Bowtech - the Original Bowen Technique and Bowenwork) is a dynamic system of muscle and connective tissue therapy that was developed by the late Tom Bowen in Geelong, Australia.</p>
+            </div>
+        </div>
+    </div><br>
+    <footer></footer>
+    <script>
+        $.get("navigation.html", function(data) {
+            $("nav").replaceWith(data);
+        });
+        $.get("footer.html", function(data) {
+            $("footer").replaceWith(data);
+        });
+    </script>
+
+</body>
+
+</html>

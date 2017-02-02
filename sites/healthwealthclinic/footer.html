@@ -1,0 +1,31 @@
+<footer class="footer container-fluid text-center">
+    <div style="width:200px; margin-left: auto; margin-right: auto;">
+        Theme:
+        <span id="bootswitcher"></span>
+    </div>
+    <script src="js/bootswitch.js"></script>
+    <script>
+        bootswitch("bootswitcher");
+    </script>
+    <p>Images © Health Wealth Clinic 2017</p>
+    <p>Site design by James Hurburgh. For your own site <a href="mailto:jameshurburgh@gmail.com">contact me via email</a> or call 0402 650 581.</p>
+</footer>
+<style>
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+    
+    body {
+        /* Margin bottom by footer height */
+        margin-bottom: 60px;
+    }
+    
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        /* Set the fixed height of the footer here */
+        height: 120px;
+    }
+</style>
