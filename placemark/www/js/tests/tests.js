@@ -8,9 +8,16 @@ requirejs.config({
     //the paths config could be for a directory.
     paths: {
         app: '../app',
+        models: '../app/models',
         tests: '../tests'
     }
 });
 
-requirejs(['tests/dicer_tests', 'tests/parser_tests'],
-    function(dicer_tests, parser_tests) {});
+requirejs([
+    'tests/dicer_tests', 
+    'tests/parser_tests', 
+    'tests/RollTable_tests'],
+    function(
+        dicer_tests, 
+        parser_tests, 
+        RollTable_tests) {});

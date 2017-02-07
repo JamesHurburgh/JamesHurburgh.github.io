@@ -1,7 +1,5 @@
-import _ from 'lodash';
-
-define(['jquery', 'app/parser'],
-    function($, parser) {
+define(['jquery', 'alertify', 'store', 'mousetrap', 'showdown', 'app/parser', 'models/RollTableRow', 'models/RollTable'],
+function($, alertify, store, mousetrap, showdown, parser, RollTableRow, RollTable) {
 
         QUnit.module('Parser Tests');
 
@@ -67,4 +65,16 @@ define(['jquery', 'app/parser'],
         // # This option also goes
 
         // across
+
+        QUnit.test("RollTableRow creation", function(assert) {
+            assert.expect(3);
+            var row = new RollTableRow();
+            row.min = 1;
+            row.max = 1;
+            row.output = "Test";
+            assert.equal(row.min, 1);
+            assert.equal(row.max, 1);
+            assert.equal(row.output, "Test");
+        });
+
     });

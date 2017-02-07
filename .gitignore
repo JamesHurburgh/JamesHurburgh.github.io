@@ -1,2 +1,5 @@
 cod/workspace.txt
 .picasa.ini
+placemark/TypeScriptBuild.bat
+*.json
+placemark/tsconfig.json

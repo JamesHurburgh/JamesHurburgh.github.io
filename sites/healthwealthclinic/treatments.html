@@ -18,8 +18,8 @@
     <div id="fb-root"></div>
     <nav></nav>
     <div class="container">
-        <ul class="nav nav-pills nav-stacked text-center col-sm-12 col-md-4">
-            <li class="active"><a data-toggle="tab" href="#BowenTherapy">Bowen Therapy</a></li>
+        <ul class="nav nav-pills nav-stacked text-center col-xs-12 col-sm-4 col-lg-3">
+            <li><a data-toggle="tab" href="#BowenTherapy">Bowen Therapy</a></li>
             <li><a data-toggle="tab" href="#MassageAndReflexology">Massage and Reflexology</a></li>
             <li><a data-toggle="tab" href="#NaturopathyAndNutritionist">Naturopathy and Nutritionist</a></li>
             <li><a data-toggle="tab" href="#Kinesiology">Kinesiology</a></li>
@@ -27,7 +27,7 @@
             <li><a data-toggle="tab" href="#Homeopathy">Homeopathy</a></li>
             <li><a data-toggle="tab" href="#Physcology">Physcology</a></li>
         </ul>
-        <div class="tab-content col-sm-12 col-md-8">
+        <div class="tab-content col-xs-12 col-sm-8 col-lg-9">
             <div id="BowenTherapy" class="tab-pane fade in active">
                 <h3>Bowen Therapy</h3>
                 <p>Bowen therapy is a system of muscles and connective tissue therapy, suited to ALL AGES - a series of gentle, precise moves to stimulate energy flow and promote healing for muscle and connective tissue pain, helping with RSI, asthma, sciatica,
@@ -46,22 +46,27 @@
             </div>
             <div id="NaturopathyAndNutritionist" class="tab-pane fade">
                 <h3>Naturopathy and Nutritionist</h3>
-                <p>Release your pain, overcome illness, enjoy an energetic life and enhance your happiness. Whether you are experiencing fatigue, insomnia, digestive disturbances, aches/pains, emotional traumas, weight gain, hormonal symptoms, recurring
-                    colds and flus, allergies, arthritis, insomnia, another serious illness or you’re just plain stressed out – I would love to help you. Your solutions will be unique to your situation, body and circumstance. Solutions that will allow
-                    you to improve your physical energy levels, get a better nights sleep, feel emotionally vibrant, wake up refreshed, reduce bouts of illness, improve recovery times, reduce PMT and other hormonal symptoms, lose excess weight, reduce
-                    and even eliminate pain, respond calmly to life and its challenges, enjoy your life and your family, make changes you have been putting off, overcome habits/addictions, be in control of your life and your choices. If you were to experience
-                    only some of these benefits, imagine how much that would change your experience of life. How much better about yourself would you feel, both physically and emotionally, if you had the energy to go to the gym rather than dragging yourself
-                    there. If then, you experienced a good nights sleep and woke up able to cope with the demands of the next day. And then, being able to respond to the demands of the day in such a collected manner, how good would you feel. And have
-                    you noticed that when you feel good about yourself, emotionally – you feel better physically? And that when you feel good physically its easier to feel good about yourself, emotionally? What is a Spiral? And which direction is yours
-                    heading? Inertia is a powerful force and we can help you harness it to your benefit. So often people feel unwell physically and this leads to the feeling unwell emotionally which in turn leads them to feel even worse physically and
-                    it is a self perpetuating spiral. We can help you turn it around. It takes courage from you as well, but we will be there to support you and offer you the many tools at my disposal to work through your biggest and hardest hurdles –
-                    emotional or physically. We will get you feeling better physically which will improve your emotional outlook which will allow your body to heal itself which will give you the energetic resources to confront deeper emotional conflicts
-                    and you will feel better emotionally which will improve you physical energy levels. We can show you how to make the spiral work for you. Together, we can figure out the answers, give you the tools you need to control your health and
-                    your life, to be as happy and as healthy as you choose to be Your solution will be unique to you so take the first step to feeling better physically and emotionally and make an appointment to get your spiral working for you.</p>
+                <p>Solutions that will allow you to improve your physical energy levels, get a better nights sleep, feel emotionally vibrant, wake up refreshed, reduce bouts of illness, improve recovery times, reduce PMT and other hormonal symptoms, lose
+                    excess weight, reduce and even eliminate pain, respond calmly to life and its challenges, enjoy your life and your family, make changes you have been putting off, overcome habits/addictions, be in control of your life and your choices.
+                    If you were to experience only some of these benefits, imagine how much that would change your experience of life. How much better about yourself would you feel, both physically and emotionally, if you had the energy to go to the gym
+                    rather than dragging yourself there. If then, you experienced a good nights sleep and woke up able to cope with the demands of the next day. And then, being able to respond to the demands of the day in such a collected manner, how
+                    good would you feel. And have you noticed that when you feel good about yourself, emotionally – you feel better physically? And that when you feel good physically its easier to feel good about yourself, emotionally? What is a Spiral?
+                    And which direction is yours heading? Inertia is a powerful force and we can help you harness it to your benefit. So often people feel unwell physically and this leads to the feeling unwell emotionally which in turn leads them to feel
+                    even worse physically and it is a self perpetuating spiral. We can help you turn it around. It takes courage from you as well, but we will be there to support you and offer you the many tools at my disposal to work through your biggest
+                    and hardest hurdles – emotional or physically. We will get you feeling better physically which will improve your emotional outlook which will allow your body to heal itself which will give you the energetic resources to confront deeper
+                    emotional conflicts and you will feel better emotionally which will improve you physical energy levels. We can show you how to make the spiral work for you. Together, we can figure out the answers, give you the tools you need to control
+                    your health and your life, to be as happy and as healthy as you choose to be Your solution will be unique to you so take the first step to feeling better physically and emotionally and make an appointment to get your spiral working
+                    for you.</p>
             </div>
             <div id="Kinesiology" class="tab-pane fade">
                 <h3>Kinesiology</h3>
-                <p>Some content in menu 1.</p>
+                <p>Kinesiology can benefit you in a wide range of areas including:</p>
+                <ul>
+                    <li>Athletic performance</li>
+                    <li>Stress coming from your mental, physical or emotional state</li>
+                    <li>Healing of muscle injuries</li>
+                    <li>Improved learning</li>
+                </ul>
             </div>
             <div id="Acupuncture" class="tab-pane fade">
                 <h3>Acupuncture</h3>
@@ -111,10 +116,19 @@
         $.get("footer.html", function(data) {
             $("footer").replaceWith(data);
         });
-        $(function() {
-            var activeTab = $('[href=' + location.hash + ']');
-            activeTab && activeTab.tab('show');
-        });
+
+        function jqueryUIFunctions() {
+            if (typeof $('ul.nav a:first').tab == 'function') {
+                $('ul.nav a[href="' + window.location.hash + '"]').tab('show'); // Select tab by name if provided in location hash
+                $('ul.nav a[data-toggle="tab"]').on('shown', function(event) { // Update the location hash to current tab
+                    window.location.hash = event.target.hash;
+                })
+            } else {
+                window.setTimeout(jqueryUIFunctions, 50);
+            }
+        }
+        jqueryUIFunctions();
+        $(window).bind('hashchange', jqueryUIFunctions);
     </script>
 </body>
 
