@@ -21,5 +21,5 @@ requirejs.config({
 // Start the main app logic.
 requirejs(['jquery', 'app/common'],
     function($, common) {
-        
+
     });
