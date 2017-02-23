@@ -152,7 +152,7 @@ define([],
                 ]
             },
             {
-                "setListName": "Sound Waves", //From: Created by James Hurburgh
+                "setListName": "Sound Waves", //From: fireflyeducation.com.au
                 "languageCode": "en",
                 "description": "",
                 "sets": [
