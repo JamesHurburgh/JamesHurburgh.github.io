@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>All Ready Reading</title>
+
+    <script src="./js/lib/jquery-2.2.4.min.js"></script>
+
+    <link rel="stylesheet" href="./css/bootstrap.superhero.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap2-toggle.min.css">
+    <link rel="stylesheet" href="./css/allreadyreading.css">
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
+    <script src="./js/lib/bootstrap.min.js"></script>
+    <script src="./js/lib/bootstrap2-toggle.min.js"></script>
+
+    <script src="./js/lib/responsivevoice.js"></script>
+
+    <!--This sets the baseUrl to the "scripts" directory, and
+    loads a script that will have a module ID of 'main'-->
+    <script data-main="js/app.js" src="js/require.js"></script>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <nav></nav>
+    <div class="container text-center">
+        <div id="content" class="row">
+            <div id="wordContainer" class="col-xs-12 container">
+                <h2></h2>
+                <div>
+                    <h1 class='well' id="word">-</h1>
+                    <button type="button" class="btn btn-primary btn-lg" id="pickRandomWordButton"><i class="fa fa-random" aria-hidden="true"></i> Random Word</button>
+                    <button type="button" class="btn btn-primary btn-lg" id="sayWordButton"><i class="fa fa-comment" aria-hidden="true"></i> Say Word</button>
+                </div>
+            </div>
+            <div id="setListContainer" class="col-xs-6 col-sm-6 col-md-3">
+                <h2 id="setListHeader">Sets</h2>
+                <div id="setList" class="list"></div>
+            </div>
+            <div id="wordListContainer" class="col-xs-6 col-sm-6 col-md-3">
+                <h2 id="wordListHeader">Words</h2>
+                <h3 id="wordList" class="list"></h3>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    <script>
+        $.get("navigation.html", function(data) {
+            $("nav").replaceWith(data);
+        });
+        $.get("footer.html", function(data) {
+            $("footer").replaceWith(data);
+        });
+    </script>
+</body>
+
+</html>

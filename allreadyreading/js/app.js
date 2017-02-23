@@ -19,7 +19,7 @@ requirejs.config({
 });
 
 // Start the main app logic.
-requirejs(['jquery', 'app/index'],
-    function($, index) {
+requirejs(['jquery', 'app/common'],
+    function($, common) {
         
     });

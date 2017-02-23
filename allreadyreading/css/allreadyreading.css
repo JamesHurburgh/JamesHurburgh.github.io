@@ -1,0 +1,11 @@
+/* Padding to make sure the footer doesn't cover content*/
+
+body {
+    padding-bottom: 70px;
+}
+
+.scrollable-menu {
+    /*height: auto;*/
+    max-height: 180px;
+    overflow-x: hidden;
+}
