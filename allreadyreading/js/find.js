@@ -65,7 +65,7 @@ requirejs(['jquery', 'app/common', "store", "app/languageCodes", "app/wordlists"
             saySlowly("Find. " + word);
 
             // Wire buttons
-            $(".correct").click(function() { correct(); });
+            $(".correct").click(function() { correctAnswer(); });
             $(".incorrect").click(function() { incorrect(); });
         };
 

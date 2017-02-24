@@ -59,6 +59,10 @@ define(["jquery", "store", "app/languageCodes", "app/wordlists"],
             responsiveVoice.setDefaultVoice(voiceName);
         };
 
+        correctAnswer = function(){
+            correct();
+        };
+
         correct = function(){
             say("Correct");
         };
