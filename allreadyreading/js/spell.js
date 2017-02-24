@@ -41,24 +41,14 @@ requirejs(['jquery', 'app/common', "store", "app/languageCodes", "app/wordlists"
         };
 
         check = function() {
-            var correct = $("#spellingWord").val().toLowerCase().trim();
+            var correctAnswer = $("#spellingWord").val().toLowerCase().trim();
             var answer = $("#typedWord").val().toLowerCase().trim();
 
-            if (correct == answer) {
-                say("Correct");
+            if (correctAnswer == answer) {
+                correct();
             } else {
-                say("Incorrect");
+                incorrect();
             }
-        };
-
-        displayRandom = function() {
-            var previous = $("#word").html();
-            var word = previous;
-            while (previous == word) {
-                var index = Math.floor($(".word").length * Math.random());
-                word = $(".word")[index].attributes.word.value;
-            }
-            displayWord(word);
         };
 
         loadSetFromList = function(setList) {
@@ -82,6 +72,7 @@ requirejs(['jquery', 'app/common', "store", "app/languageCodes", "app/wordlists"
             $("#wordContainer").css("border-radius", "10px");
             $("#wordContainer").css("border", "4px solid white");
             $("#wordContainer").css("border", "4px solid #" + set.colorHex);
+            $("#overlay").addClass("hidden");
         };
 
         initialise = function() {

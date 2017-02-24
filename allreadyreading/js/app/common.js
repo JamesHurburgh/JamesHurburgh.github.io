@@ -59,6 +59,14 @@ define(["jquery", "store", "app/languageCodes", "app/wordlists"],
             responsiveVoice.setDefaultVoice(voiceName);
         };
 
+        correct = function(){
+            say("Correct");
+        };
+        
+        incorrect = function(){
+            say("Incorrect");
+        };
+
         saySlowly = function(message) {
             console.log("SPEECH: " + message);
             responsiveVoice.speak(message, voiceName, { rate: 0.75 });

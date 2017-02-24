@@ -22,23 +22,65 @@ requirejs.config({
 requirejs(['jquery', 'app/common', "store", "app/languageCodes", "app/wordlists"],
     function($, common, store, languageCodes, wordlists) {
 
-        workingList = [];
+        var set;
+
+        chooseNew = function() {
+            var previous = $("#correctWord").val();
+            $("#wordFindContainer").empty();
+
+            // Select word
+            var word = previous;
+            while (previous == word) {
+                var index = Math.floor(set.wordList.length * Math.random());
+                word = set.wordList[index];
+            }
+            $("#correctWord").val(word);
+
+            // Add buttons
+            var numberOfOptions = Math.min(5, set.wordList.length);
+            var randomIndex = Math.floor(numberOfOptions * Math.random());
+            var options = [word];
+            var wordButton = $("<button type='button' class='btn btn-primary btn-lg correct'></button>").append(word);
+            
+            for(var i = 0; i < numberOfOptions; i ++){
+
+                if(i == randomIndex){
+                    $("#wordFindContainer").append(wordButton);
+                }else{
+                    var newWord = word;
+                    while($.inArray(newWord,options) != -1){
+                        var j = Math.floor(set.wordList.length * Math.random());
+                        newWord = set.wordList[j];
+                    }
+                    options.push(newWord);
+
+                    var incorrectWordButton = $("<button type='button' class='btn btn-primary btn-lg incorrect'></button>").append(newWord);
+                    $("#wordFindContainer").append(incorrectWordButton);    
+                }
+                
+            
+            }
+            
+            // Say word
+            saySlowly("Find. " + word);
+
+            // Wire buttons
+            $(".correct").click(function() { correct(); });
+            $(".incorrect").click(function() { incorrect(); });
+        };
+
 
         sayWord = function() {
-            say($("#word").html());
+            saySlowly($("#correctWord").val());
         };
 
         loadSetFromList = function(setList) {
             store.set("wordSet", setList.setListName);
-            clearWord();
-            $("#wordList").empty();
             $("#setList").empty();
             $("#setListHeader").empty();
-            $("#wordListHeader").empty();
             selectedSightWordSetList = setList.sets;
 
             $("#setListHeader").append(setList.setListName);
-            $("#wordListHeader").append("-");
 
             for (var i = 0; i < selectedSightWordSetList.length; i++) {
                 $("#setList").append("<div class='set nav nav-pill' style='border: 2px solid #" + selectedSightWordSetList[i].colorHex + "; border-radius: 5px;' collectionIndex='" + i + "' id='" + selectedSightWordSetList[i].setName + "_set'>" + selectedSightWordSetList[i].setName + "</div>");
@@ -49,39 +91,11 @@ requirejs(['jquery', 'app/common', "store", "app/languageCodes", "app/wordlists"
         };
 
         loadWordList = function(index) {
-            var set = selectedSightWordSetList[index];
-            clearWord();
-            $("#wordList").empty();
-            $("#wordListHeader").empty();
+            set = selectedSightWordSetList[index];
             $("#wordContainer").css("border-radius", "10px");
             $("#wordContainer").css("border", "4px solid white");
             $("#wordContainer").css("border", "4px solid #" + set.colorHex);
             $("#overlay").addClass("hidden");
-            $("#wordListHeader").append(set.setName);
-            for (var i = 0; i < set.wordList.length; i++) {
-                $("#wordList").append("<div id='" + set.wordList[i] + "' class='word' word='" + set.wordList[i] + "'>" + set.wordList[i] + "</div>");
-            }
-            $(".word").click(function() { sayThisWord(id); });
-        };
-
-        displayRandom = function() {
-            var previous = $("#word").html();
-            var word = previous;
-            while (previous == word) {
-                var index = Math.floor($(".word").length * Math.random());
-                word = $(".word")[index].attributes.word.value;
-            }
-            displayWord(word);
-        };
-
-        displayWord = function(word) {
-            $("#word").empty();
-            $("#word").append(word);
-        };
-
-        clearWord = function() {
-            $("#word").empty();
-            $("#word").append("-");
         };
 
         initialise = function() {
@@ -89,11 +103,10 @@ requirejs(['jquery', 'app/common', "store", "app/languageCodes", "app/wordlists"
             initialiseVoice();
             initialiseWordLists();
 
-            $("#pickRandomWordButton").click(function() { displayRandom(); });
+            $("#pickRandomWordButton").click(function() { chooseNew(); });
             $("#sayWordButton").click(function() { sayWord(); });
-            $("#word").click(function() { sayWord(); });
+            $("#check").click(function() { check(); });
         };
 
         initialise();
-
     });

@@ -9,3 +9,21 @@ body {
     max-height: 180px;
     overflow-x: hidden;
 }
+
+.overlay-container {
+    display: block;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    /*dim the background*/
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    transition: opacity .5s;
+    z-index: 10;
+}

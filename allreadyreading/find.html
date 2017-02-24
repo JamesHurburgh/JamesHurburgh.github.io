@@ -13,17 +13,14 @@
 
     <link rel="stylesheet" href="./css/bootstrap.superhero.min.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/bootstrap2-toggle.min.css">
     <link rel="stylesheet" href="./css/allreadyreading.css">
-    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
     <script src="./js/lib/bootstrap.min.js"></script>
-    <script src="./js/lib/bootstrap2-toggle.min.js"></script>
 
     <script src="./js/lib/responsivevoice.js"></script>
 
     <!--This sets the baseUrl to the "scripts" directory, and
     loads a script that will have a module ID of 'main'-->
-    <script data-main="js/app.js" src="js/require.js"></script>
+    <script data-main="js/find.js" src="js/require.js"></script>
 </head>
 
 <body>
@@ -31,21 +28,22 @@
     <nav></nav>
     <div class="container text-center">
         <div id="content" class="row">
-            <div id="wordContainer" class="col-xs-12 container">
-                <h2></h2>
+            <div id="wordContainer" class="col-xs-12 container overlay-container">
+                <h2>Find the word</h2>
                 <div>
-                    <h1 class='well' id="word">-</h1>
+                    <div class="form-group well" id="wordFindContainer">
+                    </div>
+                    <input type="text" class="form-control hidden" id="correctWord">
                     <button type="button" class="btn btn-primary btn-lg" id="pickRandomWordButton"><i class="fa fa-random" aria-hidden="true"></i> Random Word</button>
                     <button type="button" class="btn btn-primary btn-lg" id="sayWordButton"><i class="fa fa-comment" aria-hidden="true"></i> Say Word</button>
+                </div>
+                <div id="overlay" class="overlay">
+                    <p class="well">Select a list of words to begin.</p>
                 </div>
             </div>
             <div id="setListContainer" class="col-xs-6 col-sm-6 col-md-3">
                 <h2 id="setListHeader">Sets</h2>
                 <div id="setList" class="list"></div>
-            </div>
-            <div id="wordListContainer" class="col-xs-6 col-sm-6 col-md-3">
-                <h2 id="wordListHeader">Words</h2>
-                <h3 id="wordList" class="list"></h3>
             </div>
         </div>
     </div>
