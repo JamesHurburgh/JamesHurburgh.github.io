@@ -41,32 +41,42 @@ requirejs(['jquery', 'app/common', "store", "app/languageCodes", "app/wordlists"
             var randomIndex = Math.floor(numberOfOptions * Math.random());
             var options = [word];
             var wordButton = $("<button type='button' class='btn btn-primary btn-lg correct'></button>").append(word);
-            
-            for(var i = 0; i < numberOfOptions; i ++){
 
-                if(i == randomIndex){
+            for (var i = 0; i < numberOfOptions; i++) {
+
+                if (i == randomIndex) {
                     $("#wordFindContainer").append(wordButton);
-                }else{
+                } else {
                     var newWord = word;
-                    while($.inArray(newWord,options) != -1){
+                    while ($.inArray(newWord, options) != -1) {
                         var j = Math.floor(set.wordList.length * Math.random());
                         newWord = set.wordList[j];
                     }
                     options.push(newWord);
 
                     var incorrectWordButton = $("<button type='button' class='btn btn-primary btn-lg incorrect'></button>").append(newWord);
-                    $("#wordFindContainer").append(incorrectWordButton);    
+                    $("#wordFindContainer").append(incorrectWordButton);
                 }
-                
-            
+
+
             }
-            
+
             // Say word
             saySlowly("Find. " + word);
 
             // Wire buttons
-            $(".correct").click(function() { correctAnswer(); });
-            $(".incorrect").click(function() { incorrect(); });
+            $(".correct").click(function() { correctAnswer(word); });
+            $(".incorrect").click(function() { incorrectAnswer(word); });
+        };
+
+        correctAnswer = function(word) {
+            correct();
+            updateProfileStatistic(word, "Find", true);
+        };
+
+        incorrectAnswer = function(word) {
+            incorrect();
+            updateProfileStatistic(word, "Find", false);
         };
 
 

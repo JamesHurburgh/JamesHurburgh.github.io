@@ -1,7 +1,8 @@
-define(["jquery", "store", "app/languageCodes", "app/wordlists"],
-    function($, store, languageCodes, wordlists) {
+define(["jquery", "store", "app/languageCodes", "app/wordlists", 'app/profiles'],
+    function($, store, languageCodes, wordlists, profiles) {
 
         voiceName = "";
+        profileName = "";
 
         loadSetListList = function() {
             for (var i = 0; i < wordlists.length; i++) {
@@ -12,19 +13,9 @@ define(["jquery", "store", "app/languageCodes", "app/wordlists"],
                     $("<a href='#'>")
                     .attr("href", "#" + wordlists[i].setListName)
                     .append(wordlists[i].setListName);
-                setListName.click(function() { loadSetFromAnchor(this); });
+                setListName.click(function() { loadSetListFromName(this.href.split("#")[1]); });
                 $("#setListsDropDownList").append($("<li>").append(setListName));
             }
-        };
-
-        loadSetFromAnchor = function(anchor) {
-            var setName = anchor.href.split("#")[1];
-            loadSetFromList(wordlists[setName]);
-        };
-
-        loadSetListFromHash = function() {
-            var setName = window.location.hash.split("#")[1];
-            loadSetListFromName(wordlists[setName]);
         };
 
         loadSetListFromName = function(setName) {
@@ -55,19 +46,17 @@ define(["jquery", "store", "app/languageCodes", "app/wordlists"],
         };
 
         loadVoiceByName = function(voiceName) {
-            store.set("voiceName", voiceName);
+            var profile = getCurrentProfile();
+            profile.voiceName = voiceName;
+            updateProfile(profile);
             responsiveVoice.setDefaultVoice(voiceName);
         };
 
-        correctAnswer = function(){
-            correct();
-        };
-
-        correct = function(){
+        correct = function() {
             say("Correct");
         };
-        
-        incorrect = function(){
+
+        incorrect = function() {
             say("Incorrect");
         };
 
@@ -84,8 +73,8 @@ define(["jquery", "store", "app/languageCodes", "app/wordlists"],
         initialiseVoice = function() {
             loadVoiceList();
 
-            voiceName = store.get("voiceName");
-            if (!voiceName) { voiceName = $(".voiceOption")[0]; }
+            voiceName = getCurrentProfile().voiceName;
+            if (!voiceName || typeof voiceName != 'string') { voiceName = $(".voiceOption")[0].innerText; }
             loadVoiceByName(voiceName);
         };
 
@@ -100,5 +89,85 @@ define(["jquery", "store", "app/languageCodes", "app/wordlists"],
             var startingSetList = store.get("setList");
             if (!startingSetList) { startingSetList = wordlists[0].sets[0].setListName; }
         };
+
+        updateProfileStatistic = function(word, activity, isCorrect) {
+            var profile = getCurrentProfile();
+            if (!profile.wordContainer) { profile.wordContainer = {}; }
+            profile.wordContainer[word] = updateWordStatistic(profile.wordContainer[word], activity, isCorrect);
+            updateProfile(profile);
+        };
+
+        updateWordStatistic = function(wordStatistics, activity, isCorrect) {
+            if (!wordStatistics) { wordStatistics = {}; }
+            wordStatistics[activity] = updateActivityStatistics(wordStatistics[activity], isCorrect);
+            return wordStatistics;
+        };
+
+        updateActivityStatistics = function(activityStatistics, isCorrect) {
+            if (!activityStatistics) {
+                activityStatistics = {
+                    "correctCount": 0,
+                    "incorrectCount": 0,
+                };
+            }
+            if (isCorrect) {
+                activityStatistics.correctCount += 1;
+            } else {
+                activityStatistics.incorrectCount += 1;
+            }
+            // TODO add date markers
+
+            return activityStatistics;
+        };
+
+        loadProfileList = function() {
+            var profileList = getLocalProfiles();
+            $("#usersDropDownList").empty();
+            $("#listOfProfiles").empty();
+            profileList.forEach(function(profileName) {
+                $("#listOfProfiles").append(profileName);
+
+                var profileImage =
+                    $("<img/>")
+                    .attr("src", "https://robohash.org/" + profileName + ".png?size=40x40");
+                var profileLink =
+                    $("<a class='profileButton'/>")
+                    .attr("href", "#" + profileName)
+                    .append(profileName)
+                    .append(profileImage);
+
+                $("#usersDropDownList").append($("<li>").append(profileLink));
+
+            });
+
+            $(".profileButton").click(function() {
+                loadProfile(this.href.split("#")[1]);
+            });
+        };
+
+        loadProfile = function(profileName) {
+            setCurrentProfile(profileName);
+            loadCurrentUser();
+        }
+
+        loadCurrentUser = function() {
+
+            var profile = getCurrentProfile();
+            loadProfileList();
+
+            var profileName = profile.Name;
+            $("#currentUser").empty();
+            $("#currentUser").append(profileName);
+            $("#currentUserImg").attr("src", "https://robohash.org/" + profileName + ".png?size=40x40");
+
+        };
+
+        loadProfileList();
+        loadCurrentUser();
+
+        $("#addProfileButton").click(function() {
+            addProfile({ "Name": $("#newProfileName").val() });
+            loadProfileList();
+        });
 
     });

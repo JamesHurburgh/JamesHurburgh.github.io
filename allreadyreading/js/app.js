@@ -19,7 +19,10 @@ requirejs.config({
 });
 
 // Start the main app logic.
-requirejs(['jquery', 'app/common'],
-    function($, common) {
+requirejs(['jquery', 'app/common', 'app/profiles'],
+    function($, common, profiles) {
+
+        initialiseVoice();
+        initialiseWordLists();
 
     });

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>All Ready Reading</title>
+
+    <script src="./js/lib/jquery-2.2.4.min.js"></script>
+
+    <link rel="stylesheet" href="./css/bootstrap.superhero.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/allreadyreading.css">
+    <script src="./js/lib/bootstrap.min.js"></script>
+
+    <script src="./js/lib/responsivevoice.js"></script>
+
+    <!--This sets the baseUrl to the "scripts" directory, and
+    loads a script that will have a module ID of 'main'-->
+    <script data-main="js/words.js" src="js/require.js"></script>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <nav></nav>
+    <div class="container">
+        <div id="content" class="row">
+            <h2>Sets</h2>
+            <div id="sets"></div>
+        </div>
+    </div>
+    <footer></footer>
+    <script>
+        $.get("navigation.html", function(data) {
+            $("nav").replaceWith(data);
+        });
+        $.get("footer.html", function(data) {
+            $("footer").replaceWith(data);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>All Ready Reading</title>
+
+    <script src="./js/lib/jquery-2.2.4.min.js"></script>
+
+    <link rel="stylesheet" href="./css/bootstrap.superhero.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/allreadyreading.css">
+    <script src="./js/lib/bootstrap.min.js"></script>
+
+    <script src="./js/lib/responsivevoice.js"></script>
+
+    <!--This sets the baseUrl to the "js" directory, and
+    loads a script that will have a module ID of 'main'-->
+    <script data-main="js/profile.js" src="js/require.js"></script>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <nav></nav>
+    <div id="content">
+        <div class="container text-center">
+            <div class="row">
+                <h3>User Profile - <span id="userName"></span></h3>
+            </div>
+            <div class="well well-lg col-md-6">
+                <div class="form-group">
+                    <label>Selected Voice</label>
+                    <input type="text" class="form-control input" id="voice" readonly>
+                    <label>Selected Word List</label>
+                    <input type="text" class="form-control input" id="selectedWordSet" readonly>
+                </div>
+            </div>
+            <div class="well well-lg col-md-12">
+                <h3>Word statistics</h3>
+                <div id="wordStatistics" class="text-left">                
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    <script>
+        $.get("navigation.html", function(data) {
+            $("nav").replaceWith(data);
+        });
+        $.get("footer.html", function(data) {
+            $("footer").replaceWith(data);
+        });
+    </script>
+</body>
+
+</html>

@@ -23,10 +23,15 @@ requirejs(['jquery', 'app/common', "store", "app/languageCodes", "app/wordlists"
     function($, common, store, languageCodes, wordlists) {
 
         var set;
+        var incorrectCounter = 0;
+        var timer = null;
 
         chooseNew = function() {
+            clearInterval(timer);
             var previous = $("#spellingWord").val();
             var word = previous;
+            incorrectCounter = 0;
+
             while (previous == word) {
                 var index = Math.floor(set.wordList.length * Math.random());
                 word = set.wordList[index];
@@ -41,14 +46,41 @@ requirejs(['jquery', 'app/common', "store", "app/languageCodes", "app/wordlists"
         };
 
         check = function() {
-            var correctAnswer = $("#spellingWord").val().toLowerCase().trim();
-            var answer = $("#typedWord").val().toLowerCase().trim();
+            var answer = $("#spellingWord").val().toLowerCase().trim();
+            var givenAnswer = $("#typedWord").val().toLowerCase().trim();
 
-            if (correctAnswer == answer) {
-                correct();
+            if (givenAnswer == answer) {
+                correctAnswer(answer);
+                autoNext();
             } else {
-                incorrect();
+                incorrectAnswer(answer);
             }
+        };
+
+        correctAnswer = function(word) {
+            correct();
+            updateProfileStatistic(word, "Spell", true);
+        };
+
+        incorrectAnswer = function(word) {
+            handleIncorrect();
+            updateProfileStatistic(word, "Spell", false);
+        };
+
+        handleIncorrect = function() {
+            incorrectCounter = incorrectCounter + 1;
+            if (incorrectCounter >= 3) {
+                var word = $("#spellingWord").val();
+                var message = "Incorrect.  Listen.  " + (word.split("").join(". "));
+                say(message);
+            } else {
+                say("Incorrect.  Try again.");
+            }
+        };
+
+        autoNext = function() {
+            clearInterval(timer);
+            timer = setInterval(chooseNew, 3000);
         };
 
         loadSetFromList = function(setList) {
@@ -83,6 +115,12 @@ requirejs(['jquery', 'app/common', "store", "app/languageCodes", "app/wordlists"
             $("#pickRandomWordButton").click(function() { chooseNew(); });
             $("#sayWordButton").click(function() { sayWord(); });
             $("#check").click(function() { check(); });
+
+            $(document).on('keypress', '#typedWord', function(e) {
+                if (e.keyCode == 13) { // enter key
+                    check();
+                }
+            });
         };
 
         initialise();
