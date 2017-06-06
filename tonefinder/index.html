@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Tone Finder</title>
+    <link rel="icon" type="image/png" href="ue.png">
+
+    <script src="./js/lib/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.cosmo.min.css" />
+
+    <!--This sets the baseUrl to the "scripts" directory, and
+    loads a script that will have a module ID of 'main'-->
+    <script data-main="js/app/index.js" src="js/require.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Tone finder</h1>
+            <p>A simple tone generating tool.</p>
+            <div id="toneFinder">
+
+                <a class="btn btn-success btn-xl" v-on:click="play">Play</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
