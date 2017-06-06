@@ -30,52 +30,68 @@ requirejs(['vue', 'Tone'],
             return array[Math.floor(Math.random() * array.length)];
         };
 
+        var oscialltorTypes = [
+            "pwm",
+            "pulse",
+
+            "sine",
+            "fmsine",
+            "amsine",
+            "fatsine",
+
+            "square",
+            "fmsquare",
+            "amsquare",
+            "fatsquare",
+
+            "triangle",
+            "fmtriangle",
+            "amtriangle",
+            "fattriangle",
+
+            "sawtooth",
+            "fmsawtooth",
+            "amsawtooth",
+            "fatsawtooth",
+        ];
+
+        createRandomSynth = function() {
+            return new Tone.Synth({
+                "oscillator": {
+                    "type": getRandomFromList(oscialltorTypes),
+                    "phase": Math.random() * 360
+                },
+                "envelope": {
+                    "attack": Math.random(),
+                    "decay": Math.random(),
+                    "sustain": Math.random(),
+                    "release": Math.random(),
+                }
+            }).toMaster();
+        };
+
+        createRandomTone = function() {
+            var tone = {};
+            tone.synth = createRandomSynth();
+            tone.frequency = Math.random() * 500 + 100;
+            tone.duration = Math.random();
+
+            return tone;
+        };
+
         var toneFinder = {};
+        toneFinder.tone = createRandomTone();
 
         var app = new Vue({
             el: '#toneFinder',
             data: toneFinder,
             methods: {
                 play: function() {
-                    var synth = new Tone.Synth({
-                        "oscillator": {
-                            "type": getRandomFromList([
-                                "pwm",
-                                "pulse",
-
-                                "sine",
-                                "fmsine",
-                                "amsine",
-                                "fatsine",
-
-                                "square",
-                                "fmsquare",
-                                "amsquare",
-                                "fatsquare",
-
-                                "triangle",
-                                "fmtriangle",
-                                "amtriangle",
-                                "fattriangle",
-
-                                "sawtooth",
-                                "fmsawtooth",
-                                "amsawtooth",
-                                "fatsawtooth",
-                            ]),
-                            "phase": Math.random() * 360,
-                            "modulationFrequency": Math.random()
-                        },
-                        "envelope": {
-                            "attack": Math.random(),
-                            "decay": Math.random(),
-                            "sustain": Math.random(),
-                            "release": Math.random(),
-                        }
-                    }).toMaster();
-
                     //play a middle 'C' for the duration of an 8th note
-                    synth.triggerAttackRelease(Math.random() * 500 + 100, Math.random());
+                    toneFinder.tone.synth.triggerAttackRelease(toneFinder.tone.frequency, toneFinder.tone.duration);
+                },
+                randomise: function() {
+                    toneFinder.tone = createRandomTone();
                 }
             }
         });

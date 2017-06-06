@@ -28,6 +28,43 @@
             <div id="toneFinder">
 
                 <a class="btn btn-success btn-xl" v-on:click="play">Play</a>
+                <a class="btn btn-success btn-xl" v-on:click="randomise">Randomise</a>
+                <div>
+                    <strong>oscillator.type</strong>:
+                    <span class="text-info"> {{tone.synth.oscillator.type}} </span>
+                </div>
+                <div>
+                    <strong>oscillator.phase</strong>:
+                    <span class="text-info"> {{tone.synth.oscillator.phase}} </span>
+                </div>
+                <div>
+                    <strong>oscillator.modulationFrequency</strong>:
+                    <span class="text-info"> {{tone.synth.oscillator.modulationFrequency}} </span>
+                </div>
+                <div>
+                    <strong>envelope.attack</strong>:
+                    <span class="text-info"> {{tone.synth.envelope.attack}} </span>
+                </div>
+                <div>
+                    <strong>envelope.decay</strong>:
+                    <span class="text-info"> {{tone.synth.envelope.decay}} </span>
+                </div>
+                <div>
+                    <strong>envelope.sustain</strong>:
+                    <span class="text-info"> {{tone.synth.envelope.sustain}} </span>
+                </div>
+                <div>
+                    <strong>envelope.release</strong>:
+                    <span class="text-info"> {{tone.synth.envelope.release}} </span>
+                </div>
+                <div>
+                    <strong>frequency</strong>:
+                    <span class="text-info"> {{tone.frequency}} </span>
+                </div>
+                <div>
+                    <strong>duration</strong>:
+                    <span class="text-info"> {{tone.duration}} </span>
+                </div>
             </div>
         </div>
     </div>
