@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Tone Finder</title>
-    <link rel="icon" type="image/png" href="ue.png">
+    <link rel="icon" type="image/png" href="./img/tf.png">
 
     <script src="./js/lib/jquery.js"></script>
     <script src="./js/bootstrap.min.js"></script>
@@ -21,49 +21,75 @@
 </head>
 
 <body>
+    <template id="saved-template">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="panel-title">{{saved.name}}
+                    <a class="btn btn-danger btn-xs pull-right" v-on:click="remove">Remove</a>
+                    <a class="btn btn-info btn-xs pull-right" v-on:click="load">Load</a>
+                </h4>
+            </div>
+        </div>
+    </template>
     <div class="container">
         <div class="row">
             <h1>Tone finder</h1>
             <p>A simple tone generating tool.</p>
-            <div id="toneFinder">
+            <div>
+                <div id="toneFinder" class="col-md-8">
+                    <h2>Tone</h2>
+                    <a class="btn btn-success btn-xl" v-on:click="play">Play</a>
+                    <a class="btn btn-success btn-xl" v-on:click="randomise">Randomise</a>
+                    <a class="btn btn-success btn-xl" v-on:click="save">Save</a>
+                    <div>
+                        <strong>Name</strong>:
+                        <input class="text-info" v-model="soundDefinition.name"></input>
+                    </div>
+                    <div>
+                        <strong>oscillator.type</strong>:
+                        <span class="text-info"> {{soundDefinition.oscillatorType}} </span>
+                    </div>
+                    <div>
+                        <strong>oscillator.phase</strong>:
+                        <span class="text-info"> {{soundDefinition.oscillatorPhase}} </span>
+                    </div>
+                    <div>
+                        <strong>envelope.attack</strong>:
+                        <span class="text-info"> {{soundDefinition.envelopeAttack}} </span>
+                    </div>
+                    <div>
+                        <strong>envelope.attackCurve</strong>:
+                        <span class="text-info"> {{soundDefinition.envelopeAttackCurve}} </span>
+                    </div>
+                    <div>
+                        <strong>envelope.decay</strong>:
+                        <span class="text-info"> {{soundDefinition.envelopeDecay}} </span>
+                    </div>
+                    <div>
+                        <strong>envelope.sustain</strong>:
+                        <span class="text-info"> {{soundDefinition.envelopeSustain}} </span>
+                    </div>
+                    <div>
+                        <strong>envelope.release</strong>:
+                        <span class="text-info"> {{soundDefinition.envelopeRelease}} </span>
+                    </div>
+                    <div>
+                        <strong>envelope.releaseCurve</strong>:
+                        <span class="text-info"> {{soundDefinition.envelopeReleaseCurve}} </span>
+                    </div>
+                    <div>
+                        <strong>frequency</strong>:
+                        <span class="text-info"> {{soundDefinition.frequency}} </span>
+                    </div>
+                    <div>
+                        <strong>duration</strong>:
+                        <span class="text-info"> {{soundDefinition.duration}} </span>
+                    </div>
+                </div>
+                <div id="savedTones" class="col-md-4">
+                    <h2>Saved tones</h2>
+                    <saved-template v-for="saved in toneList" :key="saved.name" :saved="saved"></saved-template>
 
-                <a class="btn btn-success btn-xl" v-on:click="play">Play</a>
-                <a class="btn btn-success btn-xl" v-on:click="randomise">Randomise</a>
-                <div>
-                    <strong>oscillator.type</strong>:
-                    <span class="text-info"> {{tone.synth.oscillator.type}} </span>
-                </div>
-                <div>
-                    <strong>oscillator.phase</strong>:
-                    <span class="text-info"> {{tone.synth.oscillator.phase}} </span>
-                </div>
-                <div>
-                    <strong>oscillator.modulationFrequency</strong>:
-                    <span class="text-info"> {{tone.synth.oscillator.modulationFrequency}} </span>
-                </div>
-                <div>
-                    <strong>envelope.attack</strong>:
-                    <span class="text-info"> {{tone.synth.envelope.attack}} </span>
-                </div>
-                <div>
-                    <strong>envelope.decay</strong>:
-                    <span class="text-info"> {{tone.synth.envelope.decay}} </span>
-                </div>
-                <div>
-                    <strong>envelope.sustain</strong>:
-                    <span class="text-info"> {{tone.synth.envelope.sustain}} </span>
-                </div>
-                <div>
-                    <strong>envelope.release</strong>:
-                    <span class="text-info"> {{tone.synth.envelope.release}} </span>
-                </div>
-                <div>
-                    <strong>frequency</strong>:
-                    <span class="text-info"> {{tone.frequency}} </span>
-                </div>
-                <div>
-                    <strong>duration</strong>:
-                    <span class="text-info"> {{tone.duration}} </span>
                 </div>
             </div>
         </div>
