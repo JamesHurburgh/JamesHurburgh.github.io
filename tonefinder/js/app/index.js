@@ -30,7 +30,7 @@ requirejs(['vue', 'Tone', 'store'],
             return array[Math.floor(Math.random() * array.length)];
         };
 
-        var oscialltorTypes = [
+        var oscillatorTypes = [
             "pwm",
             "pulse",
 
@@ -87,18 +87,18 @@ requirejs(['vue', 'Tone', 'store'],
         createRandomSoundDefinition = function() {
             var sound = {};
 
-            sound.oscillatorType = getRandomFromList(oscialltorTypes);
-            sound.oscillatorPhase = Math.random() * 360;
+            sound.oscillatorType = getRandomFromList(oscillatorTypes);
+            sound.oscillatorPhase = Math.floor(Math.random() * 36000) / 100;
 
-            sound.envelopeAttack = Math.random() * 2;
+            sound.envelopeAttack = Math.floor(Math.random() * 200) / 100;
             sound.envelopeAttackCurve = getRandomFromList(curveTypes);
-            sound.envelopeDecay = Math.random() * 2;
-            sound.envelopeSustain = Math.random() * 2;
-            sound.envelopeRelease = Math.random() * 2;
+            sound.envelopeDecay = Math.floor(Math.random() * 200) / 100;
+            sound.envelopeSustain = Math.floor(Math.random() * 200) / 100;
+            sound.envelopeRelease = Math.floor(Math.random() * 200) / 100;
             sound.envelopeReleaseCurve = getRandomFromList(curveTypes);
 
-            sound.frequency = Math.random() * 2000 + 10;
-            sound.duration = Math.random() * 1;
+            sound.frequency = Math.floor(Math.random() * 200000) / 100 + 10;
+            sound.duration = Math.ceil(Math.random() * 100) / 100;
             sound.name = Math.floor(Math.random() * Math.pow(10, 6));
 
             return sound;
@@ -129,14 +129,26 @@ requirejs(['vue', 'Tone', 'store'],
                             toneFinderApp.soundDefinition = JSON.parse(JSON.stringify(soundDefinition));
                         }
                     }, this);
-                }
+                },
+                play: function() {
+                    var tone = createTone(this.saved);
+
+                    tone.synth.triggerAttackRelease(tone.frequency, tone.duration);
+                },
             }
         });
 
         var toneFinderApp = new Vue({
             el: '#toneFinder',
             data: toneFinder,
-            computed: {},
+            computed: {
+                oscillatorTypes: function() {
+                    return oscillatorTypes;
+                },
+                curveTypes: function() {
+                    return curveTypes;
+                },
+            },
             methods: {
                 play: function() {
                     var tone = createTone(toneFinder.soundDefinition);
@@ -158,7 +170,7 @@ requirejs(['vue', 'Tone', 'store'],
                     // Use JSON to deep clone the object
                     savedTones.toneList.push(JSON.parse(JSON.stringify(toneFinder.soundDefinition)));
                     store.set("tones", savedTones.toneList);
-                }
+                },
             }
         });
 
