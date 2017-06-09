@@ -22,6 +22,7 @@
 
 <body>
     <template id="saved-template">
+        <div class="col-sm-3">
         <div class="panel panel-primary">
             <div class="panel-heading">
                 <h4 class="panel-title">{{saved.name}}
@@ -31,110 +32,135 @@
                 </h4>
             </div>
         </div>
+        </div>
+    </template>
+    <template id="variant-template">
+        <div class="well col-sm-3">
+            <a class="btn btn-info btn-xl" v-on:click="load" v-on:mouseover="play" :title="variant.VariantDescription">{{variant.name}}</a>
+        </div>
     </template>
     <div class="container">
         <div class="row">
             <h1>Tone finder</h1>
             <p>A simple tone generating tool.</p>
             <div>
-                <div id="toneFinder" class="col-md-6">
-                    <fieldset>
-                        <legend>Tone</legend>
+                <div id="toneFinder" class="col-md-12">
+                    <div id="toneMaker" class="col-md-6">
+                        <fieldset>
+                            <legend>Tone</legend>
 
-                        <div class="form-group">
-                            <label for="name" class="col-lg-6 control-label">Name</label>
-                            <div class="col-lg-6">
-                                <input type="text" class="form-control input-sm" id="name" v-model="soundDefinition.name">
+                            <div class="form-group">
+                                <label for="name" class="col-lg-6 control-label">Name</label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control input-sm" id="name" v-model="soundDefinition.name">
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="form-group">
-                            <label for="oscillatorType" class="col-lg-6 control-label">Oscillator Type</label>
-                            <div class="col-lg-6">
-                                <select id="oscillatorType" class="form-control input-sm" v-model="soundDefinition.oscillatorType">
+                            <div class="form-group">
+                                <label for="oscillatorType" class="col-lg-6 control-label">Oscillator Type</label>
+                                <div class="col-lg-6">
+                                    <select id="oscillatorType" class="form-control input-sm" v-model="soundDefinition.oscillatorType">
                                     <option  v-for="oscillatorType in oscillatorTypes" :value="oscillatorType"> {{ oscillatorType }} </option>
                                 </select>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="form-group">
-                            <label for="oscillatorPhase" class="col-lg-6 control-label">Oscillator Phase</label>
-                            <div class="col-lg-6">
-                                <input type="text" class="form-control input-sm" id="oscillatorPhase" v-model="soundDefinition.oscillatorPhase">
+                            <div class="form-group">
+                                <label for="oscillatorPhase" class="col-lg-6 control-label">Oscillator Phase</label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control input-sm" id="oscillatorPhase" v-model="soundDefinition.oscillatorPhase">
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="form-group">
-                            <label for="envelopeAttack" class="col-lg-6 control-label">Envelope Attack</label>
-                            <div class="col-lg-6">
-                                <input type="text" class="form-control input-sm" id="envelopeAttack" v-model="soundDefinition.envelopeAttack">
+                            <div class="form-group">
+                                <label for="envelopeAttack" class="col-lg-6 control-label">Envelope Attack</label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control input-sm" id="envelopeAttack" v-model="soundDefinition.envelopeAttack">
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="form-group">
-                            <label for="envelopeAttackCurve" class="col-lg-6 control-label">Envelope Attack Curve</label>
-                            <div class="col-lg-6">
-                                <select id="envelopeAttackCurve" class="form-control input-sm" v-model="soundDefinition.envelopeAttackCurve">
+                            <div class="form-group">
+                                <label for="envelopeAttackCurve" class="col-lg-6 control-label">Envelope Attack Curve</label>
+                                <div class="col-lg-6">
+                                    <select id="envelopeAttackCurve" class="form-control input-sm" v-model="soundDefinition.envelopeAttackCurve">
                                     <option  v-for="curve in curveTypes" :value="curve"> {{ curve }} </option>
                                 </select>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="form-group">
-                            <label for="envelopeDecay" class="col-lg-6 control-label">Envelope Decay</label>
-                            <div class="col-lg-6">
-                                <input type="text" class="form-control input-sm" id="envelopeDecay" v-model="soundDefinition.envelopeDecay">
+                            <div class="form-group">
+                                <label for="envelopeDecay" class="col-lg-6 control-label">Envelope Decay</label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control input-sm" id="envelopeDecay" v-model="soundDefinition.envelopeDecay">
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="form-group">
-                            <label for="envelopeSustain" class="col-lg-6 control-label">Envelope Sustain</label>
-                            <div class="col-lg-6">
-                                <input type="text" class="form-control input-sm" id="envelopeSustain" v-model="soundDefinition.envelopeSustain">
+                            <div class="form-group">
+                                <label for="envelopeSustain" class="col-lg-6 control-label">Envelope Sustain</label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control input-sm" id="envelopeSustain" v-model="soundDefinition.envelopeSustain">
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="form-group">
-                            <label for="envelopeRelease" class="col-lg-6 control-label">Envelope Release</label>
-                            <div class="col-lg-6">
-                                <input type="text" class="form-control input-sm" id="envelopeRelease" v-model="soundDefinition.envelopeRelease">
+                            <div class="form-group">
+                                <label for="envelopeRelease" class="col-lg-6 control-label">Envelope Release</label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control input-sm" id="envelopeRelease" v-model="soundDefinition.envelopeRelease">
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="form-group">
-                            <label for="envelopeReleaseCurve" class="col-lg-6 control-label">Envelope Release Curve</label>
-                            <div class="col-lg-6">
-                                <select id="envelopeReleaseCurve" class="form-control input-sm" v-model="soundDefinition.envelopeReleaseCurve">
+                            <div class="form-group">
+                                <label for="envelopeReleaseCurve" class="col-lg-6 control-label">Envelope Release Curve</label>
+                                <div class="col-lg-6">
+                                    <select id="envelopeReleaseCurve" class="form-control input-sm" v-model="soundDefinition.envelopeReleaseCurve">
                                     <option  v-for="curve in curveTypes" :value="curve"> {{ curve }} </option>
                                 </select>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="form-group">
-                            <label for="frequency" class="col-lg-6 control-label">Frequency</label>
-                            <div class="col-lg-6">
-                                <input type="text" class="form-control input-sm" id="frequency" v-model="soundDefinition.frequency">
+                            <div class="form-group">
+                                <label for="startFrequency" class="col-lg-6 control-label">Start Frequency</label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control input-sm" id="startFrequency" v-model="soundDefinition.startFrequency">
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="form-group">
-                            <label for="duration" class="col-lg-6 control-label">Duration</label>
-                            <div class="col-lg-6">
-                                <input type="text" class="form-control input-sm" id="duration" v-model="soundDefinition.duration">
+                            <div class="form-group">
+                                <label for="endFrequency" class="col-lg-6 control-label">End Frequency</label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control input-sm" id="endFrequency" v-model="soundDefinition.endFrequency">
+                                </div>
                             </div>
-                        </div>
 
-
-                        <div class="form-group">
-                            <div class="col-lg-6 col-lg-offset-6">
-                                <button type="reset" class="btn btn-primary btn-xl" v-on:click="play">Play</button>
-                                <button type="reset" class="btn btn-default btn-xl" v-on:click="randomise">Randomise</button>
-                                <button type="reset" class="btn btn-default btn-xl" v-on:click="save">Save</button>
+                            <div class="form-group">
+                                <label for="portamento" class="col-lg-6 control-label">Portamento</label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control input-sm" id="portamento" v-model="soundDefinition.portamento">
+                                </div>
                             </div>
-                        </div>
-                    </fieldset>
+
+                            <div class="form-group">
+                                <label for="duration" class="col-lg-6 control-label">Duration</label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control input-sm" id="duration" v-model="soundDefinition.duration">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-lg-12">
+                                    <button type="reset" class="btn btn-primary btn-xl" v-on:click="play">Play</button>
+                                    <button type="reset" class="btn btn-default btn-xl" v-on:click="randomise">Randomise</button>
+                                    <button type="reset" class="btn btn-default btn-xl" v-on:click="save">Save</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div id="variants" class="col-md-6">
+                        <h2>Variants</h2>
+                        <variant-template v-for="variant in variants" :key="variant.name" :variant="variant"></variant-template>
+                    </div>
                 </div>
-                <div id="savedTones" class="col-md-6">
+                <div id="savedTones" class="col-md-12">
                     <h2>Saved tones</h2>
                     <saved-template v-for="saved in toneList" :key="saved.name" :saved="saved"></saved-template>
 

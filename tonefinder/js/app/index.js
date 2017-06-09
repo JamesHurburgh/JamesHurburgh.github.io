@@ -70,15 +70,14 @@ requirejs(['vue', 'Tone', 'store'],
                     "sustain": soundDef.envelopeSustain,
                     "release": soundDef.envelopeRelease,
                     "releaseCurve": soundDef.envelopeReleaseCurve,
-                }
+                },
+                "portamento": soundDef.portamento
             }).toMaster();
         };
 
         createTone = function(soundDef) {
             var tone = {};
             tone.synth = createSynth(soundDef);
-            tone.frequency = soundDef.frequency;
-            tone.duration = soundDef.duration;
             tone.name = soundDef.name;
 
             return tone;
@@ -98,16 +97,140 @@ requirejs(['vue', 'Tone', 'store'],
             sound.envelopeReleaseCurve = getRandomFromList(curveTypes);
 
             sound.frequency = Math.floor(Math.random() * 200000) / 100 + 10;
+            sound.startFrequency = Math.floor(Math.random() * 200000) / 100 + 10;
+            sound.portamento = Math.ceil(Math.random() * 100) / 100;
+            sound.endFrequency = Math.floor(Math.random() * 200000) / 100 + 10;
             sound.duration = Math.ceil(Math.random() * 100) / 100;
             sound.name = Math.floor(Math.random() * Math.pow(10, 6));
 
-            return sound;
+            sound.polySynths = Math.floor(Math.random() + Math.random() + Math.random());
+
+            return makeVariation(sound);
+        };
+
+        var variationFunctions = [
+            function(soundDef) {
+                soundDef.oscillatorType = getRandomFromList(oscillatorTypes);
+                soundDef.VariantDescription = "Oscillator Type:" + soundDef.oscillatorType;
+                return soundDef;
+            },
+            function(soundDef) {
+                soundDef.envelopeAttackCurve = getRandomFromList(curveTypes);
+                soundDef.VariantDescription = "Attack Curve:" + soundDef.envelopeAttackCurve;
+                return soundDef;
+            },
+            function(soundDef) {
+                soundDef.envelopeReleaseCurve = getRandomFromList(curveTypes);
+                soundDef.VariantDescription = "Release Curve:" + soundDef.envelopeReleaseCurve;
+                return soundDef;
+            },
+            // Envelope Attack
+            function(soundDef) {
+                soundDef.envelopeAttack *= 2;
+                soundDef.VariantDescription = "Envelope Attack x 2";
+                return soundDef;
+            },
+            function(soundDef) {
+                soundDef.envelopeAttack /= 2;
+                soundDef.VariantDescription = "Envelope Attack / 2";
+                return soundDef;
+            },
+            // Envelope Decay
+            function(soundDef) {
+                soundDef.envelopeDecay *= 2;
+                soundDef.VariantDescription = "Envelope Decay x 2";
+                return soundDef;
+            },
+            function(soundDef) {
+                soundDef.envelopeDecay /= 2;
+                soundDef.VariantDescription = "Envelope Decay / 2";
+                return soundDef;
+            },
+            // Envelope Sustain
+            function(soundDef) {
+                soundDef.envelopeSustain *= 2;
+                soundDef.VariantDescription = "Envelope Sustain x 2";
+                return soundDef;
+            },
+            function(soundDef) {
+                soundDef.envelopeSustain /= 2;
+                soundDef.VariantDescription = "Envelope Sustain / 2";
+                return soundDef;
+            },
+            // Envelope Release
+            function(soundDef) {
+                soundDef.envelopeRelease *= 2;
+                soundDef.VariantDescription = "Envelope Release x 2";
+                return soundDef;
+            },
+            function(soundDef) {
+                soundDef.envelopeRelease /= 2;
+                soundDef.VariantDescription = "Envelope Release / 2";
+                return soundDef;
+            },
+            // Start Frequency
+            function(soundDef) {
+                soundDef.startFrequency *= 2;
+                soundDef.VariantDescription = "Start Frequency x 2";
+                return soundDef;
+            },
+            function(soundDef) {
+                soundDef.startFrequency /= 2;
+                soundDef.VariantDescription = "Start Frequency / 2";
+                return soundDef;
+            },
+            // End Frequency
+            function(soundDef) {
+                soundDef.endFrequency *= 2;
+                soundDef.VariantDescription = "End Frequency x 2";
+                return soundDef;
+            },
+            function(soundDef) {
+                soundDef.endFrequency /= 2;
+                soundDef.VariantDescription = "End Frequency / 2";
+                return soundDef;
+            },
+            // Duration
+            function(soundDef) {
+                soundDef.duration *= 2;
+                soundDef.VariantDescription = "Duration x 2";
+                return soundDef;
+            },
+            function(soundDef) {
+                soundDef.duration /= 2;
+                soundDef.VariantDescription = "Duration / 2";
+                return soundDef;
+            },
+        ];
+
+        makeVariation = function(soundDefinition) {
+            var deepCopy = JSON.parse(JSON.stringify(soundDefinition));
+            deepCopy.name = Math.floor(Math.random() * Math.pow(10, 6));
+            return variationFunctions[Math.floor(Math.random() * variationFunctions.length)](deepCopy);
         };
 
         var toneFinder = {};
 
         toneFinder.soundDefinition = createRandomSoundDefinition();
 
+        playSound = function(soundDef) {
+
+            var tone = createTone(soundDef);
+
+            tone.synth.triggerAttack(soundDef.startFrequency);
+            tone.synth.setNote(soundDef.endFrequency, "+" + soundDef.portamento);
+            tone.synth.triggerRelease("+" + (soundDef.portamento + soundDef.duration));
+
+            // tone.synth.triggerAttackRelease("G4", "2n", "8t", 1); 
+            // tone.synth.triggerAttackRelease("A4", "8n", 1); 
+            // tone.synth.triggerAttackRelease("F4", "8n", 2); 
+
+
+            // var chorus = new Tone.Chorus(4, 2.5, 0.5);
+            // var synth = new Tone.PolySynth(4, Tone.MonoSynth).connect(chorus);
+            // synth.triggerAttackRelease(["C3","E3","G3"], "8n");
+
+        };
 
         Vue.component('saved-template', {
             props: ['saved'],
@@ -123,18 +246,29 @@ requirejs(['vue', 'Tone', 'store'],
                     store.set("tones", savedTones.toneList);
                 },
                 load: function() {
-                    savedTones.toneList.forEach(function(soundDefinition) {
-                        if (soundDefinition.name == this.saved.name) {
-                            // Use JSON to deep clone the object
-                            toneFinderApp.soundDefinition = JSON.parse(JSON.stringify(soundDefinition));
-                        }
-                    }, this);
+                    // Use JSON to deep clone the object
+                    toneFinderApp.soundDefinition = JSON.parse(JSON.stringify(this.saved));
                 },
                 play: function() {
-                    var tone = createTone(this.saved);
-
-                    tone.synth.triggerAttackRelease(tone.frequency, tone.duration);
+                    playSound(this.saved);
                 },
+
+            }
+        });
+
+        Vue.component('variant-template', {
+            props: ['variant'],
+            template: '#variant-template',
+            computed: {},
+            methods: {
+                load: function() {
+                    // Use JSON to deep clone the object
+                    toneFinderApp.soundDefinition = JSON.parse(JSON.stringify(this.variant));
+                },
+                play: function() {
+                    playSound(this.variant);
+                },
+
             }
         });
 
@@ -148,12 +282,17 @@ requirejs(['vue', 'Tone', 'store'],
                 curveTypes: function() {
                     return curveTypes;
                 },
+                variants: function() {
+                    var variants = [];
+                    for (var i = 0; i < 16; i++) {
+                        variants.push(makeVariation(toneFinder.soundDefinition));
+                    }
+                    return variants;
+                }
             },
             methods: {
                 play: function() {
-                    var tone = createTone(toneFinder.soundDefinition);
-
-                    tone.synth.triggerAttackRelease(tone.frequency, tone.duration);
+                    playSound(toneFinder.soundDefinition);
                 },
                 randomise: function() {
                     toneFinder.soundDefinition = createRandomSoundDefinition();
