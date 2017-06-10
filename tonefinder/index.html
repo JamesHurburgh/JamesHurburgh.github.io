@@ -22,11 +22,12 @@
 
 <body>
     <template id="saved-template">
-        <div class="col-sm-3">
+        <div class="col-sm-6">
         <div class="panel panel-primary">
             <div class="panel-heading">
                 <h4 class="panel-title">{{saved.name}}
                     <a class="btn btn-danger btn-xs pull-right" v-on:click="remove">Remove</a>
+                    <a class="btn btn-info btn-xs pull-right" v-on:click="exportSound">Export</a>
                     <a class="btn btn-info btn-xs pull-right" v-on:click="load">Load</a>
                     <a class="btn btn-success btn-xs pull-right" v-on:click="play">Play</a>
                 </h4>
@@ -151,6 +152,7 @@
                                     <button type="reset" class="btn btn-primary btn-xl" v-on:click="play">Play</button>
                                     <button type="reset" class="btn btn-default btn-xl" v-on:click="randomise">Randomise</button>
                                     <button type="reset" class="btn btn-default btn-xl" v-on:click="save">Save</button>
+                                    <button type="reset" class="btn btn-default btn-xl" v-on:click="exportSound">Export</button>
                                 </div>
                             </div>
                         </fieldset>

@@ -12,8 +12,8 @@ requirejs.config({
 });
 
 // Start the main app logic.
-requirejs(['vue', 'Tone', 'store'],
-    function(Vue, Tone, store) {
+requirejs(['vue', 'Tone', 'store', 'recorder'],
+    function(Vue, Tone, store, Recorder) {
 
         Vue.component('link-item', {
             props: ['link'],
@@ -72,7 +72,7 @@ requirejs(['vue', 'Tone', 'store'],
                     "releaseCurve": soundDef.envelopeReleaseCurve,
                 },
                 "portamento": soundDef.portamento
-            }).toMaster();
+            });
         };
 
         createTone = function(soundDef) {
@@ -89,11 +89,11 @@ requirejs(['vue', 'Tone', 'store'],
             sound.oscillatorType = getRandomFromList(oscillatorTypes);
             sound.oscillatorPhase = Math.floor(Math.random() * 36000) / 100;
 
-            sound.envelopeAttack = Math.floor(Math.random() * 200) / 100;
+            sound.envelopeAttack = Math.floor(Math.random() * 100) / 100;
             sound.envelopeAttackCurve = getRandomFromList(curveTypes);
-            sound.envelopeDecay = Math.floor(Math.random() * 200) / 100;
-            sound.envelopeSustain = Math.floor(Math.random() * 200) / 100;
-            sound.envelopeRelease = Math.floor(Math.random() * 200) / 100;
+            sound.envelopeDecay = Math.floor(Math.random() * 100) / 100;
+            sound.envelopeSustain = Math.floor(Math.random() * 100) / 100;
+            sound.envelopeRelease = Math.floor(Math.random() * 100) / 100;
             sound.envelopeReleaseCurve = getRandomFromList(curveTypes);
 
             sound.frequency = Math.floor(Math.random() * 200000) / 100 + 10;
@@ -213,13 +213,83 @@ requirejs(['vue', 'Tone', 'store'],
 
         toneFinder.soundDefinition = createRandomSoundDefinition();
 
-        playSound = function(soundDef) {
+        createDownloadLink = function(recorder, name) {
+            recorder.exportWAV(function(blob) {
+                if (name === undefined) {
+                    name = new Date().toISOString();
+                }
+                var url = URL.createObjectURL(blob);
+                var hf = document.createElement('a');
+
+                hf.href = url;
+                hf.download = name + '.wav';
+                hf.innerHTML = hf.download;
+                document.getElementById("savedTones").appendChild(hf);
+                hf.click();
+                document.getElementById("savedTones").removeChild(hf);
+            });
+        };
+
+        exportSound = function(soundDef) {
+
+            var rec = new Recorder(Tone.Master);
+            rec.record();
+            playSound(soundDef, function() {
+                rec.stop();
+                createDownloadLink(rec);
+            });
+
+        };
+
+        playSound = function(soundDef, callback) {
 
             var tone = createTone(soundDef);
 
-            tone.synth.triggerAttack(soundDef.startFrequency);
-            tone.synth.setNote(soundDef.endFrequency, "+" + soundDef.portamento);
-            tone.synth.triggerRelease("+" + (soundDef.portamento + soundDef.duration));
+            //tone.synth.toMaster();
+
+            var phaser = new Tone.Phaser({
+                "frequency": 15,
+                "octaves": 5,
+                "baseFrequency": 1000
+            });
+
+            //create an effect and connect it to the master output
+            var dist = new Tone.Distortion();
+            //create a synth and connect it to the effect
+            //and play a note to hear the distortion
+
+            var autoFilter = new Tone.AutoFilter("4n");
+            autoFilter.filter = new Tone.Filter(200, "lowpass");
+
+            var synth = tone.synth.toMaster(); //.connect(dist, phaser, autoFilter).toMaster();
+
+            var time = 0;
+
+            Tone.Transport.schedule(function(time) {
+                synth.triggerAttack(soundDef.startFrequency);
+            }, "+" + time);
+            time += soundDef.envelopeAttack;
+            time += soundDef.portamento;
+
+            Tone.Transport.schedule(function(time) {
+                synth.setNote(soundDef.endFrequency);
+            }, "+" + time);
+            time += soundDef.duration;
+            time += soundDef.envelopeDecay;
+
+            Tone.Transport.schedule(function(time) {
+                synth.triggerRelease();
+            }, "+" + time);
+            time += soundDef.envelopeRelease;
+
+            Tone.Transport.schedule(function(time) {
+                synth.dispose();
+                if (callback !== undefined) {
+                    callback();
+                }
+            }, "+" + time);
+
+            Tone.Transport.start();
 
             // tone.synth.triggerAttackRelease("G4", "2n", "8t", 1); 
             // tone.synth.triggerAttackRelease("A4", "8n", 1); 
@@ -252,6 +322,9 @@ requirejs(['vue', 'Tone', 'store'],
                 play: function() {
                     playSound(this.saved);
                 },
+                exportSound: function() {
+                    exportSound(this.saved);
+                },
 
             }
         });
@@ -268,7 +341,6 @@ requirejs(['vue', 'Tone', 'store'],
                 play: function() {
                     playSound(this.variant);
                 },
-
             }
         });
 
@@ -309,6 +381,9 @@ requirejs(['vue', 'Tone', 'store'],
                     // Use JSON to deep clone the object
                     savedTones.toneList.push(JSON.parse(JSON.stringify(toneFinder.soundDefinition)));
                     store.set("tones", savedTones.toneList);
+                },
+                exportSound: function() {
+                    exportSound(toneFinder.soundDefinition);
                 },
             }
         });
