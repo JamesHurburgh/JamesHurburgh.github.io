@@ -787,7 +787,21 @@
 		},
 		"Referees" : "Ashley Klein,Ben Cummins,Bernard Sutton,Brett Suttor,Gerard Sutton,Luke Patten,Nick Beashel",
 		"Ground" : "Suncorp Stadium",
-		"Crowd" : "",
-		"ManOfTheMatch" : ""
+		"Crowd" : "52293",
+		"ManOfTheMatch" : "Cameron Smith"
+	}, {
+		"Date" : "2016-07-13",
+		"Details" : "New South Wales 18 (Tyson Frizell, David Fifita, Michael Jennings tries; James Maloney 2, Paul Gallen goals) Queensland 14 (Greg Inglis, Gavin Cooper, Darius Boyd tries; Johnathan Thurston goal)",
+		"Referees" : "Gerard Sutton and Ben Cummins",
+		"Ground" : "Stadium Australia",
+		"Crowd" : "61267",
+		"ManOfTheMatch" : "James Maloney"
+	}, {
+		"Date" : "2017-05-31",
+		"Details" : "New South Wales 28 (James Maloney, Mitchell Pearce, James Tedesco, Andrew Fifita, Jarryd Hayne tries; James Maloney 4 goals) Queensland 4 (Corey Oates try)",
+		"Referees" : "Matt Cecchin and Gerard Sutton",
+		"Ground" : "Lang Park",
+		"Crowd" : "50390",
+		"ManOfTheMatch" : "Andrew Fifita"
 	}
 ]
