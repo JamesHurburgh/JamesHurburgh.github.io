@@ -4,10 +4,13 @@ define(['jquery', 'store', 'app/dicer'],
         var tablesRegex = new RegExp(/{{((?:.|\n)+?)(?!({{(?:.|\n)+?}}))}}/);
         return {
             //    var tablesRegex = new RegExp(/{{{([^{}]*?:::[^{}]*?)}}}/);
+            setScriptList: function(scriptList){
+                this.scriptList = scriptList;
+            },
 
             getScript: function(reference, scriptDao) {
                 // TODO break down into namespace etc.
-                var scripts = scriptDao();
+                var scripts = this.scriptList;
                 for (var i = 0; i < scripts.length; i++) {
                     if (reference === scripts[i].title) {
                         return scripts[i].script;
@@ -52,7 +55,8 @@ define(['jquery', 'store', 'app/dicer'],
 
                 var tableMatch;
                 while (tableMatch = tablesRegex.exec(input)) {
-                    tables[name] = parseSingleTable(tableMatch[1]);
+                    var table = this.parseSingleTable(tableMatch[1]);
+                    tables[table.name] = table;
                     input = input.replace(tableMatch[0], "");
                 }
                 return tables;
@@ -96,6 +100,7 @@ define(['jquery', 'store', 'app/dicer'],
                     }
                 }
                 return {
+                    name: name,
                     roll: roll,
                     list: list,
                     minRoll: dicer.getMinRoll(roll),
@@ -157,8 +162,8 @@ define(['jquery', 'store', 'app/dicer'],
                         var functionName = functionCall[0];
                         var parameters = [];
                         if (functionWithParamsMatch) {
-                            functionName = functionWithParamsMatch[0];
-                            parameters = functionWithParamsMatch[1].split(",");
+                            functionName = functionWithParamsMatch[1];
+                            parameters = functionWithParamsMatch[2].split(",");
                         }
                         switch (functionName) {
                             case "":
@@ -171,10 +176,10 @@ define(['jquery', 'store', 'app/dicer'],
                                 }
                                 break;
                             case "range":
-                                choice = dicer.randBetween(Number(functionCall[1].split("-")[0]), Number(functionCall[1].split("-")[1]));
+                                choice = dicer.randBetween(Number(functionCall[1].split(",")[0]), Number(functionCall[1].split("-")[1]));
                                 break;
                             case "roll":
-                                choice = parseRollString(functionCall[1]);
+                                choice = dicer.parseRollString(functionCall[1]);
                                 break;
                             case "shuffle":
                                 var seperator = ", ";
@@ -182,7 +187,7 @@ define(['jquery', 'store', 'app/dicer'],
                                     seperator = parameters[0];
                                 }
                                 var list = functionCall[1].split("|");
-                                choice = shuffle(list).join(seperator);
+                                choice = dicer.shuffle(list).join(seperator);
                                 break;
                             case "repeat":
                                 var text = functionCall[1];
@@ -192,11 +197,11 @@ define(['jquery', 'store', 'app/dicer'],
                                 }
                                 break;
                             case "set":
-                                variables[functionCall[1].split("=")[0]] = functionCall[1].split("=")[1];
+                                variables[functionCall[2].split("=")[0]] = functionCall[2].split("=")[1];
                                 choice = "";
                                 break;
                             case "get":
-                                choice = variables[functionCall[1]];
+                                choice = variables[functionCall[2]];
                                 break;
                             case "import":
                                 var scriptImport = this.getScript(functionCall[1], function() { return store.get('scriptList') });

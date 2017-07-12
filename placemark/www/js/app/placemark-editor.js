@@ -1,17 +1,27 @@
-var $ = require('jQuery');
-require('store');
-require('showdown');
-//require('alertify');
-require('parser');
-require('dicer');
+requirejs.config({
+    //By default load any module IDs from js/lib
+    baseUrl: 'js/lib',
+    //except, if the module ID starts with "app",
+    //load it from the js/app directory. paths
+    //config is relative to the baseUrl, and
+    //never includes a ".js" extension since
+    //the paths config could be for a directory.
+    paths: {
+        app: '../app'
+    }
+});
+
+// Start the main app logic.
+requirejs(['vue', 'jquery', 'store', 'showdown', 'app/parser', 'app/dicer'],
+    function(Vue, $, store, showdown, parser, dicer) {
 
 function loadScriptList() {
     console.log("Loadind script list.");
     $("#scriptList").html("Loading scriptList...");
     var scriptList = store.get('scriptList');
-    if (!scriptList) {
+    if (scriptList === undefined) {
         getDocumentation();
-        scriptList = store.get('scriptList');
+        scriptList = [];
     }
     $("#scriptList").html("");
     scriptList.forEach(function(element) {
@@ -255,3 +265,5 @@ $(window).on('hashchange', function() {
 transform();
 loadScriptList();
 loadScript();
+    }
+);
