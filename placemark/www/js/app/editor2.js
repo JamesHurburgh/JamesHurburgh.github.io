@@ -12,8 +12,13 @@ requirejs.config({
 });
 
 // Start the main app logic.
-requirejs(['vue', 'jquery', 'store', 'showdown', 'app/parser', 'app/dicer'],
-    function(Vue, $, store, showdown, parser, dicer) {
+requirejs(['vue', 'jquery', 'bootstrap', 'store', 'showdown', 'app/parser', 'app/dicer'],
+    function(Vue, $, bootstrap, store, showdown, parser, dicer) {
+
+
+        $(document).ready(function() {
+            $('.dropdown-toggle').dropdown();
+        });
 
         var version = "0.1";
 
@@ -66,16 +71,20 @@ requirejs(['vue', 'jquery', 'store', 'showdown', 'app/parser', 'app/dicer'],
             },
             computed: {
                 parsed: function() {
-                    var results = "";
-                    for (var i = 0; i < this.placemark.options.generateCount; i++) {
-                        results += parser.parse(this.placemark.script);
-                    }
-                    // this.placemark.parsedResult = results;
-                    return results;
+                    this.transform();
+                    return this.transformation;
                 },
                 parsedMarkup: function() {
+                    if (!this.placemark.options.showRaw) {
+                        this.transform();
+                    }
                     return new showdown.Converter().makeHtml(this.transformation);
                 },
+                tables: function() {
+                    parser.setScriptList(placeMarkData.scripts);
+                    var tables = parser.parseTables(this.placemark.script);
+                    return "Define some tables to see them show up here.  Try this syntax: {{tableName::option1|option2|etc}}.  Then call it like this: {lookup:tableName} or just {:tableName}.";
+                }
             },
             methods: {
                 transform: function(event) {

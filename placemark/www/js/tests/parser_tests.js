@@ -1,13 +1,14 @@
 define(['jquery', 'alertify', 'store', 'mousetrap', 'showdown', 'app/parser', 'models/RollTableRow', 'models/RollTable'],
 function($, alertify, store, mousetrap, showdown, parser, RollTableRow, RollTable) {
 
+        const { test } = QUnit;
         QUnit.module('Parser Tests');
 
-        QUnit.test("Qunit functioning - Parser", function(assert) {
+        test("Qunit functioning - Parser", function(assert) {
             assert.ok(true, "Passed!");
         });
 
-        QUnit.test("parser.parseSingleTable  One blank option returns no table", function(assert) {
+        test("parser.parseSingleTable  One blank option returns no table", function(assert) {
 
             var table = parser.parseSingleTable("Table::");
             //assert.expect(0);
@@ -17,13 +18,19 @@ function($, alertify, store, mousetrap, showdown, parser, RollTableRow, RollTabl
 
         });
 
-        QUnit.test("parser.parseSingleTable One option", function(assert) {
+        test("parser.parseSingleTable One option", function(assert) {
 
             var table = parser.parseSingleTable("One option::Option 1");
             assert.equal(table.rollDictionary.length, 1, "Roll dictionary has one entry");
-            assert.equal(table.rollDictionary[0], "Option 1", "Roll dictionary entry is correct");
+            assert.equal(table.rollDictionary[0].item, "Option 1", "Roll dictionary entry is correct");
 
         });
+
+        test("Set and get variables", function(assert) {
+            var output = parser.parse("{set:x=10}{get:x}");
+            assert.equal(output, "10", "Correctly set and get variables in the basic case.");
+        });
+
         // One option:
         // # Option 1
 
@@ -66,7 +73,7 @@ function($, alertify, store, mousetrap, showdown, parser, RollTableRow, RollTabl
 
         // across
 
-        QUnit.test("RollTableRow creation", function(assert) {
+        test("RollTableRow creation", function(assert) {
             assert.expect(3);
             var row = new RollTableRow();
             row.min = 1;

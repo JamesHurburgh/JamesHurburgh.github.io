@@ -4,7 +4,7 @@ define(['jquery', 'store', 'app/dicer'],
         var tablesRegex = new RegExp(/{{((?:.|\n)+?)(?!({{(?:.|\n)+?}}))}}/);
         return {
             //    var tablesRegex = new RegExp(/{{{([^{}]*?:::[^{}]*?)}}}/);
-            setScriptList: function(scriptList){
+            setScriptList: function(scriptList) {
                 this.scriptList = scriptList;
             },
 
@@ -157,7 +157,7 @@ define(['jquery', 'store', 'app/dicer'],
                         }
                         choice = dicer.chooseRandom(list);
                     } else {
-                        var functionWithParamsRegex = new RegExp(/(.+?)\[(.+?)\]/);
+                        var functionWithParamsRegex = new RegExp(/(.+?)\[((?:.|[\n\r])+?)\]/g);
                         var functionWithParamsMatch = functionWithParamsRegex.exec(functionCall[0]);
                         var functionName = functionCall[0];
                         var parameters = [];
@@ -175,9 +175,11 @@ define(['jquery', 'store', 'app/dicer'],
                                     choice = this.rollOnTable(table);
                                 }
                                 break;
+                            case "%":
                             case "range":
-                                choice = dicer.randBetween(Number(functionCall[1].split(",")[0]), Number(functionCall[1].split("-")[1]));
+                                choice = dicer.randBetween(Number(functionCall[1].split("-")[0]), Number(functionCall[1].split("-")[1]));
                                 break;
+                            case "r":
                             case "roll":
                                 choice = dicer.parseRollString(functionCall[1]);
                                 break;
@@ -189,6 +191,7 @@ define(['jquery', 'store', 'app/dicer'],
                                 var list = functionCall[1].split("|");
                                 choice = dicer.shuffle(list).join(seperator);
                                 break;
+                            case "&":
                             case "repeat":
                                 var text = functionCall[1];
                                 choice = "";
@@ -197,14 +200,24 @@ define(['jquery', 'store', 'app/dicer'],
                                 }
                                 break;
                             case "set":
-                                variables[functionCall[2].split("=")[0]] = functionCall[2].split("=")[1];
+                                variables[functionCall[1].split("=")[0]] = functionCall[1].split("=")[1];
                                 choice = "";
                                 break;
                             case "get":
-                                choice = variables[functionCall[2]];
+                                choice = variables[functionCall[1]];
                                 break;
-                            case "import":
-                                var scriptImport = this.getScript(functionCall[1], function() { return store.get('scriptList') });
+                            case "var":
+                                var value = functionCall[1].split("=")[1];
+                                if (functionCall[1].indexOf("=") == -1) {
+                                    choice = variables[functionCall[1]];
+                                } else {
+                                    variables[functionCall[1].split("=")[0]] = functionCall[1].split("=")[1];
+                                    choice = "";
+                                }
+                                break;
+                            case "!":
+                            case "import": // Usage {import:AnotherPlacemark} or {!:AnotherPlacemark} will look up that other placemark, parse it and add the results here.
+                                var scriptImport = this.getScript(functionCall[1], function() { return store.get('scriptList'); });
                                 var importedTables = this.parseTables(scriptImport);
                                 for (var key in importedTables) {
                                     tables[key] = importedTables[key];
@@ -216,6 +229,7 @@ define(['jquery', 'store', 'app/dicer'],
                                 // TODO Strip non maths symbols.
                                 choice = eval(functionCall[1]);
                                 break;
+                            case "#":
                             case "comment":
                                 choice = "";
                                 break;

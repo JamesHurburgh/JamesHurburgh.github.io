@@ -1,13 +1,14 @@
 define(['jquery', 'alertify', 'store', 'mousetrap', 'showdown', 'app/parser', 'models/RollTableRow', 'models/RollTable'],
 function($, alertify, store, mousetrap, showdown, parser, RollTableRow, RollTable) {
 
+        const { test } = QUnit;
         QUnit.module('RollTable Tests');
 
-        QUnit.test("Qunit functioning - RollTable", function(assert) {
+        test("Qunit functioning - RollTable", function(assert) {
             assert.ok(true, "Passed!");
         });
 
-        QUnit.test("RollTable creation - Generic", function(assert) {
+        test("RollTable creation - Generic", function(assert) {
             assert.expect(2);
             var table = new RollTable();
             table.name = "Table";
@@ -16,7 +17,7 @@ function($, alertify, store, mousetrap, showdown, parser, RollTableRow, RollTabl
             assert.equal(table.roll, "2d6");
         });
 
-        QUnit.test("RollTable.parse One Blank Option:", function(assert) {
+        test("RollTable.parse One Blank Option:", function(assert) {
             var table = new RollTable();
             table.parse("One Blank Option:")
             
@@ -29,7 +30,7 @@ function($, alertify, store, mousetrap, showdown, parser, RollTableRow, RollTabl
 
         });
 
-        QUnit.test("RollTable.parse One option:", function(assert) {
+        test("RollTable.parse One option:", function(assert) {
             var table = new RollTable();
             table.parse("One option:\n"+
                         "# Option 1");
@@ -40,7 +41,7 @@ function($, alertify, store, mousetrap, showdown, parser, RollTableRow, RollTabl
             assert.equal(table.rollDictionary[0].output, "Option 1");
         });
 
-        QUnit.test("RollTable.parse Two options:", function(assert) {
+        test("RollTable.parse Two options:", function(assert) {
             var table = new RollTable();
             table.parse("Two option:\n"+
                         "# Option 1\n"+

@@ -9,6 +9,9 @@
     <title>PlaceMark Editor</title>
     <link rel="icon" type="image/png" href="favicon.png">
 
+    <script data-main="js/app/editor2.js" src="js/require.js"></script>
+
+
     <link rel="stylesheet" href="css/alertify.min.css" />
     <!-- Alertify Bootstrap theme -->
     <link rel="stylesheet" href="css/alertify.bootstrap.min.css" />
@@ -16,7 +19,7 @@
     <!-- bootswatch -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 
-    <script data-main="js/app/editor2.js" src="js/require.js"></script>
+
 
 
 </head>
@@ -32,6 +35,23 @@
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">PlaceMark</a>
                 <ul class="nav navbar-nav">
+                    <li class="fileDropdown">
+                        <a class="dropdown-toggle" data-toggle="fileDropdown" href="#">File<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">New</a></li>
+                            <li><a href="#">Open</a></li>
+                            <li><a href="#" @click="save">Save</a></li>
+                            <li><a href="#">Delete</a></li>
+                        </ul>
+                    </li>
+                    <li class="viewDropdown">
+                        <a class="dropdown-toggle" data-toggle="viewDropdown" href="#">View<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Tables</a></li>
+                            <li><a href="#">Raw Output</a></li>
+                            <li><a href="#">Mark Up</a></li>
+                        </ul>
+                    </li>
                     <li><a href="editor.html">Editor</a></li>
                     <li><a href="help.html">Help</a></li>
                 </ul>
@@ -40,14 +60,26 @@
     </nav>
 
     <div class="container" id="container">
-        <div class="header clearfix">
-            <h2 class="text-muted">PlaceMark Script Editor</h2>
-        </div>
         <div class="row marketing">
-            <div class="col-lg-10">
+            <div class="col-lg-9">
+                <div class="header clearfix">
+                    <h2 class="text-muted">PlaceMark Script Editor</h2>
+                </div>
                 <form class="form-horizontal">
                     <fieldset>
                         <div id="placemarkEditor" class="form-group">
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-10">
+                                <!--<a href="#" @click="transform" id="transform" class="btn btn-primary">Transform</a>-->
+                                <a href="#" @click="save" id="save" class="btn-sm btn-success">Save</a>
+                                <a href="#" @click="deleteScript" id="delete" class="btn-sm btn-danger pull-right">Delete</a>
+                                <a href="#" @click="exportScript" id="export" class="btn-sm btn-default">Export</a>
+                                <label for="tablesVisibility">Tables <input type="checkbox" id="tablesVisibility" v-model="placemark.options.showTables"></label>
+                                <label for="rawOutputVisibility">Raw <input type="checkbox" id="rawOutputVisibility" v-model="placemark.options.showRaw"></label>
+                                <label for="markupVisibility">Mark up <input type="checkbox" id="markupVisibility" v-model="placemark.options.showMarkup"></label>
+                                <label for="generateCount">Count <input  class="input-sm" style="width:50px"  type="number" id="generateCount" v-model="placemark.options.generateCount"></label>
+                                <!--<label for="autoParse">Autoparse <input type="checkbox" id="autoParse" v-model="options.autoParse"></label>-->
+                            </div>
                             <label for="title" class="col-lg-2 control-label">Title</label>
                             <div class="col-lg-10">
                                 <input type="text" class="form-control mousetrap" id="title" title="Title" v-model="placemark.title">
@@ -57,29 +89,15 @@
                                 <textarea class="form-control mousetrap" rows="10" id="placeMark" v-model="placemark.script"></textarea>
                                 <span class="help-block"></span>
                             </div>
-                            <div class="col-lg-2"></div>
-                            <div class="col-lg-10">
-                                <a href="#" @click="transform" id="transform" class="btn btn-primary">Transform</a>
-                                <a href="#" @click="save" id="save" class="btn btn-default">Save</a>
-                                <a href="#" @click="deleteScript" id="delete" class="btn btn-danger pull-right">Delete</a>
-                                <a href="#" @click="exportScript" id="export" class="btn btn-default">Export</a>
-                                <label for="tablesVisibility">Tables <input type="checkbox" id="tablesVisibility" v-model="placemark.options.showTables"></label>
-                                <label for="rawOutputVisibility">Raw <input type="checkbox" id="rawOutputVisibility" v-model="placemark.options.showRaw"></label>
-                                <label for="markupVisibility">Mark up <input type="checkbox" id="markupVisibility" v-model="placemark.options.showMarkup"></label>
-                                <label for="generateCount">Count <input  class="input-sm" style="width:50px"  type="number" id="generateCount" v-model="placemark.options.generateCount"></label>
-                                <!--<label for="autoParse">Autoparse <input type="checkbox" id="autoParse" v-model="options.autoParse"></label>-->
-                            </div>
                             <div id="tablesPanel" v-if="placemark.options.showTables">
                                 <label for="tables" class="col-lg-2 control-label">Tables</label>
                                 <div class="col-lg-10 well">
-                                    <div id="tables" style="min-height:30px;">&nbsp;</div>
+                                    <div id="tables" style="min-height:30px;" v-html="tables"></div>
                                 </div>
                             </div>
                             <div id="rawOutputPanel" v-if="placemark.options.showRaw">
                                 <label for="markdown" class="col-lg-2 control-label">Raw Output</label>
-                                <div class="col-lg-10 well">
-                                    <textarea class="form-control" rows="3" id="markdown">{{transformation}}</textarea>
-                                    <span class="help-block">The box above contains your randomised creation.</span>
+                                <div class="col-lg-10 well" v-html="parsed" style="white-space: pre-wrap;">
                                 </div>
                             </div>
                             <div id="markupPanel" v-if="placemark.options.showMarkup">
@@ -91,20 +109,21 @@
                     </fieldset>
                 </form>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-3">
+                <div class="header clearfix">
+                    <h2 class="text-muted">Scripts</h2>
+                </div>
                 <form class="form-horizontal">
                     <fieldset id="placemarkManager">
                         <div class="form-group">
-                            <label for="title" class="col-lg-12 control-label">Your Scripts</label>
+                            <div class="col-lg-12">
+                                <a href="#" @click="newScript" class="btn-sm btn-success">New</a>
+                                <a href="#" onclick="document.getElementById('importScript').click()" class="btn-sm btn-default">Import</a>
+                                <input id="importScript" type="file" accept=".placemark" @change="importScript" style="display:none" />
+                            </div>
                             <div class="col-lg-12 list-group" style="overflow-y: scroll; min-height: 0px;" id="scriptList">
-                                <div></div>
                                 <placemark-template v-for="placemark in scripts" :key="placemark.title" :placemark="placemark"></placemark-template>
                             </div>
-                            <a href="#" @click="newScript" class="btn btn-default">New</a>
-                            <a href="#" onclick="document.getElementById('importScript').click()" class="btn btn-default">Import</a>
-                            <input id="importScript" type="file" accept=".placemark" @change="importScript" style="display:none" />
-
-
                             <!--<a href="#" id="reloadDocumentation" class="btn btn-link pull-right">Reload documentation</a>
                             <a href="#" id="exportAllButton" class="btn btn-link pull-right">Export All</a>-->
                         </div>

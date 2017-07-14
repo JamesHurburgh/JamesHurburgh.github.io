@@ -129,7 +129,7 @@ function   dicer() {
         for (var i = 0; i < allRolls.length; i++) {
             total += this.parseSingleRoll(allRolls[i]);
         }
-        return total
+        return total;
     },  
 
 
