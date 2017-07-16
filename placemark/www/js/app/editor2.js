@@ -7,12 +7,19 @@ requirejs.config({
     //never includes a ".js" extension since
     //the paths config could be for a directory.
     paths: {
-        app: '../app'
+        app: '../app',
+        "jquery": "../lib/jquery",
+        "jquery.bootstrap": "../lib/bootstrap"
+    },
+    shim: {
+        "jquery.bootstrap": {
+            deps: ["jquery"]
+        }
     }
 });
 
 // Start the main app logic.
-requirejs(['vue', 'jquery', 'bootstrap', 'store', 'showdown', 'app/parser', 'app/dicer', 'bootbox'],
+requirejs(['vue', 'jquery', 'jquery.bootstrap', 'store', 'showdown', 'app/parser', 'app/dicer', 'bootbox'],
     function(Vue, $, bootstrap, store, showdown, parser, dicer, bootbox) {
 
 
