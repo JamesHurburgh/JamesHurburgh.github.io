@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>PlaceMark Editor</title>
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="placemark.png">
 
     <script data-main="js/app/editor2.js" src="js/require.js"></script>
 
@@ -18,10 +18,6 @@
 
     <!-- bootswatch -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-
-
-
-
 </head>
 
 <template id="placemark-template">
@@ -30,108 +26,160 @@
 
 <body>
     <div id="overlay" style="display: none;"></div>
-    <nav class="navbar navbar">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">PlaceMark</a>
-                <ul class="nav navbar-nav">
-                    <li class="fileDropdown">
-                        <a class="dropdown-toggle" data-toggle="fileDropdown" href="#">File<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">New</a></li>
-                            <li><a href="#">Open</a></li>
-                            <li><a href="#" @click="save">Save</a></li>
-                            <li><a href="#">Delete</a></li>
-                        </ul>
-                    </li>
-                    <li class="viewDropdown">
-                        <a class="dropdown-toggle" data-toggle="viewDropdown" href="#">View<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Tables</a></li>
-                            <li><a href="#">Raw Output</a></li>
-                            <li><a href="#">Mark Up</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="editor.html">Editor</a></li>
-                    <li><a href="help.html">Help</a></li>
-                </ul>
+    <div id="placemarkEditor">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand" href="#">
+                    {<wbr>{<wbr>}<wbr>} PlaceMark Script Editor
+                </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">File <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" @click="newScript">New</a></li>
+                                <li><a href="#" onclick="document.getElementById('openScript').click()">Open</a><input id="openScript" type="file" accept=".placemark" @change="openScript" style="display:none" /></li>
+                                <li><a href="#" @click="saveScript">Save</a></li>
+                                <li><a href="#" @click="exportScript">Export</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#" @click="deleteScript">Delete</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">View <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="checkbox navbar-btn"><label for="tablesVisibility"><input type="checkbox" id="tablesVisibility" model="placemark.options.showTables"> Tables</label></li>
+                                <li class="checkbox navbar-btn"><label for="tablesVisibility"><input type="checkbox" id="tablesVisibility" model="placemark.options.showRawOutput"> Raw Output</label></li>
+                                <li class="checkbox navbar-btn"><label for="tablesVisibility"><input type="checkbox" id="tablesVisibility" model="placemark.options.showMarkUp"> Mark Up</label></li>
+                            </ul>
+                        </li> -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Edit <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" @click="listToPlacemark">List to Placemark</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form> -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="help.html">Documentation</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#aboutBox">About PlaceMark</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="https://jameshurburgh.github.io/about.html">About the Author</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <div class="container" id="container">
-        <div class="row marketing">
-            <div class="col-lg-9">
-                <div class="header clearfix">
-                    <h2 class="text-muted">PlaceMark Script Editor</h2>
+        <!-- Modal About Box -->
+        <div id="aboutBox" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">About PlaceMark</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>PlaceMark is primarily a text generation tool focused on random generation. The reason it was developed was to aid in creating random content for games.</p>
+                        <p>If you find PlaceMark useful, drop over to my <a href="https://www.patreon.com/user?u=6205348" target="_blank">Patreon page</a> and let me know.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://www.patreon.com/bePatron?u=6205348" target="_blank" class="btn btn-success">Become a Patron!</a>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
-                <form class="form-horizontal">
-                    <fieldset>
-                        <div id="placemarkEditor" class="form-group">
-                            <div class="col-lg-2"></div>
-                            <div class="col-lg-10">
-                                <!--<a href="#" @click="transform" id="transform" class="btn btn-primary">Transform</a>-->
-                                <a href="#" @click="save" id="save" class="btn-sm btn-success">Save</a>
-                                <a href="#" @click="deleteScript" id="delete" class="btn-sm btn-danger pull-right">Delete</a>
-                                <a href="#" @click="exportScript" id="export" class="btn-sm btn-default">Export</a>
-                                <label for="tablesVisibility">Tables <input type="checkbox" id="tablesVisibility" v-model="placemark.options.showTables"></label>
-                                <label for="rawOutputVisibility">Raw <input type="checkbox" id="rawOutputVisibility" v-model="placemark.options.showRaw"></label>
-                                <label for="markupVisibility">Mark up <input type="checkbox" id="markupVisibility" v-model="placemark.options.showMarkup"></label>
-                                <label for="generateCount">Count <input  class="input-sm" style="width:50px"  type="number" id="generateCount" v-model="placemark.options.generateCount"></label>
-                                <!--<label for="autoParse">Autoparse <input type="checkbox" id="autoParse" v-model="options.autoParse"></label>-->
-                            </div>
-                            <label for="title" class="col-lg-2 control-label">Title</label>
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control mousetrap" id="title" title="Title" v-model="placemark.title">
-                            </div>
-                            <label for="placeMark" class="col-lg-2 control-label">PlaceMark Script</label>
-                            <div class="col-lg-10">
-                                <textarea class="form-control mousetrap" rows="10" id="placeMark" v-model="placemark.script"></textarea>
-                                <span class="help-block"></span>
-                            </div>
-                            <div id="tablesPanel" v-if="placemark.options.showTables">
-                                <label for="tables" class="col-lg-2 control-label">Tables</label>
-                                <div class="col-lg-10 well">
-                                    <div id="tables" style="min-height:30px;" v-html="tables"></div>
-                                </div>
-                            </div>
-                            <div id="rawOutputPanel" v-if="placemark.options.showRaw">
-                                <label for="markdown" class="col-lg-2 control-label">Raw Output</label>
-                                <div class="col-lg-10 well" v-html="parsed" style="white-space: pre-wrap;">
-                                </div>
-                            </div>
-                            <div id="markupPanel" v-if="placemark.options.showMarkup">
-                                <label for="output" class="col-lg-2 control-label">Mark Up</label>
-                                <div class="col-lg-10 well" id="output" v-html="parsedMarkup">
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
-            <div class="col-lg-3">
-                <div class="header clearfix">
-                    <h2 class="text-muted">Scripts</h2>
-                </div>
-                <form class="form-horizontal">
-                    <fieldset id="placemarkManager">
-                        <div class="form-group">
-                            <div class="col-lg-12">
-                                <a href="#" @click="newScript" class="btn-sm btn-success">New</a>
-                                <a href="#" onclick="document.getElementById('importScript').click()" class="btn-sm btn-default">Import</a>
-                                <input id="importScript" type="file" accept=".placemark" @change="importScript" style="display:none" />
-                            </div>
-                            <div class="col-lg-12 list-group" style="overflow-y: scroll; min-height: 0px;" id="scriptList">
-                                <placemark-template v-for="placemark in scripts" :key="placemark.title" :placemark="placemark"></placemark-template>
-                            </div>
-                            <!--<a href="#" id="reloadDocumentation" class="btn btn-link pull-right">Reload documentation</a>
-                            <a href="#" id="exportAllButton" class="btn btn-link pull-right">Export All</a>-->
-                        </div>
-                    </fieldset>
-                </form>
             </div>
         </div>
-        <footer class="footer"></footer>
+
+        <div class="container" id="container">
+            <div class="row marketing">
+                <div class="col-lg-9">
+                    <form class="form-horizontal">
+                        <fieldset>
+                            <div class="form-group">
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-10">
+                                    <!--<a href="#" @click="transform" id="transform" class="btn btn-primary">Transform</a>-->
+                                    <!-- <label for="tablesVisibility">Tables <input type="checkbox" id="tablesVisibility" v-model="placemark.options.showTables"></label>
+                                    <label for="rawOutputVisibility">Raw <input type="checkbox" id="rawOutputVisibility" v-model="placemark.options.showRaw"></label>
+                                    <label for="markupVisibility">Mark up <input type="checkbox" id="markupVisibility" v-model="placemark.options.showMarkup"></label> -->
+                                    <!--<label for="autoParse">Autoparse <input type="checkbox" id="autoParse" v-model="options.autoParse"></label>-->
+                                </div>
+                                <h3 class="col-lg-12 text-muted">{{placemark.title}}</h3>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <label>Script</label>
+                                    <a href="#" class="btn btn-primary btn-xs pull-right" @click="transform">Transform</a>
+                                </div>
+                                <textarea class="form-control mousetrap" rows="10" id="placeMark" v-model="placemark.script"></textarea>
+
+                                <div class="panel-heading">
+                                    <label>Transformed Mark Up</label>
+                                    <a href="#" class="btn btn-default btn-xs pull-right" data-toggle="collapse" data-target="#parsedMarkup">show/hide</a>
+                                    <!-- <span class="pull-right glyphicon-eye-open" data-toggle="collapse" data-target="#parsedMarkup">show/hide</span> -->
+                                </div>
+                                <div id="parsedMarkup" class="collapse in panel-body" v-html="parsedMarkup"></div>
+
+                                <div class="panel-heading">
+                                    <label>Tables</label>
+                                    <a href="#" class="btn btn-default btn-xs pull-right" data-toggle="collapse" data-target="#tables">show/hide</a>
+                                    <!-- <span class="pull-right glyphicon-eye-open" data-toggle="collapse" data-target="#tables">show/hide</span> -->
+                                </div>
+                                <div id="tables" class="collapse panel-body" v-html="tables"></div>
+
+                                <div class="panel-heading">
+                                    <label>Transformed output</label>
+                                    <a href="#" class="btn btn-default btn-xs pull-right" data-toggle="collapse" data-target="#parsed">show/hide</a>
+                                    <!-- <span class="pull-right glyphicon-eye-open" data-toggle="collapse" data-target="#parsed">show/hide</span> -->
+                                    <!-- <label for="generateCount" class="pull-right">Count <input  class="input-sm" style="width:100px"  type="number" id="generateCount" v-model="placemark.options.generateCount"></label> -->
+                                </div>
+                                <div id="parsed" class="collapse panel-body" v-html="parsed" style="white-space: pre-wrap;"></div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header clearfix">
+                        <h2 class="text-muted">Scripts</h2>
+                    </div>
+                    <form class="form-horizontal">
+                        <fieldset>
+                            <div class="form-group">
+                                <div class="col-lg-12 list-group" style="overflow-y: scroll; min-height: 0px;" id="scriptList">
+                                    <placemark-template v-for="placemark in placeMarkData.scripts" :key="placemark.title" :placemark="placemark"></placemark-template>
+                                </div>
+                                <!--<a href="#" id="reloadDocumentation" class="btn btn-link pull-right">Reload documentation</a>
+                            <a href="#" id="exportAllButton" class="btn btn-link pull-right">Export All</a>-->
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <footer class="footer"></footer>
+        </div>
     </div>
 </body>
 

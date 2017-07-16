@@ -12,13 +12,13 @@ requirejs.config({
 });
 
 // Start the main app logic.
-requirejs(['vue', 'jquery', 'bootstrap', 'store', 'showdown', 'app/parser', 'app/dicer'],
-    function(Vue, $, bootstrap, store, showdown, parser, dicer) {
+requirejs(['vue', 'jquery', 'bootstrap', 'store', 'showdown', 'app/parser', 'app/dicer', 'bootbox'],
+    function(Vue, $, bootstrap, store, showdown, parser, dicer, bootbox) {
 
 
-        $(document).ready(function() {
-            $('.dropdown-toggle').dropdown();
-        });
+        // $(document).ready(function() {
+        //     $('.dropdown-toggle').dropdown();
+        // });
 
         var version = "0.1";
 
@@ -67,7 +67,8 @@ requirejs(['vue', 'jquery', 'bootstrap', 'store', 'showdown', 'app/parser', 'app
             el: '#placemarkEditor',
             data: {
                 placemark: placemark,
-                transformation: ""
+                transformation: "",
+                placeMarkData: placeMarkData
             },
             computed: {
                 parsed: function() {
@@ -87,6 +88,15 @@ requirejs(['vue', 'jquery', 'bootstrap', 'store', 'showdown', 'app/parser', 'app
                 }
             },
             methods: {
+                openScript: function(event) {
+                    this.importScript(event);
+                },
+                saveScript: function(event) {
+                    this.save(event);
+                },
+                about: function(event) {
+                    bootbox.alert("Hello World!");
+                },
                 transform: function(event) {
                     var results = "";
                     parser.setScriptList(placeMarkData.scripts);
@@ -106,20 +116,31 @@ requirejs(['vue', 'jquery', 'bootstrap', 'store', 'showdown', 'app/parser', 'app
                         placeMarkData.scripts.push(this.placemark);
                         store.set('placeMarkData', placeMarkData);
                     } else {
-                        if (confirm("Overwrite '" + this.placemark.title + "'?")) {
-                            placeMarkData.scripts[index] = this.placemark;
-                            store.set('placeMarkData', placeMarkData);
-                        }
+                        placeMarkData.scripts[index] = this.placemark;
+                        store.set('placeMarkData', placeMarkData);
                     }
                 },
+                listToPlacemark: function(event) {
+                    var arrayOfLines = this.placemark.script.match(/[^\r\n]+/g);
+                    var transformation = "{" + arrayOfLines.join("|") + "}";
+                    var example = parser.parse(transformation);
+                    bootbox.confirm("<h2>Confirm</h2><h3>Transform to:</h3>" + transformation + "<h3>Example:</h3>" + example, function(result) {
+                        if (result) { placemarkEditor.placemark.script = transformation; }
+                    });
+                },
                 exportScript: function(event) {
+                    var name = prompt("Export as", this.placemark.title + '.placemark');
+                    if (!name || name === undefined || name === "") {
+                        return;
+                    }
+
                     var text = encodeURIComponent(JSON.stringify(this.placemark));
                     var data = "data:text/json;charset=utf-8," + text;
 
                     var hf = document.createElement('a');
 
                     hf.href = data;
-                    hf.download = this.placemark.title + '.placemark';
+                    hf.download = name;
                     hf.innerHTML = hf.download;
                     document.getElementsByTagName("body")[0].appendChild(hf);
                     hf.click();
@@ -134,20 +155,15 @@ requirejs(['vue', 'jquery', 'bootstrap', 'store', 'showdown', 'app/parser', 'app
                             }
                         }
                         store.set('placeMarkData', placeMarkData);
-                    };
-
-                }
-            },
-        });
-
-        var placemarkManager = new Vue({
-            el: '#placemarkManager',
-            data: placeMarkData,
-            computed: {},
-            methods: {
+                    }
+                },
                 newScript: function(event) {
-                    placemarkEditor.placemark = {
-                        title: "New PlaceMark",
+                    var name = prompt("Name", "New PlaceMark");
+                    if (!name || name === undefined || name === "") {
+                        return;
+                    }
+                    this.placemark = {
+                        title: name,
                         script: "",
                         options: {
                             showTables: false,
@@ -157,13 +173,9 @@ requirejs(['vue', 'jquery', 'bootstrap', 'store', 'showdown', 'app/parser', 'app
                             generateCount: 1
                         }
                     };
-                    placemarkEditor.transformation = "";
-                },
-                triggerImport: function(event) {
-                    this.$refs.fileInput.click();
+                    this.transformation = "";
                 },
                 importScript: function(event) {
-                    alert("import");
                     if (!window.FileReader) {
                         alert('Your browser is not supported');
                         return false;
@@ -188,5 +200,80 @@ requirejs(['vue', 'jquery', 'bootstrap', 'store', 'showdown', 'app/parser', 'app
             },
         });
 
+        // var placemarkManager = new Vue({
+        //     el: '#placemarkManager',
+        //     data: placeMarkData,
+        //     computed: {},
+        //     methods: {
+        //         newScript: function(event) {
+        //             var name = prompt("Name", "New PlaceMark");
+        //             if (!name || name === undefined || name === "") {
+        //                 return;
+        //             }
+        //             placemarkEditor.placemark = {
+        //                 title: name,
+        //                 script: "",
+        //                 options: {
+        //                     showTables: false,
+        //                     showMarkup: true,
+        //                     showRaw: false,
+        //                     autoParse: true,
+        //                     generateCount: 1
+        //                 }
+        //             };
+        //             placemarkEditor.transformation = "";
+        //         },
+        //         importScript: function(event) {
+        //             if (!window.FileReader) {
+        //                 alert('Your browser is not supported');
+        //                 return false;
+        //             }
+        //             var input = event.target;
+
+        //             // Create a reader object
+        //             var reader = new FileReader();
+        //             if (input.files.length) {
+        //                 var textFile = input.files[0];
+        //                 // Read the file
+        //                 reader.readAsText(textFile);
+        //                 // When it's loaded, process it
+        //                 reader.onload = function(e) {
+        //                     var newPlacemark = JSON.parse(reader.result);
+        //                     placeMarkData.scripts.push(newPlacemark);
+        //                 };
+        //             } else {
+        //                 alert('Please upload a file before continuing');
+        //             }
+        //         }
+        //     },
+        // });
+
+
+        // var menu = new Vue({
+        //     el: '#menu',
+        //     methods: {
+        //         newScript: function(event) {
+        //             placemarkManager.newScript(event);
+        //         },
+        //         openScript: function(event) {
+        //             placemarkEditor.importScript(event);
+        //         },
+        //         saveScript: function(event) {
+        //             placemarkEditor.save(event);
+        //         },
+        //         exportScript: function(event) {
+        //             placemarkEditor.exportScript(event);
+        //         },
+        //         deleteScript: function(event) {
+        //             placemarkEditor.deleteScript(event);
+        //         },
+        //         listToPlacemark: function(event) {
+        //             placemarkEditor.listToPlacemark(event);
+        //         },
+        //         about: function(event) {
+        //             bootbox.alert("Hello World!");
+        //         },
+        //     }
+        // });
     }
 );
