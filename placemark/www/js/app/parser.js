@@ -233,6 +233,13 @@ define(['jquery', 'store', 'app/dicer'],
                             case "comment":
                                 choice = "";
                                 break;
+                            case "test":
+                                choice = "(Test output:";
+                                for (var i = 0; i < parameters.length; i++) {
+                                    choice += "parameter[" + i + "]:" + parameters[i] + ":";
+                                }
+                                choice += functionCall[1] + ")";
+                                break;
                         }
                     }
 

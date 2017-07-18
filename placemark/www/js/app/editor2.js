@@ -83,15 +83,15 @@ requirejs(['vue', 'jquery', 'jquery.bootstrap', 'store', 'showdown', 'app/parser
                     return this.transformation;
                 },
                 parsedMarkup: function() {
-                    if (!this.placemark.options.showRaw) {
-                        this.transform();
-                    }
+                    // if (!this.placemark.options.showRaw) {
+                    //     this.transform();
+                    // }
                     return new showdown.Converter().makeHtml(this.transformation);
                 },
                 tables: function() {
                     parser.setScriptList(placeMarkData.scripts);
                     var tables = parser.parseTables(this.placemark.script);
-                    return "Define some tables to see them show up here.  Try this syntax: {{tableName::option1|option2|etc}}.  Then call it like this: {lookup:tableName} or just {:tableName}.";
+                    return "TODO: Getting this working.  Define some tables to see them show up here.  Try this syntax: {{tableName::option1|option2|etc}}.  Then call it like this: {lookup:tableName} or just {:tableName}.";
                 }
             },
             methods: {
@@ -107,7 +107,9 @@ requirejs(['vue', 'jquery', 'jquery.bootstrap', 'store', 'showdown', 'app/parser
                 transform: function(event) {
                     var results = "";
                     parser.setScriptList(placeMarkData.scripts);
-                    for (var i = 0; i < this.placemark.options.generateCount; i++) {
+                    var repetitions = this.placemark.options.generateCount;
+                    repetitions = 1; // Re-enable when repetitions are settable again
+                    for (var i = 0; i < repetitions; i++) {
                         results += parser.parse(this.placemark.script);
                     }
                     this.transformation = results;
