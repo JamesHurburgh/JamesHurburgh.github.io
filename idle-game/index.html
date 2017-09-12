@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Adventurers of Otium</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <script src="./js/lib/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/alertify.min.css" />
+    <!-- Alertify Bootstrap theme -->
+    <link rel="stylesheet" href="css/alertify.bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.slate.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <!--This sets the baseUrl to the "scripts" directory, and
+    loads a script that will have a module ID of 'main'-->
+    <script data-main="js/app/idle-game-2.js" src="js/require.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" id="AdventurersGame">
+            <h1>Adventurers of Otium</h1>
+            <p>Adventurering is dangerous. Hire someone else to do it for you! <a href="#" @click="reset()">Reset the game</a></p>
+            <div class="col-md-4">
+                <h2>Coins and stuff</h2>
+                <div>Coins: {{coins}} ({{coinsPerTick}} cpt)</div>
+                <div>Status: {{status}}</div>
+
+                <h2>Hired Adventurers</h2>
+                <div v-for="hireable in hireables">
+                    <div>{{hireable.plural}}: {{getHiredCount(hireable.name)}} ({{getCPT(hireable.name)}} cpt)</div>
+                    <button type="button" class="btn btn-default" @click="hire(hireable.name)" :disabled="!canHire(hireable.name)">Hire a {{hireable.name}} ({{getCost(hireable.name)}} coins)</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h2>Contracts</h2>
+
+                <h3>A Dirty Alley</h3>
+                <div v-for="contract in contracts">
+                    <h4>{{contract.name}}</h4>
+                    <div v-if="contract.requirements != undefined">
+                        <h5>Requirements</h5>
+                        <div v-for="hireableRequirement in contract.requirements.hireables">
+                            {{hireableRequirement.amount}} {{hireableRequirement.type}}
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-default" @click="sendExpedition(contract)" :disabled="!canSendExpedition(contract)">Start</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h2>Expeditions</h2>
+                <h3>Running</h3>
+                <transition-group name="custom-classes-transition" enter-active-class="animated bounceIn" leave-active-class="animated bounceOut">
+                    <div v-for="expedition in runningExpeditions" key="expedition.id">
+                        <h4>{{expedition.contract.name}}</h4>
+                        <div class="progress progress-striped active">
+                            <!-- <div class="progress-bar" v-bind:style="{ width: 100 * (resource.amount - Math.floor(resource.amount)) + '%' }"></div> -->
+                            <div class="progress-bar" v-bind:style="{ width: 100 * (expedition.progress / expedition.contract.duration) + '%' }"></div>
+                        </div>
+                        <div>Progress: {{Math.floor(100 * expedition.progress / expedition.contract.duration)}}%</div>
+                    </div>
+                </transition-group>
+
+                <h3>Completed</h3>
+                <transition-group name="custom-classes-transition" enter-active-class="animated bounceIn" leave-active-class="animated bounceOut">
+                    <div v-for="expedition in completedExpeditions" key="expedition.id">
+                        <h4>{{expedition.contract.name}}</h4>
+                        Rewards:
+                        <div v-for="reward in expedition.rewards">
+                            {{reward.amount}} {{reward.type}}
+                        </div>
+                        <button type="button" class="btn btn-default" @click="claimReward(expedition)">Claim!</button>
+                    </div>
+                </transition-group>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
