@@ -9,83 +9,117 @@ define(["jquery"],
             );
         }
 
-        var contractLocations = [{
+        var locations = [{
                 "name": "Dirty Alley",
-                "statusRequired": 0
+                "description": "The only thing here filthier than the alley are the people that inhabit it.  Drunks, theives and those down on their luck can be found here as well as work for those who don't mind getting their hands... even dirtier.",
+                "statusRequired": 0,
+                "contracts": ["Rob some graves", "Mug a traveller", "Follow a dubious treasure map", "An honest days work"],
+                "hireables": ["Drunkard", "Street rat", "Peasant"]
             },
             {
                 "name": "Street Corner",
-                "statusRequired": 10
+                "description": "Officially, conducting business on the street corner is illegal.  But if you grease the palms of a guard or two and don't cause trouble, you can hire the locals and passerbys looking for work.  The townsfolk may also come to you to get things done.  Most of it legitimate, some of it, not so much.",
+                "statusRequired": 10,
+                "contracts": [],
+                "hireables": []
             },
             {
                 "name": "Tavern",
-                "statusRequired": 100
+                "description": "You've reached the pinnacle of the underworld.  Sitting at a table in the local Tavern the oppressed and needy now know to come to you with their problems or 'business ventures'.",
+                "statusRequired": 100,
+                "contracts": [],
+                "hireables": []
             },
             {
                 "name": "Adventurer's Guild",
-                "statusRequired": 1000
+                "description": "",
+                "statusRequired": 1000,
+                "contracts": [],
+                "hireables": []
+            },
+            {
+                "name": "Mayor's Office",
+                "description": "",
+                "statusRequired": 10000,
+                "contracts": [],
+                "hireables": []
+            },
+            {
+                "name": "Royal Antechamber",
+                "description": "",
+                "statusRequired": 100000,
+                "contracts": [],
+                "hireables": []
+            },
+            {
+                "name": "Throne Room",
+                "description": "",
+                "statusRequired": 1000000,
+                "contracts": [],
+                "hireables": []
             }
         ];
 
         var hireables = [{
             "name": "Drunkard",
             "plural": "Drunkards",
-            "cpt": 0.1,
+            "cpt": 0,
             "baseCost": 1,
             "costMultiplier": 1.5,
             "costExponent": 1.5
         }, {
             "name": "Street rat",
             "plural": "Street rats",
-            "cpt": 0.2,
+            "cpt": 0,
             "baseCost": 2,
             "costMultiplier": 5,
             "costExponent": 1.5
         }, {
             "name": "Peasent",
             "plural": "Peasents",
-            "cpt": 0.5,
+            "cpt": 0,
             "baseCost": 10,
             "costMultiplier": 5,
             "costExponent": 1.5
         }, {
             "name": "Adventurer",
             "plural": "Adventurers",
-            "cpt": 1,
+            "cpt": 0,
             "baseCost": 100,
             "costMultiplier": 5,
             "costExponent": 1.5
         }, {
             "name": "Barbarian",
             "plural": "Barbarians",
-            "cpt": 1,
+            "cpt": 0,
             "baseCost": 100,
             "costMultiplier": 5,
             "costExponent": 1.5
         }, {
             "name": "Archer",
             "plural": "Archers",
-            "cpt": 1,
+            "cpt": 0,
             "baseCost": 100,
             "costMultiplier": 5,
             "costExponent": 1.5
         }, {
             "name": "Seasoned veteran",
             "plural": "Seasoned veterans",
-            "cpt": 5,
+            "cpt": 0,
             "baseCost": 1000,
             "costMultiplier": 5,
             "costExponent": 1.5
         }];
 
-        // Follow dubious treasure map (Low risk, low chance of big reward)
-        // Rob some graves (Medium risk, high chance of medium reward)
-        // Fight some bandits (High risk, high chance of big reward)
         var contracts = [{
             "name": "Follow a dubious treasure map",
             "risk": 1,
             "duration": 2000,
-            "rewards": [{ "chance": 0.05, "reward": { "type": "coins", "amount": 1000 } }],
+            "successChance": 0.05,
+            "rewards": [
+                { "chance": 1, "reward": { "type": "coins", "amount": 1000 } },
+                { "chance": 1, "reward": { "type": "status", "amount": 1 } }
+            ],
             "requirements": {
                 "status": 0,
                 "hireables": [
@@ -96,7 +130,10 @@ define(["jquery"],
             "name": "An honest days work",
             "risk": 0,
             "duration": 200,
-            "rewards": [{ "chance": 1, "reward": { "type": "coins", "amount": 15 } }],
+            "successChance": 1,
+            "rewards": [{ "chance": 1, "reward": { "type": "coins", "amount": 15 } },
+                { "chance": 1, "reward": { "type": "status", "amount": 1 } }
+            ],
             "requirements": {
                 "status": 0,
                 "hireables": [
@@ -107,7 +144,10 @@ define(["jquery"],
             "name": "Rob some graves",
             "risk": 5,
             "duration": 100,
-            "rewards": [{ "chance": 0.9, "reward": { "type": "coins", "amount": 5 } }],
+            "successChance": 0.9,
+            "rewards": [{ "chance": 1, "reward": { "type": "coins", "amount": 5 } },
+                { "chance": 1, "reward": { "type": "status", "amount": 1 } }
+            ],
             "requirements": {
                 "status": 0,
                 "hireables": [
@@ -118,7 +158,10 @@ define(["jquery"],
             "name": "Mug a traveller",
             "risk": 5,
             "duration": 150,
-            "rewards": [{ "chance": 0.5, "reward": { "type": "coins", "amount": 20 } }],
+            "successChance": 0.5,
+            "rewards": [{ "chance": 1, "reward": { "type": "coins", "amount": 20 } },
+                { "chance": 1, "reward": { "type": "status", "amount": 1 } }
+            ],
             "requirements": {
                 "status": 0,
                 "hireables": [
@@ -129,11 +172,15 @@ define(["jquery"],
             "name": "Fight some bandits",
             "risk": 15,
             "duration": 500,
-            "rewards": [{ "chance": 0.5, "reward": { "type": "coins", "amount": 1000 } }],
+            "successChance": 0.5,
+            "rewards": [{ "chance": 1, "reward": { "type": "coins", "amount": 1000 } },
+                { "chance": 1, "reward": { "type": "status", "amount": 2 } }
+            ],
             "requirements": {
                 "status": 1,
                 "hireables": [
-                    { "type": "Drunkard", "amount": 2 }
+                    { "type": "Drunkard", "amount": 5 },
+                    { "type": "Street rat", "amount": 10 },
                 ]
             }
         }, ];
@@ -156,9 +203,11 @@ define(["jquery"],
                 this.runningExpeditions = [];
                 this.completedExpeditions = [];
 
-                this.numberOfAdventurers = 0;
-                this.numberOfAdvancedAdventurers = 0;
-                this.coinsPerAdventurer = 1;
+                this.availableContracts = [];
+                this.availableHires = [];
+
+                this.location = locations[0];
+
                 this.calculate();
             };
 
@@ -181,6 +230,19 @@ define(["jquery"],
                 if (this.expedition) {
                     this.expeditionProgressPerTick += 1;
                 }
+
+                // New contracts
+                var maxContracts = 5;
+                if (this.availableContracts.length < maxContracts && Math.random() > 0.85) {
+                    this.addContract();
+                }
+
+                // New hires
+                var maxAvailableHires = 5;
+                if (this.availableHires.length < maxAvailableHires && Math.random() > 0.75) {
+                    this.addAvailableHire();
+                }
+
             };
 
             this.updateGameData = function(gameData) {
@@ -195,9 +257,10 @@ define(["jquery"],
                 if (!this.runningExpeditions) this.runningExpeditions = [];
                 if (!this.completedExpeditions) this.completedExpeditions = [];
 
-                if (!this.numberOfAdventurers) this.numberOfAdventurers = 0;
-                if (!this.numberOfAdvancedAdventurers) this.numberOfAdvancedAdventurers = 0;
-                if (!this.coinsPerAdventurer) this.coinsPerAdventurer = 1;
+                if (!this.availableContracts) this.availableContracts = [];
+                if (!this.availableHires) this.availableHires = [];
+
+                this.location = locations[0];
             };
 
             this.spendCoins = function(coins) {
@@ -205,7 +268,7 @@ define(["jquery"],
             };
 
             this.canHire = function(name) {
-                return this.coins > this.getCost(name);
+                return this.coins >= this.getCost(name);
             };
 
             this.getHireable = function(name) {
@@ -222,9 +285,23 @@ define(["jquery"],
 
             };
 
+            this.addAvailableHire = function() {
+                var locationHireables = this.hireables.filter(hireable => this.location.hireables.indexOf(hireable.name) >= 0);
+                var hireable = locationHireables[Math.floor(locationHireables.length * Math.random())];
+                hireable.timeLeft = Math.floor(60 * (Math.random() + 0.5));
+                this.availableHires.push(hireable);
+            };
+
             this.spendHires = function(name, amount) {
                 this.hired[name] = this.hired[name] - amount;
                 this.calculate();
+            };
+
+            this.addContract = function() {
+                var locationContracts = this.contracts.filter(contract => this.location.contracts.indexOf(contract.name) >= 0);
+                var contract = locationContracts[Math.floor(locationContracts.length * Math.random())];
+                contract.timeLeft = Math.floor(60 * (Math.random() + 0.5));
+                this.availableContracts.push(contract);
             };
 
             this.getContract = function(name) {
@@ -253,17 +330,27 @@ define(["jquery"],
                     "contract": contract,
                     "progress": 0
                 });
+                this.availableContracts.splice(this.availableContracts.indexOf(contract), 1);
             };
 
             this.giveCoins = function(amount) {
                 this.coins += amount;
             };
 
+            this.giveStatus = function(amount) {
+                this.status += amount;
+            };
+
             this.giveReward = function(type, amount) {
-                if (type == "coins") {
-                    this.giveCoins(amount);
-                } else {
-                    this.hired[type] += amount;
+                switch (type) {
+                    case "coins":
+                        this.giveCoins(amount);
+                        break;
+                    case "status":
+                        this.giveStatus(amount);
+                        break;
+                    default:
+                        this.hired[type] += amount;
                 }
             };
 
@@ -271,20 +358,39 @@ define(["jquery"],
                 for (var i = 0; i < expedition.rewards.length; i++) {
                     this.giveReward(expedition.rewards[i].type, expedition.rewards[i].amount);
                 }
+                this.removeExpedition(expedition);
+            };
+
+            this.removeExpedition = function(expedition) {
                 this.completedExpeditions.splice(this.completedExpeditions.indexOf(expedition), 1);
             };
 
             this.completeExpedition = function(expedition) {
                 this.runningExpeditions.splice(this.runningExpeditions.indexOf(expedition), 1);
-                expedition.rewards = [];
-                for (var i = 0; i < expedition.contract.rewards.length; i++) {
-                    var chance = expedition.contract.rewards[i].chance;
-                    if (Math.random() < chance) {
-                        var reward = expedition.contract.rewards[i].reward;
-                        var variation = Math.random() + 0.5;
-                        expedition.rewards.push({ "type": reward.type, "amount": Math.floor(reward.amount * variation) });
+
+                var contract = expedition.contract;
+                // Calculate success
+                expedition.success = Math.random() < contract.successChance;
+                if (expedition.success) {
+                    expedition.rewards = [];
+                    for (var i = 0; i < contract.rewards.length; i++) {
+                        var chance = contract.rewards[i].chance;
+                        if (Math.random() < chance) {
+                            var reward = contract.rewards[i].reward;
+                            var variation = Math.random() + 0.5;
+                            expedition.rewards.push({ "type": reward.type, "amount": Math.floor(reward.amount * variation) });
+                        }
                     }
                 }
+
+                // Return questers to sendable pool
+                // TODO assess risk and kill some questers
+                if (contract.requirements.hireables) {
+                    for (var i = 0; i < contract.requirements.hireables.length; i++) {
+                        this.hired[contract.requirements.hireables[i].type] += contract.requirements.hireables[i].amount;
+                    }
+                }
+
                 this.completedExpeditions.push(expedition);
             };
 
@@ -300,11 +406,13 @@ define(["jquery"],
                 return Math.floor(hireable.baseCost + hireable.costMultiplier * hiredCount + Math.pow(hireable.costExponent, hiredCount));
             };
 
-            this.hire = function(name) {
-                var hiredCount = this.getHiredCount(name);
+            this.hire = function(hireable) {
+                var hiredCount = this.getHiredCount(hireable.name);
 
-                this.spendCoins(this.getCost(name));
-                this.hired[name] = hiredCount + 1;
+                this.spendCoins(this.getCost(hireable.name));
+                this.hired[hireable.name] = hiredCount + 1;
+
+                this.availableHires.splice(this.availableHires.indexOf(hireable), 1);
 
                 this.calculate();
             };
@@ -319,6 +427,20 @@ define(["jquery"],
                         this.completeExpedition(this.runningExpeditions[i]);
                     } else {
                         this.runningExpeditions[i].progress++;
+                    }
+                }
+
+                for (var j = 0; j < this.availableContracts.length; j++) {
+                    this.availableContracts[j].timeLeft -= 0.1;
+                    if (this.availableContracts[j].timeLeft <= 0) {
+                        this.availableContracts.splice(j, 1);
+                    }
+                }
+
+                for (var k = 0; k < this.availableHires.length; k++) {
+                    this.availableHires[k].timeLeft -= 0.1;
+                    if (this.availableHires[k].timeLeft <= 0) {
+                        this.availableHires.splice(k, 1);
                     }
                 }
 
@@ -337,6 +459,7 @@ define(["jquery"],
 
             this.hireables = hireables;
             this.contracts = contracts;
+            this.locations = locations;
 
             this.calculate();
 

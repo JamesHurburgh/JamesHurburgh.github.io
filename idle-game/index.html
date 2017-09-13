@@ -37,49 +37,75 @@
 
                 <h2>Hired Adventurers</h2>
                 <div v-for="hireable in hireables">
-                    <div>{{hireable.plural}}: {{getHiredCount(hireable.name)}} ({{getCPT(hireable.name)}} cpt)</div>
-                    <button type="button" class="btn btn-default" @click="hire(hireable.name)" :disabled="!canHire(hireable.name)">Hire a {{hireable.name}} ({{getCost(hireable.name)}} coins)</button>
+                    <div>{{hireable.plural}}: {{getHiredCount(hireable.name)}}</div>
+                    <!--<button type="button" class="btn btn-primary btn-xs" @click="hire(hireable.name)" :disabled="!canHire(hireable.name)">Hire a {{hireable.name}} ({{getCost(hireable.name)}} coins)</button>-->
                 </div>
+                <h3>Hires for hire</h3>
+                <transition-group name="custom-classes-transition" enter-active-class="animated bounceIn" leave-active-class="animated bounceOut">
+                    <div v-for="hireable in availableHires" key="hireable.name">
+                        <div class="well">
+                            {{hireable.name}}
+                            Time left {{Math.floor(hireable.timeLeft)}} seconds
+                            <button type="button" class="btn btn-primary btn-xs" @click="hire(hireable)" :disabled="!canHire(hireable.name)">Hire ({{getCost(hireable.name)}} coins)</button>
+                        </div>
+                    </div>
+                </transition-group>
             </div>
 
             <div class="col-md-4">
                 <h2>Contracts</h2>
 
-                <h3>A Dirty Alley</h3>
-                <div v-for="contract in contracts">
-                    <h4>{{contract.name}}</h4>
-                    <div v-if="contract.requirements != undefined">
-                        <h5>Requirements</h5>
-                        <div v-for="hireableRequirement in contract.requirements.hireables">
-                            {{hireableRequirement.amount}} {{hireableRequirement.type}}
+                <h3>{{location.name}}</h3>
+                <span>{{location.description}}</span>
+                <div v-for="contract in availableContracts">
+                    <div class="well">
+                        <h4>{{contract.name}}</h4>
+                        <div v-if="contract.requirements != undefined">
+                            <h5>Requirements</h5>
+                            <div v-for="hireableRequirement in contract.requirements.hireables">
+                                {{hireableRequirement.amount}} {{hireableRequirement.type}}
+                            </div>
                         </div>
+                        Time left {{Math.floor(contract.timeLeft)}} seconds
+                        <button type="button" class="btn btn-primary btn-xs" @click="sendExpedition(contract)" :disabled="!canSendExpedition(contract)">Start</button>
                     </div>
-                    <button type="button" class="btn btn-default" @click="sendExpedition(contract)" :disabled="!canSendExpedition(contract)">Start</button>
                 </div>
             </div>
             <div class="col-md-4">
                 <h2>Expeditions</h2>
-                <h3>Running</h3>
-                <transition-group name="custom-classes-transition" enter-active-class="animated bounceIn" leave-active-class="animated bounceOut">
-                    <div v-for="expedition in runningExpeditions" key="expedition.id">
-                        <h4>{{expedition.contract.name}}</h4>
-                        <div class="progress progress-striped active">
-                            <!-- <div class="progress-bar" v-bind:style="{ width: 100 * (resource.amount - Math.floor(resource.amount)) + '%' }"></div> -->
-                            <div class="progress-bar" v-bind:style="{ width: 100 * (expedition.progress / expedition.contract.duration) + '%' }"></div>
-                        </div>
-                        <div>Progress: {{Math.floor(100 * expedition.progress / expedition.contract.duration)}}%</div>
-                    </div>
-                </transition-group>
 
                 <h3>Completed</h3>
                 <transition-group name="custom-classes-transition" enter-active-class="animated bounceIn" leave-active-class="animated bounceOut">
                     <div v-for="expedition in completedExpeditions" key="expedition.id">
-                        <h4>{{expedition.contract.name}}</h4>
-                        Rewards:
-                        <div v-for="reward in expedition.rewards">
-                            {{reward.amount}} {{reward.type}}
+                        <div class="well">
+                            <h4>{{expedition.contract.name}}</h4>
+                            <div v-if="expedition.success">
+                                <button type="button" class="btn btn-success" @click="claimReward(expedition)">
+                                    Claim Rewards!
+                                    <div v-for="reward in expedition.rewards">
+                                        {{reward.amount}} {{reward.type}}
+                                    </div>
+                                </button>
+                            </div>
+                            <div v-if="!expedition.success">
+                                Failed!<br/>
+                                <button type="button" class="btn btn-danger" @click="removeExpedition(expedition)">Darnation!</button>
+                            </div>
                         </div>
-                        <button type="button" class="btn btn-default" @click="claimReward(expedition)">Claim!</button>
+                    </div>
+                </transition-group>
+
+                <h3>Running</h3>
+                <transition-group name="custom-classes-transition" enter-active-class="animated bounceIn" leave-active-class="animated bounceOut">
+                    <div v-for="expedition in runningExpeditions" key="expedition.id">
+                        <div class="well">
+                            <h4>{{expedition.contract.name}}</h4>
+                            <div class="progress progress-striped active">
+                                <!-- <div class="progress-bar" v-bind:style="{ width: 100 * (resource.amount - Math.floor(resource.amount)) + '%' }"></div> -->
+                                <div class="progress-bar" v-bind:style="{ width: 100 * (expedition.progress / expedition.contract.duration) + '%' }"></div>
+                            </div>
+                            <div>Progress: {{Math.floor(100 * expedition.progress / expedition.contract.duration)}}%</div>
+                        </div>
                     </div>
                 </transition-group>
             </div>
