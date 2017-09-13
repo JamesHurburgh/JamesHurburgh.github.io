@@ -4,3 +4,5 @@ placemark/TypeScriptBuild.bat
 *.json
 placemark/tsconfig.json
 idle-game/img/icons/Thumbs.db
+idle-game/img/Thumbs.db
+*.db

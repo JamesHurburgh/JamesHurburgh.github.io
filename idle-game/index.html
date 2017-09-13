@@ -44,8 +44,7 @@
                 <transition-group name="custom-classes-transition" enter-active-class="animated bounceIn" leave-active-class="animated bounceOut">
                     <div v-for="hireable in availableHires" key="hireable.name">
                         <div class="well">
-                            {{hireable.name}}
-                            Time left {{Math.floor(hireable.timeLeft)}} seconds
+                            {{hireable.name}} Time left {{Math.floor(hireable.timeLeft)}} seconds
                             <button type="button" class="btn btn-primary btn-xs" @click="hire(hireable)" :disabled="!canHire(hireable.name)">Hire ({{getCost(hireable.name)}} coins)</button>
                         </div>
                     </div>
@@ -53,10 +52,12 @@
             </div>
 
             <div class="col-md-4">
-                <h2>Contracts</h2>
 
-                <h3>{{location.name}}</h3>
+                <h2>{{location.name}}</h2>
                 <span>{{location.description}}</span>
+                <button type="button" class="btn btn-primary" @click="freeCoins(location)" :disabled="!canGetFreeCoins()">{{location.freeCoinsDescription}}</button>
+
+                <h3>Contracts</h3>
                 <div v-for="contract in availableContracts">
                     <div class="well">
                         <h4>{{contract.name}}</h4>

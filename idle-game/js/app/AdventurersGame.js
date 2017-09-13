@@ -13,7 +13,10 @@ define(["jquery"],
                 "name": "Dirty Alley",
                 "description": "The only thing here filthier than the alley are the people that inhabit it.  Drunks, theives and those down on their luck can be found here as well as work for those who don't mind getting their hands... even dirtier.",
                 "statusRequired": 0,
-                "contracts": ["Rob some graves", "Mug a traveller", "Follow a dubious treasure map", "An honest days work"],
+                "freeCoinsDescription": "Scrounge in the dirt for a coin",
+                "freeCoins": 1,
+                "freeCoinsTimeout": 10,
+                "contracts": ["Rob some graves", "Mug a traveller", "Follow a dubious treasure map", "An honest days work", "Tail a mark", "Start a brawl"],
                 "hireables": ["Drunkard", "Street rat", "Peasant"]
             },
             {
@@ -75,8 +78,8 @@ define(["jquery"],
             "costMultiplier": 5,
             "costExponent": 1.5
         }, {
-            "name": "Peasent",
-            "plural": "Peasents",
+            "name": "Peasant",
+            "plural": "Peasants",
             "cpt": 0,
             "baseCost": 10,
             "costMultiplier": 5,
@@ -131,13 +134,14 @@ define(["jquery"],
             "risk": 0,
             "duration": 200,
             "successChance": 1,
-            "rewards": [{ "chance": 1, "reward": { "type": "coins", "amount": 15 } },
+            "rewards": [
+                { "chance": 1, "reward": { "type": "coins", "amount": 15 } },
                 { "chance": 1, "reward": { "type": "status", "amount": 1 } }
             ],
             "requirements": {
                 "status": 0,
                 "hireables": [
-                    { "type": "Peasent", "amount": 1 }
+                    { "type": "Peasant", "amount": 1 }
                 ]
             }
         }, {
@@ -145,7 +149,8 @@ define(["jquery"],
             "risk": 5,
             "duration": 100,
             "successChance": 0.9,
-            "rewards": [{ "chance": 1, "reward": { "type": "coins", "amount": 5 } },
+            "rewards": [
+                { "chance": 1, "reward": { "type": "coins", "amount": 5 } },
                 { "chance": 1, "reward": { "type": "status", "amount": 1 } }
             ],
             "requirements": {
@@ -159,7 +164,8 @@ define(["jquery"],
             "risk": 5,
             "duration": 150,
             "successChance": 0.5,
-            "rewards": [{ "chance": 1, "reward": { "type": "coins", "amount": 20 } },
+            "rewards": [
+                { "chance": 1, "reward": { "type": "coins", "amount": 20 } },
                 { "chance": 1, "reward": { "type": "status", "amount": 1 } }
             ],
             "requirements": {
@@ -169,11 +175,42 @@ define(["jquery"],
                 ]
             }
         }, {
+            "name": "Tail a mark",
+            "risk": 5,
+            "duration": 550,
+            "successChance": 0.9,
+            "rewards": [
+                { "chance": 1, "reward": { "type": "coins", "amount": 75 } },
+                { "chance": 1, "reward": { "type": "status", "amount": 1 } }
+            ],
+            "requirements": {
+                "status": 0,
+                "hireables": [
+                    { "type": "Street rat", "amount": 1 }
+                ]
+            }
+        }, {
+            "name": "Start a brawl",
+            "risk": 10,
+            "duration": 350,
+            "successChance": 0.8,
+            "rewards": [
+                { "chance": 1, "reward": { "type": "coins", "amount": 750 } },
+                { "chance": 1, "reward": { "type": "status", "amount": 1 } }
+            ],
+            "requirements": {
+                "status": 0,
+                "hireables": [
+                    { "type": "Drunkard", "amount": 10 }
+                ]
+            }
+        }, {
             "name": "Fight some bandits",
             "risk": 15,
             "duration": 500,
             "successChance": 0.5,
-            "rewards": [{ "chance": 1, "reward": { "type": "coins", "amount": 1000 } },
+            "rewards": [
+                { "chance": 1, "reward": { "type": "coins", "amount": 1000 } },
                 { "chance": 1, "reward": { "type": "status", "amount": 2 } }
             ],
             "requirements": {
@@ -196,6 +233,7 @@ define(["jquery"],
                 this.coins = 10;
                 this.coinsPerTick = 0;
                 this.status = 0;
+                this.freeCoinsTimeout = 0;
 
                 this.hired = {};
                 this.actualCpts = [];
@@ -251,6 +289,7 @@ define(["jquery"],
                 if (!this.coins) this.coins = 10;
                 if (!this.coinsPerTick) this.coinsPerTick = 0;
                 if (!this.status) this.status = 0;
+                if (!this.freeCoinsTimeout) this.freeCoinsTimeout = 0;
 
                 if (!this.hired) this.hired = {};
 
@@ -261,6 +300,15 @@ define(["jquery"],
                 if (!this.availableHires) this.availableHires = [];
 
                 this.location = locations[0];
+            };
+
+            this.canGetFreeCoins = function() {
+                return this.freeCoinsTimeout <= 0;
+            };
+
+            this.freeCoins = function(location) {
+                this.giveCoins(location.freeCoins);
+                this.freeCoinsTimeout = location.freeCoinsTimeout;
             };
 
             this.spendCoins = function(coins) {
@@ -279,10 +327,6 @@ define(["jquery"],
                 var hiredCount = this.hired[name];
                 if (!hiredCount) hiredCount = 0;
                 return hiredCount;
-            };
-
-            this.getTotalCPT = function() {
-
             };
 
             this.addAvailableHire = function() {
@@ -421,6 +465,7 @@ define(["jquery"],
                 // Do all task completion here
 
                 this.coins += this.coinsPerTick;
+                this.freeCoinsTimeout--;
 
                 for (var i = 0; i < this.runningExpeditions.length; i++) {
                     if (this.runningExpeditions[i].progress >= this.runningExpeditions[i].contract.duration) {
