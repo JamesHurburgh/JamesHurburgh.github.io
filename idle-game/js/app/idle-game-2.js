@@ -8,8 +8,7 @@ requirejs.config({
     //the paths config could be for a directory.
     paths: {
         app: '../app',
-        models: '../app/models',
-        data: '../../data',
+        models: '../app/models'
     }
 });
 
