@@ -1,0 +1,53 @@
+[{
+        "name": "Dirty Alley",
+        "description": "The only thing here filthier than the alley are the people that inhabit it.  Drunks, theives and those down on their luck can be found here as well as work for those who don't mind getting their hands... even dirtier.",
+        "statusRequired": 0,
+        "freeCoinsDescription": "Scrounge in the dirt for a coin",
+        "freeCoins": 1,
+        "freeCoinsTimeout": 10,
+        "contracts": ["Rob some graves", "Mug a traveller", "Follow a dubious treasure map", "An honest days work", "Tail a mark", "Start a brawl"],
+        "adventurers": ["Drunkard", "Street rat", "Peasant"]
+    },
+    {
+        "name": "Street Corner",
+        "description": "Officially, conducting business on the street corner is illegal.  But if you grease the palms of a guard or two and don't cause trouble, you can hire the locals and passerbys looking for work.  The townsfolk may also come to you to get things done.  Most of it legitimate, some of it, not so much.",
+        "statusRequired": 10,
+        "contracts": [],
+        "adventurers": []
+    },
+    {
+        "name": "Tavern",
+        "description": "You've reached the pinnacle of the underworld.  Sitting at a table in the local Tavern the oppressed and needy now know to come to you with their problems or 'business ventures'.",
+        "statusRequired": 100,
+        "contracts": [],
+        "adventurers": []
+    },
+    {
+        "name": "Adventurer's Guild",
+        "description": "",
+        "statusRequired": 1000,
+        "contracts": [],
+        "adventurers": []
+    },
+    {
+        "name": "Mayor's Office",
+        "description": "",
+        "statusRequired": 10000,
+        "contracts": [],
+        "adventurers": []
+    },
+    {
+        "name": "Royal Antechamber",
+        "description": "",
+        "statusRequired": 100000,
+        "contracts": [],
+        "adventurers": []
+    },
+    {
+        "name": "Throne Room",
+        "description": "",
+        "statusRequired": 1000000,
+        "contracts": [],
+        "adventurers": []
+    }
+]

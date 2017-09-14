@@ -1,0 +1,50 @@
+[{
+    "name": "Drunkard",
+    "plural": "Drunkards",
+    "cpt": 0,
+    "baseCost": 1,
+    "costMultiplier": 1.5,
+    "costExponent": 1.5
+}, {
+    "name": "Street rat",
+    "plural": "Street rats",
+    "cpt": 0,
+    "baseCost": 2,
+    "costMultiplier": 5,
+    "costExponent": 1.5
+}, {
+    "name": "Peasant",
+    "plural": "Peasants",
+    "cpt": 0,
+    "baseCost": 10,
+    "costMultiplier": 5,
+    "costExponent": 1.5
+}, {
+    "name": "Adventurer",
+    "plural": "Adventurers",
+    "cpt": 0,
+    "baseCost": 100,
+    "costMultiplier": 5,
+    "costExponent": 1.5
+}, {
+    "name": "Barbarian",
+    "plural": "Barbarians",
+    "cpt": 0,
+    "baseCost": 100,
+    "costMultiplier": 5,
+    "costExponent": 1.5
+}, {
+    "name": "Archer",
+    "plural": "Archers",
+    "cpt": 0,
+    "baseCost": 100,
+    "costMultiplier": 5,
+    "costExponent": 1.5
+}, {
+    "name": "Seasoned veteran",
+    "plural": "Seasoned veterans",
+    "cpt": 0,
+    "baseCost": 1000,
+    "costMultiplier": 5,
+    "costExponent": 1.5
+}]
