@@ -1,7 +1,7 @@
 /*jshint esversion: 6 */
 
-define(["jquery"],
-    function AdventurersGame(jquery) {
+define(["jquery", "readable-timespan", "json!data/contracts.json", "json!data/locations.json", "json!data/adventurers.json"],
+    function AdventurersGame(jquery, readableTimespan, contracts, locations, adventurers) {
 
         function uuidv4() {
             return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
@@ -9,218 +9,9 @@ define(["jquery"],
             );
         }
 
-        var locations = [{
-                "name": "Dirty Alley",
-                "description": "The only thing here filthier than the alley are the people that inhabit it.  Drunks, theives and those down on their luck can be found here as well as work for those who don't mind getting their hands... even dirtier.",
-                "statusRequired": 0,
-                "freeCoinsDescription": "Scrounge in the dirt for a coin",
-                "freeCoins": 1,
-                "freeCoinsTimeout": 10,
-                "contracts": ["Rob some graves", "Mug a traveller", "Follow a dubious treasure map", "An honest days work", "Tail a mark", "Start a brawl"],
-                "hireables": ["Drunkard", "Street rat", "Peasant"]
-            },
-            {
-                "name": "Street Corner",
-                "description": "Officially, conducting business on the street corner is illegal.  But if you grease the palms of a guard or two and don't cause trouble, you can hire the locals and passerbys looking for work.  The townsfolk may also come to you to get things done.  Most of it legitimate, some of it, not so much.",
-                "statusRequired": 10,
-                "contracts": [],
-                "hireables": []
-            },
-            {
-                "name": "Tavern",
-                "description": "You've reached the pinnacle of the underworld.  Sitting at a table in the local Tavern the oppressed and needy now know to come to you with their problems or 'business ventures'.",
-                "statusRequired": 100,
-                "contracts": [],
-                "hireables": []
-            },
-            {
-                "name": "Adventurer's Guild",
-                "description": "",
-                "statusRequired": 1000,
-                "contracts": [],
-                "hireables": []
-            },
-            {
-                "name": "Mayor's Office",
-                "description": "",
-                "statusRequired": 10000,
-                "contracts": [],
-                "hireables": []
-            },
-            {
-                "name": "Royal Antechamber",
-                "description": "",
-                "statusRequired": 100000,
-                "contracts": [],
-                "hireables": []
-            },
-            {
-                "name": "Throne Room",
-                "description": "",
-                "statusRequired": 1000000,
-                "contracts": [],
-                "hireables": []
-            }
-        ];
-
-        var hireables = [{
-            "name": "Drunkard",
-            "plural": "Drunkards",
-            "cpt": 0,
-            "baseCost": 1,
-            "costMultiplier": 1.5,
-            "costExponent": 1.5
-        }, {
-            "name": "Street rat",
-            "plural": "Street rats",
-            "cpt": 0,
-            "baseCost": 2,
-            "costMultiplier": 5,
-            "costExponent": 1.5
-        }, {
-            "name": "Peasant",
-            "plural": "Peasants",
-            "cpt": 0,
-            "baseCost": 10,
-            "costMultiplier": 5,
-            "costExponent": 1.5
-        }, {
-            "name": "Adventurer",
-            "plural": "Adventurers",
-            "cpt": 0,
-            "baseCost": 100,
-            "costMultiplier": 5,
-            "costExponent": 1.5
-        }, {
-            "name": "Barbarian",
-            "plural": "Barbarians",
-            "cpt": 0,
-            "baseCost": 100,
-            "costMultiplier": 5,
-            "costExponent": 1.5
-        }, {
-            "name": "Archer",
-            "plural": "Archers",
-            "cpt": 0,
-            "baseCost": 100,
-            "costMultiplier": 5,
-            "costExponent": 1.5
-        }, {
-            "name": "Seasoned veteran",
-            "plural": "Seasoned veterans",
-            "cpt": 0,
-            "baseCost": 1000,
-            "costMultiplier": 5,
-            "costExponent": 1.5
-        }];
-
-        var contracts = [{
-            "name": "Follow a dubious treasure map",
-            "risk": 1,
-            "duration": 2000,
-            "successChance": 0.05,
-            "rewards": [
-                { "chance": 1, "reward": { "type": "coins", "amount": 1000 } },
-                { "chance": 1, "reward": { "type": "status", "amount": 1 } }
-            ],
-            "requirements": {
-                "status": 0,
-                "hireables": [
-                    { "type": "Drunkard", "amount": 2 }
-                ]
-            }
-        }, {
-            "name": "An honest days work",
-            "risk": 0,
-            "duration": 200,
-            "successChance": 1,
-            "rewards": [
-                { "chance": 1, "reward": { "type": "coins", "amount": 15 } },
-                { "chance": 1, "reward": { "type": "status", "amount": 1 } }
-            ],
-            "requirements": {
-                "status": 0,
-                "hireables": [
-                    { "type": "Peasant", "amount": 1 }
-                ]
-            }
-        }, {
-            "name": "Rob some graves",
-            "risk": 5,
-            "duration": 100,
-            "successChance": 0.9,
-            "rewards": [
-                { "chance": 1, "reward": { "type": "coins", "amount": 5 } },
-                { "chance": 1, "reward": { "type": "status", "amount": 1 } }
-            ],
-            "requirements": {
-                "status": 0,
-                "hireables": [
-                    { "type": "Drunkard", "amount": 1 }
-                ]
-            }
-        }, {
-            "name": "Mug a traveller",
-            "risk": 5,
-            "duration": 150,
-            "successChance": 0.5,
-            "rewards": [
-                { "chance": 1, "reward": { "type": "coins", "amount": 20 } },
-                { "chance": 1, "reward": { "type": "status", "amount": 1 } }
-            ],
-            "requirements": {
-                "status": 0,
-                "hireables": [
-                    { "type": "Street rat", "amount": 2 }
-                ]
-            }
-        }, {
-            "name": "Tail a mark",
-            "risk": 5,
-            "duration": 550,
-            "successChance": 0.9,
-            "rewards": [
-                { "chance": 1, "reward": { "type": "coins", "amount": 75 } },
-                { "chance": 1, "reward": { "type": "status", "amount": 1 } }
-            ],
-            "requirements": {
-                "status": 0,
-                "hireables": [
-                    { "type": "Street rat", "amount": 1 }
-                ]
-            }
-        }, {
-            "name": "Start a brawl",
-            "risk": 10,
-            "duration": 350,
-            "successChance": 0.8,
-            "rewards": [
-                { "chance": 1, "reward": { "type": "coins", "amount": 750 } },
-                { "chance": 1, "reward": { "type": "status", "amount": 1 } }
-            ],
-            "requirements": {
-                "status": 0,
-                "hireables": [
-                    { "type": "Drunkard", "amount": 10 }
-                ]
-            }
-        }, {
-            "name": "Fight some bandits",
-            "risk": 15,
-            "duration": 500,
-            "successChance": 0.5,
-            "rewards": [
-                { "chance": 1, "reward": { "type": "coins", "amount": 1000 } },
-                { "chance": 1, "reward": { "type": "status", "amount": 2 } }
-            ],
-            "requirements": {
-                "status": 1,
-                "hireables": [
-                    { "type": "Drunkard", "amount": 5 },
-                    { "type": "Street rat", "amount": 10 },
-                ]
-            }
-        }, ];
+        function clone(object) {
+            return JSON.parse(JSON.stringify(object));
+        }
 
         return function AdventurersGame(gameData, autoSaveFunction) {
 
@@ -259,8 +50,8 @@ define(["jquery"],
                 // Resource Gathering
                 this.coinsPerTick = 0;
 
-                for (var i = 0; i < hireables.length; i++) {
-                    this.coinsPerTick += this.getCPT(hireables[i].name);
+                for (var i = 0; i < adventurers.length; i++) {
+                    this.coinsPerTick += this.getCPT(adventurers[i].name);
                 }
 
                 // Expedition Progress
@@ -275,11 +66,12 @@ define(["jquery"],
                     this.addContract();
                 }
 
-                // New hires
                 var maxAvailableHires = 5;
+                // New hires
                 if (this.availableHires.length < maxAvailableHires && Math.random() > 0.75) {
                     this.addAvailableHire();
                 }
+
 
             };
 
@@ -320,7 +112,7 @@ define(["jquery"],
             };
 
             this.getHireable = function(name) {
-                return hireables.filter(hireable => hireable.name == name)[0];
+                return adventurers.filter(hireable => hireable.name == name)[0];
             };
 
             this.getHiredCount = function(name) {
@@ -330,10 +122,13 @@ define(["jquery"],
             };
 
             this.addAvailableHire = function() {
-                var locationHireables = this.hireables.filter(hireable => this.location.hireables.indexOf(hireable.name) >= 0);
-                var hireable = locationHireables[Math.floor(locationHireables.length * Math.random())];
-                hireable.timeLeft = Math.floor(60 * (Math.random() + 0.5));
+                var locationHireables = this.adventurers.filter(hireable => this.location.adventurers.indexOf(hireable.name) >= 0);
+                var hireable = clone(locationHireables[Math.floor(locationHireables.length * Math.random())]);
+                hireable.expires = Date.now() + Math.floor(60000 * (Math.random() + 0.5));
                 this.availableHires.push(hireable);
+                this.availableHires.sort(function(a, b) {
+                    return a.expires > b.expires;
+                });
             };
 
             this.spendHires = function(name, amount) {
@@ -343,9 +138,12 @@ define(["jquery"],
 
             this.addContract = function() {
                 var locationContracts = this.contracts.filter(contract => this.location.contracts.indexOf(contract.name) >= 0);
-                var contract = locationContracts[Math.floor(locationContracts.length * Math.random())];
-                contract.timeLeft = Math.floor(60 * (Math.random() + 0.5));
+                var contract = clone(locationContracts[Math.floor(locationContracts.length * Math.random())]);
+                contract.expires = Date.now() + Math.floor(60000 * (Math.random() + 0.5));
                 this.availableContracts.push(contract);
+                this.availableContracts.sort(function(a, b) {
+                    return a.expires > b.expires;
+                });
             };
 
             this.getContract = function(name) {
@@ -353,9 +151,9 @@ define(["jquery"],
             };
 
             this.canSendExpedition = function(contract) {
-                if (contract.requirements.hireables) {
-                    for (var i = 0; i < contract.requirements.hireables.length; i++) {
-                        if (contract.requirements.hireables[i].amount > this.getHiredCount(contract.requirements.hireables[i].type)) {
+                if (contract.requirements.adventurers) {
+                    for (var i = 0; i < contract.requirements.adventurers.length; i++) {
+                        if (contract.requirements.adventurers[i].amount > this.getHiredCount(contract.requirements.adventurers[i].type)) {
                             return false;
                         }
                     }
@@ -364,16 +162,21 @@ define(["jquery"],
             };
 
             this.sendExpedition = function(contract) {
-                if (contract.requirements.hireables) {
-                    for (var i = 0; i < contract.requirements.hireables.length; i++) {
-                        this.spendHires(contract.requirements.hireables[i].type, contract.requirements.hireables[i].amount);
+                if (contract.requirements.adventurers) {
+                    for (var i = 0; i < contract.requirements.adventurers.length; i++) {
+                        this.spendHires(contract.requirements.adventurers[i].type, contract.requirements.adventurers[i].amount);
                     }
                 }
                 this.runningExpeditions.push({
                     "id": uuidv4(),
                     "contract": contract,
-                    "progress": 0
+                    "expires": Date.now() + (contract.duration * 1000)
                 });
+
+                this.runningExpeditions = this.runningExpeditions.sort(function(a, b) {
+                    return a.expires > b.expires;
+                });
+
                 this.availableContracts.splice(this.availableContracts.indexOf(contract), 1);
             };
 
@@ -429,9 +232,9 @@ define(["jquery"],
 
                 // Return questers to sendable pool
                 // TODO assess risk and kill some questers
-                if (contract.requirements.hireables) {
-                    for (var i = 0; i < contract.requirements.hireables.length; i++) {
-                        this.hired[contract.requirements.hireables[i].type] += contract.requirements.hireables[i].amount;
+                if (contract.requirements.adventurers) {
+                    for (var i = 0; i < contract.requirements.adventurers.length; i++) {
+                        this.hired[contract.requirements.adventurers[i].type] += contract.requirements.adventurers[i].amount;
                     }
                 }
 
@@ -451,6 +254,9 @@ define(["jquery"],
             };
 
             this.hire = function(hireable) {
+                if (!this.canHire(hireable.name)) {
+                    return;
+                }
                 var hiredCount = this.getHiredCount(hireable.name);
 
                 this.spendCoins(this.getCost(hireable.name));
@@ -461,6 +267,31 @@ define(["jquery"],
                 this.calculate();
             };
 
+            this.readableTime = function(milliseconds) {
+
+                var totalSeconds = Math.floor(milliseconds / 1000);
+                var seconds = totalSeconds % 60;
+                var totalMinutes = (totalSeconds - seconds) / 60;
+                var minutes = totalMinutes % 60;
+                var hours = (totalSeconds - (seconds + minutes * 60)) % 60;
+
+                var timeString = "";
+                if (hours) {
+                    timeString += hours + " hours ";
+                }
+                if (minutes) {
+                    timeString += minutes + " minutes ";
+                }
+                if (seconds) {
+                    timeString += seconds + " seconds";
+                }
+                return timeString;
+            };
+
+            this.expiringSoon = function(date) {
+                return date - Date.now() < 5000;
+            };
+
             this.tick = function() {
                 // Do all task completion here
 
@@ -468,26 +299,23 @@ define(["jquery"],
                 this.freeCoinsTimeout--;
 
                 for (var i = 0; i < this.runningExpeditions.length; i++) {
-                    if (this.runningExpeditions[i].progress >= this.runningExpeditions[i].contract.duration) {
+                    if (this.runningExpeditions[i].expires <= Date.now()) {
                         this.completeExpedition(this.runningExpeditions[i]);
-                    } else {
-                        this.runningExpeditions[i].progress++;
                     }
                 }
 
                 for (var j = 0; j < this.availableContracts.length; j++) {
-                    this.availableContracts[j].timeLeft -= 0.1;
-                    if (this.availableContracts[j].timeLeft <= 0) {
+                    if (this.availableContracts[j].expires <= Date.now()) {
                         this.availableContracts.splice(j, 1);
                     }
                 }
-
+                // Remove expired hired
                 for (var k = 0; k < this.availableHires.length; k++) {
-                    this.availableHires[k].timeLeft -= 0.1;
-                    if (this.availableHires[k].timeLeft <= 0) {
+                    if (this.availableHires[k].expires <= Date.now()) {
                         this.availableHires.splice(k, 1);
                     }
                 }
+
 
                 this.calculateCounter++;
                 if (this.calculateCounter > 10) {
@@ -502,7 +330,7 @@ define(["jquery"],
             $.extend(this, gameData);
 
 
-            this.hireables = hireables;
+            this.adventurers = adventurers;
             this.contracts = contracts;
             this.locations = locations;
 
