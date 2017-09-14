@@ -43,11 +43,10 @@
                 <h3>Adventurers for hire</h3>
                 <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
                     <div v-for="adventurer in availableHires" key="adventurer.name">
-                        <div class="well">
-                            {{adventurer.name}} Time left {{Math.floor((adventurer.expires - Date.now())/1000)}} seconds
-                            <button type="button" class="btn btn-xs" 
-                            v-bind:class="{ 'btn-success': canHire(adventurer.name), 'btn-primary': !canHire(adventurer.name) }"
-                            @click="hire(adventurer)" :disabled="!canHire(adventurer.name)">Hire ({{getCost(adventurer.name)}} coins)</button>
+                        <div class="well" v-bind:class="{ 'animated flash': expiringSoon(adventurer.expires) }">
+                            <h4>{{adventurer.name}} <button type="button" class="btn btn-sm pull-right" v-bind:class="{ 'btn-success': canHire(adventurer.name), 'btn-primary': !canHire(adventurer.name) }" @click="hire(adventurer)" :disabled="!canHire(adventurer.name)">Hire ({{getCost(adventurer.name)}} coins)</button>
+                            </h4>
+                            <div>{{readableTime(adventurer.expires - Date.now())}} remaining</div>
                         </div>
                     </div>
                 </transition-group>
@@ -61,21 +60,19 @@
 
                 <h3>Contracts</h3>
                 <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
-                <div v-for="contract in availableContracts" key="contract.name">
-                    <div class="well">
-                        <h4>{{contract.name}}</h4>
-                        <div v-if="contract.requirements != undefined">
-                            <h5>Requirements</h5>
-                            <div v-for="adventurerRequirement in contract.requirements.adventurers">
-                                {{adventurerRequirement.amount}} {{adventurerRequirement.type}}
+                    <div v-for="contract in availableContracts" key="contract.name">
+                        <div class="well" v-bind:class="{ 'animated flash': expiringSoon(contract.expires) }">
+                            <h4>{{contract.name}} <button type="button" class="btn btn-sm pull-right" v-bind:class="{ 'btn-success': canSendExpedition(contract), 'btn-primary': !canSendExpedition(contract) }" @click="sendExpedition(contract)" :disabled="!canSendExpedition(contract)">Start</button>
+                            </h4>
+                            <div v-if="contract.requirements != undefined">
+                                <h5>Requirements</h5>
+                                <div v-for="adventurerRequirement in contract.requirements.adventurers">
+                                    {{adventurerRequirement.amount}} {{adventurerRequirement.type}}
+                                </div>
                             </div>
+                            <div>{{readableTime(contract.expires - Date.now())}} remaining</div>
                         </div>
-                        Time left {{Math.floor((contract.expires - Date.now())/1000)}} seconds
-                        <button type="button" class="btn btn-xs"
-                            v-bind:class="{ 'btn-success': canSendExpedition(contract), 'btn-primary': !canSendExpedition(contract) }"
-                             @click="sendExpedition(contract)" :disabled="!canSendExpedition(contract)">Start</button>
                     </div>
-                </div>
                 </transition-group>
             </div>
             <div class="col-md-4">
@@ -107,11 +104,7 @@
                     <div v-for="expedition in runningExpeditions" key="expedition.id">
                         <div class="well">
                             <h4>{{expedition.contract.name}}</h4>
-                            <div class="progress progress-striped active">
-                                <!-- <div class="progress-bar" v-bind:style="{ width: 100 * (resource.amount - Math.floor(resource.amount)) + '%' }"></div> -->
-                                <div class="progress-bar" v-bind:style="{ width: 100 * (expedition.progress / expedition.contract.duration) + '%' }"></div>
-                            </div>
-                            <div>Progress: {{Math.floor(100 * expedition.progress / expedition.contract.duration)}}%</div>
+                            <div>{{readableTime(expedition.expires - Date.now())}} remaining</div>
                         </div>
                     </div>
                 </transition-group>

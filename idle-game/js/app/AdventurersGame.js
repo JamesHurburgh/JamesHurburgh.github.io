@@ -1,7 +1,7 @@
 /*jshint esversion: 6 */
 
-define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!data/adventurers.json"],
-    function AdventurersGame(jquery, contracts, locations, adventurers) {
+define(["jquery", "readable-timespan", "json!data/contracts.json", "json!data/locations.json", "json!data/adventurers.json"],
+    function AdventurersGame(jquery, readableTimespan, contracts, locations, adventurers) {
 
         function uuidv4() {
             return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
@@ -9,7 +9,7 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
             );
         }
 
-        function clone(object){
+        function clone(object) {
             return JSON.parse(JSON.stringify(object));
         }
 
@@ -126,7 +126,7 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
                 var hireable = clone(locationHireables[Math.floor(locationHireables.length * Math.random())]);
                 hireable.expires = Date.now() + Math.floor(60000 * (Math.random() + 0.5));
                 this.availableHires.push(hireable);
-                this.availableHires.sort(function(a, b){
+                this.availableHires.sort(function(a, b) {
                     return a.expires > b.expires;
                 });
             };
@@ -141,10 +141,9 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
                 var contract = clone(locationContracts[Math.floor(locationContracts.length * Math.random())]);
                 contract.expires = Date.now() + Math.floor(60000 * (Math.random() + 0.5));
                 this.availableContracts.push(contract);
-                this.availableContracts.sort(function(a, b){
+                this.availableContracts.sort(function(a, b) {
                     return a.expires > b.expires;
                 });
-
             };
 
             this.getContract = function(name) {
@@ -171,8 +170,13 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
                 this.runningExpeditions.push({
                     "id": uuidv4(),
                     "contract": contract,
-                    "progress": 0
+                    "expires": Date.now() + (contract.duration * 1000)
                 });
+
+                this.runningExpeditions = this.runningExpeditions.sort(function(a, b) {
+                    return a.expires > b.expires;
+                });
+
                 this.availableContracts.splice(this.availableContracts.indexOf(contract), 1);
             };
 
@@ -250,7 +254,7 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
             };
 
             this.hire = function(hireable) {
-                if(!this.canHire(hireable.name)){
+                if (!this.canHire(hireable.name)) {
                     return;
                 }
                 var hiredCount = this.getHiredCount(hireable.name);
@@ -263,6 +267,31 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
                 this.calculate();
             };
 
+            this.readableTime = function(milliseconds) {
+
+                var totalSeconds = Math.floor(milliseconds / 1000);
+                var seconds = totalSeconds % 60;
+                var totalMinutes = (totalSeconds - seconds) / 60;
+                var minutes = totalMinutes % 60;
+                var hours = (totalSeconds - (seconds + minutes * 60)) % 60;
+
+                var timeString = "";
+                if (hours) {
+                    timeString += hours + " hours ";
+                }
+                if (minutes) {
+                    timeString += minutes + " minutes ";
+                }
+                if (seconds) {
+                    timeString += seconds + " seconds";
+                }
+                return timeString;
+            };
+
+            this.expiringSoon = function(date) {
+                return date - Date.now() < 5000;
+            };
+
             this.tick = function() {
                 // Do all task completion here
 
@@ -270,10 +299,8 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
                 this.freeCoinsTimeout--;
 
                 for (var i = 0; i < this.runningExpeditions.length; i++) {
-                    if (this.runningExpeditions[i].progress >= this.runningExpeditions[i].contract.duration) {
+                    if (this.runningExpeditions[i].expires <= Date.now()) {
                         this.completeExpedition(this.runningExpeditions[i]);
-                    } else {
-                        this.runningExpeditions[i].progress++;
                     }
                 }
 
