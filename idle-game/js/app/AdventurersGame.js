@@ -1,7 +1,7 @@
 /*jshint esversion: 6 */
 
-define(["jquery", "readable-timespan", "json!data/contracts.json", "json!data/locations.json", "json!data/adventurers.json"],
-    function AdventurersGame(jquery, readableTimespan, contracts, locations, adventurers) {
+define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!data/adventurers.json"],
+    function AdventurersGame(jquery, contracts, locations, adventurers) {
 
         function uuidv4() {
             return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
