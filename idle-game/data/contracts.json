@@ -1,21 +1,31 @@
 [{
     "name": "Follow a dubious treasure map",
-    "risk": 1,
+    "successMessage": "You are given a sack, presumably what's left of the treasure.",
+    "failureMessage": "Either the map was a fake, or someone else got there first.",
+    "deathMessage": "Unfortunately the long journey proved too much.",
+    "risk": 0.1,
+    "upgradeChance": 0.01,
     "duration": 2000,
     "successChance": 0.05,
     "rewards": [
-        { "chance": 1, "reward": { "type": "coins", "amount": 1000 } },
+        { "chance": 1, "reward": { "type": "coins", "amount": 500 } },
         { "chance": 1, "reward": { "type": "status", "amount": 1 } }
     ],
     "requirements": {
         "status": 0,
         "adventurers": [
-            { "type": "Drunkard", "amount": 2 }
+            { "type": "Peasant", "amount": 1 },
+            { "type": "Street rat", "amount": 1 },
+            { "type": "Drunkard", "amount": 1 }
         ]
     }
 }, {
     "name": "An honest days work",
-    "risk": 0,
+    "successMessage": "An honest days work earns an honest days wage.",
+    "failureMessage": "How did you fail this?  This shouldn't even be possible.",
+    "deathMessage": "Sadly accidents do happen even when you're minding your own business.",
+    "risk": 0.001,
+    "upgradeChance": 0.01,
     "duration": 200,
     "successChance": 1,
     "rewards": [
@@ -30,7 +40,11 @@
     }
 }, {
     "name": "Rob some graves",
-    "risk": 5,
+    "successMessage": "The reward you get is dirty and smells faintly of death.",
+    "failureMessage": "Some graves don't have any valueables.",
+    "deathMessage": "It turns out people don't take kindly to looters pillage the resting place of their loved ones.",
+    "risk": 0.05,
+    "upgradeChance": 0.01,
     "duration": 100,
     "successChance": 0.9,
     "rewards": [
@@ -45,7 +59,11 @@
     }
 }, {
     "name": "Mug a traveller",
-    "risk": 5,
+    "successMessage": "A man is lying somewhere in a ditch, bereft of his belongings.",
+    "failureMessage": "You've discovered that people don't want you to take things off them.",
+    "deathMessage": "Some travellers know how to defend themselves.  Sometimes with lethal force.",
+    "risk": 0.25,
+    "upgradeChance": 0.03,
     "duration": 150,
     "successChance": 0.5,
     "rewards": [
@@ -60,7 +78,11 @@
     }
 }, {
     "name": "Tail a mark",
-    "risk": 5,
+    "successMessage": "Your men follow the mark all day and report on his whereabouts.",
+    "failureMessage": "The slippery mark managed to elude your men.  This contract is void.",
+    "deathMessage": "It seems your man wasn't good enough at not being seen.",
+    "risk": 0.05,
+    "upgradeChance": 0.02,
     "duration": 550,
     "successChance": 0.9,
     "rewards": [
@@ -74,8 +96,30 @@
         ]
     }
 }, {
-    "name": "Start a brawl",
-    "risk": 10,
+    "name": "Pickpocketing",
+    "successMessage": "Quick fingers are the neccessary tools and your man has them.",
+    "failureMessage": "Sometimes everyone is just holding onto their own things too tightly.",
+    "deathMessage": "The local guards were seen hauling someone off.",
+    "risk": 0.05,
+    "upgradeChance": 0.02,
+    "duration": 450,
+    "successChance": 0.6,
+    "rewards": [
+        { "chance": 1, "reward": { "type": "coins", "amount": 35 } }
+    ],
+    "requirements": {
+        "status": 0,
+        "adventurers": [
+            { "type": "Street rat", "amount": 1 }
+        ]
+    }
+}, {
+    "name": "Disrupt a rivals business",
+    "successMessage": "A rowdy brawl smashed the place up and drove customers away.",
+    "failureMessage": "Your drunks were turned away before they could cause any trouble.",
+    "deathMessage": "The problem with drunken brawls is that people get hurt.",
+    "risk": 0.1,
+    "upgradeChance": 0.02,
     "duration": 350,
     "successChance": 0.8,
     "rewards": [
@@ -89,8 +133,12 @@
         ]
     }
 }, {
-    "name": "Fight some bandits",
-    "risk": 15,
+    "name": "Fight some goblins",
+    "successMessage": "",
+    "failureMessage": "",
+    "deathMessage": "",
+    "risk": 0.5,
+    "upgradeChance": 0.02,
     "duration": 500,
     "successChance": 0.5,
     "rewards": [

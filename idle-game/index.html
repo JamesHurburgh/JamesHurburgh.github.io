@@ -12,6 +12,14 @@
     <script src="./js/lib/jquery.js"></script>
     <script src="./js/bootstrap.min.js"></script>
 
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Open+Sans:600" rel="stylesheet">
+    <style>
+        h2 {
+            font-family: 'Alegreya Sans SC', sans-serif;
+        }
+    </style>
+    <!-- font-family: 'Open Sans', sans-serif;
+     -->
     <link rel="stylesheet" href="css/alertify.min.css" />
     <!-- Alertify Bootstrap theme -->
     <link rel="stylesheet" href="css/alertify.bootstrap.min.css" />
@@ -32,45 +40,45 @@
             <p>Adventurering is dangerous. Hire someone else to do it for you! <a href="#" @click="reset()">Reset the game</a></p>
             <div class="col-md-4">
                 <h2>Coins and stuff</h2>
-                <div>Coins: {{coins}} ({{coinsPerTick}} cpt)</div>
+                <div>Coins: {{coins}}</div>
                 <div>Status: {{status}}</div>
 
                 <h2>Hired Adventurers</h2>
                 <div v-for="adventurer in adventurers">
-                    <div>{{adventurer.plural}}: {{getHiredCount(adventurer.name)}}</div>
+                    <div>{{adventurer.plural}}: {{getHiredCount(adventurer.name)}}<span class="text-muted">+{{getAdventurersOnTheJob(adventurer.name)}}</span></div>
                     <!--<button type="button" class="btn btn-primary btn-xs" @click="hire(adventurer.name)" :disabled="!canHire(adventurer.name)">Hire a {{adventurer.name}} ({{getCost(adventurer.name)}} coins)</button>-->
                 </div>
                 <h3>Adventurers for hire</h3>
-                <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
+                <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="noOutAnimation">
                     <div v-for="adventurer in availableHires" key="adventurer.name">
-                        <div class="well" v-bind:class="{ 'animated flash': expiringSoon(adventurer.expires) }">
+                        <div class="well">
                             <h4>{{adventurer.name}} <button type="button" class="btn btn-sm pull-right" v-bind:class="{ 'btn-success': canHire(adventurer.name), 'btn-primary': !canHire(adventurer.name) }" @click="hire(adventurer)" :disabled="!canHire(adventurer.name)">Hire ({{getCost(adventurer.name)}} coins)</button>
                             </h4>
-                            <div>{{readableTime(adventurer.expires - Date.now())}} remaining</div>
+                            <div v-bind:class="{ 'text-danger': expiringDanger(adventurer.expires), 'text-warning': expiringWarning(adventurer.expires), 'text-success': expiringSuccess(adventurer.expires) }">{{readableTime(adventurer.expires - Date.now())}} remaining</div>
                         </div>
                     </div>
                 </transition-group>
             </div>
 
             <div class="col-md-4">
-
-                <h2>{{location.name}}</h2>
+                <h2>
+                    {{location.name}}
+                    <button type="button" class="btn btn-primary" v-bind:class="{ 'btn-success': canGetFreeCoins(), 'btn-primary': !canGetFreeCoins() }" @click="freeCoins(location)" :disabled="!canGetFreeCoins()">{{location.freeCoinsDescription}}</button>
+                </h2>
                 <span>{{location.description}}</span>
-                <button type="button" class="btn btn-primary" @click="freeCoins(location)" :disabled="!canGetFreeCoins()">{{location.freeCoinsDescription}}</button>
 
                 <h3>Contracts</h3>
-                <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
+                <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="noOutAnimation">
                     <div v-for="contract in availableContracts" key="contract.name">
-                        <div class="well" v-bind:class="{ 'animated flash': expiringSoon(contract.expires) }">
+                        <div class="well">
                             <h4>{{contract.name}} <button type="button" class="btn btn-sm pull-right" v-bind:class="{ 'btn-success': canSendExpedition(contract), 'btn-primary': !canSendExpedition(contract) }" @click="sendExpedition(contract)" :disabled="!canSendExpedition(contract)">Start</button>
                             </h4>
                             <div v-if="contract.requirements != undefined">
-                                <h5>Requirements</h5>
                                 <div v-for="adventurerRequirement in contract.requirements.adventurers">
-                                    {{adventurerRequirement.amount}} {{adventurerRequirement.type}}
+                                    {{adventurerRequirement.amount}} {{adventurerRequirement.type}} <span v-bind:class="{ 'text-danger': lessthan(getHiredCount(adventurerRequirement.type), adventurerRequirement.amount), 'text-success': !lessthan(getHiredCount(adventurerRequirement.type), adventurerRequirement.amount) }">({{getHiredCount(adventurerRequirement.type)}}/{{adventurerRequirement.amount}})</span>
                                 </div>
                             </div>
-                            <div>{{readableTime(contract.expires - Date.now())}} remaining</div>
+                            <div v-bind:class="{ 'text-danger': expiringDanger(contract.expires), 'text-warning': expiringWarning(contract.expires), 'text-success': expiringSuccess(contract.expires) }">{{readableTime(contract.expires - Date.now())}} remaining</div>
                         </div>
                     </div>
                 </transition-group>
@@ -79,31 +87,36 @@
                 <h2>Expeditions</h2>
 
                 <h3>Completed</h3>
-                <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
+                <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="noOutAnimation">
                     <div v-for="expedition in completedExpeditions" key="expedition.id">
                         <div class="well">
-                            <h4>{{expedition.contract.name}}</h4>
-                            <div v-if="expedition.success">
-                                <button type="button" class="btn btn-success" @click="claimReward(expedition)">
-                                    Claim Rewards!
+                            <h4>{{expedition.contract.name}}
+                                <button v-if="expedition.success" type="button" class="btn btn-success pull-right" @click="claimReward(expedition)">
+                                    Claim!
                                     <div v-for="reward in expedition.rewards">
                                         {{reward.amount}} {{reward.type}}
                                     </div>
                                 </button>
-                            </div>
-                            <div v-if="!expedition.success">
-                                Failed!<br/>
-                                <button type="button" class="btn btn-danger" @click="removeExpedition(expedition)">Darnation!</button>
+                                <button v-if="!expedition.success" type="button" class="btn btn-danger pull-right" @click="removeExpedition(expedition)">Darnation!</button>
+                            </h4>
+                            <div>
+                                <span>{{expedition.completionMessage}}</span>
+                                <span class="text-success">{{expedition.upgradeMessages}}</span>
+                                <span class="text-warning">{{expedition.deathMessage}}</span>
+                                <span class="text-danger">{{expedition.deathMessages}}</span>
                             </div>
                         </div>
                     </div>
                 </transition-group>
 
                 <h3>Running</h3>
-                <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
+                <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="noOutAnimation">
                     <div v-for="expedition in runningExpeditions" key="expedition.id">
                         <div class="well">
                             <h4>{{expedition.contract.name}}</h4>
+                            <div v-for="adventurerType in expedition.adventurers" key="adventurerType.type">
+                                {{adventurerType.amount}} {{adventurerType.type}}
+                            </div>
                             <div>{{readableTime(expedition.expires - Date.now())}} remaining</div>
                         </div>
                     </div>

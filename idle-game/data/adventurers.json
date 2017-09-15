@@ -1,50 +1,49 @@
 [{
     "name": "Drunkard",
     "plural": "Drunkards",
+    "becomes": ["Street rat", "Peasant", "Brawler"],
     "cpt": 0,
     "baseCost": 1,
-    "costMultiplier": 1.5,
-    "costExponent": 1.5
+    "costMultiplier": 1,
+    "costExponent": 1.05
 }, {
     "name": "Street rat",
     "plural": "Street rats",
+    "becomes": ["Brawler", "Thief"],
     "cpt": 0,
     "baseCost": 2,
-    "costMultiplier": 5,
-    "costExponent": 1.5
+    "costMultiplier": 1,
+    "costExponent": 1.05
 }, {
     "name": "Peasant",
     "plural": "Peasants",
+    "becomes": ["Citizen"],
     "cpt": 0,
     "baseCost": 10,
-    "costMultiplier": 5,
-    "costExponent": 1.5
+    "costMultiplier": 1,
+    "costExponent": 1.05
 }, {
-    "name": "Adventurer",
-    "plural": "Adventurers",
+    "name": "Brawler",
+    "plural": "Brawlers",
+    "becomes": [],
+    "cpt": 0,
+    "baseCost": 400,
+    "costMultiplier": 5,
+    "costExponent": 1.05
+}, {
+    "name": "Thief",
+    "plural": "Thieves",
+    "becomes": [],
+    "cpt": 0,
+    "baseCost": 150,
+    "costMultiplier": 5,
+    "costExponent": 1.05
+}, {
+    "name": "Citizen",
+    "plural": "Citizen",
+    "becomes": [],
     "cpt": 0,
     "baseCost": 100,
     "costMultiplier": 5,
-    "costExponent": 1.5
-}, {
-    "name": "Barbarian",
-    "plural": "Barbarians",
-    "cpt": 0,
-    "baseCost": 100,
-    "costMultiplier": 5,
-    "costExponent": 1.5
-}, {
-    "name": "Archer",
-    "plural": "Archers",
-    "cpt": 0,
-    "baseCost": 100,
-    "costMultiplier": 5,
-    "costExponent": 1.5
-}, {
-    "name": "Seasoned veteran",
-    "plural": "Seasoned veterans",
-    "cpt": 0,
-    "baseCost": 1000,
-    "costMultiplier": 5,
-    "costExponent": 1.5
+    "costExponent": 1.05
 }]
