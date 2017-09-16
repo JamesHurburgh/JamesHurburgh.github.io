@@ -437,6 +437,23 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
                         this.completeExpedition(this.runningExpeditions[i]);
                     }
                 }
+                // Remove expired contracts
+                if (this.location.availableContracts) {
+                    for (var j = 0; j < this.location.availableContracts.length; j++) {
+                        if (this.location.availableContracts[j].expires <= Date.now()) {
+                            this.location.availableContracts.splice(j, 1);
+                        }
+                    }
+                }
+
+                // Remove expired hired
+                if (this.location.availableHires) {
+                    for (var k = 0; k < this.location.availableHires.length; k++) {
+                        if (this.location.availableHires[k].expires <= Date.now()) {
+                            this.location.availableHires.splice(k, 1);
+                        }
+                    }
+                }
 
                 for (var locationIndex = 0; locationIndex < this.allLocations.length; locationIndex++) {
                     var location = this.allLocations[locationIndex];
