@@ -1,7 +1,7 @@
 [{
         "name": "Dirty Alley",
         "description": "The only thing here filthier than the alley are the people that inhabit it.  Drunks, theives and those down on their luck can be found here as well as work for those who don't mind getting their hands... even dirtier.",
-        "statusRequired": 0,
+        "reknownRequired": 0,
         "freeCoinsDescription": "Scrounge in the dirt for a coin",
         "freeCoins": 1,
         "freeCoinsTimeout": 10,
@@ -11,42 +11,60 @@
     {
         "name": "Street Corner",
         "description": "Officially, conducting business on the street corner is illegal.  But if you grease the palms of a guard or two and don't cause trouble, you can hire the locals and passerbys looking for work.  The townsfolk may also come to you to get things done.  Most of it legitimate, some of it, not so much.",
-        "statusRequired": 10,
-        "contracts": [],
-        "adventurers": []
+        "reknownRequired": 10,
+        "freeCoinsDescription": "Beg for a hand out.",
+        "freeCoins": 5,
+        "freeCoinsTimeout": 10,
+        "contracts": ["Rescue a farmer's daughter", "Fight some goblins", "Break and Enter", "Fight club", "Disrupt a rivals business", "An honest weeks work", "A days work for a team", "Loot a crypt"],
+        "adventurers": ["Brawler", "Thief", "Citizen"]
     },
     {
         "name": "Tavern",
-        "description": "You've reached the pinnacle of the underworld.  Sitting at a table in the local Tavern the oppressed and needy now know to come to you with their problems or 'business ventures'.",
-        "statusRequired": 100,
+        "description": "You've reached the pinnacle of the underworld.  Sitting at a table in the local tavern the oppressed and needy now know to come to you with their problems or 'business ventures'.",
+        "reknownRequired": 1000,
+        "freeCoinsDescription": "Tend the bar for the night.",
+        "freeCoins": 10,
+        "freeCoinsTimeout": 10,
         "contracts": [],
         "adventurers": []
     },
     {
         "name": "Adventurer's Guild",
         "description": "",
-        "statusRequired": 1000,
+        "reknownRequired": 100000,
+        "freeCoinsDescription": "Beg for a hand out.",
+        "freeCoins": 50,
+        "freeCoinsTimeout": 10,
         "contracts": [],
         "adventurers": []
     },
     {
         "name": "Mayor's Office",
         "description": "",
-        "statusRequired": 10000,
+        "reknownRequired": 1000000,
+        "freeCoinsDescription": "Beg for a hand out.",
+        "freeCoins": 5,
+        "freeCoinsTimeout": 10,
         "contracts": [],
         "adventurers": []
     },
     {
         "name": "Royal Antechamber",
         "description": "",
-        "statusRequired": 100000,
+        "reknownRequired": 100000000,
+        "freeCoinsDescription": "Petition for a grant.",
+        "freeCoins": 5,
+        "freeCoinsTimeout": 10,
         "contracts": [],
         "adventurers": []
     },
     {
         "name": "Throne Room",
         "description": "",
-        "statusRequired": 1000000,
+        "reknownRequired": 10000000000,
+        "freeCoinsDescription": "Beg for a hand out.",
+        "freeCoins": 5,
+        "freeCoinsTimeout": 10,
         "contracts": [],
         "adventurers": []
     }

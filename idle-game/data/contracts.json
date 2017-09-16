@@ -5,14 +5,14 @@
     "deathMessage": "Unfortunately the long journey proved too much.",
     "risk": 0.1,
     "upgradeChance": 0.01,
-    "duration": 2000,
+    "duration": 3500,
     "successChance": 0.05,
     "rewards": [
         { "chance": 1, "reward": { "type": "coins", "amount": 500 } },
-        { "chance": 1, "reward": { "type": "status", "amount": 1 } }
+        { "chance": 1, "reward": { "type": "reknown", "amount": 2 } }
     ],
     "requirements": {
-        "status": 0,
+        "reknown": 0,
         "adventurers": [
             { "type": "Peasant", "amount": 1 },
             { "type": "Street rat", "amount": 1 },
@@ -26,14 +26,14 @@
     "deathMessage": "Sadly accidents do happen even when you're minding your own business.",
     "risk": 0.001,
     "upgradeChance": 0.01,
-    "duration": 200,
+    "duration": 500,
     "successChance": 1,
+    "contractAmount": 15,
     "rewards": [
-        { "chance": 1, "reward": { "type": "coins", "amount": 15 } },
-        { "chance": 1, "reward": { "type": "status", "amount": 1 } }
+        { "chance": 1, "reward": { "type": "reknown", "amount": 1 } }
     ],
     "requirements": {
-        "status": 0,
+        "reknown": 0,
         "adventurers": [
             { "type": "Peasant", "amount": 1 }
         ]
@@ -45,14 +45,13 @@
     "deathMessage": "It turns out people don't take kindly to looters pillage the resting place of their loved ones.",
     "risk": 0.05,
     "upgradeChance": 0.01,
-    "duration": 100,
+    "duration": 75,
     "successChance": 0.9,
     "rewards": [
-        { "chance": 1, "reward": { "type": "coins", "amount": 5 } },
-        { "chance": 1, "reward": { "type": "status", "amount": 1 } }
+        { "chance": 1, "reward": { "type": "coins", "amount": 5 } }
     ],
     "requirements": {
-        "status": 0,
+        "reknown": 0,
         "adventurers": [
             { "type": "Drunkard", "amount": 1 }
         ]
@@ -64,14 +63,13 @@
     "deathMessage": "Some travellers know how to defend themselves.  Sometimes with lethal force.",
     "risk": 0.25,
     "upgradeChance": 0.03,
-    "duration": 150,
+    "duration": 75,
     "successChance": 0.5,
     "rewards": [
-        { "chance": 1, "reward": { "type": "coins", "amount": 20 } },
-        { "chance": 1, "reward": { "type": "status", "amount": 1 } }
+        { "chance": 1, "reward": { "type": "coins", "amount": 20 } }
     ],
     "requirements": {
-        "status": 0,
+        "reknown": 0,
         "adventurers": [
             { "type": "Street rat", "amount": 2 }
         ]
@@ -83,14 +81,14 @@
     "deathMessage": "It seems your man wasn't good enough at not being seen.",
     "risk": 0.05,
     "upgradeChance": 0.02,
-    "duration": 550,
+    "duration": 500,
     "successChance": 0.9,
+    "contractAmount": 75,
     "rewards": [
-        { "chance": 1, "reward": { "type": "coins", "amount": 75 } },
-        { "chance": 1, "reward": { "type": "status", "amount": 1 } }
+        { "chance": 1, "reward": { "type": "reknown", "amount": 1 } }
     ],
     "requirements": {
-        "status": 0,
+        "reknown": 0,
         "adventurers": [
             { "type": "Street rat", "amount": 1 }
         ]
@@ -102,13 +100,13 @@
     "deathMessage": "The local guards were seen hauling someone off.",
     "risk": 0.05,
     "upgradeChance": 0.02,
-    "duration": 450,
+    "duration": 250,
     "successChance": 0.6,
     "rewards": [
         { "chance": 1, "reward": { "type": "coins", "amount": 35 } }
     ],
     "requirements": {
-        "status": 0,
+        "reknown": 0,
         "adventurers": [
             { "type": "Street rat", "amount": 1 }
         ]
@@ -122,34 +120,151 @@
     "upgradeChance": 0.02,
     "duration": 350,
     "successChance": 0.8,
+    "contractAmount": 750,
     "rewards": [
-        { "chance": 1, "reward": { "type": "coins", "amount": 750 } },
-        { "chance": 1, "reward": { "type": "status", "amount": 1 } }
+        { "chance": 1, "reward": { "type": "reknown", "amount": 1 } }
     ],
     "requirements": {
-        "status": 0,
+        "reknown": 0,
         "adventurers": [
             { "type": "Drunkard", "amount": 10 }
         ]
     }
 }, {
     "name": "Fight some goblins",
-    "successMessage": "",
-    "failureMessage": "",
-    "deathMessage": "",
+    "successMessage": "Your men returned victorious bringing the goblins loot with them.",
+    "failureMessage": "Your men returned beaten and bruised, nothing to show for their effort.",
+    "deathMessage": "The goblins fought back visciously.",
     "risk": 0.5,
     "upgradeChance": 0.02,
-    "duration": 500,
+    "duration": 1000,
     "successChance": 0.5,
     "rewards": [
         { "chance": 1, "reward": { "type": "coins", "amount": 1000 } },
-        { "chance": 1, "reward": { "type": "status", "amount": 2 } }
+        { "chance": 1, "reward": { "type": "reknown", "amount": 2 } }
     ],
     "requirements": {
-        "status": 1,
+        "reknown": 1,
         "adventurers": [
+            { "type": "Brawler", "amount": 1 },
             { "type": "Drunkard", "amount": 5 },
             { "type": "Street rat", "amount": 10 }
+        ]
+    }
+}, {
+    "name": "Fight club",
+    "successMessage": "Your man was victorious and brought home the proze money.",
+    "failureMessage": "Your man was knocked out and couldn't claim the prize.",
+    "deathMessage": "The obvious happened and your man was injured.",
+    "risk": 0.5,
+    "upgradeChance": 0.02,
+    "duration": 400,
+    "successChance": 0.7,
+    "rewards": [
+        { "chance": 1, "reward": { "type": "coins", "amount": 500 } },
+        { "chance": 1, "reward": { "type": "reknown", "amount": 2 } }
+    ],
+    "requirements": {
+        "reknown": 1,
+        "adventurers": [
+            { "type": "Brawler", "amount": 1 }
+        ]
+    }
+}, {
+    "name": "Break and Enter",
+    "successMessage": "Your men return after looting the house.",
+    "failureMessage": "Nothing of value was found in the house.",
+    "deathMessage": "The owners were home and took matters into their own hands.",
+    "risk": 0.5,
+    "upgradeChance": 0.02,
+    "duration": 350,
+    "successChance": 0.5,
+    "rewards": [
+        { "chance": 1, "reward": { "type": "coins", "amount": 600 } }
+    ],
+    "requirements": {
+        "reknown": 1,
+        "adventurers": [
+            { "type": "Thief", "amount": 2 }
+        ]
+    }
+}, {
+    "name": "An honest weeks work",
+    "successMessage": "An honest weeks work earns an honest weeks wage.",
+    "failureMessage": "How did you fail this?  This shouldn't even be possible.",
+    "deathMessage": "Sadly accidents do happen even when you're minding your own business.",
+    "risk": 0.001,
+    "upgradeChance": 0.01,
+    "duration": 3500,
+    "successChance": 1,
+    "contractAmount": 125,
+    "rewards": [
+        { "chance": 1, "reward": { "type": "reknown", "amount": 2 } }
+    ],
+    "requirements": {
+        "reknown": 0,
+        "adventurers": [
+            { "type": "Peasant", "amount": 1 }
+        ]
+    }
+}, {
+    "name": "A days work for a team",
+    "successMessage": "An honest days work earns an honest days wage.",
+    "failureMessage": "How did you fail this?  This shouldn't even be possible.",
+    "deathMessage": "Sadly accidents do happen even when you're minding your own business.",
+    "risk": 0.001,
+    "upgradeChance": 0.01,
+    "duration": 500,
+    "successChance": 1,
+    "contractAmount": 150,
+    "rewards": [
+        { "chance": 1, "reward": { "type": "reknown", "amount": 2 } }
+    ],
+    "requirements": {
+        "reknown": 0,
+        "adventurers": [
+            { "type": "Peasant", "amount": 10 }
+        ]
+    }
+}, {
+    "name": "Loot a crypt",
+    "successMessage": "People like being buried with their valueables.  Now you have some of them.",
+    "failureMessage": "Not everyone keeps their family jewels with their dead.",
+    "deathMessage": "Crypts can be dangerous at night.",
+    "risk": 0.2,
+    "upgradeChance": 0.1,
+    "duration": 200,
+    "successChance": 1,
+    "rewards": [
+        { "chance": 1, "reward": { "type": "coins", "amount": 1000 } },
+        { "chance": 1, "reward": { "type": "reknown", "amount": 1 } }
+    ],
+    "requirements": {
+        "reknown": 0,
+        "adventurers": [
+            { "type": "Thief", "amount": 1 },
+            { "type": "Street rat", "amount": 5 }
+        ]
+    }
+}, {
+    "name": "Rescue a farmer's daughter",
+    "successMessage": "The farmers daughter is returned and he gives you his life savings in return.",
+    "failureMessage": "Your men couldn't find the farmers daughter.",
+    "deathMessage": "Rescue missions can be dangerous.",
+    "risk": 0.6,
+    "upgradeChance": 0.3,
+    "duration": 1000,
+    "successChance": 1,
+    "contractAmount": 1000,
+    "rewards": [
+        { "chance": 1, "reward": { "type": "reknown", "amount": 3 } }
+    ],
+    "requirements": {
+        "reknown": 0,
+        "adventurers": [
+            { "type": "Thief", "amount": 2 },
+            { "type": "Citizen", "amount": 1 },
+            { "type": "Brawler", "amount": 2 }
         ]
     }
 }]

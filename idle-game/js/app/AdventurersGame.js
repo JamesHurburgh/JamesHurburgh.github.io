@@ -1,7 +1,7 @@
 /*jshint esversion: 6 */
 
-define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!data/adventurers.json"],
-    function AdventurersGame(jquery, contracts, locations, adventurers) {
+define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!data/adventurers.json", "json!data/reknown.json"],
+    function AdventurersGame(jquery, contracts, locations, adventurers, reknown) {
 
         function uuidv4() {
             return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
@@ -10,7 +10,11 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
         }
 
         function clone(object) {
-            return JSON.parse(JSON.stringify(object));
+            try {
+                return JSON.parse(JSON.stringify(object));
+            } catch (exception) {
+                console.log("Unable to parse object: " + JSON.stringify(object));
+            }
         }
 
         return function AdventurersGame(gameData, autoSaveFunction) {
@@ -23,7 +27,7 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
 
                 this.coins = 10;
                 this.coinsPerTick = 0;
-                this.status = 0;
+                this.reknown = 0;
                 this.freeCoinsTimeout = 0;
 
                 this.hired = {};
@@ -32,10 +36,11 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
                 this.runningExpeditions = [];
                 this.completedExpeditions = [];
 
-                this.availableContracts = [];
-                this.availableHires = [];
+                this.allLocations = clone(locations);
+                this.location = this.allLocations[0];
 
-                this.location = locations[0];
+                this.location.availableContracts = [];
+                this.location.availableHires = [];
 
                 // Data
                 this.adventurers = adventurers;
@@ -67,13 +72,13 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
 
                 // New contracts
                 var maxContracts = 5;
-                if (this.availableContracts.length < maxContracts && Math.random() > 0.85) {
+                if (this.location.availableContracts.length < maxContracts && Math.random() > 0.85) {
                     this.addContract();
                 }
 
                 var maxAvailableHires = 5;
                 // New hires
-                if (this.availableHires.length < maxAvailableHires && Math.random() > 0.75) {
+                if (this.location.availableHires.length < maxAvailableHires && Math.random() > 0.75) {
                     this.addAvailableHire();
                 }
 
@@ -85,7 +90,7 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
 
                 if (!this.coins) this.coins = 10;
                 if (!this.coinsPerTick) this.coinsPerTick = 0;
-                if (!this.status) this.status = 0;
+                if (!this.reknown) this.reknown = 0;
                 if (!this.freeCoinsTimeout) this.freeCoinsTimeout = 0;
 
                 if (!this.hired) this.hired = {};
@@ -93,10 +98,11 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
                 if (!this.runningExpeditions) this.runningExpeditions = [];
                 if (!this.completedExpeditions) this.completedExpeditions = [];
 
-                if (!this.availableContracts) this.availableContracts = [];
-                if (!this.availableHires) this.availableHires = [];
+                if (!this.allLocations) this.allLocations = clone(locations);
+                if (!this.location) this.location = this.allLocations[0];
 
-                this.location = locations[0];
+                if (!this.location.availableContracts) this.location.availableContracts = [];
+                if (!this.location.availableHires) this.location.availableHires = [];
 
                 // Data
                 this.adventurers = adventurers;
@@ -104,6 +110,53 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
                 this.locations = locations;
             };
 
+            this.cheat = function() {
+                this.giveCoins(100000000000);
+                this.giveReknown(100000000000);
+
+                for (var i = 0; i < adventurers.length; i++) {
+                    this.hired[adventurers[i].name] += 100000;
+                }
+            };
+
+            // Reknown
+            this.reknownText = function() {
+                return reknown.filter(r => r.minimum <= this.reknown && r.maximum > this.reknown)[0].name;
+            };
+
+            // Locations
+            this.currentLocationIndex = function() {
+                return this.allLocations.indexOf(this.allLocations.filter(location => location.name == this.location.name)[0]);
+            };
+
+            this.canRelocateDown = function() {
+                return this.allLocations.indexOf(this.allLocations.filter(location => location.name == this.location.name)[0]) > 0;
+            };
+
+            this.relocateDown = function() {
+                if (this.canRelocateDown()) {
+                    this.location = this.allLocations[this.allLocations.indexOf(this.allLocations.filter(location => location.name == this.location.name)[0]) - 1];
+                    if (!this.location.availableContracts) this.location.availableContracts = [];
+                    if (!this.location.availableHires) this.location.availableHires = [];
+                    this.expireAllExpired();
+                }
+            };
+
+            this.canRelocateUp = function() {
+                var newLocation = this.allLocations[this.allLocations.indexOf(this.allLocations.filter(location => location.name == this.location.name)[0]) + 1];
+                return newLocation.reknownRequired <= this.reknown;
+            };
+
+            this.relocateUp = function() {
+                if (this.canRelocateUp()) {
+                    this.location = this.allLocations[this.allLocations.indexOf(this.allLocations.filter(location => location.name == this.location.name)[0]) + 1];
+                    if (!this.location.availableContracts) this.location.availableContracts = [];
+                    if (!this.location.availableHires) this.location.availableHires = [];
+                    this.expireAllExpired();
+                }
+            };
+
+            // Coins
             this.canGetFreeCoins = function() {
                 return this.freeCoinsTimeout <= 0;
             };
@@ -146,8 +199,8 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
                 var locationHireables = this.adventurers.filter(hireable => this.location.adventurers.indexOf(hireable.name) >= 0);
                 var hireable = clone(locationHireables[Math.floor(locationHireables.length * Math.random())]);
                 hireable.expires = Date.now() + Math.floor(60000 * (Math.random() + 0.5));
-                this.availableHires.push(hireable);
-                this.availableHires.sort(function(a, b) {
+                this.location.availableHires.push(hireable);
+                this.location.availableHires.sort(function(a, b) {
                     return a.expires > b.expires;
                 });
             };
@@ -161,8 +214,8 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
                 var locationContracts = contracts.filter(contract => this.location.contracts.indexOf(contract.name) >= 0);
                 var contract = clone(locationContracts[Math.floor(locationContracts.length * Math.random())]);
                 contract.expires = Date.now() + Math.floor(60000 * (Math.random() + 0.5));
-                this.availableContracts.push(contract);
-                this.availableContracts.sort(function(a, b) {
+                this.location.availableContracts.push(contract);
+                this.location.availableContracts.sort(function(a, b) {
                     return a.expires > b.expires;
                 });
             };
@@ -179,7 +232,7 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
                         }
                     }
                 }
-                return this.status >= contract.requirements.status;
+                return this.reknown >= contract.requirements.reknown;
             };
 
             this.sendExpedition = function(contract) {
@@ -207,15 +260,15 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
                     return a.expires > b.expires;
                 });
 
-                this.availableContracts.splice(this.availableContracts.indexOf(contract), 1);
+                this.location.availableContracts.splice(this.location.availableContracts.indexOf(contract), 1);
             };
 
             this.giveCoins = function(amount) {
                 this.coins += amount;
             };
 
-            this.giveStatus = function(amount) {
-                this.status += amount;
+            this.giveReknown = function(amount) {
+                this.reknown += amount;
             };
 
             this.giveReward = function(type, amount) {
@@ -223,8 +276,8 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
                     case "coins":
                         this.giveCoins(amount);
                         break;
-                    case "status":
-                        this.giveStatus(amount);
+                    case "reknown":
+                        this.giveReknown(amount);
                         break;
                     default:
                         this.hired[type] += amount;
@@ -232,6 +285,9 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
             };
 
             this.claimReward = function(expedition) {
+                if (expedition.contract.contractAmount) {
+                    this.giveCoins(expedition.contract.contractAmount);
+                }
                 for (var i = 0; i < expedition.rewards.length; i++) {
                     this.giveReward(expedition.rewards[i].type, expedition.rewards[i].amount);
                 }
@@ -287,9 +343,12 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
                     for (var i = 0; i < contract.rewards.length; i++) {
                         var chance = contract.rewards[i].chance;
                         if (Math.random() < chance) {
-                            var reward = contract.rewards[i].reward;
                             var variation = Math.random() + 0.5;
-                            expedition.rewards.push({ "type": reward.type, "amount": Math.floor(reward.amount * variation) });
+                            var reward = contract.rewards[i].reward
+                            var rewardAmount = Math.floor(reward.amount * variation);
+                            if (rewardAmount > 0) {
+                                expedition.rewards.push({ "type": reward.type, "amount": rewardAmount });
+                            }
                         }
                     }
                 } else {
@@ -324,7 +383,7 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
                 this.spendCoins(this.getCost(hireable.name));
                 this.hired[hireable.name] = hiredCount + 1;
 
-                this.availableHires.splice(this.availableHires.indexOf(hireable), 1);
+                this.location.availableHires.splice(this.location.availableHires.indexOf(hireable), 1);
 
                 this.calculate();
             };
@@ -370,6 +429,38 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
                 return !this.expiringDanger(date) && !this.expiringWarning(date);
             };
 
+            this.expireAllExpired = function() {
+
+                // Check for completed expeditions
+                for (var i = 0; i < this.runningExpeditions.length; i++) {
+                    if (this.runningExpeditions[i].expires <= Date.now()) {
+                        this.completeExpedition(this.runningExpeditions[i]);
+                    }
+                }
+
+                for (var locationIndex = 0; locationIndex < this.allLocations.length; locationIndex++) {
+                    var location = this.allLocations[locationIndex];
+
+                    // Remove expired contracts
+                    if (location.availableContracts) {
+                        for (var j = 0; j < location.availableContracts.length; j++) {
+                            if (location.availableContracts[j].expires <= Date.now()) {
+                                location.availableContracts.splice(j, 1);
+                            }
+                        }
+                    }
+
+                    // Remove expired hired
+                    if (location.availableHires) {
+                        for (var k = 0; k < location.availableHires.length; k++) {
+                            if (location.availableHires[k].expires <= Date.now()) {
+                                location.availableHires.splice(k, 1);
+                            }
+                        }
+                    }
+                }
+            };
+
             this.lessthan = function(a, b) {
                 return a < b;
             };
@@ -380,24 +471,7 @@ define(["jquery", "json!data/contracts.json", "json!data/locations.json", "json!
                 this.coins += this.coinsPerTick;
                 this.freeCoinsTimeout--;
 
-                for (var i = 0; i < this.runningExpeditions.length; i++) {
-                    if (this.runningExpeditions[i].expires <= Date.now()) {
-                        this.completeExpedition(this.runningExpeditions[i]);
-                    }
-                }
-
-                for (var j = 0; j < this.availableContracts.length; j++) {
-                    if (this.availableContracts[j].expires <= Date.now()) {
-                        this.availableContracts.splice(j, 1);
-                    }
-                }
-                // Remove expired hired
-                for (var k = 0; k < this.availableHires.length; k++) {
-                    if (this.availableHires[k].expires <= Date.now()) {
-                        this.availableHires.splice(k, 1);
-                    }
-                }
-
+                this.expireAllExpired();
 
                 this.calculateCounter++;
                 if (this.calculateCounter > 10) {
