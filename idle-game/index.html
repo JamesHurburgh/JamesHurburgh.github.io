@@ -44,7 +44,7 @@
                 </div>
                 <h2>Expeditions</h2>
 
-                <h3>Completed ({{completedExpeditions.length}})</h3>
+                <h3>Completed ({{completedExpeditions.length}}) <button v-if="!lessthan(completedExpeditions.length, 1)" type="button" class="btn btn-success pull-right" @click="claimAllCompletedExpeditions()">Claim All</button></h3>
                 <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="noOutAnimation">
                     <div v-for="expedition in completedExpeditions" key="expedition.id">
                         <div class="well">
