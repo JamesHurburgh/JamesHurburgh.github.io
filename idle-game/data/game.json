@@ -1,0 +1,17 @@
+{
+    "name": "Adventurers of Otium",
+    "description": "Adventurering is dangerous. Hire someone else to do it for you!",
+    "author": "James Hurburgh",
+    "author-uri": "",
+    "versions": [{
+        "number": "0.2",
+        "description": "Upgrades to expeditions to show more details.",
+        "features": ["Show all adventurers and statuses on completed quest cards", "Running expeditions colour coding", "Progress bar on running expeditions"],
+        "bugfixes": []
+    }, {
+        "number": "0.1",
+        "description": "Initial versioned release!  Versioning and save game loading improved.",
+        "features": ["Added release notes and versioning."],
+        "bugfixes": ["Rejigged saved game loading.  Should work better now."]
+    }]
+}

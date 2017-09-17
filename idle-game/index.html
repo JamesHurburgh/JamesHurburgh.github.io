@@ -30,8 +30,11 @@
 <body>
     <div class="container">
         <div class="row" id="AdventurersGame">
-            <h1>Adventurers of <span @click="cheat()">O</span>tium</h1>
-            <p>Adventurering is dangerous. Hire someone else to do it for you! <a href="#" @click="reset()">Reset the game</a></p>
+            <div class="col-md-12">
+                <h1>{{game.name}} <span class="text-muted" @click="cheat()">v{{game.versions[0].number}}</span></h1>
+                <p>{{game.description}} <a href="#" @click="reset()">Reset the game</a></p>
+
+            </div>
             <div class="col-md-4">
                 <h2>Coins and stuff</h2>
                 <div>Coins: {{coins}}</div>
@@ -44,10 +47,10 @@
                 </div>
                 <h2>Expeditions</h2>
 
-                <h3>Completed ({{completedExpeditions.length}}) <button v-if="!lessthan(completedExpeditions.length, 1)" type="button" class="btn btn-success pull-right" @click="claimAllCompletedExpeditions()">Claim All</button></h3>
+                <h3>Completed ({{completedExpeditions.length}}) <button v-if="!lessthan(completedExpeditions.length, 1)" type="button" class="btn btn-success btn-xs pull-right" @click="claimAllCompletedExpeditions()">Claim All</button></h3>
                 <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="noOutAnimation">
                     <div v-for="expedition in completedExpeditions" key="expedition.id">
-                        <div class="well">
+                        <div class="well well-sm">
                             <h4>{{expedition.contract.name}}
                                 <button v-if="expedition.success" type="button" class="btn btn-success pull-right" @click="claimReward(expedition)">
                                     Claim!
@@ -60,9 +63,14 @@
                             </h4>
                             <div>
                                 <span>{{expedition.completionMessage}}</span>
-                                <span class="text-success">{{expedition.upgradeMessages}}</span>
-                                <span class="text-warning">{{expedition.deathMessage}}</span>
-                                <span class="text-danger">{{expedition.deathMessages}}</span>
+                                <span v-if="expedition.awol" class="text-warning">{{expedition.contract.deathMessage}}</span>
+                                <ul>
+                                    <li v-for="adventurer in expedition.adventurers">
+                                        {{adventurer.type}} {{adventurer.status}}
+                                        <span v-if="adventurer.awol" class="text-danger">didn't come back</span>
+                                        <span v-if="adventurer.upgradedTo != undefined" class="text-success">has become a {{adventurer.upgradedTo}}</span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -71,12 +79,17 @@
                 <h3>Running ({{runningExpeditions.length}})</h3>
                 <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="noOutAnimation">
                     <div v-for="expedition in runningExpeditions" key="expedition.id">
-                        <div class="well">
+                        <div class="well well-sm">
                             <h4>{{expedition.contract.name}}</h4>
-                            <div v-for="adventurerType in expedition.adventurers" key="adventurerType.type">
-                                {{adventurerType.amount}} {{adventurerType.type}}
+                            <ul>
+                                <li v-for="adventurer in expedition.adventurers">
+                                    {{adventurer.type}} {{adventurer.status}} {{adventurer.awol}} {{adventurer.upgradedTo}}
+                                </li>
+                            </ul>
+                            <div class="progress progress-striped active">
+                                <div class="progress-bar" v-bind:style="{ width: expeditionProgress(expedition) + '%' }"></div>
                             </div>
-                            <div>{{readableTime(expedition.expires - Date.now())}} remaining</div>
+                            <div v-bind:class="{ 'text-success': expiringDanger(expedition.expires), 'text-warning': expiringWarning(expedition.expires), 'text-danger': expiringSuccess(expedition.expires) }">{{readableTime(expedition.expires - Date.now())}} remaining</div>
                         </div>
                     </div>
                 </transition-group>
@@ -108,7 +121,7 @@
                     <h3>Contracts ({{location.availableContracts.length}}/5)</h3>
                     <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="noOutAnimation">
                         <div v-for="contract in location.availableContracts" key="contract.name">
-                            <div class="well">
+                            <div class="well well-sm">
                                 <h4>{{contract.name}} <button type="button" class="btn btn-sm pull-right" v-bind:class="{ 'btn-success': canSendExpedition(contract), 'btn-primary': !canSendExpedition(contract) }" @click="sendExpedition(contract)" :disabled="!canSendExpedition(contract)">Start</button>
                                 </h4>
                                 <div v-if="contract.contractAmount != undefined">{{contract.contractAmount}} coins</div>
@@ -127,7 +140,7 @@
                     <h3>Adventurers for hire ({{location.availableHires.length}}/5)</h3>
                     <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="noOutAnimation">
                         <div v-for="adventurer in location.availableHires" key="adventurer.name">
-                            <div class="well">
+                            <div class="well well-sm">
                                 <h4>{{adventurer.name}} <button type="button" class="btn btn-sm pull-right" v-bind:class="{ 'btn-success': canHire(adventurer.name), 'btn-primary': !canHire(adventurer.name) }" @click="hire(adventurer)" :disabled="!canHire(adventurer.name)">Hire ({{getCost(adventurer.name)}} coins)</button>
                                 </h4>
                                 <div v-bind:class="{ 'text-danger': expiringDanger(adventurer.expires), 'text-warning': expiringWarning(adventurer.expires), 'text-success': expiringSuccess(adventurer.expires) }">{{readableTime(adventurer.expires - Date.now())}} remaining</div>
@@ -136,7 +149,22 @@
                     </transition-group>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-12">
+                <h2>Release History</h2>
+                <div class="list-group">
+                    <div v-for="version in game.versions" class="list-group-item">
+                        <h3 class="list-group-item-heading">{{version.number}}</h3>
+                        <p class="list-group-item-text">{{version.description}}</p>
+                        <h4>Features</h4>
+                        <ul>
+                            <li v-for="feature in version.features">{{feature}}</li>
+                        </ul>
+                        <h4>Bug fixes</h4>
+                        <ul>
+                            <li v-for="bugfix in version.bugfixes">{{bugfix}}</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
