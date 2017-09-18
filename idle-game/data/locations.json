@@ -5,7 +5,7 @@
         "freeCoinsDescription": "Scrounge in the dirt for a coin",
         "freeCoins": 1,
         "freeCoinsTimeout": 10,
-        "contracts": ["Pickpocketing", "Rob some graves", "Mug a traveller", "Follow a dubious treasure map", "An honest days work", "Tail a mark", "Disrupt a rivals business"],
+        "contracts": ["Plunder a wishing well", "Pickpocketing", "Rob a graveyard", "Mug a traveller", "Follow a dubious treasure map", "An honest days work", "Tail a mark", "Disrupt a rivals business"],
         "adventurers": ["Drunkard", "Street rat", "Peasant"]
     },
     {
@@ -15,7 +15,7 @@
         "freeCoinsDescription": "Beg for a hand out.",
         "freeCoins": 5,
         "freeCoinsTimeout": 10,
-        "contracts": ["Rescue a farmer's daughter", "Fight some goblins", "Break and Enter", "Fight club", "Disrupt a rivals business", "An honest weeks work", "A days work for a team", "Loot a crypt"],
+        "contracts": ["Follow a suspect treasure map", "Rescue a farmer's daughter", "Fight some goblins", "Break and Enter", "Fight club", "Disrupt a rivals business", "An honest weeks work", "A days work for a team", "Loot a crypt"],
         "adventurers": ["Brawler", "Thief", "Citizen"]
     },
     {

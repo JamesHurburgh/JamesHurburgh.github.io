@@ -4,6 +4,15 @@
     "author": "James Hurburgh",
     "author-uri": "",
     "versions": [{
+        "number": "0.3",
+        "description": "",
+        "features": [
+            "Added reward factors to contracts", 
+            "Added some new contracts",
+            "Improved updating to new version",
+            "Contracts now show risk, reward and duration factors"],
+        "bugfixes": []
+    }, {
         "number": "0.2",
         "description": "Upgrades to expeditions to show more details.",
         "features": ["Show all adventurers and statuses on completed quest cards", "Running expeditions colour coding", "Progress bar on running expeditions"],

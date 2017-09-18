@@ -91,11 +91,23 @@ define(["jquery", "json!data/game.json", "json!data/contracts.json", "json!data/
                 this.location.availableContracts = savedData.location.availableContracts;
                 this.location.availableHires = savedData.location.availableHires;
 
+                if(!savedData.version){
+                    if(!this.location.availableContracts) this.location.availableContracts = [];
+                    if(!this.location.availableHires) this.location.availableHires = [];
+                    if(!this.allLocations) this.allLocations = clone(locations);
+                    if(!this.reknown) this.reknown = 0;
+                    if(!this.coins) this.coins = 0;
+                }
+                if(savedData.version == "0.2"){
+                    this.allLocations = clone(locations);
+                }
+
                 // Data
                 this.adventurers = adventurers;
                 this.contracts = contracts;
                 this.locations = locations;
                 this.game = game;
+                this.version = game.versions[0].number;
 
                 this.calculate();
             };

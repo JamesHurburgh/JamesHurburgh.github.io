@@ -11,9 +11,9 @@
     { "minimum": 100000000, "maximum": "1000000000", "name": "revered", "description": "" },
     { "minimum": 1000000000, "maximum": "10000000000", "name": "adored", "description": "" },
     { "minimum": 10000000000, "maximum": "100000000000", "name": "venerated", "description": "" },
-    { "minimum": 100000000000, "maximum": "1000000000000", "name": "idolized", "description": "" },
+    { "minimum": 100000000000, "maximum": "1000000000000", "name": "idolised", "description": "" },
     { "minimum": 1000000000000, "maximum": "10000000000000", "name": "exalted", "description": "" },
     { "minimum": 10000000000000, "maximum": "100000000000000", "name": "worshipped", "description": "" },
     { "minimum": 100000000000000, "maximum": "1000000000000000", "name": "feared", "description": "" },
-    { "minimum": 1000000000000000, "maximum": "90000000000000000", "name": "mythologized", "description": "" }
+    { "minimum": 1000000000000000, "maximum": "90000000000000000", "name": "mythologised", "description": "" }
 ]

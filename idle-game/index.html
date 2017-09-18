@@ -31,7 +31,7 @@
     <div class="container">
         <div class="row" id="AdventurersGame">
             <div class="col-md-12">
-                <h1>{{game.name}} <span class="text-muted" @click="cheat()">v{{game.versions[0].number}}</span></h1>
+                <h1>{{game.name}} <span class="text-muted" @click="cheat()">v{{version}}</span></h1>
                 <p>{{game.description}} <a href="#" @click="reset()">Reset the game</a></p>
 
             </div>
@@ -130,6 +130,9 @@
                                         {{adventurerRequirement.amount}} {{adventurerRequirement.type}} <span v-bind:class="{ 'text-danger': lessthan(getHiredCount(adventurerRequirement.type), adventurerRequirement.amount), 'text-success': !lessthan(getHiredCount(adventurerRequirement.type), adventurerRequirement.amount) }">({{getHiredCount(adventurerRequirement.type)}}/{{adventurerRequirement.amount}})</span>
                                     </div>
                                 </div>
+                                <div>Duration: {{Math.ceil(Math.sqrt(contract.duration)/42)}}/10</div>
+                                <div>Risk: {{Math.ceil(contract.risk * 10)}}/10</div>
+                                <div>Reward: {{Math.ceil(contract.rewardFactor * 10)}}/10</div>
                                 <div v-bind:class="{ 'text-danger': expiringDanger(contract.expires), 'text-warning': expiringWarning(contract.expires), 'text-success': expiringSuccess(contract.expires) }">{{readableTime(contract.expires - Date.now())}} remaining</div>
                             </div>
                         </div>
