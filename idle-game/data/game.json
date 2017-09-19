@@ -4,6 +4,7 @@
     "author": "James Hurburgh",
     "author-uri": "",
     "versions": [{
+<<<<<<< HEAD
         "number": "0.4",
         "description": "The UI update.  Put everything in places that hopefully make a little more sense.",
         "features": [
@@ -25,6 +26,15 @@
             "Improved updating to new version",
             "Contracts now show risk, reward and duration factors"
         ],
+=======
+        "number": "0.3",
+        "description": "",
+        "features": [
+            "Added reward factors to contracts", 
+            "Added some new contracts",
+            "Improved updating to new version",
+            "Contracts now show risk, reward and duration factors"],
+>>>>>>> origin/master
         "bugfixes": []
     }, {
         "number": "0.2",
