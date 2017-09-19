@@ -4,6 +4,29 @@
     "author": "James Hurburgh",
     "author-uri": "",
     "versions": [{
+        "number": "0.4",
+        "description": "The UI update.  Put everything in places that hopefully make a little more sense.",
+        "features": [
+            "UI updated with a proper nav bar and everything.",
+            "Hire all and start all contracts.",
+            "Simple options dialog",
+            "Automation tools for testing",
+            "Major layout adjustments to make the game more mobile friendly.",
+            "Added oversized quest stat indicators.",
+            "Added coin counter just above adventurers for hire."
+        ],
+        "bugfixes": []
+    }, {
+        "number": "0.3",
+        "description": "Contract improvements",
+        "features": [
+            "Added reward factors to contracts",
+            "Added some new contracts",
+            "Improved updating to new version",
+            "Contracts now show risk, reward and duration factors"
+        ],
+        "bugfixes": []
+    }, {
         "number": "0.2",
         "description": "Upgrades to expeditions to show more details.",
         "features": ["Show all adventurers and statuses on completed quest cards", "Running expeditions colour coding", "Progress bar on running expeditions"],

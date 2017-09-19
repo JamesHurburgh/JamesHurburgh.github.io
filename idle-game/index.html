@@ -28,142 +28,238 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row" id="AdventurersGame">
-            <div class="col-md-12">
-                <h1>{{game.name}} <span class="text-muted" @click="cheat()">v{{game.versions[0].number}}</span></h1>
-                <p>{{game.description}} <a href="#" @click="reset()">Reset the game</a></p>
-
-            </div>
-            <div class="col-md-4">
-                <h2>Coins and stuff</h2>
-                <div>Coins: {{coins}}</div>
-                <div>Reknown: {{reknownText()}} <span class="text-muted">({{reknown}})</span></div>
-
-                <h2>Hired Adventurers</h2>
-                <div v-for="adventurer in adventurers">
-                    <div>{{adventurer.plural}}: {{getHiredCount(adventurer.name)}}<span class="text-muted">+{{getAdventurersOnTheJob(adventurer.name)}}</span></div>
-                    <!--<button type="button" class="btn btn-primary btn-xs" @click="hire(adventurer.name)" :disabled="!canHire(adventurer.name)">Hire a {{adventurer.name}} ({{getCost(adventurer.name)}} coins)</button>-->
+    <div id="AdventurersGame">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        {{game.name}} <span class="text-muted">v{{version}}</span>
+                    </a>
                 </div>
-                <h2>Expeditions</h2>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Coins: {{coins}}</a></li>
+                        <li><a href="#">Reknown: {{reknownText()}} <span class="text-muted">({{reknown}})</span></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" data-toggle="modal" data-target="#options">Options</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" data-toggle="modal" data-target="#releaseNotes">Release Notes</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="https://jameshurburgh.github.io/about.html">About the Author</a></li>
+                                <li><a href="https://www.patreon.com/bePatron?u=6205348" target="_blank" class="btn btn-success">Become a Patron!</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-                <h3>Completed ({{completedExpeditions.length}}) <button v-if="!lessthan(completedExpeditions.length, 1)" type="button" class="btn btn-success btn-xs pull-right" @click="claimAllCompletedExpeditions()">Claim All</button></h3>
-                <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="noOutAnimation">
-                    <div v-for="expedition in completedExpeditions" key="expedition.id">
-                        <div class="well well-sm">
-                            <h4>{{expedition.contract.name}}
-                                <button v-if="expedition.success" type="button" class="btn btn-success pull-right" @click="claimReward(expedition)">
+        <!-- Modal Options Box -->
+        <div id="options" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4>Options</h4>
+                    </div>
+                    <div class="modal-body">
+                        <button @click="reset()" type="button" class="btn btn-default" data-dismiss="modal">Reset the Game</button>
+                        <button @click="toggleClaimAll()" type="button" class="btn btn-default" data-dismiss="modal">Toggle claim all buttons</button>
+                        <button @click="toggleAutomatic()" type="button" class="btn btn-default" data-dismiss="modal">Toggle automatic play</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal About Box -->
+        <div id="releaseNotes" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" @click="cheat()">Release History</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="list-group">
+                            <div v-for="version in game.versions" class="list-group-item">
+                                <h3 class="list-group-item-heading">{{version.number}}</h3>
+                                <p class="list-group-item-text">{{version.description}}</p>
+                                <h4>Features</h4>
+                                <ul>
+                                    <li v-for="feature in version.features">{{feature}}</li>
+                                </ul>
+                                <h4>Bug fixes</h4>
+                                <ul>
+                                    <li v-for="bugfix in version.bugfixes">{{bugfix}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <p>{{game.description}}</p>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="col-xs-12">
+                        <h2>
+                            {{location.name}}
+                        </h2>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <div class="col-xs-12 col-sm-8">
+                            <span>{{location.description}}</span>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="pull-right">
+                                <button type="button" class="btn btn-default" v-bind:class="{ 'btn-success': canRelocateDown(), 'btn-primary': !canRelocateDown() }" @click="relocateDown()" :disabled="!canRelocateDown()">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                    Relocate
+                                </button>
+                            </div>
+
+                            <div class="pull-right">
+                                <button type="button" class="btn btn-primary pull-right" v-bind:class="{ 'btn-success': canGetFreeCoins(), 'btn-primary': !canGetFreeCoins() }" @click="freeCoins(location)" :disabled="!canGetFreeCoins()">{{location.freeCoinsDescription}}</button>
+                            </div>
+
+                            <div class="pull-right">
+                                <button type="button" class="btn btn-default" v-bind:class="{ 'btn-success': canRelocateUp(), 'btn-primary': !canRelocateUp() }" @click="relocateUp()" :disabled="!canRelocateUp()">
+                                Relocate
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h3>Contracts ({{location.availableContracts.length}}/5) <button v-if="startAllVisible()" type="button" class="btn btn-success btn-xs pull-right" @click="startAllContracts()">Start All</button></h3>
+                        <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="noOutAnimation">
+                            <div v-for="contract in location.availableContracts" key="contract.name">
+                                <div class="well well-sm">
+                                    <h4>{{contract.name}} <button type="button" class="btn btn-sm pull-right" v-bind:class="{ 'btn-success': canSendExpedition(contract), 'btn-primary': !canSendExpedition(contract) }" @click="sendExpedition(contract)" :disabled="!canSendExpedition(contract)">Start</button>
+                                    </h4>
+                                    <div v-if="contract.contractAmount != undefined">{{contract.contractAmount}} coins</div>
+                                    <div v-if="contract.requirements != undefined">
+                                        <div v-for="adventurerRequirement in contract.requirements.adventurers">
+                                            {{adventurerRequirement.amount}} {{adventurerRequirement.type}} <span v-bind:class="{ 'text-danger': lessthan(getHiredCount(adventurerRequirement.type), adventurerRequirement.amount), 'text-success': !lessthan(getHiredCount(adventurerRequirement.type), adventurerRequirement.amount) }">({{getHiredCount(adventurerRequirement.type)}}/{{adventurerRequirement.amount}})</span>
+                                        </div>
+                                    </div>
+
+                                    <div>Duration: {{Math.ceil(Math.sqrt(contract.duration)/42)}}/10</div>
+                                    <div class="progress" style="height: 7px; margin-bottom: 0px;">
+                                        <div class="progress-bar progress-bar-info" v-bind:style="{ width: Math.ceil(Math.sqrt(contract.duration)/42)*10 + '%' }"></div>
+                                    </div>
+                                    <div>Risk: {{Math.ceil(contract.risk * 10)}}/10</div>
+                                    <div class="progress" style="height: 7px; margin-bottom: 0px;">
+                                        <div class="progress-bar progress-bar-danger" v-bind:style="{ width: Math.ceil(contract.risk * 10) * 10 + '%' }"></div>
+                                    </div>
+                                    <div>Reward: {{Math.ceil(contract.rewardFactor * 10)}}/10</div>
+                                    <div class="progress" style="height: 7px; margin-bottom: 0px;">
+                                        <div class="progress-bar progress-bar-success" v-bind:style="{ width: Math.ceil(contract.rewardFactor * 10) * 10 + '%' }"></div>
+                                    </div>
+                                    <div v-bind:class="{ 'text-danger': expiringDanger(contract.expires), 'text-warning': expiringWarning(contract.expires), 'text-success': expiringSuccess(contract.expires) }">{{readableTime(contract.expires - Date.now())}} remaining</div>
+                                </div>
+                            </div>
+                        </transition-group>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h3>Adventurers ({{location.availableHires.length}}/5) <button v-if="hireAllVisible()" type="button" class="btn btn-success btn-xs pull-right" @click="hireAll()">Hire All</button></h3>
+                        <div>Coins {{coins}}</div>
+                        <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="noOutAnimation">
+                            <div v-for="adventurer in location.availableHires" key="adventurer.name">
+                                <div class="well well-sm">
+                                    <h4>{{adventurer.name}} <button type="button" class="btn btn-sm pull-right" v-bind:class="{ 'btn-success': canHire(adventurer.name), 'btn-primary': !canHire(adventurer.name) }" @click="hire(adventurer)" :disabled="!canHire(adventurer.name)">Hire ({{getCost(adventurer.name)}} coins)</button>
+                                    </h4>
+                                    <div v-bind:class="{ 'text-danger': expiringDanger(adventurer.expires), 'text-warning': expiringWarning(adventurer.expires), 'text-success': expiringSuccess(adventurer.expires) }">{{readableTime(adventurer.expires - Date.now())}} remaining</div>
+                                </div>
+                            </div>
+                        </transition-group>
+                    </div>
+                </div>
+                <div class="col-md-4">
+
+                    <h2>Hired Adventurers</h2>
+                    <div v-for="adventurer in adventurers">
+                        <div>{{adventurer.plural}}: {{getHiredCount(adventurer.name)}}<span class="text-muted">+{{getAdventurersOnTheJob(adventurer.name)}}</span></div>
+                        <!--<button type="button" class="btn btn-primary btn-xs" @click="hire(adventurer.name)" :disabled="!canHire(adventurer.name)">Hire a {{adventurer.name}} ({{getCost(adventurer.name)}} coins)</button>-->
+                    </div>
+                    <h2>Expeditions</h2>
+
+                    <h3>Completed ({{completedExpeditions.length}}) <button v-if="claimAllVisible()" type="button" class="btn btn-success btn-xs pull-right" @click="claimAllCompletedExpeditions()">Claim All</button></h3>
+                    <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="noOutAnimation">
+                        <div v-for="expedition in completedExpeditions" key="expedition.id">
+                            <div class="well well-sm">
+                                <h4>{{expedition.contract.name}}
+                                    <button v-if="expedition.success" type="button" class="btn btn-success pull-right" @click="claimReward(expedition)">
                                     Claim!
                                     <div v-if="expedition.contract.contractAmount != undefined">{{expedition.contract.contractAmount}} coins</div>
                                     <div v-for="reward in expedition.rewards">
                                         {{reward.amount}} {{reward.type}}
                                     </div>
                                 </button>
-                                <button v-if="!expedition.success" type="button" class="btn btn-danger pull-right" @click="removeExpedition(expedition)">Darnation!</button>
-                            </h4>
-                            <div>
-                                <span>{{expedition.completionMessage}}</span>
-                                <span v-if="expedition.awol" class="text-warning">{{expedition.contract.deathMessage}}</span>
+                                    <button v-if="!expedition.success" type="button" class="btn btn-danger pull-right" @click="removeExpedition(expedition)">Darnation!</button>
+                                </h4>
+                                <div>
+                                    <span>{{expedition.completionMessage}}</span>
+                                    <span v-if="expedition.awol" class="text-warning">{{expedition.contract.deathMessage}}</span>
+                                    <ul>
+                                        <li v-for="adventurer in expedition.adventurers">
+                                            {{adventurer.type}} {{adventurer.status}}
+                                            <span v-if="adventurer.awol" class="text-danger">didn't come back</span>
+                                            <span v-if="adventurer.upgradedTo != undefined" class="text-success">has become a {{adventurer.upgradedTo}}</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </transition-group>
+
+                    <h3>Running ({{runningExpeditions.length}})</h3>
+                    <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="noOutAnimation">
+                        <div v-for="expedition in runningExpeditions" key="expedition.id">
+                            <div class="well well-sm">
+                                <h4>{{expedition.contract.name}}</h4>
                                 <ul>
                                     <li v-for="adventurer in expedition.adventurers">
-                                        {{adventurer.type}} {{adventurer.status}}
-                                        <span v-if="adventurer.awol" class="text-danger">didn't come back</span>
-                                        <span v-if="adventurer.upgradedTo != undefined" class="text-success">has become a {{adventurer.upgradedTo}}</span>
+                                        {{adventurer.type}} {{adventurer.status}} {{adventurer.awol}} {{adventurer.upgradedTo}}
                                     </li>
                                 </ul>
-                            </div>
-                        </div>
-                    </div>
-                </transition-group>
-
-                <h3>Running ({{runningExpeditions.length}})</h3>
-                <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="noOutAnimation">
-                    <div v-for="expedition in runningExpeditions" key="expedition.id">
-                        <div class="well well-sm">
-                            <h4>{{expedition.contract.name}}</h4>
-                            <ul>
-                                <li v-for="adventurer in expedition.adventurers">
-                                    {{adventurer.type}} {{adventurer.status}} {{adventurer.awol}} {{adventurer.upgradedTo}}
-                                </li>
-                            </ul>
-                            <div class="progress progress-striped active">
-                                <div class="progress-bar" v-bind:style="{ width: expeditionProgress(expedition) + '%' }"></div>
-                            </div>
-                            <div v-bind:class="{ 'text-success': expiringDanger(expedition.expires), 'text-warning': expiringWarning(expedition.expires), 'text-danger': expiringSuccess(expedition.expires) }">{{readableTime(expedition.expires - Date.now())}} remaining</div>
-                        </div>
-                    </div>
-                </transition-group>
-            </div>
-
-            <div class="col-md-8">
-                <div class="col-md-1">
-                    <button type="button" class="btn btn-default" v-bind:class="{ 'btn-success': canRelocateDown(), 'btn-primary': !canRelocateDown() }" @click="relocateDown()" :disabled="!canRelocateDown()">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </button>
-                </div>
-                <div class="col-md-10">
-                    <h2>
-                        {{location.name}}
-                        <button type="button" class="btn btn-primary pull-right" v-bind:class="{ 'btn-success': canGetFreeCoins(), 'btn-primary': !canGetFreeCoins() }" @click="freeCoins(location)" :disabled="!canGetFreeCoins()">{{location.freeCoinsDescription}}</button>
-                    </h2>
-                    <span>{{location.description}}</span>
-                </div>
-                <div>
-                    <div class="col-md-1">
-                        <button type="button" class="btn btn-default" v-bind:class="{ 'btn-success': canRelocateUp(), 'btn-primary': !canRelocateUp() }" @click="relocateUp()" :disabled="!canRelocateUp()">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                        </button>
-                        <span class="glyphicons glyphicons-chevron-left"></span>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <h3>Contracts ({{location.availableContracts.length}}/5)</h3>
-                    <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="noOutAnimation">
-                        <div v-for="contract in location.availableContracts" key="contract.name">
-                            <div class="well well-sm">
-                                <h4>{{contract.name}} <button type="button" class="btn btn-sm pull-right" v-bind:class="{ 'btn-success': canSendExpedition(contract), 'btn-primary': !canSendExpedition(contract) }" @click="sendExpedition(contract)" :disabled="!canSendExpedition(contract)">Start</button>
-                                </h4>
-                                <div v-if="contract.contractAmount != undefined">{{contract.contractAmount}} coins</div>
-                                <div v-if="contract.requirements != undefined">
-                                    <div v-for="adventurerRequirement in contract.requirements.adventurers">
-                                        {{adventurerRequirement.amount}} {{adventurerRequirement.type}} <span v-bind:class="{ 'text-danger': lessthan(getHiredCount(adventurerRequirement.type), adventurerRequirement.amount), 'text-success': !lessthan(getHiredCount(adventurerRequirement.type), adventurerRequirement.amount) }">({{getHiredCount(adventurerRequirement.type)}}/{{adventurerRequirement.amount}})</span>
-                                    </div>
+                                <div class="progress progress-striped active">
+                                    <div class="progress-bar" v-bind:style="{ width: expeditionProgress(expedition) + '%' }"></div>
                                 </div>
-                                <div v-bind:class="{ 'text-danger': expiringDanger(contract.expires), 'text-warning': expiringWarning(contract.expires), 'text-success': expiringSuccess(contract.expires) }">{{readableTime(contract.expires - Date.now())}} remaining</div>
+                                <div v-bind:class="{ 'text-success': expiringDanger(expedition.expires), 'text-warning': expiringWarning(expedition.expires), 'text-danger': expiringSuccess(expedition.expires) }">{{readableTime(expedition.expires - Date.now())}} remaining</div>
                             </div>
                         </div>
                     </transition-group>
-                </div>
-
-                <div class="col-md-6">
-                    <h3>Adventurers for hire ({{location.availableHires.length}}/5)</h3>
-                    <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="noOutAnimation">
-                        <div v-for="adventurer in location.availableHires" key="adventurer.name">
-                            <div class="well well-sm">
-                                <h4>{{adventurer.name}} <button type="button" class="btn btn-sm pull-right" v-bind:class="{ 'btn-success': canHire(adventurer.name), 'btn-primary': !canHire(adventurer.name) }" @click="hire(adventurer)" :disabled="!canHire(adventurer.name)">Hire ({{getCost(adventurer.name)}} coins)</button>
-                                </h4>
-                                <div v-bind:class="{ 'text-danger': expiringDanger(adventurer.expires), 'text-warning': expiringWarning(adventurer.expires), 'text-success': expiringSuccess(adventurer.expires) }">{{readableTime(adventurer.expires - Date.now())}} remaining</div>
-                            </div>
-                        </div>
-                    </transition-group>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <h2>Release History</h2>
-                <div class="list-group">
-                    <div v-for="version in game.versions" class="list-group-item">
-                        <h3 class="list-group-item-heading">{{version.number}}</h3>
-                        <p class="list-group-item-text">{{version.description}}</p>
-                        <h4>Features</h4>
-                        <ul>
-                            <li v-for="feature in version.features">{{feature}}</li>
-                        </ul>
-                        <h4>Bug fixes</h4>
-                        <ul>
-                            <li v-for="bugfix in version.bugfixes">{{bugfix}}</li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>

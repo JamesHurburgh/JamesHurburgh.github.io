@@ -7,6 +7,7 @@
     "upgradeChance": 0.01,
     "duration": 3500,
     "successChance": 0.05,
+    "rewardFactor" : 0.2,
     "rewards": [
         { "chance": 1, "reward": { "type": "coins", "amount": 500 } },
         { "chance": 1, "reward": { "type": "reknown", "amount": 2 } }
@@ -19,6 +20,31 @@
             { "type": "Drunkard", "amount": 1 }
         ]
     }
+},{
+    "name": "Follow a suspect treasure map",
+    "successMessage": "You are given a sack, presumably what's left of the treasure.",
+    "failureMessage": "Either the map was a fake, or someone else got there first.",
+    "deathMessage": "Unfortunately the long journey proved too much.",
+    "risk": 0.2,
+    "upgradeChance": 0.01,
+    "duration": 3500,
+    "successChance": 0.15,
+    "rewardFactor" : 0.2,
+    "rewards": [
+        { "chance": 1, "reward": { "type": "coins", "amount": 500 } },
+        { "chance": 1, "reward": { "type": "reknown", "amount": 2 } }
+    ],
+    "requirements": {
+        "reknown": 0,
+        "adventurers": [
+            { "type": "Peasant", "amount": 1 },
+            { "type": "Street rat", "amount": 1 },
+            { "type": "Drunkard", "amount": 1 },
+            { "type": "Citizen", "amount": 1 },
+            { "type": "Thief", "amount": 1 },
+            { "type": "Brawler", "amount": 1 }
+        ]
+    }
 }, {
     "name": "An honest days work",
     "successMessage": "An honest days work earns an honest days wage.",
@@ -29,6 +55,7 @@
     "duration": 500,
     "successChance": 1,
     "contractAmount": 15,
+    "rewardFactor" : 0.1,
     "rewards": [
         { "chance": 1, "reward": { "type": "reknown", "amount": 1 } }
     ],
@@ -39,7 +66,7 @@
         ]
     }
 }, {
-    "name": "Rob some graves",
+    "name": "Rob a graveyard",
     "successMessage": "The reward you get is dirty and smells faintly of death.",
     "failureMessage": "Some graves don't have any valueables.",
     "deathMessage": "It turns out people don't take kindly to looters pillage the resting place of their loved ones.",
@@ -47,6 +74,26 @@
     "upgradeChance": 0.01,
     "duration": 75,
     "successChance": 0.9,
+    "rewardFactor" : 0.1,
+    "rewards": [
+        { "chance": 1, "reward": { "type": "coins", "amount": 10 } }
+    ],
+    "requirements": {
+        "reknown": 0,
+        "adventurers": [
+            { "type": "Drunkard", "amount": 1 }
+        ]
+    }
+}, {
+    "name": "Plunder a wishing well",
+    "successMessage": "You get a few wet coins.",
+    "failureMessage": "You've probably already plundered this well.",
+    "deathMessage": "You sent a drunk to a well.  What did you think was going to happen?",
+    "risk": 0.1,
+    "upgradeChance": 0.01,
+    "duration": 15,
+    "successChance": 0.9,
+    "rewardFactor" : 0.1,
     "rewards": [
         { "chance": 1, "reward": { "type": "coins", "amount": 5 } }
     ],
@@ -65,6 +112,7 @@
     "upgradeChance": 0.03,
     "duration": 75,
     "successChance": 0.5,
+    "rewardFactor" : 0.1,
     "rewards": [
         { "chance": 1, "reward": { "type": "coins", "amount": 20 } }
     ],
@@ -84,6 +132,7 @@
     "duration": 500,
     "successChance": 0.9,
     "contractAmount": 75,
+    "rewardFactor" : 0.1,
     "rewards": [
         { "chance": 1, "reward": { "type": "reknown", "amount": 1 } }
     ],
@@ -102,6 +151,7 @@
     "upgradeChance": 0.02,
     "duration": 250,
     "successChance": 0.6,
+    "rewardFactor" : 0.2,
     "rewards": [
         { "chance": 1, "reward": { "type": "coins", "amount": 35 } }
     ],
@@ -121,6 +171,7 @@
     "duration": 350,
     "successChance": 0.8,
     "contractAmount": 750,
+    "rewardFactor" : 0.2,
     "rewards": [
         { "chance": 1, "reward": { "type": "reknown", "amount": 1 } }
     ],
@@ -131,14 +182,15 @@
         ]
     }
 }, {
-    "name": "Fight some goblins",
-    "successMessage": "Your men returned victorious bringing the goblins loot with them.",
+    "name": "Fight some filthy goblins",
+    "successMessage": "Your men returned victorious bringing the filthy goblins loot with them.",
     "failureMessage": "Your men returned beaten and bruised, nothing to show for their effort.",
-    "deathMessage": "The goblins fought back visciously.",
+    "deathMessage": "The filthy goblins fought back visciously.",
     "risk": 0.5,
     "upgradeChance": 0.02,
     "duration": 1000,
     "successChance": 0.5,
+    "rewardFactor" : 0.3,
     "rewards": [
         { "chance": 1, "reward": { "type": "coins", "amount": 1000 } },
         { "chance": 1, "reward": { "type": "reknown", "amount": 2 } }
@@ -160,6 +212,7 @@
     "upgradeChance": 0.02,
     "duration": 400,
     "successChance": 0.7,
+    "rewardFactor" : 0.2,
     "rewards": [
         { "chance": 1, "reward": { "type": "coins", "amount": 500 } },
         { "chance": 1, "reward": { "type": "reknown", "amount": 2 } }
@@ -179,6 +232,7 @@
     "upgradeChance": 0.02,
     "duration": 350,
     "successChance": 0.5,
+    "rewardFactor" : 0.2,
     "rewards": [
         { "chance": 1, "reward": { "type": "coins", "amount": 600 } }
     ],
@@ -198,6 +252,7 @@
     "duration": 3500,
     "successChance": 1,
     "contractAmount": 125,
+    "rewardFactor" : 0.2,
     "rewards": [
         { "chance": 1, "reward": { "type": "reknown", "amount": 2 } }
     ],
@@ -217,6 +272,7 @@
     "duration": 500,
     "successChance": 1,
     "contractAmount": 150,
+    "rewardFactor" : 0.2,
     "rewards": [
         { "chance": 1, "reward": { "type": "reknown", "amount": 2 } }
     ],
@@ -235,6 +291,7 @@
     "upgradeChance": 0.1,
     "duration": 200,
     "successChance": 1,
+    "rewardFactor" : 0.3,
     "rewards": [
         { "chance": 1, "reward": { "type": "coins", "amount": 1000 } },
         { "chance": 1, "reward": { "type": "reknown", "amount": 1 } }
@@ -256,6 +313,7 @@
     "duration": 1000,
     "successChance": 1,
     "contractAmount": 1000,
+    "rewardFactor" : 0.3,
     "rewards": [
         { "chance": 1, "reward": { "type": "reknown", "amount": 3 } }
     ],
