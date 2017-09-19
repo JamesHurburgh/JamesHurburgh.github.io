@@ -4,6 +4,13 @@
     "author": "James Hurburgh",
     "author-uri": "",
     "versions": [{
+        "number": "0.5",
+        "description": "Statistics!",
+        "features": [
+            "Added statistic tracking and viewing."
+        ],
+        "bugfixes": []
+    }, {
         "number": "0.4",
         "description": "The UI update.  Put everything in places that hopefully make a little more sense.",
         "features": [
