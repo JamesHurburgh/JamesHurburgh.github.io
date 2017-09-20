@@ -5,7 +5,16 @@
         "freeCoinsDescription": "Scrounge in the dirt for a coin",
         "freeCoins": 1,
         "freeCoinsTimeout": 10,
-        "contracts": ["Plunder a wishing well", "Pickpocketing", "Rob a graveyard", "Mug a traveller", "Follow a dubious treasure map", "An honest days work", "Tail a mark", "Disrupt a rivals business"],
+        "contracts": [
+            "Plunder a wishing well",
+            "Pickpocketing",
+            "Rob a graveyard",
+            "Mug a traveller",
+            "Follow a dubious treasure map",
+            "An honest days labouring",
+            "Tail a mark",
+            "Disrupt a rivals business"
+        ],
         "adventurers": ["Drunkard", "Street rat", "Peasant"]
     },
     {
@@ -15,20 +24,46 @@
         "freeCoinsDescription": "Beg for a hand out.",
         "freeCoins": 5,
         "freeCoinsTimeout": 10,
-        "contracts": ["Follow a suspect treasure map", "Rescue a farmer's daughter", "Fight some goblins", "Break and Enter", "Fight club", "Disrupt a rivals business", "An honest weeks work", "A days work for a team", "Loot a crypt"],
+        "contracts": [
+            "Follow a suspect treasure map",
+            "Rescue a farmer's daughter",
+            "Fight some goblins",
+            "Break and Enter",
+            "Fight club",
+            "Disrupt a rivals business",
+            "An honest weeks labouring",
+            "An honest weeks work",
+            "A days work for a team",
+            "A days work for a labouring team",
+            "Loot a crypt",
+            "Protection duty"
+        ],
         "adventurers": ["Brawler", "Thief", "Citizen"]
     },
     {
         "name": "Tavern",
         "description": "You've reached the pinnacle of the underworld.  Sitting at a table in the local tavern the oppressed and needy now know to come to you with their problems or 'business ventures'.",
         "reknownRequired": 1000,
-        "freeCoinsDescription": "Tend the bar for the night.",
+        "freeCoinsDescription": "Work the bar for tips.",
         "freeCoins": 10,
         "freeCoinsTimeout": 10,
-        "contracts": [],
-        "adventurers": []
+        "contracts": [
+            "Follow a treasure map",
+            "Loot a crypt",
+            "Fight some goblins",
+            "Fight some bandits",
+            "Protect farms from wild animals",
+            "An honest weeks labouring",
+            "An honest weeks work",
+            "A days work for a team",
+            "A days work for a labouring team",
+            "Rescue a farmer's daughter",
+            "Protection duty"
+        ],
+        "adventurers": ["Fighter", "Cleric", "Mage"]
     },
     {
+        "disable": true,
         "name": "Adventurer's Guild",
         "description": "",
         "reknownRequired": 100000,
@@ -39,6 +74,7 @@
         "adventurers": []
     },
     {
+        "disable": true,
         "name": "Mayor's Office",
         "description": "",
         "reknownRequired": 1000000,
@@ -49,6 +85,7 @@
         "adventurers": []
     },
     {
+        "disable": true,
         "name": "Royal Antechamber",
         "description": "",
         "reknownRequired": 100000000,
@@ -59,6 +96,7 @@
         "adventurers": []
     },
     {
+        "disable": true,
         "name": "Throne Room",
         "description": "",
         "reknownRequired": 10000000000,

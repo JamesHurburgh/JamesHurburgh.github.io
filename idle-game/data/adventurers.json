@@ -25,7 +25,7 @@
 }, {
     "name": "Brawler",
     "plural": "Brawlers",
-    "becomes": [],
+    "becomes": ["Fighter"],
     "cpt": 0,
     "baseCost": 400,
     "costMultiplier": 5,
@@ -41,9 +41,33 @@
 }, {
     "name": "Citizen",
     "plural": "Citizen",
-    "becomes": [],
+    "becomes": ["Cleric", "Mage"],
     "cpt": 0,
     "baseCost": 100,
+    "costMultiplier": 5,
+    "costExponent": 1.05
+}, {
+    "name": "Fighter",
+    "plural": "Fighters",
+    "becomes": [],
+    "cpt": 0,
+    "baseCost": 1400,
+    "costMultiplier": 5,
+    "costExponent": 1.05
+}, {
+    "name": "Cleric",
+    "plural": "Clerics",
+    "becomes": [],
+    "cpt": 0,
+    "baseCost": 2100,
+    "costMultiplier": 5,
+    "costExponent": 1.05
+}, {
+    "name": "Mage",
+    "plural": "Mages",
+    "becomes": [],
+    "cpt": 0,
+    "baseCost": 3150,
     "costMultiplier": 5,
     "costExponent": 1.05
 }]

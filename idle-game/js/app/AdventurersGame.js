@@ -1,7 +1,23 @@
 /*jshint esversion: 6 */
 
-define(["jquery", "json!data/game.json", "json!data/contracts.json", "json!data/locations.json", "json!data/adventurers.json", "json!data/reknown.json"],
-    function AdventurersGame(jquery, game, contracts, locations, adventurers, reknown) {
+define(["jquery",
+        "alertify",
+        "json!data/game.json",
+        "json!data/contracts.json",
+        "json!data/locations.json",
+        "json!data/adventurers.json",
+        "json!data/reknown.json",
+        "json!data/achievements.json"
+    ],
+    function AdventurersGame(
+        jquery,
+        alertify,
+        game,
+        contracts,
+        locations,
+        adventurers,
+        reknown,
+        achievements) {
 
         function uuidv4() {
             return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
@@ -49,7 +65,7 @@ define(["jquery", "json!data/game.json", "json!data/contracts.json", "json!data/
                     "automatic": false
                 };
 
-                // Initilise stats
+                // Initialise stats
                 if (!this.stats) {
                     this.stats = [];
                 } else {
@@ -57,11 +73,13 @@ define(["jquery", "json!data/game.json", "json!data/contracts.json", "json!data/
                         this.stats[i].current = 0;
                     }
                 }
+                this.claimedAchievements = [];
 
                 // Data
                 this.adventurers = adventurers;
                 this.contracts = contracts;
                 this.locations = locations;
+                this.achievements = achievements;
                 this.game = game;
 
                 this.calculate();
@@ -85,6 +103,8 @@ define(["jquery", "json!data/game.json", "json!data/contracts.json", "json!data/
                 if (this.location.availableHires.length < maxAvailableHires && Math.random() > 0.75) {
                     this.addAvailableHire();
                 }
+
+                this.checkAndClaimAllAchievements();
             };
 
             this.loadFromSavedData = function(savedData) {
@@ -101,13 +121,13 @@ define(["jquery", "json!data/game.json", "json!data/contracts.json", "json!data/
 
                 this.allLocations = savedData.allLocations;
                 this.location = savedData.location;
-
                 this.location.availableContracts = savedData.location.availableContracts;
                 this.location.availableHires = savedData.location.availableHires;
 
                 this.options = savedData.options;
 
                 this.stats = savedData.stats;
+                this.claimedAchievements = savedData.claimedAchievements;
 
                 switch (savedData.version) {
                     default: if (!this.location.availableContracts) this.location.availableContracts = [];
@@ -126,6 +146,9 @@ define(["jquery", "json!data/game.json", "json!data/contracts.json", "json!data/
                     case "0.4":
                             this.stats = [];
                     case "0.5":
+                            this.claimedAchievements = [];
+                    case "0.6":
+                            case "0.7":
                 }
 
                 if (!this.options) {
@@ -139,10 +162,65 @@ define(["jquery", "json!data/game.json", "json!data/contracts.json", "json!data/
                 this.adventurers = adventurers;
                 this.contracts = contracts;
                 this.locations = locations;
+                this.achievements = achievements;
                 this.game = game;
                 this.version = game.versions[0].number;
 
+                for (var i = 0; i < this.allLocations.length; i++) {
+                    this.allLocations[i].contracts = this.locations[i].contracts;
+                    this.allLocations[i].adventurers = this.locations[i].adventurers;
+                }
+
                 this.calculate();
+            };
+
+            // Achievements
+            this.hasAchievement = function(achievement) {
+                return this.claimedAchievements.filter(claimedAchievement => claimedAchievement.name == achievement.name).length > 0;
+            };
+
+            this.claimAchievement = function(achievement) {
+                if (!this.hasAchievement(achievement.name)) {
+                    this.claimedAchievements.push({ "name": achievement.name, "timeClaimed": Date.now() });
+                    alertify.success("Got achievement:" + achievement.name + " (" + achievement.description + ")");
+                }
+            };
+
+            this.canClaimAchievement = function(achievement) {
+                if (this.hasAchievement(achievement)) {
+                    return false;
+                }
+                switch (achievement.trigger.type) {
+                    case "statistic":
+                        var stat = this.getStat(achievement.trigger.statistic);
+                        return stat && stat.current > achievement.trigger.statisticamount;
+                }
+            };
+
+            this.checkAndClaimAchievement = function(achievement) {
+                if (this.canClaimAchievement(achievement)) {
+                    this.claimAchievement(achievement);
+                }
+            };
+
+            this.checkAndClaimAllAchievements = function() {
+                for (var i = 0; i < achievements.length; i++) {
+                    this.checkAndClaimAchievement(achievements[i]);
+                }
+            };
+
+            this.achievementProgress = function(achievement) {
+                if (this.hasAchievement(achievement)) {
+                    return 100;
+                }
+                switch (achievement.trigger.type) {
+                    case "statistic":
+                        var stat = this.getStat(achievement.trigger.statistic);
+                        if (stat) {
+                            return (stat.current / achievement.trigger.statisticamount) * 100;
+                        }
+                }
+                return 0;
             };
 
             // Stats
@@ -150,9 +228,13 @@ define(["jquery", "json!data/game.json", "json!data/contracts.json", "json!data/
                 return (action + "-" + subject).toLowerCase().replace(/ /g, "_");
             };
 
+            this.getStat = function(name) {
+                return this.stats.filter(stat => stat.name == name)[0];
+            };
+
             this.trackStat = function(action, subject, amount) {
                 var name = this.getStatName(action, subject);
-                stat = this.stats.filter(stat => stat.name == name)[0];
+                stat = this.getStat(name);
                 if (!stat) {
                     this.stats.push({ name: name, current: amount, allTime: amount });
                 } else {
@@ -219,7 +301,7 @@ define(["jquery", "json!data/game.json", "json!data/contracts.json", "json!data/
 
             this.canRelocateUp = function() {
                 // This is the hard limit for now.
-                if (this.currentLocationIndex() == 1) {
+                if (this.location.disabled !== undefined && this.location.disabled) {
                     return false;
                 }
                 if (this.currentLocationIndex() == this.allLocations.length - 1) {
@@ -465,10 +547,15 @@ define(["jquery", "json!data/game.json", "json!data/contracts.json", "json!data/
                         if (Math.random() < contract.risk) { // Then someone 'died'
                             expedition.adventurers[i].awol = true;
                             expedition.awol = true;
+                            this.trackStat("death", "adventurer", 1);
+                            this.trackStat("death-adventurer", adventurerType, 1);
                         } else if (upgrade && Math.random() < contract.upgradeChance) { // Then someone 'upgraded'
                             expedition.adventurers[i].upgradedTo = upgrade;
                             this.hired[upgrade]++;
                             survived++;
+                            this.trackStat("upgrade", "adventurer", 1);
+                            this.trackStat("upgrade-adventurer", adventurerType, 1);
+                            this.trackStat("upgrade-adventurer-to", upgrade, 1);
                         } else {
                             this.hired[adventurerType]++;
                             survived++;
@@ -606,7 +693,7 @@ define(["jquery", "json!data/game.json", "json!data/contracts.json", "json!data/
                         for (var j = 0; j < location.availableContracts.length; j++) {
                             if (location.availableContracts[j].expires <= Date.now()) {
                                 this.trackStat("miss", "contract", 1);
-                                this.trackStat("miss-contract", this.location.availableContracts[j].name, 1);
+                                this.trackStat("miss-contract", location.availableContracts[j].name, 1);
                                 location.availableContracts.splice(j, 1);
 
                             }
@@ -618,7 +705,7 @@ define(["jquery", "json!data/game.json", "json!data/contracts.json", "json!data/
                         for (var k = 0; k < location.availableHires.length; k++) {
                             if (location.availableHires[k].expires <= Date.now()) {
                                 this.trackStat("miss", "adventurer", 1);
-                                this.trackStat("miss-adventurer", this.location.availableHires[k].name, 1);
+                                this.trackStat("miss-adventurer", location.availableHires[k].name, 1);
                                 location.availableHires.splice(k, 1);
                             }
                         }

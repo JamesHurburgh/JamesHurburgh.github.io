@@ -1,0 +1,154 @@
+[{
+    "name": "Clink",
+    "description": "Collect 100 coins",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "get-coins",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "Grand Achievement",
+    "description": "Collect 1,000 coins",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "get-coins",
+        "statisticamount": "1000"
+    }
+}, {
+    "name": "Millifecent",
+    "description": "Collect 1,000,000 coins",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "get-coins",
+        "statisticamount": "1000000"
+    }
+}, {
+    "name": "Moving out",
+    "description": "Get access to the Street Corner",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "get-reknown",
+        "statisticamount": "10"
+    }
+}, {
+    "name": "Moving in",
+    "description": "Get access to the Tavern.",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "get-reknown",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "Moving on",
+    "description": "Get access to the Adventure's Guild",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "get-reknown",
+        "statisticamount": "1000"
+    }
+}, {
+    "name": "Moving up",
+    "description": "Get access to the Mayor's Office",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "get-reknown",
+        "statisticamount": "10000"
+    }
+}, {
+    "name": "Employment agency",
+    "description": "Hire a lot of adventurers",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "hire-adventurer",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "Alcoholics anonymus",
+    "description": "Hire a lot of drunkards",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "hire-adventurer-drunkard",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "Rat catcher",
+    "description": "Hire a lot of Street rats",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "hire-adventurer-street_rat",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "Plethora of Peasants",
+    "description": "Hire a lot of Peasants",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "hire-adventurer-peasant",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "Good ole fashioned punch up",
+    "description": "Hire a lot of Brawlers",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "hire-adventurer-brawler",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "What a steal!",
+    "description": "Hire a lot of Thieves",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "hire-adventurer-thief",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "Town meeting",
+    "description": "Hire a lot of Citizens",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "hire-adventurer-citizen",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "Small army",
+    "description": "Hire a lot of Fighters",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "hire-adventurer-fighter",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "Heal do",
+    "description": "Hire a lot of Clerics",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "hire-adventurer-cleric",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "Magic circle",
+    "description": "Hire a lot of Mages",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "hire-adventurer-mage",
+        "statisticamount": "100"
+    }
+}]

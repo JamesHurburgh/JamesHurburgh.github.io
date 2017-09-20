@@ -4,6 +4,24 @@
     "author": "James Hurburgh",
     "author-uri": "",
     "versions": [{
+        "number": "0.7",
+        "description": "The Tavern update",
+        "features": [
+            "Added more adventurers for the tavern.",
+            "Added more contracts for the tavern.",
+            "Updated hired adventurers to a table for readability.",
+            "Achievement message is more interesting."
+        ],
+        "bugfixes": []
+    }, {
+        "number": "0.6",
+        "description": "Achievements!",
+        "features": [
+            "Added achievement viewing.",
+            "Added footer and moved coins and reknown there."
+        ],
+        "bugfixes": []
+    }, {
         "number": "0.5",
         "description": "Statistics!",
         "features": [
