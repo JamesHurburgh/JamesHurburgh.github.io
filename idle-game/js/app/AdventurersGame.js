@@ -19,6 +19,9 @@ define(["jquery",
         reknown,
         achievements) {
 
+        // alertify.parent(document.getElementById("container"));
+        alertify.logPosition("top left");
+
         function uuidv4() {
             return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
                 (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
@@ -62,7 +65,11 @@ define(["jquery",
                 // Initilise options
                 this.options = {
                     "claimAllButtons": false,
-                    "automatic": false
+                    "automaticHire": false,
+                    "automaticClaim": false,
+                    "automaticSend": false,
+                    "automaticRelocate": false,
+                    "automaticFreeCoins": false
                 };
 
                 // Initialise stats
@@ -92,19 +99,26 @@ define(["jquery",
                 // Autosave
                 this.autoSave();
 
+                this.addNewContracts();
+                this.addNewAdverturersForHire();
+
+                this.checkAndClaimAllAchievements();
+            };
+
+            this.addNewContracts = function() {
                 // New contracts
                 var maxContracts = 5;
                 if (this.location.availableContracts.length < maxContracts && Math.random() > 0.85) {
                     this.addContract();
                 }
+            };
 
-                var maxAvailableHires = 5;
+            this.addNewAdverturersForHire = function() {
                 // New hires
+                var maxAvailableHires = 5;
                 if (this.location.availableHires.length < maxAvailableHires && Math.random() > 0.75) {
                     this.addAvailableHire();
                 }
-
-                this.checkAndClaimAllAchievements();
             };
 
             this.loadFromSavedData = function(savedData) {
@@ -136,26 +150,34 @@ define(["jquery",
                     if (!this.reknown) this.reknown = 0;
                     if (!this.coins) this.coins = 0;
                     case "0.2":
-                        // reset locations
-                            this.allLocations = clone(locations);
-                    case "0.3":
-                            this.options = {
-                            "claimAllButtons": false,
-                            "automatic": false
-                        };
-                    case "0.4":
+                            case "0.3":
+                            case "0.4":
                             this.stats = [];
                     case "0.5":
                             this.claimedAchievements = [];
                     case "0.6":
                             case "0.7":
+                            if (this.options !== undefined && this.options.automatic !== undefined) {
+                                {
+                                    this.automaticHire = this.options.automatic;
+                                    this.automaticClaim = this.options.automatic;
+                                    this.automaticSend = this.options.automatic;
+                                    this.automaticRelocate = this.options.automatic;
+                                    this.automaticFreeCoins = this.options.automatic;
+                                }
+                            }
+                        alertify.alert("New version!  Check the release notes.");
+                    case "0.8":
                 }
 
                 if (!this.options) {
-
                     this.options = {
                         "claimAllButtons": false,
-                        "automatic": false
+                        "automaticHire": false,
+                        "automaticClaim": false,
+                        "automaticSend": false,
+                        "automaticRelocate": false,
+                        "automaticFreeCoins": false
                     };
                 }
                 // Data
@@ -182,7 +204,9 @@ define(["jquery",
             this.claimAchievement = function(achievement) {
                 if (!this.hasAchievement(achievement.name)) {
                     this.claimedAchievements.push({ "name": achievement.name, "timeClaimed": Date.now() });
-                    alertify.success("Got achievement:" + achievement.name + " (" + achievement.description + ")");
+                    alertify
+                        .closeLogOnClick(true)
+                        .success("Got achievement:" + achievement.name + " (" + achievement.description + ")");
                 }
             };
 
@@ -243,6 +267,13 @@ define(["jquery",
                 }
             };
 
+            this.filteredStats = function(filter) {
+                if (!filter) {
+                    return this.stats;
+                }
+                return this.stats.filter(stat => stat.name.indexOf(filter) !== -1);
+            };
+
             // Options
             this.cheat = function() {
                 console.log("cheat");
@@ -295,7 +326,6 @@ define(["jquery",
                     if (!this.location.availableHires) this.location.availableHires = [];
                     this.expireAllExpired();
                     this.trackStat("relocate-to", this.location.name, 1);
-                    this.calculate();
                 }
             };
 
@@ -318,7 +348,6 @@ define(["jquery",
                     if (!this.location.availableHires) this.location.availableHires = [];
                     this.expireAllExpired();
                     this.trackStat("relocate-to", this.location.name, 1);
-                    this.calculate();
                 }
             };
 
@@ -339,11 +368,20 @@ define(["jquery",
                 this.trackStat("spend", "coins", coins);
             };
 
+            // Adventurers
+
+            this.hiredAdventurers = function() {
+                return adventurers.filter(hireable => this.totalAdventurers(hireable) > 0);
+            };
+
+            this.totalAdventurers = function(adventurer) {
+                return this.getHiredCount(adventurer.name) + this.getAdventurersOnTheJob(adventurer.name);
+            };
+
             this.canHire = function(name) {
                 return this.coins >= this.getCost(name);
             };
 
-            // Adventurers
             this.getHireable = function(name) {
                 return adventurers.filter(hireable => hireable.name == name)[0];
             };
@@ -391,9 +429,9 @@ define(["jquery",
                 this.hired[name] = this.hired[name] - amount;
                 this.trackStat("send-adventurer", name, amount);
                 this.trackStat("send", "adventurers", amount);
-                this.calculate();
             };
 
+            // Contracts
             this.addContract = function() {
                 var locationContracts = contracts.filter(contract => this.location.contracts.indexOf(contract.name) >= 0);
                 var contract = clone(locationContracts[Math.floor(locationContracts.length * Math.random())]);
@@ -611,7 +649,6 @@ define(["jquery",
 
                 this.trackStat("hire", "adventurer", 1);
                 this.trackStat("hire-adventurer", hireable.name, 1);
-                this.calculate();
             };
 
             this.readableTime = function(milliseconds) {
@@ -726,15 +763,23 @@ define(["jquery",
                 if (this.calculateCounter > 10) {
                     this.calculate();
 
-                    if (this.options.automatic) {
+                    if (this.options.automaticRelocate) {
                         if (this.canRelocateUp()) {
                             this.relocateUp();
                         }
+                    }
+                    if (this.options.automaticFreeCoins) {
                         if (this.canGetFreeCoins()) {
                             this.freeCoins(this.location);
                         }
+                    }
+                    if (this.options.automaticClaim) {
                         this.claimAllCompletedExpeditions();
+                    }
+                    if (this.options.automaticHire) {
                         this.hireAll();
+                    }
+                    if (this.options.automaticSend) {
                         this.startAllContracts();
                     }
                 }

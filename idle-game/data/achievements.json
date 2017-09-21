@@ -17,6 +17,33 @@
         "statisticamount": "1000"
     }
 }, {
+    "name": "Buckets of coins",
+    "description": "Collect 10,000 coins",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "get-coins",
+        "statisticamount": "10,000"
+    }
+}, {
+    "name": "Cart loads of coins",
+    "description": "Collect 10,000 coins",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "get-coins",
+        "statisticamount": "10,000"
+    }
+}, {
+    "name": "Treasury o' coins",
+    "description": "Collect 100,000 coins",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "get-coins",
+        "statisticamount": "100,000"
+    }
+}, {
     "name": "Millifecent",
     "description": "Collect 1,000,000 coins",
     "icon": "achievement.png",
@@ -41,7 +68,7 @@
     "trigger": {
         "type": "statistic",
         "statistic": "get-reknown",
-        "statisticamount": "100"
+        "statisticamount": "1000"
     }
 }, {
     "name": "Moving on",
@@ -50,7 +77,7 @@
     "trigger": {
         "type": "statistic",
         "statistic": "get-reknown",
-        "statisticamount": "1000"
+        "statisticamount": "100000"
     }
 }, {
     "name": "Moving up",
@@ -59,7 +86,25 @@
     "trigger": {
         "type": "statistic",
         "statistic": "get-reknown",
-        "statisticamount": "10000"
+        "statisticamount": "1000000"
+    }
+}, {
+    "name": "Moving up",
+    "description": "Get access to the Royal Antechamber",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "get-reknown",
+        "statisticamount": "100000000"
+    }
+}, {
+    "name": "Moving up",
+    "description": "Get access to the Throne Room",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "get-reknown",
+        "statisticamount": "10000000000"
     }
 }, {
     "name": "Employment agency",
