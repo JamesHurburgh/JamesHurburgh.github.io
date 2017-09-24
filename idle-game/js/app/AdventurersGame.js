@@ -144,44 +144,16 @@ define(["jquery",
                 this.location.availableHires = savedData.location.availableHires;
 
                 this.options = savedData.options;
-
-                this.stats = savedData.stats;
-                this.claimedAchievements = savedData.claimedAchievements;
-
-
-                this.ownedItems = savedData.ownedItems;
-                this.messages = savedData.messages;
-
-                switch (savedData.version) {
-                    default: if (!this.location.availableContracts) this.location.availableContracts = [];
-                    if (!this.location.availableHires) this.location.availableHires = [];
-                    if (!this.allLocations) this.allLocations = clone(locations);
-                    if (!this.reknown) this.reknown = 0;
-                    if (!this.coins) this.coins = 0;
-                    case "0.2":
-                            case "0.3":
-                            case "0.4":
-                            this.stats = [];
-                    case "0.5":
-                            this.claimedAchievements = [];
-                    case "0.6":
-                            case "0.7":
-                            if (this.options !== undefined && this.options.automatic !== undefined) {
-                                {
-                                    this.automaticHire = this.options.automatic;
-                                    this.automaticClaim = this.options.automatic;
-                                    this.automaticSend = this.options.automatic;
-                                    this.automaticRelocate = this.options.automatic;
-                                    this.automaticFreeCoins = this.options.automatic;
-                                }
-                            }
-                    case "0.8":
-                            this.ownedItems = [];
-                        this.messages = [];
-                    case "0.9":
+                if (this.options !== undefined && this.options.automatic !== undefined) {
+                    {
+                        this.automaticHire = this.options.automatic;
+                        this.automaticClaim = this.options.automatic;
+                        this.automaticSend = this.options.automatic;
+                        this.automaticRelocate = this.options.automatic;
+                        this.automaticFreeCoins = this.options.automatic;
+                    }
                 }
-
-                if (!this.options) {
+                if (this.options === undefined) {
                     this.options = {
                         "claimAllButtons": false,
                         "automaticHire": false,
@@ -190,6 +162,31 @@ define(["jquery",
                         "automaticRelocate": false,
                         "automaticFreeCoins": false
                     };
+                }
+
+                this.stats = savedData.stats;
+                if (this.stats === undefined) {
+                    this.stats = [];
+                }
+                this.claimedAchievements = savedData.claimedAchievements;
+                if (this.claimedAchievements === undefined) {
+                    this.claimedAchievements = [];
+                }
+                this.ownedItems = savedData.ownedItems;
+                if (this.ownedItems === undefined) {
+                    this.ownedItems = [];
+                }
+                this.messages = savedData.messages;
+                if (this.messages === undefined) {
+                    this.messages = [];
+                }
+
+                if (savedData.version === undefined) {
+                    if (!this.location.availableContracts) this.location.availableContracts = [];
+                    if (!this.location.availableHires) this.location.availableHires = [];
+                    if (!this.allLocations) this.allLocations = clone(locations);
+                    if (!this.reknown) this.reknown = 0;
+                    if (!this.coins) this.coins = 0;
                 }
 
                 this.version = game.versions[0].number;
@@ -417,7 +414,26 @@ define(["jquery",
                 if (itemDefinition === undefined) {
                     return { "name": itemType, "value": this.varyAmount(value) };
                 }
-                return { "name": itemDefinition.displayName, "usage": itemDefinition.usage };
+                // Check for subsets first
+                if (itemDefinition.subsets !== undefined) {
+                    var subset = itemDefinition.subsets[Math.floor(Math.random() * itemDefinition.subsets.length)];
+                    return this.generateItem(subset, value);
+                }
+
+                var item = { "name": itemDefinition.displayName, "usage": itemDefinition.usage, "value": itemDefinition.baseValue };
+
+                if (itemDefinition.prefixesList !== undefined) {
+                    for (var i = 0; i < itemDefinition.prefixesList.length; i++) {
+                        var prefix = itemDefinition.prefixesList[i][Math.floor(Math.random() * itemDefinition.prefixesList[i].length + 1)];
+                        if (prefix !== undefined) {
+                            item.name = prefix.prefix + " " + item.name;
+                            item.value *= prefix.valueModifier;
+                        }
+                    }
+                }
+                item.value = Math.floor(item.value);
+
+                return item;
             };
 
             this.giveItem = function(item) {

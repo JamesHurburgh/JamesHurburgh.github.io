@@ -4,6 +4,11 @@
     "author": "James Hurburgh",
     "author-uri": "",
     "versions": [{
+        "number": "0.9.2",
+        "description": "Improved item reward generation",
+        "features": ["Improved item reward generation"],
+        "bugfixes": []
+    }, {
         "number": "0.9.1",
         "description": "Loot bugfix",
         "features": [],
