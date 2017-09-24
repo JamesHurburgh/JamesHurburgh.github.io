@@ -3,6 +3,7 @@
 define(["jquery",
         "alertify",
         "json!data/game.json",
+        "json!data/items.json",
         "json!data/contracts.json",
         "json!data/locations.json",
         "json!data/adventurers.json",
@@ -13,14 +14,12 @@ define(["jquery",
         jquery,
         alertify,
         game,
+        items,
         contracts,
         locations,
         adventurers,
         reknown,
         achievements) {
-
-        // alertify.parent(document.getElementById("container"));
-        alertify.logPosition("top left");
 
         function uuidv4() {
             return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
@@ -82,11 +81,17 @@ define(["jquery",
                 }
                 this.claimedAchievements = [];
 
+                this.ownedItems = [];
+                this.messages = [];
+
+                this.version = game.versions[0].number;
+
                 // Data
                 this.adventurers = adventurers;
                 this.contracts = contracts;
                 this.locations = locations;
                 this.achievements = achievements;
+                this.items = items;
                 this.game = game;
 
                 this.calculate();
@@ -143,6 +148,10 @@ define(["jquery",
                 this.stats = savedData.stats;
                 this.claimedAchievements = savedData.claimedAchievements;
 
+
+                this.ownedItems = savedData.ownedItems;
+                this.messages = savedData.messages;
+
                 switch (savedData.version) {
                     default: if (!this.location.availableContracts) this.location.availableContracts = [];
                     if (!this.location.availableHires) this.location.availableHires = [];
@@ -166,8 +175,10 @@ define(["jquery",
                                     this.automaticFreeCoins = this.options.automatic;
                                 }
                             }
-                        alertify.alert("New version!  Check the release notes.");
                     case "0.8":
+                            this.ownedItems = [];
+                        this.messages = [];
+                    case "0.9":
                 }
 
                 if (!this.options) {
@@ -180,13 +191,22 @@ define(["jquery",
                         "automaticFreeCoins": false
                     };
                 }
+
+                this.version = game.versions[0].number;
+                if (savedData.version != this.version) {
+                    var releaseNotesButton = '<button class="btn btn-info" data-toggle="modal" data-target="#releaseNotes">Release Notes</button>';
+                    var versionUpdateMessage = "Version updated from " + savedData.version + " to " + this.version + ". Check the " + releaseNotesButton + ".";
+                    alertify.delay(10000);
+                    alertify.alert("<h2>Version update!</h2><p class='text-info'>" + versionUpdateMessage + "</p>");
+                }
+
                 // Data
                 this.adventurers = adventurers;
                 this.contracts = contracts;
                 this.locations = locations;
                 this.achievements = achievements;
                 this.game = game;
-                this.version = game.versions[0].number;
+                this.items = items;
 
                 for (var i = 0; i < this.allLocations.length; i++) {
                     this.allLocations[i].contracts = this.locations[i].contracts;
@@ -204,9 +224,7 @@ define(["jquery",
             this.claimAchievement = function(achievement) {
                 if (!this.hasAchievement(achievement.name)) {
                     this.claimedAchievements.push({ "name": achievement.name, "timeClaimed": Date.now() });
-                    alertify
-                        .closeLogOnClick(true)
-                        .success("Got achievement:" + achievement.name + " (" + achievement.description + ")");
+                    this.message("Got achievement:" + achievement.name + " (" + achievement.description + ")");
                 }
             };
 
@@ -271,7 +289,7 @@ define(["jquery",
                 if (!filter) {
                     return this.stats;
                 }
-                return this.stats.filter(stat => stat.name.indexOf(filter) !== -1);
+                return this.stats.filter(stat => stat.name.indexOf(filter.toLowerCase()) !== -1);
             };
 
             // Options
@@ -308,6 +326,104 @@ define(["jquery",
             // Reknown
             this.reknownText = function() {
                 return reknown.filter(r => r.minimum <= this.reknown && r.maximum > this.reknown)[0].name;
+            };
+
+            // Messages
+            this.recentMessages = function() {
+                return this.messages.filter(message => message.time + 60000 > Date.now());
+            };
+
+            this.message = function(message) {
+                alertify.alert(message);
+                this.messages.unshift({ "id": uuidv4, "message": message, "time": Date.now() });
+            };
+
+            this.dismissMessage = function(message) {
+                this.messages.splice(this.messages.indexOf(message), 1);
+            };
+
+            // Effect
+            this.getCurrentEffect = function() {
+
+            };
+
+            // Items
+            this.itemFunctions = [];
+            this.itemFunctions["use-mysterious-scroll"] = function(game) {
+                switch (Math.floor(Math.random() * 2)) {
+                    case 0:
+                        //alertify.alert("You read a mysterious scroll.  It doesn't make sense to you.");
+                        game.message("You read a mysterious scroll.  It doesn't make sense to you.");
+                        break;
+                    case 1:
+                        game.message("You read a mysterious scroll.  Suddenly your purse seems heavier.");
+                        game.giveCoins(1000);
+                        break;
+                    case 2:
+                        game.message("You read a mysterious scroll.  Suddenly every seems to have a job for you.");
+                        //this.currentEffects.push({"name": "Contract chance", "variable" : "contractChance", 1, "expires": Date.now() + 60000});
+                }
+            };
+
+            this.canSell = function(item) {
+                return item.value !== undefined && item.value > 0;
+            };
+
+            this.sellItem = function(item) {
+                if (!this.canSell(item)) {
+                    return;
+                }
+                this.trackStat("sell", "item", 1);
+                this.trackStat("sell-item", item.name, 1);
+                this.giveCoins(item.value);
+                this.removeItem(item);
+
+            };
+
+            this.canUse = function(item) {
+                if (item.usage !== undefined) {
+                    return true;
+                }
+            };
+
+            this.removeItem = function(item) {
+                this.ownedItems.splice(this.ownedItems.indexOf(item), 1);
+            };
+
+            this.useItem = function(item) {
+                if (!this.canUse(item)) {
+                    return;
+                }
+
+                var usageFunction = this.itemFunctions[item.usage];
+                if (!usageFunction) {
+                    return;
+                }
+
+                usageFunction(this._data);
+                this.removeItem(item);
+            };
+
+            this.generateRewardItem = function(reward) {
+                return this.generateItem(reward.itemType, reward.value);
+            };
+
+            this.getItemDefinition = function(itemType) {
+                return this.items.filter(item => item.type = itemType)[0];
+            };
+
+            this.generateItem = function(itemType, value) {
+                var itemDefinition = this.getItemDefinition(itemType);
+                if (itemDefinition === undefined) {
+                    return { "name": itemType, "value": this.varyAmount(value) };
+                }
+                return { "name": itemDefinition.displayName, "usage": itemDefinition.usage };
+            };
+
+            this.giveItem = function(item) {
+                this.ownedItems.push(item);
+                this.trackStat("collect", "item", 1);
+                this.trackStat("collect-item", item.name, 1);
             };
 
             // Locations
@@ -480,13 +596,16 @@ define(["jquery",
                 this.reknown += amount;
             };
 
-            this.giveReward = function(type, amount) {
-                switch (type) {
+            this.giveReward = function(reward) {
+                switch (reward.type) {
                     case "coins":
-                        this.giveCoins(amount);
+                        this.giveCoins(reward.amount);
                         break;
                     case "reknown":
-                        this.giveReknown(amount);
+                        this.giveReknown(reward.amount);
+                        break;
+                    case "item":
+                        this.giveItem(reward.item);
                         break;
                     default:
                         this.hired[type] += amount;
@@ -499,7 +618,7 @@ define(["jquery",
                     this.giveCoins(expedition.contract.contractAmount);
                 }
                 for (var i = 0; i < expedition.rewards.length; i++) {
-                    this.giveReward(expedition.rewards[i].type, expedition.rewards[i].amount);
+                    this.giveReward(expedition.rewards[i]);
                 }
                 this.removeExpedition(expedition);
             };
@@ -608,14 +727,17 @@ define(["jquery",
                     expedition.completionMessage = contract.successMessage;
 
                     expedition.rewards = [];
-                    for (var i = 0; i < contract.rewards.length; i++) {
-                        var chance = contract.rewards[i].chance;
+                    for (var j = 0; j < contract.rewards.length; j++) {
+                        var chance = contract.rewards[j].chance;
                         if (Math.random() < chance) {
-                            var variation = Math.random() + 0.5;
-                            var reward = contract.rewards[i].reward;
-                            var rewardAmount = Math.floor(reward.amount * variation);
-                            if (rewardAmount > 0) {
-                                expedition.rewards.push({ "type": reward.type, "amount": rewardAmount });
+                            var reward = contract.rewards[j].reward;
+                            if (reward.type == "item") {
+                                expedition.rewards.push({ "type": reward.type, "item": this.generateRewardItem(reward) });
+                            } else {
+                                var rewardAmount = this.varyAmount(reward.amount);
+                                if (rewardAmount > 0) {
+                                    expedition.rewards.push({ "type": reward.type, "amount": rewardAmount });
+                                }
                             }
                         }
                     }
@@ -630,6 +752,10 @@ define(["jquery",
                 this.completedExpeditions.push(expedition);
             };
 
+            this.varyAmount = function(amount) {
+                return Math.floor(amount * (Math.random() + 0.5));
+            };
+
             this.getCost = function(name) {
                 var hiredCount = this.getHiredCount(name);
                 var hireable = this.getHireable(name);
@@ -641,8 +767,9 @@ define(["jquery",
                     return;
                 }
                 var hiredCount = this.getHiredCount(hireable.name);
-
-                this.spendCoins(this.getCost(hireable.name));
+                var cost = this.getCost(hireable.name);
+                this.spendCoins(cost);
+                this.trackStat("spend-coins-on", hireable.name, cost);
                 this.hired[hireable.name] = hiredCount + 1;
 
                 this.location.availableHires.splice(this.location.availableHires.indexOf(hireable), 1);
@@ -727,11 +854,11 @@ define(["jquery",
 
                     // Remove expired contracts
                     if (location.availableContracts) {
-                        for (var j = 0; j < location.availableContracts.length; j++) {
-                            if (location.availableContracts[j].expires <= Date.now()) {
+                        for (var m = 0; m < location.availableContracts.length; m++) {
+                            if (location.availableContracts[m].expires <= Date.now()) {
                                 this.trackStat("miss", "contract", 1);
-                                this.trackStat("miss-contract", location.availableContracts[j].name, 1);
-                                location.availableContracts.splice(j, 1);
+                                this.trackStat("miss-contract", location.availableContracts[m].name, 1);
+                                location.availableContracts.splice(m, 1);
 
                             }
                         }

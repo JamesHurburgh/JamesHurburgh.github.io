@@ -4,6 +4,20 @@
     "author": "James Hurburgh",
     "author-uri": "",
     "versions": [{
+        "number": "0.9",
+        "description": "The Loot update!",
+        "features": [
+            "Items are now obtainable through missions",
+            "Items can be sold for their value",
+            "Some items can be used",
+            "Added messages interface",
+            "Tabs!  Everything is in tabs now."
+        ],
+        "bugfixes": [
+            "Statistic filter is now case insensitive",
+            "Initial load now sets game version"
+        ]
+    }, {
         "number": "0.8",
         "description": "Clean up update",
         "features": [

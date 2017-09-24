@@ -1,0 +1,11 @@
+[{
+        "type": "mysterious-scroll",
+        "displayName": "Mysterious scroll",
+        "usage": "use-mysterious-scroll"
+    },
+    {
+        "type": "ring",
+        "displayName": "Ring",
+        "baseValue": "15"
+    }
+]
