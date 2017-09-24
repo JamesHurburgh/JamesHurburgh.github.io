@@ -229,52 +229,52 @@
                 <ul class="nav nav-tabs">
                     <li class="active">
                         <a style="padding: 1px 2px;" href="#location" data-toggle="tab" aria-expanded="true">
-                            <img width="32px;" src="../img/icons/family-house.png" />
+                            <img width="32px;" src="./img/icons/family-house.png" />
                             <!-- <span class="hidden-md-down">Location</span> -->
                         </a>
                     </li>
                     <li class="">
                         <a style="padding: 1px 2px;" href="#contracts" data-toggle="tab" aria-expanded="false">
-                            <img v-if="location.availableContracts.length == 0" width="32px;" src="../img/icons/stabbed-note.png" />
-                            <img v-if="location.availableContracts.length != 0" width="32px;" src="../img/icons/stabbed-note-green.png" />
+                            <img v-if="location.availableContracts.length == 0" width="32px;" src="./img/icons/stabbed-note.png" />
+                            <img v-if="location.availableContracts.length != 0" width="32px;" src="./img/icons/stabbed-note-green.png" />
                             <!--<span class="badge">{{location.availableContracts.length}}</span>-->
                         </a>
                     </li>
                     <li class="">
                         <a style="padding: 1px 2px;" href="#adventurers" data-toggle="tab" aria-expanded="false">
-                            <img v-if="location.availableHires.length == 0" width="32px;" src="../img/icons/stabbed-note-body.png" />
-                            <img v-if="location.availableHires.length != 0" width="32px;" src="../img/icons/stabbed-note-body-green.png" />
+                            <img v-if="location.availableHires.length == 0" width="32px;" src="./img/icons/stabbed-note-body.png" />
+                            <img v-if="location.availableHires.length != 0" width="32px;" src="./img/icons/stabbed-note-body-green.png" />
                             <!--<span class="badge">{{location.availableHires.length}}</span>-->
                         </a>
                     </li>
                     <li class="">
                         <a style="padding: 1px 2px;" href="#finishedQuests" data-toggle="tab" aria-expanded="false">
-                            <img v-if="completedExpeditions.length == 0" width="32px;" src="../img/icons/checklist.png" />
-                            <img v-if="completedExpeditions.length != 0" width="32px;" src="../img/icons/checklist-green.png" />
+                            <img v-if="completedExpeditions.length == 0" width="32px;" src="./img/icons/checklist.png" />
+                            <img v-if="completedExpeditions.length != 0" width="32px;" src="./img/icons/checklist-green.png" />
                             <!--<span class="badge">{{completedExpeditions.length}}</span>-->
                         </a>
                     </li>
                     <li class="">
                         <a style="padding: 1px 2px;" href="#runningQuests" data-toggle="tab" aria-expanded="false">
-                            <img width="32px;" src="../img/icons/sands-of-time.png" />
+                            <img width="32px;" src="./img/icons/sands-of-time.png" />
                             <!--<span class="badge">{{runningExpeditions.length}}</span>-->
                         </a>
                     </li>
                     <li class="">
                         <a style="padding: 1px 2px;" href="#hired" data-toggle="tab" aria-expanded="false">
-                            <img width="32px;" src="../img/icons/robe.png" />
+                            <img width="32px;" src="./img/icons/robe.png" />
                         </a>
                     </li>
                     <li class="" v-if="!lessthan(items.length, 1)">
                         <a style="padding: 1px 2px;" href="#items" data-toggle="tab" aria-expanded="false">
-                            <img width="32px;" src="../img/icons/backpack.png" />
+                            <img width="32px;" src="./img/icons/backpack.png" />
                             <!--<span class="badge">{{location.availableHires.length}}</span>-->
                         </a>
                     </li>
                     <li class="">
                         <a style="padding: 1px 2px;" href="#messages" data-toggle="tab" aria-expanded="false">
-                            <img v-if="messages.length == 0" width="32px;" src="../img/icons/scroll-unfurled.png" />
-                            <img v-if="messages.length != 0" width="32px;" src="../img/icons/scroll-unfurled-green.png" />
+                            <img v-if="messages.length == 0" width="32px;" src="./img/icons/scroll-unfurled.png" />
+                            <img v-if="messages.length != 0" width="32px;" src="./img/icons/scroll-unfurled-green.png" />
                             <!--<span class="badge">{{messages.length}}</span>-->
                         </a>
                     </li>
