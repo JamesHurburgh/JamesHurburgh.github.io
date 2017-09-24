@@ -409,7 +409,7 @@ define(["jquery",
             };
 
             this.getItemDefinition = function(itemType) {
-                return this.items.filter(item => item.type = itemType)[0];
+                return this.items.filter(item => item.type == itemType)[0];
             };
 
             this.generateItem = function(itemType, value) {
