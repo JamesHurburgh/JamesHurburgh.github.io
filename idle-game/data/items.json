@@ -116,8 +116,104 @@
         ]
     },
     {
+        "type": "artwork",
+        "subsets": ["painting", "tapestry", "sculpture"]
+    },
+    {
+        "type": "sculpture",
+        "displayName": "Sculpture",
+        "baseValue": "325",
+        "prefixesList": [
+            [
+                { "prefix": "Sandstone", "valueModifier": 0.25 },
+                { "prefix": "Wooden", "valueModifier": 0.5 },
+                { "prefix": "Stone", "valueModifier": 1 },
+                { "prefix": "Iron", "valueModifier": 1.1 },
+                { "prefix": "Copper", "valueModifier": 1.5 },
+                { "prefix": "Brass", "valueModifier": 1.5 },
+                { "prefix": "Steel", "valueModifier": 2 },
+                { "prefix": "Platinum", "valueModifier": 3 },
+                { "prefix": "Silver", "valueModifier": 3 },
+                { "prefix": "Jade", "valueModifier": 4 },
+                { "prefix": "Gold", "valueModifier": 5 },
+                { "prefix": "Ivory", "valueModifier": 5 }
+            ],
+            [
+                { "prefix": "Broken", "valueModifier": 0.5 },
+                { "prefix": "Poor", "valueModifier": 0.5 },
+                { "prefix": "Dirty", "valueModifier": 0.8 },
+                { "prefix": "Detailed", "valueModifier": 2.5 },
+                { "prefix": "Masterful", "valueModifier": 4 },
+                { "prefix": "Exquisite", "valueModifier": 5 }
+            ],
+            [
+                { "prefix": "Tiny", "valueModifier": 0.25 },
+                { "prefix": "Small", "valueModifier": 0.5 },
+                { "prefix": "Large", "valueModifier": 2 },
+                { "prefix": "Huge", "valueModifier": 3 }
+            ]
+        ]
+    },
+    {
+        "type": "tapestry",
+        "displayName": "Tapestry",
+        "baseValue": "225",
+        "prefixesList": [
+            [
+                { "prefix": "Wool", "valueModifier": 1 },
+                { "prefix": "Cotton", "valueModifier": 1 },
+                { "prefix": "Leather", "valueModifier": 1 }
+            ],
+            [
+                { "prefix": "Faded", "valueModifier": 0.5 },
+                { "prefix": "Torn", "valueModifier": 0.5 },
+                { "prefix": "Broken", "valueModifier": 0.5 },
+                { "prefix": "Poor", "valueModifier": 0.5 },
+                { "prefix": "Dirty", "valueModifier": 0.8 },
+                { "prefix": "Fine", "valueModifier": 1.5 },
+                { "prefix": "Detailed", "valueModifier": 2.5 },
+                { "prefix": "Masterful", "valueModifier": 4 },
+                { "prefix": "Exquisite", "valueModifier": 5 }
+            ],
+            [
+                { "prefix": "Tiny", "valueModifier": 0.25 },
+                { "prefix": "Small", "valueModifier": 0.5 },
+                { "prefix": "Large", "valueModifier": 2 },
+                { "prefix": "Huge", "valueModifier": 3 }
+            ]
+        ]
+    },
+    {
+        "type": "painting",
+        "displayName": "Painting",
+        "baseValue": "125",
+        "prefixesList": [
+            [
+                { "prefix": "Charcoal", "valueModifier": 0.5 },
+                { "prefix": "Oil", "valueModifier": 1.5 }
+            ],
+            [
+                { "prefix": "Faded", "valueModifier": 0.5 },
+                { "prefix": "Scratched", "valueModifier": 0.5 },
+                { "prefix": "Broken", "valueModifier": 0.5 },
+                { "prefix": "Poor", "valueModifier": 0.5 },
+                { "prefix": "Dirty", "valueModifier": 0.8 },
+                { "prefix": "Fine", "valueModifier": 1.5 },
+                { "prefix": "Detailed", "valueModifier": 2.5 },
+                { "prefix": "Masterful", "valueModifier": 4 },
+                { "prefix": "Exquisite", "valueModifier": 5 }
+            ],
+            [
+                { "prefix": "Tiny", "valueModifier": 0.25 },
+                { "prefix": "Small", "valueModifier": 0.5 },
+                { "prefix": "Large", "valueModifier": 2 },
+                { "prefix": "Huge", "valueModifier": 3 }
+            ]
+        ]
+    },
+    {
         "type": "jewellery",
-        "subsets": ["ring", "necklace"]
+        "subsets": ["ring", "necklace", "bracelet"]
     },
     {
         "type": "necklace",
@@ -144,7 +240,7 @@
                 { "prefix": "Shiny", "valueModifier": 1.5 },
                 { "prefix": "Engraved", "valueModifier": 1.6 },
                 { "prefix": "Decorated", "valueModifier": 1.7 },
-                { "prefix": "Good", "valueModifier": 2.5 },
+                { "prefix": "Detailed", "valueModifier": 2.5 },
                 { "prefix": "Masterful", "valueModifier": 5 }
             ]
         ]
@@ -158,25 +254,120 @@
                 { "prefix": "Wooden", "valueModifier": 0.5 },
                 { "prefix": "Silver", "valueModifier": 1.5 },
                 { "prefix": "Iron", "valueModifier": 1.1 },
-                { "prefix": "Glass", "valueModifier": 4 },
-                { "prefix": "Ivory", "valueModifier": 5 },
-                { "prefix": "Jade", "valueModifier": 4 },
                 { "prefix": "Copper", "valueModifier": 1.5 },
                 { "prefix": "Brass", "valueModifier": 1.5 },
+                { "prefix": "Steel", "valueModifier": 2 },
                 { "prefix": "Platinum", "valueModifier": 3 },
+                { "prefix": "Glass", "valueModifier": 4 },
+                { "prefix": "Jade", "valueModifier": 4 },
                 { "prefix": "Gold", "valueModifier": 5 },
+                { "prefix": "Ivory", "valueModifier": 5 }
+            ],
+            [
+                { "prefix": "Bent", "valueModifier": 0.5 },
+                { "prefix": "Broken", "valueModifier": 0.5 },
+                { "prefix": "Poor", "valueModifier": 0.5 },
+                { "prefix": "Dirty", "valueModifier": 0.5 },
+                { "prefix": "Shiny", "valueModifier": 1.5 },
+                { "prefix": "Engraved", "valueModifier": 1.6 },
+                { "prefix": "Decorated", "valueModifier": 1.7 },
+                { "prefix": "Detailed", "valueModifier": 2.5 },
+                { "prefix": "Masterful", "valueModifier": 5 }
+            ]
+        ]
+    },
+    {
+        "type": "bracelet",
+        "displayName": "Bracelet",
+        "baseValue": "50",
+        "prefixesList": [
+            [
+                { "prefix": "Wooden", "valueModifier": 0.5 },
+                { "prefix": "Silver", "valueModifier": 1.5 },
+                { "prefix": "Iron", "valueModifier": 1.1 },
+                { "prefix": "Copper", "valueModifier": 1.5 },
+                { "prefix": "Brass", "valueModifier": 1.5 },
+                { "prefix": "Steel", "valueModifier": 2 },
+                { "prefix": "Platinum", "valueModifier": 3 },
+                { "prefix": "Glass", "valueModifier": 4 },
+                { "prefix": "Jade", "valueModifier": 4 },
+                { "prefix": "Gold", "valueModifier": 5 },
+                { "prefix": "Ivory", "valueModifier": 5 }
+            ],
+            [
+                { "prefix": "Bent", "valueModifier": 0.5 },
+                { "prefix": "Broken", "valueModifier": 0.5 },
+                { "prefix": "Poor", "valueModifier": 0.5 },
+                { "prefix": "Dirty", "valueModifier": 0.5 },
+                { "prefix": "Shiny", "valueModifier": 1.5 },
+                { "prefix": "Engraved", "valueModifier": 1.6 },
+                { "prefix": "Decorated", "valueModifier": 1.7 },
+                { "prefix": "Detailed", "valueModifier": 2.5 },
+                { "prefix": "Masterful", "valueModifier": 5 }
+            ]
+        ]
+    },
+    {
+        "type": "weapon",
+        "subsets": [
+            "sword",
+            "battle-axe",
+            "club",
+            "pole-arm",
+            "spear",
+            "lance",
+            "bow",
+            "sling"
+        ]
+    },
+    {
+        "type": "bow",
+        "subsets": [
+            "longbow",
+            "shortbow",
+            "crossbow"
+        ]
+    },
+    {
+        "type": "pole-arm",
+        "displayName": "(Pole-arm)",
+        "baseValue": "50",
+        "prefixesList": [
+            [
+                { "prefix": "Bardiche", "valueModifier": 1 },
+                { "prefix": "Bill", "valueModifier": 1 },
+                { "prefix": "Glaive", "valueModifier": 1 },
+                { "prefix": "Guisarme", "valueModifier": 1 },
+                { "prefix": "Halberd", "valueModifier": 1 },
+                { "prefix": "Lance", "valueModifier": 1 },
+                { "prefix": "Lochaber Axe", "valueModifier": 1 },
+                { "prefix": "Lucerne hammer", "valueModifier": 1 },
+                { "prefix": "Partisan", "valueModifier": 1 },
+                { "prefix": "Pike", "valueModifier": 1 },
+                { "prefix": "Ranseur", "valueModifier": 1 },
+                { "prefix": "Spetum", "valueModifier": 1 },
+                { "prefix": "Swordstaff", "valueModifier": 1 },
+                { "prefix": "Voulge", "valueModifier": 1 },
+                { "prefix": "War-scythe", "valueModifier": 1 },
+                { "prefix": "War hammer", "valueModifier": 1 }
+            ],
+            [
+                { "prefix": "Wooden", "valueModifier": 0.5 },
+                { "prefix": "Iron", "valueModifier": 1.1 },
+                { "prefix": "Copper", "valueModifier": 1.5 },
+                { "prefix": "Brass", "valueModifier": 1.5 },
                 { "prefix": "Steel", "valueModifier": 2 }
             ],
             [
                 { "prefix": "Bent", "valueModifier": 0.5 },
                 { "prefix": "Broken", "valueModifier": 0.5 },
+                { "prefix": "Poor", "valueModifier": 0.5 },
                 { "prefix": "Dirty", "valueModifier": 0.5 },
                 { "prefix": "Shiny", "valueModifier": 1.5 },
                 { "prefix": "Engraved", "valueModifier": 1.6 },
                 { "prefix": "Decorated", "valueModifier": 1.7 },
-                { "prefix": "Masterful", "valueModifier": 5 },
-                { "prefix": "Good", "valueModifier": 2.5 },
-                { "prefix": "Poor", "valueModifier": 0.5 }
+                { "prefix": "Detailed", "valueModifier": 2.5 },
+                { "prefix": "Masterful", "valueModifier": 5 }
             ]
         ]
     }

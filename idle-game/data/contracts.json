@@ -228,7 +228,7 @@
     "rewards": [
         { "chance": 1, "reward": { "type": "coins", "amount": 1000 } },
         { "chance": 1, "reward": { "type": "reknown", "amount": 2 } },
-        { "chance": 0.1, "reward": { "type": "item", "value": 150, "itemType": "weapons" } }
+        { "chance": 0.1, "reward": { "type": "item", "value": 150, "itemType": "weapon" } }
     ],
     "requirements": {
         "reknown": 1,
@@ -272,7 +272,7 @@
     "rewards": [
         { "chance": 1, "reward": { "type": "coins", "amount": 2000 } },
         { "chance": 1, "reward": { "type": "reknown", "amount": 3 } },
-        { "chance": 0.1, "reward": { "type": "item", "value": 550, "itemType": "weapons" } }
+        { "chance": 0.1, "reward": { "type": "item", "value": 550, "itemType": "weapon" } }
     ],
     "requirements": {
         "reknown": 1,
@@ -337,7 +337,7 @@
     "rewards": [
         { "chance": 1, "reward": { "type": "coins", "amount": 600 } },
         { "chance": 0.1, "reward": { "type": "item", "value": 100, "itemType": "artwork" } },
-        { "chance": 0.01, "reward": { "type": "item", "value": 250, "itemType": "weapons" } }
+        { "chance": 0.01, "reward": { "type": "item", "value": 250, "itemType": "weapon" } }
     ],
     "requirements": {
         "reknown": 1,
@@ -461,7 +461,7 @@
     "rewardFactor": 0.3,
     "rewards": [
         { "chance": 1, "reward": { "type": "reknown", "amount": 3 } },
-        { "chance": 0.1, "reward": { "type": "item", "value": 150, "itemType": "weapons" } }
+        { "chance": 0.1, "reward": { "type": "item", "value": 150, "itemType": "weapon" } }
     ],
     "requirements": {
         "reknown": 0,
