@@ -1,7 +1,8 @@
 [{
-        "type": "mysterious-scroll",
+        "type": "minor-mysterious-scroll",
         "displayName": "Mysterious scroll",
-        "usage": "use-mysterious-scroll"
+        "baseValue": "250",
+        "usage": "use-minor-mysterious-scroll"
     },
     {
         "type": "jewels",
@@ -334,21 +335,11 @@
         "baseValue": "50",
         "prefixesList": [
             [
-                { "prefix": "Bardiche", "valueModifier": 1 },
-                { "prefix": "Bill", "valueModifier": 1 },
                 { "prefix": "Glaive", "valueModifier": 1 },
-                { "prefix": "Guisarme", "valueModifier": 1 },
                 { "prefix": "Halberd", "valueModifier": 1 },
                 { "prefix": "Lance", "valueModifier": 1 },
-                { "prefix": "Lochaber Axe", "valueModifier": 1 },
-                { "prefix": "Lucerne hammer", "valueModifier": 1 },
-                { "prefix": "Partisan", "valueModifier": 1 },
                 { "prefix": "Pike", "valueModifier": 1 },
-                { "prefix": "Ranseur", "valueModifier": 1 },
-                { "prefix": "Spetum", "valueModifier": 1 },
-                { "prefix": "Swordstaff", "valueModifier": 1 },
                 { "prefix": "Voulge", "valueModifier": 1 },
-                { "prefix": "War-scythe", "valueModifier": 1 },
                 { "prefix": "War hammer", "valueModifier": 1 }
             ],
             [

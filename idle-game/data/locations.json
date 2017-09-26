@@ -15,7 +15,14 @@
             "Tail a mark",
             "Disrupt a rivals business"
         ],
-        "adventurers": ["Drunkard", "Street rat", "Peasant"]
+        "adventurers": [
+            { "chance": 2, "type": "Drunkard" },
+            { "chance": 1, "type": "Street rat" },
+            { "chance": 1, "type": "Peasant" },
+            { "chance": 0.01, "type": "Brawler" },
+            { "chance": 0.01, "type": "Thief" },
+            { "chance": 0.01, "type": "Citizen" }
+        ]
     },
     {
         "name": "Street Corner",
@@ -38,7 +45,14 @@
             "Loot a crypt",
             "Protection duty"
         ],
-        "adventurers": ["Brawler", "Thief", "Citizen"]
+        "adventurers": [
+            { "chance": 0.05, "type": "Drunkard" },
+            { "chance": 0.05, "type": "Street rat" },
+            { "chance": 0.5, "type": "Peasant" },
+            { "chance": 1, "type": "Brawler" },
+            { "chance": 1, "type": "Thief" },
+            { "chance": 2, "type": "Citizen" }
+        ]
     },
     {
         "name": "Tavern",
@@ -60,7 +74,17 @@
             "Rescue a farmer's daughter",
             "Protection duty"
         ],
-        "adventurers": ["Fighter", "Cleric", "Mage"]
+        "adventurers": [
+            { "chance": 1, "type": "Drunkard" },
+            { "chance": 0.01, "type": "Street rat" },
+            { "chance": 0.5, "type": "Peasant" },
+            { "chance": 0.5, "type": "Brawler" },
+            { "chance": 0.01, "type": "Thief" },
+            { "chance": 2, "type": "Citizen" },
+            { "chance": 4, "type": "Fighter" },
+            { "chance": 1, "type": "Cleric" },
+            { "chance": 2, "type": "Mage" }
+        ]
     },
     {
         "disable": true,

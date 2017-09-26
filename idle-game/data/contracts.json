@@ -11,7 +11,8 @@
     "rewards": [
         { "chance": 1, "reward": { "type": "coins", "amount": 500 } },
         { "chance": 1, "reward": { "type": "reknown", "amount": 2 } },
-        { "chance": 0.1, "reward": { "type": "item", "value": 1500, "itemType": "jewels" } }
+        { "chance": 0.1, "reward": { "type": "item", "value": 1500, "itemType": "jewels" } },
+        { "chance": 0.1, "reward": { "type": "item", "value": 1500, "itemType": "jewellery" } }
     ],
     "requirements": {
         "reknown": 0,
@@ -34,7 +35,8 @@
     "rewards": [
         { "chance": 1, "reward": { "type": "coins", "amount": 500 } },
         { "chance": 1, "reward": { "type": "reknown", "amount": 2 } },
-        { "chance": 0.01, "reward": { "type": "item", "value": 1500, "itemType": "jewels" } }
+        { "chance": 0.1, "reward": { "type": "item", "value": 1500, "itemType": "jewels" } },
+        { "chance": 0.1, "reward": { "type": "item", "value": 1500, "itemType": "jewellery" } }
     ],
     "requirements": {
         "reknown": 0,
@@ -60,7 +62,8 @@
     "rewards": [
         { "chance": 1, "reward": { "type": "coins", "amount": 500 } },
         { "chance": 1, "reward": { "type": "reknown", "amount": 2 } },
-        { "chance": 0.1, "reward": { "type": "item", "value": 1500, "itemType": "jewels" } }
+        { "chance": 0.1, "reward": { "type": "item", "value": 1500, "itemType": "jewels" } },
+        { "chance": 0.1, "reward": { "type": "item", "value": 1500, "itemType": "jewellery" } }
     ],
     "requirements": {
         "reknown": 0,
@@ -439,7 +442,7 @@
         { "chance": 1, "reward": { "type": "coins", "amount": 1000 } },
         { "chance": 1, "reward": { "type": "reknown", "amount": 1 } },
         { "chance": 0.1, "reward": { "type": "item", "value": 100, "itemType": "artwork" } },
-        { "chance": 0.1, "reward": { "type": "item", "itemType": "mysterious-scroll" } }
+        { "chance": 0.1, "reward": { "type": "item", "itemType": "minor-mysterious-scroll" } }
     ],
     "requirements": {
         "reknown": 0,
