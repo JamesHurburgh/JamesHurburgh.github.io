@@ -12,6 +12,14 @@
         { "name": "upgradeChance", "baseValue": 1 }
     ],
     "versions": [{
+        "number": "0.9.5",
+        "description": "Bug fixes",
+        "features": [
+        ],
+        "bugfixes": [
+            "Fixed mysterious scrolls not working",
+            "Fixed not losing an item when you use or sell it."]
+    }, {
         "number": "0.9.4",
         "description": "More mysterious effects",
         "features": [

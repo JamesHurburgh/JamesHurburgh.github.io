@@ -35,12 +35,16 @@ define(["jquery",
             }
         }
 
+
         return function AdventurersGame(saveData, autoSaveFunction) {
 
             this.autoSave = autoSaveFunction;
             this.millisecondsPerSecond = 1000;
 
-            ItemManager = new ItemManager(this);
+            _itemManager = new ItemManager(this);
+            this.ItemManager = function(){
+                return _itemManager;
+            };
 
             this.reset = function() {
                 console.log("reset");
@@ -365,102 +369,7 @@ define(["jquery",
                 this.currentEffects.push({ "name": name, "valueModifier": valueModifier, "expires": expires });
             };
 
-            // Items
-            this.itemFunctions = [];
-            this.itemFunctions["use-minor-mysterious-scroll"] = function(game) {
-                var effects = [{
-                        "description": "Suddenly your purse seems heavier.",
-                        "effect": function(game) {
-                            game.giveCoins(1000);
-                        }
-                    },
-                    {
-                        "description": "Suddenly every seems to have a job for you.",
-                        "effect": function(game) {
-                            game.addEffect("chanceOfNewContract", 2, Date.now() + 60000);
-                        }
-                    },
-                    {
-                        "description": "Suddenly every seems to want to work for you.",
-                        "effect": function(game) {
-                            game.addEffect("chanceOfNewHire", 2, Date.now() + 60000);
-                        }
-                    },
-                    {
-                        "description": "Suddenly every seems to be willing to work for much less.",
-                        "effect": function(game) {
-                            game.addEffect("hireCostModifier", 2, Date.now() + 60000);
-                        }
-                    },
-                    {
-                        "description": "Suddenly it seems like there are lots more coins around for the taking.",
-                        "effect": function(game) {
-                            game.addEffect("freeCoinsModifier", 10, Date.now() + 60000);
-                        }
-                    },
-                    {
-                        "description": "Suddenly it seems like everyone on quests are a lot safer.",
-                        "effect": function(game) {
-                            game.addEffect("questRisk", 0.1, Date.now() + 60000);
-                        }
-                    },
-                    {
-                        "description": "Suddenly it seems like everyone on quests are learning new things.",
-                        "effect": function(game) {
-                            game.addEffect("upgradeChance", 5, Date.now() + 60000);
-                        }
-                    }
-                ];
 
-                var effect = effects[Math.floor(Math.random() * effects.length)];
-                game.message("You read a mysterious scroll. " + effect.description);
-                effect.effect(game);
-            };
-
-            this.canSell = function(item) {
-                return item.value !== undefined && item.value > 0;
-            };
-
-            this.sellItem = function(item) {
-                if (!this.canSell(item)) {
-                    return;
-                }
-                this.trackStat("sell", "item", 1);
-                this.trackStat("sell-item", item.name, 1);
-                this.giveCoins(item.value);
-                this.removeItem(item);
-
-            };
-
-            this.canUse = function(item) {
-                if (item.usage !== undefined) {
-                    return true;
-                }
-            };
-
-            this.removeItem = function(item) {
-                this.ownedItems.splice(this.ownedItems.indexOf(item), 1);
-            };
-
-            this.useItem = function(item) {
-                if (!this.canUse(item)) {
-                    return;
-                }
-
-                var usageFunction = this.itemFunctions[item.usage];
-                if (!usageFunction) {
-                    return;
-                }
-
-                usageFunction(this._data);
-                this.removeItem(item);
-            };
-
-            this.giveItem = function(item) {
-                this.ownedItems.push(item);
-                this.trackStat("collect", "item", 1);
-                this.trackStat("collect-item", item.name, 1);
-            };
 
             // Locations
             this.currentLocationIndex = function() {
@@ -667,7 +576,7 @@ define(["jquery",
                         this.giveReknown(reward.amount);
                         break;
                     case "item":
-                        this.giveItem(reward.item);
+                        this.ItemManager().giveItem(reward.item);
                         break;
                     default:
                         this.hired[type] += amount;

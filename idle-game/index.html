@@ -385,8 +385,8 @@
                                 <td>{{item.name}}</td>
                                 <td><span v-if="item.value !== undefined">{{item.value}}</span></td>
                                 <td>
-                                    <button v-if="canSell(item)" @click="sellItem(item)" class="btn btn-xs btn-success pull-right">Sell</button>
-                                    <button v-if="canUse(item)" @click="useItem(item)" class="btn btn-xs btn-info pull-right">Use</button>
+                                    <button v-if="ItemManager().canSell(item)" @click="ItemManager().sellItem(item)" class="btn btn-xs btn-success pull-right">Sell</button>
+                                    <button v-if="ItemManager().canUse(item)" @click="ItemManager().useItem(item)" class="btn btn-xs btn-info pull-right">Use</button>
                                 </td>
                             </tr>
                         </table>

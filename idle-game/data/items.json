@@ -166,9 +166,10 @@
                 { "prefix": "Leather", "valueModifier": 1 }
             ],
             [
+                { "prefix": "Moth-Eatn", "valueModifier": 0.1 },
                 { "prefix": "Faded", "valueModifier": 0.5 },
                 { "prefix": "Torn", "valueModifier": 0.5 },
-                { "prefix": "Broken", "valueModifier": 0.5 },
+                { "prefix": "Tattered", "valueModifier": 0.5 },
                 { "prefix": "Poor", "valueModifier": 0.5 },
                 { "prefix": "Dirty", "valueModifier": 0.8 },
                 { "prefix": "Fine", "valueModifier": 1.5 },
