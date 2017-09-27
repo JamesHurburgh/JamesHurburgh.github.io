@@ -10,12 +10,12 @@
     "rewardFactor": 0.2,
     "rewards": [
         { "chance": 1, "reward": { "type": "coins", "amount": 500 } },
-        { "chance": 1, "reward": { "type": "reknown", "amount": 2 } },
+        { "chance": 1, "reward": { "type": "renown", "amount": 2 } },
         { "chance": 0.1, "reward": { "type": "item", "value": 1500, "itemType": "jewels" } },
         { "chance": 0.1, "reward": { "type": "item", "value": 1500, "itemType": "jewellery" } }
     ],
     "requirements": {
-        "reknown": 0,
+        "renown": 0,
         "adventurers": [
             { "type": "Peasant", "amount": 1 },
             { "type": "Street rat", "amount": 1 },
@@ -34,12 +34,12 @@
     "rewardFactor": 0.2,
     "rewards": [
         { "chance": 1, "reward": { "type": "coins", "amount": 500 } },
-        { "chance": 1, "reward": { "type": "reknown", "amount": 2 } },
+        { "chance": 1, "reward": { "type": "renown", "amount": 2 } },
         { "chance": 0.1, "reward": { "type": "item", "value": 1500, "itemType": "jewels" } },
         { "chance": 0.1, "reward": { "type": "item", "value": 1500, "itemType": "jewellery" } }
     ],
     "requirements": {
-        "reknown": 0,
+        "renown": 0,
         "adventurers": [
             { "type": "Peasant", "amount": 1 },
             { "type": "Street rat", "amount": 1 },
@@ -61,12 +61,12 @@
     "rewardFactor": 0.2,
     "rewards": [
         { "chance": 1, "reward": { "type": "coins", "amount": 500 } },
-        { "chance": 1, "reward": { "type": "reknown", "amount": 2 } },
+        { "chance": 1, "reward": { "type": "renown", "amount": 2 } },
         { "chance": 0.1, "reward": { "type": "item", "value": 1500, "itemType": "jewels" } },
         { "chance": 0.1, "reward": { "type": "item", "value": 1500, "itemType": "jewellery" } }
     ],
     "requirements": {
-        "reknown": 0,
+        "renown": 0,
         "adventurers": [
             { "type": "Peasant", "amount": 1 },
             { "type": "Street rat", "amount": 1 },
@@ -91,10 +91,10 @@
     "contractAmount": 15,
     "rewardFactor": 0.1,
     "rewards": [
-        { "chance": 1, "reward": { "type": "reknown", "amount": 1 } }
+        { "chance": 1, "reward": { "type": "renown", "amount": 1 } }
     ],
     "requirements": {
-        "reknown": 0,
+        "renown": 0,
         "adventurers": [
             { "type": "Peasant", "amount": 1 }
         ]
@@ -114,7 +114,7 @@
         { "chance": 0.01, "reward": { "type": "item", "value": 15, "itemType": "jewellery" } }
     ],
     "requirements": {
-        "reknown": 0,
+        "renown": 0,
         "adventurers": [
             { "type": "Drunkard", "amount": 1 }
         ]
@@ -133,7 +133,7 @@
         { "chance": 1, "reward": { "type": "coins", "amount": 5 } }
     ],
     "requirements": {
-        "reknown": 0,
+        "renown": 0,
         "adventurers": [
             { "type": "Drunkard", "amount": 1 }
         ]
@@ -153,7 +153,7 @@
         { "chance": 0.01, "reward": { "type": "item", "value": 15, "itemType": "jewellery" } }
     ],
     "requirements": {
-        "reknown": 0,
+        "renown": 0,
         "adventurers": [
             { "type": "Street rat", "amount": 2 }
         ]
@@ -170,10 +170,10 @@
     "contractAmount": 75,
     "rewardFactor": 0.1,
     "rewards": [
-        { "chance": 1, "reward": { "type": "reknown", "amount": 1 } }
+        { "chance": 1, "reward": { "type": "renown", "amount": 1 } }
     ],
     "requirements": {
-        "reknown": 0,
+        "renown": 0,
         "adventurers": [
             { "type": "Street rat", "amount": 1 }
         ]
@@ -193,7 +193,7 @@
         { "chance": 0.1, "reward": { "type": "item", "value": 15, "itemType": "jewellery" } }
     ],
     "requirements": {
-        "reknown": 0,
+        "renown": 0,
         "adventurers": [
             { "type": "Street rat", "amount": 1 }
         ]
@@ -210,10 +210,10 @@
     "contractAmount": 750,
     "rewardFactor": 0.2,
     "rewards": [
-        { "chance": 1, "reward": { "type": "reknown", "amount": 1 } }
+        { "chance": 1, "reward": { "type": "renown", "amount": 1 } }
     ],
     "requirements": {
-        "reknown": 0,
+        "renown": 0,
         "adventurers": [
             { "type": "Drunkard", "amount": 10 }
         ]
@@ -230,11 +230,11 @@
     "rewardFactor": 0.3,
     "rewards": [
         { "chance": 1, "reward": { "type": "coins", "amount": 1000 } },
-        { "chance": 1, "reward": { "type": "reknown", "amount": 2 } },
+        { "chance": 1, "reward": { "type": "renown", "amount": 2 } },
         { "chance": 0.1, "reward": { "type": "item", "value": 150, "itemType": "weapon" } }
     ],
     "requirements": {
-        "reknown": 1,
+        "renown": 1,
         "adventurers": [
             { "type": "Brawler", "amount": 1 },
             { "type": "Drunkard", "amount": 5 },
@@ -253,11 +253,11 @@
     "rewardFactor": 0.3,
     "contractAmount": 750,
     "rewards": [
-        { "chance": 1, "reward": { "type": "reknown", "amount": 2 } },
+        { "chance": 1, "reward": { "type": "renown", "amount": 2 } },
         { "chance": 0.5, "reward": { "type": "item", "value": 50, "itemType": "hides" } }
     ],
     "requirements": {
-        "reknown": 1,
+        "renown": 1,
         "adventurers": [
             { "type": "Fighter", "amount": 2 }
         ]
@@ -274,11 +274,11 @@
     "rewardFactor": 0.4,
     "rewards": [
         { "chance": 1, "reward": { "type": "coins", "amount": 2000 } },
-        { "chance": 1, "reward": { "type": "reknown", "amount": 3 } },
+        { "chance": 1, "reward": { "type": "renown", "amount": 3 } },
         { "chance": 0.1, "reward": { "type": "item", "value": 550, "itemType": "weapon" } }
     ],
     "requirements": {
-        "reknown": 1,
+        "renown": 1,
         "adventurers": [
             { "type": "Brawler", "amount": 15 },
             { "type": "Fighter", "amount": 5 },
@@ -297,10 +297,10 @@
     "rewardFactor": 0.2,
     "rewards": [
         { "chance": 1, "reward": { "type": "coins", "amount": 500 } },
-        { "chance": 1, "reward": { "type": "reknown", "amount": 2 } }
+        { "chance": 1, "reward": { "type": "renown", "amount": 2 } }
     ],
     "requirements": {
-        "reknown": 1,
+        "renown": 1,
         "adventurers": [
             { "type": "Brawler", "amount": 1 }
         ]
@@ -317,10 +317,10 @@
     "rewardFactor": 0.2,
     "contractAmount": 600,
     "rewards": [
-        { "chance": 1, "reward": { "type": "reknown", "amount": 2 } }
+        { "chance": 1, "reward": { "type": "renown", "amount": 2 } }
     ],
     "requirements": {
-        "reknown": 1,
+        "renown": 1,
         "adventurers": [
             { "type": "Brawler", "amount": 1 },
             { "type": "Citizen", "amount": 1 },
@@ -343,7 +343,7 @@
         { "chance": 0.01, "reward": { "type": "item", "value": 250, "itemType": "weapon" } }
     ],
     "requirements": {
-        "reknown": 1,
+        "renown": 1,
         "adventurers": [
             { "type": "Thief", "amount": 2 }
         ]
@@ -360,10 +360,10 @@
     "contractAmount": 125,
     "rewardFactor": 0.2,
     "rewards": [
-        { "chance": 1, "reward": { "type": "reknown", "amount": 2 } }
+        { "chance": 1, "reward": { "type": "renown", "amount": 2 } }
     ],
     "requirements": {
-        "reknown": 0,
+        "renown": 0,
         "adventurers": [
             { "type": "Peasant", "amount": 1 }
         ]
@@ -380,10 +380,10 @@
     "contractAmount": 750,
     "rewardFactor": 0.2,
     "rewards": [
-        { "chance": 1, "reward": { "type": "reknown", "amount": 2 } }
+        { "chance": 1, "reward": { "type": "renown", "amount": 2 } }
     ],
     "requirements": {
-        "reknown": 0,
+        "renown": 0,
         "adventurers": [
             { "type": "Citizen", "amount": 1 }
         ]
@@ -400,10 +400,10 @@
     "contractAmount": 750,
     "rewardFactor": 0.2,
     "rewards": [
-        { "chance": 1, "reward": { "type": "reknown", "amount": 2 } }
+        { "chance": 1, "reward": { "type": "renown", "amount": 2 } }
     ],
     "requirements": {
-        "reknown": 0,
+        "renown": 0,
         "adventurers": [
             { "type": "Citizen", "amount": 10 }
         ]
@@ -420,10 +420,10 @@
     "contractAmount": 150,
     "rewardFactor": 0.2,
     "rewards": [
-        { "chance": 1, "reward": { "type": "reknown", "amount": 2 } }
+        { "chance": 1, "reward": { "type": "renown", "amount": 2 } }
     ],
     "requirements": {
-        "reknown": 0,
+        "renown": 0,
         "adventurers": [
             { "type": "Peasant", "amount": 10 }
         ]
@@ -440,12 +440,12 @@
     "rewardFactor": 0.3,
     "rewards": [
         { "chance": 1, "reward": { "type": "coins", "amount": 1000 } },
-        { "chance": 1, "reward": { "type": "reknown", "amount": 1 } },
+        { "chance": 1, "reward": { "type": "renown", "amount": 1 } },
         { "chance": 0.1, "reward": { "type": "item", "value": 100, "itemType": "artwork" } },
         { "chance": 0.1, "reward": { "type": "item", "itemType": "minor-mysterious-scroll" } }
     ],
     "requirements": {
-        "reknown": 0,
+        "renown": 0,
         "adventurers": [
             { "type": "Thief", "amount": 1 },
             { "type": "Street rat", "amount": 5 }
@@ -463,11 +463,11 @@
     "contractAmount": 1000,
     "rewardFactor": 0.3,
     "rewards": [
-        { "chance": 1, "reward": { "type": "reknown", "amount": 3 } },
+        { "chance": 1, "reward": { "type": "renown", "amount": 3 } },
         { "chance": 0.1, "reward": { "type": "item", "value": 150, "itemType": "weapon" } }
     ],
     "requirements": {
-        "reknown": 0,
+        "renown": 0,
         "adventurers": [
             { "type": "Thief", "amount": 2 },
             { "type": "Citizen", "amount": 1 },

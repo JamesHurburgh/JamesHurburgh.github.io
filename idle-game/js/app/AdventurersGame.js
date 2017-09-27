@@ -7,7 +7,7 @@ define(["jquery",
         "json!data/contracts.json",
         "json!data/locations.json",
         "json!data/adventurers.json",
-        "json!data/reknown.json",
+        "json!data/renown.json",
         "json!data/achievements.json"
     ],
     function AdventurersGame(
@@ -18,7 +18,7 @@ define(["jquery",
         contracts,
         locations,
         adventurers,
-        reknown,
+        renown,
         achievements) {
 
         function uuidv4() {
@@ -52,7 +52,7 @@ define(["jquery",
                 this.calculateCounter = 0;
 
                 this.coins = 10;
-                this.reknown = 0;
+                this.renown = 0;
                 this.freeCoinsTimeout = 0;
 
                 this.hired = {};
@@ -138,7 +138,10 @@ define(["jquery",
                 console.log("loadFromSavedData");
 
                 this.coins = savedData.coins;
-                this.reknown = savedData.reknown;
+                this.renown = savedData.renown;
+                if(savedData.reknown !== undefined){
+                    this.renown = savedData.reknown;
+                }
                 this.freeCoinsTimeout = savedData.freeCoinsTimeout;
 
                 this.hired = savedData.hired;
@@ -198,7 +201,7 @@ define(["jquery",
                     if (!this.location.availableContracts) this.location.availableContracts = [];
                     if (!this.location.availableHires) this.location.availableHires = [];
                     if (!this.allLocations) this.allLocations = clone(locations);
-                    if (!this.reknown) this.reknown = 0;
+                    if (!this.renown) this.renown = 0;
                     if (!this.coins) this.coins = 0;
                 }
 
@@ -306,7 +309,7 @@ define(["jquery",
             this.cheat = function() {
                 console.log("cheat");
                 this.giveCoins(100000000000);
-                this.giveReknown(100000000000);
+                this.giveRenown(100000000000);
 
                 for (var i = 0; i < adventurers.length; i++) {
                     this.hired[adventurers[i].name] += 100000;
@@ -333,9 +336,9 @@ define(["jquery",
                 this.options.automatic = !this.options.automatic;
             };
 
-            // Reknown
-            this.reknownText = function() {
-                return reknown.filter(r => r.minimum <= this.reknown && r.maximum > this.reknown)[0].name;
+            // Renown
+            this.renownText = function() {
+                return renown.filter(r => r.minimum <= this.renown && r.maximum > this.renown)[0].name;
             };
 
             // Messages
@@ -399,7 +402,7 @@ define(["jquery",
                     return false;
                 }
                 var newLocation = this.allLocations[this.currentLocationIndex() + 1];
-                return newLocation.reknownRequired <= this.reknown;
+                return newLocation.renownRequired <= this.renown;
             };
 
             this.relocateUp = function() {
@@ -484,6 +487,8 @@ define(["jquery",
                 var location = this.getLocation(this.location.name);
                 var locationHireableTypes = location.adventurers;
 
+                if(locationHireableTypes === undefined || locationHireableTypes.length === 0){return;}
+
                 // Start function
                 var weightedList = [];
                 var min = 0;
@@ -520,8 +525,16 @@ define(["jquery",
 
             // Contracts
             this.addContract = function() {
-                var locationContracts = contracts.filter(contract => this.location.contracts.indexOf(contract.name) >= 0);
-                var contract = clone(locationContracts[Math.floor(locationContracts.length * Math.random())]);
+
+                var location = this.getLocation(this.location.name);
+                var locationContractsTypes = location.contracts;
+
+                if(locationContractsTypes === undefined || locationContractsTypes.length === 0){return;}
+
+                var contractName = locationContractsTypes[Math.floor(locationContractsTypes.length * Math.random())];
+
+                var contract = clone(this.getContract(contractName));
+
                 contract.expires = Date.now() + Math.floor(this.millisecondsPerSecond * 60 * (Math.random() + 0.5));
                 this.location.availableContracts.push(contract);
                 this.location.availableContracts.sort(function(a, b) {
@@ -544,7 +557,7 @@ define(["jquery",
                         }
                     }
                 }
-                return this.reknown >= contract.requirements.reknown;
+                return this.renown >= contract.requirements.renown;
             };
 
             this.claimAllCompletedExpeditions = function() {
@@ -562,9 +575,9 @@ define(["jquery",
                 this.coins += amount;
             };
 
-            this.giveReknown = function(amount) {
-                this.trackStat("get", "reknown", amount);
-                this.reknown += amount;
+            this.giveRenown = function(amount) {
+                this.trackStat("get", "renown", amount);
+                this.renown += amount;
             };
 
             this.giveReward = function(reward) {
@@ -572,8 +585,8 @@ define(["jquery",
                     case "coins":
                         this.giveCoins(reward.amount);
                         break;
-                    case "reknown":
-                        this.giveReknown(reward.amount);
+                    case "renown":
+                        this.giveRenown(reward.amount);
                         break;
                     case "item":
                         this.ItemManager().giveItem(reward.item);
@@ -703,7 +716,7 @@ define(["jquery",
                         if (Math.random() < chance) {
                             var reward = contract.rewards[j].reward;
                             if (reward.type == "item") {
-                                expedition.rewards.push({ "type": reward.type, "item": ItemManager.generateRewardItem(reward) });
+                                expedition.rewards.push({ "type": reward.type, "item": this.ItemManager().generateRewardItem(reward) });
                             } else {
                                 var rewardAmount = this.varyAmount(reward.amount);
                                 if (rewardAmount > 0) {

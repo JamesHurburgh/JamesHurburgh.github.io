@@ -58,7 +58,7 @@
     "icon": "achievement.png",
     "trigger": {
         "type": "statistic",
-        "statistic": "get-reknown",
+        "statistic": "get-renown",
         "statisticamount": "10"
     }
 }, {
@@ -67,7 +67,7 @@
     "icon": "achievement.png",
     "trigger": {
         "type": "statistic",
-        "statistic": "get-reknown",
+        "statistic": "get-renown",
         "statisticamount": "1000"
     }
 }, {
@@ -76,7 +76,7 @@
     "icon": "achievement.png",
     "trigger": {
         "type": "statistic",
-        "statistic": "get-reknown",
+        "statistic": "get-renown",
         "statisticamount": "100000"
     }
 }, {
@@ -85,7 +85,7 @@
     "icon": "achievement.png",
     "trigger": {
         "type": "statistic",
-        "statistic": "get-reknown",
+        "statistic": "get-renown",
         "statisticamount": "1000000"
     }
 }, {
@@ -94,7 +94,7 @@
     "icon": "achievement.png",
     "trigger": {
         "type": "statistic",
-        "statistic": "get-reknown",
+        "statistic": "get-renown",
         "statisticamount": "100000000"
     }
 }, {
@@ -103,7 +103,7 @@
     "icon": "achievement.png",
     "trigger": {
         "type": "statistic",
-        "statistic": "get-reknown",
+        "statistic": "get-renown",
         "statisticamount": "10000000000"
     }
 }, {

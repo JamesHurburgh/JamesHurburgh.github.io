@@ -12,13 +12,22 @@
         { "name": "upgradeChance", "baseValue": 1 }
     ],
     "versions": [{
+        "number": "0.9.6",
+        "description": "More! Bug fixes",
+        "features": [
+        ],
+        "bugfixes": [
+            "Fixed bug where you stopped getting rewards",
+            "Fixed spelling of renown"]
+    },{
         "number": "0.9.5",
         "description": "Bug fixes",
         "features": [
         ],
         "bugfixes": [
             "Fixed mysterious scrolls not working",
-            "Fixed not losing an item when you use or sell it."]
+            "Fixed not losing an item when you use or sell it.",
+            "Fixed bug where you stopped getting rewards."]
     }, {
         "number": "0.9.4",
         "description": "More mysterious effects",
@@ -92,7 +101,7 @@
         "description": "Achievements!",
         "features": [
             "Added achievement viewing.",
-            "Added footer and moved coins and reknown there."
+            "Added footer and moved coins and renown there."
         ],
         "bugfixes": []
     }, {
