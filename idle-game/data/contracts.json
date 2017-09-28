@@ -20,6 +20,11 @@
             { "type": "Peasant", "amount": 1 },
             { "type": "Street rat", "amount": 1 },
             { "type": "Drunkard", "amount": 1 }
+        ],
+        "attributes": [
+            { "type": "Toughness", "amount": 2 },
+            { "type": "Intelligence", "amount": 2 },
+            { "type": "Perception", "amount": 2 }
         ]
     }
 }, {
@@ -47,6 +52,11 @@
             { "type": "Citizen", "amount": 1 },
             { "type": "Thief", "amount": 1 },
             { "type": "Brawler", "amount": 1 }
+        ],
+        "attributes": [
+            { "type": "Toughness", "amount": 5 },
+            { "type": "Intelligence", "amount": 5 },
+            { "type": "Perception", "amount": 5 }
         ]
     }
 }, {
@@ -77,6 +87,11 @@
             { "type": "Fighter", "amount": 1 },
             { "type": "Mage", "amount": 1 },
             { "type": "Cleric", "amount": 1 }
+        ],
+        "attributes": [
+            { "type": "Toughness", "amount": 10 },
+            { "type": "Intelligence", "amount": 10 },
+            { "type": "Perception", "amount": 10 }
         ]
     }
 }, {
@@ -97,6 +112,9 @@
         "renown": 0,
         "adventurers": [
             { "type": "Peasant", "amount": 1 }
+        ],
+        "attributes": [
+            { "type": "Toughness", "amount": 1 }
         ]
     }
 }, {
@@ -117,6 +135,9 @@
         "renown": 0,
         "adventurers": [
             { "type": "Drunkard", "amount": 1 }
+        ],
+        "attributes": [
+            { "type": "Perception", "amount": 1 }
         ]
     }
 }, {
@@ -136,6 +157,9 @@
         "renown": 0,
         "adventurers": [
             { "type": "Drunkard", "amount": 1 }
+        ],
+        "attributes": [
+            { "type": "Perception", "amount": 1 }
         ]
     }
 }, {
@@ -156,6 +180,10 @@
         "renown": 0,
         "adventurers": [
             { "type": "Street rat", "amount": 2 }
+        ],
+        "attributes": [
+            { "type": "Fighting", "amount": 2 },
+            { "type": "Deftness", "amount": 2 }
         ]
     }
 }, {
@@ -176,6 +204,10 @@
         "renown": 0,
         "adventurers": [
             { "type": "Street rat", "amount": 1 }
+        ],
+        "attributes": [
+            { "type": "Intelligence", "amount": 2 },
+            { "type": "Deftness", "amount": 2 }
         ]
     }
 }, {
@@ -196,6 +228,9 @@
         "renown": 0,
         "adventurers": [
             { "type": "Street rat", "amount": 1 }
+        ],
+        "attributes": [
+            { "type": "Deftness", "amount": 1 }
         ]
     }
 }, {
@@ -216,6 +251,10 @@
         "renown": 0,
         "adventurers": [
             { "type": "Drunkard", "amount": 10 }
+        ],
+        "attributes": [
+            { "type": "Toughness", "amount": 10 },
+            { "type": "Fighting", "amount": 10 }
         ]
     }
 }, {
@@ -239,6 +278,10 @@
             { "type": "Brawler", "amount": 1 },
             { "type": "Drunkard", "amount": 5 },
             { "type": "Street rat", "amount": 10 }
+        ],
+        "attributes": [
+            { "type": "Toughness", "amount": 20 },
+            { "type": "Fighting", "amount": 20 }
         ]
     }
 }, {
@@ -260,6 +303,11 @@
         "renown": 1,
         "adventurers": [
             { "type": "Fighter", "amount": 2 }
+        ],
+        "attributes": [
+            { "type": "Intelligence", "amount": 5 },
+            { "type": "Toughness", "amount": 15 },
+            { "type": "Fighting", "amount": 20 }
         ]
     }
 }, {
@@ -283,6 +331,11 @@
             { "type": "Brawler", "amount": 15 },
             { "type": "Fighter", "amount": 5 },
             { "type": "Street rat", "amount": 10 }
+        ],
+        "attributes": [
+            { "type": "Intelligence", "amount": 5 },
+            { "type": "Toughness", "amount": 35 },
+            { "type": "Fighting", "amount": 30 }
         ]
     }
 }, {
@@ -303,6 +356,9 @@
         "renown": 1,
         "adventurers": [
             { "type": "Brawler", "amount": 1 }
+        ],
+        "attributes": [
+            { "type": "Fighting", "amount": 5 }
         ]
     }
 }, {
@@ -325,6 +381,11 @@
             { "type": "Brawler", "amount": 1 },
             { "type": "Citizen", "amount": 1 },
             { "type": "Cleric", "amount": 1 }
+        ],
+        "attributes": [
+            { "type": "Fighting", "amount": 5 },
+            { "type": "Intelligence", "amount": 5 },
+            { "type": "Deftness", "amount": 5 }
         ]
     }
 }, {
@@ -346,6 +407,10 @@
         "renown": 1,
         "adventurers": [
             { "type": "Thief", "amount": 2 }
+        ],
+        "attributes": [
+            { "type": "Intelligence", "amount": 5 },
+            { "type": "Deftness", "amount": 5 }
         ]
     }
 }, {
@@ -366,6 +431,9 @@
         "renown": 0,
         "adventurers": [
             { "type": "Peasant", "amount": 1 }
+        ],
+        "attributes": [
+            { "type": "Toughness", "amount": 15 }
         ]
     }
 }, {
@@ -386,6 +454,10 @@
         "renown": 0,
         "adventurers": [
             { "type": "Citizen", "amount": 1 }
+        ],
+        "attributes": [
+            { "type": "Toughness", "amount": 5 },
+            { "type": "Intelligence", "amount": 15 }
         ]
     }
 }, {
@@ -406,6 +478,10 @@
         "renown": 0,
         "adventurers": [
             { "type": "Citizen", "amount": 10 }
+        ],
+        "attributes": [
+            { "type": "Toughness", "amount": 10 },
+            { "type": "Intelligence", "amount": 20 }
         ]
     }
 }, {
@@ -426,6 +502,9 @@
         "renown": 0,
         "adventurers": [
             { "type": "Peasant", "amount": 10 }
+        ],
+        "attributes": [
+            { "type": "Toughness", "amount": 20 }
         ]
     }
 }, {
@@ -449,6 +528,11 @@
         "adventurers": [
             { "type": "Thief", "amount": 1 },
             { "type": "Street rat", "amount": 5 }
+        ],
+        "attributes": [
+            { "type": "Toughness", "amount": 7 },
+            { "type": "Intelligence", "amount": 7 },
+            { "type": "Deftness", "amount": 7 }
         ]
     }
 }, {
@@ -472,6 +556,11 @@
             { "type": "Thief", "amount": 2 },
             { "type": "Citizen", "amount": 1 },
             { "type": "Brawler", "amount": 2 }
+        ],
+        "attributes": [
+            { "type": "Toughness", "amount": 7 },
+            { "type": "Intelligence", "amount": 7 },
+            { "type": "Deftness", "amount": 7 }
         ]
     }
 }]

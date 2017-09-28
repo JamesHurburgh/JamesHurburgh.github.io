@@ -31,40 +31,23 @@ requirejs(['jquery', 'vue', 'alertify', 'store', 'chance', 'app/AdventurersGame'
 
         var AdventurersGame = new AdventurersGame(store.get("AdventurersGame"), save);
 
-        var gameDifficulty = 3; // 100 is normal
-
-        //var idleGame = new Vue({
         var controller = new Vue({
             el: '#AdventurersGame',
             data: AdventurersGame,
-            computed: {
-                canHire: function() {
-                    return AdventurersGame.canHire();
-                },
-                canHireAdvanced: function() {
-                    return AdventurersGame.canHireAdvanced();
-                },
-                expeditionProgress: function(name) {
-                    return AdventurersGame.expeditionProgress(name);
-                }
-            },
-            methods: {
-                reset: function() {
-                    AdventurersGame.reset();
-                },
-                hire: function(name) {
-                    AdventurersGame.hire(name);
-                }
-            }
+            computed: {},
+            methods: {}
         });
 
         function tick() {
-            AdventurersGame.tick();
+            try {
+                AdventurersGame.tick();
+            } catch (exception) {
+                console.log(exception);
+            }
             setTimeout(tick, 100);
         }
 
         // boot up the first call
         tick();
-
 
     });

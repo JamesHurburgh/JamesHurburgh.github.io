@@ -12,22 +12,33 @@
         { "name": "upgradeChance", "baseValue": 1 }
     ],
     "versions": [{
-        "number": "0.9.6",
-        "description": "More! Bug fixes",
+        "number": "0.9.7",
+        "description": "It's about time.",
         "features": [
+            "Added game time to the bottom of the view.",
+            "Messages now log in game time.",
+            "Indicators on each tab that there are not items."
         ],
         "bugfixes": [
+            "Fixed bug where leftover contracts giving reknown couldn't be claimed."
+        ]
+    }, {
+        "number": "0.9.6",
+        "description": "More! Bug fixes",
+        "features": [],
+        "bugfixes": [
             "Fixed bug where you stopped getting rewards",
-            "Fixed spelling of renown"]
-    },{
+            "Fixed spelling of renown"
+        ]
+    }, {
         "number": "0.9.5",
         "description": "Bug fixes",
-        "features": [
-        ],
+        "features": [],
         "bugfixes": [
             "Fixed mysterious scrolls not working",
             "Fixed not losing an item when you use or sell it.",
-            "Fixed bug where you stopped getting rewards."]
+            "Fixed bug where you stopped getting rewards."
+        ]
     }, {
         "number": "0.9.4",
         "description": "More mysterious effects",

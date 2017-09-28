@@ -1,0 +1,42 @@
+[{
+        "name": "Orge",
+        "plural": "Orges"
+    },
+    {
+        "name": "Goblin",
+        "plural": "Goblins"
+    },
+    {
+        "name": "Wolf",
+        "plural": "Wolves"
+    },
+    {
+        "name": "Bear",
+        "plural": "Bears"
+    },
+    {
+        "name": "Thief",
+        "plural": "Thieves"
+    },
+    {
+        "name": "Bandit",
+        "plural": "Bandits"
+    },
+    {
+        "name": "Dragon",
+        "plural": "Dragons"
+    },
+    {
+        "name": "Lich",
+        "plural": "Liches",
+        "minions": [{ "chance": 0.8, "name": "Skeleton" }]
+    },
+    {
+        "name": "Skeleton",
+        "plural": "Skeletons"
+    },
+    {
+        "name": "Zombie",
+        "plural": "Zombies"
+    }
+]
