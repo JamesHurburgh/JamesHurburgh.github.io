@@ -20,7 +20,8 @@
             "Indicators on each tab that there are not items."
         ],
         "bugfixes": [
-            "Fixed bug where leftover contracts giving reknown couldn't be claimed."
+            "Fixed bug where leftover contracts giving reknown couldn't be claimed.",
+            "Typo causing contracts to never expire."
         ]
     }, {
         "number": "0.9.6",

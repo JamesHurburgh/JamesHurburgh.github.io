@@ -834,13 +834,13 @@ define(["jquery",
                     }
                 }
                 // Remove expired contracts
-                var avialableContracts = this.LocationManager().getCurrentLocation().avialableContracts;
-                if (avialableContracts) {
-                    for (var j = 0; j < avialableContracts.length; j++) {
-                        if (avialableContracts[j].expires <= Date.now()) {
+                var availableContracts = this.LocationManager().getCurrentLocation().availableContracts;
+                if (availableContracts) {
+                    for (var j = 0; j < availableContracts.length; j++) {
+                        if (availableContracts[j].expires <= Date.now()) {
                             this.trackStat("miss", "contract", 1);
-                            this.trackStat("miss-contract", avialableContracts[j].name, 1);
-                            avialableContracts.splice(j, 1);
+                            this.trackStat("miss-contract", availableContracts[j].name, 1);
+                            availableContracts.splice(j, 1);
                         }
                     }
                 }
