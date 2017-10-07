@@ -1,42 +1,57 @@
 [{
+        "name": "Creatures",
+        "plural": "Creatures",
+        "subset": ["Beasts", "Humaniods", "Monsters"]
+    }, {
         "name": "Orge",
-        "plural": "Orges"
+        "plural": "Orges",
+        "tags": ["humaniod", "monster"]
     },
     {
         "name": "Goblin",
-        "plural": "Goblins"
+        "plural": "Goblins",
+        "tags": ["humaniod", "monster"]
     },
     {
         "name": "Wolf",
-        "plural": "Wolves"
+        "plural": "Wolves",
+        "tags": ["beast", "predator"]
     },
     {
         "name": "Bear",
-        "plural": "Bears"
+        "plural": "Bears",
+        "tags": ["beast", "predator"]
     },
     {
         "name": "Thief",
-        "plural": "Thieves"
+        "plural": "Thieves",
+        "tags": ["humaniod"]
     },
     {
         "name": "Bandit",
-        "plural": "Bandits"
+        "plural": "Bandits",
+        "tags": ["humaniod"]
     },
     {
         "name": "Dragon",
-        "plural": "Dragons"
+        "plural": "Dragons",
+        "tags": ["reptile", "beast", "magical", "predator"]
     },
     {
         "name": "Lich",
         "plural": "Liches",
+        "tags": ["humaniod", "undead"],
         "minions": [{ "chance": 0.8, "name": "Skeleton" }]
     },
     {
         "name": "Skeleton",
-        "plural": "Skeletons"
+        "plural": "Skeletons",
+        "tags": ["humaniod", "undead"]
     },
     {
         "name": "Zombie",
-        "plural": "Zombies"
+        "plural": "Zombies",
+        "tags": ["humaniod", "undead"]
     }
+
 ]

@@ -1,0 +1,18 @@
+<span v-if="ownedItems.length == 0" class="text-muted text-center col-xs-12">No items</span>
+<table v-if="ownedItems.length != 0" class="table table-striped table-hover ">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Value</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tr v-for="item in ownedItems">
+        <td>{{item.name}}</td>
+        <td><span v-if="item.value !== undefined">{{item.value}}</span></td>
+        <td>
+            <button v-if="ItemManager().canSell(item)" @click="ItemManager().sellItem(item)" class="btn btn-xs btn-success pull-right">Sell</button>
+            <button v-if="ItemManager().canUse(item)" @click="ItemManager().useItem(item)" class="btn btn-xs btn-info pull-right">Use</button>
+        </td>
+    </tr>
+</table>

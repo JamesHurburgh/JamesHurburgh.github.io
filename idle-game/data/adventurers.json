@@ -3,71 +3,138 @@
     "plural": "Drunkards",
     "becomes": ["Street rat", "Peasant", "Brawler"],
     "cpt": 0,
-    "baseCost": 1,
+    "baseCost": 4,
+    "baseCut": 1.0,
+    "baseExperience": 3,
     "costMultiplier": 1,
-    "costExponent": 1.05
+    "costExponent": 1.05,
+    "skills": [
+        { "name": "Toughness", "amount": 1 },
+        { "name": "Perception", "amount": 1 },
+        { "name": "Fighting", "amount": 1 }
+    ]
 }, {
     "name": "Street rat",
     "plural": "Street rats",
     "becomes": ["Brawler", "Thief"],
     "cpt": 0,
-    "baseCost": 2,
+    "baseCost": 6,
+    "baseCut": 1.5,
+    "baseExperience": 3,
     "costMultiplier": 1,
-    "costExponent": 1.05
+    "costExponent": 1.05,
+    "skills": [
+        { "name": "Toughness", "amount": 1 },
+        { "name": "Perception", "amount": 1 },
+        { "name": "Agility", "amount": 1 }
+    ]
 }, {
     "name": "Peasant",
     "plural": "Peasants",
     "becomes": ["Citizen"],
     "cpt": 0,
     "baseCost": 10,
+    "baseCut": 2.0,
+    "baseExperience": 3,
     "costMultiplier": 1,
-    "costExponent": 1.05
+    "costExponent": 1.05,
+    "skills": [
+        { "name": "Toughness", "amount": 1 },
+        { "name": "Perception", "amount": 1 },
+        { "name": "Intelligence", "amount": 1 }
+    ]
 }, {
     "name": "Brawler",
     "plural": "Brawlers",
     "becomes": ["Fighter"],
     "cpt": 0,
     "baseCost": 400,
+    "baseCut": 2.5,
+    "baseExperience": 6,
     "costMultiplier": 5,
-    "costExponent": 1.05
+    "costExponent": 1.05,
+    "skills": [
+        { "name": "Toughness", "amount": 2 },
+        { "name": "Perception", "amount": 1 },
+        { "name": "Agility", "amount": 1 },
+        { "name": "Fighting", "amount": 2 }
+    ]
 }, {
     "name": "Thief",
     "plural": "Thieves",
     "becomes": [],
     "cpt": 0,
     "baseCost": 150,
+    "baseCut": 3.5,
+    "baseExperience": 6,
     "costMultiplier": 5,
-    "costExponent": 1.05
+    "costExponent": 1.05,
+    "skills": [
+        { "name": "Toughness", "amount": 2 },
+        { "name": "Perception", "amount": 2 },
+        { "name": "Agility", "amount": 2 }
+    ]
 }, {
     "name": "Citizen",
     "plural": "Citizen",
     "becomes": ["Cleric", "Mage"],
     "cpt": 0,
     "baseCost": 100,
+    "baseCut": 3.0,
+    "baseExperience": 5,
     "costMultiplier": 5,
-    "costExponent": 1.05
+    "costExponent": 1.05,
+    "skills": [
+        { "name": "Toughness", "amount": 2 },
+        { "name": "Perception", "amount": 2 },
+        { "name": "Intelligence", "amount": 2 }
+    ]
 }, {
     "name": "Fighter",
     "plural": "Fighters",
     "becomes": [],
     "cpt": 0,
     "baseCost": 1400,
+    "baseCut": 4.5,
+    "baseExperience": 50,
     "costMultiplier": 5,
-    "costExponent": 1.05
+    "costExponent": 1.05,
+    "skills": [
+        { "name": "Toughness", "amount": 4 },
+        { "name": "Perception", "amount": 1 },
+        { "name": "Agility", "amount": 1 },
+        { "name": "Fighting", "amount": 2 }
+    ]
 }, {
     "name": "Cleric",
     "plural": "Clerics",
     "becomes": [],
     "cpt": 0,
     "baseCost": 2100,
+    "baseCut": 4.0,
+    "baseExperience": 65,
     "costMultiplier": 5,
-    "costExponent": 1.05
+    "costExponent": 1.05,
+    "skills": [
+        { "name": "Toughness", "amount": 2 },
+        { "name": "Perception", "amount": 3 },
+        { "name": "Agility", "amount": 2 },
+        { "name": "Healing", "amount": 1 }
+    ]
 }, {
     "name": "Mage",
     "plural": "Mages",
     "becomes": [],
     "cpt": 0,
     "baseCost": 3150,
+    "baseCut": 5.0,
+    "baseExperience": 70,
     "costMultiplier": 5,
-    "costExponent": 1.05
+    "costExponent": 1.05,
+    "skills": [
+        { "name": "Toughness", "amount": 2 },
+        { "name": "Perception", "amount": 3 },
+        { "name": "Agility", "amount": 2 },
+        { "name": "Magic", "amount": 1 }
+    ]
 }]

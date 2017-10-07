@@ -319,15 +319,251 @@
             "spear",
             "lance",
             "bow",
-            "sling"
+            "sling",
+            "staff"
+        ]
+    },
+    {
+        "type": "sling",
+        "displayName": "Sling",
+        "baseValue": "20",
+        "prefixesList": [
+            [
+                { "prefix": "Cloth", "valueModifier": 1 },
+                { "prefix": "Cotton", "valueModifier": 1 },
+                { "prefix": "Leather", "valueModifier": 1 }
+            ],
+            [
+                { "prefix": "Bent", "valueModifier": 0.5 },
+                { "prefix": "Torn", "valueModifier": 0.5 },
+                { "prefix": "Poor", "valueModifier": 0.5 },
+                { "prefix": "Dirty", "valueModifier": 0.9 },
+                { "prefix": "Decorated", "valueModifier": 1.7 },
+                { "prefix": "Detailed", "valueModifier": 2.5 },
+                { "prefix": "Masterful", "valueModifier": 5 }
+            ]
+        ]
+    },
+    {
+        "type": "staff",
+        "displayName": "Staff",
+        "baseValue": "50",
+        "prefixesList": [
+            [
+                { "prefix": "Cedar", "valueModifier": 0.5 },
+                { "prefix": "Fir", "valueModifier": 0.5 },
+                { "prefix": "Pine", "valueModifier": 0.5 },
+                { "prefix": "Redwood", "valueModifier": 0.5 },
+                { "prefix": "Ash", "valueModifier": 0.5 },
+                { "prefix": "Birch", "valueModifier": 0.5 },
+                { "prefix": "Oak", "valueModifier": 0.5 },
+                { "prefix": "Iron", "valueModifier": 1.1 },
+                { "prefix": "Copper", "valueModifier": 1.5 },
+                { "prefix": "Brass", "valueModifier": 1.5 },
+                { "prefix": "Steel", "valueModifier": 2 }
+            ],
+            [
+                { "prefix": "Bent", "valueModifier": 0.5 },
+                { "prefix": "Broken", "valueModifier": 0.5 },
+                { "prefix": "Poor", "valueModifier": 0.5 },
+                { "prefix": "Dirty", "valueModifier": 0.5 },
+                { "prefix": "Shiny", "valueModifier": 1.2 },
+                { "prefix": "Engraved", "valueModifier": 1.6 },
+                { "prefix": "Decorated", "valueModifier": 1.7 },
+                { "prefix": "Detailed", "valueModifier": 2.5 },
+                { "prefix": "Masterful", "valueModifier": 5 }
+            ]
+        ]
+    },
+    {
+        "type": "sword",
+        "displayName": "Sword",
+        "baseValue": "110",
+        "prefixesList": [
+            [
+                { "prefix": "Wooden", "valueModifier": 0.5 },
+                { "prefix": "Iron", "valueModifier": 1.1 },
+                { "prefix": "Copper", "valueModifier": 1.5 },
+                { "prefix": "Brass", "valueModifier": 1.5 },
+                { "prefix": "Steel", "valueModifier": 2 }
+            ],
+            [
+                { "prefix": "Bent", "valueModifier": 0.5 },
+                { "prefix": "Broken", "valueModifier": 0.5 },
+                { "prefix": "Poor", "valueModifier": 0.5 },
+                { "prefix": "Dirty", "valueModifier": 0.5 },
+                { "prefix": "Shiny", "valueModifier": 1.2 },
+                { "prefix": "Engraved", "valueModifier": 1.6 },
+                { "prefix": "Decorated", "valueModifier": 1.7 },
+                { "prefix": "Detailed", "valueModifier": 2.5 },
+                { "prefix": "Masterful", "valueModifier": 5 }
+            ]
+        ]
+    },
+    {
+        "type": "battle-axe",
+        "displayName": "Battle-axe",
+        "baseValue": "120",
+        "prefixesList": [
+            [
+                { "prefix": "Wooden", "valueModifier": 0.5 },
+                { "prefix": "Iron", "valueModifier": 1.1 },
+                { "prefix": "Copper", "valueModifier": 1.5 },
+                { "prefix": "Brass", "valueModifier": 1.5 },
+                { "prefix": "Steel", "valueModifier": 2 }
+            ],
+            [
+                { "prefix": "Bent", "valueModifier": 0.5 },
+                { "prefix": "Broken", "valueModifier": 0.5 },
+                { "prefix": "Poor", "valueModifier": 0.5 },
+                { "prefix": "Dirty", "valueModifier": 0.5 },
+                { "prefix": "Shiny", "valueModifier": 1.2 },
+                { "prefix": "Engraved", "valueModifier": 1.6 },
+                { "prefix": "Decorated", "valueModifier": 1.7 },
+                { "prefix": "Detailed", "valueModifier": 2.5 },
+                { "prefix": "Masterful", "valueModifier": 5 }
+            ]
+        ]
+    },
+    {
+        "type": "club",
+        "displayName": "Club",
+        "baseValue": "30",
+        "prefixesList": [
+            [
+                { "prefix": "Cedar", "valueModifier": 0.5 },
+                { "prefix": "Fir", "valueModifier": 0.5 },
+                { "prefix": "Pine", "valueModifier": 0.5 },
+                { "prefix": "Redwood", "valueModifier": 0.5 },
+                { "prefix": "Ash", "valueModifier": 0.5 },
+                { "prefix": "Birch", "valueModifier": 0.5 },
+                { "prefix": "Oak", "valueModifier": 0.5 },
+                { "prefix": "Maple", "valueModifier": 0.5 },
+                { "prefix": "Teak", "valueModifier": 0.5 },
+                { "prefix": "Walnut", "valueModifier": 0.5 },
+                { "prefix": "Poplar", "valueModifier": 0.5 },
+                { "prefix": "Iron", "valueModifier": 1.1 },
+                { "prefix": "Copper", "valueModifier": 1.5 },
+                { "prefix": "Brass", "valueModifier": 1.5 },
+                { "prefix": "Steel", "valueModifier": 2 }
+            ],
+            [
+                { "prefix": "Bent", "valueModifier": 0.5 },
+                { "prefix": "Broken", "valueModifier": 0.5 },
+                { "prefix": "Poor", "valueModifier": 0.5 },
+                { "prefix": "Dirty", "valueModifier": 0.5 },
+                { "prefix": "Shiny", "valueModifier": 1.2 },
+                { "prefix": "Engraved", "valueModifier": 1.6 },
+                { "prefix": "Decorated", "valueModifier": 1.7 },
+                { "prefix": "Detailed", "valueModifier": 2.5 },
+                { "prefix": "Masterful", "valueModifier": 5 }
+            ]
+        ]
+    },
+    {
+        "type": "lance",
+        "displayName": "Lance",
+        "baseValue": "100",
+        "prefixesList": [
+            [
+                { "prefix": "Cedar", "valueModifier": 0.5 },
+                { "prefix": "Fir", "valueModifier": 0.5 },
+                { "prefix": "Pine", "valueModifier": 0.5 },
+                { "prefix": "Redwood", "valueModifier": 0.5 },
+                { "prefix": "Ash", "valueModifier": 0.5 },
+                { "prefix": "Birch", "valueModifier": 0.5 },
+                { "prefix": "Oak", "valueModifier": 0.5 },
+                { "prefix": "Maple", "valueModifier": 0.5 },
+                { "prefix": "Teak", "valueModifier": 0.5 },
+                { "prefix": "Walnut", "valueModifier": 0.5 },
+                { "prefix": "Poplar", "valueModifier": 0.5 },
+                { "prefix": "Iron", "valueModifier": 1.1 },
+                { "prefix": "Copper", "valueModifier": 1.5 },
+                { "prefix": "Brass", "valueModifier": 1.5 },
+                { "prefix": "Steel", "valueModifier": 2 }
+            ],
+            [
+                { "prefix": "Bent", "valueModifier": 0.5 },
+                { "prefix": "Broken", "valueModifier": 0.5 },
+                { "prefix": "Poor", "valueModifier": 0.5 },
+                { "prefix": "Dirty", "valueModifier": 0.5 },
+                { "prefix": "Shiny", "valueModifier": 1.2 },
+                { "prefix": "Engraved", "valueModifier": 1.6 },
+                { "prefix": "Decorated", "valueModifier": 1.7 },
+                { "prefix": "Detailed", "valueModifier": 2.5 },
+                { "prefix": "Masterful", "valueModifier": 5 }
+            ]
+        ]
+    },
+    {
+        "type": "spear",
+        "displayName": "Spear",
+        "baseValue": "70",
+        "prefixesList": [
+            [
+                { "prefix": "Cedar", "valueModifier": 0.5 },
+                { "prefix": "Fir", "valueModifier": 0.5 },
+                { "prefix": "Pine", "valueModifier": 0.5 },
+                { "prefix": "Redwood", "valueModifier": 0.5 },
+                { "prefix": "Ash", "valueModifier": 0.5 },
+                { "prefix": "Birch", "valueModifier": 0.5 },
+                { "prefix": "Oak", "valueModifier": 0.5 },
+                { "prefix": "Maple", "valueModifier": 0.5 },
+                { "prefix": "Teak", "valueModifier": 0.5 },
+                { "prefix": "Walnut", "valueModifier": 0.5 },
+                { "prefix": "Poplar", "valueModifier": 0.5 },
+                { "prefix": "Iron", "valueModifier": 1.1 },
+                { "prefix": "Copper", "valueModifier": 1.5 },
+                { "prefix": "Brass", "valueModifier": 1.5 },
+                { "prefix": "Steel", "valueModifier": 2 }
+            ],
+            [
+                { "prefix": "Bent", "valueModifier": 0.5 },
+                { "prefix": "Broken", "valueModifier": 0.5 },
+                { "prefix": "Poor", "valueModifier": 0.5 },
+                { "prefix": "Dirty", "valueModifier": 0.5 },
+                { "prefix": "Shiny", "valueModifier": 1.2 },
+                { "prefix": "Engraved", "valueModifier": 1.6 },
+                { "prefix": "Decorated", "valueModifier": 1.7 },
+                { "prefix": "Detailed", "valueModifier": 2.5 },
+                { "prefix": "Masterful", "valueModifier": 5 }
+            ]
         ]
     },
     {
         "type": "bow",
-        "subsets": [
-            "longbow",
-            "shortbow",
-            "crossbow"
+        "displayName": "Bow",
+        "baseValue": "70",
+        "prefixesList": [
+            [
+                { "prefix": "Short", "valueModifier": 1 },
+                { "prefix": "Long", "valueModifier": 2 },
+                { "prefix": "Cross", "valueModifier": 3 }
+            ],
+            [
+                { "prefix": "Cedar", "valueModifier": 1 },
+                { "prefix": "Fir", "valueModifier": 1 },
+                { "prefix": "Pine", "valueModifier": 1 },
+                { "prefix": "Redwood", "valueModifier": 1 },
+                { "prefix": "Ash", "valueModifier": 1 },
+                { "prefix": "Birch", "valueModifier": 1 },
+                { "prefix": "Oak", "valueModifier": 1 },
+                { "prefix": "Maple", "valueModifier": 0.5 },
+                { "prefix": "Teak", "valueModifier": 0.5 },
+                { "prefix": "Walnut", "valueModifier": 0.5 },
+                { "prefix": "Poplar", "valueModifier": 0.5 }
+            ],
+            [
+                { "prefix": "Bent", "valueModifier": 0.5 },
+                { "prefix": "Broken", "valueModifier": 0.5 },
+                { "prefix": "Poor", "valueModifier": 0.5 },
+                { "prefix": "Dirty", "valueModifier": 0.5 },
+                { "prefix": "Shiny", "valueModifier": 1.2 },
+                { "prefix": "Engraved", "valueModifier": 1.6 },
+                { "prefix": "Decorated", "valueModifier": 1.7 },
+                { "prefix": "Detailed", "valueModifier": 2.5 },
+                { "prefix": "Masterful", "valueModifier": 5 }
+            ]
         ]
     },
     {
@@ -361,6 +597,14 @@
                 { "prefix": "Detailed", "valueModifier": 2.5 },
                 { "prefix": "Masterful", "valueModifier": 5 }
             ]
+        ]
+    },
+    {
+        "type": "skins",
+        "subsets": [
+            "hides",
+            "furs",
+            "crossbow"
         ]
     }
 ]

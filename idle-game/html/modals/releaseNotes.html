@@ -1,0 +1,32 @@
+<!-- Modal About Box -->
+<div id="releaseNotes" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" @click="cheat()">Release History</h4>
+            </div>
+            <div class="modal-body">
+                <div class="list-group">
+                    <div v-for="version in game.versions" class="list-group-item">
+                        <h3 class="list-group-item-heading">{{version.number}}</h3>
+                        <p class="list-group-item-text">{{version.description}}</p>
+                        <h4>Features</h4>
+                        <ul>
+                            <li v-for="feature in version.features">{{feature}}</li>
+                        </ul>
+                        <h4>Bug fixes</h4>
+                        <ul>
+                            <li v-for="bugfix in version.bugfixes">{{bugfix}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

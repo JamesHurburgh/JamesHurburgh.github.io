@@ -183,7 +183,7 @@
         ],
         "attributes": [
             { "type": "Fighting", "amount": 2 },
-            { "type": "Deftness", "amount": 2 }
+            { "type": "Agility", "amount": 2 }
         ]
     }
 }, {
@@ -207,7 +207,7 @@
         ],
         "attributes": [
             { "type": "Intelligence", "amount": 2 },
-            { "type": "Deftness", "amount": 2 }
+            { "type": "Agility", "amount": 2 }
         ]
     }
 }, {
@@ -230,7 +230,7 @@
             { "type": "Street rat", "amount": 1 }
         ],
         "attributes": [
-            { "type": "Deftness", "amount": 1 }
+            { "type": "Agility", "amount": 1 }
         ]
     }
 }, {
@@ -385,7 +385,7 @@
         "attributes": [
             { "type": "Fighting", "amount": 5 },
             { "type": "Intelligence", "amount": 5 },
-            { "type": "Deftness", "amount": 5 }
+            { "type": "Agility", "amount": 5 }
         ]
     }
 }, {
@@ -410,7 +410,7 @@
         ],
         "attributes": [
             { "type": "Intelligence", "amount": 5 },
-            { "type": "Deftness", "amount": 5 }
+            { "type": "Agility", "amount": 5 }
         ]
     }
 }, {
@@ -532,7 +532,7 @@
         "attributes": [
             { "type": "Toughness", "amount": 7 },
             { "type": "Intelligence", "amount": 7 },
-            { "type": "Deftness", "amount": 7 }
+            { "type": "Agility", "amount": 7 }
         ]
     }
 }, {
@@ -560,7 +560,7 @@
         "attributes": [
             { "type": "Toughness", "amount": 7 },
             { "type": "Intelligence", "amount": 7 },
-            { "type": "Deftness", "amount": 7 }
+            { "type": "Agility", "amount": 7 }
         ]
     }
 }]

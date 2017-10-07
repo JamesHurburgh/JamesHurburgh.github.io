@@ -1,0 +1,22 @@
+[{
+    "name": "Toughness",
+    "icon": "strong"
+}, {
+    "name": "Fighting",
+    "icon": "mailed-fist"
+}, {
+    "name": "Agility",
+    "icon": "run"
+}, {
+    "name": "Perception",
+    "icon": "spyglass"
+}, {
+    "name": "Intelligence",
+    "icon": "brain"
+}, {
+    "name": "Healing",
+    "icon": "hospital-cross"
+}, {
+    "name": "Magic",
+    "icon": "abstract-065"
+}]

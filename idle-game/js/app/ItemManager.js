@@ -113,6 +113,7 @@ define(["json!data/items.json"],
                 }
 
                 usageFunction(gameState);
+                gameState.trackStat("use-item", item.name, 1);
                 this.removeItem(item);
             };
 

@@ -1,0 +1,57 @@
+<!-- Modal Options Box -->
+<div id="options" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4>Options</h4>
+            </div>
+            <div class="modal-body">
+                <button @click="reset()" type="button" class="btn btn-default" data-dismiss="modal">Reset the Game</button>
+
+                <h3>Autoplay</h3>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" v-model="options.automaticHire">Automatically hire available adventurers</input>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" v-model="options.automaticClaim">Automatically claim completed expeditions</input>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" v-model="options.automaticSend">Automatically send available contracts</input>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" v-model="options.automaticRelocate">Automatically relocate to better locations</input>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" v-model="options.automaticFreeCoins">Automatically claim free coins</input>
+                    </label>
+                </div>
+                <h3>Display</h3>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" v-model="options.showMessageTimeAsRealTime">Show message time as real time</input>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" v-model="options.claimAllButtons">Display "Claim All" Buttons</input>
+                    </label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

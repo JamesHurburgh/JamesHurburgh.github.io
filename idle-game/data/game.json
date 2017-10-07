@@ -1,17 +1,48 @@
 {
     "name": "Adventurers of Otium",
-    "description": "Adventurering is dangerous. Hire someone else to do it for you!",
+    "description": "Adventuring is dangerous. Hire someone else to do it for you!",
     "author": "James Hurburgh",
     "author-uri": "",
     "globals": [
-        { "name": "chanceOfNewContract", "baseValue": 0.5 },
-        { "name": "chanceOfNewHire", "baseValue": 0.2 },
+        { "name": "chanceOfNewContract", "baseValue": 0.05 },
+        { "name": "averageJobContractExpiry", "baseValue": 600 },
+        { "name": "chanceOfNewHire", "baseValue": 0.05 },
+        { "name": "averageHireContractExpiry", "baseValue": 600 },
         { "name": "hireCostModifier", "baseValue": 1 },
         { "name": "freeCoinsModifier", "baseValue": 1 },
         { "name": "questRisk", "baseValue": 1 },
         { "name": "upgradeChance", "baseValue": 1 }
     ],
     "versions": [{
+        "number": "0.10.0",
+        "description": "Skills and adventurers update",
+        "features": [
+            "MAJOR UPDATE - Please reset you game.",
+            "Adventurers are now individual instead of just being numbers.",
+            "Adventures now have a base cost and don't cost more.",
+            "Adventurers have skills.",
+            "Adventurers will gain XP for mission.  It can't be used yet, but it's there.",
+            "Major interface updates to make everything more readable/obvious.",
+            "Contract requirements are now based on skills instead of party members.",
+            "Contracts can be rejected",
+            "Adventurers and contracts hang about for longer but don't show up as often.",
+            "Time has more description and a coloured background based on time.",
+            "Holidays will now show up below the calendar.",
+            "Tabs are now hidden when there are no items.",
+            "An in-progress data manager can be accessed from the menu and provides details on some of the data files used."
+        ],
+        "bugfixes": []
+    }, {
+        "number": "0.9.8",
+        "description": "Bug Fixes",
+        "features": [
+            "Option: Show achievement time as real time or game time."
+        ],
+        "bugfixes": [
+            "Statistics filter is not trim sensitive",
+            "Added use stat on items"
+        ]
+    }, {
         "number": "0.9.7",
         "description": "It's about time.",
         "features": [

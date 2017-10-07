@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Adventurers of Otium</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <script src="./js/lib/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/alertify.min.css" />
+    <!-- <link rel="stylesheet" href="css/bootstrap-glyphicons.min.css" /> -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <!-- Alertify Bootstrap theme -->
+    <link rel="stylesheet" href="css/alertify.bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.slate.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <!--This sets the baseUrl to the "scripts" directory, and
+    loads a script that will have a module ID of 'main'-->
+    <script data-main="js/app/data.js" src="js/require.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="data">
+                Adventurers of Otium data manager
+
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#locations" data-toggle="tab" aria-expanded="true">Locations</a></li>
+                    <li class=""><a href="#contracts" data-toggle="tab" aria-expanded="true">Contracts</a></li>
+                    <li class=""><a href="#adventurers" data-toggle="tab" aria-expanded="true">Adventurers</a></li>
+                    <li class=""><a href="#skills" data-toggle="tab" aria-expanded="true">Skills</a></li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="locations">
+                        <div class="panel-group" id="locations-accordion">
+                            <div v-for="location in locations" class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#locations-accordion" :href="'#' + toId(location.name)">{{location.name}}</a>
+                                    </h4>
+                                </div>
+                                <div :id="toId(location.name)" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col-sm-6">
+                                            <form class="form-horizontal">
+                                                <fieldset>
+                                                    <legend>Location</legend>
+                                                    <div class="form-group">
+                                                        <label for="description" class="col-lg-2 control-label">Description</label>
+                                                        <div class="col-lg-10">
+                                                            <textarea class="form-control" rows="5" id="description">{{location.description}}</textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="renownRequired" class="col-lg-2 control-label">Renown Required</label>
+                                                        <div class="col-lg-10">
+                                                            <input type="text" class="form-control" id="renownRequired" placeholder="0" :value="location.renownRequired">
+                                                        </div>
+                                                    </div>
+                                                    <legend>Free Coins</legend>
+                                                    <div class="form-group">
+                                                        <label for="freeCoinsDescription" class="col-lg-2 control-label">Description</label>
+                                                        <div class="col-lg-10">
+                                                            <input type="text" class="form-control" id="freeCoinsDescription" placeholder="Get Coins" :value="location.freeCoinsDescription">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="freeCoins" class="col-lg-2 control-label">Amount</label>
+                                                        <div class="col-lg-10">
+                                                            <input type="text" class="form-control" id="freeCoins" placeholder="0" :value="location.freeCoins">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="freeCoinsTimeout" class="col-lg-2 control-label">Timeout</label>
+                                                        <div class="col-lg-10">
+                                                            <input type="text" class="form-control" id="freeCoinsTimeout" placeholder="0" :value="location.freeCoinsTimeout">
+                                                        </div>
+                                                    </div>
+                                                    <legend>Contracts</legend>
+                                                    <ul>
+                                                        <li v-for="contract in location.contracts">{{contract}}</li>
+                                                    </ul>
+                                                    <legend>Adventurers</legend>
+                                                    <ul>
+                                                        <li v-for="adventurer in location.adventurers">{{adventurer.type}} (Ratio:{{adventurer.chance}})</a>
+                                                        </li>
+                                                    </ul>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="json" class="col-lg-2 control-label">Json</label>
+                                                <div class="col-lg-10">
+                                                    <textarea class="form-control" style="height: 70vh;" id="json">{{location}}</textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contracts">
+                        <div class="panel-group" id="contracts-accordion">
+                            <div v-for="contract in contracts" class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#contracts-accordion" :href="'#' + toId(contract.name)">{{contract.name}}</a>
+                                    </h4>
+                                </div>
+                                <div :id="toId(contract.name)" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <span>{{contract.description}}</span>
+                                        <div><textarea>{{contract}}</textarea></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="adventurers">
+                        <div class="panel-group" id="adventurers-accordion">
+                            <div v-for="adventurer in adventurers" class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#adventurers-accordion" :href="'#' + toId(adventurer.name)">{{adventurer.name}}</a>
+                                    </h4>
+                                </div>
+                                <div :id="toId(adventurer.name)" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col-sm-6">
+                                            <form class="form-horizontal">
+                                                <fieldset>
+                                                    <legend>Adventurer</legend>
+                                                    <div class="form-group">
+                                                        <label for="name" class="col-lg-2 control-label">Name</label>
+                                                        <div class="col-lg-10">
+                                                            <input type="text" class="form-control" id="name" placeholder="Adventurer" :value="adventurer.name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="plural" class="col-lg-2 control-label">Plural</label>
+                                                        <div class="col-lg-10">
+                                                            <input type="text" class="form-control" id="plural" placeholder="Adventurers" :value="adventurer.plural">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="plural" class="col-lg-2 control-label">Cost</label>
+                                                        <div class="col-lg-10">
+                                                            <input type="text" class="form-control" id="baseCost" placeholder="0" :value="adventurer.baseCost">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="baseExperience" class="col-lg-2 control-label">Base XP</label>
+                                                        <div class="col-lg-10">
+                                                            <input type="text" class="form-control" id="baseExperience" placeholder="0" :value="adventurer.baseExperience">
+                                                        </div>
+                                                    </div>
+                                                    <legend>Skills</legend>
+                                                    <span v-for="skill in adventurer.skills" :title="skill.name + ' ' + skill.amount"><img :alt="skill.name" v-for="n in skill.amount" width="24px" :src="'img/icons/' + getSkill(skill.name).icon + '.png'" /></span>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <legend>Json</legend>
+                                            <textarea class="form-control" style="height: 70vh;" id="json">{{adventurer}}</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="skills">
+                        <ul>
+                            <li v-for="skill in skills"><img width="24px" :src="'img/icons/' + skill.icon + '.png'" /> {{skill.name}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

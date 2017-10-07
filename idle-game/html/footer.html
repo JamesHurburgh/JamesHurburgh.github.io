@@ -1,0 +1,13 @@
+<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+    <div class="container">
+        <!-- <ul class="nav navbar-nav">
+            <li> -->
+        <span class="col-xs-6 label label-primary">{{coins}} coin<span v-if="coins != 1">s</span></span>
+        <span class="col-xs-6 label label-primary">{{renownText()}} ({{renown}})</span>
+        <span class="col-xs-12 label" :style="'background-color:' + gameDateTime.timeColour">{{gameDateTime.toFullString()}}</span>
+        <span class="col-xs-12 label label-info" v-if="gameDateTime.holiday" :title="gameDateTime.holiday.description">{{gameDateTime.holiday.name}}</span>
+
+        <!-- </li>
+        </ul> -->
+    </div>
+</nav>
