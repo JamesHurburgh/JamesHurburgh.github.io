@@ -14,6 +14,13 @@
         { "name": "upgradeChance", "baseValue": 1 }
     ],
     "versions": [{
+        "number": "0.10.2",
+        "description": "Get coin or renown animation.",
+        "features": [
+            "Get coin or renown animation.  That's all."
+        ],
+        "bugfixes": []
+    }, {
         "number": "0.10.1",
         "description": "Bug Fixes",
         "features": [

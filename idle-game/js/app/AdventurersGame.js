@@ -512,6 +512,7 @@ define(["jquery",
             };
 
             this.giveCoins = function(amount) {
+                $('#footerCoin').animateCss('bounce');
                 this.trackStat("get", "coins", amount);
                 this.coins += amount;
             };
@@ -657,7 +658,7 @@ define(["jquery",
                         return "./img/icons/swap-bag.png";
                 }
 
-            }
+            };
 
             // Expediations
 
@@ -681,6 +682,7 @@ define(["jquery",
 
             // Rewards
             this.giveRenown = function(amount) {
+                $('#footerRenown').animateCss('bounce');
                 this.trackStat("get", "renown", amount);
                 this.renown += amount;
             };

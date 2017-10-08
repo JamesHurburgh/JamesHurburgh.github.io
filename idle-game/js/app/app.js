@@ -17,6 +17,18 @@ requirejs.config({
 requirejs(['jquery', 'vue', 'alertify', 'store', 'chance', 'app/AdventurersGame'],
     function($, Vue, alertify, store, chance, AdventurersGame) {
 
+        // extend jQuery to add a function that does it all for you
+        // See: https://github.com/daneden/animate.css
+        $.fn.extend({
+            animateCss: function(animationName) {
+                var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                this.addClass('animated ' + animationName).one(animationEnd, function() {
+                    $(this).removeClass('animated ' + animationName);
+                });
+                return this;
+            }
+        });
+
         function uuidv4() {
             return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
                 (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
