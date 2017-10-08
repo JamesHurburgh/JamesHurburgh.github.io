@@ -34,14 +34,12 @@ define([
 
             this.rejectSelectedContract = function() {
                 this.rejectContract(this.getSelectedContract());
+                gameState.selectedContract = null;
+                this.selectNextContract();
             };
 
             this.rejectContract = function(contract) {
                 var availableContracts = gameState.LocationManager().getCurrentLocation().availableContracts;
-                if (gameState.selectedContract == contract) {
-                    gameState.selectedContract = null;
-                    this.selectNextContract();
-                }
                 availableContracts.splice(availableContracts.indexOf(contract), 1);
             };
 
@@ -61,6 +59,13 @@ define([
                 var requiredSkill = contract.requirements.attributes.filter(skill => skill.type == skillName)[0];
                 if (!requiredSkill) return 0;
                 return Math.min(currentlyAssigned, requiredSkill.amount);
+            };
+
+            this.prepContractQueue = function(millisecondsSinceLastLogin) {
+                var numberToPrep = Math.min(millisecondsSinceLastLogin / 1000 / 60 / 10, 5); // Prep one every 10 minutes
+                for (var i = 0; i < numberToPrep; i++) {
+                    gameState.addContract();
+                }
             };
 
             this.getCurrentQuestRequiredAndUnassignedSkillCount = function(skillName) {

@@ -188,6 +188,8 @@ define(["jquery",
                 this.currentParty = [];
                 this.adventurerList = [];
 
+                this.loginTracker = [];
+
                 this.version = game.versions[0].number;
 
                 // Data
@@ -206,8 +208,6 @@ define(["jquery",
                 console.log("calculate");
                 // Do all calculations here
                 this.calculateCounter = 0;
-                // Autosave
-                this.autoSave();
 
                 this.addNewContracts();
                 this.AdventurerManager().addNewAdverturersForHire();
@@ -215,6 +215,10 @@ define(["jquery",
                 this.checkAndClaimAllAchievements();
 
                 this.gameDateTime = this.getGameTime();
+
+                // Autosave
+                this.stillLoggedIn();
+                this.autoSave();
             };
 
             this.loadFromSavedData = function(savedData) {
@@ -291,8 +295,9 @@ define(["jquery",
                 this.availableAdventurers = savedData.availableAdventurers;
                 if (this.availableAdventurers === undefined) this.availableAdventurers = [];
 
-                // Begin standard version management
+                this.loginTracker = savedData.loginTracker;
 
+                // Begin standard version management
                 if (savedData.version === undefined) {
                     if (!this.LocationManager().getCurrentLocation().availableContracts) this.LocationManager().getCurrentLocation().availableContracts = [];
                     if (!this.LocationManager().getCurrentLocation().availableHires) this.LocationManager().getCurrentLocation().availableHires = [];
@@ -324,6 +329,25 @@ define(["jquery",
                 }
 
                 this.calculate();
+            };
+            // Login
+            this.login = function() {
+                this.timeSinceLastLogin = -1;
+                var loginTime = Date.now();
+                if (this.loginTracker === undefined) {
+                    this.loginTracker = [];
+                } else {
+                    this.timeSinceLastLogin = loginTime - this.loginTracker[this.loginTracker.length - 1].logout;
+                }
+                this.loginTracker.push({ "login": loginTime });
+            };
+
+            this.stillLoggedIn = function() {
+                if (this.loginTracker === undefined) {
+                    this.loginTracker = [];
+                    this.loginTracker.push({ "login": Date.now() });
+                }
+                this.loginTracker[this.loginTracker.length - 1].logout = Date.now();
             };
 
             // Achievements
@@ -623,6 +647,18 @@ define(["jquery",
                 return item;
             };
 
+            this.getIcon = function(iconFor) {
+                switch (iconFor) {
+                    case "coins":
+                        return "./img/icons/crown-coin.png";
+                    case "renown":
+                        return "./img/icons/thumb-up.png";
+                    case "item":
+                        return "./img/icons/swap-bag.png";
+                }
+
+            }
+
             // Expediations
 
             this.claimAllCompletedExpeditions = function() {
@@ -837,6 +873,9 @@ define(["jquery",
             } else {
                 this.loadFromSavedData(saveData);
             }
+            this.login();
+            this.QuestManager().prepContractQueue(this.timeSinceLastLogin);
+            this.AdventurerManager().prepAdventurersQueue(this.timeSinceLastLogin);
 
         };
     });

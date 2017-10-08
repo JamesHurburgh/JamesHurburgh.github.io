@@ -6,10 +6,10 @@
         "What are these coins even made of?",
         "It's surprising how many wishing wells there are in this city.",
         "Goblins are always dirty.  Anyone who tells you different is probably in love with one.",
-        "I heard that recently we didn't even have names we had to just refer to each other by what we do.",
+        "Remember when we didn't even have names and we had to just refer to each other by what we did.  Those were the days.",
         "Do you believe in Evok?",
         "I once found a bent copper ring in a graveyard.",
-        "Where's the rum gone?",
+        "Where's the Yumram gone?",
         "Crypts are creepy at night.  I wouldn't want to go skulking around them, but that's when the best loot is available.",
         "Have you ever met a dwarf?  They're always drunk from what I hear.",
         "If your name is Steve, chances are you're going to be a minor craftsman.",
@@ -18,7 +18,7 @@
         "So say this city was built on top of a graveyard, which itself was built on top of an evil swamp, which itself concealed the entrance to an underwater cave, which...  What was I talking about again?",
         "Time flies when you're having fun.",
         "This is not a kitten.  Keep looking.",
-        "Want some rye?  Course you do!",
+        "Want some Yumram?  Course you do!",
         "They say that it's important how well known you are, so don't neglect your reknown.",
         "**BURP**",
         "Everyone has a price, but not everyone has a price tag.",
@@ -65,7 +65,10 @@
         "Some people have it easy, some people have it tough.",
         "I sleep with a coin under my pillow.  It brings me luck.",
         "I saw a juggler who could make things disappear, but that's not real magic.",
-        "They say that clerics have access to a higher power.  That where they get their healing powers from."
+        "A street performer made my coin pouch disappear.  Still haven't got it back.  Great trick.",
+        "They say that clerics have access to a higher power.  That where they get their healing powers from.",
+        "Otium is famous for it's Yumram.  It's rum, made from yams!",
+        "My best friend used to be a yam.  Then he got hit on the head and now he's just a vegetable."
     ],
     "lowHealthQuotes": [
         "I don't have a broken arm! What are you talking about?....Oh THAT arm. Yeah that one's broken.",

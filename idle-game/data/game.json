@@ -14,6 +14,15 @@
         { "name": "upgradeChance", "baseValue": 1 }
     ],
     "versions": [{
+        "number": "0.10.1",
+        "description": "Bug Fixes",
+        "features": [
+            "Session tracking enabled for other functionality.",
+            "Improved finished quest tab as well as other minor enhancements to other tabs.",
+            "Filled contracts based on if you haven't logged in for a while."
+        ],
+        "bugfixes": []
+    }, {
         "number": "0.10.0",
         "description": "Skills and adventurers update",
         "features": [

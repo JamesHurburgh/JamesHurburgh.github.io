@@ -37,14 +37,7 @@
                                     width="24px" :src="'img/icons/' + get('skills', skill.name).icon + '.png'" />
                             </div>
                         </div>
-                        <!-- TODO CONVERT TO THIS CODE -->
-                        <!-- <span v-for="skill in selectedContract.requirements.attributes" :title="skill.type + ' ' + skill.amount"><img :alt="skill.type" v-for="n in skill.amount" width="24px" :src="'img/icons/' + get('skills', skill.type).icon + '.png'" /></span> -->
-
-                        <!-- <div v-for="attributesRequirement in selectedContract.requirements.attributes">
-                            {{attributesRequirement.amount}} {{attributesRequirement.type}} <span v-bind:class="{ 'text-danger': lessthan(AdventurerManager().getCurrentPartyAttribute(attributesRequirement.type), attributesRequirement.amount), 'text-success': !lessthan(AdventurerManager().getCurrentPartyAttribute(attributesRequirement.type), attributesRequirement.amount) }">({{AdventurerManager().getCurrentPartyAttribute(attributesRequirement.type)}}/{{attributesRequirement.amount}})</span>
-                        </div> -->
                     </div>
-
                 </div>
             </div>
             <div class="modal-body" style="max-height: 50vh; overflow-y: auto;">
@@ -62,9 +55,6 @@
                                 <td>{{adventurer.name.full}}</td>
                                 <td>
                                     <span v-for="skill in adventurer.skills" :title="skill.name + ' ' + skill.amount"><img :alt="skill.name" v-for="n in skill.amount" width="24px" :src="'img/icons/' + get('skills', skill.name).icon + '.png'" /></span>
-                                    <!-- <ul>
-                                        <li v-for="skill in adventurer.skills">{{skill.name}} {{skill.amount}}</li>
-                                    </ul> -->
                                 </td>
                             </tr>
                         </tbody>
