@@ -40,29 +40,50 @@ requirejs(['jquery', 'vue', 'alertify', 'store', 'chance', 'app/AdventurersGame'
                 store.set("AdventurersGame", controller._data);
             }
         }
+        
+                function handleException(ex){
+                    $("#AdventurersGame").hide();
+                    log(ex);
+                    log(JSON.stringify(AdventurersGame));
+                    $("#log").show();
+                }
 
-        var AdventurersGame = new AdventurersGame(store.get("AdventurersGame"), save);
+        function log(message){
+            console.log(message);
+            $("#log").append($("<div>").append(Date.now().toString() + ": " + message)); 
+        }   
 
-        var controller = new Vue({
-            el: '#AdventurersGame',
-            data: AdventurersGame,
-            computed: {},
-            methods: {},
-            // created: alert("created"),
-            // ready: alert("ready"),
-            mounted: function() {
-                this.$nextTick(function() {});
-            }
-        });
+
+        Vue.config.errorHandler = function(err, vm, info){
+            handleException(err);
+        };
+
+        var adventurersGame;
+        
+        try{
+            adventurersGame = new AdventurersGame(store.get("AdventurersGame"), save, log);
+
+            var controller = new Vue({
+                el: '#AdventurersGame',
+                data: adventurersGame,
+                computed: {},
+                methods: {},
+                // created: alert("created"),
+                // ready: alert("ready"),
+                mounted: function() {
+                    this.$nextTick(function() {});
+                }
+            });
+        }catch(ex){
+            handleException(ex);
+        }
 
         function tick() {
             try {
-                AdventurersGame.tick();
+                adventurersGame.tick();
                 setTimeout(tick, 100);
-            } catch (exception) {
-                console.log(exception);
-                $("#error").append($("<div>").append(exception)); 
-                $("#AdventurersGame").hide();
+            } catch (ex) {
+                handleException(ex);
             }
         }
         // boot up the first call

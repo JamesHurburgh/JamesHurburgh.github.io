@@ -82,8 +82,15 @@ define([
                 chance.pickone(adventurer.skills).amount++;
             };
 
+            this.getAdventurerList = function(){
+                if(!gameState.adventurerList){
+                    gameState.adventurerList = [];
+                }
+                return gameState.adventurerList;
+            };
+
             this.getCurrentParty = function() {
-                return gameState.adventurerList.filter(adventurer => adventurer.includeInParty);
+                return this.getAdventurerList().filter(adventurer => adventurer.includeInParty);
             };
 
             this.getCurrentPartyAttributes = function() {

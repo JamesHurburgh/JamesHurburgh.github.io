@@ -13,7 +13,7 @@ define(["json!data/items.json"],
             try {
                 return JSON.parse(JSON.stringify(object));
             } catch (exception) {
-                console.log("Unable to parse object: " + JSON.stringify(object));
+                log("Unable to parse object: " + JSON.stringify(object));
             }
         }
 

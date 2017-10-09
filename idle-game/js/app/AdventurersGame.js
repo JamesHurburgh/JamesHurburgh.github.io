@@ -53,8 +53,9 @@ define(["jquery",
 
         commonFunctions = new CommonFunctions();
 
-        return function AdventurersGame(saveData, autoSaveFunction) {
+        return function AdventurersGame(saveData, autoSaveFunction, logFunction) {
 
+            log = logFunction;
             this.autoSave = autoSaveFunction;
             this.millisecondsPerSecond = 1000;
 
@@ -137,7 +138,7 @@ define(["jquery",
             };
 
             this.reset = function() {
-                console.log("reset");
+                log("reset");
                 // Then initialise new
                 this.calculateCounter = 0;
 
@@ -201,11 +202,12 @@ define(["jquery",
                 this.game = game;
                 this.data = data;
 
+                this.login();
                 this.calculate();
             };
 
             this.calculate = function() {
-                console.log("calculate");
+                log("calculate");
                 // Do all calculations here
                 this.calculateCounter = 0;
 
@@ -222,7 +224,7 @@ define(["jquery",
             };
 
             this.loadFromSavedData = function(savedData) {
-                console.log("loadFromSavedData");
+                log("loadFromSavedData");
 
                 this.coins = savedData.coins;
                 this.renown = savedData.renown;
@@ -328,15 +330,18 @@ define(["jquery",
                     this.allLocations[i].adventurers = this.locations[i].adventurers;
                 }
 
+                this.login();
                 this.calculate();
             };
             // Login
             this.login = function() {
+                log("login");
+                
                 this.timeSinceLastLogin = -1;
                 var loginTime = Date.now();
                 if (this.loginTracker === undefined) {
                     this.loginTracker = [];
-                } else {
+                } else if(this.loginTracker.length > 0) {
                     this.timeSinceLastLogin = loginTime - this.loginTracker[this.loginTracker.length - 1].logout;
                 }
                 this.loginTracker.push({ "login": loginTime });
@@ -428,7 +433,7 @@ define(["jquery",
 
             // Options
             this.cheat = function() {
-                console.log("cheat");
+                log("cheat");
                 this.giveCoins(100000000000);
                 this.giveRenown(100000000000);
 
@@ -621,7 +626,7 @@ define(["jquery",
 
                 var contract = commonFunctions.clone(this.getContract(contractName));
                 if (contract === undefined) {
-                    console.log("Contract '" + contractName + "' is listed for location '" + location.name + "' but has no definition.");
+                    log("Contract '" + contractName + "' is listed for location '" + location.name + "' but has no definition.");
                     return;
                 }
 
@@ -868,14 +873,13 @@ define(["jquery",
             };
 
 
-            console.log("initialising");
+            log("initialising");
 
             if (!saveData) {
                 this.reset();
             } else {
                 this.loadFromSavedData(saveData);
             }
-            this.login();
             this.QuestManager().prepContractQueue(this.timeSinceLastLogin);
             this.AdventurerManager().prepAdventurersQueue(this.timeSinceLastLogin);
 
