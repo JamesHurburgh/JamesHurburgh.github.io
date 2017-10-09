@@ -44,13 +44,14 @@ requirejs(['jquery', 'vue', 'alertify', 'store', 'chance', 'app/AdventurersGame'
                 function handleException(ex){
                     $("#AdventurersGame").hide();
                     log(ex);
+                    log(new Error().stack);
                     log(JSON.stringify(AdventurersGame));
                     $("#log").show();
                 }
 
         function log(message){
             console.log(message);
-            $("#log").append($("<div>").append(Date.now().toString() + ": " + message)); 
+            $("#log").append($("<div>").append(Date.now().toString() + ": " + message));
         }   
 
 
