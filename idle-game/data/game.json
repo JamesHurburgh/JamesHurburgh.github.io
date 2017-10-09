@@ -14,6 +14,13 @@
         { "name": "upgradeChance", "baseValue": 1 }
     ],
     "versions": [{
+        "number": "0.10.3",
+        "description": "Global exception handling.",
+        "features": [
+            "Added global exception handler."
+        ],
+        "bugfixes": []
+    }, {
         "number": "0.10.2",
         "description": "Get coin or renown animation.",
         "features": [

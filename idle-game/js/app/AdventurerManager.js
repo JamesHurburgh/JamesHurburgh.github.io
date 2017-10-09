@@ -135,6 +135,14 @@ define([
                 return gameState.adventurerList.filter(adventurer => adventurer.status == status);
             };
 
+            this.getAdventurersQuest = function(adventurer){
+                gameState.runningExpeditions.forEach(function(quest) {
+                    if(quest.party.filter(a => a == adventurer).length > 0){
+                        return quest;
+                    }
+                }, this);
+            };
+
             this.addNewAdverturersForHire = function() {
                 // New hires
                 var maxAvailableHires = 5;

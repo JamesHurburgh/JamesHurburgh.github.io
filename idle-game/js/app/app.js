@@ -58,10 +58,12 @@ requirejs(['jquery', 'vue', 'alertify', 'store', 'chance', 'app/AdventurersGame'
         function tick() {
             try {
                 AdventurersGame.tick();
+                setTimeout(tick, 100);
             } catch (exception) {
                 console.log(exception);
+                $("#error").append($("<div>").append(exception)); 
+                $("#AdventurersGame").hide();
             }
-            setTimeout(tick, 100);
         }
         // boot up the first call
         tick();
