@@ -16,8 +16,8 @@
                 </div>
                 <div class="panel-body">
                     <ul>
-                        <li v-for="adventurer in expedition.adventurers">
-                            {{adventurer.type}} {{adventurer.status}} {{adventurer.awol}} {{adventurer.upgradedTo}}
+                        <li v-for="adventurer in expedition.party">
+                            {{adventurer.name.full}}
                         </li>
                     </ul>
                     <div class="progress progress-striped active">

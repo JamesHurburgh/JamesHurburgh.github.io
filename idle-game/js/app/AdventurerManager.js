@@ -18,7 +18,7 @@ define([
 
             this.gameState = gameState;
 
-            this.showAdventurerTab = function(){
+            this.showAdventurerTab = function() {
                 return gameState.adventurerList.length !== 0;
             };
 
@@ -86,8 +86,8 @@ define([
                 chance.pickone(adventurer.skills).amount++;
             };
 
-            this.getAdventurerList = function(){
-                if(!gameState.adventurerList){
+            this.getAdventurerList = function() {
+                if (!gameState.adventurerList) {
                     gameState.adventurerList = [];
                 }
                 return gameState.adventurerList;
@@ -146,12 +146,23 @@ define([
                 return gameState.adventurerList.filter(adventurer => adventurer.status == status);
             };
 
-            this.getAdventurersQuest = function(adventurer){
+            this.countAdventurersAtStatus = function(status) {
+                return gameState.adventurerList.filter(adventurer => adventurer.status == status).length;
+            };
+
+            this.getAdventurersQuest = function(adventurer) {
+                if (adventurer.status != "Questing") return;
+                var questResult;
                 gameState.runningExpeditions.forEach(function(quest) {
-                    if(quest.party.filter(a => a == adventurer).length > 0){
-                        return quest;
+                    if (quest.party.filter(a => a.id == adventurer.id).length > 0) {
+                        questResult = quest;
                     }
                 }, this);
+                // TODO This is a workaround for the bug that set some adventurers to Questing and never resets them.
+                if (questResult === undefined) {
+                    adventurer.status = "Idle";
+                }
+                return questResult;
             };
 
             this.addNewAdverturersForHire = function() {

@@ -1,17 +1,76 @@
-<div class="col-md-6" v-for="adventurer in adventurerList ">
-    <div class="panel panel-default ">
-        <div class="panel-heading ">
-            <h3 class="panel-title ">{{adventurer.name.full}} <span class="text-muted ">({{adventurer.type}} - {{adventurer.status}})</span>
-                <button v-if="adventurer.status=='Idle' " type="button " class="btn btn-info btn-xs pull-right " @click="AdventurerManager().talkTo(adventurer.name.first) ">Talk to {{adventurer.name.first}}</button>
-            </h3>
+<ul class="nav nav-tabs">
+    <li class="active">
+        <a href="#idleAdventurers" data-toggle="tab" aria-expanded="false">Idle <span class="badge">{{AdventurerManager().countAdventurersAtStatus('Idle')}}</span></a>
+    </li>
+    <li>
+        <a href="#questingAdventurers" data-toggle="tab" aria-expanded="false">Questing <span class="badge">{{AdventurerManager().countAdventurersAtStatus('Questing')}}</span></a>
+    </li>
+    <li>
+        <a href="#deadAdventurers" data-toggle="tab" aria-expanded="false">Dead <span class="badge">{{AdventurerManager().countAdventurersAtStatus('Dead')}}</span></a>
+    </li>
+</ul>
+<div id="adventurerTabContent" class="tab-content">
+    <div class="tab-pane fade active in" id="idleAdventurers">
+        <div class="col-md-6" v-for="adventurer in AdventurerManager().getAdventurersAtStatus('Idle')">
+            <div class="panel panel-default ">
+                <div class="panel-heading ">
+                    <h3 class="panel-title ">{{adventurer.name.full}} <span class="text-muted ">({{adventurer.type}} - {{adventurer.status}})</span>
+                        <button v-if="adventurer.status=='Idle' " type="button " class="btn btn-info btn-xs pull-right " @click="AdventurerManager().talkTo(adventurer.name.first) ">Talk to {{adventurer.name.first}}</button>
+                    </h3>
+                </div>
+                <div class="panel-body ">
+                    <span v-for="skill in adventurer.skills " :title="skill.name + ' ' + skill.amount "><img :alt="skill.name " v-for="n in skill.amount " width="24px " :src=" 'img/icons/' + get( 'skills', skill.name).icon + '.png' " /></span>
+                    <div v-if="AdventurerManager().getAdventurersQuest(adventurer) !== undefined">
+                        Quest: {{AdventurerManager().getAdventurersQuest(adventurer).contract.name}}
+                    </div>
+                </div>
+                <div class="panel-footer ">
+                    {{adventurer.age}} years old
+                    <div class="pull-right ">{{adventurer.experience}}xp</div>
+                </div>
+            </div>
         </div>
-        <div class="panel-body ">
-            {{AdventurerManager().getAdventurersQuest(adventurer)}}
-            <span v-for="skill in adventurer.skills " :title="skill.name + ' ' + skill.amount "><img :alt="skill.name " v-for="n in skill.amount " width="24px " :src=" 'img/icons/' + get( 'skills', skill.name).icon + '.png' " /></span>
+    </div>
+    <div class="tab-pane fade active in" id="questingAdventurers">
+        <div class="col-md-6" v-for="adventurer in AdventurerManager().getAdventurersAtStatus('Questing')">
+            <div class="panel panel-default ">
+                <div class="panel-heading ">
+                    <h3 class="panel-title ">{{adventurer.name.full}} <span class="text-muted ">({{adventurer.type}} - {{adventurer.status}})</span>
+                        <button v-if="adventurer.status=='Idle' " type="button " class="btn btn-info btn-xs pull-right " @click="AdventurerManager().talkTo(adventurer.name.first) ">Talk to {{adventurer.name.first}}</button>
+                    </h3>
+                </div>
+                <div class="panel-body ">
+                    <span v-for="skill in adventurer.skills " :title="skill.name + ' ' + skill.amount "><img :alt="skill.name " v-for="n in skill.amount " width="24px " :src=" 'img/icons/' + get( 'skills', skill.name).icon + '.png' " /></span>
+                    <div v-if="AdventurerManager().getAdventurersQuest(adventurer) !== undefined">
+                        Quest: {{AdventurerManager().getAdventurersQuest(adventurer).contract.name}}
+                    </div>
+                </div>
+                <div class="panel-footer ">
+                    {{adventurer.age}} years old
+                    <div class="pull-right ">{{adventurer.experience}}xp</div>
+                </div>
+            </div>
         </div>
-        <div class="panel-footer ">
-            {{adventurer.age}} years old
-            <div class="pull-right ">{{adventurer.experience}}xp</div>
+    </div>
+    <div class="tab-pane fade active in" id="deadAdventurers">
+        <div class="col-md-6" v-for="adventurer in AdventurerManager().getAdventurersAtStatus('Dead')">
+            <div class="panel panel-default ">
+                <div class="panel-heading ">
+                    <h3 class="panel-title ">{{adventurer.name.full}} <span class="text-muted ">({{adventurer.type}} - {{adventurer.status}})</span>
+                        <button v-if="adventurer.status=='Idle' " type="button " class="btn btn-info btn-xs pull-right " @click="AdventurerManager().talkTo(adventurer.name.first) ">Talk to {{adventurer.name.first}}</button>
+                    </h3>
+                </div>
+                <div class="panel-body ">
+                    <span v-for="skill in adventurer.skills " :title="skill.name + ' ' + skill.amount "><img :alt="skill.name " v-for="n in skill.amount " width="24px " :src=" 'img/icons/' + get( 'skills', skill.name).icon + '.png' " /></span>
+                    <div v-if="AdventurerManager().getAdventurersQuest(adventurer) !== undefined">
+                        Quest: {{AdventurerManager().getAdventurersQuest(adventurer).contract.name}}
+                    </div>
+                </div>
+                <div class="panel-footer ">
+                    {{adventurer.age}} years old
+                    <div class="pull-right ">{{adventurer.experience}}xp</div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
