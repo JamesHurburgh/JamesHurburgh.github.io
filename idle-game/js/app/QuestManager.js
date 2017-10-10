@@ -14,6 +14,10 @@ define([
 
             this.gameState = gameState;
 
+            this.showQuestsTab = function(){
+                return gameState.completedExpeditions.length + gameState.runningExpeditions.length !== 0;
+            };
+
             this.getSelectedContract = function() {
                 return gameState.selectedContract;
             };
@@ -61,8 +65,7 @@ define([
                 return Math.min(currentlyAssigned, requiredSkill.amount);
             };
 
-            this.prepContractQueue = function(millisecondsSinceLastLogin) {
-                var numberToPrep = Math.min(millisecondsSinceLastLogin / 1000 / 60 / 10, 5); // Prep one every 10 minutes
+            this.prepContractQueue = function(numberToPrep) {
                 for (var i = 0; i < numberToPrep; i++) {
                     gameState.addContract();
                 }

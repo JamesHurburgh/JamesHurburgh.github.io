@@ -8,7 +8,9 @@ define(["jquery",
         "app/ItemManager",
         "app/LocationManager",
         "app/AdventurerManager",
+        "app/AchievementManager",
         "app/QuestManager",
+        "app/MessageManager",
         "json!data/calendar.json",
         "json!data/contracts.json",
         "json!data/locations.json",
@@ -26,7 +28,9 @@ define(["jquery",
         ItemManager,
         LocationManager,
         AdventurerManager,
+        AchievementManager,
         QuestManager,
+        MessageManager,
         calendar,
         contracts,
         locations,
@@ -76,6 +80,16 @@ define(["jquery",
             _QuestManager = new QuestManager(this);
             this.QuestManager = function() {
                 return _QuestManager;
+            };
+            
+            _MessageManager = new MessageManager(this);
+            this.MessageManager = function() {
+                return _MessageManager;
+            };
+            
+            _AchievementManager = new AchievementManager(this);
+            this.AchievementManager = function() {
+                return _AchievementManager;
             };
 
             this.getGameTime = function(dateInMilliSeconds) {
@@ -204,6 +218,9 @@ define(["jquery",
 
                 this.login();
                 this.calculate();
+                
+                this.QuestManager().prepContractQueue(5);
+                this.AdventurerManager().prepAdventurersQueue(5);
             };
 
             this.calculate = function() {
@@ -214,7 +231,7 @@ define(["jquery",
                 this.addNewContracts();
                 this.AdventurerManager().addNewAdverturersForHire();
 
-                this.checkAndClaimAllAchievements();
+                this.AchievementManager().checkAndClaimAllAchievements();
 
                 this.gameDateTime = this.getGameTime();
 
@@ -355,55 +372,6 @@ define(["jquery",
                 this.loginTracker[this.loginTracker.length - 1].logout = Date.now();
             };
 
-            // Achievements
-            this.hasAchievement = function(achievement) {
-                return this.claimedAchievements.filter(claimedAchievement => claimedAchievement.name == achievement.name).length > 0;
-            };
-
-            this.claimAchievement = function(achievement) {
-                if (!this.hasAchievement(achievement.name)) {
-                    this.claimedAchievements.push({ "name": achievement.name, "timeClaimed": Date.now() });
-                    this.message("Got achievement:" + achievement.name + " (" + achievement.description + ")");
-                }
-            };
-
-            this.canClaimAchievement = function(achievement) {
-                if (this.hasAchievement(achievement)) {
-                    return false;
-                }
-                switch (achievement.trigger.type) {
-                    case "statistic":
-                        var stat = this.getStat(achievement.trigger.statistic);
-                        return stat && stat.current > achievement.trigger.statisticamount;
-                }
-            };
-
-            this.checkAndClaimAchievement = function(achievement) {
-                if (this.canClaimAchievement(achievement)) {
-                    this.claimAchievement(achievement);
-                }
-            };
-
-            this.checkAndClaimAllAchievements = function() {
-                for (var i = 0; i < achievements.length; i++) {
-                    this.checkAndClaimAchievement(achievements[i]);
-                }
-            };
-
-            this.achievementProgress = function(achievement) {
-                if (this.hasAchievement(achievement)) {
-                    return 100;
-                }
-                switch (achievement.trigger.type) {
-                    case "statistic":
-                        var stat = this.getStat(achievement.trigger.statistic);
-                        if (stat) {
-                            return (stat.current / achievement.trigger.statisticamount) * 100;
-                        }
-                }
-                return 0;
-            };
-
             // Stats
             this.getStatName = function(action, subject) {
                 return (action + "-" + subject).toLowerCase().replace(/ /g, "_");
@@ -465,20 +433,6 @@ define(["jquery",
             // Renown
             this.renownText = function() {
                 return renown.filter(r => r.minimum <= this.renown && r.maximum > this.renown)[0].name;
-            };
-
-            // Messages
-            this.recentMessages = function() {
-                return this.messages.filter(message => message.time + 60000 > Date.now());
-            };
-
-            this.message = function(message) {
-                alertify.alert(message);
-                this.messages.unshift({ "id": commonFunctions.uuidv4, "message": message, "time": Date.now() });
-            };
-
-            this.dismissMessage = function(message) {
-                this.messages.splice(this.messages.indexOf(message), 1);
             };
 
             // Globals
@@ -880,8 +834,10 @@ define(["jquery",
             } else {
                 this.loadFromSavedData(saveData);
             }
-            this.QuestManager().prepContractQueue(this.timeSinceLastLogin);
-            this.AdventurerManager().prepAdventurersQueue(this.timeSinceLastLogin);
+            var numberToPrep = Math.min(this.timeSinceLastLogin / 1000 / 60 / 10, 5); // Prep one every 10 minutes
+            
+            this.QuestManager().prepContractQueue(numberToPrep);
+            this.AdventurerManager().prepAdventurersQueue(numberToPrep);
 
         };
     });

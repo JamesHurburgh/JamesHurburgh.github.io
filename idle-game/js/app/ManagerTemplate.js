@@ -14,13 +14,17 @@
 
 */
 
-define(["app/common","json!data/DATA_FILE.json"],
-    function CLASS_NAME(common, DATA_FILE) {
+define([
+    "app/CommonFunctions",
+    "json!data/DATA_FILE.json"],
+    function CLASS_NAME(CommonFunctions, DATA_FILE) {
+
+        commonFunctions = new CommonFunctions();
 
         return function CLASS_NAME(gameState) {
 
             this.gameState = gameState;
 
-        }
+        };
     }
 );

@@ -18,6 +18,10 @@ define([
 
             this.gameState = gameState;
 
+            this.showAdventurerTab = function(){
+                return gameState.adventurerList.length !== 0;
+            };
+
             this.getCost = function(adventurer) {
                 return adventurer.baseCost;
             };
@@ -197,11 +201,10 @@ define([
             };
 
             this.talkTo = function(adventurerName) {
-                gameState.message(adventurerName + " says '" + chance.pickone(conversations.randomStatements) + "'");
+                gameState.MessageManager().message(adventurerName + " says '" + chance.pickone(conversations.randomStatements) + "'");
             };
 
-            this.prepAdventurersQueue = function(millisecondsSinceLastLogin) {
-                var numberToPrep = Math.min(millisecondsSinceLastLogin / 1000 / 60 / 10, 5); // Prep one every 10 minutes
+            this.prepAdventurersQueue = function(numberToPrep) {
                 for (var i = 0; i < numberToPrep; i++) {
                     this.addAvailableHire();
                 }

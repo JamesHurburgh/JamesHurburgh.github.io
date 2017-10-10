@@ -16,7 +16,7 @@
                             <!-- <th>Progress</th> -->
                         </tr>
                     </thead>
-                    <tr v-for="achievement in achievements" v-bind:class="{ 'default': !hasAchievement(achievement), 'success': hasAchievement(achievement) }">
+                    <tr v-for="achievement in achievements" v-bind:class="{ 'default': !AchievementManager().hasAchievement(achievement), 'success': AchievementManager().hasAchievement(achievement) }">
                         <td>{{achievement.name}}</td>
                         <td>{{achievement.description}}</td>
                         <td>

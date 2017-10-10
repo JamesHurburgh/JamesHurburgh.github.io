@@ -25,6 +25,10 @@ define(["json!data/items.json"],
 
             this.gameState = gameState;
 
+            this.showItemTab = function(){
+                return gameState.ownedItems.length !== 0;
+            };
+
             this.itemFunctions = [];
             this.itemFunctions["use-minor-mysterious-scroll"] = function(game) {
                 var effects = [{

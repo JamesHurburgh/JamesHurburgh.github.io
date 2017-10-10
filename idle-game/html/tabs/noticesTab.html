@@ -1,39 +1,46 @@
 <ul class="nav nav-tabs">
     <li class="active">
-        <a href="#questContracts" data-toggle="tab" aria-expanded="false">Quests <span class="badge">{{LocationManager().getCurrentLocation().availableContracts.length}}</span></a>
+        <a href="#questContracts" data-toggle="tab" aria-expanded="false">Quests <span class="badge">{{LocationManager().getJobContractsAtCurrentLocation()}}</span></a>
     </li>
     <li>
-        <a href="#adventurerContracts" data-toggle="tab" aria-expanded="false">Adventurers <span class="badge">{{LocationManager().getCurrentLocation().availableAdventurers.length}}</span></a>
+        <a href="#adventurerContracts" data-toggle="tab" aria-expanded="false">Adventurers <span class="badge">{{LocationManager().getAdventurerContractsAtCurrentLocation()}}</span></a>
     </li>
 </ul>
 <div id="noticesTabContent" class="tab-content">
     <div class="tab-pane fade active in" id="questContracts">
-        <span v-if="LocationManager().getCurrentLocation().availableContracts.length == 0" class="text-muted text-center col-xs-12">No contracts</span>
+        <!-- <span v-if="LocationManager().getCurrentLocation().availableContracts.length == 0" class="text-muted text-center col-xs-12">No contracts</span> -->
         <button v-if="startAllVisible()" type="button" class="btn btn-success btn-xs pull-right" @click="startAllContracts()">Start All</button>
-        <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="noOutAnimation">
-            <div v-for="contract in LocationManager().getCurrentLocation().availableContracts" key="contract.name">
-                <div class="well well-sm">
-                    <h4>
-                        {{contract.name}}
-                        <button type="button" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#contractDetails" @click="viewContract(contract)">View</button>
-                        <button type="button" class="btn btn-sm btn-danger pull-right" @click="QuestManager().rejectContract(contract)">Reject</button>
-                    </h4>
-                    <div v-bind:class="{ 'text-danger': expiringDanger(contract.expires), 'text-warning': expiringWarning(contract.expires), 'text-success': expiringSuccess(contract.expires) }">{{readableTime(contract.expires - Date.now())}} remaining</div>
+        <div class="col-md-6 col-lg-4" v-for="contract in LocationManager().getCurrentLocation().availableContracts" key="contract.name">
+            <div class="panel panel-default ">
+                <div class="panel-heading ">
+                    <h3 class="panel-title ">{{contract.name}}</h3>
+                </div>
+                <!-- <div class="panel-body"></div> -->
+                <div class="panel-footer">
+                    <div v-bind:class="{ 'text-danger': expiringDanger(contract.expires), 'text-warning': expiringWarning(contract.expires), 'text-success': expiringSuccess(contract.expires) }">{{readableTime(contract.expires - Date.now())}} remaining
+                        <button type="button" class="btn btn-xs btn-info pull-right" data-toggle="modal" data-target="#contractDetails" @click="viewContract(contract)">View</button>
+                        <button type="button" class="btn btn-xs btn-danger pull-right" @click="QuestManager().rejectContract(contract)">Reject</button>
+                    </div>
                 </div>
             </div>
-        </transition-group>
+        </div>
     </div>
     <div class="tab-pane fade" id="adventurerContracts">
-        <span v-if="LocationManager().getCurrentLocation().availableAdventurers.length == 0" class="text-muted text-center col-xs-12">No adventurers for hire</span>
+        <!-- <span v-if="LocationManager().getCurrentLocation().availableAdventurers.length == 0" class="text-muted text-center col-xs-12">No adventurers for hire</span> -->
         <button v-if="hireAllVisible()" type="button" class="btn btn-success btn-xs pull-right" @click="hireAll()">Hire All</button>
-        <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="noOutAnimation">
-            <div v-for="notice in LocationManager().getCurrentLocation().availableAdventurers" key="adventurer.name">
-                <div class="well well-sm">
-                    <h4>{{notice.adventurer.name.full}} ({{notice.adventurer.type}})<button type="button" class="btn btn-sm pull-right" v-bind:class="{ 'btn-success': AdventurerManager().canHire(notice.adventurer), 'btn-primary': !AdventurerManager().canHire(notice.adventurer) }" @click="AdventurerManager().hire(notice)" :disabled="!AdventurerManager().canHire(notice.adventurer)">Hire ({{AdventurerManager().getCost(notice.adventurer)}} coins)</button>
-                    </h4>
-                    <div v-bind:class="{ 'text-danger': expiringDanger(notice.expires), 'text-warning': expiringWarning(notice.expires), 'text-success': expiringSuccess(notice.expires) }">{{readableTime(notice.expires - Date.now())}} remaining</div>
+        <div class="col-md-6 col-lg-4" v-for="notice in LocationManager().getCurrentLocation().availableAdventurers" key="adventurer.name">
+
+            <div class="panel panel-default ">
+                <div class="panel-heading ">
+                    <h3 class="panel-title ">{{notice.adventurer.name.full}} ({{notice.adventurer.type}})</h3>
+                </div>
+                <!-- <div class="panel-body"></div> -->
+                <div class="panel-footer">
+                    <div v-bind:class="{ 'text-danger': expiringDanger(notice.expires), 'text-warning': expiringWarning(notice.expires), 'text-success': expiringSuccess(notice.expires) }">{{readableTime(notice.expires - Date.now())}} remaining
+                        <button type="button" class="btn btn-xs pull-right" v-bind:class="{ 'btn-success': AdventurerManager().canHire(notice.adventurer), 'btn-primary': !AdventurerManager().canHire(notice.adventurer) }" @click="AdventurerManager().hire(notice)" :disabled="!AdventurerManager().canHire(notice.adventurer)">Hire ({{AdventurerManager().getCost(notice.adventurer)}} coins)</button></div>
                 </div>
             </div>
-        </transition-group>
+
+        </div>
     </div>
 </div>

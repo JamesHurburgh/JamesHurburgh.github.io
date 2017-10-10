@@ -25,12 +25,30 @@ define(["json!data/locations.json"],
 
             this.gameState = gameState;
 
+            this.getJobContractsAtCurrentLocation  = function(){
+                return this.getJobContractsAtLocation(this.getCurrentLocation());
+            };
+
+            this.getJobContractsAtLocation = function(location){
+                if (!location.availableContracts) location.availableContracts = [];
+                return location.availableContracts.length;
+            };
+
+            this.getAdventurerContractsAtCurrentLocation = function(){
+                return this.getAdventurerContractsAtLocation(this.getCurrentLocation());
+            };
+
+            this.getAdventurerContractsAtLocation = function(location){
+                if (!location.availableAdventurers) location.availableAdventurers = [];
+                return location.availableAdventurers.length;
+            };
+
             this.getLocation = function(name) {
                 return locations.filter(location => location.name == name)[0];
             };
 
             this.getCurrentLocation = function() {
-                return this.getLocation(gameState.location.name);
+                return gameState.location;
             };
 
             this.setCurrentLocation = function(name) {

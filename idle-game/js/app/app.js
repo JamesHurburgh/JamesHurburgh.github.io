@@ -40,28 +40,28 @@ requirejs(['jquery', 'vue', 'alertify', 'store', 'chance', 'app/AdventurersGame'
                 store.set("AdventurersGame", controller._data);
             }
         }
-        
-                function handleException(ex){
-                    $("#AdventurersGame").hide();
-                    log(ex);
-                    log(new Error().stack);
-                    log(JSON.stringify(AdventurersGame));
-                    $("#log").show();
-                }
 
-        function log(message){
+        function handleException(ex) {
+            $("#AdventurersGame").hide();
+            log(ex);
+            log(ex.stack);
+            log(JSON.stringify(AdventurersGame));
+            $("#log").show();
+        }
+
+        function log(message) {
             console.log(message);
             $("#log").append($("<div>").append(Date.now().toString() + ": " + message));
-        }   
+        }
 
 
-        Vue.config.errorHandler = function(err, vm, info){
+        Vue.config.errorHandler = function(err, vm, info) {
             handleException(err);
         };
 
         var adventurersGame;
-        
-        try{
+
+        try {
             adventurersGame = new AdventurersGame(store.get("AdventurersGame"), save, log);
 
             var controller = new Vue({
@@ -71,11 +71,8 @@ requirejs(['jquery', 'vue', 'alertify', 'store', 'chance', 'app/AdventurersGame'
                 methods: {},
                 // created: alert("created"),
                 // ready: alert("ready"),
-                mounted: function() {
-                    this.$nextTick(function() {});
-                }
             });
-        }catch(ex){
+        } catch (ex) {
             handleException(ex);
         }
 

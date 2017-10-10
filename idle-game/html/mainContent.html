@@ -5,7 +5,6 @@
             <li class="active">
                 <a style="padding: 1px 2px;" href="#location" data-toggle="tab" aria-expanded="true">
                     <img width="32px;" src="./img/icons/family-house.png" />
-                    <!-- <span class="hidden-md-down">Location</span> -->
                 </a>
             </li>
             <li class="">
@@ -13,28 +12,24 @@
                     <img width="32px;" src="./img/icons/stabbed-note.png" />
                 </a>
             </li>
-            <li class="" v-if="completedExpeditions.length + runningExpeditions.length != 0">
+            <li class="" v-if="QuestManager().showQuestsTab()">
                 <a style="padding: 1px 2px;" href="#quests" data-toggle="tab" aria-expanded="false">
                     <img width="32px;" src="./img/icons/checklist.png" />
-                    <!--<span class="badge">{{completedExpeditions.length}}</span>-->
                 </a>
             </li>
-            <li class="" v-if="adventurerList.length != 0">
+            <li class="" v-if="AdventurerManager().showAdventurerTab()">
                 <a style="padding: 1px 2px;" href="#hired" data-toggle="tab" aria-expanded="false">
                     <img width="32px;" src="./img/icons/robe.png" />
                 </a>
             </li>
-            <li class="" v-if="ownedItems.length != 0">
+            <li class="" v-if="ItemManager().showItemTab()">
                 <a style="padding: 1px 2px;" href="#items" data-toggle="tab" aria-expanded="false">
                     <img width="32px;" src="./img/icons/backpack.png" />
-                    <!--<span class="badge">{{location.availableHires.length}}</span>-->
                 </a>
             </li>
-            <li class="" v-if="messages.length != 0">
+            <li class="" v-if="MessageManager().showMessageTab()">
                 <a style="padding: 1px 2px;" href="#messages" data-toggle="tab" aria-expanded="false">
-                    <img v-if="messages.length == 0" width="32px;" src="./img/icons/scroll-unfurled.png" />
-                    <img v-if="messages.length != 0" width="32px;" src="./img/icons/scroll-unfurled-green.png" />
-                    <!--<span class="badge">{{messages.length}}</span>-->
+                    <img width="32px;" src="./img/icons/scroll-unfurled.png" />
                 </a>
             </li>
         </ul>
