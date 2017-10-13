@@ -1,10 +1,10 @@
 /*jshint esversion: 6 */
 
 define([
-        "app/CommonFunctions",
-        "app/DataManager",
-        "alertify"
-    ],
+    "app/CommonFunctions",
+    "app/DataManager",
+    "alertify"
+],
     function GameStateManager(
         CommonFunctions,
         DataManager,
@@ -18,16 +18,16 @@ define([
             this.gameState = gameState;
             this.gameController = gameController;
 
-            this.save = function() {
+            this.save = function () {
                 this.externalSaveFunction(gameState);
             };
 
-            this.reset = function() {
+            this.reset = function () {
                 log("reset");
                 this.gameState = this.newGame();
             };
 
-            this.newGame = function() {
+            this.newGame = function () {
                 // Then initialise new
                 var newGameState = {};
                 newGameState.majorTickCounter = 0;
@@ -84,17 +84,12 @@ define([
 
             };
 
-            this.versionCheck = function() {
+            this.versionCheck = function () {
                 log("versionCheck");
 
-                if (this.gameState.version != "0.10.7") {
+                // Fix for version 0.10.7
 
-                    this.gameState.adventurerList.forEach(function(adventurer) {
-                        if (!adventurer.race) {
-                            adventurer.race = data.races[0];
-                        }
-                    }, this);
-                }
+                this.gameController.AdventurerManager().addMissingRace();
 
                 var currentVersion = data.game.versions[0].number;
                 if (this.gameState.version != currentVersion) {
