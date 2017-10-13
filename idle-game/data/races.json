@@ -2,45 +2,55 @@
         "name": "Human",
         "plural": "Humans",
         "adjective": "Human",
-        "description": "",
+        "description": "Two arms, two legs and a head.  All connected together with a body.  By far the most common of the races found in Otium.",
         "matureAge": 18,
         "oldAge": 60,
+        "averageHeight": 150,
+        "averageWeight": 75,
         "chance": 10
     },
     {
         "name": "Elf",
         "plural": "Elfs",
         "adjective": "Elfish",
-        "description": "",
+        "description": "Humanoid beings, but taller and more slender.  Elfs live to a long age and are typically wise and agile.",
         "matureAge": 180,
         "oldAge": 1200,
+        "averageHeight": 180,
+        "averageWeight": 75,
         "chance": 1
     },
     {
         "name": "Orc",
         "plural": "Orcs",
         "adjective": "Orcish",
-        "description": "",
+        "description": "Orcs don't like that everyone calls them dumb and angry.  But to be honest it's true.",
         "matureAge": 18,
         "oldAge": 60,
+        "averageHeight": 190,
+        "averageWeight": 120,
         "chance": 0.1
     },
     {
         "name": "Pixie",
         "plural": "Pixies",
         "adjective": "Pixie",
-        "description": "",
+        "description": "Pixies are tiny little beings that are surprisingly tough for there size.  They are quite short lived and are known to be tempermental.",
         "matureAge": 1,
         "oldAge": 10,
+        "averageHeight": 15,
+        "averageWeight": 0.3,
         "chance": 0.1
     },
     {
         "name": "Merfolk",
         "plural": "Merfolks",
-        "adjective": "",
-        "description": "",
+        "adjective": "Merryn",
+        "description": "These water loving humanoids have arms and legs, however their finned body and closeable gills makes them perfect for underwater living.  They don't like being out of the water for too long.",
         "matureAge": 18,
         "oldAge": 60,
+        "averageHeight": 150,
+        "averageWeight": 75,
         "chance": 0.1
     },
     {
@@ -50,51 +60,63 @@
         "description": "A small race known for excellent sneaking abilities.",
         "matureAge": 10,
         "oldAge": 40,
+        "averageHeight": 75,
+        "averageWeight": 35,
         "chance": 1
     },
     {
         "name": "Dwarf",
         "plural": "Dwarves",
         "adjective": "Dwarvish",
-        "description": "",
+        "description": "These stout folk are known for their loyalty, drinking, and love of building fortresses.",
         "matureAge": 50,
         "oldAge": 300,
+        "averageHeight": 85,
+        "averageWeight": 75,
         "chance": 1
     },
     {
         "name": "Giant",
         "plural": "Giants",
         "adjective": "Giant",
-        "description": "",
+        "description": "Massive men roam around.  Some are misunderstood and are menaces, but most coexist peaceably with the other races.",
         "matureAge": 35,
         "oldAge": 600,
+        "averageHeight": 300,
+        "averageWeight": 250,
         "chance": 0.1
     },
     {
         "name": "Tarkash",
         "plural": "Tarkashi",
         "adjective": "Tarkashian",
-        "description": "Sentient Humanoid Reptiles",
+        "description": "The Tarkashi are a race of humanoid reptiles who have trouble integrating into society, but are mostly harmless.",
         "matureAge": 15,
         "oldAge": 50,
+        "averageHeight": 190,
+        "averageWeight": 75,
         "chance": 0.1
     },
     {
         "name": "Boldorn",
         "plural": "Boldorns",
         "adjective": "Boldornian",
-        "description": "Sentient rockmen",
+        "description": "None one knows how long the Boldornians have been around, but one day a rock came striding slowly into town, learnt the local language and proceeded to setup a lucrative business selling firewood.  Since then more have been seen, all of them intelligent and hard working.",
         "matureAge": 250,
         "oldAge": 6000,
-        "chance": 1
+        "averageHeight": 150,
+        "averageWeight": 375,
+        "chance": 0.1
     },
     {
         "name": "Phsytik",
         "plural": "Phsytiks",
         "adjective": "Phsytika",
-        "description": "Mantis men",
+        "description": "The mantis men can be frintening to behold and although they have a little difficulty speaking clearly are mostly peaceful.  Mages theorise they came from another dimension.",
         "matureAge": 10,
         "oldAge": 30,
-        "chance": 1
+        "averageHeight": 180,
+        "averageWeight": 105,
+        "chance": 0.1
     }
 ]

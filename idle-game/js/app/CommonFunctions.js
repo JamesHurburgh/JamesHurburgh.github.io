@@ -40,6 +40,23 @@ define([],
                 }
             }
             this.nth = nth;
+
+            function pickFromWeightedList(list, weightName) {
+                if (list === undefined || list === null || list.length === 0) return null;
+                if (weightName === undefined || weightName === null) weightName = "chance";
+
+                var weightedList = [];
+                var min = 0;
+                var max = 0;
+                for (var i = 0; i < list.length; i++) {
+                    max += list[i][weightName];
+                    weightedList.push({ item: list[i], min: min, max: max });
+                    min += list[i][weightName];
+                }
+                var chance = max * Math.random();
+                return weightedList.filter(item => item.min <= chance && item.max >= chance)[0].item;
+            }
+            this.pickFromWeightedList = pickFromWeightedList;
         };
 
     }

@@ -14,7 +14,7 @@
         <div class="col-md-6" v-for="adventurer in AdventurerManager().getAdventurersAtStatus('Idle')">
             <div class="panel panel-default ">
                 <div class="panel-heading ">
-                    <h3 class="panel-title ">{{adventurer.name.full}} <span class="text-muted ">({{adventurer.type}} - {{adventurer.status}})</span>
+                    <h3 class="panel-title ">{{adventurer.name.full}} <span class="text-muted ">({{adventurer.race.adjective}} {{adventurer.type}} - {{adventurer.status}})</span>
                         <button v-if="adventurer.status=='Idle' " type="button " class="btn btn-info btn-xs pull-right " @click="AdventurerManager().talkTo(adventurer.name.first) ">Talk to {{adventurer.name.first}}</button>
                     </h3>
                 </div>

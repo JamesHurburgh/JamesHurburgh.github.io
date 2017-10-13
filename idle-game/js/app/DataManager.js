@@ -25,6 +25,7 @@ define([
         "json!data/game.json",
         "json!data/items.json",
         "json!data/locations.json",
+        "json!data/races.json",
         "json!data/renown.json",
         "json!data/settings.json",
         "json!data/skills.json"
@@ -40,6 +41,7 @@ define([
         game,
         items,
         locations,
+        races,
         renown,
         settings,
         skills) {
@@ -60,6 +62,7 @@ define([
             this.game = game;
             this.items = items;
             this.locations = locations;
+            this.races = races;
             this.renown = renown;
             this.settings = settings;
 

@@ -37,6 +37,13 @@
         }
     ],
     "versions": [{
+            "number": "0.10.7",
+            "description": "The race is on!",
+            "features": ["Added irrelevant races!"],
+            "bugfixes": [
+                "Fixed version not updating bug."
+            ]
+        }, {
             "number": "0.10.6",
             "description": "Stability.",
             "features": [

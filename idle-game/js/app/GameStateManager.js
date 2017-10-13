@@ -84,25 +84,16 @@ define([
 
             };
 
-            this.loadFromSavedData = function(savedData) {
-                log("loadFromSavedData");
-                if (!savedData) {
-                    this.newGameState = this.newGame();
-                    return;
-                }
-
-                this.gameState = savedData;
-
-                this.gameState.version = data.game.versions[0].number;
-                if (savedData.version != gameState.version) {
+            this.versionCheck = function() {
+                log("versionCheck");
+                var currentVersion = data.game.versions[0].number;
+                if (gameState.version != currentVersion) {
                     var releaseNotesButton = '<button class="btn btn-info" data-toggle="modal" data-target="#releaseNotes">Release Notes</button>';
-                    var versionUpdateMessage = "Version updated from " + savedData.version + " to " + gameState.version + ". Check the " + releaseNotesButton + ".";
+                    var versionUpdateMessage = "Version updated from " + gameState.version + " to " + currentVersion + ". Check the " + releaseNotesButton + ".";
                     alertify.delay(10000);
                     alertify.alert("<h2>Version update!</h2><p class='text-info'>" + versionUpdateMessage + "</p>");
+                    this.gameState.version = data.game.versions[0].number;
                 }
-
-                return this.gameState;
-
             };
 
         };
