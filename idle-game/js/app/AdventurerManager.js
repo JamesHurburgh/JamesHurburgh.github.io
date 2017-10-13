@@ -71,6 +71,8 @@ define([
             };
 
             this.generateAdventurer = function (adventurerTemplate, raceTemplate) {
+                if (adventurerTemplate === undefined || adventurerTemplate === null) throw new Error("adventurerTemplate is not set");
+                if (raceTemplate === undefined || raceTemplate === null) throw new Error("raceTemplate is not set");
 
                 // Clone template
                 var adventurer = common.clone(adventurerTemplate);
@@ -184,20 +186,26 @@ define([
 
                 if (locationHireableTypes === undefined || locationHireableTypes.length === 0) { return; }
 
-                var adventurerTemplate = data.adventurers.filter(a => a.name = common.pickFromWeightedList(locationHireableTypes).type)[0];
+                var adventurerType = common.pickFromWeightedList(locationHireableTypes).type;
+                var adventurerTemplate = data.adventurers.filter(a => a.name == adventurerType)[0];
                 var raceTemplate = common.pickFromWeightedList(data.races);
 
-                var adventurerNotice = {
-                    "adventurer": this.generateAdventurer(adventurerTemplate, raceTemplate),
-                    "expires": Date.now() + Math.floor(1000 * this.gameController.EffectsManager().getGlobalValue("averageHireContractExpiry") * (Math.random() + 0.5))
-                };
+                try {
+                    var adventurer = this.generateAdventurer(adventurerTemplate, raceTemplate);
+                    var adventurerNotice = {
+                        "adventurer": adventurer,
+                        "expires": Date.now() + Math.floor(1000 * this.gameController.EffectsManager().getGlobalValue("averageHireContractExpiry") * (Math.random() + 0.5))
+                    };
 
-                this.gameController.LocationManager().getCurrentLocation().availableAdventurers.push(adventurerNotice);
-                this.gameController.LocationManager().getCurrentLocation().availableAdventurers.sort(function (a, b) {
-                    return a.expires - b.expires;
-                });
-                this.gameController.StatisticsManager().trackStat("available-adventurer", adventurerTemplate.name, 1);
-                this.gameController.StatisticsManager().trackStat("available", "adventurers", 1);
+                    this.gameController.LocationManager().getCurrentLocation().availableAdventurers.push(adventurerNotice);
+                    this.gameController.LocationManager().getCurrentLocation().availableAdventurers.sort(function (a, b) {
+                        return a.expires - b.expires;
+                    });
+                    this.gameController.StatisticsManager().trackStat("available-adventurer", adventurerTemplate.name, 1);
+                    this.gameController.StatisticsManager().trackStat("available", "adventurers", 1);
+                } catch (error) {
+                    log(error);
+                }
             };
 
             this.talkTo = function (adventurerName) {
