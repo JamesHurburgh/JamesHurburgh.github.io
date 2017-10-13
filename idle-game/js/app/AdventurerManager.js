@@ -22,11 +22,6 @@ define([
 
             this.getAdventurerList = function() {
                 if (!this.gameState.adventurerList) this.gameState.adventurerList = [];
-                this.gameState.adventurerList.forEach(function(adventurer) {
-                    if (!adventurer.race) {
-                        adventurer.race = data.races[0];
-                    }
-                }, this);
                 return this.gameState.adventurerList;
             };
 

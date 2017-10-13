@@ -86,10 +86,20 @@ define([
 
             this.versionCheck = function() {
                 log("versionCheck");
+
+                if (this.gameState.version != "0.10.7") {
+
+                    this.gameState.adventurerList.forEach(function(adventurer) {
+                        if (!adventurer.race) {
+                            adventurer.race = data.races[0];
+                        }
+                    }, this);
+                }
+
                 var currentVersion = data.game.versions[0].number;
-                if (gameState.version != currentVersion) {
+                if (this.gameState.version != currentVersion) {
                     var releaseNotesButton = '<button class="btn btn-info" data-toggle="modal" data-target="#releaseNotes">Release Notes</button>';
-                    var versionUpdateMessage = "Version updated from " + gameState.version + " to " + currentVersion + ". Check the " + releaseNotesButton + ".";
+                    var versionUpdateMessage = "Version updated from " + this.gameState.version + " to " + currentVersion + ". Check the " + releaseNotesButton + ".";
                     alertify.delay(10000);
                     alertify.alert("<h2>Version update!</h2><p class='text-info'>" + versionUpdateMessage + "</p>");
                     this.gameState.version = data.game.versions[0].number;
