@@ -1,5 +1,5 @@
-<span v-if="ownedItems.length == 0" class="text-muted text-center col-xs-12">No items</span>
-<table v-if="ownedItems.length != 0" class="table table-striped table-hover ">
+<span v-if="ItemManager().getOwnedItems().length == 0" class="text-muted text-center col-xs-12">No items</span>
+<table v-if="ItemManager().getOwnedItems().length != 0" class="table table-striped table-hover ">
     <thead>
         <tr>
             <th>Name</th>
@@ -7,7 +7,7 @@
             <th>Actions</th>
         </tr>
     </thead>
-    <tr v-for="item in ownedItems">
+    <tr v-for="item in ItemManager().getOwnedItems()">
         <td>{{item.name}}</td>
         <td><span v-if="item.value !== undefined">{{item.value}}</span></td>
         <td>

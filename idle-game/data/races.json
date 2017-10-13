@@ -1,0 +1,100 @@
+[{
+        "name": "Human",
+        "plural": "Humans",
+        "adjective": "Human",
+        "description": "",
+        "matureAge": 18,
+        "oldAge": 60,
+        "chance": 10
+    },
+    {
+        "name": "Elf",
+        "plural": "Elfs",
+        "adjective": "Elfish",
+        "description": "",
+        "matureAge": 180,
+        "oldAge": 1200,
+        "chance": 1
+    },
+    {
+        "name": "Orc",
+        "plural": "Orcs",
+        "adjective": "Orcish",
+        "description": "",
+        "matureAge": 18,
+        "oldAge": 60,
+        "chance": 0.1
+    },
+    {
+        "name": "Pixie",
+        "plural": "Pixies",
+        "adjective": "Pixie",
+        "description": "",
+        "matureAge": 1,
+        "oldAge": 10,
+        "chance": 0.1
+    },
+    {
+        "name": "Merfolk",
+        "plural": "Merfolks",
+        "adjective": "",
+        "description": "",
+        "matureAge": 18,
+        "oldAge": 60,
+        "chance": 0.1
+    },
+    {
+        "name": "Lighfoot",
+        "plural": "Lighfoots",
+        "adjective": "Lighfootian",
+        "description": "A small race known for excellent sneaking abilities.",
+        "matureAge": 10,
+        "oldAge": 40,
+        "chance": 1
+    },
+    {
+        "name": "Dwarf",
+        "plural": "Dwarves",
+        "adjective": "Dwarvish",
+        "description": "",
+        "matureAge": 50,
+        "oldAge": 300,
+        "chance": 1
+    },
+    {
+        "name": "Giant",
+        "plural": "Giants",
+        "adjective": "Giant",
+        "description": "",
+        "matureAge": 35,
+        "oldAge": 600,
+        "chance": 0.1
+    },
+    {
+        "name": "Tarkash",
+        "plural": "Tarkashi",
+        "adjective": "Tarkashian",
+        "description": "Sentient Humanoid Reptiles",
+        "matureAge": 15,
+        "oldAge": 50,
+        "chance": 0.1
+    },
+    {
+        "name": "Boldorn",
+        "plural": "Boldorns",
+        "adjective": "Boldornian",
+        "description": "Sentient rockmen",
+        "matureAge": 250,
+        "oldAge": 6000,
+        "chance": 1
+    },
+    {
+        "name": "Phsytik",
+        "plural": "Phsytiks",
+        "adjective": "Phsytika",
+        "description": "Mantis men",
+        "matureAge": 10,
+        "oldAge": 30,
+        "chance": 1
+    }
+]

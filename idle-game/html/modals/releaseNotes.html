@@ -6,11 +6,11 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title" @click="cheat()">Release History</h4>
+                <h4 class="modal-title" @click="OptionsManager().cheat()">Release History</h4>
             </div>
             <div class="modal-body">
                 <div class="list-group">
-                    <div v-for="version in game.versions" class="list-group-item">
+                    <div v-for="version in DataManager().game.versions" class="list-group-item">
                         <h3 class="list-group-item-heading">{{version.number}}</h3>
                         <p class="list-group-item-text">{{version.description}}</p>
                         <h4>Features</h4>

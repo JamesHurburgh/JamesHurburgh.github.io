@@ -3,230 +3,296 @@
     "description": "Adventuring is dangerous. Hire someone else to do it for you!",
     "author": "James Hurburgh",
     "author-uri": "",
-    "globals": [
-        { "name": "chanceOfNewContract", "baseValue": 0.05 },
-        { "name": "averageJobContractExpiry", "baseValue": 600 },
-        { "name": "chanceOfNewHire", "baseValue": 0.05 },
-        { "name": "averageHireContractExpiry", "baseValue": 600 },
-        { "name": "hireCostModifier", "baseValue": 1 },
-        { "name": "freeCoinsModifier", "baseValue": 1 },
-        { "name": "questRisk", "baseValue": 1 },
-        { "name": "upgradeChance", "baseValue": 1 }
+    "globals": [{
+            "name": "chanceOfNewContract",
+            "baseValue": 0.05
+        },
+        {
+            "name": "averageJobContractExpiry",
+            "baseValue": 600
+        },
+        {
+            "name": "chanceOfNewHire",
+            "baseValue": 0.05
+        },
+        {
+            "name": "averageHireContractExpiry",
+            "baseValue": 600
+        },
+        {
+            "name": "hireCostModifier",
+            "baseValue": 1
+        },
+        {
+            "name": "freeCoinsModifier",
+            "baseValue": 1
+        },
+        {
+            "name": "questRisk",
+            "baseValue": 1
+        },
+        {
+            "name": "upgradeChance",
+            "baseValue": 1
+        }
     ],
     "versions": [{
-        "number": "0.10.5",
-        "description": "Adenturer views bettered.",
-        "features": [
-            "Added adventurer tabs for each status."
-        ],
-        "bugfixes": [
-            "Workaround for always questing bug."
-        ]
-    }, {
-        "number": "0.10.4",
-        "description": "Removal of inline code and formatting.",
-        "features": [
-            "Improved formatting of notices."
-        ],
-        "bugfixes": [
-            "Removed inline code causing crashes."
-        ]
-    }, {
-        "number": "0.10.3",
-        "description": "Global exception handling.",
-        "features": [
-            "Added global exception handler."
-        ],
-        "bugfixes": []
-    }, {
-        "number": "0.10.2",
-        "description": "Get coin or renown animation.",
-        "features": [
-            "Get coin or renown animation.  That's all."
-        ],
-        "bugfixes": []
-    }, {
-        "number": "0.10.1",
-        "description": "Bug Fixes",
-        "features": [
-            "Session tracking enabled for other functionality.",
-            "Improved finished quest tab as well as other minor enhancements to other tabs.",
-            "Filled contracts based on if you haven't logged in for a while."
-        ],
-        "bugfixes": []
-    }, {
-        "number": "0.10.0",
-        "description": "Skills and adventurers update",
-        "features": [
-            "MAJOR UPDATE - Please reset you game.",
-            "Adventurers are now individual instead of just being numbers.",
-            "Adventures now have a base cost and don't cost more.",
-            "Adventurers have skills.",
-            "Adventurers will gain XP for mission.  It can't be used yet, but it's there.",
-            "Major interface updates to make everything more readable/obvious.",
-            "Contract requirements are now based on skills instead of party members.",
-            "Contracts can be rejected",
-            "Adventurers and contracts hang about for longer but don't show up as often.",
-            "Time has more description and a coloured background based on time.",
-            "Holidays will now show up below the calendar.",
-            "Tabs are now hidden when there are no items.",
-            "An in-progress data manager can be accessed from the menu and provides details on some of the data files used."
-        ],
-        "bugfixes": []
-    }, {
-        "number": "0.9.8",
-        "description": "Bug Fixes",
-        "features": [
-            "Option: Show achievement time as real time or game time."
-        ],
-        "bugfixes": [
-            "Statistics filter is not trim sensitive",
-            "Added use stat on items"
-        ]
-    }, {
-        "number": "0.9.7",
-        "description": "It's about time.",
-        "features": [
-            "Added game time to the bottom of the view.",
-            "Messages now log in game time.",
-            "Indicators on each tab that there are not items."
-        ],
-        "bugfixes": [
-            "Fixed bug where leftover contracts giving reknown couldn't be claimed.",
-            "Typo causing contracts to never expire."
-        ]
-    }, {
-        "number": "0.9.6",
-        "description": "More! Bug fixes",
-        "features": [],
-        "bugfixes": [
-            "Fixed bug where you stopped getting rewards",
-            "Fixed spelling of renown"
-        ]
-    }, {
-        "number": "0.9.5",
-        "description": "Bug fixes",
-        "features": [],
-        "bugfixes": [
-            "Fixed mysterious scrolls not working",
-            "Fixed not losing an item when you use or sell it.",
-            "Fixed bug where you stopped getting rewards."
-        ]
-    }, {
-        "number": "0.9.4",
-        "description": "More mysterious effects",
-        "features": [
-            "Improved mysterious scroll effects",
-            "Added global effects",
-            "Updated some items and contracts",
-            "Adventurers now have a chance of showing up in other locations"
-        ],
-        "bugfixes": []
-    }, {
-        "number": "0.9.3",
-        "description": "More item reward generation",
-        "features": ["Improved artwork and weapons"],
-        "bugfixes": []
-    }, {
-        "number": "0.9.2",
-        "description": "Improved item reward generation",
-        "features": ["Improved item reward generation"],
-        "bugfixes": []
-    }, {
-        "number": "0.9.1",
-        "description": "Loot bugfix",
-        "features": [],
-        "bugfixes": [
-            "Fixed bug where all loot was mysterious scrolls"
-        ]
-    }, {
-        "number": "0.9",
-        "description": "The Loot update!",
-        "features": [
-            "Items are now obtainable through missions",
-            "Items can be sold for their value",
-            "Some items can be used",
-            "Added messages interface",
-            "Tabs!  Everything is in tabs now."
-        ],
-        "bugfixes": [
-            "Statistic filter is now case insensitive",
-            "Initial load now sets game version"
-        ]
-    }, {
-        "number": "0.8",
-        "description": "Clean up update",
-        "features": [
-            "Split up automation options and displayed better in dialog.",
-            "Added new version notification.",
-            "Reworked achievements and added some.",
-            "Removed recalculating stuff all the time.",
-            "Statistic table can now be filtered in modal view.",
-            "Only show hired adventurers.",
-            "Adventurer totals shown",
-            "Merged coins and renown in bottom bar so preserve space"
-        ],
-        "bugfixes": [
-            "Fixed layout bug to stopped relocate buttons from being accessible.",
-            "Fixed top and bottom of content being cut off"
-        ]
-    }, {
-        "number": "0.7",
-        "description": "The Tavern update",
-        "features": [
-            "Added more adventurers for the tavern.",
-            "Added more contracts for the tavern.",
-            "Updated hired adventurers to a table for readability.",
-            "Achievement message is more interesting."
-        ],
-        "bugfixes": []
-    }, {
-        "number": "0.6",
-        "description": "Achievements!",
-        "features": [
-            "Added achievement viewing.",
-            "Added footer and moved coins and renown there."
-        ],
-        "bugfixes": []
-    }, {
-        "number": "0.5",
-        "description": "Statistics!",
-        "features": [
-            "Added statistic tracking and viewing."
-        ],
-        "bugfixes": []
-    }, {
-        "number": "0.4",
-        "description": "The UI update.  Put everything in places that hopefully make a little more sense.",
-        "features": [
-            "UI updated with a proper nav bar and everything.",
-            "Hire all and start all contracts.",
-            "Simple options dialog",
-            "Automation tools for testing",
-            "Major layout adjustments to make the game more mobile friendly.",
-            "Added oversized quest stat indicators.",
-            "Added coin counter just above adventurers for hire."
-        ],
-        "bugfixes": []
-    }, {
-        "number": "0.3",
-        "description": "Contract improvements",
-        "features": [
-            "Added reward factors to contracts",
-            "Added some new contracts",
-            "Improved updating to new version",
-            "Contracts now show risk, reward and duration factors"
-        ],
-        "bugfixes": []
-    }, {
-        "number": "0.2",
-        "description": "Upgrades to expeditions to show more details.",
-        "features": ["Show all adventurers and statuses on completed quest cards", "Running expeditions colour coding", "Progress bar on running expeditions"],
-        "bugfixes": []
-    }, {
-        "number": "0.1",
-        "description": "Initial versioned release!  Versioning and save game loading improved.",
-        "features": ["Added release notes and versioning."],
-        "bugfixes": ["Rejigged saved game loading.  Should work better now."]
-    }]
+            "number": "0.10.6",
+            "description": "Stability.",
+            "features": [
+                "Stability patches.",
+                "Save management improved."
+            ],
+            "bugfixes": []
+        }, {
+            "number": "0.10.5",
+            "description": "Adenturer views bettered.",
+            "features": [
+                "Added adventurer tabs for each status."
+            ],
+            "bugfixes": [
+                "Workaround for always questing bug."
+            ]
+        },
+        {
+            "number": "0.10.4",
+            "description": "Removal of inline code and formatting.",
+            "features": [
+                "Improved formatting of notices."
+            ],
+            "bugfixes": [
+                "Removed inline code causing crashes."
+            ]
+        },
+        {
+            "number": "0.10.3",
+            "description": "Global exception handling.",
+            "features": [
+                "Added global exception handler."
+            ],
+            "bugfixes": []
+        },
+        {
+            "number": "0.10.2",
+            "description": "Get coin or renown animation.",
+            "features": [
+                "Get coin or renown animation.  That's all."
+            ],
+            "bugfixes": []
+        },
+        {
+            "number": "0.10.1",
+            "description": "Bug Fixes",
+            "features": [
+                "Session tracking enabled for other functionality.",
+                "Improved finished quest tab as well as other minor enhancements to other tabs.",
+                "Filled contracts based on if you haven't logged in for a while."
+            ],
+            "bugfixes": []
+        },
+        {
+            "number": "0.10.0",
+            "description": "Skills and adventurers update",
+            "features": [
+                "MAJOR UPDATE - Please reset you game.",
+                "Adventurers are now individual instead of just being numbers.",
+                "Adventures now have a base cost and don't cost more.",
+                "Adventurers have skills.",
+                "Adventurers will gain XP for mission.  It can't be used yet, but it's there.",
+                "Major interface updates to make everything more readable/obvious.",
+                "Contract requirements are now based on skills instead of party members.",
+                "Contracts can be rejected",
+                "Adventurers and contracts hang about for longer but don't show up as often.",
+                "Time has more description and a coloured background based on time.",
+                "Holidays will now show up below the calendar.",
+                "Tabs are now hidden when there are no items.",
+                "An in-progress data manager can be accessed from the menu and provides details on some of the data files used."
+            ],
+            "bugfixes": []
+        },
+        {
+            "number": "0.9.8",
+            "description": "Bug Fixes",
+            "features": [
+                "Option: Show achievement time as real time or game time."
+            ],
+            "bugfixes": [
+                "Statistics filter is not trim sensitive",
+                "Added use stat on items"
+            ]
+        },
+        {
+            "number": "0.9.7",
+            "description": "It's about time.",
+            "features": [
+                "Added game time to the bottom of the view.",
+                "Messages now log in game time.",
+                "Indicators on each tab that there are not items."
+            ],
+            "bugfixes": [
+                "Fixed bug where leftover contracts giving reknown couldn't be claimed.",
+                "Typo causing contracts to never expire."
+            ]
+        },
+        {
+            "number": "0.9.6",
+            "description": "More! Bug fixes",
+            "features": [],
+            "bugfixes": [
+                "Fixed bug where you stopped getting rewards",
+                "Fixed spelling of renown"
+            ]
+        },
+        {
+            "number": "0.9.5",
+            "description": "Bug fixes",
+            "features": [],
+            "bugfixes": [
+                "Fixed mysterious scrolls not working",
+                "Fixed not losing an item when you use or sell it.",
+                "Fixed bug where you stopped getting rewards."
+            ]
+        },
+        {
+            "number": "0.9.4",
+            "description": "More mysterious effects",
+            "features": [
+                "Improved mysterious scroll effects",
+                "Added global effects",
+                "Updated some items and contracts",
+                "Adventurers now have a chance of showing up in other locations"
+            ],
+            "bugfixes": []
+        },
+        {
+            "number": "0.9.3",
+            "description": "More item reward generation",
+            "features": [
+                "Improved artwork and weapons"
+            ],
+            "bugfixes": []
+        },
+        {
+            "number": "0.9.2",
+            "description": "Improved item reward generation",
+            "features": [
+                "Improved item reward generation"
+            ],
+            "bugfixes": []
+        },
+        {
+            "number": "0.9.1",
+            "description": "Loot bugfix",
+            "features": [],
+            "bugfixes": [
+                "Fixed bug where all loot was mysterious scrolls"
+            ]
+        },
+        {
+            "number": "0.9",
+            "description": "The Loot update!",
+            "features": [
+                "Items are now obtainable through missions",
+                "Items can be sold for their value",
+                "Some items can be used",
+                "Added messages interface",
+                "Tabs!  Everything is in tabs now."
+            ],
+            "bugfixes": [
+                "Statistic filter is now case insensitive",
+                "Initial load now sets game version"
+            ]
+        },
+        {
+            "number": "0.8",
+            "description": "Clean up update",
+            "features": [
+                "Split up automation options and displayed better in dialog.",
+                "Added new version notification.",
+                "Reworked achievements and added some.",
+                "Removed recalculating stuff all the time.",
+                "Statistic table can now be filtered in modal view.",
+                "Only show hired adventurers.",
+                "Adventurer totals shown",
+                "Merged coins and renown in bottom bar so preserve space"
+            ],
+            "bugfixes": [
+                "Fixed layout bug to stopped relocate buttons from being accessible.",
+                "Fixed top and bottom of content being cut off"
+            ]
+        },
+        {
+            "number": "0.7",
+            "description": "The Tavern update",
+            "features": [
+                "Added more adventurers for the tavern.",
+                "Added more contracts for the tavern.",
+                "Updated hired adventurers to a table for readability.",
+                "Achievement message is more interesting."
+            ],
+            "bugfixes": []
+        },
+        {
+            "number": "0.6",
+            "description": "Achievements!",
+            "features": [
+                "Added achievement viewing.",
+                "Added footer and moved coins and renown there."
+            ],
+            "bugfixes": []
+        },
+        {
+            "number": "0.5",
+            "description": "Statistics!",
+            "features": [
+                "Added statistic tracking and viewing."
+            ],
+            "bugfixes": []
+        },
+        {
+            "number": "0.4",
+            "description": "The UI update.  Put everything in places that hopefully make a little more sense.",
+            "features": [
+                "UI updated with a proper nav bar and everything.",
+                "Hire all and start all contracts.",
+                "Simple options dialog",
+                "Automation tools for testing",
+                "Major layout adjustments to make the game more mobile friendly.",
+                "Added oversized quest stat indicators.",
+                "Added coin counter just above adventurers for hire."
+            ],
+            "bugfixes": []
+        },
+        {
+            "number": "0.3",
+            "description": "Contract improvements",
+            "features": [
+                "Added reward factors to contracts",
+                "Added some new contracts",
+                "Improved updating to new version",
+                "Contracts now show risk, reward and duration factors"
+            ],
+            "bugfixes": []
+        },
+        {
+            "number": "0.2",
+            "description": "Upgrades to expeditions to show more details.",
+            "features": [
+                "Show all adventurers and statuses on completed quest cards",
+                "Running expeditions colour coding",
+                "Progress bar on running expeditions"
+            ],
+            "bugfixes": []
+        },
+        {
+            "number": "0.1",
+            "description": "Initial versioned release!  Versioning and save game loading improved.",
+            "features": [
+                "Added release notes and versioning."
+            ],
+            "bugfixes": [
+                "Rejigged saved game loading.  Should work better now."
+            ]
+        }
+    ]
 }

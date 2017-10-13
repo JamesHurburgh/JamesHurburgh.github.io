@@ -7,7 +7,7 @@
         {{LocationManager().getCurrentLocation().description}}
     </div>
     <div class="col-xs-12 col-sm-4">
-        <button type="button" class="btn btn-primary col-xs-12" v-bind:class="{ 'btn-success': canGetFreeCoins(), 'btn-primary': !canGetFreeCoins() }" @click="freeCoins(location)" :disabled="!canGetFreeCoins()">{{location.freeCoinsDescription}}</button>
+        <!-- <button type="button" class="btn btn-primary col-xs-12" v-bind:class="{ 'btn-success': canGetFreeCoins(), 'btn-primary': !canGetFreeCoins() }" @click="freeCoins(location)" :disabled="!canGetFreeCoins()">{{location.freeCoinsDescription}}</button> -->
         <button type="button" class="btn btn-default col-xs-6" v-bind:class="{ 'btn-success': LocationManager().canRelocateDown(), 'btn-primary': !LocationManager().canRelocateDown() }" @click="LocationManager().relocateDown()" :disabled="!LocationManager().canRelocateDown()">
             <span class="glyphicon glyphicon-chevron-left"></span>
             Relocate

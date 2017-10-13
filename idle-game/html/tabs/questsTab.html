@@ -1,15 +1,15 @@
 <ul class="nav nav-tabs">
     <li class="active">
-        <a href="#runningQuests" data-toggle="tab" aria-expanded="false">Running <span class="badge">{{runningExpeditions.length}}</span></a>
+        <a href="#runningQuests" data-toggle="tab" aria-expanded="false">Running <span class="badge">{{QuestManager().getRunningQuests().length}}</span></a>
     </li>
     <li>
-        <a href="#finishedQuests" data-toggle="tab" aria-expanded="false">Finished <span class="badge">{{completedExpeditions.length}}</span></a>
+        <a href="#finishedQuests" data-toggle="tab" aria-expanded="false">Finished <span class="badge">{{QuestManager().getCompletedQuests().length}}</span></a>
     </li>
 </ul>
 <div id="questTabContent" class="tab-content">
     <div class="tab-pane fade active in" id="runningQuests">
-        <span v-if="runningExpeditions.length == 0" class="text-muted text-center col-xs-12">No running quests</span>
-        <div class="col-md-6" v-for="expedition in runningExpeditions" key="expedition.id">
+        <span v-if="QuestManager().getRunningQuests().length == 0" class="text-muted text-center col-xs-12">No running quests</span>
+        <div class="col-md-6" v-for="expedition in QuestManager().getRunningQuests()" key="expedition.id">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">{{expedition.contract.name}}</h3>
@@ -21,22 +21,21 @@
                         </li>
                     </ul>
                     <div class="progress progress-striped active">
-                        <div class="progress-bar" v-bind:style="{ width: expeditionProgress(expedition) + '%' }"></div>
+                        <div class="progress-bar" v-bind:style="{ width: QuestManager().questProgress(expedition) + '%' }"></div>
                     </div>
-                    <div v-bind:class="{ 'text-success': expiringDanger(expedition.expires), 'text-warning': expiringWarning(expedition.expires), 'text-danger': expiringSuccess(expedition.expires) }">{{readableTime(expedition.expires - Date.now())}} remaining</div>
+                    <div v-bind:class="{ 'text-success': NoticeManager().expiringDanger(expedition.expires), 'text-warning': NoticeManager().expiringWarning(expedition.expires), 'text-danger': NoticeManager().expiringSuccess(expedition.expires) }">{{TimeManager().readableTime(expedition.expires - Date.now())}} remaining</div>
                 </div>
             </div>
         </div>
     </div>
     <div class="tab-pane fade" id="finishedQuests">
-        <span v-if="completedExpeditions.length == 0" class="text-muted text-center col-xs-12">No finished quests</span>
-        <button v-if="claimAllVisible()" type="button" class="btn btn-success btn-xs pull-right" @click="claimAllCompletedExpeditions()">Claim All</button>
-        <div class="col-md-6" v-for="expedition in completedExpeditions" key="expedition.id">
+        <span v-if="QuestManager().getCompletedQuests().length == 0" class="text-muted text-center col-xs-12">No finished quests</span>
+        <div class="col-md-6" v-for="expedition in QuestManager().getCompletedQuests()" key="expedition.id">
             <div class="panel" :class="{ 'panel-success': expedition.success, 'panel-danger': !expedition.success}">
                 <div class="panel-heading">
                     <h3 class="panel-title">{{expedition.contract.name}}
-                        <button v-if="expedition.success" type="button" class="btn btn-xs btn-default pull-right" @click="claimReward(expedition)">Claim</button>
-                        <button v-if="!expedition.success" type="button" class="btn btn-xs btn-default pull-right" @click="removeExpedition(expedition)">Dismiss</button>
+                        <button v-if="expedition.success" type="button" class="btn btn-xs btn-default pull-right" @click="QuestManager().claimReward(expedition)">Claim</button>
+                        <button v-if="!expedition.success" type="button" class="btn btn-xs btn-default pull-right" @click="QuestManager().removeQuest(expedition)">Dismiss</button>
                     </h3>
                 </div>
                 <div class="panel-body">
@@ -46,8 +45,8 @@
                         <h4>Rewards</h4>
                         <div v-if="expedition.contract.contractAmount != undefined" class="text-success"><img src="./img/icons/crown-coin.png" width="24px" /> {{expedition.contract.contractAmount}} coins</div>
                         <div v-for="reward in expedition.rewards">
-                            <div class="text-success" v-if="reward.amount"><img :src="getIcon(reward.type)" width="24px" /> {{reward.amount}} {{reward.type}}</div>
-                            <div class="text-success" v-if="reward.type == 'item'"><img :src="getIcon('item')" width="24px" /> {{reward.item.name}}</div>
+                            <div class="text-success" v-if="reward.amount"><img :src="SpriteManager().getIcon(reward.type)" width="24px" /> {{reward.amount}} {{reward.type}}</div>
+                            <div class="text-success" v-if="reward.type == 'item'"><img :src="SpriteManager().getIcon('item')" width="24px" /> {{reward.item.name}}</div>
                         </div>
                     </div>
                     <div v-if="expedition.survivors.length !== 0">

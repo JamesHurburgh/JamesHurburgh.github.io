@@ -19,7 +19,7 @@
                     </h3>
                 </div>
                 <div class="panel-body ">
-                    <span v-for="skill in adventurer.skills " :title="skill.name + ' ' + skill.amount "><img :alt="skill.name " v-for="n in skill.amount " width="24px " :src=" 'img/icons/' + get( 'skills', skill.name).icon + '.png' " /></span>
+                    <span v-for="skill in adventurer.skills " :title="skill.name + ' ' + skill.amount "><img :alt="skill.name " v-for="n in skill.amount " width="24px " :src=" 'img/icons/' + DataManager().getData( 'skills', skill.name).icon + '.png' " /></span>
                     <div v-if="AdventurerManager().getAdventurersQuest(adventurer) !== undefined">
                         Quest: {{AdventurerManager().getAdventurersQuest(adventurer).contract.name}}
                     </div>
@@ -31,7 +31,7 @@
             </div>
         </div>
     </div>
-    <div class="tab-pane fade active in" id="questingAdventurers">
+    <div class="tab-pane fade" id="questingAdventurers">
         <div class="col-md-6" v-for="adventurer in AdventurerManager().getAdventurersAtStatus('Questing')">
             <div class="panel panel-default ">
                 <div class="panel-heading ">
@@ -40,7 +40,7 @@
                     </h3>
                 </div>
                 <div class="panel-body ">
-                    <span v-for="skill in adventurer.skills " :title="skill.name + ' ' + skill.amount "><img :alt="skill.name " v-for="n in skill.amount " width="24px " :src=" 'img/icons/' + get( 'skills', skill.name).icon + '.png' " /></span>
+                    <span v-for="skill in adventurer.skills " :title="skill.name + ' ' + skill.amount "><img :alt="skill.name " v-for="n in skill.amount " width="24px " :src=" 'img/icons/' + DataManager().getData( 'skills', skill.name).icon + '.png' " /></span>
                     <div v-if="AdventurerManager().getAdventurersQuest(adventurer) !== undefined">
                         Quest: {{AdventurerManager().getAdventurersQuest(adventurer).contract.name}}
                     </div>
@@ -52,7 +52,7 @@
             </div>
         </div>
     </div>
-    <div class="tab-pane fade active in" id="deadAdventurers">
+    <div class="tab-pane fade" id="deadAdventurers">
         <div class="col-md-6" v-for="adventurer in AdventurerManager().getAdventurersAtStatus('Dead')">
             <div class="panel panel-default ">
                 <div class="panel-heading ">
@@ -61,7 +61,7 @@
                     </h3>
                 </div>
                 <div class="panel-body ">
-                    <span v-for="skill in adventurer.skills " :title="skill.name + ' ' + skill.amount "><img :alt="skill.name " v-for="n in skill.amount " width="24px " :src=" 'img/icons/' + get( 'skills', skill.name).icon + '.png' " /></span>
+                    <span v-for="skill in adventurer.skills " :title="skill.name + ' ' + skill.amount "><img :alt="skill.name " v-for="n in skill.amount " width="24px " :src=" 'img/icons/' + DataManager().getData( 'skills', skill.name).icon + '.png' " /></span>
                     <div v-if="AdventurerManager().getAdventurersQuest(adventurer) !== undefined">
                         Quest: {{AdventurerManager().getAdventurersQuest(adventurer).contract.name}}
                     </div>

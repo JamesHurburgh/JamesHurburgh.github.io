@@ -9,7 +9,6 @@
 <div id="noticesTabContent" class="tab-content">
     <div class="tab-pane fade active in" id="questContracts">
         <!-- <span v-if="LocationManager().getCurrentLocation().availableContracts.length == 0" class="text-muted text-center col-xs-12">No contracts</span> -->
-        <button v-if="startAllVisible()" type="button" class="btn btn-success btn-xs pull-right" @click="startAllContracts()">Start All</button>
         <div class="col-md-6 col-lg-4" v-for="contract in LocationManager().getCurrentLocation().availableContracts" key="contract.name">
             <div class="panel panel-default ">
                 <div class="panel-heading ">
@@ -17,8 +16,8 @@
                 </div>
                 <!-- <div class="panel-body"></div> -->
                 <div class="panel-footer">
-                    <div v-bind:class="{ 'text-danger': expiringDanger(contract.expires), 'text-warning': expiringWarning(contract.expires), 'text-success': expiringSuccess(contract.expires) }">{{readableTime(contract.expires - Date.now())}} remaining
-                        <button type="button" class="btn btn-xs btn-info pull-right" data-toggle="modal" data-target="#contractDetails" @click="viewContract(contract)">View</button>
+                    <div v-bind:class="{ 'text-danger': NoticeManager().expiringDanger(contract.expires), 'text-warning': NoticeManager().expiringWarning(contract.expires), 'text-success': NoticeManager().expiringSuccess(contract.expires) }">{{TimeManager().readableTime(contract.expires - Date.now())}} remaining
+                        <button type="button" class="btn btn-xs btn-info pull-right" data-toggle="modal" data-target="#contractDetails" @click="NoticeManager().viewContract(contract)">Details</button>
                         <button type="button" class="btn btn-xs btn-danger pull-right" @click="QuestManager().rejectContract(contract)">Reject</button>
                     </div>
                 </div>
@@ -27,7 +26,6 @@
     </div>
     <div class="tab-pane fade" id="adventurerContracts">
         <!-- <span v-if="LocationManager().getCurrentLocation().availableAdventurers.length == 0" class="text-muted text-center col-xs-12">No adventurers for hire</span> -->
-        <button v-if="hireAllVisible()" type="button" class="btn btn-success btn-xs pull-right" @click="hireAll()">Hire All</button>
         <div class="col-md-6 col-lg-4" v-for="notice in LocationManager().getCurrentLocation().availableAdventurers" key="adventurer.name">
 
             <div class="panel panel-default ">
@@ -36,8 +34,9 @@
                 </div>
                 <!-- <div class="panel-body"></div> -->
                 <div class="panel-footer">
-                    <div v-bind:class="{ 'text-danger': expiringDanger(notice.expires), 'text-warning': expiringWarning(notice.expires), 'text-success': expiringSuccess(notice.expires) }">{{readableTime(notice.expires - Date.now())}} remaining
-                        <button type="button" class="btn btn-xs pull-right" v-bind:class="{ 'btn-success': AdventurerManager().canHire(notice.adventurer), 'btn-primary': !AdventurerManager().canHire(notice.adventurer) }" @click="AdventurerManager().hire(notice)" :disabled="!AdventurerManager().canHire(notice.adventurer)">Hire ({{AdventurerManager().getCost(notice.adventurer)}} coins)</button></div>
+                    <div v-bind:class="{ 'text-danger': NoticeManager().expiringDanger(notice.expires), 'text-warning': NoticeManager().expiringWarning(notice.expires), 'text-success': NoticeManager().expiringSuccess(notice.expires) }">{{TimeManager().readableTime(notice.expires - Date.now())}} remaining
+                        <button type="button" class="btn btn-xs pull-right" v-bind:class="{ 'btn-success': AdventurerManager().canHire(notice.adventurer), 'btn-primary': !AdventurerManager().canHire(notice.adventurer) }"
+                            @click="AdventurerManager().hire(notice)" :disabled="!AdventurerManager().canHire(notice.adventurer)">Hire ({{AdventurerManager().getCost(notice.adventurer)}} coins)</button></div>
                 </div>
             </div>
 

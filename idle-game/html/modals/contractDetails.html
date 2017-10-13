@@ -4,35 +4,38 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <div v-if="!selectedContract">
+                <div v-if="!NoticeManager().getSelectedJobNotice()">
                     <span class="text-muted">Contract expired or none selected. <button type="button" class="btn btn-info" @click="QuestManager().selectNextContract()">Next Contract</button></span>
                 </div>
-                <div v-if="selectedContract">
+                <div v-if="NoticeManager().getSelectedJobNotice()">
                     <h4>
-                        {{selectedContract.name}}
+                        {{NoticeManager().getSelectedJobNotice().name}}
                     </h4>
 
-                    <div>Duration: {{Math.ceil(Math.sqrt(selectedContract.duration)/42)}}/10</div>
+                    <div>Duration: {{Math.ceil(Math.sqrt(NoticeManager().getSelectedJobNotice().duration)/42)}}/10</div>
                     <div class="progress" style="height: 7px; margin-bottom: 0px;">
-                        <div class="progress-bar progress-bar-info" v-bind:style="{ width: Math.ceil(Math.sqrt(selectedContract.duration)/42)*10 + '%' }"></div>
+                        <div class="progress-bar progress-bar-info" v-bind:style="{ width: Math.ceil(Math.sqrt(NoticeManager().getSelectedJobNotice().duration)/42)*10 + '%' }"></div>
                     </div>
-                    <div>Risk: {{Math.ceil(selectedContract.risk * 10)}}/10</div>
+                    <div>Risk: {{Math.ceil(NoticeManager().getSelectedJobNotice().risk * 10)}}/10</div>
                     <div class="progress" style="height: 7px; margin-bottom: 0px;">
-                        <div class="progress-bar progress-bar-danger" v-bind:style="{ width: Math.ceil(selectedContract.risk * 10) * 10 + '%' }"></div>
+                        <div class="progress-bar progress-bar-danger" v-bind:style="{ width: Math.ceil(NoticeManager().getSelectedJobNotice().risk * 10) * 10 + '%' }"></div>
                     </div>
-                    <div>Reward: {{Math.ceil(selectedContract.rewardFactor * 10)}}/10</div>
+                    <div>Reward: {{Math.ceil(NoticeManager().getSelectedJobNotice().rewardFactor * 10)}}/10</div>
                     <div class="progress" style="height: 7px; margin-bottom: 0px;">
-                        <div class="progress-bar progress-bar-success" v-bind:style="{ width: Math.ceil(selectedContract.rewardFactor * 10) * 10 + '%' }"></div>
+                        <div class="progress-bar progress-bar-success" v-bind:style="{ width: Math.ceil(NoticeManager().getSelectedJobNotice().rewardFactor * 10) * 10 + '%' }"></div>
                     </div>
 
-                    <div v-bind:class="{ 'text-danger': expiringDanger(selectedContract.expires), 'text-warning': expiringWarning(selectedContract.expires), 'text-success': expiringSuccess(selectedContract.expires) }">{{readableTime(selectedContract.expires - Date.now())}} remaining</div>
-                    <div v-if="selectedContract.contractAmount != undefined">Contract amount: <strong>{{selectedContract.contractAmount}} coins</strong></div>
+                    <div v-bind:class="{ 'text-danger': NoticeManager().expiringDanger(NoticeManager().getSelectedJobNotice().expires), 'text-warning': NoticeManager().expiringWarning(NoticeManager().getSelectedJobNotice().expires), 'text-success': NoticeManager().expiringSuccess(NoticeManager().getSelectedJobNotice().expires) }">{{TimeManager().readableTime(NoticeManager().getSelectedJobNotice().expires - Date.now())}} remaining</div>
+                    <div v-if="NoticeManager().getSelectedJobNotice().contractAmount != undefined">Contract amount: <strong>{{NoticeManager().getSelectedJobNotice().contractAmount}} coins</strong></div>
                     <span>Requires adventurers with:</span>
-                    <div v-if="selectedContract.requirements != undefined">
-                        <div v-for="skill in data.skills">
-                            <div v-if="selectedContract.requirements.attributes.filter(sk => sk.type == skill.name)[0] || AdventurerManager().getCurrentPartyAttribute(skill.name) != 0">
-                                <img :alt="skill.name" v-for="n in QuestManager().getCurrentQuestRequiredAndAssignedSkillCount(skill.name)" width="24px" :src="'img/icons/' + get('skills', skill.name).icon + '-green.png'" /><img :alt="skill.name" v-for="n in QuestManager().getCurrentQuestRequiredAndUnassignedSkillCount(skill.name)"
-                                    width="24px" :src="'img/icons/' + get('skills', skill.name).icon + '.png'" />
+                    <div v-if="NoticeManager().getSelectedJobNotice().requirements != undefined">
+                        <div v-for="skill in DataManager().skills">
+                            <div v-if="QuestManager().isSkillRelevantToContract(skill, NoticeManager().getSelectedJobNotice())">
+                                <img :alt="skill.name" v-for="n in QuestManager().getCurrentQuestRequiredAndAssignedSkillCount(skill.name)" width="24px"
+                                    :src="'img/icons/' + DataManager().getData('skills', skill.name).icon + '-green.png'" /><img
+                                    :alt="skill.name" v-for="n in QuestManager().getCurrentQuestRequiredAndUnassignedSkillCount(skill.name)"
+                                    width="24px" :src="'img/icons/' + DataManager().getData('skills', skill.name).icon + '.png'"
+                                />
                             </div>
                         </div>
                     </div>
@@ -49,10 +52,11 @@
                             </tr>
                         </thead>
                         <tbody style="overflow: auto;">
-                            <tr v-for="adventurer in AdventurerManager().getAdventurersAtStatus('Idle')" @click="adventurer.includeInParty = !adventurer.includeInParty" v-bind:class="{ 'default': !adventurer.includeInParty, 'success': adventurer.includeInParty }">
+                            <tr v-for="adventurer in AdventurerManager().getAdventurersAtStatus('Idle')" @click="adventurer.includeInParty = !adventurer.includeInParty"
+                                v-bind:class="{ 'default': !adventurer.includeInParty, 'success': adventurer.includeInParty }">
                                 <td>{{adventurer.name.full}}</td>
                                 <td>
-                                    <span v-for="skill in adventurer.skills" :title="skill.name + ' ' + skill.amount"><img :alt="skill.name" v-for="n in skill.amount" width="24px" :src="'img/icons/' + get('skills', skill.name).icon + '.png'" /></span>
+                                    <span v-for="skill in adventurer.skills" :title="skill.name + ' ' + skill.amount"><img :alt="skill.name" v-for="n in skill.amount" width="24px" :src="'img/icons/' + DataManager().getData('skills', skill.name).icon + '.png'" /></span>
                                 </td>
                             </tr>
                         </tbody>
@@ -60,10 +64,10 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn pull-right" v-if="selectedContract" data-dismiss="modal" v-bind:class="{ 'btn-success': QuestManager().canSendSelectedQuest(), 'btn-primary': !QuestManager().canSendSelectedQuest() }" @click="QuestManager().sendSelectedQuest()"
-                    :disabled="!QuestManager().canSendSelectedQuest()">Start</button>
+                <button type="button" class="btn pull-right" v-if="NoticeManager().getSelectedJobNotice()" data-dismiss="modal" v-bind:class="{ 'btn-success': QuestManager().canSendSelectedQuest(), 'btn-primary': !QuestManager().canSendSelectedQuest() }"
+                    @click="QuestManager().sendSelectedQuest()" :disabled="!QuestManager().canSendSelectedQuest()">Start</button>
                 <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-danger pull-left" v-if="selectedContract" @click="QuestManager().rejectSelectedContract(contract)">Reject</button>
+                <button type="button" class="btn btn-danger pull-left" v-if="NoticeManager().getSelectedJobNotice()" @click="QuestManager().rejectSelectedContract(contract)">Reject</button>
                 <button type="button" class="btn btn-info" @click="QuestManager().selectNextContract()">Next</button>
             </div>
         </div>

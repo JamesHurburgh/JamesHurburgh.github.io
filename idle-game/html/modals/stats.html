@@ -12,7 +12,7 @@
 
                 <div class="input">
                     <label>Filter
-                                <input type="input" v-model="options.statFilter"/>
+                                <input type="input" v-model="OptionsManager().getOptions().statFilter"/>
                             </label>
                 </div>
                 <table class="table table-striped table-hover ">
@@ -23,7 +23,7 @@
                             <th>All Time</th>
                         </tr>
                     </thead>
-                    <tr v-for="stat in filteredStats(options.statFilter)">
+                    <tr v-for="stat in StatisticsManager().filteredStats(OptionsManager().getOptions().statFilter)">
                         <td>{{stat.name}}</td>
                         <td>{{stat.current}}</td>
                         <td>{{stat.allTime}}</td>

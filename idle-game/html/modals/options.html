@@ -9,43 +9,43 @@
                 <h4>Options</h4>
             </div>
             <div class="modal-body">
-                <button @click="reset()" type="button" class="btn btn-default" data-dismiss="modal">Reset the Game</button>
+                <button @click="GameStateManager().reset()" type="button" class="btn btn-default" data-dismiss="modal">Reset the Game</button>
 
                 <h3>Autoplay</h3>
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" v-model="options.automaticHire">Automatically hire available adventurers</input>
+                        <input type="checkbox" v-model="OptionsManager().getOptions().automaticHire">Automatically hire available adventurers</input>
                     </label>
                 </div>
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" v-model="options.automaticClaim">Automatically claim completed expeditions</input>
+                        <input type="checkbox" v-model="OptionsManager().getOptions().automaticClaim">Automatically claim completed expeditions</input>
                     </label>
                 </div>
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" v-model="options.automaticSend">Automatically send available contracts</input>
+                        <input type="checkbox" v-model="OptionsManager().getOptions().automaticSend">Automatically send available contracts</input>
                     </label>
                 </div>
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" v-model="options.automaticRelocate">Automatically relocate to better locations</input>
+                        <input type="checkbox" v-model="OptionsManager().getOptions().automaticRelocate">Automatically relocate to better locations</input>
                     </label>
                 </div>
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" v-model="options.automaticFreeCoins">Automatically claim free coins</input>
+                        <input type="checkbox" v-model="OptionsManager().getOptions().automaticFreeCoins">Automatically claim free coins</input>
                     </label>
                 </div>
                 <h3>Display</h3>
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" v-model="options.showMessageTimeAsRealTime">Show message time as real time</input>
+                        <input type="checkbox" v-model="OptionsManager().getOptions().showMessageTimeAsRealTime">Show message time as real time</input>
                     </label>
                 </div>
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" v-model="options.claimAllButtons">Display "Claim All" Buttons</input>
+                        <input type="checkbox" v-model="OptionsManager().getOptions().claimAllButtons">Display "Claim All" Buttons</input>
                     </label>
                 </div>
             </div>
