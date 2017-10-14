@@ -24,29 +24,26 @@ define([
 
             this.reset = function () {
                 log("reset");
-                this.gameState = this.newGame();
-            };
 
-            this.newGame = function () {
-                // Then initialise new
-                var newGameState = {};
-                newGameState.majorTickCounter = 0;
+                this.gameState.majorTickCounter = 0;
 
-                newGameState.coins = 10;
-                newGameState.renown = 0;
+                this.gameState.coins = 50;
+                this.gameState.renown = 0;
 
-                newGameState.runningExpeditions = [];
-                newGameState.completedQuests = [];
+                this.gameState.runningExpeditions = [];
+                this.gameState.completedQuests = [];
 
                 // Take a local copy of the locations
-                newGameState.locationList = commonFunctions.clone(data.locations);
-                this.gameController.LocationManager().setCurrentLocation(newGameState.locationList[0].name);
+                this.gameState.locationList = commonFunctions.clone(data.locations);
 
-                this.gameController.LocationManager().getCurrentLocation().availableContracts = [];
-                this.gameController.LocationManager().getCurrentLocation().availableAdventurers = [];
+                // var locationManager = this.gameController.LocationManager();
+                // locationManager.setCurrentLocation(this.gameState.locationList[0].name);
+                // var location = locationManager.getCurrentLocation();
+                // location.availableContracts = [];
+                // location.availableAdventurers = [];
 
                 // Initilise options
-                newGameState.options = {
+                this.gameState.options = {
                     "claimAllButtons": false,
                     "automaticHire": false,
                     "automaticClaim": false,
@@ -57,30 +54,28 @@ define([
                 };
 
                 // Initialise stats
-                if (!newGameState.stats) {
-                    newGameState.stats = [];
+                if (!this.gameState.stats) {
+                    this.gameState.stats = [];
                 } else {
-                    for (var i = 0; i < newGameState.stats.length; i++) {
-                        newGameState.stats[i].current = 0;
+                    for (var i = 0; i < this.gameState.stats.length; i++) {
+                        this.gameState.stats[i].current = 0;
                     }
                 }
-                newGameState.claimedAchievements = [];
+                this.gameState.claimedAchievements = [];
 
-                newGameState.ownedItems = [];
-                newGameState.messages = [];
+                this.gameState.ownedItems = [];
+                this.gameState.messages = [];
 
-                newGameState.currentEffects = [];
+                this.gameState.currentEffects = [];
 
-                newGameState.selectedContract = null;
-                newGameState.selectedAdverturer = null;
-                newGameState.currentParty = [];
-                newGameState.adventurerList = [];
+                this.gameState.selectedContract = null;
+                this.gameState.selectedAdverturer = null;
+                this.gameState.currentParty = [];
+                this.gameState.adventurerList = [];
 
-                newGameState.loginTracker = [];
+                this.gameState.loginTracker = [];
 
-                newGameState.version = data.game.versions[0].number;
-
-                return newGameState;
+                this.gameState.version = data.game.versions[0].number;
 
             };
 
@@ -97,8 +92,8 @@ define([
                     var versionUpdateMessage = "Version updated from " + this.gameState.version + " to " + currentVersion + ". Check the " + releaseNotesButton + ".";
                     alertify.delay(10000);
                     alertify.alert("<h2>Version update!</h2><p class='text-info'>" + versionUpdateMessage + "</p>");
-                    this.gameState.version = data.game.versions[0].number;
                 }
+                this.gameState.version = data.game.versions[0].number;
             };
 
         };

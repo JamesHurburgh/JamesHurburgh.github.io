@@ -2,10 +2,10 @@
     <div class="container">
         <!-- <ul class="nav navbar-nav">
             <li> -->
-        <span class="col-xs-6 label label-primary"><img id="footerCoin" :src="SpriteManager().getIcon('coins')" width="9px"/> {{PlayerManager().getCoins()}} coin<span v-if="gameState.coins != 1">s</span></span>
+        <span class="col-xs-6 label label-primary"><img id="footerCoin" :src="SpriteManager().getIcon('coins')" width="9px"/> {{PlayerManager().getCoins()}} coin<span v-if="PlayerManager().getCoins() != 1">s</span></span>
         <span class="col-xs-6 label label-primary"><img id="footerRenown" :src="SpriteManager().getIcon('renown')" width="9px"/> {{PlayerManager().getRenown().name}} ({{PlayerManager().getRenownValue()}})</span>
-        <span class="col-xs-12 label" :style="'background-color:' + gameState.gameDateTime.timeColour">{{gameState.gameDateTime.toFullString()}}</span>
-        <span class="col-xs-12 label label-info" v-if="gameState.gameDateTime.holiday" :title="gameState.gameDateTime.holiday.description">{{gameState.gameDateTime.holiday.name}}</span>
+        <span class="col-xs-12 label" :style="'background-color:' + TimeManager().getGameTime().timeColour">{{TimeManager().getGameTime().toFullString()}}</span>
+        <span class="col-xs-12 label label-info" v-if="TimeManager().getGameTime().holiday" :title="TimeManager().getGameTime().holiday.description">{{GameStateManager().gameState.gameDateTime.holiday.name}}</span>
 
         <!-- </li>
         </ul> -->

@@ -43,7 +43,8 @@
             "description": "Bug fix.",
             "features": [],
             "bugfixes": [
-                "Fix for bug where everyone had the stats of a drunkard."
+                "Fix for bug where everyone had the stats of a drunkard.",
+                "Fixed reset function"
             ]
         },
         {

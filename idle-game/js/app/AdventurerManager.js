@@ -36,7 +36,9 @@ define([
                         adventurerList[i].race = data.races[0];
                     }
                 }
-                this.gameController.LocationManager().getCurrentLocation().availableAdventurers.forEach(function (notice) {
+                adventurerList = this.gameController.LocationManager().getAdventurerContractsAtCurrentLocation();
+                if (!adventurerList) return;
+                adventurerList.forEach(function (notice) {
                     if (!notice.adventurer.race) {
                         notice.adventurer.race = data.races[0];
                     }
