@@ -15,8 +15,9 @@
 */
 
 define([
-    "app/CommonFunctions",
-    "app/DataManager"],
+        "app/CommonFunctions",
+        "app/DataManager"
+    ],
     function TimeManager(CommonFunctions, DataManager) {
 
         commonFunctions = new CommonFunctions();
@@ -27,7 +28,7 @@ define([
             this.gameState = gameState;
 
 
-            this.getGameTime = function (dateInMilliSeconds) {
+            this.getGameTime = function(dateInMilliSeconds) {
 
                 if (dateInMilliSeconds === undefined || dateInMilliSeconds === null) {
                     dateInMilliSeconds = Date.now();
@@ -66,19 +67,19 @@ define([
 
                 gameDateTime.holiday = data.calendar.holidays.filter(holiday => holiday.occurs.month == gameDateTime.month.name && holiday.occurs.date == gameDateTime.date)[0];
 
-                gameDateTime.toDateString = function () {
+                gameDateTime.toDateString = function() {
                     return this.date + this.gameDateOrdinalIndicator + " of " + this.monthName + " " + this.year;
                 };
 
-                gameDateTime.toTimeString = function () {
+                gameDateTime.toTimeString = function() {
                     return this.hours + ":" + this.minutes.toString().padStart(2, "0") + this.amPm;
                 };
 
-                gameDateTime.toString = function () {
+                gameDateTime.toString = function() {
                     return this.toTimeString() + " " + this.toDateString();
                 };
 
-                gameDateTime.toFullString = function () {
+                gameDateTime.toFullString = function() {
                     return this.timeOfDay.description + " - " + this.toTimeString() + " " + this.toDateString() + " - " + this.season;
                 };
 
@@ -86,7 +87,7 @@ define([
 
             };
 
-            this.readableTime = function (milliseconds) {
+            this.readableTime = function(milliseconds) {
 
                 var totalSeconds = Math.floor(milliseconds / 1000);
                 var seconds = totalSeconds % 60;

@@ -4,7 +4,7 @@
             <li> -->
         <span class="col-xs-6 label label-primary"><img id="footerCoin" :src="SpriteManager().getIcon('coins')" width="9px"/> {{PlayerManager().getCoins()}} coin<span v-if="PlayerManager().getCoins() != 1">s</span></span>
         <span class="col-xs-6 label label-primary"><img id="footerRenown" :src="SpriteManager().getIcon('renown')" width="9px"/> {{PlayerManager().getRenown().name}} ({{PlayerManager().getRenownValue()}})</span>
-        <span class="col-xs-12 label" :style="'background-color:' + TimeManager().getGameTime().timeColour">{{TimeManager().getGameTime().toFullString()}}</span>
+        <span class="col-xs-12 label" :style="'background-color:' + TimeManager().getGameTime().timeColour">{{this.gameState.gameDateTime.toFullString()}}</span>
         <span class="col-xs-12 label label-info" v-if="TimeManager().getGameTime().holiday" :title="TimeManager().getGameTime().holiday.description">{{GameStateManager().gameState.gameDateTime.holiday.name}}</span>
 
         <!-- </li>

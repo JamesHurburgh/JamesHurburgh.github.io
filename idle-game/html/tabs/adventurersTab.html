@@ -1,75 +1,116 @@
 <ul class="nav nav-tabs">
     <li class="active">
-        <a href="#idleAdventurers" data-toggle="tab" aria-expanded="false">Idle <span class="badge">{{AdventurerManager().countAdventurersAtStatus('Idle')}}</span></a>
+        <a href="#idleAdventurers" data-toggle="tab" aria-expanded="false"><img :src="SpriteManager().getIcon('idle')" width="20px" /><span class="badge">{{AdventurerManager().countAdventurersAtStatus('Idle')}}</span></a>
     </li>
     <li>
-        <a href="#questingAdventurers" data-toggle="tab" aria-expanded="false">Questing <span class="badge">{{AdventurerManager().countAdventurersAtStatus('Questing')}}</span></a>
+        <a href="#recoveringAdventurers" data-toggle="tab" aria-expanded="false"><img :src="SpriteManager().getIcon('recovering')" width="20px" /><span class="badge">{{AdventurerManager().countAdventurersAtStatus('Recovering')}}</span></a>
     </li>
     <li>
-        <a href="#deadAdventurers" data-toggle="tab" aria-expanded="false">Dead <span class="badge">{{AdventurerManager().countAdventurersAtStatus('Dead')}}</span></a>
+        <a href="#questingAdventurers" data-toggle="tab" aria-expanded="false"><img :src="SpriteManager().getIcon('questing')" width="20px" /><span class="badge">{{AdventurerManager().countAdventurersAtStatus('Questing')}}</span></a>
+    </li>
+    <li>
+        <a href="#deadAdventurers" data-toggle="tab" aria-expanded="false"><img :src="SpriteManager().getIcon('dead')" width="20px" /><span class="badge">{{AdventurerManager().countAdventurersAtStatus('Dead')}}</span></a>
     </li>
 </ul>
 <div id="adventurerTabContent" class="tab-content">
     <div class="tab-pane fade active in" id="idleAdventurers">
+        <div class="col-xs-12 text-center text-muted">Idle Adventurers</div>
         <div class="col-md-6" v-for="adventurer in AdventurerManager().getAdventurersAtStatus('Idle')">
             <div class="panel panel-default ">
                 <div class="panel-heading ">
-                    <h3 class="panel-title ">{{adventurer.name.full}} <span class="text-muted ">({{adventurer.race.adjective}} {{adventurer.type}} - {{adventurer.status}})</span>
+                    <h3 class="panel-title ">{{adventurer.name.full}}</h3>
+                </div>
+                <div class="panel-body ">
+                    <div v-if="adventurer.quote" class="col-xs-12">"<em>{{adventurer.quote}}</em>"</div>
+                    <legend>Personal</legend>
+                    <div>Race: <strong>{{adventurer.race.name}}</strong></div>
+                    <div>Occupation: <strong>{{adventurer.type}}</strong></div>
+                    <div>Birth Date: <strong>{{TimeManager().getGameTime(adventurer.birthTime).toDateString()}}</strong> (<strong>{{AdventurerManager().getAge(adventurer)}}</strong> years old)</div>
+                    <legend>Skills</legend>
+                    <span v-for="skill in adventurer.skills " :title="skill.name + ' ' + skill.amount "><img :alt="skill.name " v-for="n in skill.amount " width="24px " :src=" 'img/icons/' + DataManager().getData( 'skills', skill.name).icon + '.png' " /></span>
+                    <legend>Employment</legend>
+                    <img src="./img/icons/crown-coin.png" width="16px" /> Claims <strong>{{adventurer.wage}}</strong>% of earnings
+                </div>
+                <div class="panel-footer ">
+                    <span>{{adventurer.coins}} coins</span>
+                    <div class="pull-right ">{{adventurer.experience}}xp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="recoveringAdventurers">
+        <div class="col-xs-12 text-center text-muted">Recovering Adventurers</div>
+        <div class="col-md-6" v-for="adventurer in AdventurerManager().getAdventurersAtStatus('Recovering')">
+            <div class="panel panel-default ">
+                <div class="panel-heading ">
+                    <h3 class="panel-title ">{{adventurer.name.full}}
                         <button v-if="adventurer.status=='Idle' " type="button " class="btn btn-info btn-xs pull-right " @click="AdventurerManager().talkTo(adventurer.name.first) ">Talk to {{adventurer.name.first}}</button>
                     </h3>
                 </div>
                 <div class="panel-body ">
+                    <h4>Personal</h4>
+                    <div>Race: <strong>{{adventurer.race.name}}</strong></div>
+                    <div>Occupation: <strong>{{adventurer.type}}</strong></div>
+                    <div>Birth Date: <strong>{{TimeManager().getGameTime(adventurer.birthTime).toDateString()}}</strong> (<strong>{{AdventurerManager().getAge(adventurer)}}</strong> years old)</div>
+                    <h4>Skills</h4>
                     <span v-for="skill in adventurer.skills " :title="skill.name + ' ' + skill.amount "><img :alt="skill.name " v-for="n in skill.amount " width="24px " :src=" 'img/icons/' + DataManager().getData( 'skills', skill.name).icon + '.png' " /></span>
-                    <div v-if="AdventurerManager().getAdventurersQuest(adventurer) !== undefined">
-                        Quest: {{AdventurerManager().getAdventurersQuest(adventurer).contract.name}}
-                    </div>
+                    <h4>Employment</h4>
+                    <img src="./img/icons/crown-coin.png" width="16px" /> Claims <strong>{{adventurer.wage}}</strong>% of earnings
+                    <div>Will be recovered at: {{TimeManager().getGameTime(adventurer.recoverTime).toString()}} </div>
                 </div>
                 <div class="panel-footer ">
-                    {{adventurer.age}} years old
+                    <span>{{adventurer.coins}} coins</span>
                     <div class="pull-right ">{{adventurer.experience}}xp</div>
                 </div>
             </div>
         </div>
     </div>
     <div class="tab-pane fade" id="questingAdventurers">
+        <div class="col-xs-12 text-center text-muted">Questing Adventurers</div>
         <div class="col-md-6" v-for="adventurer in AdventurerManager().getAdventurersAtStatus('Questing')">
             <div class="panel panel-default ">
                 <div class="panel-heading ">
-                    <h3 class="panel-title ">{{adventurer.name.full}} <span class="text-muted ">({{adventurer.race.adjective}} {{adventurer.type}} - {{adventurer.status}})</span>
+                    <h3 class="panel-title ">{{adventurer.name.full}}
                         <button v-if="adventurer.status=='Idle' " type="button " class="btn btn-info btn-xs pull-right " @click="AdventurerManager().talkTo(adventurer.name.first) ">Talk to {{adventurer.name.first}}</button>
                     </h3>
                 </div>
                 <div class="panel-body ">
+                    <h4>Personal</h4>
+                    <div>Race: <strong>{{adventurer.race.name}}</strong></div>
+                    <div>Occupation: <strong>{{adventurer.type}}</strong></div>
+                    <div>Birth Date: <strong>{{TimeManager().getGameTime(adventurer.birthTime).toDateString()}}</strong> (<strong>{{AdventurerManager().getAge(adventurer)}}</strong> years old)</div>
+                    <h4>Skills</h4>
                     <span v-for="skill in adventurer.skills " :title="skill.name + ' ' + skill.amount "><img :alt="skill.name " v-for="n in skill.amount " width="24px " :src=" 'img/icons/' + DataManager().getData( 'skills', skill.name).icon + '.png' " /></span>
+                    <h4>Employment</h4>
+                    <img src="./img/icons/crown-coin.png" width="16px" /> Claims <strong>{{adventurer.wage}}</strong>% of earnings
                     <div v-if="AdventurerManager().getAdventurersQuest(adventurer) !== undefined">
                         Quest: {{AdventurerManager().getAdventurersQuest(adventurer).contract.name}}
                     </div>
                 </div>
                 <div class="panel-footer ">
-                    {{adventurer.age}} years old
+                    <span>{{adventurer.coins}} coins</span>
                     <div class="pull-right ">{{adventurer.experience}}xp</div>
                 </div>
             </div>
         </div>
     </div>
     <div class="tab-pane fade" id="deadAdventurers">
+        <div class="col-xs-12 text-center text-muted">Dead Adventurers</div>
         <div class="col-md-6" v-for="adventurer in AdventurerManager().getAdventurersAtStatus('Dead')">
             <div class="panel panel-default ">
                 <div class="panel-heading ">
-                    <h3 class="panel-title ">{{adventurer.name.full}} <span class="text-muted ">({{adventurer.race.adjective}} {{adventurer.type}} - {{adventurer.status}})</span>
+                    <h3 class="panel-title ">{{adventurer.name.full}}
                         <button v-if="adventurer.status=='Idle' " type="button " class="btn btn-info btn-xs pull-right " @click="AdventurerManager().talkTo(adventurer.name.first) ">Talk to {{adventurer.name.first}}</button>
                     </h3>
                 </div>
                 <div class="panel-body ">
+                    <div>Race: <strong>{{adventurer.race.name}}</strong></div>
+                    <div>Occupation: <strong>{{adventurer.type}}</strong></div>
+                    <div>Birth Date: <strong>{{TimeManager().getGameTime(adventurer.birthTime).toDateString()}}</strong></div>
                     <span v-for="skill in adventurer.skills " :title="skill.name + ' ' + skill.amount "><img :alt="skill.name " v-for="n in skill.amount " width="24px " :src=" 'img/icons/' + DataManager().getData( 'skills', skill.name).icon + '.png' " /></span>
-                    <div v-if="AdventurerManager().getAdventurersQuest(adventurer) !== undefined">
-                        Quest: {{AdventurerManager().getAdventurersQuest(adventurer).contract.name}}
-                    </div>
                 </div>
-                <div class="panel-footer ">
-                    {{adventurer.age}} years old
-                    <div class="pull-right ">{{adventurer.experience}}xp</div>
-                </div>
+                <!-- <div class="panel-footer ">                   
+                </div> -->
             </div>
         </div>
     </div>

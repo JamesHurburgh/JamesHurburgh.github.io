@@ -1,10 +1,10 @@
 /*jshint esversion: 6 */
 
 define([
-    "app/CommonFunctions",
-    "app/DataManager",
-    "alertify"
-],
+        "app/CommonFunctions",
+        "app/DataManager",
+        "alertify"
+    ],
     function GameStateManager(
         CommonFunctions,
         DataManager,
@@ -18,11 +18,11 @@ define([
             this.gameState = gameState;
             this.gameController = gameController;
 
-            this.save = function () {
+            this.save = function() {
                 this.externalSaveFunction(gameState);
             };
 
-            this.reset = function () {
+            this.reset = function() {
                 log("reset");
 
                 this.gameState.majorTickCounter = 0;
@@ -30,11 +30,11 @@ define([
                 this.gameState.coins = 50;
                 this.gameState.renown = 0;
 
-                this.gameState.runningExpeditions = [];
+                this.gameState.runningQuests = [];
                 this.gameState.completedQuests = [];
 
                 // Take a local copy of the locations
-                this.gameState.locationList = commonFunctions.clone(data.locations);
+                this.gameController.LocationManager().resetLocations();
 
                 // var locationManager = this.gameController.LocationManager();
                 // locationManager.setCurrentLocation(this.gameState.locationList[0].name);
@@ -79,12 +79,12 @@ define([
 
             };
 
-            this.versionCheck = function () {
+            this.versionCheck = function() {
                 log("versionCheck");
 
                 // Fix for version 0.10.7
 
-                this.gameController.AdventurerManager().addMissingRace();
+                this.gameController.AdventurerManager().addMissingFields();
 
                 var currentVersion = data.game.versions[0].number;
                 if (this.gameState.version != currentVersion) {

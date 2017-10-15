@@ -24,7 +24,13 @@ define([],
             function varyAmount(amount) {
                 return Math.floor(amount * (Math.random() + 0.5));
             }
+
             this.varyAmount = varyAmount;
+
+            function varyFloat(original, variation) {
+                return parseFloat((original * (1 - variation + (Math.random() * variation * 2))).toFixed(2));
+            }
+            this.varyFloat = varyFloat;
 
             function nth(d) {
                 if (d > 3 && d < 21) return 'th'; // thanks kennebec

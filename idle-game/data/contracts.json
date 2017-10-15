@@ -1,16 +1,15 @@
-[
-    {
+[{
         "name": "Follow a dubious treasure map",
         "successMessage": "You are given a sack, presumably what's left of the treasure.",
         "failureMessage": "Either the map was a fake, or someone else got there first.",
         "deathMessage": "Unfortunately the long journey proved too much.",
         "risk": 0.1,
         "upgradeChance": 0.01,
+        "experience": 10,
         "duration": 3500,
         "successChance": 0.05,
         "rewardFactor": 0.2,
-        "rewards": [
-            {
+        "rewards": [{
                 "chance": 1,
                 "reward": {
                     "type": "coins",
@@ -43,8 +42,7 @@
         ],
         "requirements": {
             "renown": 0,
-            "adventurers": [
-                {
+            "adventurers": [{
                     "type": "Peasant",
                     "amount": 1
                 },
@@ -57,8 +55,7 @@
                     "amount": 1
                 }
             ],
-            "attributes": [
-                {
+            "attributes": [{
                     "type": "Toughness",
                     "amount": 2
                 },
@@ -80,11 +77,11 @@
         "deathMessage": "Unfortunately the long journey proved too much.",
         "risk": 0.2,
         "upgradeChance": 0.01,
+        "experience": 10,
         "duration": 3500,
         "successChance": 0.15,
         "rewardFactor": 0.2,
-        "rewards": [
-            {
+        "rewards": [{
                 "chance": 1,
                 "reward": {
                     "type": "coins",
@@ -117,8 +114,7 @@
         ],
         "requirements": {
             "renown": 0,
-            "adventurers": [
-                {
+            "adventurers": [{
                     "type": "Peasant",
                     "amount": 1
                 },
@@ -143,8 +139,7 @@
                     "amount": 1
                 }
             ],
-            "attributes": [
-                {
+            "attributes": [{
                     "type": "Toughness",
                     "amount": 5
                 },
@@ -166,11 +161,11 @@
         "deathMessage": "Unfortunately the long journey proved too much.",
         "risk": 0.2,
         "upgradeChance": 0.01,
+        "experience": 10,
         "duration": 3500,
         "successChance": 0.25,
         "rewardFactor": 0.2,
-        "rewards": [
-            {
+        "rewards": [{
                 "chance": 1,
                 "reward": {
                     "type": "coins",
@@ -203,8 +198,7 @@
         ],
         "requirements": {
             "renown": 0,
-            "adventurers": [
-                {
+            "adventurers": [{
                     "type": "Peasant",
                     "amount": 1
                 },
@@ -241,8 +235,7 @@
                     "amount": 1
                 }
             ],
-            "attributes": [
-                {
+            "attributes": [{
                     "type": "Toughness",
                     "amount": 10
                 },
@@ -264,33 +257,28 @@
         "deathMessage": "Sadly accidents do happen even when you're minding your own business.",
         "risk": 0.001,
         "upgradeChance": 0.01,
+        "experience": 10,
         "duration": 500,
         "successChance": 1,
         "contractAmount": 15,
         "rewardFactor": 0.1,
-        "rewards": [
-            {
-                "chance": 1,
-                "reward": {
-                    "type": "renown",
-                    "amount": 1
-                }
+        "rewards": [{
+            "chance": 1,
+            "reward": {
+                "type": "renown",
+                "amount": 1
             }
-        ],
+        }],
         "requirements": {
             "renown": 0,
-            "adventurers": [
-                {
-                    "type": "Peasant",
-                    "amount": 1
-                }
-            ],
-            "attributes": [
-                {
-                    "type": "Toughness",
-                    "amount": 1
-                }
-            ]
+            "adventurers": [{
+                "type": "Peasant",
+                "amount": 1
+            }],
+            "attributes": [{
+                "type": "Toughness",
+                "amount": 1
+            }]
         }
     },
     {
@@ -300,11 +288,11 @@
         "deathMessage": "It turns out people don't take kindly to looters pillage the resting place of their loved ones.",
         "risk": 0.05,
         "upgradeChance": 0.01,
+        "experience": 10,
         "duration": 75,
         "successChance": 0.9,
         "rewardFactor": 0.1,
-        "rewards": [
-            {
+        "rewards": [{
                 "chance": 1,
                 "reward": {
                     "type": "coins",
@@ -322,18 +310,14 @@
         ],
         "requirements": {
             "renown": 0,
-            "adventurers": [
-                {
-                    "type": "Drunkard",
-                    "amount": 1
-                }
-            ],
-            "attributes": [
-                {
-                    "type": "Perception",
-                    "amount": 1
-                }
-            ]
+            "adventurers": [{
+                "type": "Drunkard",
+                "amount": 1
+            }],
+            "attributes": [{
+                "type": "Perception",
+                "amount": 1
+            }]
         }
     },
     {
@@ -343,32 +327,27 @@
         "deathMessage": "You sent a drunk to a well.  What did you think was going to happen?",
         "risk": 0.1,
         "upgradeChance": 0.01,
+        "experience": 10,
         "duration": 15,
         "successChance": 0.9,
         "rewardFactor": 0.1,
-        "rewards": [
-            {
-                "chance": 1,
-                "reward": {
-                    "type": "coins",
-                    "amount": 5
-                }
+        "rewards": [{
+            "chance": 1,
+            "reward": {
+                "type": "coins",
+                "amount": 5
             }
-        ],
+        }],
         "requirements": {
             "renown": 0,
-            "adventurers": [
-                {
-                    "type": "Drunkard",
-                    "amount": 1
-                }
-            ],
-            "attributes": [
-                {
-                    "type": "Perception",
-                    "amount": 1
-                }
-            ]
+            "adventurers": [{
+                "type": "Drunkard",
+                "amount": 1
+            }],
+            "attributes": [{
+                "type": "Perception",
+                "amount": 1
+            }]
         }
     },
     {
@@ -378,11 +357,11 @@
         "deathMessage": "Some travellers know how to defend themselves.  Sometimes with lethal force.",
         "risk": 0.25,
         "upgradeChance": 0.03,
+        "experience": 10,
         "duration": 75,
         "successChance": 0.5,
         "rewardFactor": 0.1,
-        "rewards": [
-            {
+        "rewards": [{
                 "chance": 1,
                 "reward": {
                     "type": "coins",
@@ -400,14 +379,11 @@
         ],
         "requirements": {
             "renown": 0,
-            "adventurers": [
-                {
-                    "type": "Street rat",
-                    "amount": 2
-                }
-            ],
-            "attributes": [
-                {
+            "adventurers": [{
+                "type": "Street rat",
+                "amount": 2
+            }],
+            "attributes": [{
                     "type": "Fighting",
                     "amount": 1
                 },
@@ -425,29 +401,25 @@
         "deathMessage": "It seems your man wasn't good enough at not being seen.",
         "risk": 0.05,
         "upgradeChance": 0.02,
+        "experience": 10,
         "duration": 500,
         "successChance": 0.9,
         "contractAmount": 75,
         "rewardFactor": 0.1,
-        "rewards": [
-            {
-                "chance": 1,
-                "reward": {
-                    "type": "renown",
-                    "amount": 1
-                }
+        "rewards": [{
+            "chance": 1,
+            "reward": {
+                "type": "renown",
+                "amount": 1
             }
-        ],
+        }],
         "requirements": {
             "renown": 0,
-            "adventurers": [
-                {
-                    "type": "Street rat",
-                    "amount": 1
-                }
-            ],
-            "attributes": [
-                {
+            "adventurers": [{
+                "type": "Street rat",
+                "amount": 1
+            }],
+            "attributes": [{
                     "type": "Intelligence",
                     "amount": 2
                 },
@@ -465,11 +437,11 @@
         "deathMessage": "The local guards were seen hauling someone off.",
         "risk": 0.05,
         "upgradeChance": 0.02,
+        "experience": 10,
         "duration": 250,
         "successChance": 0.6,
         "rewardFactor": 0.2,
-        "rewards": [
-            {
+        "rewards": [{
                 "chance": 1,
                 "reward": {
                     "type": "coins",
@@ -487,18 +459,14 @@
         ],
         "requirements": {
             "renown": 0,
-            "adventurers": [
-                {
-                    "type": "Street rat",
-                    "amount": 1
-                }
-            ],
-            "attributes": [
-                {
-                    "type": "Agility",
-                    "amount": 1
-                }
-            ]
+            "adventurers": [{
+                "type": "Street rat",
+                "amount": 1
+            }],
+            "attributes": [{
+                "type": "Agility",
+                "amount": 1
+            }]
         }
     },
     {
@@ -508,29 +476,25 @@
         "deathMessage": "The problem with drunken brawls is that people get hurt.",
         "risk": 0.1,
         "upgradeChance": 0.02,
+        "experience": 10,
         "duration": 350,
         "successChance": 0.8,
         "contractAmount": 750,
         "rewardFactor": 0.2,
-        "rewards": [
-            {
-                "chance": 1,
-                "reward": {
-                    "type": "renown",
-                    "amount": 1
-                }
+        "rewards": [{
+            "chance": 1,
+            "reward": {
+                "type": "renown",
+                "amount": 1
             }
-        ],
+        }],
         "requirements": {
             "renown": 0,
-            "adventurers": [
-                {
-                    "type": "Drunkard",
-                    "amount": 10
-                }
-            ],
-            "attributes": [
-                {
+            "adventurers": [{
+                "type": "Drunkard",
+                "amount": 10
+            }],
+            "attributes": [{
                     "type": "Toughness",
                     "amount": 10
                 },
@@ -548,11 +512,11 @@
         "deathMessage": "The filthy goblins fought back visciously.",
         "risk": 0.5,
         "upgradeChance": 0.02,
+        "experience": 10,
         "duration": 1000,
         "successChance": 0.5,
         "rewardFactor": 0.3,
-        "rewards": [
-            {
+        "rewards": [{
                 "chance": 1,
                 "reward": {
                     "type": "coins",
@@ -577,8 +541,7 @@
         ],
         "requirements": {
             "renown": 1,
-            "adventurers": [
-                {
+            "adventurers": [{
                     "type": "Brawler",
                     "amount": 1
                 },
@@ -591,8 +554,7 @@
                     "amount": 10
                 }
             ],
-            "attributes": [
-                {
+            "attributes": [{
                     "type": "Toughness",
                     "amount": 20
                 },
@@ -610,12 +572,12 @@
         "deathMessage": "The wild animals fought back visciously.",
         "risk": 0.3,
         "upgradeChance": 0.02,
+        "experience": 10,
         "duration": 700,
         "successChance": 0.5,
         "rewardFactor": 0.3,
         "contractAmount": 750,
-        "rewards": [
-            {
+        "rewards": [{
                 "chance": 1,
                 "reward": {
                     "type": "renown",
@@ -633,14 +595,11 @@
         ],
         "requirements": {
             "renown": 1,
-            "adventurers": [
-                {
-                    "type": "Fighter",
-                    "amount": 2
-                }
-            ],
-            "attributes": [
-                {
+            "adventurers": [{
+                "type": "Fighter",
+                "amount": 2
+            }],
+            "attributes": [{
                     "type": "Intelligence",
                     "amount": 5
                 },
@@ -662,11 +621,11 @@
         "deathMessage": "The bandits fought back visciously.",
         "risk": 0.5,
         "upgradeChance": 0.02,
+        "experience": 10,
         "duration": 1200,
         "successChance": 0.5,
         "rewardFactor": 0.4,
-        "rewards": [
-            {
+        "rewards": [{
                 "chance": 1,
                 "reward": {
                     "type": "coins",
@@ -691,8 +650,7 @@
         ],
         "requirements": {
             "renown": 1,
-            "adventurers": [
-                {
+            "adventurers": [{
                     "type": "Brawler",
                     "amount": 15
                 },
@@ -705,8 +663,7 @@
                     "amount": 10
                 }
             ],
-            "attributes": [
-                {
+            "attributes": [{
                     "type": "Intelligence",
                     "amount": 5
                 },
@@ -728,11 +685,11 @@
         "deathMessage": "The obvious happened and your man was injured.",
         "risk": 0.5,
         "upgradeChance": 0.02,
+        "experience": 10,
         "duration": 400,
         "successChance": 0.7,
         "rewardFactor": 0.2,
-        "rewards": [
-            {
+        "rewards": [{
                 "chance": 1,
                 "reward": {
                     "type": "coins",
@@ -749,18 +706,14 @@
         ],
         "requirements": {
             "renown": 1,
-            "adventurers": [
-                {
-                    "type": "Brawler",
-                    "amount": 1
-                }
-            ],
-            "attributes": [
-                {
-                    "type": "Fighting",
-                    "amount": 5
-                }
-            ]
+            "adventurers": [{
+                "type": "Brawler",
+                "amount": 1
+            }],
+            "attributes": [{
+                "type": "Fighting",
+                "amount": 5
+            }]
         }
     },
     {
@@ -770,23 +723,21 @@
         "deathMessage": "Turns out the protection was warranted, unfortunately your men took the brunt of the assault.",
         "risk": 0.3,
         "upgradeChance": 0.02,
+        "experience": 10,
         "duration": 400,
         "successChance": 0.7,
         "rewardFactor": 0.2,
         "contractAmount": 600,
-        "rewards": [
-            {
-                "chance": 1,
-                "reward": {
-                    "type": "renown",
-                    "amount": 2
-                }
+        "rewards": [{
+            "chance": 1,
+            "reward": {
+                "type": "renown",
+                "amount": 2
             }
-        ],
+        }],
         "requirements": {
             "renown": 1,
-            "adventurers": [
-                {
+            "adventurers": [{
                     "type": "Brawler",
                     "amount": 1
                 },
@@ -799,8 +750,7 @@
                     "amount": 1
                 }
             ],
-            "attributes": [
-                {
+            "attributes": [{
                     "type": "Fighting",
                     "amount": 5
                 },
@@ -822,11 +772,11 @@
         "deathMessage": "The owners were home and took matters into their own hands.",
         "risk": 0.5,
         "upgradeChance": 0.02,
+        "experience": 10,
         "duration": 350,
         "successChance": 0.5,
         "rewardFactor": 0.2,
-        "rewards": [
-            {
+        "rewards": [{
                 "chance": 1,
                 "reward": {
                     "type": "coins",
@@ -852,14 +802,11 @@
         ],
         "requirements": {
             "renown": 1,
-            "adventurers": [
-                {
-                    "type": "Thief",
-                    "amount": 2
-                }
-            ],
-            "attributes": [
-                {
+            "adventurers": [{
+                "type": "Thief",
+                "amount": 2
+            }],
+            "attributes": [{
                     "type": "Intelligence",
                     "amount": 5
                 },
@@ -877,33 +824,28 @@
         "deathMessage": "Sadly accidents do happen even when you're minding your own business.",
         "risk": 0.001,
         "upgradeChance": 0.01,
+        "experience": 10,
         "duration": 3500,
         "successChance": 1,
         "contractAmount": 125,
         "rewardFactor": 0.2,
-        "rewards": [
-            {
-                "chance": 1,
-                "reward": {
-                    "type": "renown",
-                    "amount": 2
-                }
+        "rewards": [{
+            "chance": 1,
+            "reward": {
+                "type": "renown",
+                "amount": 2
             }
-        ],
+        }],
         "requirements": {
             "renown": 0,
-            "adventurers": [
-                {
-                    "type": "Peasant",
-                    "amount": 1
-                }
-            ],
-            "attributes": [
-                {
-                    "type": "Toughness",
-                    "amount": 15
-                }
-            ]
+            "adventurers": [{
+                "type": "Peasant",
+                "amount": 1
+            }],
+            "attributes": [{
+                "type": "Toughness",
+                "amount": 15
+            }]
         }
     },
     {
@@ -913,29 +855,25 @@
         "deathMessage": "Sadly accidents do happen even when you're minding your own business.",
         "risk": 0.001,
         "upgradeChance": 0.01,
+        "experience": 10,
         "duration": 3500,
         "successChance": 1,
         "contractAmount": 750,
         "rewardFactor": 0.2,
-        "rewards": [
-            {
-                "chance": 1,
-                "reward": {
-                    "type": "renown",
-                    "amount": 2
-                }
+        "rewards": [{
+            "chance": 1,
+            "reward": {
+                "type": "renown",
+                "amount": 2
             }
-        ],
+        }],
         "requirements": {
             "renown": 0,
-            "adventurers": [
-                {
-                    "type": "Citizen",
-                    "amount": 1
-                }
-            ],
-            "attributes": [
-                {
+            "adventurers": [{
+                "type": "Citizen",
+                "amount": 1
+            }],
+            "attributes": [{
                     "type": "Toughness",
                     "amount": 5
                 },
@@ -953,29 +891,25 @@
         "deathMessage": "Sadly accidents do happen even when you're minding your own business.",
         "risk": 0.001,
         "upgradeChance": 0.01,
+        "experience": 10,
         "duration": 500,
         "successChance": 1,
         "contractAmount": 750,
         "rewardFactor": 0.2,
-        "rewards": [
-            {
-                "chance": 1,
-                "reward": {
-                    "type": "renown",
-                    "amount": 2
-                }
+        "rewards": [{
+            "chance": 1,
+            "reward": {
+                "type": "renown",
+                "amount": 2
             }
-        ],
+        }],
         "requirements": {
             "renown": 0,
-            "adventurers": [
-                {
-                    "type": "Citizen",
-                    "amount": 10
-                }
-            ],
-            "attributes": [
-                {
+            "adventurers": [{
+                "type": "Citizen",
+                "amount": 10
+            }],
+            "attributes": [{
                     "type": "Toughness",
                     "amount": 10
                 },
@@ -993,33 +927,28 @@
         "deathMessage": "Sadly accidents do happen even when you're minding your own business.",
         "risk": 0.001,
         "upgradeChance": 0.01,
+        "experience": 10,
         "duration": 500,
         "successChance": 1,
         "contractAmount": 150,
         "rewardFactor": 0.2,
-        "rewards": [
-            {
-                "chance": 1,
-                "reward": {
-                    "type": "renown",
-                    "amount": 2
-                }
+        "rewards": [{
+            "chance": 1,
+            "reward": {
+                "type": "renown",
+                "amount": 2
             }
-        ],
+        }],
         "requirements": {
             "renown": 0,
-            "adventurers": [
-                {
-                    "type": "Peasant",
-                    "amount": 10
-                }
-            ],
-            "attributes": [
-                {
-                    "type": "Toughness",
-                    "amount": 20
-                }
-            ]
+            "adventurers": [{
+                "type": "Peasant",
+                "amount": 10
+            }],
+            "attributes": [{
+                "type": "Toughness",
+                "amount": 20
+            }]
         }
     },
     {
@@ -1029,11 +958,11 @@
         "deathMessage": "Crypts can be dangerous at night.",
         "risk": 0.2,
         "upgradeChance": 0.1,
+        "experience": 10,
         "duration": 200,
         "successChance": 1,
         "rewardFactor": 0.3,
-        "rewards": [
-            {
+        "rewards": [{
                 "chance": 1,
                 "reward": {
                     "type": "coins",
@@ -1065,8 +994,7 @@
         ],
         "requirements": {
             "renown": 0,
-            "adventurers": [
-                {
+            "adventurers": [{
                     "type": "Thief",
                     "amount": 1
                 },
@@ -1075,8 +1003,7 @@
                     "amount": 5
                 }
             ],
-            "attributes": [
-                {
+            "attributes": [{
                     "type": "Toughness",
                     "amount": 7
                 },
@@ -1098,12 +1025,12 @@
         "deathMessage": "Rescue missions can be dangerous.",
         "risk": 0.6,
         "upgradeChance": 0.3,
+        "experience": 10,
         "duration": 1000,
         "successChance": 1,
         "contractAmount": 1000,
         "rewardFactor": 0.3,
-        "rewards": [
-            {
+        "rewards": [{
                 "chance": 1,
                 "reward": {
                     "type": "renown",
@@ -1121,8 +1048,7 @@
         ],
         "requirements": {
             "renown": 0,
-            "adventurers": [
-                {
+            "adventurers": [{
                     "type": "Thief",
                     "amount": 2
                 },
@@ -1135,8 +1061,7 @@
                     "amount": 2
                 }
             ],
-            "attributes": [
-                {
+            "attributes": [{
                     "type": "Toughness",
                     "amount": 7
                 },

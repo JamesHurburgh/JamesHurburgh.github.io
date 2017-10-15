@@ -32,11 +32,12 @@
                 <div class="panel-heading ">
                     <h3 class="panel-title ">{{notice.adventurer.name.full}} ({{notice.adventurer.race.adjective}} {{notice.adventurer.type}})</h3>
                 </div>
-                <!-- <div class="panel-body"></div> -->
+                <div class="panel-body">
+                    <img src="./img/icons/crown-coin.png" width="16px" /> {{notice.adventurer.wage}}% of earnings
+                </div>
                 <div class="panel-footer">
                     <div v-bind:class="{ 'text-danger': NoticeManager().expiringDanger(notice.expires), 'text-warning': NoticeManager().expiringWarning(notice.expires), 'text-success': NoticeManager().expiringSuccess(notice.expires) }">{{TimeManager().readableTime(notice.expires - Date.now())}} remaining
-                        <button type="button" class="btn btn-xs pull-right" v-bind:class="{ 'btn-success': AdventurerManager().canHire(notice.adventurer), 'btn-primary': !AdventurerManager().canHire(notice.adventurer) }"
-                            @click="AdventurerManager().hire(notice)" :disabled="!AdventurerManager().canHire(notice.adventurer)">Hire ({{AdventurerManager().getCost(notice.adventurer)}} coins)</button></div>
+                        <button type="button" class="btn btn-xs pull-right" v-bind:class="{ 'btn-success': AdventurerManager().canHire(notice.adventurer), 'btn-primary': !AdventurerManager().canHire(notice.adventurer) }" @click="AdventurerManager().hire(notice)" :disabled="!AdventurerManager().canHire(notice.adventurer)">Hire ({{AdventurerManager().getCost(notice.adventurer)}} coins)</button></div>
                 </div>
             </div>
 
