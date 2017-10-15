@@ -3,7 +3,8 @@
     "description": "Adventuring is dangerous. Hire someone else to do it for you!",
     "author": "James Hurburgh",
     "author-uri": "",
-    "globals": [{
+    "globals": [
+        {
             "name": "chanceOfNewContract",
             "baseValue": 0.05
         },
@@ -36,14 +37,27 @@
             "baseValue": 1
         }
     ],
-    "versions": [{
+    "versions": [
+        {
+            "number": "0.10.8",
+            "description": "Bug fix.",
+            "features": [],
+            "bugfixes": [
+                "Fix for bug where everyone had the stats of a drunkard.",
+                "Fixed reset function"
+            ]
+        },
+        {
             "number": "0.10.7",
             "description": "The race is on!",
-            "features": ["Added irrelevant races!"],
+            "features": [
+                "Added irrelevant races!"
+            ],
             "bugfixes": [
                 "Fixed version not updating bug."
             ]
-        }, {
+        },
+        {
             "number": "0.10.6",
             "description": "Stability.",
             "features": [
@@ -51,7 +65,8 @@
                 "Save management improved."
             ],
             "bugfixes": []
-        }, {
+        },
+        {
             "number": "0.10.5",
             "description": "Adenturer views bettered.",
             "features": [

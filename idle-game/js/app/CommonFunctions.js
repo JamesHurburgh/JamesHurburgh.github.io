@@ -54,7 +54,11 @@ define([],
                     min += list[i][weightName];
                 }
                 var chance = max * Math.random();
-                return weightedList.filter(item => item.min <= chance && item.max >= chance)[0].item;
+                var item = weightedList.filter(item => item.min <= chance && item.max >= chance)[0].item;
+                if (!item) {
+                    throw new Error("Unable to select item");
+                }
+                return item;
             }
             this.pickFromWeightedList = pickFromWeightedList;
         };
