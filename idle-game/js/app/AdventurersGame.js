@@ -61,7 +61,6 @@ define(["jquery",
         return function AdventurersGame(saveData, saveFunction, logFunction) {
 
             log = logFunction;
-            if (saveData === undefined || saveData === null) saveData = {};
             this.gameState = saveData;
 
             this._GameStateManager = new GameStateManager(this, this.gameState, saveFunction);
@@ -181,7 +180,6 @@ define(["jquery",
                 this.EffectsManager().removeExpired();
                 this.NoticeManager().addNewContracts();
                 this.AdventurerManager().addNewAdverturersForHire();
-                this.AdventurerManager().updateQuotes();
 
                 this.AchievementManager().checkAndClaimAllAchievements();
 
@@ -207,9 +205,7 @@ define(["jquery",
                 log("initialising");
 
                 if (this.gameState === undefined || this.gameState === null) {
-                    this.gameState = {};
-                    this.GameStateManager().reset();
-                    this.majorTick();
+                    this.gameState = this.GameStateManager().newGame();
                 }
 
                 this.GameStateManager().versionCheck();

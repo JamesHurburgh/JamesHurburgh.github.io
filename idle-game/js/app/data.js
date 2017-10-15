@@ -15,23 +15,22 @@ requirejs.config({
 
 // Start the main app logic.
 requirejs([
-    'jquery',
-    'vue',
-    "json!data/achievements.json",
-    "json!data/adventurers.json",
-    "json!data/adversaries.json",
-    "json!data/skills.json",
-    "json!data/calendar.json",
-    "json!data/contracts.json",
-    "json!data/conversations.json",
-    "json!data/game.json",
-    "json!data/items.json",
-    "json!data/locations.json",
-    "json!data/races.json",
-    "json!data/renown.json",
-    "json!data/settings.json"
-],
-    function (
+        'jquery',
+        'vue',
+        "json!data/achievements.json",
+        "json!data/adventurers.json",
+        "json!data/adversaries.json",
+        "json!data/skills.json",
+        "json!data/calendar.json",
+        "json!data/contracts.json",
+        "json!data/conversations.json",
+        "json!data/game.json",
+        "json!data/items.json",
+        "json!data/locations.json",
+        "json!data/renown.json",
+        "json!data/settings.json"
+    ],
+    function(
         $,
         Vue,
         achievements,
@@ -44,7 +43,6 @@ requirejs([
         game,
         items,
         locations,
-        races,
         renown,
         settings
     ) {
@@ -60,7 +58,6 @@ requirejs([
             items: items,
             locations: locations,
             renown: renown,
-            races: races,
             settings: settings
         };
 
@@ -69,10 +66,10 @@ requirejs([
             data: data,
             computed: {},
             methods: {
-                toId: function (name) {
+                toId: function(name) {
                     return name.toLowerCase().replace(/\W/g, '');
                 },
-                getSkill: function (name) {
+                getSkill: function(name) {
                     var skill = skills.filter(skill => skill.name == name)[0];
                     if (skill === undefined) {
                         skill = { "name": "unknown" };

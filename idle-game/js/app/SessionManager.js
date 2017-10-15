@@ -15,8 +15,8 @@
 */
 
 define([
-    "app/CommonFunctions"
-],
+        "app/CommonFunctions"
+    ],
     function SessionManager(CommonFunctions) {
 
         commonFunctions = new CommonFunctions();
@@ -26,7 +26,7 @@ define([
             this.gameController = gameController;
             this.gameState = gameController.gameState;
             // Login
-            this.login = function () {
+            this.login = function() {
                 log("login");
 
                 this.gameState.timeSinceLastLogin = -1;
@@ -39,8 +39,8 @@ define([
                 this.gameState.loginTracker.push({ "login": loginTime });
             };
 
-            this.stillLoggedIn = function () {
-                if (this.gameState.loginTracker === undefined || this.gameState.loginTracker === null || this.gameState.loginTracker.length === 0) {
+            this.stillLoggedIn = function() {
+                if (this.gameState.loginTracker === undefined) {
                     this.gameState.loginTracker = [];
                     this.gameState.loginTracker.push({ "login": Date.now() });
                 }

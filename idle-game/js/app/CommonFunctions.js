@@ -24,13 +24,7 @@ define([],
             function varyAmount(amount) {
                 return Math.floor(amount * (Math.random() + 0.5));
             }
-
             this.varyAmount = varyAmount;
-
-            function varyFloat(original, variation) {
-                return parseFloat((original * (1 - variation + (Math.random() * variation * 2))).toFixed(2));
-            }
-            this.varyFloat = varyFloat;
 
             function nth(d) {
                 if (d > 3 && d < 21) return 'th'; // thanks kennebec
@@ -60,11 +54,7 @@ define([],
                     min += list[i][weightName];
                 }
                 var chance = max * Math.random();
-                var item = weightedList.filter(item => item.min <= chance && item.max >= chance)[0].item;
-                if (!item) {
-                    throw new Error("Unable to select item");
-                }
-                return item;
+                return weightedList.filter(item => item.min <= chance && item.max >= chance)[0].item;
             }
             this.pickFromWeightedList = pickFromWeightedList;
         };

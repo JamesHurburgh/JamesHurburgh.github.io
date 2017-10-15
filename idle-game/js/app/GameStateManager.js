@@ -24,26 +24,29 @@ define([
 
             this.reset = function() {
                 log("reset");
+                this.gameState = this.newGame();
+            };
 
-                this.gameState.majorTickCounter = 0;
+            this.newGame = function() {
+                // Then initialise new
+                var newGameState = {};
+                newGameState.majorTickCounter = 0;
 
-                this.gameState.coins = 50;
-                this.gameState.renown = 0;
+                newGameState.coins = 10;
+                newGameState.renown = 0;
 
-                this.gameState.runningQuests = [];
-                this.gameState.completedQuests = [];
+                newGameState.runningExpeditions = [];
+                newGameState.completedQuests = [];
 
                 // Take a local copy of the locations
-                this.gameController.LocationManager().resetLocations();
+                newGameState.locationList = commonFunctions.clone(data.locations);
+                this.gameController.LocationManager().setCurrentLocation(newGameState.locationList[0].name);
 
-                // var locationManager = this.gameController.LocationManager();
-                // locationManager.setCurrentLocation(this.gameState.locationList[0].name);
-                // var location = locationManager.getCurrentLocation();
-                // location.availableContracts = [];
-                // location.availableAdventurers = [];
+                this.gameController.LocationManager().getCurrentLocation().availableContracts = [];
+                this.gameController.LocationManager().getCurrentLocation().availableAdventurers = [];
 
                 // Initilise options
-                this.gameState.options = {
+                newGameState.options = {
                     "claimAllButtons": false,
                     "automaticHire": false,
                     "automaticClaim": false,
@@ -54,37 +57,44 @@ define([
                 };
 
                 // Initialise stats
-                if (!this.gameState.stats) {
-                    this.gameState.stats = [];
+                if (!newGameState.stats) {
+                    newGameState.stats = [];
                 } else {
-                    for (var i = 0; i < this.gameState.stats.length; i++) {
-                        this.gameState.stats[i].current = 0;
+                    for (var i = 0; i < newGameState.stats.length; i++) {
+                        newGameState.stats[i].current = 0;
                     }
                 }
-                this.gameState.claimedAchievements = [];
+                newGameState.claimedAchievements = [];
 
-                this.gameState.ownedItems = [];
-                this.gameState.messages = [];
+                newGameState.ownedItems = [];
+                newGameState.messages = [];
 
-                this.gameState.currentEffects = [];
+                newGameState.currentEffects = [];
 
-                this.gameState.selectedContract = null;
-                this.gameState.selectedAdverturer = null;
-                this.gameState.currentParty = [];
-                this.gameState.adventurerList = [];
+                newGameState.selectedContract = null;
+                newGameState.selectedAdverturer = null;
+                newGameState.currentParty = [];
+                newGameState.adventurerList = [];
 
-                this.gameState.loginTracker = [];
+                newGameState.loginTracker = [];
 
-                this.gameState.version = data.game.versions[0].number;
+                newGameState.version = data.game.versions[0].number;
+
+                return newGameState;
 
             };
 
             this.versionCheck = function() {
                 log("versionCheck");
 
-                // Fix for version 0.10.7
+                if (this.gameState.version != "0.10.7") {
 
-                this.gameController.AdventurerManager().addMissingFields();
+                    this.gameState.adventurerList.forEach(function(adventurer) {
+                        if (!adventurer.race) {
+                            adventurer.race = data.races[0];
+                        }
+                    }, this);
+                }
 
                 var currentVersion = data.game.versions[0].number;
                 if (this.gameState.version != currentVersion) {
@@ -92,8 +102,8 @@ define([
                     var versionUpdateMessage = "Version updated from " + this.gameState.version + " to " + currentVersion + ". Check the " + releaseNotesButton + ".";
                     alertify.delay(10000);
                     alertify.alert("<h2>Version update!</h2><p class='text-info'>" + versionUpdateMessage + "</p>");
+                    this.gameState.version = data.game.versions[0].number;
                 }
-                this.gameState.version = data.game.versions[0].number;
             };
 
         };

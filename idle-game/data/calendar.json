@@ -1,310 +1,104 @@
 {
     "months": [
-        {
-            "name": "Flinto",
-            "season": "Summer",
-            "averageTemperature": 23
-        },
-        {
-            "name": "Rebotco",
-            "season": "Summer",
-            "averageTemperature": 25
-        },
-        {
-            "name": "Venson",
-            "season": "Summer",
-            "averageTemperature": 23
-        },
-        {
-            "name": "Geldor",
-            "season": "Fall",
-            "averageTemperature": 22
-        },
-        {
-            "name": "Yam",
-            "season": "Fall",
-            "averageTemperature": 20
-        },
-        {
-            "name": "Lirpa",
-            "season": "Fall",
-            "averageTemperature": 22
-        },
-        {
-            "name": "Kilmoi",
-            "season": "Winter",
-            "averageTemperature": 17
-        },
-        {
-            "name": "Ponner",
-            "season": "Winter",
-            "averageTemperature": 15
-        },
-        {
-            "name": "Glinto",
-            "season": "Winter",
-            "averageTemperature": 17
-        },
-        {
-            "name": "Mauito",
-            "season": "Spring",
-            "averageTemperature": 22
-        },
-        {
-            "name": "Charm",
-            "season": "Spring",
-            "averageTemperature": 20
-        },
-        {
-            "name": "Stuga",
-            "season": "Spring",
-            "averageTemperature": 22
-        }
+        { "name": "Flinto", "season": "Summer", "averageTemperature": 23 },
+        { "name": "Rebotco", "season": "Summer", "averageTemperature": 25 },
+        { "name": "Venson", "season": "Summer", "averageTemperature": 23 },
+        { "name": "Geldor", "season": "Fall", "averageTemperature": 22 },
+        { "name": "Yam", "season": "Fall", "averageTemperature": 20 },
+        { "name": "Lirpa", "season": "Fall", "averageTemperature": 22 },
+        { "name": "Kilmoi", "season": "Winter", "averageTemperature": 17 },
+        { "name": "Ponner", "season": "Winter", "averageTemperature": 15 },
+        { "name": "Glinto", "season": "Winter", "averageTemperature": 17 },
+        { "name": "Mauito", "season": "Spring", "averageTemperature": 22 },
+        { "name": "Charm", "season": "Spring", "averageTemperature": 20 },
+        { "name": "Stuga", "season": "Spring", "averageTemperature": 22 }
     ],
-    "week": [
-        {
-            "name": "Onesday"
-        },
-        {
-            "name": "Bobdayeve"
-        },
-        {
-            "name": "Bobday"
-        },
-        {
-            "name": "Postbobday"
-        },
-        {
-            "name": "Fithday"
-        },
-        {
-            "name": "Sixday"
-        },
-        {
-            "name": "Sevensday"
-        },
-        {
-            "name": "Aday"
-        }
-    ],
-    "holidays": [
-        {
+    "holidays": [{
             "name": "Quarry Race",
             "description": "The local youngsters build makeshift carts and race them through the old quarry for a moderate prize.",
-            "occurs": {
-                "month": "Flinto",
-                "date": 19
-            }
+            "occurs": { "month": "Flinto", "date": 19 }
         },
         {
             "name": "Midsummer",
             "description": "The middle of Summer.  This is the day typically when young men and women will take to the fields for a rough game of Scothwin.",
-            "occurs": {
-                "month": "Rebotco",
-                "date": 15
-            }
+            "occurs": { "month": "Rebotco", "date": 15 }
         },
         {
             "name": "Cimalo",
             "description": "The culmination of four days of testing for young men and women. Those who pass go on to apprentice in their chosen fields, those who fail are placed where they are needed.",
-            "occurs": {
-                "month": "Venson",
-                "date": 27
-            }
+            "occurs": { "month": "Venson", "date": 27 }
         },
         {
             "name": "Smith's Festival",
             "description": "The people come from all around to see the finest work from craftmen and woman.",
-            "occurs": {
-                "month": "Geldor",
-                "date": 7
-            }
+            "occurs": { "month": "Geldor", "date": 7 }
         },
         {
             "name": "Yam day",
             "description": "A celebration of the beginning of the harvest of Yams.",
-            "occurs": {
-                "month": "Yam",
-                "date": 1
-            }
+            "occurs": { "month": "Yam", "date": 1 }
         },
         {
             "name": "Lirpa's lament",
             "description": "Day of mourning for Lirpa, a beloved queen, and by extension all deceased monarchs.",
-            "occurs": {
-                "month": "Lirpa",
-                "date": 13
-            }
+            "occurs": { "month": "Lirpa", "date": 13 }
         },
         {
             "name": "Foundation Day",
             "description": "The day the city was founded.",
-            "occurs": {
-                "month": "Kilmoi",
-                "date": 7
-            }
+            "occurs": { "month": "Kilmoi", "date": 7 }
         },
         {
             "name": "Midwinter",
             "description": "The middle of winter.  Traditionally the residents of Otium meet together and share a meal around a roaring bonfire.",
-            "occurs": {
-                "month": "Ponner",
-                "date": 15
-            }
+            "occurs": { "month": "Ponner", "date": 15 }
         },
         {
             "name": "",
             "description": "",
-            "occurs": {
-                "month": "Glinto",
-                "date": 0
-            }
+            "occurs": { "month": "Glinto", "date": 0 }
         },
         {
             "name": "",
             "description": "",
-            "occurs": {
-                "month": "Mauito",
-                "date": 0
-            }
+            "occurs": { "month": "Mauito", "date": 0 }
         },
         {
             "name": "Charm Courting Day",
             "description": "Anyone unmarried traditionally begins courting or asks to court another on this day.",
-            "occurs": {
-                "month": "Charm",
-                "date": 19
-            }
+            "occurs": { "month": "Charm", "date": 19 }
         },
         {
             "name": "",
             "description": "",
-            "occurs": {
-                "month": "Stuga",
-                "date": 0
-            }
+            "occurs": { "month": "Stuga", "date": 0 }
         }
+
     ],
     "timeOfDay": [
-        {
-            "hour": 0,
-            "description": "Midnight",
-            "colourHex": "#000000"
-        },
-        {
-            "hour": 1,
-            "description": "Night",
-            "colourHex": "#040404"
-        },
-        {
-            "hour": 2,
-            "description": "Night",
-            "colourHex": "#080808"
-        },
-        {
-            "hour": 3,
-            "description": "Night",
-            "colourHex": "#0B0B0B"
-        },
-        {
-            "hour": 4,
-            "description": "Night",
-            "colourHex": "#101010"
-        },
-        {
-            "hour": 5,
-            "description": "Dawn",
-            "colourHex": "#2D1034"
-        },
-        {
-            "hour": 6,
-            "description": "Dawn",
-            "colourHex": "#5B2068"
-        },
-        {
-            "hour": 7,
-            "description": "Morning",
-            "colourHex": "#744C86"
-        },
-        {
-            "hour": 8,
-            "description": "Morning",
-            "colourHex": "#8E78A4"
-        },
-        {
-            "hour": 9,
-            "description": "Morning",
-            "colourHex": "#A7A4C2"
-        },
-        {
-            "hour": 10,
-            "description": "Morning",
-            "colourHex": "#C1D0E0"
-        },
-        {
-            "hour": 11,
-            "description": "Midday",
-            "colourHex": "#DBFDFF"
-        },
-        {
-            "hour": 12,
-            "description": "Midday",
-            "colourHex": "#DBFDFF"
-        },
-        {
-            "hour": 13,
-            "description": "Afternoon",
-            "colourHex": "#DBFDFF"
-        },
-        {
-            "hour": 14,
-            "description": "Afternoon",
-            "colourHex": "#C1D0E0"
-        },
-        {
-            "hour": 15,
-            "description": "Afternoon",
-            "colourHex": "#A7A4C2"
-        },
-        {
-            "hour": 16,
-            "description": "Afternoon",
-            "colourHex": "#8E78A4"
-        },
-        {
-            "hour": 17,
-            "description": "Dusk",
-            "colourHex": "#744C86"
-        },
-        {
-            "hour": 18,
-            "description": "Dusk",
-            "colourHex": "#5B2068"
-        },
-        {
-            "hour": 19,
-            "description": "Evening",
-            "colourHex": "#2D1034"
-        },
-        {
-            "hour": 20,
-            "description": "Evening",
-            "colourHex": "#0B0B0B"
-        },
-        {
-            "hour": 21,
-            "description": "Evening",
-            "colourHex": "#080808"
-        },
-        {
-            "hour": 22,
-            "description": "Evening",
-            "colourHex": "#040404"
-        },
-        {
-            "hour": 23,
-            "description": "Midnight",
-            "colourHex": "#000000"
-        }
+        { "hour": 0, "description": "Midnight", "colourHex": "#000000" },
+        { "hour": 1, "description": "Night", "colourHex": "#040404" },
+        { "hour": 2, "description": "Night", "colourHex": "#080808" },
+        { "hour": 3, "description": "Night", "colourHex": "#0B0B0B" },
+        { "hour": 4, "description": "Night", "colourHex": "#101010" },
+        { "hour": 5, "description": "Dawn", "colourHex": "#2D1034" },
+        { "hour": 6, "description": "Dawn", "colourHex": "#5B2068" },
+        { "hour": 7, "description": "Morning", "colourHex": "#744C86" },
+        { "hour": 8, "description": "Morning", "colourHex": "#8E78A4" },
+        { "hour": 9, "description": "Morning", "colourHex": "#A7A4C2" },
+        { "hour": 10, "description": "Morning", "colourHex": "#C1D0E0" },
+        { "hour": 11, "description": "Midday", "colourHex": "#DBFDFF" },
+        { "hour": 12, "description": "Midday", "colourHex": "#DBFDFF" },
+        { "hour": 13, "description": "Afternoon", "colourHex": "#DBFDFF" },
+        { "hour": 14, "description": "Afternoon", "colourHex": "#C1D0E0" },
+        { "hour": 15, "description": "Afternoon", "colourHex": "#A7A4C2" },
+        { "hour": 16, "description": "Afternoon", "colourHex": "#8E78A4" },
+        { "hour": 17, "description": "Dusk", "colourHex": "#744C86" },
+        { "hour": 18, "description": "Dusk", "colourHex": "#5B2068" },
+        { "hour": 19, "description": "Evening", "colourHex": "#2D1034" },
+        { "hour": 20, "description": "Evening", "colourHex": "#0B0B0B" },
+        { "hour": 21, "description": "Evening", "colourHex": "#080808" },
+        { "hour": 22, "description": "Evening", "colourHex": "#040404" },
+        { "hour": 23, "description": "Midnight", "colourHex": "#000000" }
     ]
 }
