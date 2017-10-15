@@ -35,8 +35,11 @@
 
                 <ul class="nav nav-tabs">
                     <li class="active"><a href="#locations" data-toggle="tab" aria-expanded="true">Locations</a></li>
-                    <li class=""><a href="#contracts" data-toggle="tab" aria-expanded="true">Contracts</a></li>
                     <li class=""><a href="#adventurers" data-toggle="tab" aria-expanded="true">Adventurers</a></li>
+                    <li class=""><a href="#achievements" data-toggle="tab" aria-expanded="true">Achievements</a></li>
+                    <li class=""><a href="#contracts" data-toggle="tab" aria-expanded="true">Contracts</a></li>
+                    <li class=""><a href="#items" data-toggle="tab" aria-expanded="true">Items</a></li>
+                    <li class=""><a href="#races" data-toggle="tab" aria-expanded="true">Races</a></li>
                     <li class=""><a href="#skills" data-toggle="tab" aria-expanded="true">Skills</a></li>
                 </ul>
                 <div id="myTabContent" class="tab-content">
@@ -120,8 +123,119 @@
                                 </div>
                                 <div :id="toId(contract.name)" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <span>{{contract.description}}</span>
-                                        <div><textarea>{{contract}}</textarea></div>
+                                        <div class="col-sm-6">
+                                            <form class="form-horizontal">
+                                                <fieldset>
+                                                    <legend>Basics</legend>
+                                                    <div class="form-group">
+                                                        <label for="name" class="col-lg-2 control-label">Name</label>
+                                                        <div class="col-lg-10">
+                                                            <input type="text" class="form-control" id="name" placeholder="Contract Name" :value="contract.name">
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <legend>Json</legend>
+                                            <textarea class="form-control" style="height: 70vh;" id="json">{{contract}}}}</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="achievements">
+                        <div class="panel-group" id="achievements-accordion">
+                            <div v-for="achievement in achievements" class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#achievements-accordion" :href="'#' + toId(achievement.name)">{{achievement.name}}</a>
+                                    </h4>
+                                </div>
+                                <div :id="toId(achievement.name)" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col-sm-6">
+                                            <form class="form-horizontal">
+                                                <fieldset>
+                                                    <legend>Basics</legend>
+                                                    <div class="form-group">
+                                                        <label for="name" class="col-lg-2 control-label">Name</label>
+                                                        <div class="col-lg-10">
+                                                            <input type="text" class="form-control" id="name" placeholder="Achievement Name" :value="achievement.name">
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <legend>Json</legend>
+                                            <textarea class="form-control" style="height: 70vh;" id="json">{{achievement}}}}</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="items">
+                        <div class="panel-group" id="items-accordion">
+                            <div v-for="item in items" class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#item-accordion" :href="'#' + toId(item.type)">{{item.type}}</a>
+                                    </h4>
+                                </div>
+                                <div :id="toId(item.type)" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col-sm-6">
+                                            <form class="form-horizontal">
+                                                <fieldset>
+                                                    <legend>Basics</legend>
+                                                    <div class="form-group">
+                                                        <label for="name" class="col-lg-2 control-label">Name</label>
+                                                        <div class="col-lg-10">
+                                                            <input type="text" class="form-control" id="name" placeholder="Item Name" :value="item.name">
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <legend>Json</legend>
+                                            <textarea class="form-control" style="height: 70vh;" id="json">{{item}}</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="races">
+                        <div class="panel-group" id="races-accordion">
+                            <div v-for="race in races" class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#race-accordion" :href="'#' + toId(race.name)">{{race.name}}</a>
+                                    </h4>
+                                </div>
+                                <div :id="toId(race.name)" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col-sm-6">
+                                            <form class="form-horizontal">
+                                                <fieldset>
+                                                    <legend>Basics</legend>
+                                                    <div class="form-group">
+                                                        <label for="name" class="col-lg-2 control-label">Name</label>
+                                                        <div class="col-lg-10">
+                                                            <input type="text" class="form-control" id="name" placeholder="Race Name" :value="race.name">
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <legend>Json</legend>
+                                            <textarea class="form-control" style="height: 70vh;" id="json">{{race}}</textarea>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

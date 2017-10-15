@@ -133,19 +133,20 @@ define([
             };
 
             this.completeQuest = function(quest) {
+                log("completeQuest");
+                var contract = quest.contract;
+                quest.finishTime = Date.now();
+
+                // Remove the quest from the running tab
                 this.getRunningQuests().splice(this.getRunningQuests().indexOf(quest), 1);
 
-                var contract = quest.contract;
-
+                // Track the stats
                 this.gameController.StatisticsManager().trackStat("complete", "quest", 1);
                 this.gameController.StatisticsManager().trackStat("complete-quest", contract.name, 1);
 
-                // Return questers to sendable pool
-                quest.upgradeMessages = "";
-                quest.awol = false;
+                // Determine if any of the party died
                 quest.survivors = [];
                 quest.casualaties = [];
-
                 if (quest.party) {
                     quest.party.forEach(function(adventurer) {
                         // Did they die?
@@ -153,35 +154,41 @@ define([
                             adventurer.status = "Dead";
                             this.gameController.StatisticsManager().trackStat("death", "adventurer", 1);
                             quest.casualaties.push(adventurer);
-
-                            // gameState.StatisticsManager().trackStat("death-adventurer", adventurer.type, 1);
                         } else {
-                            // if (Math.random() * gameState.EffectsManager().getGlobalValue("upgradeChance") < contract.upgradeChance) { // Then someone 'upgraded'
-                            //     gameState.AdventurerManager().upgradeAdventurer(adventurer);
-                            //     // TODO handle upgrades
-                            // }
-                            adventurer.status = "Idle";
-                            adventurer.experience++;
-                            quest.survivors.push(adventurer);
+                            adventurer.status = "Recovering";
+                            adventurer.recoverTime = Date.now() + 1440000; // Recover for one day
+
+                            quest.survivors.push({ adventurer: adventurer });
                         }
                     }, this);
                 }
 
-                if (quest.contract.experience > 0 && quest.survivors.length > 0) {
-                    var xpEach = Math.ceil(quest.experience / survived);
-                    quest.survivors.foreach(function(adventurer) {
-                        adventurer.experience += xpEach;
-                    });
-                }
-
-                quest.completionMessage = "";
 
                 // Calculate success
                 quest.success = quest.survivors.length > 0 && Math.random() < contract.successChance;
                 if (quest.success) {
                     quest.completionMessage = contract.successMessage;
+                    this.gameController.StatisticsManager().trackStat("succeed", "quest", 1);
+                    this.gameController.StatisticsManager().trackStat("succeed-quest", contract.name, 1);
+
+                    // Divy out xp to survivors
+                    if (quest.contract.experience > 0) {
+                        var xpEach = Math.floor(quest.contract.experience / quest.survivors.length);
+                        var extraXp = quest.contract.experience % quest.survivors.length;
+                        for (var survivorIndex = 0; survivorIndex < quest.survivors.length; survivorIndex++) {
+                            var survivor = quest.survivors[survivorIndex];
+                            var xpGained = xpEach;
+                            if (extraXp > 0) {
+                                extraXp--;
+                                xpGained++;
+                            }
+                            survivor.xpGained = xpGained;
+                            this.gameController.AdventurerManager().giveAdventurerXP(survivor.adventurer, xpGained);
+                        }
+                    }
 
                     quest.rewards = [];
+                    // For each potential reward
                     for (var j = 0; j < contract.rewards.length; j++) {
                         var chance = contract.rewards[j].chance;
                         if (Math.random() < chance) {
@@ -196,8 +203,41 @@ define([
                             }
                         }
                     }
-                    this.gameController.StatisticsManager().trackStat("succeed", "quest", 1);
-                    this.gameController.StatisticsManager().trackStat("succeed-quest", contract.name, 1);
+
+                    // Count the rewards
+                    var coins = 0;
+                    if (contract.contractAmount) {
+                        coins += contract.contractAmount;
+                    }
+                    for (var i = 0; i < quest.rewards.length; i++) {
+                        if (quest.rewards[i].type == "coins") {
+                            coins += quest.rewards[i].amount;
+                        } else {
+                            this.gameController.PlayerManager().giveReward(quest.rewards[i]);
+                        }
+                    }
+
+                    var remainingCoins = coins;
+                    // Divy up any coins
+                    if (coins > 0) {
+                        // var coinsPercentTaken = quest.survivors.reduce(function(accumulator, survivor) {
+                        //     return accumulator + survivor.adventurer.wage;
+                        // });
+
+                        for (var survivorIndex = 0; survivorIndex < quest.survivors.length; survivorIndex++) {
+                            var survivor = quest.survivors[survivorIndex];
+                            var coinsGained = Math.ceil((survivor.adventurer.wage / 100) * coins);
+                            remainingCoins -= coinsGained;
+                            survivor.coinsGained = coinsGained;
+                            this.gameController.AdventurerManager().giveAdventurerCoins(survivor.adventurer, coinsGained);
+                        }
+
+                    }
+
+                    quest.remainingCoins = remainingCoins;
+                    quest.wagesPaid = coins - remainingCoins;
+                    this.gameController.PlayerManager().giveCoins(remainingCoins);
+
                 } else {
                     quest.completionMessage = contract.failureMessage;
                     this.gameController.StatisticsManager().trackStat("fail", "quest", 1);
@@ -206,18 +246,6 @@ define([
 
                 this.getCompletedQuests().push(quest);
             };
-
-            this.claimReward = function(expedition) {
-                this.gameController.StatisticsManager().trackStat("claim", "reward", 1);
-                if (expedition.contract.contractAmount) {
-                    this.gameController.PlayerManager().giveCoins(expedition.contract.contractAmount);
-                }
-                for (var i = 0; i < expedition.rewards.length; i++) {
-                    this.gameController.PlayerManager().giveReward(expedition.rewards[i]);
-                }
-                this.removeQuest(expedition);
-            };
-
 
             // Expediations
 

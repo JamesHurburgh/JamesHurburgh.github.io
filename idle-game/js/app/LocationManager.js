@@ -13,6 +13,11 @@ define([
             this.gameState = gameState;
             this.gameController = gameController;
 
+            this.resetLocations = function() {
+                this.gameState.locationList = common.clone(data.locations);
+                this.gameState.location = this.getLocationList()[0];
+            };
+
             this.getJobContractsAtCurrentLocation = function() {
                 return this.getJobContractsAtLocation(this.getCurrentLocation());
             };

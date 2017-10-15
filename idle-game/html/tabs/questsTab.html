@@ -9,58 +9,62 @@
 <div id="questTabContent" class="tab-content">
     <div class="tab-pane fade active in" id="runningQuests">
         <span v-if="QuestManager().getRunningQuests().length == 0" class="text-muted text-center col-xs-12">No running quests</span>
-        <div class="col-md-6" v-for="expedition in QuestManager().getRunningQuests()" key="expedition.id">
+        <div class="col-md-6" v-for="quest in QuestManager().getRunningQuests()" key="quest.id">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">{{expedition.contract.name}}</h3>
+                    <h3 class="panel-title">{{quest.contract.name}}</h3>
                 </div>
                 <div class="panel-body">
                     <ul>
-                        <li v-for="adventurer in expedition.party">
+                        <li v-for="adventurer in quest.party">
                             {{adventurer.name.full}}
                         </li>
                     </ul>
                     <div class="progress progress-striped active">
-                        <div class="progress-bar" v-bind:style="{ width: QuestManager().questProgress(expedition) + '%' }"></div>
+                        <div class="progress-bar" v-bind:style="{ width: QuestManager().questProgress(quest) + '%' }"></div>
                     </div>
-                    <div v-bind:class="{ 'text-success': NoticeManager().expiringDanger(expedition.expires), 'text-warning': NoticeManager().expiringWarning(expedition.expires), 'text-danger': NoticeManager().expiringSuccess(expedition.expires) }">{{TimeManager().readableTime(expedition.expires - Date.now())}} remaining</div>
+                    <div v-bind:class="{ 'text-success': NoticeManager().expiringDanger(quest.expires), 'text-warning': NoticeManager().expiringWarning(quest.expires), 'text-danger': NoticeManager().expiringSuccess(quest.expires) }">{{TimeManager().readableTime(quest.expires - Date.now())}} remaining</div>
                 </div>
             </div>
         </div>
     </div>
     <div class="tab-pane fade" id="finishedQuests">
         <span v-if="QuestManager().getCompletedQuests().length == 0" class="text-muted text-center col-xs-12">No finished quests</span>
-        <div class="col-md-6" v-for="expedition in QuestManager().getCompletedQuests()" key="expedition.id">
-            <div class="panel" :class="{ 'panel-success': expedition.success, 'panel-danger': !expedition.success}">
+        <div class="col-md-6" v-for="quest in QuestManager().getCompletedQuests()" key="quest.id">
+            <div class="panel" :class="{ 'panel-success': quest.success, 'panel-danger': !quest.success}">
                 <div class="panel-heading">
-                    <h3 class="panel-title">{{expedition.contract.name}}
-                        <button v-if="expedition.success" type="button" class="btn btn-xs btn-default pull-right" @click="QuestManager().claimReward(expedition)">Claim</button>
-                        <button v-if="!expedition.success" type="button" class="btn btn-xs btn-default pull-right" @click="QuestManager().removeQuest(expedition)">Dismiss</button>
+                    <h3 class="panel-title">{{quest.contract.name}}
+                        <button type="button" class="btn btn-xs btn-default pull-right" @click="QuestManager().removeQuest(quest)">Dismiss</button>
                     </h3>
                 </div>
                 <div class="panel-body">
-                    <span class="text-info">{{expedition.completionMessage}}</span>
-                    <span v-if="expedition.casualaties.length !== 0" class="text-warning">{{expedition.contract.deathMessage}}</span>
-                    <div v-if="expedition.success">
+                    <span class="text-info">{{quest.completionMessage}}</span>
+                    <span v-if="quest.casualaties.length !== 0" class="text-warning">{{quest.contract.deathMessage}}</span>
+                    <div>Ran from {{TimeManager().getGameTime(quest.start).toString()}} to {{TimeManager().getGameTime(quest.expires).toString()}}</div>
+                    <div v-if="quest.success">
                         <h4>Rewards</h4>
-                        <div v-if="expedition.contract.contractAmount != undefined" class="text-success"><img src="./img/icons/crown-coin.png" width="24px" /> {{expedition.contract.contractAmount}} coins</div>
-                        <div v-for="reward in expedition.rewards">
+                        <div v-if="quest.contract.contractAmount != undefined" class="text-success"><img src="./img/icons/crown-coin.png" width="24px" /> Contract amount: {{quest.contract.contractAmount}} coins</div>
+                        <div v-for="reward in quest.rewards">
                             <div class="text-success" v-if="reward.amount"><img :src="SpriteManager().getIcon(reward.type)" width="24px" /> {{reward.amount}} {{reward.type}}</div>
                             <div class="text-success" v-if="reward.type == 'item'"><img :src="SpriteManager().getIcon('item')" width="24px" /> {{reward.item.name}}</div>
                         </div>
+                        <h4>Wages paid</h4>
+                        <div v-if="quest.wagesPaid" class="text-danger"><img src="./img/icons/crown-coin.png" width="24px" /> -{{quest.wagesPaid}} coins</div>
                     </div>
-                    <div v-if="expedition.survivors.length !== 0">
+                    <div v-if="quest.survivors.length !== 0">
                         <h4>Returned adventurers</h4>
                         <ul>
-                            <li v-for="adventurer in expedition.survivors">
-                                {{adventurer.name.full}} ({{adventurer.type}})
+                            <li v-for="survivor in quest.survivors">
+                                {{survivor.adventurer.name.full}}
+                                <span class="text-success" v-if="survivor.coinsGained">+{{survivor.coinsGained}} coins</span>
+                                <span class="text-success" v-if="survivor.xpGained">+{{survivor.xpGained}} XP</span>
                             </li>
                         </ul>
                     </div>
-                    <div v-if="expedition.casualaties.length !== 0">
+                    <div v-if="quest.casualaties.length !== 0">
                         <h4>Deaths</h4>
                         <ul>
-                            <li v-for="adventurer in expedition.casualaties">
+                            <li v-for="adventurer in quest.casualaties">
                                 <span class="text-danger">{{adventurer.name.full}}</span> ({{adventurer.type}})
                             </li>
                         </ul>
