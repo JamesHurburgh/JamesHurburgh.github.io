@@ -3,7 +3,8 @@
     "description": "Adventuring is dangerous. Hire someone else to do it for you!",
     "author": "James Hurburgh",
     "author-uri": "",
-    "globals": [{
+    "globals": [
+        {
             "name": "chanceOfNewContract",
             "baseValue": 0.05
         },
@@ -36,7 +37,16 @@
             "baseValue": 1
         }
     ],
-    "versions": [{
+    "versions": [
+        {
+            "number": "0.11.1",
+            "description": "Adventurers recover",
+            "features": [],
+            "bugfixes": [
+                "Made call to recover adventurers."
+            ]
+        },
+        {
             "number": "0.11.0",
             "description": "Adventurers details update",
             "features": [
