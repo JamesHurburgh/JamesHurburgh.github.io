@@ -154,7 +154,8 @@ define([
                         // Did they die?
                         if (Math.random() * this.gameController.EffectsManager().getGlobalValue("questRisk") < contract.risk) {
                             var causeOfInjury = "Injured while on contract: " + contract.name;
-                            var injury = this.gameController.AdventurerManager().injureAdventurer(adventurer, causeOfInjury);
+                            var injuryTime = quest.expires;
+                            var injury = this.gameController.AdventurerManager().injureAdventurer(adventurer, causeOfInjury, injuryTime);
                             if (adventurer.status == "Dead") {
                                 quest.casualaties.push(adventurer);
                             } else {

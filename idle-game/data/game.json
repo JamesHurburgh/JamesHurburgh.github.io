@@ -37,6 +37,11 @@
         }
     ],
     "versions": [{
+            "number": "0.11.4",
+            "description": "",
+            "features": [],
+            "bugfixes": ["Fixed bug where injuries and recovery would only start once you logged in."]
+        }, {
             "number": "0.11.3",
             "description": "Statistics and Achievements catch-up",
             "features": [

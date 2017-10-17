@@ -278,6 +278,22 @@ define([
             };
 
             this.recoverAdventurers = function() {
+
+                var healingAdventures = this.getAdventurersAtStatus("Injured").filter(adventurer => adventurer.injuries.filter(injury => injury.healTime <= Date.now()).length > 0);
+                healingAdventures.forEach(function(adventurer) {
+
+                    var healedInjuries = adventurer.injuries.filter(injury => injury.healTime <= Date.now());
+                    var healTime = 0;
+                    healedInjuries.forEach(function(injury) {
+                        healTime = Math.max(healTime, injury.healTime);
+                        adventurer.injuries.splice(adventurer.injuries.indexOf(injury));
+                    }, this);
+
+                    if (adventurer.injuries.length === 0) {
+                        this.setAdventurerRecovering(adventurer, healTime);
+                    }
+                }, this);
+
                 var adventures = this.getAdventurersAtStatus("Recovering").filter(adventurer => !adventurer.recoverTime || adventurer.recoverTime <= Date.now());
                 adventures.forEach(function(adventurer) {
                     adventurer.status = "Idle";
@@ -286,44 +302,31 @@ define([
 
                 }, this);
 
-                // TODO THis logic need to look at each specific injury, not just the whole adventurer
-                var healingAdventures = this.getAdventurersAtStatus("Injured").filter(adventurer => adventurer.injuries.filter(injury => injury.healTime <= Date.now()).length > 0);
-
-                healingAdventures.forEach(function(adventurer) {
-
-                    var healedInjuries = adventurer.injuries.filter(injury => injury.healTime <= Date.now());
-
-                    healedInjuries.forEach(function(injury) {
-                        adventurer.injuries.splice(adventurer.injuries.indexOf(injury));
-                    }, this);
-
-                    if (adventurer.injuries.length === 0) {
-                        this.setAdventurerRecovering(adventurer);
-                    }
-                }, this);
             };
 
-            this.setAdventurerRecovering = function(adventurer) {
+            this.setAdventurerRecovering = function(adventurer, healTime) {
+                if (!healTime) healTime = Date.now();
                 adventurer.status = "Recovering";
-                adventurer.recoverTime = Date.now() + 1440000; // Recover for one day
+                adventurer.recoverTime = healTime + 1440000; // Recover for one day
                 this.trackAdventurerStats(adventurer, "heal", 1);
             };
 
-            this.generateInjury = function(anatomy) {
+            this.generateInjury = function(anatomy, injuryTime) {
+                if (!injuryTime) injuryTime = Date.now();
                 return {
                     injuryType: "Injured",
                     bodyPart: chance.pickone(anatomy.bodyparts),
-                    healTime: Date.now() + Math.floor(Math.random() * 7 * 1440000) + 1440000 // Recover for at least one day, up to a week.
+                    healTime: injuryTime + Math.floor(Math.random() * 7 * 1440000) + 1440000 // Recover for at least one day, up to a week.
                 };
             };
 
-            this.injureAdventurer = function(adventurer, causeOfInjury) {
+            this.injureAdventurer = function(adventurer, causeOfInjury, injuryTime) {
                 adventurer = this.gameState.adventurerList.filter(a => a.id == adventurer.id)[0];
                 if (!adventurer.injuries) adventurer.injuries = [];
 
                 var anatomy = data.anatomy.filter(a => a.race == adventurer.race.name)[0];
 
-                var injury = this.generateInjury(anatomy);
+                var injury = this.generateInjury(anatomy, injuryTime);
                 adventurer.injuries.push(injury);
                 adventurer.status = "Injured";
                 this.trackAdventurerStats(adventurer, "injure", 1);

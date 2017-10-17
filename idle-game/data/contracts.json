@@ -262,6 +262,11 @@
         "successChance": 1,
         "contractAmount": 15,
         "rewardFactor": 0.1,
+        "tasks": [
+            { "name": "Travel to the work site", "duration": 15 },
+            { "name": "Honest labor", "duration": 560 },
+            { "name": "Travel home", "duration": 15 }
+        ],
         "rewards": [{
             "chance": 1,
             "reward": {
@@ -292,6 +297,12 @@
         "duration": 75,
         "successChance": 0.9,
         "rewardFactor": 0.1,
+        "tasks": [
+            { "name": "Travel to the graveyard", "duration": 10 },
+            { "name": "Search for valuables", "duration": 50 },
+            { "name": "Collect valuables", "duration": 15 },
+            { "name": "Travel home", "duration": 10 }
+        ],
         "rewards": [{
                 "chance": 1,
                 "reward": {
@@ -331,6 +342,12 @@
         "duration": 15,
         "successChance": 0.9,
         "rewardFactor": 0.1,
+        "tasks": [
+            { "name": "Travel to wishing well", "duration": 5 },
+            { "name": "Search for coins", "duration": 5 },
+            { "name": "Collect coins", "duration": 5 },
+            { "name": "Travel home", "duration": 5 }
+        ],
         "rewards": [{
             "chance": 1,
             "reward": {
@@ -406,6 +423,13 @@
         "successChance": 0.9,
         "contractAmount": 75,
         "rewardFactor": 0.1,
+        "tasks": [
+            { "name": "Find the mark", "duration": 10 },
+            { "name": "Tail the mark", "duration": 250 },
+            { "name": "Hide from the mark", "duration": 15 },
+            { "name": "Continue tailing the mark", "duration": 150 },
+            { "name": "Travel home", "duration": 10 }
+        ],
         "rewards": [{
             "chance": 1,
             "reward": {
@@ -441,6 +465,13 @@
         "duration": 250,
         "successChance": 0.6,
         "rewardFactor": 0.2,
+        "tasks": [
+            { "name": "Wander around", "duration": 10 },
+            { "name": "Chose target", "duration": 150 },
+            { "name": "Pick the target's pocket", "duration": 15 },
+            { "name": "Run away from the target", "duration": 50 },
+            { "name": "Travel home", "duration": 10 }
+        ],
         "rewards": [{
                 "chance": 1,
                 "reward": {
