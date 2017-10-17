@@ -1,0 +1,203 @@
+[
+    {
+        "race": "Human",
+        "bodyparts": [
+            "head",
+            "neck",
+            "chest",
+            "back",
+            "hips",
+            "left arm",
+            "right arm",
+            "left hand",
+            "right foot",
+            "left leg",
+            "left foot",
+            "right leg",
+            "right foot"
+        ]
+    },
+    {
+        "race": "Elf",
+        "bodyparts": [
+            "head",
+            "neck",
+            "chest",
+            "back",
+            "hips",
+            "left arm",
+            "right arm",
+            "left hand",
+            "right foot",
+            "left leg",
+            "left foot",
+            "right leg",
+            "right foot"
+        ]
+    },
+    {
+        "race": "Dwarf",
+        "bodyparts": [
+            "head",
+            "neck",
+            "chest",
+            "back",
+            "hips",
+            "left arm",
+            "right arm",
+            "left hand",
+            "right foot",
+            "left leg",
+            "left foot",
+            "right leg",
+            "right foot"
+        ]
+    },
+    {
+        "race": "Orc",
+        "bodyparts": [
+            "head",
+            "neck",
+            "chest",
+            "back",
+            "hips",
+            "left arm",
+            "right arm",
+            "left hand",
+            "right foot",
+            "left leg",
+            "left foot",
+            "right leg",
+            "right foot"
+        ]
+    },
+    {
+        "race": "Merfolk",
+        "bodyparts": [
+            "head",
+            "neck",
+            "chest",
+            "back",
+            "back fin",
+            "hips",
+            "left arm",
+            "right arm",
+            "left hand",
+            "right foot",
+            "left leg",
+            "left foot",
+            "right leg",
+            "right foot"
+        ]
+    },
+    {
+        "race": "Lighfoot",
+        "bodyparts": [
+            "head",
+            "neck",
+            "chest",
+            "back",
+            "hips",
+            "left arm",
+            "right arm",
+            "left hand",
+            "right foot",
+            "left leg",
+            "left foot",
+            "right leg",
+            "right foot"
+        ]
+    },
+    {
+        "race": "Giant",
+        "bodyparts": [
+            "head",
+            "neck",
+            "chest",
+            "back",
+            "hips",
+            "left arm",
+            "right arm",
+            "left hand",
+            "right foot",
+            "left leg",
+            "left foot",
+            "right leg",
+            "right foot"
+        ]
+    },
+    {
+        "race": "Boldorn",
+        "bodyparts": [
+            "head",
+            "neck",
+            "chest",
+            "back",
+            "hips",
+            "left arm",
+            "right arm",
+            "left hand",
+            "right foot",
+            "left leg",
+            "left foot",
+            "right leg",
+            "right foot"
+        ]
+    },
+    {
+        "race": "Tarkash",
+        "bodyparts": [
+            "head",
+            "neck",
+            "chest",
+            "back",
+            "hips",
+            "left arm",
+            "right arm",
+            "left hand",
+            "right foot",
+            "left leg",
+            "left foot",
+            "right leg",
+            "right foot"
+        ]
+    },
+    {
+        "race": "Pixie",
+        "bodyparts": [
+            "head",
+            "neck",
+            "chest",
+            "back",
+            "hips",
+            "left arm",
+            "right arm",
+            "left hand",
+            "right foot",
+            "left leg",
+            "left foot",
+            "right leg",
+            "right foot",
+            "left wing",
+            "right wing"
+        ]
+    },
+    {
+        "race": "Phsytik",
+        "bodyparts": [
+            "Head",
+            "Left Antennae",
+            "Right Antennae",
+            "Thorax",
+            "Abdomen",
+            "Left Upper Arm",
+            "Right Upper Arm",
+            "Left Lower Arm",
+            "Right Lower Arm",
+            "Left Leg",
+            "Right Leg",
+            "Left Wing",
+            "Right Wing"
+        ]
+    }
+]

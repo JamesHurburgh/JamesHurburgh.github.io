@@ -39,6 +39,17 @@
     ],
     "versions": [
         {
+            "number": "0.11.2",
+            "description": "Inury update.",
+            "features": [
+                "Adventurers who die have their time and cause of death remembered.",
+                "Adventurers are now injured instead of killed.",
+                "Injuries are based on the anatomy of the injured race.",
+                "Injuries heal over time."
+            ],
+            "bugfixes": []
+        },
+        {
             "number": "0.11.1",
             "description": "Adventurers recover",
             "features": [],

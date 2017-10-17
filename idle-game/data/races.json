@@ -1,4 +1,5 @@
-[{
+[
+    {
         "name": "Human",
         "plural": "Humans",
         "adjective": "Human",
@@ -103,7 +104,7 @@
         "adjective": "Boldornian",
         "description": "None one knows how long the Boldornians have been around, but one day a rock came striding slowly into town, learnt the local language and proceeded to setup a lucrative business selling firewood.  Since then more have been seen, all of them intelligent and hard working.",
         "matureAge": 250,
-        "oldAge": 6000,
+        "oldAge": 2900,
         "averageHeight": 150,
         "averageWeight": 375,
         "chance": 0.1

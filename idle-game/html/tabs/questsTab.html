@@ -43,7 +43,9 @@
                     <div>Ran from {{TimeManager().getGameTime(quest.start).toString()}} to {{TimeManager().getGameTime(quest.expires).toString()}}</div>
                     <div v-if="quest.success">
                         <h4>Rewards</h4>
-                        <div v-if="quest.contract.contractAmount != undefined" class="text-success"><img src="./img/icons/crown-coin.png" width="24px" /> Contract amount: {{quest.contract.contractAmount}} coins</div>
+                        <div v-if="quest.contract.contractAmount != undefined" class="text-success"><img src="./img/icons/crown-coin.png" width="24px" /> Contract amount: {{quest.contract.contractAmount}}
+                            coins
+                        </div>
                         <div v-for="reward in quest.rewards">
                             <div class="text-success" v-if="reward.amount"><img :src="SpriteManager().getIcon(reward.type)" width="24px" /> {{reward.amount}} {{reward.type}}</div>
                             <div class="text-success" v-if="reward.type == 'item'"><img :src="SpriteManager().getIcon('item')" width="24px" /> {{reward.item.name}}</div>
@@ -58,6 +60,7 @@
                                 {{survivor.adventurer.name.full}}
                                 <span class="text-success" v-if="survivor.coinsGained">+{{survivor.coinsGained}} coins</span>
                                 <span class="text-success" v-if="survivor.xpGained">+{{survivor.xpGained}} XP</span>
+                                <span class="text-danger" v-if="survivor.injuriesGained">+{{survivor.injuriesGained.injuryType}} {{survivor.injuriesGained.bodyPart}}</span>
                             </li>
                         </ul>
                     </div>

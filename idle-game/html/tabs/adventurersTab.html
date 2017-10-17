@@ -9,6 +9,9 @@
         <a href="#questingAdventurers" data-toggle="tab" aria-expanded="false"><img :src="SpriteManager().getIcon('questing')" width="20px" /><span class="badge">{{AdventurerManager().countAdventurersAtStatus('Questing')}}</span></a>
     </li>
     <li>
+        <a href="#injuredAdventurers" data-toggle="tab" aria-expanded="false"><img :src="SpriteManager().getIcon('injured')" width="20px" /><span class="badge">{{AdventurerManager().countAdventurersAtStatus('Injured')}}</span></a>
+    </li>
+    <li>
         <a href="#deadAdventurers" data-toggle="tab" aria-expanded="false"><img :src="SpriteManager().getIcon('dead')" width="20px" /><span class="badge">{{AdventurerManager().countAdventurersAtStatus('Dead')}}</span></a>
     </li>
 </ul>
@@ -25,11 +28,12 @@
                     <legend>Personal</legend>
                     <div>Race: <strong>{{adventurer.race.name}}</strong></div>
                     <div>Occupation: <strong>{{adventurer.type}}</strong></div>
-                    <div>Birth Date: <strong>{{TimeManager().getGameTime(adventurer.birthTime).toDateString()}}</strong> (<strong>{{AdventurerManager().getAge(adventurer)}}</strong> years old)</div>
+                    <div>Birth Date: <strong>{{TimeManager().getGameTime(adventurer.birthTime).toDateString()}}</strong> (<strong>{{AdventurerManager().getAge(adventurer)}}</strong>                        years old)</div>
                     <legend>Skills</legend>
                     <span v-for="skill in adventurer.skills " :title="skill.name + ' ' + skill.amount "><img :alt="skill.name " v-for="n in skill.amount " width="24px " :src=" 'img/icons/' + DataManager().getData( 'skills', skill.name).icon + '.png' " /></span>
                     <legend>Employment</legend>
-                    <img src="./img/icons/crown-coin.png" width="16px" /> Claims <strong>{{adventurer.wage}}</strong>% of earnings
+                    <img src="./img/icons/crown-coin.png" width="16px" /> Claims <strong>{{adventurer.wage}}</strong>% of
+                    earnings
                 </div>
                 <div class="panel-footer ">
                     <span>{{adventurer.coins}} coins</span>
@@ -51,11 +55,12 @@
                     <h4>Personal</h4>
                     <div>Race: <strong>{{adventurer.race.name}}</strong></div>
                     <div>Occupation: <strong>{{adventurer.type}}</strong></div>
-                    <div>Birth Date: <strong>{{TimeManager().getGameTime(adventurer.birthTime).toDateString()}}</strong> (<strong>{{AdventurerManager().getAge(adventurer)}}</strong> years old)</div>
+                    <div>Birth Date: <strong>{{TimeManager().getGameTime(adventurer.birthTime).toDateString()}}</strong> (<strong>{{AdventurerManager().getAge(adventurer)}}</strong>                        years old)</div>
                     <h4>Skills</h4>
                     <span v-for="skill in adventurer.skills " :title="skill.name + ' ' + skill.amount "><img :alt="skill.name " v-for="n in skill.amount " width="24px " :src=" 'img/icons/' + DataManager().getData( 'skills', skill.name).icon + '.png' " /></span>
                     <h4>Employment</h4>
-                    <img src="./img/icons/crown-coin.png" width="16px" /> Claims <strong>{{adventurer.wage}}</strong>% of earnings
+                    <img src="./img/icons/crown-coin.png" width="16px" /> Claims <strong>{{adventurer.wage}}</strong>% of
+                    earnings
                     <div>Will be recovered at: {{TimeManager().getGameTime(adventurer.recoverTime).toString()}} </div>
                 </div>
                 <div class="panel-footer ">
@@ -78,14 +83,50 @@
                     <h4>Personal</h4>
                     <div>Race: <strong>{{adventurer.race.name}}</strong></div>
                     <div>Occupation: <strong>{{adventurer.type}}</strong></div>
-                    <div>Birth Date: <strong>{{TimeManager().getGameTime(adventurer.birthTime).toDateString()}}</strong> (<strong>{{AdventurerManager().getAge(adventurer)}}</strong> years old)</div>
+                    <div>Birth Date: <strong>{{TimeManager().getGameTime(adventurer.birthTime).toDateString()}}</strong> (<strong>{{AdventurerManager().getAge(adventurer)}}</strong>years
+                        old)
+                    </div>
                     <h4>Skills</h4>
                     <span v-for="skill in adventurer.skills " :title="skill.name + ' ' + skill.amount "><img :alt="skill.name " v-for="n in skill.amount " width="24px " :src=" 'img/icons/' + DataManager().getData( 'skills', skill.name).icon + '.png' " /></span>
                     <h4>Employment</h4>
-                    <img src="./img/icons/crown-coin.png" width="16px" /> Claims <strong>{{adventurer.wage}}</strong>% of earnings
+                    <img src="./img/icons/crown-coin.png" width="16px" /> Claims <strong>{{adventurer.wage}}</strong>% of
+                    earnings
                     <div v-if="AdventurerManager().getAdventurersQuest(adventurer) !== undefined">
                         Quest: {{AdventurerManager().getAdventurersQuest(adventurer).contract.name}}
                     </div>
+                </div>
+                <div class="panel-footer ">
+                    <span>{{adventurer.coins}} coins</span>
+                    <div class="pull-right ">{{adventurer.experience}}xp</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="injuredAdventurers">
+        <div class="col-xs-12 text-center text-muted">Injured Adventurers</div>
+        <div class="col-md-6" v-for="adventurer in AdventurerManager().getAdventurersAtStatus('Injured')">
+            <div class="panel panel-default ">
+                <div class="panel-heading ">
+                    <h3 class="panel-title ">{{adventurer.name.full}}</h3>
+                </div>
+                <div class="panel-body ">
+                    <h4>Personal</h4>
+                    <div>Race: <strong>{{adventurer.race.name}}</strong></div>
+                    <div>Occupation: <strong>{{adventurer.type}}</strong></div>
+                    <div>Birth Date: <strong>{{TimeManager().getGameTime(adventurer.birthTime).toDateString()}}</strong> (<strong>{{AdventurerManager().getAge(adventurer)}}</strong>years
+                        old)
+                    </div>
+                    <h4>Skills</h4>
+                    <span v-for="skill in adventurer.skills " :title="skill.name + ' ' + skill.amount "><img :alt="skill.name " v-for="n in skill.amount " width="24px " :src=" 'img/icons/' + DataManager().getData( 'skills', skill.name).icon + '.png' " /></span>
+                    <h4>Employment</h4>
+                    <img src="./img/icons/crown-coin.png" width="16px" /> Claims <strong>{{adventurer.wage}}</strong>% of
+                    earnings
+                    <h4>Injuries</h4>
+                    <ul>
+                        <li v-if="adventurer.injuries" v-for="injury in adventurer.injuries">
+                            {{injury.injuryType}} {{injury.bodyPart}}
+                        </li>
+                    </ul>
                 </div>
                 <div class="panel-footer ">
                     <span>{{adventurer.coins}} coins</span>
@@ -107,7 +148,16 @@
                     <div>Race: <strong>{{adventurer.race.name}}</strong></div>
                     <div>Occupation: <strong>{{adventurer.type}}</strong></div>
                     <div>Birth Date: <strong>{{TimeManager().getGameTime(adventurer.birthTime).toDateString()}}</strong></div>
+                    <div>Death Date: <strong>{{TimeManager().getGameTime(adventurer.timeOfDeath).toDateString()}}</strong> (Age
+                        at death: <strong>{{AdventurerManager().getAgeAtDeath(adventurer)}}</strong>)</div>
                     <span v-for="skill in adventurer.skills " :title="skill.name + ' ' + skill.amount "><img :alt="skill.name " v-for="n in skill.amount " width="24px " :src=" 'img/icons/' + DataManager().getData( 'skills', skill.name).icon + '.png' " /></span>
+                    <h4>Injuries</h4>
+                    <ul>
+                        <li v-if="adventurer.injuries" v-for="injury in adventurer.injuries">
+                            {{injury.injuryType}} {{injury.bodyPart}}
+                        </li>
+                    </ul>
+                    <div>Cause of Death: <strong>{{adventurer.causeOfDeath}}</strong></div>
                 </div>
                 <!-- <div class="panel-footer ">                   
                 </div> -->
