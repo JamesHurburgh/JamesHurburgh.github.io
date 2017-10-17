@@ -27,15 +27,6 @@
     }
 }, {
     "name": "Cart loads of coins",
-    "description": "Collect 10,000 coins",
-    "icon": "achievement.png",
-    "trigger": {
-        "type": "statistic",
-        "statistic": "get-coins",
-        "statisticamount": "10,000"
-    }
-}, {
-    "name": "Treasury o' coins",
     "description": "Collect 100,000 coins",
     "icon": "achievement.png",
     "trigger": {
@@ -113,6 +104,24 @@
     "trigger": {
         "type": "statistic",
         "statistic": "hire-adventurer",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "Patriarchy",
+    "description": "Hire a lot of men",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "hire-male",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "Matriarchy",
+    "description": "Hire a lot of women",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "hire-female",
         "statisticamount": "100"
     }
 }, {
@@ -195,5 +204,149 @@
         "type": "statistic",
         "statistic": "hire-adventurer-mage",
         "statisticamount": "100"
+    }
+}, {
+    "name": "Standard issue",
+    "description": "Hire a lot of humans",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "hire-adventurer-human",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "Lots of elfs",
+    "description": "Hire a lot of elfs",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "hire-adventurer-elf",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "Lots of elfs",
+    "description": "Hire a lot of orcs",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "hire-adventurer-orc",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "High resolution",
+    "description": "Hire a lot of pixies",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "hire-adventurer-pixie",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "You got schooled",
+    "description": "Hire a lot of merfolk",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "hire-adventurer-merfolk",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "Schools out",
+    "description": "Hire a lot of lighfoots",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "hire-adventurer-lighfoot",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "Fortress full of dwarves",
+    "description": "Hire a lot of dwarves",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "hire-adventurer-dwarf",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "Here come the giants",
+    "description": "Hire a lot of giants",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "hire-adventurer-giant",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "Reptile House",
+    "description": "Hire a lot of tarkash",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "hire-adventurer-",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "Rock Group",
+    "description": "Hire a lot of boldorns",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "hire-adventurer-boldorn",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "Army of mantis men",
+    "description": "Hire a lot of phsytik",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "hire-adventurer-phsytik",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "Mission Possible",
+    "description": "Succeed in a lot of quests",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "succeed-quest",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "Mission Possible 2",
+    "description": "Succeed in a lot more quests",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "succeed-quest",
+        "statisticamount": "1000"
+    }
+}, {
+    "name": "Mission Impossible",
+    "description": "Fail a lot of quests",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "fail-quest",
+        "statisticamount": "100"
+    }
+}, {
+    "name": "Mission Impossible 2",
+    "description": "Fail a lot more quests",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "fail-quest",
+        "statisticamount": "1000"
+    }
+}, {
+    "name": "Dead End",
+    "description": "Have an adventurer die",
+    "icon": "achievement.png",
+    "trigger": {
+        "type": "statistic",
+        "statistic": "death-adventurer",
+        "statisticamount": "1"
     }
 }]

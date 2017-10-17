@@ -40,6 +40,7 @@ define([
             };
 
             this.trackStat = function (action, subject, amount) {
+                if (!amount) amount = 1;
                 var name = this.getStatName(action, subject);
                 stat = this.getStat(name);
                 if (!stat) {
@@ -48,6 +49,12 @@ define([
                     stat.current += amount;
                     stat.allTime += amount;
                 }
+            };
+
+            this.trackStats = function (action, subjects) {
+                subjects.forEach(function (subject) {
+                    this.trackStat(action, subject);
+                }, this);
             };
 
             this.filteredStats = function (filter) {

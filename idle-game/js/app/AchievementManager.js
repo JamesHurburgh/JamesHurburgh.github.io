@@ -26,6 +26,7 @@ define([
                 if (!this.hasAchievement(achievement.name)) {
                     this.getClaimedAchievements().push({ "name": achievement.name, "timeClaimed": Date.now() });
                     this.gameController.MessageManager().message("Got achievement:" + achievement.name + " (" + achievement.description + ")");
+                    this.gameController.StatisticsManager().trackStat("claim", "achievement");
                 }
             };
 
