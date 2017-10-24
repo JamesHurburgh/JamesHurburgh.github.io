@@ -1,0 +1,30 @@
+[{
+        "race": "Dwarf",
+        "translations": [
+            "elf|tree hugger"
+        ]
+    }, {
+        "race": "Boldorn",
+        "translations": [
+            "human|squishy",
+            "giant|big squishy",
+            "dwarf|little squishy",
+            "lighfoot|tiny squishy"
+        ]
+    },
+    {
+        "race": "Orc",
+        "pronunciations": [
+            "ng|nk",
+            "am|arm",
+            "es|eks",
+            "ph|f",
+            "il|al",
+            "ip|ack",
+            "nd|nkd",
+            "ew|ah",
+            "li|ki"
+        ]
+
+    }
+]

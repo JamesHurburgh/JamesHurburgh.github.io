@@ -36,6 +36,8 @@ define([
                 }
                 if (!adventurer.race) {
                     adventurer.race = data.races[0];
+                } else {
+                    adventurer.race = data.races.filter(race => race.name == adventurer.race.name)[0];
                 }
                 if (adventurer.birthTime === undefined || adventurer.birthTime === null || isNaN(adventurer.birthTime)) {
                     adventurer.birthTime = Date.now() - (adventurer.age * 518400000) - (Math.random() * 518400000);
@@ -46,6 +48,7 @@ define([
                     adventurer.name.first = chance.first({ gender: adventurer.gender });
                     adventurer.name.full = adventurer.name.first + " " + adventurer.name.last;
                 }
+
 
             };
 
@@ -106,7 +109,7 @@ define([
                 adventurer.name.full = adventurer.name.first + " " + adventurer.name.last;
                 var age = Math.floor(Math.random() * (raceTemplate.oldAge - raceTemplate.matureAge)) + raceTemplate.matureAge;
                 adventurer.birthTime = Date.now() - (age * 518400000) - (Math.random() * 518400000);
-                adventurer.wage = common.varyFloat(adventurerTemplate.baseCost, 0.3);
+                adventurer.wage = common.varyFloat(adventurerTemplate.baseCut, 0.3);
                 adventurer.coins = Math.floor(Math.random() * 10);
                 adventurer.experience = adventurerTemplate.baseExperience;
                 adventurer.status = "Idle";
@@ -122,8 +125,7 @@ define([
                 return this.getAdventurerList().filter(adventurer => adventurer.includeInParty);
             };
 
-            this.getCurrentPartyAttributes = function() {
-                var party = this.getCurrentParty();
+            this.getPartyAttributes = function(party) {
 
                 var allSkills = party.reduce(function(attributeNames, adventurer) {
                     return attributeNames.concat(adventurer.skills);
@@ -140,6 +142,12 @@ define([
                 }, []);
 
                 return attributes;
+
+            };
+
+            this.getCurrentPartyAttributes = function() {
+                var party = this.getCurrentParty();
+                return this.getPartyAttributes(party);
 
             };
 
@@ -304,6 +312,19 @@ define([
 
             };
 
+            this.returnFromQuest = function(adventurer, timeReturned) {
+                if (!adventurer) return;
+                if (!timeReturned) timeReturned = Date.now();
+                if (adventurer.injuries && adventurer.injuries.length !== 0) {
+                    adventurer.injuries.forEach(function(injury) {
+                        injury.healTime = timeReturned + injury.timeToHeal;
+                    }, this);
+                    adventurer.status = "Injured";
+                } else {
+                    this.setAdventurerRecovering(adventurer, timeReturned);
+                }
+            };
+
             this.setAdventurerRecovering = function(adventurer, healTime) {
                 if (!healTime) healTime = Date.now();
                 adventurer.status = "Recovering";
@@ -313,11 +334,31 @@ define([
 
             this.generateInjury = function(anatomy, injuryTime) {
                 if (!injuryTime) injuryTime = Date.now();
+                var timeToHeal = Math.floor(Math.random() * 7 * 1440000) + 1440000; // Recover for at least one day, up to a week.
                 return {
                     injuryType: "Injured",
                     bodyPart: chance.pickone(anatomy.bodyparts),
-                    healTime: injuryTime + Math.floor(Math.random() * 7 * 1440000) + 1440000 // Recover for at least one day, up to a week.
+                    timeToHeal: timeToHeal,
+                    healTime: injuryTime + timeToHeal
                 };
+            };
+
+            this.injureAdventurerOnQuest = function(adventurer, injuryType, injuryTime) {
+                adventurer = this.gameState.adventurerList.filter(a => a.id == adventurer.id)[0];
+                if (!adventurer.injuries) adventurer.injuries = [];
+
+                var anatomy = data.anatomy.filter(a => a.race == adventurer.race.name)[0];
+
+                var injury = this.generateInjury(anatomy, injuryTime);
+                adventurer.injuries.push(injury);
+
+                // Probably do some other stuff
+
+                this.trackAdventurerStats(adventurer, "injure", 1);
+                if (adventurer.injuries.length > 2) {
+                    this.killAdventurer(adventurer, injury, injuryTime);
+                }
+                return injury;
             };
 
             this.injureAdventurer = function(adventurer, causeOfInjury, injuryTime) {
@@ -331,15 +372,16 @@ define([
                 adventurer.status = "Injured";
                 this.trackAdventurerStats(adventurer, "injure", 1);
                 if (adventurer.injuries.length > 2) {
-                    this.killAdventurer(adventurer, causeOfInjury);
+                    this.killAdventurer(adventurer, injury, injuryTime);
                 }
                 return injury;
             };
 
-            this.killAdventurer = function(adventurer, causeOfDeath) {
+            this.killAdventurer = function(adventurer, causeOfDeath, timeOfDeath) {
+                if (!timeOfDeath) timeOfDeath = Date.now();
                 adventurer = this.gameState.adventurerList.filter(a => a.id == adventurer.id)[0];
                 adventurer.status = "Dead";
-                adventurer.timeOfDeath = Date.now();
+                adventurer.timeOfDeath = timeOfDeath;
                 adventurer.causeOfDeath = causeOfDeath;
                 this.trackAdventurerStats(adventurer, "death", 1);
             };

@@ -15,15 +15,53 @@
                     <h3 class="panel-title">{{quest.contract.name}}</h3>
                 </div>
                 <div class="panel-body">
+                    <div v-if="quest.tasks.length !== 0">
+                        <h4>Timeline</h4>
+                        <ul>
+                            <li v-for="task in quest.tasks">
+                                <template v-if="QuestManager().isTaskNewDay(quest, task)"><em>{{TimeManager().getGameTime(task.startTime).toDateString()}}</em></template>
+                                <template v-if="task.status == 'complete'"><em>{{TimeManager().getGameTime(task.startTime).toTimeString()}}</em>: {{task.name}} <template v-if="task.attempt > 1">({{task.attempt}})</template>
+                                <span v-if="task.skillTest === undefined" class='text-info'>Complete</span>
+                                <template v-else>
+                                        <span v-if="task.success" class="text-success">Success</span>
+                                        <span v-if="!task.success" class="text-warning">Fail</span>
+                                    </template>
+                                <template v-if="task.injury && task.injury.length !== 0">
+                                    <ul>
+                                        <li>{{task.injury.adventurer.name.full}} suffered <span class="text-danger">{{task.injury.injury.injuryType}} {{task.injury.injury.bodyPart}}</span></li>
+                                    </ul>
+                                </template>
+
+                                <template v-if="task.casualties && task.casualties.length !== 0">
+                                    <ul>
+                                        <li v-for="adventurer in task.casualties">
+                                            {{adventurer.name.full}} has <span class="text-danger">died</span> from {{task.injury.injury.injuryType}} {{task.injury.injury.bodyPart}}.
+                                        </li>
+                                    </ul>
+                                </template>
+                                </template>
+                                <template v-if="task.status == 'in-progress'"><em>{{TimeManager().getGameTime(task.startTime).toTimeString()}}</em>: {{task.name}} <span class="text-info">{{TimeManager().readableTime(task.finishes - Date.now())}} remaining</span>
+                                <ul v-if="task.skillTest">
+                                    <li>{{task.skillTest}} test</li>
+                                    <li>Difficulty: {{task.difficulty}}</li>
+                                    <li>Party Skill: {{task.partySkill}}</li>
+                                </ul>
+                                </template>
+                            </li>
+                        </ul>
+                    </div>
+                    <h4>Party</h4>
                     <ul>
                         <li v-for="adventurer in quest.party">
                             {{adventurer.name.full}}
                         </li>
                     </ul>
-                    <div class="progress progress-striped active">
-                        <div class="progress-bar" v-bind:style="{ width: QuestManager().questProgress(quest) + '%' }"></div>
+                    <div v-if="quest.tasks.length === 0">
+                        <div class="progress progress-striped active">
+                            <div class="progress-bar" v-bind:style="{ width: QuestManager().questProgress(quest) + '%' }"></div>
+                        </div>
+                        <div v-bind:class="{ 'text-success': NoticeManager().expiringDanger(quest.expires), 'text-warning': NoticeManager().expiringWarning(quest.expires), 'text-danger': NoticeManager().expiringSuccess(quest.expires) }">{{TimeManager().readableTime(quest.expires - Date.now())}} remaining</div>
                     </div>
-                    <div v-bind:class="{ 'text-success': NoticeManager().expiringDanger(quest.expires), 'text-warning': NoticeManager().expiringWarning(quest.expires), 'text-danger': NoticeManager().expiringSuccess(quest.expires) }">{{TimeManager().readableTime(quest.expires - Date.now())}} remaining</div>
                 </div>
             </div>
         </div>
@@ -38,13 +76,40 @@
                     </h3>
                 </div>
                 <div class="panel-body">
-                    <span class="text-info">{{quest.completionMessage}}</span>
-                    <span v-if="quest.casualaties.length !== 0" class="text-warning">{{quest.contract.deathMessage}}</span>
-                    <div>Ran from {{TimeManager().getGameTime(quest.start).toString()}} to {{TimeManager().getGameTime(quest.expires).toString()}}</div>
+                    <div v-if="!quest.tasks"><span class="text-info">{{quest.completionMessage}}</span></div>
+                    <div v-if="quest.tasks">
+                        <h4>Timeline:</h4>
+                        <ul>
+                            <li v-for="task in quest.tasks">
+                                <template v-if="QuestManager().isTaskNewDay(quest, task)"><em>{{TimeManager().getGameTime(task.startTime).toDateString()}}</em></template>
+                                <template v-if="task.status == 'complete'"><em>{{TimeManager().getGameTime(task.startTime).toTimeString()}}</em>: {{task.name}} <template v-if="task.attempt > 1">({{task.attempt}})</template>
+                                <span v-if="task.skillTest === undefined" class='text-info'>Complete</span>
+                                <template v-else>
+                                        <span v-if="task.success" class="text-success">Success</span>
+                                        <span v-if="!task.success" class="text-warning">Fail</span>
+                                    </template>
+                                <template v-if="task.injury && task.injury.length !== 0">
+                                    <ul>
+                                        <li>{{task.injury.adventurer.name.full}} suffered <span class="text-danger">{{task.injury.injury.injuryType}} {{task.injury.injury.bodyPart}}</span></li>
+                                    </ul>
+                                </template>
+
+                                <template v-if="task.casualties && task.casualties.length !== 0">
+                                    <ul>
+                                        <li v-for="adventurer in task.casualties">
+                                            {{adventurer.name.full}} has <span class="text-danger">died</span> from {{task.injury.injury.injuryType}} {{task.injury.injury.bodyPart}}.
+                                        </li>
+                                    </ul>
+                                </template>
+                                </template>
+                            </li>
+                            <li><em>{{TimeManager().getGameTime(quest.finishTime).toTimeString()}}</em>: Quest ended</li>
+                        </ul>
+                    </div>
+                    <!-- <div>Ran from {{TimeManager().getGameTime(quest.start).toString()}} to {{TimeManager().getGameTime(quest.expires).toString()}}</div> -->
                     <div v-if="quest.success">
                         <h4>Rewards</h4>
-                        <div v-if="quest.contract.contractAmount != undefined" class="text-success"><img src="./img/icons/crown-coin.png" width="24px" /> Contract amount: {{quest.contract.contractAmount}}
-                            coins
+                        <div v-if="quest.contract.contractAmount != undefined" class="text-success"><img src="./img/icons/crown-coin.png" width="24px" /> Contract amount: {{quest.contract.contractAmount}} coins
                         </div>
                         <div v-for="reward in quest.rewards">
                             <div class="text-success" v-if="reward.amount"><img :src="SpriteManager().getIcon(reward.type)" width="24px" /> {{reward.amount}} {{reward.type}}</div>
@@ -53,7 +118,7 @@
                         <h4>Wages paid</h4>
                         <div v-if="quest.wagesPaid" class="text-danger"><img src="./img/icons/crown-coin.png" width="24px" /> -{{quest.wagesPaid}} coins</div>
                     </div>
-                    <div v-if="quest.survivors.length !== 0">
+                    <div v-if="quest.survivors && quest.survivors.length !== 0">
                         <h4>Returned adventurers</h4>
                         <ul>
                             <li v-for="survivor in quest.survivors">
@@ -64,10 +129,10 @@
                             </li>
                         </ul>
                     </div>
-                    <div v-if="quest.casualaties.length !== 0">
+                    <div v-if="quest.casualties && quest.casualties.length !== 0">
                         <h4>Deaths</h4>
                         <ul>
-                            <li v-for="adventurer in quest.casualaties">
+                            <li v-for="adventurer in quest.casualties">
                                 <span class="text-danger">{{adventurer.name.full}}</span> ({{adventurer.type}})
                             </li>
                         </ul>

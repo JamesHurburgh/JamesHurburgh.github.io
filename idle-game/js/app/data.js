@@ -61,7 +61,8 @@ requirejs([
             locations: locations,
             renown: renown,
             races: races,
-            settings: settings
+            settings: settings,
+            input: { newTask: null }
         };
 
         var controller = new Vue({
@@ -78,6 +79,34 @@ requirejs([
                         skill = { "name": "unknown" };
                     }
                     return skill;
+                },
+                exportData: function (content, title) {
+                    if (!title) { title = "export"; }
+                    var name = prompt("Export as", title + '.json');
+                    if (!name || name === undefined || name === "") {
+                        name = 'export.json';
+                    }
+
+                    var text = encodeURIComponent(JSON.stringify(content));
+                    var data = "data:text/json;charset=utf-8," + text;
+
+                    var hf = document.createElement('a');
+
+                    hf.href = data;
+                    hf.download = name;
+                    hf.innerHTML = hf.download;
+                    document.getElementsByTagName("body")[0].appendChild(hf);
+                    hf.click();
+                    document.getElementsByTagName("body")[0].removeChild(hf);
+                },
+                addNewTaskToContract: function (contract) {
+                    if (!this.input.newTask) {
+                        this.input.newTask = {};
+                    } else {
+                        if (!contract.tasks) contract.tasks = [];
+                        contract.tasks.push(this.input.newTask);
+                        this.input.newTask = null;
+                    }
                 }
             },
         });
