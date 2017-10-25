@@ -20,7 +20,7 @@ define([
 
             this.getSelectedJobNotice = function() {
                 return this.gameState.selectedContract;
-            }
+            };
 
             this.prepContractQueue = function() {
                 var numberToPrep = Math.min(this.gameState.timeSinceLastLogin / 1000 / 60 / 10, 5); // Prep one every 10 minutes

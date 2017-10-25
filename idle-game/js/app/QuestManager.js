@@ -265,6 +265,7 @@ define([
 
                 // Retry
                 this.startTask(quest, task.id, task.finishes, task.attempt + 1);
+                task.mustSucceedForReward = false; // Remove requirement since a retry is possible
 
             };
 

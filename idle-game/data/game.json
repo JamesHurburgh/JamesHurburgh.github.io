@@ -3,7 +3,8 @@
     "description": "Adventuring is dangerous. Hire someone else to do it for you!",
     "author": "James Hurburgh",
     "author-uri": "",
-    "globals": [{
+    "globals": [
+        {
             "name": "chanceOfNewContract",
             "baseValue": 0.05
         },
@@ -36,7 +37,19 @@
             "baseValue": 1
         }
     ],
-    "versions": [{
+    "versions": [
+        {
+            "number": "0.12.1",
+            "description": "Bug fixes",
+            "features": [
+                "Added emphasis to require tasks."
+            ],
+            "bugfixes": [
+                "Fixed anomaly where succeeding a required task on a retry wouldn't be sufficient to pass the quest.",
+                "Fixed weirdness in contracts."
+            ]
+        },
+        {
             "number": "0.12.0",
             "description": "Interesting quests update",
             "features": [
