@@ -22,7 +22,7 @@
         }
     ],
     "requirements": {
-        "renown": 0,
+        "renown": 0
     },
     "startTaskId": "start",
     "tasks": [
