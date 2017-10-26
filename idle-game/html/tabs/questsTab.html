@@ -102,7 +102,7 @@
                                 </template>
                                 <template v-if="task.status == 'complete'">
                                     <em>{{TimeManager().getGameTime(task.startTime).toTimeString()}}</em>:
-                                    <span v-if="task.mustSucceedForReward" style="font-weight: bold">{{task.name}}</span>
+                                    <span v-if="task.required" style="font-weight: bold">{{task.name}}</span>
                                     <span v-else>{{task.name}}</span>
                                     <template v-if="task.attempt > 1">({{task.attempt}})</template>
                                     <span v-if="task.skillTest === undefined" class='text-info'>Complete</span>

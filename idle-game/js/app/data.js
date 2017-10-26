@@ -71,7 +71,7 @@ requirejs([
             computed: {},
             methods: {
                 toId: function (name) {
-                    return name.toLowerCase().replace(/\W/g, '');
+                    return name.toLowerCase().replace(/\W/g, '-');
                 },
                 getSkill: function (name) {
                     var skill = skills.filter(skill => skill.name == name)[0];

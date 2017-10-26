@@ -63,6 +63,7 @@ define([
                 }
 
                 contract.expires = Date.now() + Math.floor(1000 * this.gameController.EffectsManager().getGlobalValue("averageJobContractExpiry") * (Math.random() + 0.5));
+                if (!contract.requirements) contract.requirements = {};
                 contract.requirements.attributes = this.gameController.QuestManager().getSuggestedSkills(contract);
 
                 this.gameController.LocationManager().getCurrentLocation().availableContracts.push(contract);

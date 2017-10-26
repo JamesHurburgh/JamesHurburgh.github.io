@@ -34,13 +34,27 @@
                 Adventurers of Otium data manager
 
                 <ul class="nav nav-tabs">
-                    <li class="active"><a href="#locations" data-toggle="tab" aria-expanded="true">Locations</a></li>
-                    <li class=""><a href="#adventurers" data-toggle="tab" aria-expanded="true">Adventurers</a></li>
-                    <li class=""><a href="#achievements" data-toggle="tab" aria-expanded="true">Achievements</a></li>
-                    <li class=""><a href="#contracts" data-toggle="tab" aria-expanded="true">Contracts</a></li>
-                    <li class=""><a href="#items" data-toggle="tab" aria-expanded="true">Items</a></li>
-                    <li class=""><a href="#races" data-toggle="tab" aria-expanded="true">Races</a></li>
-                    <li class=""><a href="#skills" data-toggle="tab" aria-expanded="true">Skills</a></li>
+                    <li class="active">
+                        <a href="#locations" data-toggle="tab" aria-expanded="true">Locations</a>
+                    </li>
+                    <li class="">
+                        <a href="#adventurers" data-toggle="tab" aria-expanded="true">Adventurers</a>
+                    </li>
+                    <li class="">
+                        <a href="#achievements" data-toggle="tab" aria-expanded="true">Achievements</a>
+                    </li>
+                    <li class="">
+                        <a href="#contracts" data-toggle="tab" aria-expanded="true">Contracts</a>
+                    </li>
+                    <li class="">
+                        <a href="#items" data-toggle="tab" aria-expanded="true">Items</a>
+                    </li>
+                    <li class="">
+                        <a href="#races" data-toggle="tab" aria-expanded="true">Races</a>
+                    </li>
+                    <li class="">
+                        <a href="#skills" data-toggle="tab" aria-expanded="true">Skills</a>
+                    </li>
                 </ul>
                 <div id="myTabContent" class="tab-content">
                     <div class="tab-pane fade active in" id="locations">
@@ -209,11 +223,14 @@
                                                         <th>Success</th>
                                                         <th>Fail</th>
                                                         <th>Retry</th>
-                                                        <th>Injury On Fail</th>
+                                                        <th>Injury</th>
+                                                        <th>Required</th>
                                                     </tr>
                                                 </thead>
                                                 <tr v-for="task in contract.tasks" :class="{'info': contract.startTaskId == task.id, 'success': !task.taskAfterSuccess && !task.taskAfterFail }">
-                                                    <td>{{task.id}}<span v-if="contract.startTaskId == task.id">*</span></td>
+                                                    <td>{{task.id}}
+                                                        <span v-if="contract.startTaskId == task.id">*</span>
+                                                    </td>
                                                     <td>{{task.name}}</td>
                                                     <td>{{task.duration}} seconds</td>
                                                     <td>
@@ -223,27 +240,49 @@
                                                     <td>{{task.taskAfterSuccess}}</td>
                                                     <td>{{task.taskAfterFail}}</td>
                                                     <td>{{task.retry}}</td>
-                                                    <td>{{task.injuryOnFail}}</td>
+                                                    <td>{{task.injuryType}}</td>
+                                                    <td>{{task.required}}</td>
                                                 </tr>
                                                 <tfoot>
                                                     <tr v-if="input.newTask">
-                                                        <td><input type="text" maxlength="5" size="5" v-model="input.newTask.id"></td>
-                                                        <td><input type="text" maxlength="50" size="20" v-model="input.newTask.name"></td>
-                                                        <td><input type="number" min="0" size="5" v-model="input.newTask.duration"></td>
+                                                        <td>
+                                                            <input type="text" maxlength="5" size="5" v-model="input.newTask.id">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" maxlength="50" size="20" v-model="input.newTask.name">
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" min="0" size="5" v-model="input.newTask.duration">
+                                                        </td>
                                                         <td>
                                                             <select class="form-control" v-model="input.newTask.skillTest">
                                                                 <option disabled value="">Please select one</option>
                                                                 <option v-for="skill in skills">{{skill.name}}</option>
                                                             </select>
                                                         </td>
-                                                        <td><input type="number" min="0" max="10" v-model="input.newTask.difficulty"></td>
-                                                        <td><input type="text" maxlength="5" size="5" v-model="input.newTask.taskAfterSuccess"></td>
-                                                        <td><input type="text" maxlength="5" size="5" v-model="input.newTask.taskAfterFail"></td>
-                                                        <td><input type="number" min="0" max="5" v-model="input.newTask.retry"></td>
-                                                        <td><input type="text" v-model="input.newTask.injuryOnFail"></td>
+                                                        <td>
+                                                            <input type="number" min="0" max="10" v-model="input.newTask.difficulty">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" maxlength="5" size="5" v-model="input.newTask.taskAfterSuccess">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" maxlength="5" size="5" v-model="input.newTask.taskAfterFail">
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" min="0" max="5" v-model="input.newTask.retry">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" v-model="input.newTask.injuryType">
+                                                        </td>
+                                                        <td>
+                                                            <input type="checkbox" v-model="input.newTask.required">
+                                                        </td>
                                                     </tr>
                                                     <tr>
-                                                        <td><button type="button" class="btn btn-success" @click="addNewTaskToContract(contract)">Add new task</button></td>
+                                                        <td>
+                                                            <button type="button" class="btn btn-success" @click="addNewTaskToContract(contract)">Add new task</button>
+                                                        </td>
                                                     </tr>
                                                 </tfoot>
                                             </table>
@@ -388,7 +427,9 @@
                                                         </div>
                                                     </div>
                                                     <legend>Skills</legend>
-                                                    <span v-for="skill in adventurer.skills" :title="skill.name + ' ' + skill.amount"><img :alt="skill.name" v-for="n in skill.amount" width="24px" :src="'img/icons/' + getSkill(skill.name).icon + '.png'" /></span>
+                                                    <span v-for="skill in adventurer.skills" :title="skill.name + ' ' + skill.amount">
+                                                        <img :alt="skill.name" v-for="n in skill.amount" width="24px" :src="'img/icons/' + getSkill(skill.name).icon + '.png'" />
+                                                    </span>
                                                 </fieldset>
                                             </form>
                                         </div>
@@ -403,7 +444,8 @@
                     </div>
                     <div class="tab-pane fade" id="skills">
                         <ul>
-                            <li v-for="skill in skills"><img width="24px" :src="'img/icons/' + skill.icon + '.png'" /> {{skill.name}}
+                            <li v-for="skill in skills">
+                                <img width="24px" :src="'img/icons/' + skill.icon + '.png'" /> {{skill.name}}
                             </li>
                         </ul>
                     </div>

@@ -46,7 +46,8 @@
             ],
             "bugfixes": [
                 "Fixed anomaly where succeeding a required task on a retry wouldn't be sufficient to pass the quest.",
-                "Fixed weirdness in contracts."
+                "Fixed weirdness in contracts.",
+                "Fixed bug initialising requirements."
             ]
         },
         {
