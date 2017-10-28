@@ -3,8 +3,7 @@
     "description": "Adventuring is dangerous. Hire someone else to do it for you!",
     "author": "James Hurburgh",
     "author-uri": "",
-    "globals": [
-        {
+    "globals": [{
             "name": "chanceOfNewContract",
             "baseValue": 0.05
         },
@@ -37,7 +36,17 @@
             "baseValue": 1
         }
     ],
-    "versions": [
+    "versions": [{
+            "number": "0.12.2",
+            "description": "Contracts defined.",
+            "features": [
+                "All contracts updated with tasks.",
+                "Skills on quests are now only suggestions (the max skill test in that quest).",
+                "Each tasks skill test is varied slightly.",
+                "Data page will allow you to submit changes to contracts."
+            ],
+            "bugfixes": []
+        },
         {
             "number": "0.12.1",
             "description": "Bug fixes",

@@ -28,11 +28,37 @@
 </head>
 
 <body>
-    <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                <span class="navbar-brand" href="#">Otium Data</span>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./" target="_blank">Game</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="https://jameshurburgh.github.io/about.html" target="_blank">About the Author</a></li>
+                            <li><a href="https://www.patreon.com/bePatron?u=6205348" target="_blank">Become a Patron!</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="padding-bottom: 65px; padding-top: 65px;">
         <div class="row">
             <div id="data">
-                Adventurers of Otium data manager
-
                 <ul class="nav nav-tabs">
                     <li class="active">
                         <a href="#locations" data-toggle="tab" aria-expanded="true">Locations</a>
@@ -134,81 +160,85 @@
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#contracts-accordion" :href="'#' + toId(contract.name)">{{contract.name}}</a>
                                         <button type="button" class="btn btn-info btn-xs pull-right" @click="exportData(contract, toId(contract.name));">Export</button>
+                                        <button type="button" class="btn btn-info btn-xs pull-right" :disabled="contractIssues(contract).length !== 0" @click="postContract(contract, toId(contract.name));">Submit</button>
+                                        <span v-if="contractIssues(contract).length !== 0" class="label label-warning pull-right">{{contractIssues(contract).length}} issues</span>
                                     </h4>
                                 </div>
                                 <div :id="toId(contract.name)" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-12" v-if="contractIssues(contract).length > 0">{{contractIssues(contract)}}
+                                        </div>
+                                        <div class="col-sm-12">
                                             <form class="form-horizontal">
                                                 <fieldset>
-                                                    <legend>Basics</legend>
-                                                    <div class="form-group">
-                                                        <label for="name" class="col-lg-2 control-label">Name</label>
-                                                        <div class="col-lg-10">
-                                                            <input type="text" class="form-control" id="name" placeholder="Contract Name" v-model="contract.name">
+                                                    <div class="col-sm-6">
+                                                        <legend>Basics</legend>
+                                                        <div class="form-group">
+                                                            <label for="name" class="col-lg-2 control-label">Name</label>
+                                                            <div class="col-lg-10">
+                                                                <input type="text" class="form-control" id="name" placeholder="Contract Name" v-model="contract.name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="risk" class="col-lg-2 control-label">Risk</label>
+                                                            <div class="col-lg-4">
+                                                                <input type="text" class="form-control" id="risk" placeholder="0.5" v-model="contract.risk">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="duration" class="col-lg-2 control-label">Duration</label>
+                                                            <div class="col-lg-4">
+                                                                <input type="text" class="form-control" id="duration" placeholder="100" v-model="contract.duration">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="rewardFactor" class="col-lg-2 control-label">Reward</label>
+                                                            <div class="col-lg-4">
+                                                                <input type="text" class="form-control" id="rewardFactor" placeholder="0.5" v-model="contract.rewardFactor">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="experience" class="col-lg-2 control-label">Experience</label>
+                                                            <div class="col-lg-4">
+                                                                <input type="text" class="form-control" id="experience" placeholder="10" v-model="contract.experience">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="contractAmount" class="col-lg-2 control-label">Contract amount</label>
+                                                            <div class="col-lg-4">
+                                                                <input type="text" class="form-control" id="contractAmount" placeholder="10" v-model="contract.contractAmount">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="startTaskId" class="col-lg-2 control-label">Start Task Id</label>
+                                                            <div class="col-lg-4">
+                                                                <input type="text" class="form-control" id="startTaskId" placeholder="start" v-model="contract.startTaskId">
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <label for="risk" class="col-lg-2 control-label">Risk</label>
-                                                        <div class="col-lg-4">
-                                                            <input type="text" class="form-control" id="risk" placeholder="0.5" v-model="contract.risk">
+                                                    <div class="col-sm-6">
+                                                        <legend>Messages</legend>
+                                                        <div class="form-group">
+                                                            <label for="successMessage" class="col-lg-2 control-label">Success</label>
+                                                            <div class="col-lg-10">
+                                                                <input type="text" class="form-control" id="successMessage" placeholder="Success!" v-model="contract.successMessage">
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="duration" class="col-lg-2 control-label">Duration</label>
-                                                        <div class="col-lg-4">
-                                                            <input type="text" class="form-control" id="duration" placeholder="100" v-model="contract.duration">
+                                                        <div class="form-group">
+                                                            <label for="failureMessage" class="col-lg-2 control-label">Failure</label>
+                                                            <div class="col-lg-10">
+                                                                <input type="text" class="form-control" id="failureMessage" placeholder="Failure!" v-model="contract.failureMessage">
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="rewardFactor" class="col-lg-2 control-label">Reward</label>
-                                                        <div class="col-lg-4">
-                                                            <input type="text" class="form-control" id="rewardFactor" placeholder="0.5" v-model="contract.rewardFactor">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="experience" class="col-lg-2 control-label">Experience</label>
-                                                        <div class="col-lg-4">
-                                                            <input type="text" class="form-control" id="experience" placeholder="10" v-model="contract.experience">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="contractAmount" class="col-lg-2 control-label">Contract amount</label>
-                                                        <div class="col-lg-4">
-                                                            <input type="text" class="form-control" id="contractAmount" placeholder="10" v-model="contract.contractAmount">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="startTaskId" class="col-lg-2 control-label">Start Task Id</label>
-                                                        <div class="col-lg-4">
-                                                            <input type="text" class="form-control" id="startTaskId" placeholder="start" v-model="contract.startTaskId">
-                                                        </div>
-                                                    </div>
-                                                    <legend>Messages</legend>
-                                                    <div class="form-group">
-                                                        <label for="successMessage" class="col-lg-2 control-label">Success</label>
-                                                        <div class="col-lg-10">
-                                                            <input type="text" class="form-control" id="successMessage" placeholder="Success!" v-model="contract.successMessage">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="failureMessage" class="col-lg-2 control-label">Failure</label>
-                                                        <div class="col-lg-10">
-                                                            <input type="text" class="form-control" id="failureMessage" placeholder="Failure!" v-model="contract.failureMessage">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="deathMessage" class="col-lg-2 control-label">Death</label>
-                                                        <div class="col-lg-10">
-                                                            <input type="text" class="form-control" id="deathMessage" placeholder="Death!" v-model="contract.deathMessage">
+                                                        <div class="form-group">
+                                                            <label for="deathMessage" class="col-lg-2 control-label">Death</label>
+                                                            <div class="col-lg-10">
+                                                                <input type="text" class="form-control" id="deathMessage" placeholder="Death!" v-model="contract.deathMessage">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </fieldset>
                                             </form>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <legend>Json</legend>
-                                            <textarea class="form-control" style="height: 70vh;" id="json">{{contract}}</textarea>
                                         </div>
                                         <div class="col-sm-12">
                                             <legend>Tasks</legend>
@@ -228,9 +258,7 @@
                                                     </tr>
                                                 </thead>
                                                 <tr v-for="task in contract.tasks" :class="{'info': contract.startTaskId == task.id, 'success': !task.taskAfterSuccess && !task.taskAfterFail }">
-                                                    <td>{{task.id}}
-                                                        <span v-if="contract.startTaskId == task.id">*</span>
-                                                    </td>
+                                                    <td>{{task.id}}</td>
                                                     <td>{{task.name}}</td>
                                                     <td>{{task.duration}} seconds</td>
                                                     <td>
@@ -246,13 +274,13 @@
                                                 <tfoot>
                                                     <tr v-if="input.newTask">
                                                         <td>
-                                                            <input type="text" maxlength="5" size="5" v-model="input.newTask.id">
+                                                            <input type="text" maxlength="10" style="width:75px;" v-model="input.newTask.id">
                                                         </td>
                                                         <td>
                                                             <input type="text" maxlength="50" size="20" v-model="input.newTask.name">
                                                         </td>
                                                         <td>
-                                                            <input type="number" min="0" size="5" v-model="input.newTask.duration">
+                                                            <input type="number" min="0" style="width:35px;" v-model="input.newTask.duration">
                                                         </td>
                                                         <td>
                                                             <select class="form-control" v-model="input.newTask.skillTest">
@@ -261,16 +289,16 @@
                                                             </select>
                                                         </td>
                                                         <td>
-                                                            <input type="number" min="0" max="10" v-model="input.newTask.difficulty">
+                                                            <input type="number" min="0" max="10" style="width:35px;" v-model="input.newTask.difficulty">
                                                         </td>
                                                         <td>
-                                                            <input type="text" maxlength="5" size="5" v-model="input.newTask.taskAfterSuccess">
+                                                            <input type="text" maxlength="10" style="width:75px;" v-model="input.newTask.taskAfterSuccess">
                                                         </td>
                                                         <td>
-                                                            <input type="text" maxlength="5" size="5" v-model="input.newTask.taskAfterFail">
+                                                            <input type="text" maxlength="10" style="width:75px;" v-model="input.newTask.taskAfterFail">
                                                         </td>
                                                         <td>
-                                                            <input type="number" min="0" max="5" v-model="input.newTask.retry">
+                                                            <input type="number" min="0" max="5" style="width:35px;" v-model="input.newTask.retry">
                                                         </td>
                                                         <td>
                                                             <input type="text" v-model="input.newTask.injuryType">
