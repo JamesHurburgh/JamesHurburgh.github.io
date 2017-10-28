@@ -48,7 +48,8 @@
         "oldAge": 10,
         "averageHeight": 15,
         "averageWeight": 0.3,
-        "chance": 0.1
+        "chance": 0.1,
+        "langaugeSeed": "y8ghbp6cpgg0"
     },
     {
         "name": "Merfolk",
@@ -61,7 +62,8 @@
         "oldAge": 60,
         "averageHeight": 150,
         "averageWeight": 75,
-        "chance": 0.1
+        "chance": 0.1,
+        "langaugeSeed": "x2gpkwk19s00"
     },
     {
         "name": "Lighfoot",

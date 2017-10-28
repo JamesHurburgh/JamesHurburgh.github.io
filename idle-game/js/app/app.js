@@ -15,14 +15,14 @@ requirejs.config({
 
 // Start the main app logic.
 requirejs(['jquery', 'vue', 'alertify', 'store', 'chance', 'app/AdventurersGame'],
-    function ($, Vue, alertify, store, chance, AdventurersGame) {
+    function($, Vue, alertify, store, chance, AdventurersGame) {
 
         // extend jQuery to add a function that does it all for you
         // See: https://github.com/daneden/animate.css
         $.fn.extend({
-            animateCss: function (animationName) {
+            animateCss: function(animationName) {
                 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-                this.addClass('animated ' + animationName).one(animationEnd, function () {
+                this.addClass('animated ' + animationName).one(animationEnd, function() {
                     $(this).removeClass('animated ' + animationName);
                 });
                 return this;
@@ -55,7 +55,7 @@ requirejs(['jquery', 'vue', 'alertify', 'store', 'chance', 'app/AdventurersGame'
         }
 
 
-        Vue.config.errorHandler = function (err, vm, info) {
+        Vue.config.errorHandler = function(err, vm, info) {
             handleException(err);
         };
 
@@ -69,8 +69,11 @@ requirejs(['jquery', 'vue', 'alertify', 'store', 'chance', 'app/AdventurersGame'
                 data: adventurersGame,
                 computed: {},
                 methods: {},
-                // created: alert("created"),
-                // ready: alert("ready"),
+                mounted: function() {
+                    $("#SplashPageContainer").hide();
+                    $("#AdventurersGame").show();
+                }
+
             });
         } catch (ex) {
             handleException(ex);
