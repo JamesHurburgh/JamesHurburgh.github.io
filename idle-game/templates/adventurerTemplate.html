@@ -1,0 +1,143 @@
+<!-- Usage:
+    <adventurer :adventurer="adventurer"></adventurer>
+-->
+
+<template id="adventurer">
+    <div class="panel panel-default ">
+        <div class="panel-heading ">
+            <h3 class="panel-title">
+                <!-- <span :title="adventurer.type">{{adventurer.symbol}}</span>
+                <span :title="adventurer.race.name" :style="'color:' + adventurer.race.symbolColour">{{adventurer.race.symbol}}</span>
+                <span title="male" style="color:cornflowerblue;" v-if="adventurer.gender == 'male'">&#9794;</span>
+                <span title="female" style="color:pink;" v-if="adventurer.gender == 'female'">&#9792;</span>
+                <span>{{adventurer.name.full}}</span> -->
+                <adventurername :adventurer="adventurer"></adventurername>
+                <span class="label label-info pull-right" data-toggle="collapse" :data-target="'#'+adventurer.id" aria-expanded="false" aria-controls="collapseExample">show/hide</span>
+            </h3>
+        </div>
+        <div class="panel-body collapse" :id="adventurer.id">
+            <div v-if="showQuote" class="col-xs-12 well well-sm">"
+                <em>{{adventurer.quote}}</em>"</div>
+            <div class="col-xs-12 well well-sm">
+                <div>Race:
+                    <span :title="adventurer.race.name" :style="'color:' + adventurer.race.symbolColour">{{adventurer.race.symbol}}</span>
+                    <strong>{{adventurer.race.name}}</strong>
+                </div>
+                <div>Occupation:
+                    <span :title="adventurer.type">{{adventurer.symbol}}</span>
+                    <strong>{{adventurer.type}}</strong>
+                </div>
+                <div>Birth Date:
+                    <strong>{{birthDate}}</strong>
+                    <span v-if="!isDead">:
+                        <strong>{{age}}</strong> years old</span>
+                </div>
+                <div v-if="isDead">Death Date:
+                    <strong>{{deathDate}}</strong> (
+                    <strong>{{age}}</strong> years old at death</span>)
+                </div>
+                <div v-if="isDead">Cause of Death:
+                    <strong>{{causeOfDeath}}</strong>
+                </div>
+            </div>
+            <div v-if="!isDead" class="col-xs-12 well well-sm">
+                <span v-for="skill in adventurer.skills " :title="skill.name + ' ' + skill.amount ">
+                    <img :alt="skill.name " v-for="n in skill.amount " width="24px " :src="getIcon(skill.name)" />
+                </span>
+                <span class="pull-right">{{adventurer.experience}}xp</span>
+            </div>
+            <div v-if="!isDead" class="col-xs-12 well well-sm">
+                <img src="./img/icons/crown-coin.png" width="16px" /> Claims
+                <strong>{{adventurer.wage}}</strong>% of earnings
+                <span class="pull-right">{{adventurer.coins}} coins</span>
+            </div>
+            <div v-if="isInjured" class="col-xs-12 well well-sm">
+                <ul>
+                    <li v-for="injury in adventurer.injuries">
+                        {{injury.injuryType}} {{injury.bodyPart}}<span v-if="!isDead"> (Will be healed {{dateTime(injury.healTime)}})</span>
+                    </li>
+                </ul>
+            </div>
+            <div v-if="isRecovering" class="col-xs-12 well well-sm">Will be recovered at: {{dateTime(adventurer.recoverTime)}} </div>
+            <div v-if="isQuesting" class="col-xs-12 well well-sm">
+                Quest: {{questName}}
+            </div>
+        </div>
+        <!-- <div class="panel-footer ">
+                <span :class="{'text-muted': isDead}">{{adventurer.coins}} coins</span>
+                <div :class="{'text-muted': isDead}" class="pull-right">{{adventurer.experience}}xp</div>
+            </div> -->
+    </div>
+</template>
+
+<script type="text/javascript">
+    requirejs.config({
+        baseUrl: 'js/lib'
+    });
+    requirejs([
+            'vue',
+            'app/TimeManager',
+            'app/AdventurerManager',
+            'app/DataManager'
+        ],
+
+        function(Vue, TimeManager, AdventurerManager, DataManager) {
+            console.log("Registering adventurer template.")
+
+            Adventurer = new AdventurerManager();
+            Time = new TimeManager();
+            Data = new DataManager();
+
+            Vue.component('adventurer', {
+                props: ['adventurer'],
+                template: '#adventurer',
+                computed: {
+                    birthDate: function() {
+                        return Time.getGameTime(this.adventurer.birthTime).toDateString();
+                    },
+                    deathDate: function() {
+                        return Time.getGameTime(this.adventurer.timeOfDeath).toDateString();
+                    },
+                    causeOfDeath: function() {
+                        if (!this.adventurer.causeOfDeath) return "Unknown";
+                        return this.adventurer.causeOfDeath.injuryType + ' ' + this.adventurer.causeOfDeath.bodyPart;
+                    },
+                    age: function() {
+                        if (adventurer.status == "Dead") {
+                            return Adventurer.getAgeAtDeath(this.adventurer);
+                        } else {
+                            return Adventurer.getAge(this.adventurer);
+                        }
+                    },
+                    showQuote: function() {
+                        return this.adventurer.quote && this.adventurer.status == "Idle";
+                    },
+                    isInjured: function() {
+                        if (!this.adventurer.injuries) this.adventurer.injuries = [];
+                        return this.adventurer.injuries.length !== 0;
+                    },
+                    isDead: function() {
+                        return this.adventurer.status == "Dead";
+                    },
+                    isQuesting: function() {
+                        return this.adventurer.status == "Questing" && Adventurer.getAdventurersQuest(this.adventurer) !== undefined;
+                    },
+                    isRecovering: function() {
+                        return this.adventurer.status == "Recovering";
+                    },
+                    questName: function() {
+                        return Adventurer.getAdventurersQuest(this.adventurer).contract.name;
+                    }
+                },
+                components: {},
+                methods: {
+                    getIcon: function(skillName) {
+                        return 'img/icons/' + Data.getData('skills', skillName).icon + '.png';
+                    },
+                    dateTime: function(dateTime) {
+                        return Time.getGameTime(dateTime).toString();
+                    }
+                }
+            });
+        });
+</script>

@@ -30,12 +30,12 @@
                                     <em>{{TimeManager().getGameTime(task.startTime).toTimeString()}}</em>:
                                     <span style="font-weight: bold">{{task.name}}</span>
                                     <template v-if="task.attempt > 1">({{task.attempt}})</template>
-                                    <span v-if="task.skillTest === undefined" class='text-info'>Complete</span>
-                                    <template v-else>
+                                <span v-if="task.skillTest === undefined" class='text-info'>Complete</span>
+                                <template v-else>
                                         <span v-if="task.success" class="text-success">Success</span>
                                         <span v-if="!task.success" class="text-warning">Fail</span>
                                     </template>
-                                    <template v-if="task.injury && task.injury.length !== 0">
+                                <template v-if="task.injury && task.injury.length !== 0">
                                         <ul>
                                             <li>{{task.injury.adventurer.name.full}} suffered
                                                 <span class="text-danger">{{task.injury.injury.injuryType}} {{task.injury.injury.bodyPart}}</span>
@@ -43,7 +43,7 @@
                                         </ul>
                                     </template>
 
-                                    <template v-if="task.casualties && task.casualties.length !== 0">
+                                <template v-if="task.casualties && task.casualties.length !== 0">
                                         <ul>
                                             <li v-for="adventurer in task.casualties">
                                                 {{adventurer.name.full}} has
@@ -67,7 +67,7 @@
                     <h4>Party</h4>
                     <ul>
                         <li v-for="adventurer in quest.party">
-                            {{adventurer.name.full}}
+                            <adventurername :adventurer="adventurer"></adventurername>
                         </li>
                     </ul>
                     <div v-if="quest.tasks.length === 0">
@@ -105,12 +105,12 @@
                                     <span v-if="task.required" style="font-weight: bold">{{task.name}}</span>
                                     <span v-else>{{task.name}}</span>
                                     <template v-if="task.attempt > 1">({{task.attempt}})</template>
-                                    <span v-if="task.skillTest === undefined" class='text-info'>Complete</span>
-                                    <template v-else>
+                                <span v-if="task.skillTest === undefined" class='text-info'>Complete</span>
+                                <template v-else>
                                         <span v-if="task.success" class="text-success">Success</span>
                                         <span v-if="!task.success" class="text-warning">Fail</span>
                                     </template>
-                                    <template v-if="task.injury && task.injury.length !== 0">
+                                <template v-if="task.injury && task.injury.length !== 0">
                                         <ul>
                                             <li>{{task.injury.adventurer.name.full}} suffered
                                                 <span class="text-danger">{{task.injury.injury.injuryType}} {{task.injury.injury.bodyPart}}</span>
@@ -118,7 +118,7 @@
                                         </ul>
                                     </template>
 
-                                    <template v-if="task.casualties && task.casualties.length !== 0">
+                                <template v-if="task.casualties && task.casualties.length !== 0">
                                         <ul>
                                             <li v-for="adventurer in task.casualties">
                                                 {{adventurer.name.full}} has
@@ -152,7 +152,7 @@
                         <h4>Returned adventurers</h4>
                         <ul>
                             <li v-for="survivor in quest.survivors">
-                                {{survivor.adventurer.name.full}}
+                                <adventurername :adventurer="survivor.adventurer"></adventurername>
                                 <span class="text-success" v-if="survivor.coinsGained">+{{survivor.coinsGained}} coins</span>
                                 <span class="text-success" v-if="survivor.xpGained">+{{survivor.xpGained}} XP</span>
                                 <span class="text-danger" v-if="survivor.injuriesGained">+{{survivor.injuriesGained.injuryType}} {{survivor.injuriesGained.bodyPart}}</span>

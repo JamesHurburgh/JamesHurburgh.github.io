@@ -1,0 +1,33 @@
+<!-- Usage:
+    <adventurername :adventurer="adventurer"></adventurername>
+-->
+
+<template id="adventurername">
+    <span>
+        <span :title="adventurer.type">{{adventurer.symbol}}</span>
+        <span :title="adventurer.race.name" :style="'color:' + adventurer.race.symbolColour">{{adventurer.race.symbol}}</span>
+        <span title="male" style="color:cornflowerblue;" v-if="adventurer.gender == 'male'">&#9794;</span>
+        <span title="female" style="color:pink;" v-if="adventurer.gender == 'female'">&#9792;</span>
+        <span>{{adventurer.name.full}}</span>
+    </span>                
+</template>
+
+<script type="text/javascript">
+    requirejs.config({
+        baseUrl: 'js/lib'
+    });
+    requirejs([
+            'vue'
+        ],
+
+        function(Vue) {
+            console.log("Registering adventurername template.")
+
+            Vue.component('adventurername', {
+                props: ['adventurer'],
+                template: '#adventurername',
+                components: {},
+                methods: {}
+            });
+        });
+</script>

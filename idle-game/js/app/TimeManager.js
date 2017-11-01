@@ -1,19 +1,5 @@
 /*jshint esversion: 6 */
 
-/*
-
-1. Rename file and TimeManager to Manager name.
-2. Update the DATA_FILE variable.
-3. Paste the following into AdventureGame:
-
-            _TimeManager = new TimeManager(this);
-            this.TimeManager = function() {
-                return _TimeManager;
-            };
-4. Delete this comment block.
-
-*/
-
 define([
         "app/CommonFunctions",
         "app/DataManager"

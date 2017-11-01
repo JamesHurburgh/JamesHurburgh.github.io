@@ -3,18 +3,22 @@
 define([
         "app/CommonFunctions",
         "app/DataManager",
+        "app/QuestManager",
         "chance",
         "json!data/conversations.json"
     ],
     function AdventurerManager(
         CommonFunctions,
         DataManager,
+        QuestManager,
         Chance,
         conversations) {
 
         common = new CommonFunctions();
         data = new DataManager();
         this.chance = new Chance();
+        Quests = new QuestManager();
+
         return function AdventurerManager(gameController, gameState) {
 
             this.gameState = gameState;
@@ -48,6 +52,8 @@ define([
                     adventurer.name.first = chance.first({ gender: adventurer.gender });
                     adventurer.name.full = adventurer.name.first + " " + adventurer.name.last;
                 }
+
+                adventurer.symbol = data.adventurers.filter(type => type.name == adventurer.type)[0].symbol;
 
 
             };
@@ -188,7 +194,7 @@ define([
             this.getAdventurersQuest = function(adventurer) {
                 if (adventurer.status != "Questing") return;
                 var questResult;
-                this.gameController.QuestManager().getRunningQuests().forEach(function(quest) {
+                Quests.getRunningQuests().forEach(function(quest) {
                     if (quest.party.filter(a => a.id == adventurer.id).length > 0) {
                         questResult = quest;
                     }
@@ -286,6 +292,11 @@ define([
             };
 
             this.recoverAdventurers = function() {
+                // Make sure any idle adventurers are at the correct status.
+                var idleAdventurers = this.getAdventurersAtStatus("Idle").filter(adventurer => adventurer.injuries !== undefined && adventurer.injuries.length > 0);
+                idleAdventurers.forEach(function(adventurer) {
+                    adventurer.status = "Injured";
+                });
 
                 var healingAdventures = this.getAdventurersAtStatus("Injured").filter(adventurer => adventurer.injuries.filter(injury => injury.healTime <= Date.now()).length > 0);
                 healingAdventures.forEach(function(adventurer) {

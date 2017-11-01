@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Adventurers of Otium</title>
-    <link href="https://fonts.googleapis.com/css?family=Slackey" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Neucha|Walter+Turncoat" rel="stylesheet">
 
     <link rel="icon" type="image/png" href="img/favicon.png">
 
@@ -27,28 +27,25 @@
     <!--This sets the baseUrl to the "scripts" directory, and
     loads a script that will have a module ID of 'main'-->
     <script data-main="js/app/app.js" src="js/require.js"></script>
+
+    <!-- Load our css last -->
+    <link rel="stylesheet" href="css/otium.css" />
 </head>
 
 <body>
     <div id="log" style="display:none;">
-        <button onclick="localStorage.clear();">Clear Local Storage</button>
     </div>
 
     <script id="app">
-        var componentList = [];
-
         function loadWebComponent(name, path) {
-
-            // $('#loadingbox').modal('show');
-            componentList.push(name);
-
             $.get("./" + path + name + ".html", function(content) {
                 $("#" + name).replaceWith(content);
-                componentList.splice(componentList.indexOf(name), 1);
             });
         }
-
         loadWebComponent("app", "html/");
+    </script>
+    <script id="templates">
+        loadWebComponent("templates", "html/");
     </script>
 </body>
 

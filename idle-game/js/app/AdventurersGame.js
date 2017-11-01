@@ -65,6 +65,7 @@ define(["jquery",
             log = logFunction;
             if (saveData === undefined || saveData === null) saveData = {};
             this.gameState = saveData;
+            gameState = saveData;
 
             this._GameStateManager = new GameStateManager(this, this.gameState, saveFunction);
             this.GameStateManager = function() {
@@ -114,7 +115,8 @@ define(["jquery",
                 return this.$data._DataManager;
             };
 
-            this._TimeManager = new TimeManager(this);
+            Time = new TimeManager(this);
+            this._TimeManager = Time;
             this.TimeManager = function() {
                 if (this._TimeManager) return this._TimeManager;
                 return this.$data._TimeManager;

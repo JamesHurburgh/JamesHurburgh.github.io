@@ -27,15 +27,13 @@
 
                     <div v-bind:class="{ 'text-danger': NoticeManager().expiringDanger(NoticeManager().getSelectedJobNotice().expires), 'text-warning': NoticeManager().expiringWarning(NoticeManager().getSelectedJobNotice().expires), 'text-success': NoticeManager().expiringSuccess(NoticeManager().getSelectedJobNotice().expires) }">{{TimeManager().readableTime(NoticeManager().getSelectedJobNotice().expires - Date.now())}} remaining</div>
                     <div v-if="NoticeManager().getSelectedJobNotice().contractAmount != undefined">Contract amount: <strong>{{NoticeManager().getSelectedJobNotice().contractAmount}} coins</strong></div>
-                    <span>Requires adventurers with:</span>
                     <div v-if="NoticeManager().getSelectedJobNotice().requirements != undefined">
+                        <div>Party size: {{NoticeManager().getSelectedJobNotice().requirements.minAssigned}}-{{NoticeManager().getSelectedJobNotice().requirements.maxAssigned}} ({{AdventurerManager().getCurrentParty().length}})</div>
+                        <span>Recommended skills:</span>
                         <div v-for="skill in DataManager().skills">
                             <div v-if="QuestManager().isSkillRelevantToContract(skill, NoticeManager().getSelectedJobNotice())">
-                                <img :alt="skill.name" v-for="n in QuestManager().getCurrentQuestRequiredAndAssignedSkillCount(skill.name)" width="24px"
-                                    :src="'img/icons/' + DataManager().getData('skills', skill.name).icon + '-green.png'" /><img
-                                    :alt="skill.name" v-for="n in QuestManager().getCurrentQuestRequiredAndUnassignedSkillCount(skill.name)"
-                                    width="24px" :src="'img/icons/' + DataManager().getData('skills', skill.name).icon + '.png'"
-                                />
+                                <img :alt="skill.name" v-for="n in QuestManager().getCurrentQuestRequiredAndAssignedSkillCount(skill.name)" width="24px" :src="'img/icons/' + DataManager().getData('skills', skill.name).icon + '-green.png'" /><img :alt="skill.name"
+                                    v-for="n in QuestManager().getCurrentQuestRequiredAndUnassignedSkillCount(skill.name)" width="24px" :src="'img/icons/' + DataManager().getData('skills', skill.name).icon + '.png'" />
                             </div>
                         </div>
                     </div>
@@ -52,11 +50,12 @@
                             </tr>
                         </thead>
                         <tbody style="overflow: auto;">
-                            <tr v-for="adventurer in AdventurerManager().getAdventurersAtStatus('Idle')" @click="adventurer.includeInParty = !adventurer.includeInParty"
-                                v-bind:class="{ 'default': !adventurer.includeInParty, 'success': adventurer.includeInParty }">
-                                <td>{{adventurer.name.full}}</td>
+                            <tr v-for="adventurer in AdventurerManager().getAdventurersAtStatus('Idle')" @click="adventurer.includeInParty = !adventurer.includeInParty" v-bind:class="{ 'default': !adventurer.includeInParty, 'success': adventurer.includeInParty }">
                                 <td>
-                                    <span v-for="skill in adventurer.skills" :title="skill.name + ' ' + skill.amount"><img :alt="skill.name" v-for="n in skill.amount" width="24px" :src="'img/icons/' + DataManager().getData('skills', skill.name).icon + '.png'" /></span>
+                                    <adventurername :adventurer="adventurer"></adventurername>
+                                </td>
+                                <td>
+                                    <span v-for="skill in adventurer.skills" :title="skill.name + ' ' + skill.amount"><img :alt="skill.name" v-for="n in skill.amount" width="20px" :src="'img/icons/' + DataManager().getData('skills', skill.name).icon + '.png'" />
                                 </td>
                             </tr>
                         </tbody>
@@ -64,8 +63,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn pull-right" v-if="NoticeManager().getSelectedJobNotice()" data-dismiss="modal" v-bind:class="{ 'btn-success': QuestManager().canSendSelectedQuest(), 'btn-primary': !QuestManager().canSendSelectedQuest() }"
-                    @click="QuestManager().sendSelectedQuest()" :disabled="!QuestManager().canSendSelectedQuest()">Start</button>
+                <button type="button" class="btn pull-right" v-if="NoticeManager().getSelectedJobNotice()" data-dismiss="modal" v-bind:class="{ 'btn-success': QuestManager().canSendSelectedQuest(), 'btn-primary': !QuestManager().canSendSelectedQuest() }" @click="QuestManager().sendSelectedQuest()"
+                    :disabled="!QuestManager().canSendSelectedQuest()">Start</button>
                 <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Cancel</button>
                 <button type="button" class="btn btn-danger pull-left" v-if="NoticeManager().getSelectedJobNotice()" @click="QuestManager().rejectSelectedContract(contract)">Reject</button>
                 <button type="button" class="btn btn-info" @click="QuestManager().selectNextContract()">Next</button>

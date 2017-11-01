@@ -37,6 +37,19 @@
         }
     ],
     "versions": [{
+            "number": "0.12.4",
+            "description": "Adventurer look and feel",
+            "features": [
+                "Common view for Adventurers' basic identifier (Class, race, gender, name) with class symbols",
+                "Contracts now have specified numbers of adventurers to be assigned to them.",
+                "Global font update.  Pretty sure this won't be the final one though."
+            ],
+            "bugfixes": [
+                "Tasks now injure adventurers correctly.",
+                "Injured adventurers who are idle are switched back to injured.",
+                "Various fixes with contracts."
+            ]
+        }, {
             "number": "0.12.3",
             "description": "Splash screen",
             "features": [

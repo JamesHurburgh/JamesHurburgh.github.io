@@ -1,18 +1,19 @@
 /*jshint esversion: 6 */
 
-define([
+define(["chance",
         "app/CommonFunctions",
         "json!data/contracts.json"
     ],
     function QuestManager(
+        chance,
         CommonFunctions,
         contracts) {
 
         commonFunctions = new CommonFunctions();
         chance = new Chance();
-        return function QuestManager(gameController, gameState) {
+        return function QuestManager(gameController, gameStateP) {
 
-            this.gameState = gameState;
+            this.gameState = gameStateP;
             this.gameController = gameController;
 
             this.getCompletedQuests = function() {
@@ -21,8 +22,8 @@ define([
             };
 
             this.getRunningQuests = function() {
-                if (!this.gameState.runningQuests) this.gameState.runningQuests = [];
-                return this.gameState.runningQuests;
+                if (!gameState.runningQuests) gameState.runningQuests = [];
+                return gameState.runningQuests;
             };
 
             this.showQuestsTab = function() {
@@ -48,7 +49,7 @@ define([
             };
 
             this.isSkillRelevantToContract = function(skill, contract) {
-                if (!skill || !contract) return false;
+                if (!skill || !contract || !contract.requirements || !contract.requirements.attributes) return false;
                 var skillRequiredForContract = contract.requirements.attributes.filter(sk => sk.type == skill.name)[0];
                 return skillRequiredForContract !== undefined && skillRequiredForContract.amount > 0;
             };
@@ -69,14 +70,8 @@ define([
             this.canSendQuest = function(contract) {
                 if (!contract) return;
                 var adventurerManager = this.gameController.AdventurerManager();
-                if (adventurerManager.getCurrentParty().length < 1) {
-                    return false;
-                }
-
-                return true;
-                // return contract.requirements.attributes.reduce(function(canSend, skillRequirement) {
-                //     return canSend && adventurerManager.getCurrentPartyAttribute(skillRequirement.type) >= skillRequirement.amount;
-                // }, true);
+                var partySize = adventurerManager.getCurrentParty().length;
+                return contract.requirements.minAssigned <= partySize && partySize <= contract.requirements.maxAssigned;
             };
 
             this.getSuggestedSkills = function(contract) {
@@ -220,8 +215,18 @@ define([
             this.completeTask = function(quest, task) {
                 task.status = "complete";
 
+                if (!task.partySkill) {
+                    var partySkills = this.gameController.AdventurerManager().getPartyAttributes(quest.party);
+
+                    var partySkill = partySkills.filter(s => s.name == task.skillTest)[0];
+                    var partySkillAmount = 0;
+                    if (partySkill) partySkillAmount = partySkill.amount;
+                    task.partySkill = partySkillAmount;
+                }
+                var partyRoll = (Math.random() * task.partySkill);
+                var taskRoll = (Math.random() * task.difficulty);
                 // Check for injuries
-                var isInjured = task.injuryType && Math.random() * task.partySkill >= Math.random() * task.difficulty;
+                var isInjured = task.injuryType !== undefined && (partyRoll < taskRoll);
 
                 if (isInjured) {
                     var adventurer = chance.pickone(quest.party);

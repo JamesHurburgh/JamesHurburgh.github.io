@@ -35,11 +35,7 @@
             <div class="panel panel-default ">
                 <div class="panel-heading ">
                     <h3 class="panel-title ">
-                        <span style="color:cornflowerblue;" v-if="notice.adventurer.gender == 'male'">&#9794;</span>
-                        <span style="color:pink;" v-if="notice.adventurer.gender == 'female'">&#9792;</span>
-                        <span :style="'color:'+notice.adventurer.race.symbolColour">{{notice.adventurer.race.symbol}}</span>
-                        <span>{{notice.adventurer.name.full}}</span>
-                        <span>({{notice.adventurer.race.adjective}} {{notice.adventurer.type}})</span>
+                        <adventurername :adventurer="notice.adventurer"></adventurername>
                     </h3>
                 </div>
                 <div class="panel-body">
