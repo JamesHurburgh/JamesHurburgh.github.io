@@ -37,6 +37,16 @@
         }
     ],
     "versions": [{
+            "number": "0.12.5",
+            "description": "Adventurer details.",
+            "features": [
+                "Simple stats shown for adventurer.",
+                "Adventurer's are now paid wages per hour they have been on a job.",
+                "Adventurers now have an efficiency rating which will let them get stuff done faster, or slower, depending."
+            ],
+            "bugfixes": []
+        },
+        {
             "number": "0.12.4",
             "description": "Adventurer look and feel",
             "features": [
@@ -49,14 +59,16 @@
                 "Injured adventurers who are idle are switched back to injured.",
                 "Various fixes with contracts."
             ]
-        }, {
+        },
+        {
             "number": "0.12.3",
             "description": "Splash screen",
             "features": [
                 "I have a splash screen!"
             ],
             "bugfixes": []
-        }, {
+        },
+        {
             "number": "0.12.2",
             "description": "Contracts defined.",
             "features": [

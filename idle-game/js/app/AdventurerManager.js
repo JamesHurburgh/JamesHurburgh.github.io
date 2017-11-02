@@ -34,6 +34,7 @@ define([
             };
 
             this.addMissingFieldsToAdventurer = function(adventurer) {
+                var type = data.adventurers.filter(type => type.name == adventurer.type)[0];
                 if (!adventurer.age) {
                     var age = Math.floor(Math.random() * (adventurer.race.oldAge - adventurer.race.matureAge)) + adventurer.race.matureAge;
                     adventurer.age = age;
@@ -53,7 +54,17 @@ define([
                     adventurer.name.full = adventurer.name.first + " " + adventurer.name.last;
                 }
 
-                adventurer.symbol = data.adventurers.filter(type => type.name == adventurer.type)[0].symbol;
+                if (!adventurer.cut) {
+                    adventurer.cut = adventurer.wage;
+                    adventurer.wage = Math.ceil(common.varyFloat(adventurer.baseCost, 0.3));
+                }
+                adventurer.wage = Math.ceil(adventurer.wage);
+
+                if (!adventurer.efficiency || isNaN(adventurer.efficiency)) {
+                    adventurer.efficiency = common.varyFloat(type.baseEfficiency, 0.3);
+                }
+
+                adventurer.symbol = type.symbol;
 
 
             };
@@ -115,8 +126,10 @@ define([
                 adventurer.name.full = adventurer.name.first + " " + adventurer.name.last;
                 var age = Math.floor(Math.random() * (raceTemplate.oldAge - raceTemplate.matureAge)) + raceTemplate.matureAge;
                 adventurer.birthTime = Date.now() - (age * 518400000) - (Math.random() * 518400000);
-                adventurer.wage = common.varyFloat(adventurerTemplate.baseCut, 0.3);
+                adventurer.cut = common.varyFloat(adventurerTemplate.baseCut, 0.3);
+                adventurer.wage = Math.ceil(common.varyFloat(adventurerTemplate.baseCost, 0.3) / 10);
                 adventurer.coins = Math.floor(Math.random() * 10);
+                adventurer.efficiency = common.varyFloat(adventurerTemplate.baseEfficiency, 0.3);
                 adventurer.experience = adventurerTemplate.baseExperience;
                 adventurer.status = "Idle";
 
@@ -181,6 +194,13 @@ define([
                         return amount += attribute.amount;
                     }
                 }, 0);
+            };
+
+            this.getPartyEfficiency = function(party) {
+                var total = party.reduce(function(amount, adventurer) {
+                    return amount += adventurer.efficiency;
+                }, 0);
+                return total / party.length;
             };
 
             this.getAdventurersAtStatus = function(status) {

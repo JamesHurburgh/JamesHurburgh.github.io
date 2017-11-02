@@ -278,16 +278,18 @@ define(["chance",
 
             this.finishQuest = function(quest, finishes) {
                 if (!finishes) finishes = Date.now();
-                log("completeQuest");
+                log("finishQuest");
                 var contract = quest.contract;
                 quest.finishTime = finishes;
+
+                var duration = quest.finishTime - quest.start;
 
                 // Remove the quest from the running tab
                 this.getRunningQuests().splice(this.getRunningQuests().indexOf(quest), 1);
 
                 // Track the stats
-                this.gameController.StatisticsManager().trackStat("complete", "quest", 1);
-                this.gameController.StatisticsManager().trackStat("complete-quest", contract.name, 1);
+                this.gameController.StatisticsManager().trackStat("finish", "quest", 1);
+                this.gameController.StatisticsManager().trackStat("finish-quest", contract.name, 1);
 
                 quest.success = quest.party.length > 0 && quest.tasks.filter(task => task.required && !task.success).length === 0;
                 quest.survivors = [];
@@ -348,26 +350,22 @@ define(["chance",
                         }
                     }
 
-                    var remainingCoins = coins;
-                    // Divy up any coins
-                    if (coins > 0) {
-                        // var coinsPercentTaken = quest.survivors.reduce(function(accumulator, survivor) {
-                        //     return accumulator + survivor.adventurer.wage;
-                        // });
+                    quest.wagesPaid = 0;
+                    quest.cutsTaken = 0;
 
-                        for (var survivorIndexCoins = 0; survivorIndexCoins < quest.survivors.length; survivorIndexCoins++) {
-                            var survivorCoin = quest.survivors[survivorIndexCoins];
-                            var coinsGained = Math.ceil((survivorCoin.adventurer.wage / 100) * coins);
-                            remainingCoins -= coinsGained;
-                            survivorCoin.coinsGained = coinsGained;
-                            this.gameController.AdventurerManager().giveAdventurerCoins(survivorCoin.adventurer, coinsGained);
-                        }
+                    for (var survivorIndexCoins = 0; survivorIndexCoins < quest.survivors.length; survivorIndexCoins++) {
+                        var survivorCoin = quest.survivors[survivorIndexCoins];
+                        var cut = Math.ceil((survivorCoin.adventurer.cut / 100) * coins);
+                        var wage = Math.ceil((survivorCoin.adventurer.wage) * (duration / 60000));
 
+                        quest.cutsTaken += cut;
+                        quest.wagesPaid += wage;
+                        survivorCoin.coinsGained = cut + wage;
+                        this.gameController.AdventurerManager().giveAdventurerCoins(survivorCoin.adventurer, survivorCoin.coinsGained);
                     }
 
-                    quest.remainingCoins = remainingCoins;
-                    quest.wagesPaid = coins - remainingCoins;
-                    this.gameController.PlayerManager().giveCoins(remainingCoins);
+                    quest.remainingCoins = coins - quest.wagesPaid - quest.cutsTaken;
+                    this.gameController.PlayerManager().giveCoins(quest.remainingCoins);
 
                 } else {
                     quest.completionMessage = contract.failureMessage;
@@ -510,8 +508,11 @@ define(["chance",
                     this.completeQuest(quest);
                     return;
                 }
+
+                task.partyEfficiency = this.gameController.AdventurerManager().getPartyEfficiency(quest.party);
                 task.startTime = startTime;
-                task.finishes = startTime + task.duration * 1000;
+
+                task.finishes = startTime + (task.duration / task.partyEfficiency) * 1000;
                 task.status = "in-progress";
                 task.attempt = attempt;
                 task.difficulty = common.varyFloat(task.difficulty, 0.3);

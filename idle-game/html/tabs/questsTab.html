@@ -54,7 +54,7 @@
                                 </template>
                                 <template v-if="task.status == 'in-progress'">
                                     <em>{{TimeManager().getGameTime(task.startTime).toTimeString()}}</em>: {{task.name}}
-                                    <span class="text-info">{{TimeManager().readableTime(task.finishes - Date.now())}} remaining</span>
+                                    <span class="text-info">({{task.partyEfficiency}} efficiency) {{TimeManager().readableTime(task.finishes - Date.now())}} remaining</span>
                                     <ul v-if="task.skillTest">
                                         <li>{{task.skillTest}} test</li>
                                         <li>Difficulty: {{task.difficulty}}</li>
@@ -144,9 +144,17 @@
                             <div class="text-success" v-if="reward.type == 'item'">
                                 <img :src="SpriteManager().getIcon('item')" width="24px" /> {{reward.item.name}}</div>
                         </div>
-                        <h4>Wages paid</h4>
-                        <div v-if="quest.wagesPaid" class="text-danger">
-                            <img src="./img/icons/crown-coin.png" width="24px" /> -{{quest.wagesPaid}} coins</div>
+                        <template v-if="quest.wagesPaid">
+                            <h4>Wages paid</h4>
+                            <div class="text-danger">
+                                <img src="./img/icons/crown-coin.png" width="24px" /> -{{quest.wagesPaid}} coins</div>
+                        </template>
+                        <template v-if="quest.cutsTaken">
+                            <h4>Cuts taken</h4>
+                            <div class="text-danger">
+                                <img src="./img/icons/crown-coin.png" width="24px" /> -{{quest.cutsTaken}} coins</div>
+                        </template>
+
                     </div>
                     <div v-if="quest.survivors && quest.survivors.length !== 0">
                         <h4>Returned adventurers</h4>

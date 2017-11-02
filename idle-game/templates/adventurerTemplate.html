@@ -41,6 +41,7 @@
                 </div>
             </div>
             <div v-if="!isDead" class="col-xs-12 well well-sm">
+                <div>Efficiency: {{adventurer.efficiency}}</div>
                 <span v-for="skill in adventurer.skills " :title="skill.name + ' ' + skill.amount ">
                     <img :alt="skill.name " v-for="n in skill.amount " width="24px " :src="getIcon(skill.name)" />
                 </span>
@@ -48,19 +49,25 @@
             </div>
             <div v-if="!isDead" class="col-xs-12 well well-sm">
                 <img src="./img/icons/crown-coin.png" width="16px" /> Claims
-                <strong>{{adventurer.wage}}</strong>% of earnings
+                <strong>{{adventurer.cut}}</strong>% of earnings and
+                <strong>{{adventurer.wage}}</strong> per hour.
                 <span class="pull-right">{{adventurer.coins}} coins</span>
             </div>
             <div v-if="isInjured" class="col-xs-12 well well-sm">
                 <ul>
                     <li v-for="injury in adventurer.injuries">
-                        {{injury.injuryType}} {{injury.bodyPart}}<span v-if="!isDead"> (Will be healed {{dateTime(injury.healTime)}})</span>
+                        {{injury.injuryType}} {{injury.bodyPart}}
+                        <span v-if="!isDead"> (Will be healed {{dateTime(injury.healTime)}})</span>
                     </li>
                 </ul>
             </div>
             <div v-if="isRecovering" class="col-xs-12 well well-sm">Will be recovered at: {{dateTime(adventurer.recoverTime)}} </div>
             <div v-if="isQuesting" class="col-xs-12 well well-sm">
                 Quest: {{questName}}
+            </div>
+            <!-- Stats -->
+            <div v-if="showStats" class="col-xs-12 well well-sm">
+                Quests completed: {{questsCompletedCount}}
             </div>
         </div>
         <!-- <div class="panel-footer ">
@@ -127,6 +134,15 @@
                     },
                     questName: function() {
                         return Adventurer.getAdventurersQuest(this.adventurer).contract.name;
+                    },
+                    showStats: function() {
+                        return this.adventurer.questLog !== undefined && this.adventurer.questLog.length > 0;
+                    },
+                    questsCompletedCount: function() {
+                        if (this.adventurer.questLog !== undefined) {
+                            return this.adventurer.questLog.length;
+                        }
+                        return 0;
                     }
                 },
                 components: {},
