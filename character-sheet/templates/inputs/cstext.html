@@ -1,0 +1,60 @@
+<!-- Usage:
+    <cstext :value.sync="__PROPERTY__" :label="'__LABEL__'"></cstext>
+-->
+
+<template id="cstext">
+    <div>
+        <label :for="label" class="col-sm-2 col-md-1 control-label">
+            {{label}}</label>
+        <div class="col-sm-4 col-md-3">
+            <input type="text" class="form-control" :id="label" :value="value" @input="updateValue">
+        </div>
+    </div>
+</template>
+
+<script type="text/javascript">
+    requirejs.config({
+        baseUrl: 'js/lib',
+        paths: {
+            app: '../app',
+            models: '../app/models',
+            data: '../../data',
+        }
+    });
+    requirejs([
+            'vue'
+        ],
+
+        function(Vue) {
+            console.log("Registering cstext template.")
+
+            Vue.component('cstext', {
+                model: {
+                    prop: 'value'
+                },
+                props: {
+                    value: {
+                        required: true
+                    },
+                    label: {
+                        type: String,
+                        required: true
+                    }
+                },
+                data: function() {
+                    return {
+                        text: this.value
+                    };
+                },
+                template: '#cstext',
+                components: {},
+                methods: {
+                    updateValue: function(event) {
+                        console.log("Updating: " + event.currentTarget.value);
+                        this.$emit('update:value', event.currentTarget.value);
+                    }
+
+                }
+            });
+        });
+</script>
