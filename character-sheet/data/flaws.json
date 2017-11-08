@@ -1,0 +1,97 @@
+[
+	{
+		"name": "Addiction",
+		"category": "Mental",
+		"description": "Your character is hooked on a certain substance or behavior. If he doesn’t get it regularly, he gets anxious and goes out of his way to satisfy his need, even neglecting more important duties. If he goes three or more game sessions without indulging this addiction, he is assumed to have beaten it (your character loses the Flaw). The Storyteller is free to inflict harsh withdrawal symptoms, however. Note: Satisfying this particular addiction does not count as indulging a Vice such as Gluttony. No Willpower points are gained for doing so."
+	},
+	{
+		"name": "Amnesia",
+		"category": "Mental",
+		"description": "Your character cannot remember a certain period of her life. This might have been caused by physical or psychological trauma, and memories might come back at the most unexpected or inopportune moments. In addition, she might not remember allies or enemies from her past. This seeming disregard might insult others, make them abandon your character, or drive them to make her remember. For all she knows, there might be a warrant out for her arrest in a distant county or state."
+	},
+	{
+		"name": "Coward",
+		"category": "Mental",
+		"description": "Your character is afraid to confront unknown situations, and hesitates when he should act boldly."
+	},
+	{
+		"name": "Forgetful",
+		"category": "Mental",
+		"description": "Your character doesn’t have amnesia, but she does have trouble remembering particular details. What was the \"Name\" of that cursed book I was supposed to rescue from the library? The player should avoid relying on her own memory or asking for memory rolls for her character. The character doesn’t forget everything, especially not truly important details, but she should forget enough to make things frustrating for her companions."
+	},
+	{
+		"name": "Crippled",
+		"category": "Physical",
+		"description": "Your character cannot walk. He has no natural Speed trait, and must rely on a wheelchair or vehicle to travel. A manual wheelchair’s Speed is equal to your character’s Strength, but he must spend an action to move or suffers a -2 penalty to both Speed and any other action performed (he uses one arm to spin a wheel). An electric wheelchair has a Speed of 3 and allows for other actions in a turn without penalty (your characters’ hands are largely free)."
+	},
+	{
+		"name": "Dwarf",
+		"category": "Physical",
+		"description": "Your character is much shorter than the average person. His adult Size is 4. This Flaw awards points only if the character’s short size causes him physical or social problems (besides the obvious problem of having a low Health score)."
+	},
+	{
+		"name": "Hard of Hearing",
+		"category": "Physical",
+		"description": "Your character’s hearing isn’t so good. Subtract two dice from any hearing-based perception rolls. Even though he suffers this penalty on all hearing rolls, you get an experience point at the end of a session only if this Flaw caused him notable trouble."
+	},
+	{
+		"name": "Lame",
+		"category": "Physical",
+		"description": "Your character has a leg or foot condition that impedes his movement, slowing him down. His basic Speed factor is 2 (instead of 5). Add this to his Strength + Dexterity to determine his Speed trait (see p. 95). You get an experience point at the end of a session only if this Flaw causes your character notable trouble."
+	},
+	{
+		"name": "Mute",
+		"category": "Physical",
+		"description": "Your character cannot speak and must communicate through hand signs, gestures or by writing."
+	},
+	{
+		"name": "One Arm",
+		"category": "Physical",
+		"description": "Your character is missing an arm, which makes it hard to perform certain tasks. At the Storyteller’s discretion, tasks that normally require two hands take twice as long to perform or are impossible. If your character attempts to perform a challenging task in the normal amount of time, he suffers a -3 penalty."
+	},
+	{
+		"name": "One Eye",
+		"category": "Physical",
+		"description": "Your character is missing an eye. He has no real depth perception, so all penalties for ranged attacks are doubled. If he attempts to drive in heavy traffic, any 1’s rolled on any die cancel out successes on a one-to-one basis, and you may not re-roll 10’s."
+	},
+	{
+		"name": "Poor Sight",
+		"category": "Physical",
+		"description": "Your character’s sight isn’t so good. Subtract two dice from any sight-based perception rolls. Even though she suffers this penalty on all seeing rolls, you get an experience point at the end of a session only if this Flaw causes your character notable trouble."
+	},
+	{
+		"name": "Aloof",
+		"category": "Social",
+		"description": "Your character is uncomfortable in social settings and avoids crowds and interaction as much as possible. She dislikes being the center of attention and recoils from center stage. Experience is gained when she avoids attention or social environments and misses out on potential rewards as a result. Maybe she doesn’t get the job that she “deserves,” because the boss is looking for a people-person rather than a hard worker."
+	},
+	{
+		"name": "Behavior Blind",
+		"category": "Social",
+		"description": "Your character doesn’t really understand human behavior and is blind to common social cues that communicate other people’s basic feelings. Maybe he was raised by wolves or terrible parents, but he is socially maladapted. He can’t tell when others use sarcasm or innuendo, or if he’s boring them. An experience point is awarded only if this Flaw is directly related to a setback that delayed or prevented your character from achieving his goals. Perhaps an important contact or ally refused aid due to being insulted or disgusted by your character’s behavior. Note: This Flaw does not preclude your character from having the Empathy Skill, but barring successful Skill rolls, he cannot figure out other people’s moods."
+	},
+	{
+		"name": "Deformity",
+		"category": "Social",
+		"description": "Your character has a misshapen limb, a terrible visible scar or some other physical affliction that might cause revulsion in others. You suffer a -2 penalty on Social rolls when your character makes new acquaintances."
+	},
+	{
+		"name": "Embarrassing Secret",
+		"category": "Social",
+		"description": "Your character has a secret about her past that she must hide or else suffer shame and ostracism from her peers. An experience point is awarded only if your character harms her other causes by working to keep her secret. Perhaps she misses an important meeting with an ally so that she can distract a reporter from looking into her past. Extra experience can be awarded if the secret gets out, at which point this Flaw might be exchanged for Notoriety at the Storyteller’s discretion."
+	},
+	{
+		"name": "Notoriety",
+		"category": "Social",
+		"description": "Your character, like O.J. Simpson or Michael Jackson, is renowned for some heinous deed, regardless of whether he committed it or not. This Flaw could derive from his infamous family or from his association with a scandalous organization such as the Mob or a company known for environmental infractions. If recognized, he inspires a negative reaction in others. An experience point is awarded only if the negative reaction causes some harm to your character’s goals."
+	},
+	{
+		"name": "Racist/Sexist",
+		"category": "Social",
+		"description": "Your character has biased opinions of other races, genders, gender-preference groups or cultures. Unfortunately, he also has trouble keeping those opinions to himself, even in the presence of such people. Experience is gained when your character acts on his biases and is confronted, dismissed, ignored or even attacked for them."
+	},
+	{
+		"name": "Speech Impediment",
+		"category": "Social",
+		"description": "Your character has trouble speaking properly. This might be due to a lisp, stutter or wound. This Flaw should be roleplayed whenever your character speaks. If you consistently forget to do so, the Storyteller may warn you that your character’s condition is improving and might soon be cured."
+	}
+]

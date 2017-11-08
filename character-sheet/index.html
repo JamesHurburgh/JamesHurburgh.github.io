@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Char Sheet</title>
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <script src="./js/lib/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/alertify.min.css" />
+    <!-- Alertify Bootstrap theme -->
+    <link rel="stylesheet" href="css/alertify.bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!--This sets the baseUrl to the "scripts" directory, and
+    loads a script that will have a module ID of 'main'-->
+    <script data-main="js/app/app.js" src="js/require.js"></script>
+
+    <!-- Load our css last -->
+    <link rel="stylesheet" href="css/character-sheet.css" />
+</head>
+
+<body>
+    <div id="mainVue">
+        <script id="app">
+            function loadWebComponent(name, path) {
+                $.get("./" + path + name + ".html", function (content) {
+                    $("#" + name).replaceWith(content);
+                });
+            }
+            loadWebComponent("app", "html/");
+        </script>
+    </div>
+    <script id="templates">
+            loadWebComponent("templates", "html/");
+    </script>
+</body>
+
+</html>

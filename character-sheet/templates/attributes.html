@@ -1,0 +1,50 @@
+<!-- Usage:
+    <attributes v-model="character"></attributes>
+-->
+
+<template id="attributes">
+    <fieldset>
+        <legend>Attributes</legend>
+        <div v-for="attribute in getAttributes()" key="attribute.name" >
+            <label class="col-xs-6 col-sm-3 col-md-2 control-label">{{attribute.name}}</label>
+            <csdots class="col-xs-6 col-sm-3 col-md-2" :value.sync="character[attribute.name.toLowerCase()]" :min="1" :max="5"></csdots>
+        </div>
+
+    </fieldset>
+</template>
+
+<script type="text/javascript">
+    requirejs.config({
+        baseUrl: 'js/lib',
+        paths: {
+            app: '../app',
+            models: '../app/models',
+            data: '../../data',
+        }
+    });
+    requirejs([
+            'vue',
+            'json!data/attributes.json'
+        ],
+
+        function(Vue, attributes) {
+            console.log("Registering attributes template.")
+
+            Vue.component('attributes', {
+                model: {
+                    prop: 'character'
+                },
+                props: ['character'],
+                data: function() {
+                    return this.character;
+                },
+                template: '#attributes',
+                components: {},
+                methods: {
+                    getAttributes: function() {
+                        return attributes;
+                    }
+                }
+            });
+        });
+</script>

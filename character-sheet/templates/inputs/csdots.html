@@ -1,0 +1,78 @@
+<!-- Usage:
+    <csdots :value.sync="__PROPERTY__" :label="'__LABEL__'"></csdots>
+-->
+
+<template id="csdots">
+    <div style="margin-top: 2px; margin-bottom: 3px;">
+        <!-- <input type="number" :min="min" :max="max" class="form-control" :id="label" :value="value" @input="updateValue"> -->
+        <img src="..\img\delete.png" @click="decrement"/>
+        <span v-for="n in value"><img src="..\img\filled.png"></span><span v-for="n in unfilled()"><img src="..\img\empty.png"></span>
+        <img src="..\img\add.png" @click="increment" />
+    </div>
+</template>
+
+<script type="text/javascript">
+    requirejs.config({
+        baseUrl: 'js/lib',
+        paths: {
+            app: '../app',
+            models: '../app/models',
+            data: '../../data',
+        }
+    });
+    requirejs([
+            'vue'
+        ],
+
+        function(Vue) {
+            console.log("Registering csdots template.")
+
+            Vue.component('csdots', {
+                model: {
+                    prop: 'value'
+                },
+                props: {
+                    value: {
+                        type: Number,
+                        required: true
+                    },
+                    min: {
+                        type: Number,
+                        required: true
+                    },
+                    max: {
+                        type: Number,
+                        required: true
+                    }
+                },
+                data: function() {
+                    return {
+                        text: this.value
+                    };
+                },
+                template: '#csdots',
+                calculated: {},
+                methods: {
+                    updateValue: function(event) {
+                        this.setValue(Number(event.currentTarget.value));
+                        // var val = Math.min(this.max, Math.max(this.min, Number(event.currentTarget.value)));
+                        // console.log("Updating: " + val);
+                        // this.$emit('update:value', val);
+                    },
+                    unfilled: function() {
+                        return this.max - this.value;
+                    },
+                    increment: function() {
+                        this.setValue(this.value + 1);
+                    },
+                    decrement: function() {
+                        this.setValue(this.value - 1);
+                    },
+                    setValue: function(newValue) {
+                        this.value = Math.min(this.max, Math.max(newValue));
+                    }
+
+                }
+            });
+        });
+</script>

@@ -1,0 +1,49 @@
+<!-- Usage:
+    <skills v-model="character"></skills>
+-->
+
+<template id="skills">
+    <fieldset>
+        <legend>Skills</legend>
+            <div v-for="skill in getSkills()" key="skill.name" >
+                <label class="col-xs-6 col-sm-3 col-md-2 control-label">{{skill.name}}</label>
+                <csdots class="col-xs-6 col-sm-3 col-md-2" :value.sync="character[skill.name.toLowerCase()]" :min="0" :max="5"></csdots>
+            </div>
+    </fieldset>
+</template>
+
+<script type="text/javascript">
+    requirejs.config({
+        baseUrl: 'js/lib',
+        paths: {
+            app: '../app',
+            models: '../app/models',
+            data: '../../data',
+        }
+    });
+    requirejs([
+            'vue',
+            'json!data/skills.json'
+        ],
+
+        function(Vue, skills) {
+            console.log("Registering skills template.")
+
+            Vue.component('skills', {
+                model: {
+                    prop: 'character'
+                },
+                props: ['character'],
+                data: function() {
+                    return this.character;
+                },
+                template: '#skills',
+                components: {},
+                methods: {
+                    getSkills: function() {
+                        return skills;
+                    }
+                }
+            });
+        });
+</script>

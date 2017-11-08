@@ -1,0 +1,47 @@
+<!-- Usage:
+    <character :character="character"></character>
+-->
+
+<template id="characterTemplate">
+    <div>
+        <div class="form-group">
+            <personal v-model="character"></personal>
+            <attributes v-model="character"></attributes>
+            <skills v-model="character"></skills>
+            <merits v-model="character"></merits>
+            <flaws v-model="character"></flaws>
+            <arcana v-model="character"></arcana>
+        </div>
+    </div>
+</template>
+
+<script type="text/javascript">
+    requirejs.config({
+        baseUrl: 'js/lib',
+        paths: {
+            app: '../app',
+            models: '../app/models',
+            data: '../../data',
+        }
+    });
+    requirejs([
+            'vue'
+        ],
+
+        function(Vue) {
+            console.log("Registering character template.")
+
+            Vue.component('character', {
+                model: {
+                    prop: 'character'
+                },
+                props: ['character'],
+                data: function() {
+                    return this.character;
+                },
+                template: '#characterTemplate',
+                components: {},
+                methods: {}
+            });
+        });
+</script>

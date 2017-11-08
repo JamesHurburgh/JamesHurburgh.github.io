@@ -1,0 +1,56 @@
+[
+	{
+		"name": "Intelligence",
+		"category": "Mental",
+		"use": "Power",
+		"description": "The raw power of the mind. Cognitive capacity. The inherent capability to digest, comprehend and remember information — and to learn more. Intelligence is a direct measure of how smart your character is. She may be dull-minded or have narrow-vision. She may be book-smart, or she may simply be able to grasp concepts, interpret situations and solve problems quickly. Intelligence is valued by planners, theorists, scholars, white-collar employees and leaders."
+	},
+	{
+		"name": "Wits",
+		"category": "Mental",
+		"use": "Finesse",
+		"description": "The ability to think on one’s feet, under pressure or duress, without letting them see you sweat. Wits also encompasses an eye for detail, the ability to absorb what’s going on in the environment, and to react to events. It might mean recognizing that the temperature in a room slowly drops, that a landscape painting incorporates a disguised human face, or that a trap is about to be sprung. Wits involves the powers of perception and response. Your character may be oblivious, dumbfounded, quick-eyed or wary. The trait is useful for entrepreneurs, charlatans, athletes, tacticians, lawyers and criminals."
+	},
+	{
+		"name": "Resolve",
+		"category": "Mental",
+		"use": "Resistance",
+		"description": "The focus and determination to see your character’s will done. The capacity to stay on target, ignore distractions and to resist coercion or browbeating. Resolve is your character’s mental fortitude. His personal conviction. His clarity of vision or spirit. Your character may be easily distracted, unable to concentrate, resolute or single-minded. The trait is pivotal to resisting supernatural forms of mental control; it acts as a veritable defense of the mind. Resolve is valuable to leaders, motivators, soldiers, athletes, police and organizers."
+	},
+	{
+		"name": "Strength",
+		"category": "Physical",
+		"use": "Power",
+		"description": "Physical might. Sheer bodily power. The capacity to lift objects, move items, hit things and people, and do damage. Strength is a measure of muscle. Your character could be 98-pound weakling, he could carry a spare tire, or he could be lean and cut or bulky and brawny. Your character’s Strength score is used in hand-to-hand combat. This trait is instrumental to laborers, thugs, athletes, brawlers and law-enforcement agents. Strength, along with Dexterity, is a factor in determining your character’s Speed. Strength is also added to Brawl or Weaponry attacks to determine the amount of harm your character inflicts in combat."
+	},
+	{
+		"name": "Dexterity",
+		"category": "Physical",
+		"use": "Finesse",
+		"description": "Quickness. Response time. A delicate touch. Dexterity indicates how quickly and with how much finesse your character responds to his physical world. While high Wits dots helps your character spot trouble, high Dexterity dots help him react to it, whether with a counteraction or to simply get the hell out of the way. Dexterity also helps with hand-eye coordination, be it to fire an accurate shot, to juggle objects or to perform delicate jobs such as handle explosives. Your character might be sluggish, clumsy, slight, quick or nimble. Dexterity is invaluable to criminals, sports stars, surgeons and dancers. Dexterity, along with Strength, is a factor in determining your character’s Speed. Dexterity is also combined with Composure to determine your character’s Initiative in a fight."
+	},
+	{
+		"name": "Stamina",
+		"category": "Physical",
+		"use": "Resistance",
+		"description": "Sturdiness. Steadfastness. Sheer physical resilience. Stamina is a measure of how tough your character is. It indicates how far she can push her body, and how much physical abuse she can endure. Your character might be sickly and frail, or hardy and unstoppable. Bouncers, brawlers, triathletes, survivalists, heavy lifters and workaholics thrive on Stamina.Stamina, along with Size, is a factor in determining your character’s Health dots."
+	},
+	{
+		"name": "Presence",
+		"category": "Social",
+		"use": "Power",
+		"description": "Bearing. Stature. Assertiveness. Presence suggests the power of your character’s very identity. Attractiveness is only part of the trait. Your character may be jaw-dropping gorgeous, plain-Jane or downright ugly, but her Presence means much more. It reflects her sheer command over the attention of others. It’s her capacity to impose her will on others by being socially aggressive or powerful — a veritable bull in a china shop or someone who simply doesn’t accept no for an answer. This trait is essential to salespeople. Note that attractiveness alone is represented by the Striking Looks Merit, which grants bonus dice to Presence rolls."
+	},
+	{
+		"name": "Manipulation",
+		"category": "Social",
+		"use": "Finesse",
+		"description": "Charm. Persuasiveness. Charisma. The capacity to play upon the desires, hopes and needs of others to influence them. Manipulation reflects your character’s finesse in social situations. How well he can appeal to, gain the favor of and generally coerce others. Manipulation is applied to win smiles, to put people at ease or to gain favors. Where Presence deals in social force, Manipulation focuses on social subtlety. It’s the tool and trade of businesspeople, politicians, salesfolk and publicists. Your character may be a wallflower, he could frequently make off-color statements, he might have a winning smile and a hardy handshake, or he may be able to sell sand in the desert."
+	},
+	{
+		"name": "Composure",
+		"category": "Social",
+		"use": "Resistance",
+		"description": "Poise. Dignity. The capacity to remain calm and appear — and actually be — unfazed in social and threatening situations, usually harrowing ones. Your character might lose his temper at the slightest perceived insult, collapse emotionally under a mere pretense, weather a storm of verbal (or literal) slings and arrows, or have the nerve to look unspeakable horror in the eye. This trait is a measure of emotional fortitude, restraint and calm. It’s ideal among leaders, soldiers, moderators and anyone whose movements are public consumption. Composure is vital to resisting social influence and pressure — overt, covert or otherworldly. Composure is pivotal to resisting supernatural forms of emotional control; it acts as a veritable emotional defense. The trait is also vital to efforts among supernatural beings such as vampires and werewolves to restrain themselves when their blood is raised and frenzy threatens. Composure, along with Resolve, is a factor in determining your character’ s Willpower. Composure is also added to Dexterity to determine your character’s Initiative at the beginning of a fight."
+	}
+]

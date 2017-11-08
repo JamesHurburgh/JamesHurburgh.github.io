@@ -1,0 +1,42 @@
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="row marketing">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Character Editor</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Character <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" @click="createCharacter()">New Character</a></li>
+                                <li><a href="#" @click="createRandomCharacter()">Random Character</a></li>
+                                <li><a href="#" @click="saveLocally()">Save to browser</a></li>
+                                <li><a href="#" @click="loadLocally()">Load from browser</a></li>
+                                <li><a href="#" @click="saveToFile()">Save to file</a></li>
+                                <li><a href="#" onclick="document.getElementById('openFile').click()">Load from file</a><input id="openFile" type="file" accept=".json" @change="openFile" style="display:none" /></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://jameshurburgh.github.io/about.html">About the Author</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

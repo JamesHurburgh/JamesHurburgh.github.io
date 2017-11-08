@@ -1,0 +1,62 @@
+<!-- Usage:
+    <flaws v-model="character"></flaws>
+-->
+
+<template id="flaws">
+    <fieldset>
+        <legend>Flaws</legend>
+        <div class="col-xs-12 col-sm-4" v-for="(flaw, index) in character.flaws">
+            <div class="input-group">
+                <input type="text" class="form-control" v-model="flaw.name" @input="updateflaw(index, flaw)">
+                <div class="input-group-addon btn-danger" @click="removeFlaw(index)">❌</div>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <button class="btn btn-xs btn-info" @click="addFlaw()">➕</button>
+        </div>
+    </fieldset>
+</template>
+
+<script type="text/javascript">
+    requirejs.config({
+        baseUrl: 'js/lib',
+        paths: {
+            app: '../app',
+            models: '../app/models',
+            data: '../../data',
+        }
+    });
+    requirejs([
+            'vue',
+            'json!data/flaws.json'
+        ],
+
+        function(Vue, flaws) {
+            console.log("Registering flaws template.")
+
+            Vue.component('flaws', {
+                model: {
+                    prop: 'character'
+                },
+                props: ['character'],
+                data: function() {
+                    return this.character;
+                },
+                template: '#flaws',
+                components: {},
+                methods: {
+                    addFlaw: function() {
+                        this.character.flaws.push({
+                            name: ""
+                        });
+                    },
+                    removeFlaw: function(index) {
+                        this.character.flaws.splice(index, 1);
+                    },
+                    updateflaw: function(index, flaw) {
+                        this.character.flaws[index] = flaw;
+                    }
+                }
+            });
+        });
+</script>

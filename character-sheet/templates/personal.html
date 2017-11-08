@@ -1,0 +1,58 @@
+<!-- Usage:
+    <personal v-model="character"></personal>
+-->
+
+<template id="personal">
+        <fieldset>
+        <legend>Personal</legend>
+        
+        <cstextbox :value.sync="character.name" :label="'Name'"></cstextbox>
+        <cstextbox :value.sync="character.age" :label="'Age'"></cstextbox>
+        <cstextbox :value.sync="character.player" :label="'Player'"></cstextbox>
+        <cstextbox :value.sync="character.chronicle" :label="'Chronicle'"></cstextbox>
+        <cstextbox :value.sync="character.concept" :label="'Concept'"></cstextbox>
+        <cstextbox :value.sync="character.virtue" :label="'Virtue'"></cstextbox>
+        <cstextbox :value.sync="character.vice" :label="'Vice'"></cstextbox>
+        <cstextbox :value.sync="character.path" :label="'Path'"></cstextbox>
+        <cstextbox :value.sync="character.order" :label="'Order'"></cstextbox>
+        <cstextbox :value.sync="character.cabal" :label="'Cabal'"></cstextbox>
+        
+        <cstextbox :value.sync="character.size" :label="'Size'"></cstextbox>
+        <cstextbox :value="character.defense()" :label="'Defense'"></cstextbox>
+        <cstextbox :value="character.initiativeMod()" :label="'Initiative Mod'"></cstextbox>
+        <cstextbox :value="character.speed()" :label="'Speed'"></cstextbox>
+        <cstextbox :value.sync="character.experience" :label="'Experience'"></cstextbox>
+
+    </fieldset>
+</template>
+
+<script type="text/javascript">
+    requirejs.config({
+        baseUrl: 'js/lib',
+        paths: {
+            app: '../app',
+            models: '../app/models',
+            data: '../../data',
+        }
+    });
+    requirejs([
+            'vue'
+        ],
+
+        function(Vue) {
+            console.log("Registering personal template.")
+
+            Vue.component('personal', {
+                model: {
+                    prop: 'character'
+                },
+                props: ['character'],
+                data: function() {
+                    return this.character;
+                },
+                template: '#personal',
+                components: {},
+                methods: {}
+            });
+        });
+</script>
