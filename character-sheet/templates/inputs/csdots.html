@@ -5,9 +5,9 @@
 <template id="csdots">
     <div style="margin-top: 2px; margin-bottom: 3px;">
         <!-- <input type="number" :min="min" :max="max" class="form-control" :id="label" :value="value" @input="updateValue"> -->
-        <img src="..\img\delete.png" @click="decrement"/>
-        <span v-for="n in value"><img src="..\img\filled.png"></span><span v-for="n in unfilled()"><img src="..\img\empty.png"></span>
-        <img src="..\img\add.png" @click="increment" />
+        <img src=".\img\delete.png" @click="decrement"/>
+        <span v-for="n in value"><img src=".\img\filled.png"></span><span v-for="n in unfilled()"><img src=".\img\empty.png"></span>
+        <img src=".\img\add.png" @click="increment" />
     </div>
 </template>
 
