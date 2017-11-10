@@ -4,7 +4,7 @@
 
 <template id="skills">
     <fieldset>
-        <legend>Skills</legend>
+        <h3>Skills</h3>
             <div v-for="skill in getSkills()" key="skill.name" >
                 <label class="col-xs-6 col-sm-3 col-md-2 control-label">{{skill.name}}</label>
                 <csdots class="col-xs-6 col-sm-3 col-md-2" :value.sync="character[skill.name.toLowerCase()]" :min="0" :max="5"></csdots>

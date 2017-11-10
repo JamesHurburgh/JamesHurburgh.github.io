@@ -1,22 +1,128 @@
-[
-    {
-        "name": "Mastigos",
-        "description": ""
+[{
+        "name": "Acanthus",
+        "aka": ["Enchanters"],
+        "path": "Thistle",
+        "watchtower": "Lunargent Thorn",
+        "realm": "Acadia",
+        "kingdom": "Enchantment",
+        "abode": "Fae",
+        "favouredResistance": "Composure",
+        "rulingArcana": ["Time", "Fate"],
+        "inferiorArcana": "Forces",
+        "concepts": [
+            "Charlatan",
+            "Karmic enforcer",
+            "Schizophrenic",
+            "Contemporary bard",
+            "Gypsy prophet",
+            "Lucky ne’er-do-well"
+        ],
+        "summary": "Relying on luck and intuition to guide their way",
+        "magicalTools": {
+            "wands": ["Glass", "Crystal", "Plastic", "Silver"],
+            "weapons": ["Knife", "Rapier", "Bow and arrow"]
+        }
     },
     {
-        "name": "Thyrsus",
-        "description": ""
+        "name": "Mastigos",
+        "aka": ["Warlocks"],
+        "path": "Scourging",
+        "watchtower": "Iron Gauntlet",
+        "realm": "Pandemonium",
+        "kingdom": "Nightmares",
+        "abode": "Demons",
+        "favouredResistance": "Resolve",
+        "rulingArcana": ["Space", "Mind"],
+        "inferiorArcana": "Matter",
+        "concepts": [
+            "Creepy infernalist",
+            "Itinerant demon slayer",
+            "Struggling antihero",
+            "Unseen assassin",
+            "Haunter-of-nightmares",
+            "Real politik diplomat",
+            "Carnival dream interpreter"
+        ],
+        "summary": "Exulting in unfettered will",
+        "magicalTools": {
+            "wands": ["Iron", "Brass", "Leather"],
+            "weapons": ["Knife", "Scimitar (or other curved sword such as a katana)", "Whip"]
+        }
     },
     {
         "name": "Moros",
-        "description": ""
-    },
-    {
-        "name": "Acanthus",
-        "description": ""
+        "aka": ["Necromancers"],
+        "path": "Doom",
+        "watchtower": "Lead Coin",
+        "realm": "Stygia",
+        "kingdom": "Crypts",
+        "abode": "Shades",
+        "favouredResistance": "Composure",
+        "rulingArcana": ["Matter", "Death"],
+        "inferiorArcana": "Spirit",
+        "concepts": [
+            "Thanatologist",
+            "Speaker for the dead",
+            "Modern alchemist",
+            "Parapsychologist",
+            "Elite assassin",
+            "Leader of a ghostly spy ring",
+            "Dangerous death cultist",
+            "Euthanasia activist",
+            "Inquisitive vivisectionist"
+        ],
+        "summary": "Remaining steadfast during change",
+        "magicalTools": {
+            "wands": ["Lead", "Bone", "Precious gems"],
+            "weapons": ["Knife", "Hammer", "Mace"]
+        }
     },
     {
         "name": "Obrimos",
-        "description": ""
+        "aka": ["Theurgists"],
+        "path": "the Mighty",
+        "watchtower": "Golden Key",
+        "realm": "the Aether",
+        "kingdom": "Celestial Spheres",
+        "abode": "Angels",
+        "favouredResistance": "Resolve",
+        "rulingArcana": ["Forces", "Prime"],
+        "inferiorArcana": "Death",
+        "concepts": [
+            "Soldier of God",
+            "Terrorist",
+            "Martial artist",
+            "Hyperdisciplined scholar of philology",
+            "Awakened cop",
+            "Defender of the weak",
+            "Contemporary inquisitor",
+            "Enforcer",
+            "Neighborhood hero",
+            "Uncompromising zealot",
+            "Monster hunter"
+        ],
+        "summary": "Pursuing a divine mandate.",
+        "magicalTools": {
+            "wands": ["Steel", "Petrified wood", "Gold"],
+            "weapons": ["Knife", "Spear", "Broadsword (or other doublebladed straight sword such as a Roman gladius)"]
+        }
+    },
+    {
+        "name": "Thyrsus",
+        "aka": ["Shamans"],
+        "path": "Ecstasy",
+        "watchtower": "Stone Book",
+        "realm": "Primal Wild",
+        "kingdom": "Totems",
+        "abode": "Beasts",
+        "favouredResistance": "Composure",
+        "rulingArcana": ["Life", "Spirit"],
+        "inferiorArcana": "Mind",
+        "concepts": ["Native American healer", "visionary lunatic", "berserker", "enlightened veterinarian", "herbalist", "witch", "eco-saboteur"],
+        "summary": "Passion and impulsive action.",
+        "magicalTools": {
+            "wands": ["Wood", "Copper", "Stone"],
+            "weapons": ["Knife", "Spear", "Axe", "Sling"]
+        }
     }
 ]

@@ -60,6 +60,17 @@ define([
             character.virtue = chance.pickone(virtues).name;
             character.vice = chance.pickone(vices).name;
 
+            character.wisdom = chance.integer({ min: 1, max: 10 });
+
+            // Starting Values
+            character.bashingDamage = chance.integer({ min: 0, max: 2 });
+            character.lethalDamage = chance.integer({ min: 0, max: 2 });
+            character.aggravatedDamage = chance.integer({ min: 0, max: 2 });
+            character.willpower = chance.integer({ min: 0, max: character.maxWillpower() });
+            character.mana = chance.integer({ min: 0, max: character.maxMana() });
+
+            character.derangements = [];
+
             character.flaws = chance.pickset(flaws, chance.integer({ min: 0, max: 2 })).map(function(flaw) {
                 return {
                     name: flaw.name

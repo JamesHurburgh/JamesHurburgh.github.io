@@ -1,0 +1,62 @@
+<!-- Usage:
+    <willpower v-model="character"></willpower>
+-->
+<template id="willpower">
+    <fieldset>
+        <h3>Willpower</h3>
+        <div style="float:clear;">
+            <img v-for="n in character.maxWillpower()" src=".\img\dot-filled.png"><img v-for="n in unusedSpace()" src=".\img\dot-empty.png">
+        </div>
+        <div style="float:clear;">
+            <img v-for="n in character.willpower" src=".\img\box-stroke.png"><img v-for="n in usedWillpower()" src=".\img\box-empty.png"><img v-for="n in unusedSpace()" src=".\img\box-empty-grey.png">
+            <img src=".\img\delete.png" @click="decrement"/>
+            <img src=".\img\add.png" @click="increment" />
+        </div>
+    </fieldset>
+</template>
+<script type="text/javascript">
+    requirejs.config({
+        baseUrl: 'js/lib',
+        paths: {
+            app: '../app',
+            models: '../app/models',
+            data: '../../data',
+        }
+    });
+    requirejs([
+            'vue'
+        ],
+
+        function(Vue) {
+            console.log("Registering willpower template.")
+
+            Vue.component('willpower', {
+                model: {
+                    prop: 'character'
+                },
+                props: ['character'],
+                data: function() {
+                    return this.character;
+                },
+                template: '#willpower',
+                components: {},
+                methods: {
+                    usedWillpower: function() {
+                        return this.character.maxWillpower() - this.character.willpower;
+                    },
+                    unusedSpace: function() {
+                        return 10 - this.character.maxWillpower();
+                    },
+                    increment: function() {
+                        this.setValue(this.character.willpower + 1);
+                    },
+                    decrement: function() {
+                        this.setValue(this.character.willpower - 1);
+                    },
+                    setValue: function(newValue) {
+                        this.character.willpower = Math.min(this.character.maxWillpower(), Math.max(newValue, 0));
+                    }
+                }
+            });
+        });
+</script>

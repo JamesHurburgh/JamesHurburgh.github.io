@@ -6,7 +6,7 @@
     <div style="margin-top: 2px; margin-bottom: 3px;">
         <!-- <input type="number" :min="min" :max="max" class="form-control" :id="label" :value="value" @input="updateValue"> -->
         <img src=".\img\delete.png" @click="decrement"/>
-        <span v-for="n in value"><img src=".\img\filled.png"></span><span v-for="n in unfilled()"><img src=".\img\empty.png"></span>
+        <span v-for="n in value"><img src=".\img\dot-filled.png"></span><span v-for="n in unfilled()"><img src=".\img\dot-empty.png"></span>
         <img src=".\img\add.png" @click="increment" />
     </div>
 </template>
@@ -69,7 +69,8 @@
                         this.setValue(this.value - 1);
                     },
                     setValue: function(newValue) {
-                        this.value = Math.min(this.max, Math.max(newValue));
+                        this.value = Math.min(this.max, Math.max(newValue, this.min));
+                        this.$emit('update:value', this.value);
                     }
 
                 }

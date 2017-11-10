@@ -1,31 +1,42 @@
 [{
-        "name": "Death"
+        "name": "Death",
+        "summary": "",
+        "tools": ["Bones, shroud, today’s obituary column, Ouija board (the mage must use the planchette during casting)"]
     },
     {
-        "name": "Fate"
+        "name": "Fate",
+        "tools": ["Playing cards or dice (the mage must draw or reveal a card or roll the dice during casting)"]
     },
     {
-        "name": "Forces"
+        "name": "Forces",
+        "tools": ["Battery, flashlight, taser gun"]
     },
     {
-        "name": "Life"
+        "name": "Life",
+        "tools": ["Blood (freshly drawn; does not need to be dedicated), prominent tattoo, flowers (freshly picked; does not need to be dedicated)"]
     },
     {
-        "name": "Matter"
+        "name": "Matter",
+        "tools": ["Precious metals, rare isotopes"]
     },
     {
-        "name": "Mind"
+        "name": "Mind",
+        "tools": ["Rorschach inkblot, crossword puzzle, personal diary"]
     },
     {
-        "name": "Prime"
+        "name": "Prime",
+        "tools": ["Precious gemstones, pure crystal"]
     },
     {
-        "name": "Space"
+        "name": "Space",
+        "tools": ["Ruler, tape measure, wheel, sextant, mathematical equation"]
     },
     {
-        "name": "Spirit"
+        "name": "Spirit",
+        "tools": ["Drum, rattle, flute, animal token (tooth, claw, feather or pelt)"]
     },
     {
-        "name": "Time"
+        "name": "Time",
+        "tools": ["Clocks, watches, hourglass"]
     }
 ]

@@ -1,0 +1,64 @@
+<!-- Usage:
+    <wisdom v-model="character"></wisdom>
+-->
+
+<template id="wisdom">
+    <fieldset>
+        <h3>Wisdom</h3>
+        <div v-for="n in 10">
+            <div class="input-group">
+                <div class="input-group-addon"> {{11-n}}</div>
+                <input type="text" class="form-control input-sm" v-model="character.derangements[11-n]" @input="updateDerangement(11-n, character.derangements[11-n])">
+                <div class="input-group-addon" @click="setWisdom(11-n)">
+                    <img v-if="wiseAs(11-n)" src=".\img\dot-filled.png">
+                    <img v-if="!wiseAs(11-n)" src=".\img\dot-empty.png">
+                </div>
+            </div>
+    </fieldset>
+</template>
+
+<script type="text/javascript ">
+    requirejs.config({
+        baseUrl: 'js/lib',
+        paths: {
+            app: '../app',
+            models: '../app/models',
+            data: '../../data',
+        }
+    });
+    requirejs([
+            'vue'
+        ],
+
+        function(Vue) {
+            console.log("Registering wisdom template. ")
+
+            Vue.component('wisdom', {
+                model: {
+                    prop: 'character'
+                },
+                props: ['character'],
+                data: function() {
+                    return this.character;
+                },
+                template: '#wisdom',
+                components: {},
+                methods: {
+                    wiseAs: function(wisdom) {
+                        return this.character.wisdom >= wisdom;
+                    },
+                    setWisdom: function(wisdom) {
+                        console.log("Setting wisdom to " + wisdom);
+                        this.character.wisdom = wisdom;
+                    },
+                    derangement: function(index) {
+                        return this.character.derangements[index];
+                    },
+                    updateDerangement: function(index, derangement) {
+                        console.log("Updating derangement " + index + " to " + derangement);
+                        this.character.derangements[index] = derangement;
+                    }
+                }
+            });
+        });
+</script>

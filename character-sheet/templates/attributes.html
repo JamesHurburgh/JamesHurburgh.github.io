@@ -4,12 +4,11 @@
 
 <template id="attributes">
     <fieldset>
-        <legend>Attributes</legend>
+        <h3>Attributes</h3>
         <div v-for="attribute in getAttributes()" key="attribute.name" >
             <label class="col-xs-6 col-sm-3 col-md-2 control-label">{{attribute.name}}</label>
             <csdots class="col-xs-6 col-sm-3 col-md-2" :value.sync="character[attribute.name.toLowerCase()]" :min="1" :max="5"></csdots>
         </div>
-
     </fieldset>
 </template>
 

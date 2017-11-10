@@ -4,13 +4,104 @@
 
 <template id="characterTemplate">
     <div>
-        <div class="form-group">
-            <personal v-model="character"></personal>
-            <attributes v-model="character"></attributes>
-            <skills v-model="character"></skills>
-            <merits v-model="character"></merits>
-            <flaws v-model="character"></flaws>
-            <arcana v-model="character"></arcana>
+        <!--
+            TAB SELECTION LIVES IN THE NAV BAR VIEW MENU 
+            <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#fullSheet" data-toggle="tab" aria-expanded="true"> Full Sheet </a>
+            </li>
+            <li class="">
+                <a href="#tabs" data-toggle="tab" aria-expanded="false"> Tabs </a>
+            </li>
+        </ul> -->
+        <div id="mainTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="fullSheet">
+                <div class="form-group">
+                    <personal v-model="character"></personal>
+                    <attributes v-model="character"></attributes>
+                    <skills v-model="character"></skills>
+                    <merits v-model="character"></merits>
+                    <flaws v-model="character"></flaws>
+                    <arcana v-model="character"></arcana>
+                    <health v-model="character"></health>
+                    <mana v-model="character"></mana>
+                    <willpower v-model="character"></willpower>
+                    <gnosis v-model="character"></gnosis>
+                    <wisdom v-model="character"></wisdom>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tabs">
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#personal" data-toggle="tab" aria-expanded="true">Personal</a>
+                    </li>
+                    <li class="">
+                        <a href="#attributes" data-toggle="tab" aria-expanded="false">Attributes</a>
+                    </li>
+                    <li class="">
+                        <a href="#skills" data-toggle="tab" aria-expanded="false">Skills</a>
+                    </li>
+                    <li class="">
+                        <a href="#merits" data-toggle="tab" aria-expanded="false">Merits</a>
+                    </li>
+                    <li class="">
+                        <a href="#flaws" data-toggle="tab" aria-expanded="false">Flaws</a>
+                    </li>
+                    <li class="">
+                        <a href="#arcana" data-toggle="tab" aria-expanded="false">Arcana</a>
+                    </li>
+                    <li class="">
+                        <a href="#health" data-toggle="tab" aria-expanded="false">Health</a>
+                    </li>
+                    <li class="">
+                        <a href="#willpower" data-toggle="tab" aria-expanded="false">Willpower</a>
+                    </li>
+                    <li class="">
+                        <a href="#mana" data-toggle="tab" aria-expanded="false">Mana</a>
+                    </li>
+                    <li class="">
+                        <a href="#gnosis" data-toggle="tab" aria-expanded="false">Gnosis</a>
+                    </li>
+                    <li class="">
+                        <a href="#wisdom" data-toggle="tab" aria-expanded="false">Wisdom</a>
+                    </li>
+                </ul>
+                <div id="tabbedViewContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="personal">
+                        <personal v-model="character"></personal>
+                    </div>
+                    <div class="tab-pane fade" id="attributes">
+                        <attributes v-model="character"></attributes>
+                    </div>
+                    <div class="tab-pane fade" id="skills">
+                        <skills v-model="character"></skills>
+                    </div>
+                    <div class="tab-pane fade" id="merits">
+                        <merits v-model="character"></merits>
+                    </div>
+                    <div class="tab-pane fade" id="flaws">
+                        <flaws v-model="character"></flaws>
+                    </div>
+                    <div class="tab-pane fade" id="arcana">
+                        <arcana v-model="character"></arcana>
+                    </div>
+                    <div class="tab-pane fade" id="health">
+                        <health v-model="character"></health>
+                    </div>
+                    <div class="tab-pane fade" id="willpower">
+                        <willpower v-model="character"></willpower>
+                    </div>
+                    <div class="tab-pane fade" id="mana">
+                        <mana v-model="character"></mana>
+                    </div>
+                    <div class="tab-pane fade" id="gnosis">
+                        <gnosis v-model="character"></gnosis>
+                    </div>
+                    <div class="tab-pane fade" id="wisdom">
+                        <wisdom v-model="character"></wisdom>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>

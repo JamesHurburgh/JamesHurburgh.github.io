@@ -15,20 +15,21 @@ requirejs.config({
 
 // Start the main app logic.
 requirejs(['jquery', 'vue', 'app/CharacterEditor'],
-    function($, Vue, CharacterEditor) {
+    function ($, Vue, CharacterEditor) {
 
         var characterEditor = new CharacterEditor();
 
         var controller = new Vue({
             el: '#app',
             data: characterEditor,
-            computed: {},
+            computed: {
+            },
             methods: {
-                openFile: function(event) {
+                openFile: function (event) {
                     this.loadFromFile(event);
                 }
             },
-            mounted: function() {
+            mounted: function () {
                 $("#splashPage").hide();
                 $("#app").show();
             }

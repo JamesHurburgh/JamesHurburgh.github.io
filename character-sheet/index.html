@@ -31,7 +31,9 @@
     <div id="mainVue">
         <script id="app">
             function loadWebComponent(name, path) {
+                console.log("Loading '" + name + "' from '" + path + "'.")
                 $.get("./" + path + name + ".html", function (content) {
+                    console.log("Loaded '" + name + "'.")
                     $("#" + name).replaceWith(content);
                 });
             }

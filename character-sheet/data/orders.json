@@ -1,5 +1,4 @@
-[
-    {
+[{
         "name": "Free Council",
         "ideaology": "pentacle",
         "description": ""
@@ -22,6 +21,16 @@
     {
         "name": "Gaurdians of the Veil",
         "ideaology": "pentacle",
+        "description": ""
+    },
+    {
+        "name": "Seers of the Throne",
+        "ideaology": "seers",
+        "description": ""
+    },
+    {
+        "name": "Banishers",
+        "ideaology": "banishers",
         "description": ""
     }
 ]
