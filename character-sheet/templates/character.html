@@ -30,6 +30,7 @@
                     <gnosis v-model="character"></gnosis>
                     <wisdom v-model="character"></wisdom>
                     <notes v-model="character"></notes>
+                    <logs v-model="character"></logs>
                 </div>
             </div>
             <div class="tab-pane fade" id="tabs">
@@ -73,6 +74,9 @@
                     <li class="">
                         <a href="#notes" data-toggle="tab" aria-expanded="false">Notes</a>
                     </li>
+                    <li class="">
+                        <a href="#logs" data-toggle="tab" aria-expanded="false">Logs</a>
+                    </li>
                 </ul>
                 <div id="tabbedViewContent" class="tab-content">
                     <div class="tab-pane fade active in" id="personal">
@@ -113,6 +117,9 @@
                     </div>
                     <div class="tab-pane fade" id="notes">
                         <notes v-model="character"></notes>
+                    </div>
+                    <div class="tab-pane fade" id="logs">
+                            <logs v-model="character"></logs>
                     </div>
                 </div>
             </div>

@@ -17,7 +17,10 @@ define([
         { "key": "concept", "value": "" },
         { "key": "virtue", "value": "" },
         { "key": "vice", "value": "" },
+
         { "key": "notes", "value": "" },
+        { "key": "logs", "value": [] },
+        { "key": "editMode", "value": "free" },
 
         { "key": "size", "value": 5 },
         { "key": "gnosis", "value": 1 },
@@ -111,6 +114,14 @@ define([
             return this.dexterity + this.strength + 5;
         };
 
+        this.log = function(log) {
+            this.logs.push({
+                "editMode": this.editMode,
+                "log": log,
+                "time": Date.now()
+            });
+        };
+
         this.getTotalDamageBlocks = function() {
             return this.bashingDamage + this.lethalDamage + this.aggravatedDamage;
         };
@@ -127,6 +138,7 @@ define([
             // If there are empty blocks, just use them.
             if (this.getTotalDamageBlocks() < this.maxHealth()) {
                 this.bashingDamage++;
+                this.log("Adding a bashing damage.");
                 return;
             }
 
@@ -134,6 +146,7 @@ define([
             if (this.bashingDamage > 0) {
                 this.bashingDamage--;
                 this.lethalDamage++;
+                this.log("Upgrading a bashing damage to lethal.");
                 return;
             }
 
@@ -141,19 +154,21 @@ define([
             if (this.lethalDamage > 0) {
                 this.lethalDamage--;
                 this.aggravatedDamage++;
+                this.log("Upgrading a bashing damage to aggravated.");
                 return;
             }
 
             // By this stage, they should be dead.
         };
 
-        this.addLeathalDamage = function() {
+        this.addLethalDamage = function() {
             // Don't bother once they are dead.  You're literally flogging a dead character.
             if (this.isDead()) return;
 
             // If there are empty blocks, just use them.
             if (this.getTotalDamageBlocks() < this.maxHealth()) {
                 this.lethalDamage++;
+                this.log("Adding a lethal damage.");
                 return;
             }
 
@@ -161,6 +176,7 @@ define([
             if (this.bashingDamage > 0) {
                 this.bashingDamage--;
                 this.lethalDamage++;
+                this.log("Upgrading a bashing damage to lethal.");
                 return;
             }
 
@@ -168,6 +184,7 @@ define([
             if (this.lethalDamage > 0) {
                 this.lethalDamage--;
                 this.aggravatedDamage++;
+                this.log("Upgrading a lethal damage to aggravated.");
                 return;
             }
 
@@ -181,6 +198,7 @@ define([
             // If there are empty blocks, just use them.
             if (this.getTotalDamageBlocks() < this.maxHealth()) {
                 this.aggravatedDamage++;
+                this.log("Adding an aggravated damage.");
                 return;
             }
 
@@ -188,6 +206,7 @@ define([
             if (this.bashingDamage > 0) {
                 this.bashingDamage--;
                 this.aggravatedDamage++;
+                this.log("Upgrading a bashing damage to aggravated.");
                 return;
             }
 
@@ -195,6 +214,7 @@ define([
             if (this.lethalDamage > 0) {
                 this.lethalDamage--;
                 this.aggravatedDamage++;
+                this.log("Upgrading a lethal damage to aggravated.");
                 return;
             }
 
@@ -202,14 +222,18 @@ define([
         };
 
         this.healDamage = function(type, amount) {
+
             switch (type) {
                 case 'A':
+                    this.log("Healing " + amount + " aggravated damage.");
                     this.aggravatedDamage = Math.min(this.getTotalDamageBlocks(), Math.max(0, this.aggravatedDamage - amount));
                     break;
                 case 'L':
+                    this.log("Healing " + amount + " lethal damage.");
                     this.lethalDamage = Math.min(this.getTotalDamageBlocks(), Math.max(0, this.lethalDamage - amount));
                     break;
                 case 'B':
+                    this.log("Healing " + amount + " bashing damage.");
                     this.bashingDamage = Math.min(this.getTotalDamageBlocks(), Math.max(0, this.bashingDamage - amount));
                     break;
             }

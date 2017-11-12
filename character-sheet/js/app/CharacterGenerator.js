@@ -34,6 +34,7 @@ define([
         this.generateRandomCharacter = function() {
             console.log("Generating random character");
 
+            var influences = [];
             var character = new Character();
             character.gender = chance.gender();
 
@@ -57,8 +58,15 @@ define([
             character.path = chance.pickone(paths).name;
             character.order = chance.pickone(orders).name;
 
-            character.virtue = chance.pickone(virtues).name;
-            character.vice = chance.pickone(vices).name;
+
+            var virtue = chance.pickone(virtues);
+            character.virtue = virtue.name;
+            influences.push(chance.pickone(virtue.possessedBy));
+
+            var vice = chance.pickone(vices);
+            character.vice = vice.name;
+            influences.push(chance.pickone(vice.possessedBy));
+
 
             character.wisdom = chance.integer({ min: 1, max: 10 });
 
@@ -92,7 +100,13 @@ define([
             // Skills
             skills.forEach(function(skill) {
                 character[skill.name.toLowerCase()] = chance.integer({ min: 0, max: 5 });
-                character[skill.name.toLowerCase()].specialities = chance.pickset(skill.specialties, chance.integer({ min: 0, max: 2 }));
+
+                if (character[skill.name.toLowerCase()] > chance.integer({ min: 1, max: 5 })) {
+                    influences.push(chance.pickone(skill.possessedBy));
+                    if (!character.specialties[skill.name.toLowerCase()]) character.specialties[skill.name.toLowerCase()] = "";
+                    character.specialties[skill.name.toLowerCase()] += chance.pickone(skill.specialties);
+                }
+
             }, this);
 
             // Arcana
@@ -100,6 +114,8 @@ define([
                 character[arcanum.name.toLowerCase()] = chance.integer({ min: 0, max: 5 });
             }, this);
 
+            character.notes += "Born in " + character.countryOfBirth + " on " + character.birthday + ".  ";
+            character.notes += "Influenced by " + influences.join(", ") + ".";
 
             return character;
 

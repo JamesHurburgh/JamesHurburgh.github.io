@@ -1,0 +1,54 @@
+<!-- Usage:
+    <logs v-model="character"></logs>
+-->
+
+<template id="logs">
+    <fieldset>
+        <h3>Logs</h3>
+            <table class="table table-striped table-hover table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                            <th>Edit Mode</th>
+                            <th>Time</th>
+                            <th>Log</th>
+                    </tr>
+                </thead>
+                <tr v-for="log in character.logs">
+                    <td>{{log.editMode}}</td>
+                    <td>{{new Date(log.time).toLocaleString()}}</td>
+                    <td>{{log.log}}</td>
+                </tr>
+            </table>
+    </fieldset>
+</template>
+
+<script type="text/javascript">
+    requirejs.config({
+        baseUrl: 'js/lib',
+        paths: {
+            app: '../app',
+            models: '../app/models',
+            data: '../../data',
+        }
+    });
+    requirejs([
+            'vue'
+        ],
+
+        function(Vue) {
+            console.log("Registering logs template.")
+
+            Vue.component('logs', {
+                model: {
+                    prop: 'character'
+                },
+                props: ['character'],
+                data: function() {
+                    return this.character;
+                },
+                template: '#logs',
+                components: {},
+                methods: {}
+            });
+        });
+</script>
