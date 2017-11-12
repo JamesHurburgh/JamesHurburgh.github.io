@@ -1,0 +1,41 @@
+<!-- Usage:
+    <notes v-model="character"></notes>
+-->
+
+<template id="notes">
+    <fieldset>
+        <h3>Notes</h3>
+            <textarea v-model.sync="character.notes" class="form-control" rows="5"></textarea> 
+    </fieldset>
+</template>
+
+<script type="text/javascript">
+    requirejs.config({
+        baseUrl: 'js/lib',
+        paths: {
+            app: '../app',
+            models: '../app/models',
+            data: '../../data',
+        }
+    });
+    requirejs([
+            'vue'
+        ],
+
+        function(Vue) {
+            console.log("Registering notes template.")
+
+            Vue.component('notes', {
+                model: {
+                    prop: 'character'
+                },
+                props: ['character'],
+                data: function() {
+                    return this.character;
+                },
+                template: '#notes',
+                components: {},
+                methods: {}
+            });
+        });
+</script>

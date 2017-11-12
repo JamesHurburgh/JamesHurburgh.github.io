@@ -1,0 +1,48 @@
+<!-- Usage:
+    <specialties v-model="character"></specialties>
+-->
+
+<template id="specialties">
+    <fieldset>
+        <h3>Specialties</h3>
+            <div v-for="skill in getSkills()" key="skill.name" >
+                <cstext :value.sync="character.specialties[skill.name.toLowerCase()]" :label="skill.name"></cstext>
+            </div>
+    </fieldset>
+</template>
+
+<script type="text/javascript">
+    requirejs.config({
+        baseUrl: 'js/lib',
+        paths: {
+            app: '../app',
+            models: '../app/models',
+            data: '../../data',
+        }
+    });
+    requirejs([
+            'vue',
+            'json!data/skills.json'
+        ],
+
+        function(Vue, skills) {
+            console.log("Registering specialties template.")
+
+            Vue.component('specialties', {
+                model: {
+                    prop: 'character'
+                },
+                props: ['character'],
+                data: function() {
+                    return this.character;
+                },
+                template: '#specialties',
+                components: {},
+                methods: {
+                    getSkills: function() {
+                        return skills;
+                    }
+                }
+            });
+        });
+</script>

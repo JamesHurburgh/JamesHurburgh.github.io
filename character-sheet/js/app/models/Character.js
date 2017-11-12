@@ -9,60 +9,80 @@ define([
 
     console.log("Initialising Character definition");
 
+    var defaults = [
+        { "key": "name", "value": "" },
+        { "key": "age", "value": 0 },
+        { "key": "player", "value": "Player name here" },
+        { "key": "chronicle", "value": "" },
+        { "key": "concept", "value": "" },
+        { "key": "virtue", "value": "" },
+        { "key": "vice", "value": "" },
+        { "key": "notes", "value": "" },
+
+        { "key": "size", "value": 5 },
+        { "key": "gnosis", "value": 1 },
+        { "key": "wisdom", "value": 7 },
+        { "key": "experience", "value": 0 },
+
+        { "key": "bashingDamage", "value": 0 },
+        { "key": "lethalDamage", "value": 0 },
+        { "key": "aggravatedDamage", "value": 0 },
+
+        { "key": "flaws", "value": [] },
+        { "key": "merits", "value": [] },
+        { "key": "derangements", "value": [] },
+        { "key": "specialties", "value": {} },
+
+    ];
+
+    // Skills
+    skills.forEach(function(skill) {
+        defaults.push({ "key": skill.name.toLowerCase(), "value": 0 });
+    }, this);
+
+    // Attributes
+    attributes.forEach(function(attribute) {
+        defaults.push({ "key": attribute.name.toLowerCase(), "value": 1 });
+    }, this);
+
+    // Arcana
+    arcana.forEach(function(arcanum) {
+        defaults.push({ "key": arcanum.name.toLowerCase(), "value": 0 });
+    }, this);
+
     // This is specificallly a Mage the Awakening Character
     function Character(character) {
 
         this.initialize = function(character) {
 
             console.log("Creating Character");
+            var newCharacter = (character === undefined);
 
-            if (character) {
+            if (!newCharacter) {
                 for (var property in character) {
                     if (character.hasOwnProperty(property)) {
                         this[property] = character[property];
                     }
                 }
-            } else {
+            }
 
-                this.name = "";
-                this.age = 0;
-                this.player = "Your name here";
-                this.chronicle = "";
-                this.concept = "";
-                this.virtue = "";
-                this.vice = "";
+            // Ensure all fields are intialised
+            defaults.forEach(function(de) {
+                this.initialiseField(de.key, de.value, newCharacter);
+            }, this);
 
-                // Skills
-                skills.forEach(function(skill) {
-                    this[skill.name.toLowerCase()] = 0;
-                }, this);
+            // Starting Values
+            this.initialiseField('willpower', this.maxWillpower(), newCharacter);
+            this.initialiseField('mana', this.wisdom, newCharacter);
 
-                // Attributes
-                attributes.forEach(function(attribute) {
-                    this[attribute.name.toLowerCase()] = 1;
-                }, this);
+        };
 
-                // Aracana
-                arcana.forEach(function(arcanum) {
-                    this[arcanum.name.toLowerCase()] = 0;
-                }, this);
-
-                this.flaws = [];
-                this.merits = [];
-                this.derangements = [];
-
-                this.size = 5;
-                this.gnosis = 1;
-                this.wisdom = 7;
-                this.experience = 0;
-
-                // Starting Values
-                this.bashingDamage = 0;
-                this.lethalDamage = 0;
-                this.aggravatedDamage = 0;
-                this.willpower = this.maxWillpower();
-                this.mana = this.wisdom;
-
+        this.initialiseField = function(fieldName, defaultValue, newCharacter) {
+            if (!this[fieldName]) {
+                this[fieldName] = defaultValue;
+                if (!newCharacter) {
+                    console.log("Initialising field on established character: " + fieldName);
+                }
             }
         };
 

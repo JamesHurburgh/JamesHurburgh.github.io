@@ -92,7 +92,7 @@ define([
             // Skills
             skills.forEach(function(skill) {
                 character[skill.name.toLowerCase()] = chance.integer({ min: 0, max: 5 });
-                character[skill.name.toLowerCase()].specialities = chance.pickset(skill.specialties, chance.integer({ min: 0, max: 2 }))
+                character[skill.name.toLowerCase()].specialities = chance.pickset(skill.specialties, chance.integer({ min: 0, max: 2 }));
             }, this);
 
             // Arcana
