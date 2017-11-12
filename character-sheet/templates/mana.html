@@ -7,8 +7,8 @@
         <div>
             <img v-for="n in character.mana" src=".\img\box-stroke.png">
             <img v-for="n in unusedSpace()" src=".\img\box-empty-grey.png">
-            <img src=".\img\delete.png" @click="decrement"/>
-            <img src=".\img\add.png" @click="increment" />
+            <img src=".\img\delete.png" @click="character.adjustMana(-1)"/>
+            <img src=".\img\add.png" @click="character.adjustMana(1)" />
         </div>
     </fieldset>
 </template>
@@ -41,15 +41,6 @@
                 methods: {
                     unusedSpace: function() {
                         return 20 - this.character.mana;
-                    },
-                    increment: function() {
-                        this.setValue(this.character.mana + 1);
-                    },
-                    decrement: function() {
-                        this.setValue(this.character.mana - 1);
-                    },
-                    setValue: function(newValue) {
-                        this.character.mana = Math.min(this.character.maxMana(), Math.max(newValue, 0));
                     }
                 }
             });

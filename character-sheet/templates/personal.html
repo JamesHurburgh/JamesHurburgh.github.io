@@ -22,6 +22,8 @@
         <cstext :value="character.initiativeMod()" :label="'Initiative Mod'"></cstext>
         <cstext :value="character.speed()" :label="'Speed'"></cstext>
         <cstext :value.sync="character.experience" :label="'Experience'"></cstext>
+        <cstext :value.sync="character.cabalExperience" :label="'Cabal Experience'"></cstext>
+        <cstext :value.sync="character.arcaneExperience" :label="'Arcane Experience'"></cstext>
 
     </fieldset>
 </template>

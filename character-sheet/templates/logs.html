@@ -8,15 +8,19 @@
             <table class="table table-striped table-hover table-bordered">
                 <thead class="thead-dark">
                     <tr>
-                            <th>Edit Mode</th>
-                            <th>Time</th>
-                            <th>Log</th>
+                        <th>Edit Mode</th>
+                        <th>Time</th>
+                        <th>Value</th>
+                        <th>Old</th>
+                        <th>New</th>
                     </tr>
                 </thead>
                 <tr v-for="log in character.logs">
                     <td>{{log.editMode}}</td>
                     <td>{{new Date(log.time).toLocaleString()}}</td>
-                    <td>{{log.log}}</td>
+                    <td>{{log.field}}</td>
+                    <td>{{log.oldValue}}</td>
+                    <td>{{log.newValue}}</td>
                 </tr>
             </table>
     </fieldset>

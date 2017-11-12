@@ -6,8 +6,8 @@
         <h3>Gnosis</h3>
         <div style="float:clear;">
             <img v-for="n in character.gnosis" src=".\img\dot-filled.png"><img v-for="n in unusedSpace()" src=".\img\dot-empty.png">
-            <img src=".\img\delete.png" @click="decrement"/>
-            <img src=".\img\add.png" @click="increment" />
+            <img src=".\img\delete.png" @click="character.adjustGnosis(-1)"/>
+            <img src=".\img\add.png" @click="character.adjustGnosis(1)" />
         </div>
     </fieldset>
 </template>
@@ -40,15 +40,6 @@
                 methods: {
                     unusedSpace: function() {
                         return 10 - this.character.gnosis;
-                    },
-                    increment: function() {
-                        this.setValue(this.character.gnosis + 1);
-                    },
-                    decrement: function() {
-                        this.setValue(this.character.gnosis - 1);
-                    },
-                    setValue: function(newValue) {
-                        this.character.gnosis = Math.min(10, Math.max(newValue, 1));
                     }
                 }
             });

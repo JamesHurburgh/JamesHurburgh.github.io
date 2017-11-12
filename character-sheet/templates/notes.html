@@ -5,7 +5,7 @@
 <template id="notes">
     <fieldset>
         <h3>Notes</h3>
-            <textarea v-model.sync="character.notes" class="form-control" rows="5"></textarea> 
+            <textarea v-model="character.notes" class="form-control" rows="10" @input="character.updateNotes(character.notes)"></textarea> 
     </fieldset>
 </template>
 

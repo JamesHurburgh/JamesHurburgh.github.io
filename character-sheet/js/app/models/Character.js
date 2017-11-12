@@ -1,246 +1,280 @@
-define([
-    'json!data/attributes.json',
-    'json!data/skills.json',
-    'json!data/arcana.json'
-], function(
-    attributes,
-    skills,
-    arcana) {
+ /*jshint esversion: 6 */
+ define([
+     'json!data/attributes.json',
+     'json!data/skills.json',
+     'json!data/arcana.json'
+ ], function(
+     attributes,
+     skills,
+     arcana) {
 
-    console.log("Initialising Character definition");
+     console.log("Initialising Character definition");
 
-    var defaults = [
-        { "key": "name", "value": "" },
-        { "key": "age", "value": 0 },
-        { "key": "player", "value": "Player name here" },
-        { "key": "chronicle", "value": "" },
-        { "key": "concept", "value": "" },
-        { "key": "virtue", "value": "" },
-        { "key": "vice", "value": "" },
+     var defaults = [
+         { "key": "name", "value": "" },
+         { "key": "age", "value": 0 },
+         { "key": "player", "value": "Player name here" },
+         { "key": "chronicle", "value": "" },
+         { "key": "concept", "value": "" },
+         { "key": "virtue", "value": "" },
+         { "key": "vice", "value": "" },
 
-        { "key": "notes", "value": "" },
-        { "key": "logs", "value": [] },
-        { "key": "editMode", "value": "free" },
+         { "key": "notes", "value": "" },
+         { "key": "logs", "value": [] },
+         { "key": "editMode", "value": "free" },
 
-        { "key": "size", "value": 5 },
-        { "key": "gnosis", "value": 1 },
-        { "key": "wisdom", "value": 7 },
-        { "key": "experience", "value": 0 },
+         { "key": "size", "value": 5 },
+         { "key": "gnosis", "value": 1 },
+         { "key": "wisdom", "value": 7 },
+         { "key": "experience", "value": 0 },
+         { "key": "cabalExperience", "value": 0 },
+         { "key": "arcaneExperience", "value": 0 },
 
-        { "key": "bashingDamage", "value": 0 },
-        { "key": "lethalDamage", "value": 0 },
-        { "key": "aggravatedDamage", "value": 0 },
+         { "key": "bashingDamage", "value": 0 },
+         { "key": "lethalDamage", "value": 0 },
+         { "key": "aggravatedDamage", "value": 0 },
 
-        { "key": "flaws", "value": [] },
-        { "key": "merits", "value": [] },
-        { "key": "derangements", "value": [] },
-        { "key": "specialties", "value": {} },
+         { "key": "flaws", "value": [] },
+         { "key": "merits", "value": [] },
+         { "key": "derangements", "value": [] },
+         { "key": "specialties", "value": {} },
 
-    ];
+     ];
 
-    // Skills
-    skills.forEach(function(skill) {
-        defaults.push({ "key": skill.name.toLowerCase(), "value": 0 });
-    }, this);
+     // Skills
+     skills.forEach(function(skill) {
+         defaults.push({ "key": skill.name.toLowerCase(), "value": 0 });
+     }, this);
 
-    // Attributes
-    attributes.forEach(function(attribute) {
-        defaults.push({ "key": attribute.name.toLowerCase(), "value": 1 });
-    }, this);
+     // Attributes
+     attributes.forEach(function(attribute) {
+         defaults.push({ "key": attribute.name.toLowerCase(), "value": 1 });
+     }, this);
 
-    // Arcana
-    arcana.forEach(function(arcanum) {
-        defaults.push({ "key": arcanum.name.toLowerCase(), "value": 0 });
-    }, this);
+     // Arcana
+     arcana.forEach(function(arcanum) {
+         defaults.push({ "key": arcanum.name.toLowerCase(), "value": 0 });
+     }, this);
 
-    // This is specificallly a Mage the Awakening Character
-    function Character(character) {
+     // This is specificallly a Mage the Awakening Character
+     function Character(character) {
 
-        this.initialize = function(character) {
+         this.initialize = function(character) {
 
-            console.log("Creating Character");
-            var newCharacter = (character === undefined);
+             console.log("Creating Character");
+             var newCharacter = (character === undefined);
 
-            if (!newCharacter) {
-                for (var property in character) {
-                    if (character.hasOwnProperty(property)) {
-                        this[property] = character[property];
-                    }
-                }
-            }
+             if (!newCharacter) {
+                 for (var property in character) {
+                     if (character.hasOwnProperty(property)) {
+                         this[property] = character[property];
+                     }
+                 }
+             }
 
-            // Ensure all fields are intialised
-            defaults.forEach(function(de) {
-                this.initialiseField(de.key, de.value, newCharacter);
-            }, this);
+             // Ensure all fields are intialised
+             defaults.forEach(function(de) {
+                 this.initialiseField(de.key, de.value, newCharacter);
+             }, this);
 
-            // Starting Values
-            this.initialiseField('willpower', this.maxWillpower(), newCharacter);
-            this.initialiseField('mana', this.wisdom, newCharacter);
+             // Starting Values
+             this.initialiseField('willpower', this.maxWillpower(), newCharacter);
+             this.initialiseField('mana', this.wisdom, newCharacter);
 
-        };
+         };
 
-        this.initialiseField = function(fieldName, defaultValue, newCharacter) {
-            if (!this[fieldName]) {
-                this[fieldName] = defaultValue;
-                if (!newCharacter) {
-                    console.log("Initialising field on established character: " + fieldName);
-                }
-            }
-        };
+         this.initialiseField = function(fieldName, defaultValue, newCharacter) {
+             if (!this[fieldName]) {
+                 this[fieldName] = defaultValue;
+                 if (!newCharacter) {
+                     console.log("Initialising field on established character: " + fieldName);
+                 }
+             }
+         };
 
-        this.maxHealth = function() {
-            return this.size + this.stamina;
-        };
+         // Willpower
+         this.maxWillpower = function() {
+             return this.resolve + this.composure;
+         };
 
-        this.maxWillpower = function() {
-            return this.resolve + this.composure;
-        };
+         this.adjustWillpower = function(amount) {
+             this.logUpdate("willpower", () =>
+                 this.willpower = Math.min(this.maxMana(), Math.max(this.willpower + amount, 0))
+             );
+         };
 
-        this.maxMana = function() {
-            // TODO work out calculation for this.
-            return 10;
-        };
+         // Mana
+         this.maxMana = function() {
+             // TODO work out calculation for this.
+             return 10;
+         };
 
-        this.defense = function() {
-            return Math.min(this.dexterity, this.wits);
-        };
+         this.adjustMana = function(amount) {
+             this.logUpdate("mana", () =>
+                 this.mana = Math.min(this.maxMana(), Math.max(this.mana + amount, 0))
+             );
+         };
 
-        this.initiativeMod = function() {
-            return this.dexterity + this.composure;
-        };
+         // Gnosis
+         this.adjustGnosis = function(amount) {
+             this.logUpdate("gnosis", () =>
+                 this.gnosis = Math.min(10, Math.max(this.gnosis + amount, 1))
+             );
+         };
 
-        this.speed = function() {
-            return this.dexterity + this.strength + 5;
-        };
+         // Defense
+         this.defense = function() {
+             return Math.min(this.dexterity, this.wits);
+         };
 
-        this.log = function(log) {
-            this.logs.push({
-                "editMode": this.editMode,
-                "log": log,
-                "time": Date.now()
-            });
-        };
+         this.initiativeMod = function() {
+             return this.dexterity + this.composure;
+         };
 
-        this.getTotalDamageBlocks = function() {
-            return this.bashingDamage + this.lethalDamage + this.aggravatedDamage;
-        };
+         this.speed = function() {
+             return this.dexterity + this.strength + 5;
+         };
 
-        this.isDead = function() {
-            return this.aggravatedDamage >= this.maxHealth();
-        };
+         // Notes
+         this.updateNotes = function(newValue) {
+             this.logUpdate("notes", () => this.notes = newValue);
+         };
 
-        this.addBashingDamage = function() {
+         // Logging
+         this.log = function(field, oldValue, newValue) {
+             if (this.logs.length > 0 && this.logs[this.logs.length - 1].field == field) {
+                 this.logs[this.logs.length - 1].newValue = newValue;
+                 this.logs[this.logs.length - 1].time = Date.now();
+             } else {
+                 this.logs.push({
+                     "editMode": this.editMode,
+                     "field": field,
+                     "oldValue": oldValue,
+                     "newValue": newValue,
+                     "time": Date.now()
+                 });
+             }
+         };
 
-            // Don't bother once they are dead.  You're literally flogging a dead character.
-            if (this.isDead()) return;
+         this.logUpdate = function(fieldName, func) {
+             var before = this[fieldName];
+             func();
+             var after = this[fieldName];
+             this.log(fieldName, before, after);
+         };
 
-            // If there are empty blocks, just use them.
-            if (this.getTotalDamageBlocks() < this.maxHealth()) {
-                this.bashingDamage++;
-                this.log("Adding a bashing damage.");
-                return;
-            }
+         // Damage and Health
+         this.maxHealth = function() {
+             return this.size + this.stamina;
+         };
 
-            // If there is already bashing damage, upgrade to lethal
-            if (this.bashingDamage > 0) {
-                this.bashingDamage--;
-                this.lethalDamage++;
-                this.log("Upgrading a bashing damage to lethal.");
-                return;
-            }
+         this.getTotalDamageBlocks = function() {
+             return this.bashingDamage + this.lethalDamage + this.aggravatedDamage;
+         };
 
-            // If there is already lethal damage, upgrade to aggravated.
-            if (this.lethalDamage > 0) {
-                this.lethalDamage--;
-                this.aggravatedDamage++;
-                this.log("Upgrading a bashing damage to aggravated.");
-                return;
-            }
+         this.isDead = function() {
+             return this.aggravatedDamage >= this.maxHealth();
+         };
 
-            // By this stage, they should be dead.
-        };
+         this.addBashingDamage = function() {
 
-        this.addLethalDamage = function() {
-            // Don't bother once they are dead.  You're literally flogging a dead character.
-            if (this.isDead()) return;
+             // Don't bother once they are dead.  You're literally flogging a dead character.
+             if (this.isDead()) return;
 
-            // If there are empty blocks, just use them.
-            if (this.getTotalDamageBlocks() < this.maxHealth()) {
-                this.lethalDamage++;
-                this.log("Adding a lethal damage.");
-                return;
-            }
+             // If there are empty blocks, just use them.
+             if (this.getTotalDamageBlocks() < this.maxHealth()) {
+                 this.logUpdate("bashingDamage", () => this.bashingDamage++);
+                 return;
+             }
 
-            // If there is already bashing damage, upgrade to lethal
-            if (this.bashingDamage > 0) {
-                this.bashingDamage--;
-                this.lethalDamage++;
-                this.log("Upgrading a bashing damage to lethal.");
-                return;
-            }
+             // If there is already bashing damage, upgrade to lethal
+             if (this.bashingDamage > 0) {
+                 this.logUpdate("bashingDamage", () => this.bashingDamage--);
+                 this.logUpdate("lethalDamage", () => this.lethalDamage++);
+                 return;
+             }
 
-            // If there is already lethal damage, upgrade to aggravated.
-            if (this.lethalDamage > 0) {
-                this.lethalDamage--;
-                this.aggravatedDamage++;
-                this.log("Upgrading a lethal damage to aggravated.");
-                return;
-            }
+             // If there is already lethal damage, upgrade to aggravated.
+             if (this.lethalDamage > 0) {
+                 this.logUpdate("lethalDamage", () => this.lethalDamage--);
+                 this.logUpdate("aggravatedDamage", () => this.aggravatedDamage++);
+                 return;
+             }
 
-            // By this stage, they should be dead.
-        };
+             // By this stage, they should be dead.
+         };
 
-        this.addAggravatedDamage = function() {
-            // Don't bother once they are dead.  You're literally flogging a dead character.
-            if (this.isDead()) return;
+         this.addLethalDamage = function() {
+             // Don't bother once they are dead.  You're literally flogging a dead character.
+             if (this.isDead()) return;
 
-            // If there are empty blocks, just use them.
-            if (this.getTotalDamageBlocks() < this.maxHealth()) {
-                this.aggravatedDamage++;
-                this.log("Adding an aggravated damage.");
-                return;
-            }
+             // If there are empty blocks, just use them.
+             if (this.getTotalDamageBlocks() < this.maxHealth()) {
+                 this.logUpdate("lethalDamage", () => this.lethalDamage++);
+                 return;
+             }
 
-            // If there is already bashing damage, upgrade to aggravated
-            if (this.bashingDamage > 0) {
-                this.bashingDamage--;
-                this.aggravatedDamage++;
-                this.log("Upgrading a bashing damage to aggravated.");
-                return;
-            }
+             // If there is already bashing damage, upgrade to lethal
+             if (this.bashingDamage > 0) {
+                 this.logUpdate("bashingDamage", () => this.bashingDamage--);
+                 this.logUpdate("lethalDamage", () => this.lethalDamage++);
+                 return;
+             }
 
-            // If there is already lethal damage, upgrade to aggravated.
-            if (this.lethalDamage > 0) {
-                this.lethalDamage--;
-                this.aggravatedDamage++;
-                this.log("Upgrading a lethal damage to aggravated.");
-                return;
-            }
+             // If there is already lethal damage, upgrade to aggravated.
+             if (this.lethalDamage > 0) {
+                 this.logUpdate("lethalDamage", () => this.lethalDamage--);
+                 this.logUpdate("aggravatedDamage", () => this.aggravatedDamage++);
+                 return;
+             }
 
-            // By this stage, they're dead.
-        };
+             // By this stage, they should be dead.
+         };
 
-        this.healDamage = function(type, amount) {
+         this.addAggravatedDamage = function() {
+             // Don't bother once they are dead.  You're literally flogging a dead character.
+             if (this.isDead()) return;
 
-            switch (type) {
-                case 'A':
-                    this.log("Healing " + amount + " aggravated damage.");
-                    this.aggravatedDamage = Math.min(this.getTotalDamageBlocks(), Math.max(0, this.aggravatedDamage - amount));
-                    break;
-                case 'L':
-                    this.log("Healing " + amount + " lethal damage.");
-                    this.lethalDamage = Math.min(this.getTotalDamageBlocks(), Math.max(0, this.lethalDamage - amount));
-                    break;
-                case 'B':
-                    this.log("Healing " + amount + " bashing damage.");
-                    this.bashingDamage = Math.min(this.getTotalDamageBlocks(), Math.max(0, this.bashingDamage - amount));
-                    break;
-            }
-        };
+             // If there are empty blocks, just use them.
+             if (this.getTotalDamageBlocks() < this.maxHealth()) {
+                 this.logUpdate("aggravatedDamage", () => this.aggravatedDamage++);
+                 return;
+             }
 
-        this.initialize(character);
-    }
+             // If there is already bashing damage, upgrade to aggravated
+             if (this.bashingDamage > 0) {
+                 this.logUpdate("bashingDamage", () => this.bashingDamage--);
+                 this.logUpdate("aggravatedDamage", () => this.aggravatedDamage++);
+                 return;
+             }
 
-    return Character;
-});
+             // If there is already lethal damage, upgrade to aggravated.
+             if (this.lethalDamage > 0) {
+                 this.logUpdate("lethalDamage", () => this.lethalDamage--);
+                 this.logUpdate("aggravatedDamage", () => this.aggravatedDamage++);
+                 return;
+             }
+
+             // By this stage, they're dead.
+         };
+
+         this.healDamage = function(type, amount) {
+
+             switch (type) {
+                 case 'A':
+                     this.logUpdate("aggravatedDamage", () => this.aggravatedDamage = Math.min(this.getTotalDamageBlocks(), Math.max(0, this.aggravatedDamage - amount)));
+                     break;
+                 case 'L':
+                     this.logUpdate("lethalDamage", () => this.lethalDamage = Math.min(this.getTotalDamageBlocks(), Math.max(0, this.lethalDamage - amount)));
+                     break;
+                 case 'B':
+                     this.logUpdate("bashingDamage", () => this.bashingDamage = Math.min(this.getTotalDamageBlocks(), Math.max(0, this.bashingDamage - amount)));
+                     break;
+             }
+         };
+
+         this.initialize(character);
+     }
+
+     return Character;
+ });
