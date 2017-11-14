@@ -4,26 +4,33 @@
 
 <template id="personal">
     <fieldset>
-        <h3>Personal</h3>
-        
-        <cstext :value.sync="character.name" :label="'Name'"></cstext>
-        <cstext :value.sync="character.age" :label="'Age'"></cstext>
-        <cstext :value.sync="character.player" :label="'Player'"></cstext>
-        <cstext :value.sync="character.chronicle" :label="'Chronicle'"></cstext>
-        <cstext :value.sync="character.concept" :label="'Concept'"></cstext>
-        <cstext :value.sync="character.virtue" :label="'Virtue'"></cstext>
-        <cstext :value.sync="character.vice" :label="'Vice'"></cstext>
-        <cstext :value.sync="character.path" :label="'Path'"></cstext>
-        <cstext :value.sync="character.order" :label="'Order'"></cstext>
-        <cstext :value.sync="character.cabal" :label="'Cabal'"></cstext>
-        
-        <cstext :value.sync="character.size" :label="'Size'"></cstext>
-        <cstext :value="character.defense()" :label="'Defense'"></cstext>
-        <cstext :value="character.initiativeMod()" :label="'Initiative Mod'"></cstext>
-        <cstext :value="character.speed()" :label="'Speed'"></cstext>
-        <cstext :value.sync="character.experience" :label="'Experience'"></cstext>
-        <cstext :value.sync="character.cabalExperience" :label="'Cabal Experience'"></cstext>
-        <cstext :value.sync="character.arcaneExperience" :label="'Arcane Experience'"></cstext>
+        <h4 class="text-center">Personal</h4>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+
+            <cstext :value.sync="character.name" :label="'Name'"></cstext>
+            <cstext :value.sync="character.age" :label="'Age'"></cstext>
+            <cstext :value.sync="character.player" :label="'Player'"></cstext>
+            <cstext :value.sync="character.chronicle" :label="'Chronicle'"></cstext>
+            <cstext :value.sync="character.concept" :label="'Concept'"></cstext>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <cstext :value.sync="character.virtue" :label="'Virtue'"></cstext>
+            <cstext :value.sync="character.vice" :label="'Vice'"></cstext>
+            <cstext :value.sync="character.path" :label="'Path'"></cstext>
+            <cstext :value.sync="character.order" :label="'Order'"></cstext>
+            <cstext :value.sync="character.cabal" :label="'Cabal'"></cstext>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+
+            <cstext :value.sync="character.size" :label="'Size'"></cstext>
+            <cstext :value="character.defense()" :label="'Defense'"></cstext>
+            <cstext :value="character.initiativeMod()" :label="'Initiative'"></cstext>
+            <cstext :value="character.speed()" :label="'Speed'"></cstext>
+            <cstext :value.sync="character.experience" :label="'Experience'"></cstext>
+            <cstext :value.sync="character.cabalExperience" :label="'Cabal xp'"></cstext>
+            <cstext :value.sync="character.arcaneExperience" :label="'Arcane xp'"></cstext>
+        </div>
 
     </fieldset>
 </template>

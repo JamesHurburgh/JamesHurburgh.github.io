@@ -1,0 +1,16 @@
+[{
+    "dots": 1,
+    "proficiencyLevel": "Novice. Basic knowledge and/or techniques."
+}, {
+    "dots": 2,
+    "proficiencyLevel": "Practitioner. Solid working knowledge and/or techniques."
+}, {
+    "dots": 3,
+    "proficiencyLevel": "Professional. Broad, detailed knowledge and/or techniques."
+}, {
+    "dots": 4,
+    "proficiencyLevel": "Expert. Exceptional depth of knowledge and/or techniques."
+}, {
+    "dots": 5,
+    "proficiencyLevel": "Master. Unsurpassed depth of knowledge and/or techniques. A leader in the field."
+}]

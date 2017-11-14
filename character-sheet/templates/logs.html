@@ -4,25 +4,25 @@
 
 <template id="logs">
     <fieldset>
-        <h3>Logs</h3>
-            <table class="table table-striped table-hover table-bordered">
-                <thead class="thead-dark">
-                    <tr>
-                        <th>Edit Mode</th>
-                        <th>Time</th>
-                        <th>Value</th>
-                        <th>Old</th>
-                        <th>New</th>
-                    </tr>
-                </thead>
-                <tr v-for="log in character.logs">
-                    <td>{{log.editMode}}</td>
-                    <td>{{new Date(log.time).toLocaleString()}}</td>
-                    <td>{{log.field}}</td>
-                    <td>{{log.oldValue}}</td>
-                    <td>{{log.newValue}}</td>
+        <h4 class="text-center">Logs</h4>
+        <table class="table table-striped table-hover table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Edit Mode</th>
+                    <th>Time</th>
+                    <th>Value</th>
+                    <th>Old</th>
+                    <th>New</th>
                 </tr>
-            </table>
+            </thead>
+            <tr v-for="log in character.logs">
+                <td>{{log.editMode}}</td>
+                <td>{{new Date(log.time).toLocaleString()}}</td>
+                <td>{{log.field}}</td>
+                <td>{{log.oldValue}}</td>
+                <td>{{log.newValue}}</td>
+            </tr>
+        </table>
     </fieldset>
 </template>
 
@@ -36,10 +36,10 @@
         }
     });
     requirejs([
-            'vue'
-        ],
+        'vue'
+    ],
 
-        function(Vue) {
+        function (Vue) {
             console.log("Registering logs template.")
 
             Vue.component('logs', {
@@ -47,7 +47,7 @@
                     prop: 'character'
                 },
                 props: ['character'],
-                data: function() {
+                data: function () {
                     return this.character;
                 },
                 template: '#logs',

@@ -2,15 +2,16 @@
     <willpower v-model="character"></willpower>
 -->
 <template id="willpower">
-    <fieldset>
-        <h3>Willpower</h3>
-        <div style="float:clear;">
+    <fieldset class="text-center">
+        <h4>Willpower</h4>
+        <div>
             <img v-for="n in character.maxWillpower()" src=".\img\dot-filled.png"><img v-for="n in unusedSpace()" src=".\img\dot-empty.png">
         </div>
-        <div style="float:clear;">
+        <div>
             <img v-for="n in character.willpower" src=".\img\box-stroke.png"><img v-for="n in usedWillpower()" src=".\img\box-empty.png"><img v-for="n in unusedSpace()" src=".\img\box-empty-grey.png">
-            <img src=".\img\delete.png" @click="character.adjustWillpower(-1)"/>
-            <img src=".\img\add.png" @click="character.adjustWillpower(1)" />
+        </div>
+        <div>
+            <img src=".\img\delete.png" @click="character.adjustWillpower(-1)" /><img src=".\img\add.png" @click="character.adjustWillpower(1)" />
         </div>
     </fieldset>
 </template>
@@ -24,10 +25,10 @@
         }
     });
     requirejs([
-            'vue'
-        ],
+        'vue'
+    ],
 
-        function(Vue) {
+        function (Vue) {
             console.log("Registering willpower template.")
 
             Vue.component('willpower', {
@@ -35,16 +36,16 @@
                     prop: 'character'
                 },
                 props: ['character'],
-                data: function() {
+                data: function () {
                     return this.character;
                 },
                 template: '#willpower',
                 components: {},
                 methods: {
-                    usedWillpower: function() {
+                    usedWillpower: function () {
                         return this.character.maxWillpower() - this.character.willpower;
                     },
-                    unusedSpace: function() {
+                    unusedSpace: function () {
                         return 10 - this.character.maxWillpower();
                     }
                 }

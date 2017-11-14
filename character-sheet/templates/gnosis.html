@@ -2,11 +2,13 @@
     <gnosis v-model="character"></gnosis>
 -->
 <template id="gnosis">
-    <fieldset>
-        <h3>Gnosis</h3>
-        <div style="float:clear;">
+    <fieldset class="text-center">
+        <h4>Gnosis</h4>
+        <div>
             <img v-for="n in character.gnosis" src=".\img\dot-filled.png"><img v-for="n in unusedSpace()" src=".\img\dot-empty.png">
-            <img src=".\img\delete.png" @click="character.adjustGnosis(-1)"/>
+        </div>
+        <div>
+            <img src=".\img\delete.png" @click="character.adjustGnosis(-1)" />
             <img src=".\img\add.png" @click="character.adjustGnosis(1)" />
         </div>
     </fieldset>
@@ -21,10 +23,10 @@
         }
     });
     requirejs([
-            'vue'
-        ],
+        'vue'
+    ],
 
-        function(Vue) {
+        function (Vue) {
             console.log("Registering gnosis template.")
 
             Vue.component('gnosis', {
@@ -32,13 +34,13 @@
                     prop: 'character'
                 },
                 props: ['character'],
-                data: function() {
+                data: function () {
                     return this.character;
                 },
                 template: '#gnosis',
                 components: {},
                 methods: {
-                    unusedSpace: function() {
+                    unusedSpace: function () {
                         return 10 - this.character.gnosis;
                     }
                 }

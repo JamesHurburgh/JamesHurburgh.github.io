@@ -1,0 +1,222 @@
+[
+    {
+        "level": 1,
+        "maxMana": 10,
+        "maxManaPerTurn": 1,
+        "physicalLimit": 5,
+        "spellsCombined": 1,
+        "extraAura": 0,
+        "baseParadoxDiePool": 1,
+        "extendingCastingTimePerRoll": "3 hours",
+        "arcanaLimits": [
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1
+        ]
+    },
+    {
+        "level": 2,
+        "maxMana": 11,
+        "maxManaPerTurn": 2,
+        "physicalLimit": 5,
+        "spellsCombined": 1,
+        "extraAura": 0,
+        "baseParadoxDiePool": 1,
+        "extendingCastingTimePerRoll": "3 hours",
+        "arcanaLimits": [
+            4,
+            4,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            1,
+            1
+        ]
+    },
+    {
+        "level": 3,
+        "maxMana": 12,
+        "maxManaPerTurn": 3,
+        "physicalLimit": 5,
+        "spellsCombined": 2,
+        "extraAura": 0,
+        "baseParadoxDiePool": 2,
+        "extendingCastingTimePerRoll": "1 hours",
+        "arcanaLimits": [
+            5,
+            4,
+            4,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            1
+        ]
+    },
+    {
+        "level": 4,
+        "maxMana": 13,
+        "maxManaPerTurn": 4,
+        "physicalLimit": 5,
+        "spellsCombined": 2,
+        "extraAura": 0,
+        "baseParadoxDiePool": 2,
+        "extendingCastingTimePerRoll": "1 hours",
+        "arcanaLimits": [
+            5,
+            5,
+            4,
+            4,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "level": 5,
+        "maxMana": 14,
+        "maxManaPerTurn": 5,
+        "physicalLimit": 5,
+        "spellsCombined": 2,
+        "extraAura": 0,
+        "baseParadoxDiePool": 3,
+        "extendingCastingTimePerRoll": "30 minutes",
+        "arcanaLimits": [
+            5,
+            5,
+            5,
+            4,
+            4,
+            3,
+            3,
+            3,
+            2,
+            2
+        ]
+    },
+    {
+        "level": 6,
+        "maxMana": 15,
+        "maxManaPerTurn": 6,
+        "physicalLimit": 6,
+        "spellsCombined": 3,
+        "extraAura": 1,
+        "baseParadoxDiePool": 3,
+        "extendingCastingTimePerRoll": "30 minutes",
+        "arcanaLimits": [
+            6,
+            5,
+            5,
+            5,
+            4,
+            4,
+            3,
+            3,
+            3,
+            2
+        ]
+    },
+    {
+        "level": 7,
+        "maxMana": 20,
+        "maxManaPerTurn": 7,
+        "physicalLimit": 7,
+        "spellsCombined": 3,
+        "extraAura": 2,
+        "baseParadoxDiePool": 4,
+        "extendingCastingTimePerRoll": "10 minutes",
+        "arcanaLimits": [
+            10,
+            6,
+            5,
+            5,
+            5,
+            4,
+            4,
+            3,
+            3,
+            3
+        ]
+    },
+    {
+        "level": 8,
+        "maxMana": 30,
+        "maxManaPerTurn": 8,
+        "physicalLimit": 8,
+        "spellsCombined": 3,
+        "extraAura": 3,
+        "baseParadoxDiePool": 4,
+        "extendingCastingTimePerRoll": "10 minutes",
+        "arcanaLimits": [
+            10,
+            10,
+            6,
+            5,
+            5,
+            5,
+            4,
+            4,
+            3,
+            3
+        ]
+    },
+    {
+        "level": 9,
+        "maxMana": 50,
+        "maxManaPerTurn": 10,
+        "physicalLimit": 9,
+        "spellsCombined": 4,
+        "extraAura": 4,
+        "baseParadoxDiePool": 5,
+        "extendingCastingTimePerRoll": "1 minute",
+        "arcanaLimits": [
+            10,
+            10,
+            10,
+            6,
+            5,
+            5,
+            5,
+            4,
+            4,
+            3
+        ]
+    },
+    {
+        "level": 10,
+        "maxMana": 100,
+        "maxManaPerTurn": 15,
+        "physicalLimit": 10,
+        "spellsCombined": 4,
+        "extraAura": 5,
+        "baseParadoxDiePool": 5,
+        "extendingCastingTimePerRoll": "1 minute",
+        "arcanaLimits": [
+            10,
+            10,
+            10,
+            10,
+            6,
+            5,
+            5,
+            5,
+            4,
+            4
+        ]
+    }
+]

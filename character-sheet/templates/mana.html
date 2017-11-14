@@ -2,13 +2,18 @@
     <mana v-model="character"></mana>
 -->
 <template id="mana">
-    <fieldset>
-        <h3>Mana</h3>
+    <fieldset class="text-center">
+        <h4>Mana</h4>
         <div>
             <img v-for="n in character.mana" src=".\img\box-stroke.png">
             <img v-for="n in unusedSpace()" src=".\img\box-empty-grey.png">
-            <img src=".\img\delete.png" @click="character.adjustMana(-1)"/>
+        </div>
+        <div>
+            <img src=".\img\delete.png" @click="character.adjustMana(-1)" />
             <img src=".\img\add.png" @click="character.adjustMana(1)" />
+        </div>
+        <div>
+            <strong>{{character.maxManaPerTurn()}}</strong> mana per turn.
         </div>
     </fieldset>
 </template>
@@ -22,10 +27,10 @@
         }
     });
     requirejs([
-            'vue'
-        ],
+        'vue'
+    ],
 
-        function(Vue) {
+        function (Vue) {
             console.log("Registering mana template.")
 
             Vue.component('mana', {
@@ -33,14 +38,14 @@
                     prop: 'character'
                 },
                 props: ['character'],
-                data: function() {
+                data: function () {
                     return this.character;
                 },
                 template: '#mana',
                 components: {},
                 methods: {
-                    unusedSpace: function() {
-                        return 20 - this.character.mana;
+                    unusedSpace: function () {
+                        return this.character.maxMana() - this.character.mana;
                     }
                 }
             });

@@ -1,0 +1,60 @@
+<!-- Usage:
+    <merits v-model="character"></merits>
+-->
+
+<template id="meritselector">
+    <div>
+        <div class="" v-for="(merit, index) in getFilteredMerits">
+            {{merit}}
+        </div>
+    </div>
+
+</template>
+
+<script type="text/javascript">
+    requirejs.config({
+        baseUrl: 'js/lib',
+        paths: {
+            app: '../app',
+            models: '../app/models',
+            data: '../../data',
+        }
+    });
+    requirejs([
+        'vue',
+        'json!data/merits.json'
+    ],
+
+        function (Vue, merits) {
+            console.log("Registering merits template.")
+
+            Vue.component('meritselector', {
+                model: {
+                    prop: 'character'
+                },
+                props: ['character'],
+                data: function () {
+                    return this.character;
+                },
+                template: '#meritselector',
+                components: {},
+                methods: {
+                    getFilteredMerits: function () {
+                        return ["Merit 1", "Merit 2"];
+                    },
+                    addMerit: function () {
+                        this.character.merits.push({
+                            name: "",
+                            dots: 1
+                        });
+                    },
+                    removeMerit: function (index) {
+                        this.character.merits.splice(index, 1);
+                    },
+                    updateMerit: function (index, merit) {
+                        this.character.merits[index] = merit;
+                    }
+                }
+            });
+        });
+</script>

@@ -1,0 +1,31 @@
+[{
+    "stamina": 1,
+    "time": "30 seconds"
+}, {
+    "stamina": 2,
+    "time": "One minute"
+}, {
+    "stamina": 3,
+    "time": "Two minutes"
+}, {
+    "stamina": 4,
+    "time": "Four minutes"
+}, {
+    "stamina": 5,
+    "time": "Eight minutes"
+}, {
+    "stamina": 6,
+    "time": "15 minutes"
+}, {
+    "stamina": 7,
+    "time": "30 minutes"
+}, {
+    "stamina": 8,
+    "time": "1 hour"
+}, {
+    "stamina": 9,
+    "time": "2 hours"
+}, {
+    "stamina": 10,
+    "time": "4 hours"
+}]

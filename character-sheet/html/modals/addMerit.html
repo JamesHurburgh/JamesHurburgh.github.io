@@ -1,0 +1,25 @@
+<!-- Modal Add Merit Box -->
+<div id="addMerit" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4>Add Merit</h4>
+            </div>
+            <div class="modal-body">
+                <meritSelector v-model="loadedCharacter"></meritSelector>
+                There are no options.
+                <!-- <div>Default view:
+                    <div>Full view</div>
+                    <div>Tabbed</div>
+                </div>
+                <div>Autosave?</div> -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

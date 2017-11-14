@@ -1,0 +1,66 @@
+[{
+        "name": "Compelling",
+        "description": "Elementary manipulation of phenomena within the Arcanum’ s purview, enough to activate them and / or impart directions.Atlanteans called this the Practice of Compelling. ",
+        "dots": 1
+    },
+    {
+        "name": "Knowing",
+        "description": "Gain mystical knowledge about and understanding of phenomena within the Arcanum’ s purview.Atlanteans called this the Practice of Knowing. ",
+        "dots": 1
+    },
+    {
+        "name": "Unveiling",
+        "description": "Gain sensory perception of phenomena within the Arcanum’ s purview.Atlanteans called this the Practice of Unveiling. ",
+        "dots": 1
+    },
+    {
+        "name": "Ruling",
+        "description": "Exert elementary command and control over phenomena within the purview of the Arcanum. Atlanteans called this the Practice of Ruling. ",
+        "dots": 2
+    },
+    {
+        "name": "Shielding",
+        "description": "Protect a target against attacks, usually by providing points of armor.Atlanteans called this the Practice of Shielding. ",
+        "dots": 2
+    },
+    {
+        "name": "Veiling",
+        "description": "Conceal, camouflage or hide phenomena within the Arcanum’ s purview from scrutiny.Atlanteans called this the Practice of Veiling. ",
+        "dots": 2
+    },
+    {
+        "name": "Fraying",
+        "description": "Injure a target. Atlanteans called this the Practice of Fraying. ",
+        "dots": 3
+    },
+    {
+        "name": "Perfecting",
+        "description": "Fortify, bolster or improve phenomena within the Arcanum’ s purview.Atlanteans called this the Practice of Perfecting. ",
+        "dots": 3
+    },
+    {
+        "name": "Weaving",
+        "description": "Alter the capabilities or functions of phenomena within the Arcanum’ s purview.Atlanteans called this the Practice of Weaving. ",
+        "dots": 3
+    },
+    {
+        "name": "Patterning",
+        "description": "Transform phenomena within the Arcanum’s purview into related phenomena or shapes, or replace their capabilities or functions with different ones.Atlanteans called this the Practice of Patterning. ",
+        "dots": 4
+    },
+    {
+        "name": "Unraveling",
+        "description": "Significantly injure a target, degrade its capabilities or negatively transform it.Atlanteans called this the Practice of Unraveling. ",
+        "dots": 4
+    },
+    {
+        "name": "Making",
+        "description": "Create phenomena within the Arcanum’s purview from nothing.Atlanteans called this the Practice of Making. ",
+        "dots": 5
+    },
+    {
+        "name": "Unmaking",
+        "description": "Destroy or mutilate a target. Atlanteans called this the Practice of Unmaking. ",
+        "dots": 5
+    }
+]

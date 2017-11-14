@@ -1,0 +1,16 @@
+[{
+    "dots": 1,
+    "talent": "Poor. Unexercised, unpracticed or inept."
+}, {
+    "dots": 2,
+    "talent": "Average. The result of occasional effort or application."
+}, {
+    "dots": 3,
+    "talent": "Good. Regular practice or effort, or naturally talented."
+}, {
+    "dots": 4,
+    "talent": "Exceptional. Frequently applied, tested and honed, or naturally gifted."
+}, {
+    "dots": 5,
+    "talent": "Outstanding. The peak of normal human capability. Continuously exercised or naturally blessed."
+}]

@@ -4,11 +4,28 @@
 
 <template id="skills">
     <fieldset>
-        <h3>Skills</h3>
-            <div v-for="skill in getSkills()" key="skill.name" >
-                <label class="col-xs-6 col-sm-3 col-md-2 control-label">{{skill.name}}</label>
-                <csdots class="col-xs-6 col-sm-3 col-md-2" :value.sync="character[skill.name.toLowerCase()]" :min="0" :max="5"></csdots>
+        <h4 class="text-center">Skills</h4>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <h5 class="text-center text-muted ">Mental</h5>
+            <div v-for="skill in getSkillsByCategory('Mental')" key="skill.name">
+                <label class="col-xs-6 control-label text-right">{{skill.name}}</label>
+                <csdots class="col-xs-6" :value.sync="character[skill.name.toLowerCase()]" :min="0" :max="character.physicalLimit()"></csdots>
             </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <h5 class="text-center text-muted ">Physical</h5>
+            <div v-for="skill in getSkillsByCategory('Physical')" key="skill.name">
+                <label class="col-xs-6 control-label text-right">{{skill.name}}</label>
+                <csdots class="col-xs-6" :value.sync="character[skill.name.toLowerCase()]" :min="0" :max="character.physicalLimit()"></csdots>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <h5 class="text-center text-muted ">Social</h5>
+            <div v-for="skill in getSkillsByCategory('Social')" key="skill.name">
+                <label class="col-xs-6 control-label text-right">{{skill.name}}</label>
+                <csdots class="col-xs-6" :value.sync="character[skill.name.toLowerCase()]" :min="0" :max="character.physicalLimit()"></csdots>
+            </div>
+        </div>
     </fieldset>
 </template>
 
@@ -22,11 +39,11 @@
         }
     });
     requirejs([
-            'vue',
-            'json!data/skills.json'
-        ],
+        'vue',
+        'json!data/skills.json'
+    ],
 
-        function(Vue, skills) {
+        function (Vue, skills) {
             console.log("Registering skills template.")
 
             Vue.component('skills', {
@@ -34,14 +51,17 @@
                     prop: 'character'
                 },
                 props: ['character'],
-                data: function() {
+                data: function () {
                     return this.character;
                 },
                 template: '#skills',
                 components: {},
                 methods: {
-                    getSkills: function() {
+                    getSkills: function () {
                         return skills;
+                    },
+                    getSkillsByCategory: function (category) {
+                        return skills.filter(skill => skill.category == category);
                     }
                 }
             });

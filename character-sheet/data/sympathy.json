@@ -1,0 +1,35 @@
+[{
+    "name": "Sensory",
+    "description": "You can see, hear or otherwise sense your target directly. This is the default factor, a sensory spell. (When trying to locate a target with hearing or smell, use the rules on pp. 166-167 of the World of Darkness RulebookWorld of Darkness Rulebook World of Darkness Rulebook.)",
+    "castingPenalty": 0,
+    "castingPossible": true
+}, {
+    "name": "Intimate",
+    "description": "You have a piece of the target’s physical substance, such as hair, nail clippings or blood from a creature, a leaf or flower from a plant, or a sliver of material from an object. Or you know the target very well, such as a longtime friend or close family member, a beloved pet or a prized possession.",
+    "castingPenalty": -2,
+    "castingPossible": true
+}, {
+    "name": "Known",
+    "description": "You know the target, which might be a friend, co-worker or personal possession. You have a photo or other accurate representation of the target, or you can see the target on live video or hear the target over live audio.",
+    "castingPenalty": -4,
+    "castingPossible": true
+}, {
+    "name": "Acquainted",
+    "description": "You’re acquainted with the target. It might be a casual acquaintance, a co-worker you hardly know, or an item you held or used once.",
+    "castingPenalty": -6,
+    "castingPossible": true
+}, {
+    "name": "Encountered",
+    "description": "You have encountered the target briefly, such as a person you passed on the street or an item you touched once.",
+    "castingPenalty": -8,
+    "castingPossible": true
+}, {
+    "name": "Described",
+    "description": "You have never encountered the target, but can describe it. You might know a person’s name or physical description, or what an object or place looks like.",
+    "castingPenalty": -10,
+    "castingPossible": true
+}, {
+    "name": "Unknown",
+    "description": "If you know nothing about the target, you cannot cast a sympathetic spell on it. Knowing that there is a rival mage in town is not enough to affect the  mysterious figure from afar. You must at least know his name, description or location.",
+    "castingPossible": false
+}]

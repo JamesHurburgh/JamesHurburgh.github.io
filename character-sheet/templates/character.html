@@ -28,6 +28,7 @@
                     <mana v-model="character"></mana>
                     <willpower v-model="character"></willpower>
                     <gnosis v-model="character"></gnosis>
+                    <activespells v-model="character"></activespells>
                     <wisdom v-model="character"></wisdom>
                     <notes v-model="character"></notes>
                     <logs v-model="character"></logs>
@@ -67,6 +68,9 @@
                     </li>
                     <li class="">
                         <a href="#gnosis" data-toggle="tab" aria-expanded="false">Gnosis</a>
+                    </li>
+                    <li class="">
+                        <a href="#activespells" data-toggle="tab" aria-expanded="false">Active Spells</a>
                     </li>
                     <li class="">
                         <a href="#wisdom" data-toggle="tab" aria-expanded="false">Wisdom</a>
@@ -112,6 +116,9 @@
                     <div class="tab-pane fade" id="gnosis">
                         <gnosis v-model="character"></gnosis>
                     </div>
+                    <div class="tab-pane fade" id="activespells">
+                        <activespells v-model="character"></activespells>
+                    </div>                    
                     <div class="tab-pane fade" id="wisdom">
                         <wisdom v-model="character"></wisdom>
                     </div>
@@ -119,7 +126,7 @@
                         <notes v-model="character"></notes>
                     </div>
                     <div class="tab-pane fade" id="logs">
-                            <logs v-model="character"></logs>
+                        <logs v-model="character"></logs>
                     </div>
                 </div>
             </div>

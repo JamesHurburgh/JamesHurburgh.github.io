@@ -70,6 +70,7 @@
 
 
              character.wisdom = chance.integer({ min: 1, max: 10 });
+             character.gnosis = chance.integer({ min: 1, max: 10 });
 
              // Starting Values
              character.bashingDamage = chance.integer({ min: 0, max: 2 });

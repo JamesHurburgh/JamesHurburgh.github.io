@@ -4,8 +4,9 @@
 
 <template id="notes">
     <fieldset>
-        <h3>Notes</h3>
-            <textarea v-model="character.notes" class="form-control" rows="10" @input="character.updateNotes(character.notes)"></textarea> 
+        <h4 class="text-center">Notes</h4>
+
+        <textarea v-model="character.notes" class="form-control" rows="10" @input="character.updateNotes(character.notes)"></textarea>
     </fieldset>
 </template>
 
@@ -19,10 +20,10 @@
         }
     });
     requirejs([
-            'vue'
-        ],
+        'vue'
+    ],
 
-        function(Vue) {
+        function (Vue) {
             console.log("Registering notes template.")
 
             Vue.component('notes', {
@@ -30,7 +31,7 @@
                     prop: 'character'
                 },
                 props: ['character'],
-                data: function() {
+                data: function () {
                     return this.character;
                 },
                 template: '#notes',

@@ -4,9 +4,9 @@
 
 <template id="arcana">
     <fieldset>
-        <h3>Arcana</h3>
-        <div v-for="arcanum in getArcana()" key="arcanum.name" >
-            <label class="col-xs-6 col-sm-3 col-md-2 control-label">{{arcanum.name}}</label>
+        <h4 class="text-center">Arcana</h4>
+        <div v-for="arcanum in getArcana()" key="arcanum.name">
+            <label class="col-xs-6 col-sm-3 col-md-2 control-label text-right">{{arcanum.name}}</label>
             <csdots class="col-xs-6 col-sm-3 col-md-2" :value.sync="character[arcanum.name.toLowerCase()]" :min="0" :max="5"></csdots>
         </div>
     </fieldset>
