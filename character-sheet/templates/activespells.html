@@ -4,23 +4,38 @@
 <template id="activespells">
     <fieldset class="text-center">
         <h4>Active Spells</h4>
-        <div>
-            Maximum of
-            <strong>{{character.maxActiveSpells()}}</strong> active spells.
-        </div>
-        <div>
-            Spell tolerance
-            <strong>{{character.spellTolerance()}}</strong>.
-        </div>
+        <span>
+            <strong>{{character.currentActiveSpells()}}</strong>/<strong>{{character.maxActiveSpells()}}</strong> active spells.
+        </span>
+        <span>
+            Tolerance:
+            <strong>{{character.spellsCastOnCharacter()}}</strong>/<strong>{{character.spellTolerance()}}</strong>.
+        </span>
+        <span> Casting penalty: <strong>{{character.spellAccumulationPenalty()}}</strong>.
+        </span>
         <div class="col-xs-12" v-for="(spell, index) in character.activeSpells">
             <div class="input-group">
+                <div class="input-group-addon">
+                    <a class="dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a @click="toggleCastOnMe(index, spell)">Cast On Me <span v-if="spell.castOnMe">✓</span></a></li>
+                        <li><a @click="toggleCastByMe(index, spell)">Cast By Me <span v-if="spell.castByMe">✓</span></a></li>
+                      <li class="divider"></li>
+                      <li><a @click="removeSpell(index)">Remove</a></li>
+                    </ul>
+                  </div>
                 <input type="text" class="form-control spellName" data-provide="typeahead" v-model="spell.name" @input="updateSpell(index, spell)"
                     @update="updateSpell(index, spell)">
-                <div class="input-group-addon btn-danger" @click="removeSpell(index)">❌</div>
+                <!-- <span class="input-group-addon">
+                    On
+                    <input type="checkbox" v-model="spell.castOnMe" /> By
+                    <input type="checkbox" v-model="spell.castByMe" />
+                </span>
+                <div class="input-group-addon btn-danger" @click="removeSpell(index)">❌</div> -->
             </div>
         </div>
         <div class="col-xs-6 col-sm-4 col-md-2 pull-right">
-            <button class="btn btn-info pull-right" @click="addSpell()" :disabled="maxSpells()">Add</button>
+            <button class="btn btn-info pull-right" @click="addSpell()">Add</button>
         </div>
     </fieldset>
 </template>
@@ -34,11 +49,11 @@
         }
     });
     requirejs([
-        'jquery', 'vue',
-        'bootstrap3-typeahead'
-    ],
+            'jquery', 'vue',
+            'bootstrap3-typeahead'
+        ],
 
-        function ($, Vue, typeahead) {
+        function($, Vue, typeahead) {
             console.log("Registering activespells template.")
 
             Vue.component('activespells', {
@@ -46,40 +61,50 @@
                     prop: 'character'
                 },
                 props: ['character'],
-                data: function () {
+                data: function() {
                     return this.character;
                 },
                 template: '#activespells',
                 components: {},
                 methods: {
-                    addSpell: function () {
+                    addSpell: function() {
                         this.character.activeSpells.push({
-                            name: ""
+                            name: "",
+                            castOnMe: true,
+                            castByMe: true
                         });
                         this.applyTypeAhead();
                     },
-                    removeSpell: function (index) {
+                    removeSpell: function(index) {
                         this.character.activeSpells.splice(index, 1);
                     },
-                    updateSpell: function (index, spell) {
+                    updateSpell: function(index, spell) {
                         this.character.activeSpells[index] = spell;
                     },
-                    maxSpells: function () {
+                    toggleCastOnMe: function(index, spell) {
+                        this.character.activeSpells[index].castOnMe = !this.character.activeSpells[index].castOnMe;
+                    },
+                    toggleCastByMe: function(index) {
+                        this.character.activeSpells[index].castByMe = !this.character.activeSpells[index].castByMe;
+                    },
+                    maxSpells: function() {
                         return this.character.activeSpells.length >= this.character.maxActiveSpells();
                     },
-                    applyTypeAhead: function () {
-                        $.get("data/spells.json", function (data) {
-                            var spellNames = data.map(function (spell) {
+                    applyTypeAhead: function() {
+                        $.get("data/spells.json", function(data) {
+                            var spellNames = data.map(function(spell) {
                                 return spell.name
                             });
 
                             $(".spellName").filter(element => !element.dataset).typeahead({
                                 source: spellNames,
-                            });
+                            }).on('typeahead:select', function(obj, selection) {
+                                console.log("Typeahead");
+                            });;
                         }, 'json');
                     }
                 },
-                mounted: function () {
+                mounted: function() {
                     console.log("activespells template mounted");
                     this.applyTypeAhead();
                 }
