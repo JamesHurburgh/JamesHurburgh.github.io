@@ -1,0 +1,32 @@
+[
+{
+	"level":1,
+	"lift-lb":40,
+	"lift-kg":1,
+	"lift-description:"a chair"
+},
+{
+	"level":2,
+	"lift-lb":100,
+	"lift-kg":1,
+	"lift-description:"a large dog"
+},
+{
+	"level":3,
+	"lift-lb":250,
+	"lift-kg":1,
+	"lift-description:"a public mailbox"
+},
+{
+	"level":4,
+	"lift-lb":400,
+	"lift-kg":1,
+	"lift-description:"a wooden crate"
+},
+{
+	"level":5,
+	"lift-lb":650,
+	"lift-kg":1,
+	"lift-description:"a coffin"
+},
+]

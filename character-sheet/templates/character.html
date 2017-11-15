@@ -30,6 +30,7 @@
                     <gnosis v-model="character"></gnosis>
                     <activespells v-model="character"></activespells>
                     <wisdom v-model="character"></wisdom>
+                    <inventory v-model="character"></inventory>
                     <notes v-model="character"></notes>
                     <logs v-model="character"></logs>
                 </div>
@@ -76,6 +77,9 @@
                         <a href="#wisdom" data-toggle="tab" aria-expanded="false">Wisdom</a>
                     </li>
                     <li class="">
+                        <a href="#inventory" data-toggle="tab" aria-expanded="false">Inventory</a>
+                    </li>
+                    <li class="">
                         <a href="#notes" data-toggle="tab" aria-expanded="false">Notes</a>
                     </li>
                     <li class="">
@@ -118,9 +122,12 @@
                     </div>
                     <div class="tab-pane fade" id="activespells">
                         <activespells v-model="character"></activespells>
-                    </div>                    
+                    </div>
                     <div class="tab-pane fade" id="wisdom">
                         <wisdom v-model="character"></wisdom>
+                    </div>
+                    <div class="tab-pane fade" id="inventory">
+                        <inventory v-model="character"></inventory>
                     </div>
                     <div class="tab-pane fade" id="notes">
                         <notes v-model="character"></notes>
@@ -144,10 +151,10 @@
         }
     });
     requirejs([
-            'vue'
-        ],
+        'vue'
+    ],
 
-        function(Vue) {
+        function (Vue) {
             console.log("Registering character template.")
 
             Vue.component('character', {
@@ -155,7 +162,7 @@
                     prop: 'character'
                 },
                 props: ['character'],
-                data: function() {
+                data: function () {
                     return this.character;
                 },
                 template: '#characterTemplate',

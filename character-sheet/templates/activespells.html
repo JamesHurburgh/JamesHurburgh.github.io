@@ -14,12 +14,13 @@
         </div>
         <div class="col-xs-12" v-for="(spell, index) in character.activeSpells">
             <div class="input-group">
-                <input type="text" class="form-control spellName" data-provide="typeahead" v-model="spell.name" @input="updateSpell(index, spell)" @update="updateSpell(index, spell)">
+                <input type="text" class="form-control spellName" data-provide="typeahead" v-model="spell.name" @input="updateSpell(index, spell)"
+                    @update="updateSpell(index, spell)">
                 <div class="input-group-addon btn-danger" @click="removeSpell(index)">❌</div>
             </div>
         </div>
-        <div class="col-xs-12 pull-right">
-            <button class="btn btn-info col-xs-6 pull-right" @click="addSpell()" :disabled="maxSpells()">Add</button>
+        <div class="col-xs-6 col-sm-4 col-md-2 pull-right">
+            <button class="btn btn-info pull-right" @click="addSpell()" :disabled="maxSpells()">Add</button>
         </div>
     </fieldset>
 </template>
@@ -33,11 +34,11 @@
         }
     });
     requirejs([
-            'jquery', 'vue',
-            'bootstrap3-typeahead'
-        ],
+        'jquery', 'vue',
+        'bootstrap3-typeahead'
+    ],
 
-        function($, Vue, typeahead) {
+        function ($, Vue, typeahead) {
             console.log("Registering activespells template.")
 
             Vue.component('activespells', {
@@ -45,30 +46,30 @@
                     prop: 'character'
                 },
                 props: ['character'],
-                data: function() {
+                data: function () {
                     return this.character;
                 },
                 template: '#activespells',
                 components: {},
                 methods: {
-                    addSpell: function() {
+                    addSpell: function () {
                         this.character.activeSpells.push({
                             name: ""
                         });
                         this.applyTypeAhead();
                     },
-                    removeSpell: function(index) {
+                    removeSpell: function (index) {
                         this.character.activeSpells.splice(index, 1);
                     },
-                    updateSpell: function(index, spell) {
+                    updateSpell: function (index, spell) {
                         this.character.activeSpells[index] = spell;
                     },
-                    maxSpells: function() {
+                    maxSpells: function () {
                         return this.character.activeSpells.length >= this.character.maxActiveSpells();
                     },
-                    applyTypeAhead: function() {
-                        $.get("data/spells.json", function(data) {
-                            var spellNames = data.map(function(spell) {
+                    applyTypeAhead: function () {
+                        $.get("data/spells.json", function (data) {
+                            var spellNames = data.map(function (spell) {
                                 return spell.name
                             });
 
@@ -78,7 +79,7 @@
                         }, 'json');
                     }
                 },
-                mounted: function() {
+                mounted: function () {
                     console.log("activespells template mounted");
                     this.applyTypeAhead();
                 }

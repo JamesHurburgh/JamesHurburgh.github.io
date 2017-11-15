@@ -1,0 +1,63 @@
+<!-- Usage:
+    <inventory v-model="character"></inventory>
+-->
+<template id="inventory">
+    <fieldset class="text-center">
+        <h4>Inventory</h4>
+        <div>
+            Maximum carry of
+            <strong>{{character.carryingCapacity()}}</strong>.
+        </div>
+        <div class="col-xs-12" v-for="(item, index) in character.inventory">
+            <div class="input-group">
+                <input type="text" class="form-control" v-model="item.name" @input="updateItem(index, item)" @update="updateSpell(index, item)">
+                <div class="input-group-addon btn-danger" @click="removeItem(index)">❌</div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-2 pull-right">
+            <button class="btn btn-info pull-right" @click="addItem() ">Add</button>
+        </div>
+    </fieldset>
+</template>
+<script type="text/javascript ">
+    requirejs.config({
+        baseUrl: 'js/lib',
+        paths: {
+            app: '../app',
+            models: '../app/models',
+            data: '../../data',
+        }
+    });
+    requirejs([
+        'vue'
+    ],
+
+        function (Vue) {
+            console.log("Registering inventory template. ")
+
+            Vue.component('inventory', {
+                model: {
+                    prop: 'character'
+                },
+                props: ['character'],
+                data: function () {
+                    return this.character;
+                },
+                template: '#inventory',
+                components: {},
+                methods: {
+                    addItem: function () {
+                        this.character.inventory.push({
+                            name: " "
+                        });
+                    },
+                    removeItem: function (index) {
+                        this.character.inventory.splice(index, 1);
+                    },
+                    updateItem: function (index, item) {
+                        this.character.inventory[index] = item;
+                    }
+                }
+            });
+        });
+</script>

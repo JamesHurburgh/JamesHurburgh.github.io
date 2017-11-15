@@ -11,8 +11,8 @@
                 <div class="input-group-addon btn-danger" @click="removeFlaw(index)">❌</div>
             </div>
         </div>
-        <div class="col-xs-2 pull-right">
-            <button class="btn btn-info col-xs-6 pull-right" @click="addFlaw()">Add</button>
+        <div class="col-xs-6 col-sm-4 col-md-2 pull-right">
+            <button class="btn btn-info pull-right" @click="addFlaw()">Add</button>
         </div>
     </fieldset>
 </template>
@@ -27,11 +27,11 @@
         }
     });
     requirejs([
-            'vue',
-            'json!data/flaws.json'
-        ],
+        'vue',
+        'json!data/flaws.json'
+    ],
 
-        function(Vue, flaws) {
+        function (Vue, flaws) {
             console.log("Registering flaws template.")
 
             Vue.component('flaws', {
@@ -39,21 +39,21 @@
                     prop: 'character'
                 },
                 props: ['character'],
-                data: function() {
+                data: function () {
                     return this.character;
                 },
                 template: '#flaws',
                 components: {},
                 methods: {
-                    addFlaw: function() {
+                    addFlaw: function () {
                         this.character.flaws.push({
                             name: ""
                         });
                     },
-                    removeFlaw: function(index) {
+                    removeFlaw: function (index) {
                         this.character.flaws.splice(index, 1);
                     },
-                    updateflaw: function(index, flaw) {
+                    updateflaw: function (index, flaw) {
                         this.character.flaws[index] = flaw;
                     }
                 }

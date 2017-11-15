@@ -16,8 +16,8 @@
             </div>
 
         </div>
-        <div class="col-xs-2 pull-right">
-            <button class="btn btn-info col-xs-6 pull-right" @click="addMerit()">Add</button>
+        <div class="col-xs-6 col-sm-4 col-md-2 pull-right">
+            <button class="btn btn-info pull-right" @click="addMerit()">Add</button>
             <!-- <a href="#" class="btn btn-info col-xs-6" data-toggle="modal" data-target="#addMerit">Search</a> -->
 
             <!-- <button class="btn btn-info col-xs-6" @click="addMerit()">Search</button> -->
@@ -39,11 +39,11 @@
         }
     });
     requirejs([
-            'vue',
-            'json!data/merits.json'
-        ],
+        'vue',
+        'json!data/merits.json'
+    ],
 
-        function(Vue, merits) {
+        function (Vue, merits) {
             console.log("Registering merits template.")
 
             Vue.component('merits', {
@@ -51,22 +51,22 @@
                     prop: 'character'
                 },
                 props: ['character'],
-                data: function() {
+                data: function () {
                     return this.character;
                 },
                 template: '#merits',
                 components: {},
                 methods: {
-                    addMerit: function() {
+                    addMerit: function () {
                         this.character.merits.push({
                             name: "",
                             dots: 1
                         });
                     },
-                    removeMerit: function(index) {
+                    removeMerit: function (index) {
                         this.character.merits.splice(index, 1);
                     },
-                    updateMerit: function(index, merit) {
+                    updateMerit: function (index, merit) {
                         this.character.merits[index] = merit;
                     }
                 }
