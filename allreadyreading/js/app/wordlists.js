@@ -1,6 +1,13 @@
 define([],
     function() {
         return [{
+            "setListName": "Flash-Words",
+            "languageCode": "en",
+            "description": "",
+            "sets": [
+                { "setNumber": "1", "setName": "Blue", "colorHex": "FFFFFF", "wordList": ["I", "me", "the", "is", "to", "you", "and", "went", "no", "this", "do", "said", "my", "for", "go", "have", "of", "was", "a", "put"] },        
+            ]
+        },{
                 "setListName": "Magic", //From: http://year4c.edublogs.org/files/2014/04/Sight-words-0-800-2cvvp94.pdf
                 "languageCode": "en-au",
                 "description": "",
