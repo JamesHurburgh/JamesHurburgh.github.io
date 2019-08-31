@@ -5,7 +5,11 @@ define([],
             "languageCode": "en",
             "description": "",
             "sets": [
-                { "setNumber": "1", "setName": "Blue", "colorHex": "FFFFFF", "wordList": ["I", "me", "the", "is", "to", "you", "and", "went", "no", "this", "do", "said", "my", "for", "go", "have", "of", "was", "a", "put"] },        
+                { "setNumber": "1", "setName": "Blue", "colorHex": "0000FF", "wordList": ["I", "me", "the", "is", "to", "you", "and", "went", "no", "this", "do", "said", "my", "for", "go", "have", "of", "was", "a", "put"] },        
+                { "setNumber": "2", "setName": "Green", "colorHex": "00FF00", "wordList": ["be", "he", "she", "with", "as", "or", "off", "little", "has", "see", "like", "are", "so", "her", "his", "well", "then", "back", "into", "much"] },
+                { "setNumber": "3", "setName": "Orange", "colorHex": "FFA500", "wordList": ["that", "from", "them", "want", "must", "here", "there", "now", "day", "tie", "star", "look", "all", "toe", "by", "glue", "hair", "play", "out", "who"] },
+                { "setNumber": "4", "setName": "Purple", "colorHex": "A020F0", "wordList": ["they", "came", "saw", "one", "dear", "when", "show", "two", "born", "just", "down", "come", "boy", "our", "school", "some", "what", "make", "first"] },
+                { "setNumber": "5", "setName": "Red", "colorHex": "FF0000", "wordList": ["right", "where", "book", "call", "before", "which", "been", "over", "made", "could", "their", "your", "other", "because", "Mister", "Misses", "only", "new", "about", "too"] },
             ]
         },{
                 "setListName": "Magic", //From: http://year4c.edublogs.org/files/2014/04/Sight-words-0-800-2cvvp94.pdf
