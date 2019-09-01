@@ -179,7 +179,7 @@ define([],
                 ]
             },
             {
-                "setListName": "Sound Waves 4", //From: fireflyeducation.com.au
+                "setListName": "Sound-Waves-4", //From: fireflyeducation.com.au
                 "languageCode": "en",
                 "description": "",
                 "sets": [
