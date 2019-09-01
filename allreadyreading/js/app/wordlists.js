@@ -189,7 +189,8 @@ define([],
                     { "setNumber": "4", "setName": "Unit-3-extension", "colorHex": "FFFFFF", "wordList": ["absently", "accidentally", "accurate", "acrobat", "activity", "adequate", "advantage", "advertisement", "ambulance", "anticipate", "asteroid", "astronaut", "astronomy", "camouflage", "capture", "exaggerate", "magnificent", "maximum", "satellite", "tranquil"] },
                     { "setNumber": "5", "setName": "Unit-4", "colorHex": "FFFFFF", "wordList": ["kind", "track", "brick", "knock", "lucky", "park", "fork", "clear", "crowd", "sixteen", "sixty", "sixth", "relax", "cruel", "ache", "scared", "Christmas", "scratch", "squash", "music", "electric", "expand", "explain", "mixture", "kangaroo"] },
                     { "setNumber": "6", "setName": "Unit-4-extension", "colorHex": "FFFFFF", "wordList": ["accidental", "acquire", "athletic", "character", "chemical", "climate", "complex", "concentrate", "conclusion", "consequence", "equivalence", "frequency", "kookaburra", "liquid", "Olympic", "quench", "schedule", "technology", "unequal", "wreckage"] },
-                    { "setNumber": "6", "setName": "Empty", "colorHex": "FFFFFF", "wordList": [""] },
+                    { "setNumber": "7", "setName": "Unit-5", "colorHex": "FFFFFF", "wordList": ["west", "held", "spent", "fresh", "ready", "heavy", "fence", "present", "fellow", "lesson", "guess", "engine", "edge", "else", "anyone", "anywhere", "second", "breakfast", "centimetre", "friendly", "instead", "message", "Wednesday", "February", "rectangle"] },
+                    { "setNumber": "8", "setName": "Unit-5-extension", "colorHex": "FFFFFF", "wordList": ["cleanse", "decimal", "definitely", "edible", "elegant", "energy", "entrance", "estimation", "evidence", "exercise", "heavenly", "jealous", "leisure", "meant", "pleasantly", "pleasure", "precious", "relative", "separately", "terrifying"] },
 
                 ]
             },
