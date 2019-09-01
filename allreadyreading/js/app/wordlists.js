@@ -179,6 +179,21 @@ define([],
                 ]
             },
             {
+                "setListName": "Sound Waves 4", //From: fireflyeducation.com.au
+                "languageCode": "en",
+                "description": "",
+                "sets": [
+                    { "setNumber": "1", "setName": "Unit2", "colorHex": "FFFFFF", "wordList": ["brick", "bump", "blank", "blue", "being", "begin", "break", "broke", "rabbit", "bought", "bucket","build", "built", "able", "babies", "bath", "basket", "balloon", "became","believe", "because", "beautiful", "probably", "business", "submerge",] },
+                    { "setNumber": "2", "setName": "Unit2+", "colorHex": "FFFFFF", "wordList": ["absence", "babbled", "banquet", "barbecue", "basically", "behaviour", "believable", "biscuit", "blossom", "bouquet", "brochure", "buoyant", "comfortable", "flexible", "observe", "obvious", "responsible", "sensible", "stubborn", "submarine"] },
+                    { "setNumber": "3", "setName": "Unit3", "colorHex": "FFFFFF", "wordList": ["land", "flag", "camp", "sang", "sank", "crack", "dance", "catch", "stamp", "splash", "scrap", "grams", "animal", "happy", "happen", "travel", "chance", "cattle", "angle", "transport", "Saturday", "January", "blanket", "athlete", "platypus"] },
+                    { "setNumber": "4", "setName": "Unit3+", "colorHex": "FFFFFF", "wordList": ["absently", "accidentally", "accurate", "acrobat", "activity", "adequate", "advantage", "advertisement", "ambulance", "anticipate", "asteroid", "astronaut", "astronomy", "camouflage", "capture", "exaggerate", "magnificent", "maximum", "satellite", "tranquil"] },
+                    { "setNumber": "5", "setName": "Unit4", "colorHex": "FFFFFF", "wordList": ["kind", "track", "brick", "knock", "lucky", "park", "fork", "clear", "crowd", "sixteen", "sixty", "sixth", "relax", "cruel", "ache", "scared", "Christmas", "scratch", "squash", "music", "electric", "expand", "explain", "mixture", "kangaroo"] },
+                    { "setNumber": "6", "setName": "Unit4+", "colorHex": "FFFFFF", "wordList": ["accidental", "acquire", "athletic", "character", "chemical", "climate", "complex", "concentrate", "conclusion", "consequence", "equivalence", "frequency", "kookaburra", "liquid", "Olympic", "quench", "schedule", "technology", "unequal", "wreckage"] },
+                    { "setNumber": "6", "setName": "Empty", "colorHex": "FFFFFF", "wordList": [""] },
+
+                ]
+            },
+            {
                 "setListName": "Topical", //From: Created by James Hurburgh
                 "languageCode": "en",
                 "description": "",
