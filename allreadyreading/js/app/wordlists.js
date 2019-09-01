@@ -163,7 +163,7 @@ define([],
                 ]
             },
             {
-                "setListName": "Sound Waves", //From: fireflyeducation.com.au
+                "setListName": "Sound-Waves", //From: fireflyeducation.com.au
                 "languageCode": "en",
                 "description": "",
                 "sets": [
