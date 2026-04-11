@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manual Quick Sort Comparator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .live-move {
+      position: relative;
+      transform: translate(0, 0);
+      transition: transform 0.3s ease, opacity 0.25s ease;
+      will-change: transform, opacity;
+    }
+    .compare-current {
+      font-weight: 700;
+      border: 2px solid #0d6efd;
+      color: #ffffff;
+    }
+    .compare-current.list-group-item-primary {
+      background-color: rgba(13, 110, 253, 0.9);
+      color: #ffffff;
+    }
+    .compare-pivot {
+      font-weight: 700;
+      border: 2px solid #ffc107;
+      color: #000000;
+    }
+    .compare-pivot.list-group-item-warning {
+      background-color: rgba(255, 193, 7, 0.9);
+      color: #000000;
+    }
+    .list-group-item-success {
+      background-color: rgba(25, 135, 84, 0.9);
+      color: #ffffff;
+    }
+    #choice-left, #choice-right {
+      height: 15rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  </style>
+</head>
+<body class="bg-dark text-light">
+  <main class="container py-4">
+    <section class="card mb-3 bg-dark text-light border-secondary">
+      <div class="card-body">
+        <div>
+          <h1 class="card-title">Manual Quick Sort Comparator</h1>
+          <p class="card-text lead">Paste your list as lines, then decide which item should come first in each comparison. The page uses your choices to perform a quick sort, showing progress, current pivot work, and a live sorted view.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card mb-3 bg-dark text-light border-secondary" id="compare-panel" style="display:none;">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div>
+            <strong>Compare items</strong>
+            <p class="text-muted mb-0">Choose which item should come earlier in your sorted order.</p>
+          </div>
+          <div class="text-end">
+            <div class="display-5" id="current-step">0</div>
+            <div class="text-muted">Step</div>
+          </div>
+        </div>
+
+        <div class="row g-2">
+          <div class="col-12 col-md-6">
+            <button class="btn btn-primary w-100" id="choice-left" style="font-size: 3rem; padding: 2rem;"></button>
+          </div>
+          <div class="col-12 col-md-6">
+            <button class="btn btn-primary w-100" id="choice-right" style="font-size: 3rem; padding: 2rem;"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="row g-3 mb-3">
+      <div class="col-12 col-lg-4">
+        <div class="card bg-dark text-light border-secondary h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h2 class="h5 mb-0">Live sort progress</h2>
+              <span class="badge bg-info text-dark" id="phase-pill">Waiting</span>
+            </div>
+            <div class="mb-3">
+              <small class="text-muted">
+                <span class="badge bg-secondary text-light me-1">Unsorted</span>
+                <span class="badge bg-success me-1">Sorted</span>
+                <span class="badge bg-primary me-1">Compare</span>
+                <span class="badge bg-warning text-dark">Pivot</span>
+              </small>
+            </div>
+            <p class="text-muted small mb-3">Completed items appear in place and active partitions show which items are being evaluated.</p>
+            <div id="live-output" class="list-group list-group-flush"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4">
+        <div class="card bg-dark text-light border-secondary h-100">
+          <div class="card-body">
+            <label for="list-input" class="form-label"><strong>Enter list items</strong></label>
+            <textarea id="list-input" class="form-control mb-3" rows="10" placeholder="Paste items here, one per line...">Star Wars: The Force Awakens (2015)
+Jurassic World (2015)
+Avengers: Endgame (2019)
+Black Panther (2018)
+Spider-Man: No Way Home (2021)
+Top Gun: Maverick (2022)
+The Lion King (2019)
+Aquaman (2018)
+Avengers: Infinity War (2018)
+Frozen II (2019)
+Captain Marvel (2019)
+Dune (2021)
+The Batman (2022)
+Barbie (2023)
+Mission: Impossible – Dead Reckoning Part One (2023)</textarea>
+            <div class="d-flex flex-wrap gap-2">
+              <button class="btn btn-primary" id="start-button">Start Sorting</button>
+              <button class="btn btn-secondary" id="reset-button" type="button">Reset</button>
+            </div>
+            <p class="text-muted mt-3">The sorter picks a pivot and asks you to compare items pairwise against it. Your choices guide the final ordering.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4">
+        <div class="card bg-dark text-light border-secondary h-100">
+          <div class="card-body">
+            <div class="mb-3">
+              <strong>Status</strong>
+              <span id="status-text" class="fw-semibold ms-2">Ready for input</span>
+            </div>
+            <div class="mb-3">
+              <div class="progress" style="height: 1rem;">
+                <div class="progress-bar" role="progressbar" id="progress-fill" style="width: 0%;"></div>
+              </div>
+              <div class="d-flex justify-content-between small text-muted mt-2">
+                <span id="progress-label">0%</span>
+                <span id="comparison-count">0 comparisons</span>
+              </div>
+            </div>
+
+            <ul class="list-group list-group-flush" id="stats-list">
+              <li class="list-group-item bg-dark text-light border-secondary d-flex justify-content-between align-items-center">
+                <span>Current pivot</span><strong id="pivot-value">—</strong>
+              </li>
+              <li class="list-group-item bg-dark text-light border-secondary d-flex justify-content-between align-items-center">
+                <span>Current pair</span><strong id="current-pair">—</strong>
+              </li>
+              <li class="list-group-item bg-dark text-light border-secondary d-flex justify-content-between align-items-center">
+                <span>Pending tasks</span><strong id="pending-tasks">0</strong>
+              </li>
+              <li class="list-group-item bg-dark text-light border-secondary d-flex justify-content-between align-items-center">
+                <span>Estimated comparisons</span><strong id="estimated-total">0</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="card mb-3 bg-dark text-light border-secondary">
+      <div class="card-body">
+        <h2 class="h5">Active quick sort state</h2>
+        <div id="stack-view" class="list-group list-group-flush"></div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const inputEl = document.getElementById('list-input');
+    const startButton = document.getElementById('start-button');
+    const resetButton = document.getElementById('reset-button');
+    const comparePanel = document.getElementById('compare-panel');
+    const choiceLeft = document.getElementById('choice-left');
+    const choiceRight = document.getElementById('choice-right');
+    const pivotValue = document.getElementById('pivot-value');
+    const currentPair = document.getElementById('current-pair');
+    const pendingTasks = document.getElementById('pending-tasks');
+    const estimatedTotal = document.getElementById('estimated-total');
+    const comparisonCount = document.getElementById('comparison-count');
+    const progressFill = document.getElementById('progress-fill');
+    const progressLabel = document.getElementById('progress-label');
+    const statusText = document.getElementById('status-text');
+    const phasePill = document.getElementById('phase-pill');
+    const liveOutput = document.getElementById('live-output');
+    const stackView = document.getElementById('stack-view');
+    const currentStep = document.getElementById('current-step');
+
+    let sortState = null;
+
+    function createTask(items, parent = null, branch = null) {
+      return {
+        items,
+        pivot: items[0],
+        left: [],
+        right: [],
+        compareIndex: 1,
+        parent,
+        branch,
+        leftTask: null,
+        rightTask: null,
+        leftOutput: null,
+        rightOutput: null,
+        output: null,
+      };
+    }
+
+    function resetState() {
+      sortState = {
+        rootTask: null,
+        tasks: [],
+        currentTask: null,
+        comparisonsDone: 0,
+        step: 0,
+        isFinished: false,
+      };
+      renderStatus();
+      renderLiveOutput();
+      renderStack();
+      comparePanel.style.display = 'none';
+      phasePill.textContent = 'Ready';
+    }
+
+    function parseItems() {
+      return inputEl.value
+        .split(/\r?\n/)
+        .map(line => line.trim())
+        .filter(Boolean);
+    }
+
+    function estimateComparisons(n) {
+      // For quicksort, we roughly need n-1 comparisons minimum
+      // But actual comparisons depend on pivots chosen by user
+      // So we'll estimate conservatively
+      if (n <= 1) return 0;
+      return n - 1;
+    }
+
+    function startSorting() {
+      const items = parseItems();
+      if (items.length < 2) {
+        alert('Enter at least two items to sort.');
+        return;
+      }
+
+      const rootTask = createTask(items);
+      sortState.rootTask = rootTask;
+      sortState.tasks = [rootTask];
+      sortState.currentTask = rootTask;
+      sortState.comparisonsDone = 0;
+      sortState.step = 0;
+      comparePanel.style.display = 'block';
+      statusText.textContent = 'Sorting in progress';
+      phasePill.textContent = 'Partitioning';
+      render();
+    }
+
+    function renderStatus() {
+      pivotValue.textContent = sortState?.currentTask?.pivot ?? '—';
+      const curTask = sortState?.currentTask;
+      if (curTask && curTask.compareIndex < curTask.items.length) {
+        currentPair.textContent = `${curTask.items[curTask.compareIndex]} vs ${curTask.pivot}`;
+      } else {
+        currentPair.textContent = 'Waiting for next partition';
+      }
+      pendingTasks.textContent = sortState ? sortState.tasks.length : '0';
+      
+      // Calculate estimated remaining comparisons based on current tasks
+      let estimatedRemaining = 0;
+      if (sortState && sortState.tasks.length > 0) {
+        sortState.tasks.forEach(task => {
+          estimatedRemaining += Math.max(0, task.items.length - task.compareIndex);
+        });
+      }
+      
+      estimatedTotal.textContent = sortState ? `${sortState.comparisonsDone + estimatedRemaining}` : '0';
+      comparisonCount.textContent = sortState ? `${sortState.comparisonsDone} comparisons` : '0 comparisons';
+
+      const totalEst = sortState.comparisonsDone + estimatedRemaining;
+      const percent = totalEst > 0 ? Math.min(100, Math.round((sortState.comparisonsDone / totalEst) * 100)) : 0;
+      progressFill.style.width = percent + '%';
+      progressLabel.textContent = `${percent}%`;
+      currentStep.textContent = sortState ? sortState.step : '0';
+    }
+
+    function getDisplayNodes(task) {
+      if (!task) return [];
+      if (task.output) {
+        return task.output.map(item => ({text: item, type: 'sorted'}));
+      }
+
+      if (task.compareIndex < task.items.length) {
+        const isActiveTask = task === sortState.currentTask;
+        const nodes = [];
+        nodes.push(...task.left.map(item => ({text: item, type: 'pending', side: 'left'})));
+        nodes.push({text: task.pivot, type: isActiveTask ? 'pivot' : 'pending'});
+        nodes.push(...task.right.map(item => ({text: item, type: 'pending', side: 'right'})));
+        const remaining = task.items.slice(task.compareIndex);
+        if (isActiveTask && remaining.length > 0) {
+          nodes.push({text: remaining[0], type: 'current', side: 'right'});
+          nodes.push(...remaining.slice(1).map(item => ({text: item, type: 'pending', side: 'right'})));
+        } else if (!isActiveTask) {
+          nodes.push(...remaining.map(item => ({text: item, type: 'pending', side: 'right'})));
+        }
+        return nodes;
+      }
+
+      // Task has finished comparing - pivot should be sorted if subtasks exist
+      const pivotType = (task.leftTask || task.rightTask || task.leftOutput || task.rightOutput) ? 'sorted' : 'pending';
+      const leftNodes = task.leftTask
+        ? getDisplayNodes(task.leftTask)
+        : task.leftOutput
+          ? task.leftOutput.map(item => ({text: item, type: 'sorted'}))
+          : task.left.map(item => ({text: item, type: 'pending'}));
+      const rightNodes = task.rightTask
+        ? getDisplayNodes(task.rightTask)
+        : task.rightOutput
+          ? task.rightOutput.map(item => ({text: item, type: 'sorted'}))
+          : task.right.map(item => ({text: item, type: 'pending'}));
+      return [...leftNodes, {text: task.pivot, type: pivotType}, ...rightNodes];
+    }
+
+    function renderLiveOutput() {
+      if (!sortState) return;
+      const oldItems = Array.from(liveOutput.children);
+      const oldPositions = new Map();
+      const oldNodes = new Map();
+
+      oldItems.forEach(item => {
+        if (item.dataset.key) {
+          oldPositions.set(item.dataset.key, item.getBoundingClientRect());
+          oldNodes.set(item.dataset.key, item);
+        }
+      });
+
+      const nodes = getDisplayNodes(sortState.rootTask);
+      if (nodes.length === 0) {
+        liveOutput.innerHTML = '<div class="list-group-item bg-dark text-light border-secondary">No items to display.</div>';
+        return;
+      }
+
+      const newItems = [];
+      nodes.forEach(entry => {
+        let tile = oldNodes.get(entry.text);
+        if (!tile) {
+          tile = document.createElement('div');
+          tile.dataset.key = entry.text;
+          tile.className = 'list-group-item d-flex justify-content-between align-items-center live-move';
+        }
+        tile.style.transform = 'translate(0, 0)';
+        tile.style.opacity = '1';
+        tile.className = 'list-group-item d-flex justify-content-between align-items-center live-move';
+        if (entry.type === 'pivot') tile.classList.add('compare-pivot', 'list-group-item-warning');
+        else if (entry.type === 'current') tile.classList.add('compare-current', 'list-group-item-primary');
+        else if (entry.type === 'sorted') tile.classList.add('list-group-item-success');
+        else tile.classList.add('list-group-item-secondary', 'text-dark');
+        if (entry.side) tile.classList.add('pivot-side');
+        tile.textContent = entry.text;
+        newItems.push(tile);
+      });
+
+      liveOutput.innerHTML = '';
+      newItems.forEach(item => liveOutput.appendChild(item));
+
+      newItems.forEach(item => {
+        const key = item.dataset.key;
+        const oldRect = oldPositions.get(key);
+        if (!oldRect) return;
+        const newRect = item.getBoundingClientRect();
+        const deltaX = oldRect.left - newRect.left;
+        const deltaY = oldRect.top - newRect.top;
+        if (deltaX || deltaY) {
+          const fromTransform = `translate(${deltaX}px, ${deltaY}px)`;
+          item.style.transform = fromTransform;
+          item.style.opacity = '0.6';
+          item.getBoundingClientRect();
+
+          if (item.animate) {
+            item.animate(
+              [
+                { transform: fromTransform, opacity: 0.6 },
+                { transform: 'translate(0, 0)', opacity: 1 }
+              ],
+              { duration: 300, easing: 'ease', fill: 'forwards' }
+            );
+            item.style.transform = 'translate(0, 0)';
+            item.style.opacity = '1';
+          } else {
+            requestAnimationFrame(() => {
+              item.style.transform = 'translate(0, 0)';
+              item.style.opacity = '1';
+            });
+          }
+        }
+      });
+    }
+
+    function renderStack() {
+      stackView.innerHTML = '';
+      if (!sortState) return;
+      sortState.tasks.forEach((task, index) => {
+        const item = document.createElement('div');
+        item.className = 'list-group-item bg-dark text-light border-secondary mb-2';
+        item.innerHTML = `
+          <strong>Task ${index + 1}: length ${task.items.length}</strong>
+          <div>Pivot: ${task.pivot}</div>
+          <div>Compared: ${Math.max(0, task.compareIndex - 1)} / ${Math.max(0, task.items.length - 1)}</div>
+          <div>Left size: ${task.left.length}</div>
+          <div>Right size: ${task.right.length}</div>
+        `;
+        stackView.appendChild(item);
+      });
+    }
+
+    function propagateOutput(task) {
+      console.log('propagateOutput called for task, parent:', task.parent);
+      if (!task.parent) {
+        console.log('No parent, task is root');
+        return;
+      }
+      if (task.branch === 'left') {
+        task.parent.leftOutput = task.output;
+        task.parent.leftTask = null; // Clear the reference since it's done
+      } else {
+        task.parent.rightOutput = task.output;
+        task.parent.rightTask = null; // Clear the reference since it's done
+      }
+      console.log('Propagated to parent, parent now has leftOutput:', task.parent.leftOutput ? task.parent.leftOutput.length : null, 'rightOutput:', task.parent.rightOutput ? task.parent.rightOutput.length : null);
+      console.log('Parent leftTask:', task.parent.leftTask, 'rightTask:', task.parent.rightTask);
+      
+      if (task.parent.leftOutput !== null && task.parent.rightOutput !== null && !task.parent.leftTask && !task.parent.rightTask) {
+        console.log('Parent is now complete, computing and finishing parent task');
+        task.parent.output = [...task.parent.leftOutput, task.parent.pivot, ...task.parent.rightOutput];
+        
+        if (task.parent === sortState.rootTask) {
+          console.log('PARENT IS ROOT - SORT COMPLETE');
+          sortState.isFinished = true;
+        } else {
+          console.log('Parent has grandparent, propagating recursively');
+          propagateOutput(task.parent);
+        }
+      } else {
+        console.log('Parent not ready yet - leftOutput:', task.parent.leftOutput !== null, 'rightOutput:', task.parent.rightOutput !== null, 'leftTask:', task.parent.leftTask !== null, 'rightTask:', task.parent.rightTask !== null);
+      }
+    }
+
+    function finishTask(task) {
+      console.log('finishTask called');
+      task.output = [
+        ...(task.leftOutput || []),
+        task.pivot,
+        ...(task.rightOutput || []),
+      ];
+      console.log('Task output set to:', task.output.length, 'items');
+      
+      // If this is the root task, we're done
+      if (task === sortState.rootTask) {
+        console.log('ROOT TASK FINISHED');
+        sortState.isFinished = true;
+      }
+      
+      propagateOutput(task);
+    }
+
+    function completePartition(task) {
+      console.log('completePartition called for task with', task.items.length, 'items');
+      console.log('Left:', task.left, 'Right:', task.right);
+      
+      if (task.left.length <= 1) {
+        task.leftOutput = [...task.left];
+        console.log('Left output set to:', task.leftOutput);
+      } else {
+        task.leftTask = createTask(task.left, task, 'left');
+        sortState.tasks.unshift(task.leftTask);
+        console.log('Created left subtask');
+      }
+
+      if (task.right.length <= 1) {
+        task.rightOutput = [...task.right];
+        console.log('Right output set to:', task.rightOutput);
+      } else {
+        task.rightTask = createTask(task.right, task, 'right');
+        sortState.tasks.unshift(task.rightTask);
+        console.log('Created right subtask');
+      }
+
+      if (task.leftOutput !== null && task.rightOutput !== null) {
+        console.log('Both outputs ready, finishing task');
+        finishTask(task);
+      } else {
+        console.log('Waiting on outputs - leftOutput:', task.leftOutput, 'rightOutput:', task.rightOutput);
+      }
+    }
+
+    function getNextActiveTask() {
+      return sortState.tasks.length ? sortState.tasks[0] : null;
+    }
+
+    function finishSorting() {
+      console.log('finishSorting called');
+      console.log('Root task output:', sortState.rootTask.output);
+      sortState.isFinished = true;
+      statusText.textContent = 'Sorting complete';
+      phasePill.textContent = 'Done';
+      comparePanel.style.display = 'none';
+      sortState.tasks = [];
+      sortState.currentTask = null;
+      
+      // Render the final sorted result
+      render();
+    }
+
+    function applyChoice(chosen) {
+      console.log('applyChoice called with:', chosen);
+      console.log('Current sortState:', sortState);
+      const task = sortState.currentTask;
+      console.log('Current task:', task);
+      
+      if (!task || task.compareIndex >= task.items.length) {
+        console.log('Early exit: no task or compareIndex >= items.length');
+        return;
+      }
+      
+      const currentItem = task.items[task.compareIndex];
+      console.log('Current item:', currentItem, 'compareIndex:', task.compareIndex);
+      
+      if (chosen === 'item') {
+        task.left.push(currentItem);
+        console.log('Added to left:', currentItem);
+      } else {
+        task.right.push(currentItem);
+        console.log('Added to right:', currentItem);
+      }
+
+      task.compareIndex += 1;
+      sortState.comparisonsDone += 1;
+      sortState.step += 1;
+      console.log('Updated: compareIndex =', task.compareIndex, 'comparisonsDone =', sortState.comparisonsDone);
+
+      if (task.compareIndex >= task.items.length) {
+        console.log('Task comparison complete, calling completePartition');
+        completePartition(task);
+        sortState.tasks = sortState.tasks.filter(active => active !== task);
+        console.log('Tasks remaining after filter:', sortState.tasks.length);
+        sortState.currentTask = getNextActiveTask();
+        console.log('Next active task:', sortState.currentTask);
+        console.log('isFinished:', sortState.isFinished, 'rootTask.output:', sortState.rootTask && sortState.rootTask.output ? 'exists' : 'none');
+        
+        // Check if we're done: sorted flag is set OR no tasks left AND root has output
+        if (sortState.isFinished || (!sortState.currentTask && sortState.rootTask && sortState.rootTask.output)) {
+          console.log('SORT COMPLETE!');
+          finishSorting();
+          return;
+        }
+      }
+
+      console.log('Calling render()');
+      render();
+    }
+
+    function render() {
+      console.log('render() called, isFinished:', sortState.isFinished, 'tasks:', sortState.tasks.length);
+      
+      if (sortState.isFinished) {
+        console.log('Render called but sort is finished, skipping button updates');
+        renderStatus();
+        renderLiveOutput();
+        renderStack();
+        return;
+      }
+      
+      renderStatus();
+      renderLiveOutput();
+      renderStack();
+      if (sortState && sortState.currentTask) {
+        const task = sortState.currentTask;
+        if (task.compareIndex < task.items.length) {
+          const currentItem = task.items[task.compareIndex];
+          console.log('Setting button texts to:', currentItem, 'vs', task.pivot);
+          choiceLeft.innerHTML = `${currentItem}<br><div style="font-size: 1rem; opacity: 0.8; margin-top: 0.5rem;">← Choose this</div>`;
+          choiceRight.innerHTML = `${task.pivot}<br><div style="font-size: 1rem; opacity: 0.8; margin-top: 0.5rem;">Choose this →</div>`;
+        } else {
+          console.log('Current task is past compareIndex, no items to display');
+        }
+      } else {
+        console.log('No current task');
+      }
+    }
+
+    startButton.addEventListener('click', startSorting);
+    resetButton.addEventListener('click', resetState);
+
+    choiceLeft.addEventListener('click', () => {
+      console.log('choiceLeft clicked');
+      applyChoice('item');
+    });
+    choiceRight.addEventListener('click', () => {
+      console.log('choiceRight clicked');
+      applyChoice('pivot');
+    });
+
+    document.addEventListener('keydown', event => {
+      if (!sortState || !sortState.currentTask || comparePanel.style.display === 'none') return;
+      const target = event.target;
+      if (target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable)) return;
+      if (event.key === 'ArrowLeft') {
+        event.preventDefault();
+        applyChoice('item');
+      }
+      if (event.key === 'ArrowRight') {
+        event.preventDefault();
+        applyChoice('pivot');
+      }
+    });
+
+    resetState();
+  </script>
+</body>
+</html>
